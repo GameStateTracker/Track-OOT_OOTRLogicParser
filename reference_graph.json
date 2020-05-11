@@ -1,0 +1,62 @@
+{
+    "A": {
+        "B": {
+            "type": "or",
+            "el": [
+                {
+                    "type": "number",
+                    "el": "item.item_0",
+                    "category": "item"
+                },
+                {
+                    "type": "number",
+                    "el": "item.item_1",
+                    "category": "item"
+                }
+            ]
+        },
+        "C": {
+            "type": "number",
+            "el": "item.item_2",
+            "category": "item"
+        },
+        "D": {
+            "type": "false"
+        }
+    },
+    "B": {
+        "A": {
+            "type": "true"
+        }
+    },
+    "C": {
+        "A": {
+            "type": "true"
+        },
+        "D": {
+            "type": "number",
+            "el": "item.item_4",
+            "category": "item"
+        }
+    },
+    "D": {
+        "A": {
+            "type": "true"
+        },
+        "C": {
+            "type": "and",
+            "el": [
+                {
+                    "type": "number",
+                    "el": "item.item_1",
+                    "category": "item"
+                },
+                {
+                    "type": "number",
+                    "el": "item.item_3",
+                    "category": "item"
+                }
+            ]
+        }
+    }
+}

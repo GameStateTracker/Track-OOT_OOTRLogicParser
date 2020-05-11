@@ -1,0 +1,16 @@
+{
+  "name": "logicparser",
+  "version": "0.0.0",
+  "description": "Logic Parser",
+  "author": "Denis Peters (ZidArgs)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/zidargs/logicparser.git"
+  },
+  "homepage": "https://bitbucket.org/zidargs/logicparser/src",
+  "main": "parse.js",
+  "scripts": {
+    "parse": "node parse.js"
+  }
+}
