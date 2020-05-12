@@ -1,6 +1,6 @@
 const SPLIT = /(\#.*)?\s*\n\s*/g;
 
-class PYCON {
+class RandONC {
 
     parse(input) {
         let buffer = input.replace(SPLIT, " ");
@@ -12,7 +12,7 @@ class PYCON {
             for(let i = 0; i < lines.length; ++i) {
                 let line = lines[i].replace(SPLIT, " ");
                 if (line.length > pos) {
-                    throw new SyntaxError(`Unexpected token in PYCON at line ${i + 1}: ${line}`);
+                    throw new SyntaxError(`Unexpected token in RandONC at line ${i + 1}: ${line}`);
                 } else {
                     pos -= line.length;
                 }
@@ -22,4 +22,4 @@ class PYCON {
 
 }
 
-export default new PYCON();
+module.exports = new RandONC();
