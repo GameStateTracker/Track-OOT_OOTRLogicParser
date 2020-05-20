@@ -5,7 +5,7 @@ var SPLIT = /(\#.*)?\s*\n\s*/g;
 var RandONC = /** @class */ (function () {
     function RandONC() {
     }
-    RandONC.prototype.parse = function (input) {
+    RandONC.parse = function (input) {
         var buffer = input.replace(SPLIT, " ");
         try {
             return JSON.parse(buffer);
@@ -22,9 +22,9 @@ var RandONC = /** @class */ (function () {
                     pos -= line.length;
                 }
             }
-            throw new SyntaxError("Unexpected EOF in RandONC");
+            throw new SyntaxError("Unexpected end of input in RandONC");
         }
     };
     return RandONC;
 }());
-exports.default = new RandONC();
+exports.default = RandONC;

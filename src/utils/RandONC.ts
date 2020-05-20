@@ -5,7 +5,7 @@ export default class RandONC {
 
     private constructor() { }
 
-    public static parse(input: string): object {
+    public static parse(input: string): any {
         let buffer: string = input.replace(SPLIT, " ");
         try {
             return JSON.parse(buffer);
