@@ -5,7 +5,6 @@ const BRACKETS = /(.*?)(?:\()([^,()]+)(?:\))(.*)/;
 // operators
 const NOT = /(.*?)(?:not ([^,()\s]+))(.*)/;
 const COMPARATOR = /(.*?)([^\s]+)\s*((?:!|>|<)?=|<|>)\s*([^\s]+)(.*?)/;
-const COMBINATOR = /(.*?)(and|or)(.*?)/
 
 export default class RandTokenizer {
 
