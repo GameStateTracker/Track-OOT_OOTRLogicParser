@@ -1,6 +1,7 @@
-import AbstractElement from "./AbstractElement";
+import AbstractElement from "./AbstractLiteral";
+import AbstractOperator from "./AbstractOperator";
 
-export default class OperatorNot extends AbstractElement {
+export default class OperatorNot extends AbstractOperator implements AbstractElement {
 
     private value: number;
 

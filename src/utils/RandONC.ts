@@ -1,11 +1,9 @@
 const LNBR_SEQ = /(?:\r\n|\n|\r)/g;
 const SPLIT = /(\#.*)?\s*\n\s*/g;
 
-export default class RandONC {
+export default abstract class RandONC {
 
-    private constructor() { }
-
-    public static parse(input: string): JSONObject[] {
+    public static parse(input: string): JSONObject {
         let buffer: string = input.replace(SPLIT, " ");
         try {
             return JSON.parse(buffer);

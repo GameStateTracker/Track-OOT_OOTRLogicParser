@@ -1,12 +1,11 @@
-import AbstractElement from "./AbstractElement";
+import AbstractLiteral from "./AbstractLiteral";
 
-export default class LiteralPointer extends AbstractElement {
+export default class LiteralPointer implements AbstractLiteral {
 
     private ref: string;
     private category: string | undefined;
 
     public constructor(ref: string, category?: string) {
-        super();
         this.ref = ref;
         this.category = category;
     }
@@ -25,6 +24,4 @@ export default class LiteralPointer extends AbstractElement {
             };
         }
     }
-
-    public append(el: AbstractElement) {}
 }

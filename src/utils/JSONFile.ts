@@ -1,8 +1,12 @@
 import fs from "fs";
 
-export default class JSONFile {
+declare global {
+    type JSONObject = string | number | boolean | JSONArray | JSONMap;
+    type JSONArray = JSONObject[];
+    type JSONMap = { [index: string]: JSONObject };
+}
 
-    private constructor() { }
+export default abstract class JSONFile {
 
     public static read(filename: string, def: any): any {
         if (fs.existsSync(filename)) {

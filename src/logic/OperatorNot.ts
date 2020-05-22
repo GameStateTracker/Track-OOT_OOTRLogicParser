@@ -1,6 +1,7 @@
-import AbstractElement from "./AbstractElement";
+import AbstractElement from "./AbstractLiteral";
+import AbstractOperator from "./AbstractOperator";
 
-export default class OperatorNot extends AbstractElement {
+export default class OperatorNot extends AbstractOperator implements AbstractElement {
 
     public constructor() {
         super();
@@ -12,4 +13,5 @@ export default class OperatorNot extends AbstractElement {
             el: Array.from(this.children).slice(0,1).map(e => e.toJSON())[0]
         };
     }
+
 }

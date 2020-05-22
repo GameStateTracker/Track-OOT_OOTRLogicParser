@@ -1,67 +1,49 @@
 import fs from "fs";
 import path from "path";
-import RandONC from "./utils/RandONC";
-import RandTokenizer from "./utils/RandTokenizer";
-import LogicBuilder from "./utils/LogicBuilder";
+import JSONFile from "./utils/JSONFile";
 import Translation from "./utils/Translation";
+import HelperParser from "./utils/parser/HelperParser";
+import LogicParser from "./utils/parser/LogicParser";
 
 // TODO load LogicHelpers.json
 // TODO add "function" resolver [e.g. LogicHelpers.json > can_play(song): Ocarina and song]
 
-const inDir  = path.join(__dirname, "../input/data/World");
-const outDir = path.join(__dirname, "../output/data/World");
+const inHelperFile  = path.join(__dirname, "../input/data/LogicHelpers.json");
+const outHelperFile  = path.join(__dirname, "../output/data/LogicHelpers.json");
+const inLogicDir  = path.join(__dirname, "../input/data/World");
+const outLogicDir  = path.join(__dirname, "../output/data/World");
+const outLogicFile = path.join(__dirname, "../output/data/Logic.json");
 
-declare global {
-    type JSONValues = string | number | boolean | JSONObject;
-    type JSONObject = { [index: string]: JSONValues | JSONValues[] };
-    type JSONLogic = {
-        type: string,
-        el?: string | JSONLogic | JSONLogic[],
-        value?: string | number,
-        category?: string
-    };
-}
+const transRulesFile = path.join(__dirname, "../translation/rules.json");
 
-if (!fs.existsSync(inDir)) {
-    fs.mkdirSync(inDir, {
+if (!fs.existsSync(inLogicDir)) {
+    fs.mkdirSync(inLogicDir, {
         recursive: true
     });
 }
-if (!fs.existsSync(outDir)) {
-    fs.mkdirSync(outDir, {
+if (!fs.existsSync(outLogicDir)) {
+    fs.mkdirSync(outLogicFile, {
         recursive: true
     });
 }
 
-let files = fs.readdirSync(inDir);
-
-files.forEach(function(file: string): void {
-    let data = fs.readFileSync(path.join(inDir, file)).toString();
-    data = parse(data);
-    fs.writeFileSync(path.join(outDir, file), data);
+// set translation rules
+const rules: Map<string, string> = new Map(Object.entries(JSONFile.read(transRulesFile, {})));
+rules.forEach((v: string, k: string) => {
+    Translation.addRule(new RegExp(k, "i"), new RegExp(v, "i"));
 });
 
-function parse(input: string): string {
-    let output = RandONC.parse(input);
-    let result: JSONObject = {};
-    output.forEach((value: any) => {
-        let rules: JSONObject = {};
-        for (let i in value.locations) {
-            let rule = value.locations[i];
-            rule = transpileRule(rule);
-            rules[Translation.translate(i)] = rule;
-        }
-        for (let i in value.exits) {
-            let rule = value.exits[i];
-            rule = transpileRule(rule);
-            rules[Translation.translate(i)] = rule;
-        }
-        result[Translation.translate(value.region_name)] = rules;
-    })
-    return JSON.stringify(result, null, 4);
-}
+// parse logic
+HelperParser.parse(fs.readFileSync(inHelperFile).toString());
+fs.readdirSync(inLogicDir).forEach(function(file: string): void {
+    let fname = path.join(inLogicDir, file);
+    LogicParser.parse(fs.readFileSync(fname).toString());
+});
 
-function transpileRule(input: string): JSONLogic {
-    let token = RandTokenizer.tokenize(input);
-    return LogicBuilder.build(token);
-}
+// write logic
+let data = JSON.stringify(LogicParser.get(), null, 4);
+fs.writeFileSync(outLogicFile, data);
+
+// write helpers
+let helper = JSON.stringify(HelperParser.get(), null, 4);
+fs.writeFileSync(outHelperFile, helper);

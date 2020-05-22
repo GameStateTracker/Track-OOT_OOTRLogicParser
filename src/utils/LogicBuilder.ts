@@ -1,4 +1,4 @@
-import AbstractElement from "../logic/AbstractElement";
+import AbstractElement from "../logic/AbstractLiteral";
 import LiteralFalse from "../logic/LiteralFalse";
 import LiteralTrue from "../logic/LiteralTrue";
 import LiteralValue from "../logic/LiteralValue";
@@ -8,9 +8,9 @@ import OperatorOr from "../logic/OperatorOr";
 import OperatorNot from "../logic/OperatorNot";
 import OperatorMin from "../logic/OperatorMin";
 
-export default class LogicBuilder {
 
-    private constructor() { }
+
+export default abstract class LogicBuilder {
 
     public static build(token: string[]): JSONLogic {
         let root = token[0];

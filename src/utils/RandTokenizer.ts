@@ -1,16 +1,14 @@
 // structure
-const AMOUNT = /(.*?)(?:\()([^,()]+),\s*([0-9]+)(?:\))(.*)/;
+const AMOUNT = /(.*?)(?:\()([^,()]+),\s*([^,()]+)(?:\))(.*)/;
 const FUNCTIONS = /(.*?)([^()\s]+)\(([^()]+)\)(.*)/;
 const BRACKETS = /(.*?)(?:\()([^,()]+)(?:\))(.*)/;
 // operators
 const NOT = /(.*?)(?:not ([^,()\s]+))(.*)/;
-const COMPARATOR = /(.*?)([^\s]+)\s*((?:!|>|<)?=|<|>)\s*([^\s]+)(.*?)/;
+const COMPARATOR = /(.*?)([^\s]+)\s*((?:!|>|<|=)?=|<|>)\s*([^\s]+)(.*?)/;
 
-export default class RandTokenizer {
+export default abstract class RandTokenizer {
 
     private static count: number = 0;
-
-    private constructor() { }
 
     public static tokenize(term: string, tokens: string[] = []): string[] {
         RandTokenizer.count = 0;

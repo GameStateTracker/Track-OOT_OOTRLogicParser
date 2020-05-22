@@ -1,0 +1,11 @@
+{
+    "^Bottom of the Well .*": "^location\\.well\\.c_.*",
+    "^Bottom of the Well MQ .*": "^location\\.well_mq\\.c_.*",
+    "^GS Well .*": "^location\\.well\\.s_.*",
+    "^GS Well MQ .*": "^location\\.well_mq\\.s_.*",
+
+    "^Deku Tree .*": "^location\\.deku\\.c_.*",
+    "^Deku Tree MQ .*": "^location\\.deku_mq\\.c_.*",
+    "^GS Deku Tree .*": "^location\\.deku\\.s_.*",
+    "^GS Deku Tree MQ .*": "^location\\.deku_mq\\.s_.*"
+}

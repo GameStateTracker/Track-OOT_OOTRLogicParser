@@ -2,13 +2,19 @@ import path from "path";
 import JSONFile from "./JSONFile";
 
 const predict_path = path.join(__dirname, "../../translation/predict.json");
+const unpredict_path = path.join(__dirname, "../../translation/unpredict.json");
 const translation: { [index: string]: any } = JSONFile.read(path.join(__dirname, "../../translation/trans.json"), {});
 const values: [string] = JSONFile.read(path.join(__dirname, "../../translation/values.json"), []);
 const predict = JSONFile.read(predict_path, {});
+const unpredict = JSONFile.read(unpredict_path, []);
 
-export default class Translation {
+export default abstract class Translation {
 
-    private constructor() { }
+    private static rules: Map<RegExp, RegExp> = new Map();
+
+    public static addRule(matches: RegExp, expects: RegExp): void {
+        Translation.rules.set(matches, expects);
+    }
 
     public static translate(value: string): string {
         if (translation[value] != null) {
@@ -20,7 +26,16 @@ export default class Translation {
 
     private static predict(value: string): string {
         let results: { [index: string]: number } = {};
+        let rule = null;
+        Translation.rules.forEach((v, k) => {
+            if (value.match(k)) {
+                rule = v;
+            }
+        });
         for (let i of values) {
+            if (rule != null && !i.match(rule)) {
+                continue;
+            }
             results[i] = calculateLevDistance(value, i);
         }
         let cost = Number.MAX_SAFE_INTEGER;
@@ -31,8 +46,13 @@ export default class Translation {
                 res = i;
             }
         }
-        predict[value] = res;
-        JSONFile.write(predict_path, predict);
+        if (value == res) {
+            unpredict.push(value);
+            JSONFile.write(unpredict_path, unpredict);
+        } else {
+            predict[value] = res;
+            JSONFile.write(predict_path, predict);
+        }
         return res;
     }
 

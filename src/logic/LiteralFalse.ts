@@ -1,17 +1,11 @@
-import AbstractElement from "./AbstractElement";
+import AbstractLiteral from "./AbstractLiteral";
 
-export default class LiteralFalse extends AbstractElement {
-
-    public constructor() {
-        super();
-    }
+export default class LiteralFalse implements AbstractLiteral {
 
     public toJSON(): JSONLogic {
         return {
             type: "false"
         };
     }
-
-    public append(el: AbstractElement) {}
 
 }
