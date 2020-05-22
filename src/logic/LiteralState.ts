@@ -6,7 +6,7 @@ export default class LiteralState extends AbstractElement {
     private value: string;
     private category: string | undefined;
 
-    public constructor(ref: string, value: string, category: string | undefined) {
+    public constructor(ref: string, value: string, category?: string) {
         super();
         this.ref = ref;
         this.value = value;

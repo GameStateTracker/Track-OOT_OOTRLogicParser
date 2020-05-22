@@ -7,6 +7,8 @@ var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
 var RandONC_1 = __importDefault(require("./utils/RandONC"));
 var RandTokenizer_1 = __importDefault(require("./utils/RandTokenizer"));
+var LogicBuilder_1 = __importDefault(require("./utils/LogicBuilder"));
+var Translation_1 = __importDefault(require("./utils/Translation"));
 var inDir = path_1.default.join(__dirname, "../input/data/World");
 var outDir = path_1.default.join(__dirname, "../output/data/World");
 if (!fs_1.default.existsSync(inDir)) {
@@ -31,12 +33,20 @@ function parse(input) {
     output.forEach(function (value) {
         var rules = {};
         for (var i in value.locations) {
-            rules[i] = RandTokenizer_1.default.tokenize(value.locations[i]);
+            var rule = value.locations[i];
+            rule = transpileRule(rule);
+            rules[Translation_1.default.translate(i)] = rule;
         }
         for (var i in value.exits) {
-            rules[i] = RandTokenizer_1.default.tokenize(value.exits[i]);
+            var rule = value.exits[i];
+            rule = transpileRule(rule);
+            rules[Translation_1.default.translate(i)] = rule;
         }
-        result[value.region_name] = rules;
+        result[Translation_1.default.translate(value.region_name)] = rules;
     });
     return JSON.stringify(result, null, 4);
+}
+function transpileRule(input) {
+    var token = RandTokenizer_1.default.tokenize(input);
+    return LogicBuilder_1.default.build(token);
 }

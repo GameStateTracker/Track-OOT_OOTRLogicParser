@@ -5,7 +5,7 @@ export default class LiteralPointer extends AbstractElement {
     private ref: string;
     private category: string | undefined;
 
-    public constructor(ref: string, category: string | undefined) {
+    public constructor(ref: string, category?: string) {
         super();
         this.ref = ref;
         this.category = category;

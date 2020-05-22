@@ -7,7 +7,6 @@ var BRACKETS = /(.*?)(?:\()([^,()]+)(?:\))(.*)/;
 // operators
 var NOT = /(.*?)(?:not ([^,()\s]+))(.*)/;
 var COMPARATOR = /(.*?)([^\s]+)\s*((?:!|>|<)?=|<|>)\s*([^\s]+)(.*?)/;
-var COMBINATOR = /(.*?)(and|or)(.*?)/;
 var RandTokenizer = /** @class */ (function () {
     function RandTokenizer() {
     }
@@ -19,19 +18,19 @@ var RandTokenizer = /** @class */ (function () {
     };
     RandTokenizer.generate = function (term, tokens) {
         var buf = null;
-        if (!!(buf = AMOUNT.exec(term))) {
+        if (!!(buf = FUNCTIONS.exec(term))) {
+            // parse function calls
+            var cnt = ++RandTokenizer.count;
+            tokens[cnt] = buf[2] + "(" + RandTokenizer.params(buf[3].trim(), tokens) + ")";
+            return RandTokenizer.generate(buf[1] + "%" + cnt + "%" + buf[4], tokens);
+        }
+        else if (!!(buf = AMOUNT.exec(term))) {
             // parse amount syntax (why ever you would write it that way...)
             var cnt0 = ++RandTokenizer.count;
             var cnt1 = ++RandTokenizer.count;
             tokens[cnt1] = buf[2];
             tokens[cnt0] = "min(%" + cnt1 + "%, " + buf[3] + ")";
             return RandTokenizer.generate(buf[1] + "%" + cnt0 + "%" + buf[4], tokens);
-        }
-        else if (!!(buf = FUNCTIONS.exec(term))) {
-            // parse function calls
-            var cnt = ++RandTokenizer.count;
-            tokens[cnt] = buf[2] + "(" + RandTokenizer.params(buf[3].trim(), tokens) + ")";
-            return RandTokenizer.generate(buf[1] + "%" + cnt + "%" + buf[4], tokens);
         }
         else if (!!(buf = BRACKETS.exec(term))) {
             // parse normal brackets

@@ -3,6 +3,10 @@ import path from "path";
 import RandONC from "./utils/RandONC";
 import RandTokenizer from "./utils/RandTokenizer";
 import LogicBuilder from "./utils/LogicBuilder";
+import Translation from "./utils/Translation";
+
+// TODO load LogicHelpers.json
+// TODO add "function" resolver [e.g. LogicHelpers.json > can_play(song): Ocarina and song]
 
 const inDir  = path.join(__dirname, "../input/data/World");
 const outDir = path.join(__dirname, "../output/data/World");
@@ -44,20 +48,20 @@ function parse(input: string): string {
         let rules: JSONObject = {};
         for (let i in value.locations) {
             let rule = value.locations[i];
-            rule = RandTokenizer.tokenize(rule);
-            rules[i] = rule;
+            rule = transpileRule(rule);
+            rules[Translation.translate(i)] = rule;
         }
         for (let i in value.exits) {
             let rule = value.exits[i];
-            rule = RandTokenizer.tokenize(rule);
-            rules[i] = rule;
+            rule = transpileRule(rule);
+            rules[Translation.translate(i)] = rule;
         }
-        result[value.region_name] = rules;
+        result[Translation.translate(value.region_name)] = rules;
     })
     return JSON.stringify(result, null, 4);
 }
 
-function transpileRule(input: string): any {
+function transpileRule(input: string): JSONLogic {
     let token = RandTokenizer.tokenize(input);
     return LogicBuilder.build(token);
 }

@@ -1,9 +1,9 @@
 import path from "path";
 import JSONFile from "./JSONFile";
 
-const predict_path = path.join(__dirname, "predict.json");
-const translation: { [index: string]: any } = JSONFile.read(path.join(__dirname, "trans.json"), {});
-const values: [string] = JSONFile.read(path.join(__dirname, "values.json"), []);
+const predict_path = path.join(__dirname, "../../translation/predict.json");
+const translation: { [index: string]: any } = JSONFile.read(path.join(__dirname, "../../translation/trans.json"), {});
+const values: [string] = JSONFile.read(path.join(__dirname, "../../translation/values.json"), []);
 const predict = JSONFile.read(predict_path, {});
 
 export default class Translation {
