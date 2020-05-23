@@ -36,13 +36,16 @@ rules.forEach((v: string, k: string) => {
 // parse logic
 HelperParser.parse(fs.readFileSync(inHelperFile).toString());
 fs.readdirSync(inLogicDir).forEach(function(file: string): void {
-    let fname = path.join(inLogicDir, file);
-    LogicParser.parse(fs.readFileSync(fname).toString());
+    let iname = path.join(inLogicDir, file);
+    let oname = path.join(outLogicDir, file);
+    LogicParser.parse(fs.readFileSync(iname).toString());
+    let data = JSON.stringify(LogicParser.get(), null, 4);
+    fs.writeFileSync(oname, data);
 });
 
 // write logic
-let data = JSON.stringify(LogicParser.get(), null, 4);
-fs.writeFileSync(outLogicFile, data);
+//let data = JSON.stringify(LogicParser.get(), null, 4);
+//fs.writeFileSync(outLogicFile, data);
 
 // write helpers
 let helper = JSON.stringify(HelperParser.get(), null, 4);

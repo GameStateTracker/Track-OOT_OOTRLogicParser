@@ -1,11 +1,61 @@
 {
+    "^GS .*": "^location\\..*\\.s_.*",
+
+    "^Deku Tree .*": "^location\\.deku\\.c_.*",
+    "^Deku Tree MQ .*": "^location\\.deku_mq\\.c_.*",
+    "^GS Deku Tree .*": "^location\\.deku\\.s_.*",
+    "^GS Deku Tree MQ .*": "^location\\.deku_mq\\.s_.*",
+
+    "^Dodongos Cavern .*": "location\\.dodongo\\.c_.*",
+    "^Dodongos Cavern MQ .*": "^location\\.dodongo_mq\\.c_.*",
+    "^GS Dodongos Cavern .*": "^location\\.dodongo\\.s_.*",
+    "^GS Dodongos Cavern MQ .*": "^location\\.dodongo_mq\\.s_.*",
+
+    "^Jabu Jabus Belly .*": "location\\.jabujabu\\.c_.*",
+    "^Jabu Jabus Belly MQ .*": "^location\\.jabujabu_mq\\.c_.*",
+    "^GS Jabu Jabu .*": "^location\\.jabujabu\\.s_.*",
+    "^GS Jabu Jabu MQ .*": "^location\\.jabujabu_mq\\.s_.*",
+    
     "^Bottom of the Well .*": "^location\\.well\\.c_.*",
     "^Bottom of the Well MQ .*": "^location\\.well_mq\\.c_.*",
     "^GS Well .*": "^location\\.well\\.s_.*",
     "^GS Well MQ .*": "^location\\.well_mq\\.s_.*",
 
-    "^Deku Tree .*": "^location\\.deku\\.c_.*",
-    "^Deku Tree MQ .*": "^location\\.deku_mq\\.c_.*",
-    "^GS Deku Tree .*": "^location\\.deku\\.s_.*",
-    "^GS Deku Tree MQ .*": "^location\\.deku_mq\\.s_.*"
+    "^Forest Temple .*": "^location\\.temple_forest\\.c_.*",
+    "^Forest Temple MQ .*": "^location\\.temple_forest_mq\\.c_.*",
+    "^GS Forest Temple .*": "^location\\.temple_forest\\.s_.*",
+    "^GS Forest Temple MQ .*": "^location\\.temple_forest_mq\\.s_.*",
+
+    "^Fire Temple .*": "^location\\.temple_fire\\.c_.*",
+    "^Fire Temple MQ .*": "^location\\.temple_fire_mq\\.c_.*",
+    "^GS Fire Temple .*": "^location\\.temple_fire\\.s_.*",
+    "^GS Fire Temple MQ .*": "^location\\.temple_fire_mq\\.s_.*",
+
+    "^Water Temple .*": "^location\\.temple_water\\.c_.*",
+    "^Water Temple MQ .*": "^location\\.temple_water_mq\\.c_.*",
+    "^GS Water Temple .*": "^location\\.temple_water\\.s_.*",
+    "^GS Water Temple MQ .*": "^location\\.temple_water_mq\\.s_.*",
+
+    "^Shadow Temple .*": "^location\\.temple_shadow\\.c_.*",
+    "^Shadow Temple MQ .*": "^location\\.temple_shadow_mq\\.c_.*",
+    "^GS Shadow Temple .*": "^location\\.temple_shadow\\.s_.*",
+    "^GS Shadow Temple MQ .*": "^location\\.temple_shadow_mq\\.s_.*",
+
+    "^Spirit Temple .*": "^location\\.temple_spirit\\.c_.*",
+    "^Spirit Temple MQ .*": "^location\\.temple_spirit_mq\\.c_.*",
+    "^GS Spirit Temple .*": "^location\\.temple_spirit\\.s_.*",
+    "^GS Spirit Temple MQ .*": "^location\\.temple_spirit_mq\\.s_.*",
+
+    "^Ice Cavern .*": "^location\\.ice_cavern\\.c_.*",
+    "^Ice Cavern MQ .*": "^location\\.ice_cavern_mq\\.c_.*",
+    "^GS Ice Cavern .*": "^location\\.ice_cavern\\.s_.*",
+    "^GS Ice Cavern MQ .*": "^location\\.ice_cavern_mq\\.s_.*",
+
+    "^Gerudo Training Grounds .*": "^location\\.training_grounds\\.c_.*",
+    "^Gerudo Training Grounds MQ .*": "^location\\.training_grounds_mq\\.c_.*",
+
+    "^Ganons Castle .*": "^location\\.castle_ganon\\.c_.*",
+    "^Ganons Castle MQ .*": "^location\\.castle_ganon_mq\\.c_.*",
+
+    ".*Gossip Stone.*": "^location\\..*\\.g_.*"
 }
