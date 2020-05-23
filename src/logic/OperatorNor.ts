@@ -10,7 +10,7 @@ export default class OperatorNor extends AbstractOperator implements AbstractEle
     public toJSON(): JSONLogic  {
         return {
             type: "nor",
-            el: Array.from(this.children).map(e => e.toJSON())
+            el: this.children.map(e => e.toJSON())
         };
     }
 

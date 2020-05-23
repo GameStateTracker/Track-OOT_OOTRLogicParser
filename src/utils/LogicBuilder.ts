@@ -4,11 +4,16 @@ import LiteralTrue from "../logic/LiteralTrue";
 import LiteralValue from "../logic/LiteralValue";
 import LiteralState from "../logic/LiteralState";
 import OperatorAnd from "../logic/OperatorAnd";
+import OperatorNand from "../logic/OperatorNand";
 import OperatorOr from "../logic/OperatorOr";
+import OperatorNor from "../logic/OperatorNor";
+import OperatorXor from "../logic/OperatorXor";
+import OperatorXnor from "../logic/OperatorXnor";
 import OperatorNot from "../logic/OperatorNot";
 import OperatorMin from "../logic/OperatorMin";
+import OperatorMax from "../logic/OperatorMax";
 
-
+import LogicFunction from "../logic/LogicFunction";
 
 export default abstract class LogicBuilder {
 
@@ -19,27 +24,11 @@ export default abstract class LogicBuilder {
     }
 
     private static resolveToken(current: string, token: string[]): AbstractElement {
-        if (current.startsWith("min(")) {
-            let [ch, value] = current.slice(4, -1).split(", ");
-            let el = new OperatorMin(parseInt(value) || 0);
-            if (ch.startsWith("%")) {
-                let next = token[parseInt(ch.slice(1, -1))];
-                el.append(LogicBuilder.resolveToken(next, token));
-            } else {
-                el.append(LogicBuilder.resolveToken(ch, token));
-            }
-            return el;
-        }
         if (current.indexOf(" and ") >= 0) {
             let children = current.split(" and ");
             let el = new OperatorAnd();
             for (let ch of children) {
-                if (ch.startsWith("%")) {
-                    let next = token[parseInt(ch.slice(1, -1))];
-                    el.append(LogicBuilder.resolveToken(next, token));
-                } else {
-                    el.append(LogicBuilder.resolveToken(ch, token));
-                }
+                el.append(LogicBuilder.resolveToken(ch, token));
             }
             return el;
         }
@@ -47,14 +36,28 @@ export default abstract class LogicBuilder {
             let children = current.split(" or ");
             let el = new OperatorOr();
             for (let ch of children) {
-                if (ch.startsWith("%")) {
-                    let next = token[parseInt(ch.slice(1, -1))];
-                    el.append(LogicBuilder.resolveToken(next, token));
-                } else {
-                    el.append(LogicBuilder.resolveToken(ch, token));
-                }
+                el.append(LogicBuilder.resolveToken(ch, token));
             }
             return el;
+        }
+        if (current.startsWith("min(")) {
+            let [ch, value] = current.slice(4, -1).split(", ");
+            let el = new OperatorMin(parseInt(value) || 0);
+            el.append(LogicBuilder.resolveToken(ch, token));
+            return el;
+        }
+        if (current.indexOf("(") >= 0) {
+            let name = current.slice(0, current.indexOf("("));
+            let params = current.slice(current.indexOf("(") + 1, -1).split(", ");
+            let el = new LogicFunction(name);
+            for (let ch of params) {
+                el.append(LogicBuilder.resolveToken(ch, token));
+            }
+            return el;
+        }
+        if (current.startsWith("%") && current.endsWith("%")) {
+            let next = token[parseInt(current.slice(1, -1))];
+            return LogicBuilder.resolveToken(next, token);
         }
 
 

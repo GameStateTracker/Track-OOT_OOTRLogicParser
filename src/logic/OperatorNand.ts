@@ -10,7 +10,7 @@ export default class OperatorNand extends AbstractOperator implements AbstractEl
     public toJSON(): JSONLogic  {
         return {
             type: "nand",
-            el: Array.from(this.children).map(e => e.toJSON())
+            el: this.children.map(e => e.toJSON())
         };
     }
 }

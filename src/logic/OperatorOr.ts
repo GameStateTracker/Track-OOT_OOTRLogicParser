@@ -10,7 +10,7 @@ export default class OperatorOr extends AbstractOperator implements AbstractElem
     public toJSON(): JSONLogic  {
         return {
             type: "or",
-            el: Array.from(this.children).map(e => e.toJSON())
+            el: this.children.map(e => e.toJSON())
         };
     }
 

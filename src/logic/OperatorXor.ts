@@ -10,7 +10,7 @@ export default class OperatorXor extends AbstractOperator implements AbstractEle
     public toJSON(): JSONLogic  {
         return {
             type: "xor",
-            el: Array.from(this.children).slice(0,2).map(e => e.toJSON())
+            el: this.children.map(e => e.toJSON())
         };
     }
 

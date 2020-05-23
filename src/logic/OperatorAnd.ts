@@ -10,7 +10,7 @@ export default class OperatorAnd extends AbstractOperator implements AbstractLit
     public toJSON(): JSONLogic  {
         return {
             type: "and",
-            el: Array.from(this.children).map(e => e.toJSON())
+            el: this.children.map(e => e.toJSON())
         };
     }
 
