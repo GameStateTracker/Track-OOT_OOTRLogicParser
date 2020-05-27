@@ -4,25 +4,19 @@ import JSONFile from "./utils/JSONFile";
 import Translation from "./utils/Translation";
 import HelperParser from "./utils/parser/HelperParser";
 import LogicParser from "./utils/parser/LogicParser";
+import LogicGenerator from "./utils/parser/LogicGenerator";
 
 // TODO load LogicHelpers.json
 // TODO add "function" resolver [e.g. LogicHelpers.json > can_play(song): Ocarina and song]
 
 const inHelperFile  = path.join(__dirname, "../input/data/LogicHelpers.json");
-const outHelperFile  = path.join(__dirname, "../output/data/LogicHelpers.json");
 const inLogicDir  = path.join(__dirname, "../input/data/World");
-const outLogicDir  = path.join(__dirname, "../output/data/World");
 const outLogicFile = path.join(__dirname, "../output/data/Logic.json");
 
 const transRulesFile = path.join(__dirname, "../translation/rules.json");
 
 if (!fs.existsSync(inLogicDir)) {
     fs.mkdirSync(inLogicDir, {
-        recursive: true
-    });
-}
-if (!fs.existsSync(outLogicDir)) {
-    fs.mkdirSync(outLogicFile, {
         recursive: true
     });
 }
@@ -37,16 +31,9 @@ rules.forEach((v: string, k: string) => {
 HelperParser.parse(fs.readFileSync(inHelperFile).toString());
 fs.readdirSync(inLogicDir).forEach(function(file: string): void {
     let iname = path.join(inLogicDir, file);
-    let oname = path.join(outLogicDir, file);
     LogicParser.parse(fs.readFileSync(iname).toString());
-    let data = JSON.stringify(LogicParser.get(), null, 4);
-    fs.writeFileSync(oname, data);
 });
 
 // write logic
-//let data = JSON.stringify(LogicParser.get(), null, 4);
-//fs.writeFileSync(outLogicFile, data);
-
-// write helpers
-let helper = JSON.stringify(HelperParser.get(), null, 4);
-fs.writeFileSync(outHelperFile, helper);
+let helper = JSON.stringify(LogicGenerator.generate(), null, 4);
+fs.writeFileSync(outLogicFile, helper);

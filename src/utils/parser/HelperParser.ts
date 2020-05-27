@@ -1,7 +1,7 @@
 import RandONC from "../RandONC";
 import RandTokenizer from "../RandTokenizer";
 import LogicBuilder from "../LogicBuilder";
-import Translation from "../Translation";
+import LogicGenerator from "./LogicGenerator";
 
 export default abstract class HelperParser {
 
@@ -10,11 +10,15 @@ export default abstract class HelperParser {
     public static parse(input: string): void {
         let helpers = <JSONMap> RandONC.parse(input);
         for (let i in helpers) {
-            if (i.indexOf("(") > 0) {
+            let pos = i.indexOf("(");
+            if (pos > 0) {
                 // TODO generate function helpers
-                HelperParser.rules[i] = HelperParser.transpile(<string> helpers[i]);
+                // functions need to geenerate a "mixin" for each different parameters they are called with
+                let fname = i.slice(0, pos - 1);
+                let params = i.slice(pos + 1, -1).split(", ");
+                LogicGenerator.addFunction(i.slice(pos + 1, -1), HelperParser.transpileFunction(<string> helpers[i], params));
             } else {
-                HelperParser.rules[i] = HelperParser.transpile(<string> helpers[i]);
+                LogicGenerator.addMixin(i, HelperParser.transpile(<string> helpers[i]));
             }
         }
     }
@@ -23,6 +27,14 @@ export default abstract class HelperParser {
         let rules = HelperParser.rules;
         HelperParser.rules = {};
         return rules;
+    }
+
+    private static transpileFunction(input: string, params: string[]): JSONFunction {
+        let token = RandTokenizer.tokenize(input);
+        return {
+            params: params,
+            logic: LogicBuilder.build(token)
+        };
     }
 
     private static transpile(input: string): JSONLogic {
