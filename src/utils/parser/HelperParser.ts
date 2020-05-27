@@ -14,9 +14,9 @@ export default abstract class HelperParser {
             if (pos > 0) {
                 // TODO generate function helpers
                 // functions need to geenerate a "mixin" for each different parameters they are called with
-                let fname = i.slice(0, pos - 1);
+                let fname = i.slice(0, pos);
                 let params = i.slice(pos + 1, -1).split(", ");
-                LogicGenerator.addFunction(i.slice(pos + 1, -1), HelperParser.transpileFunction(<string> helpers[i], params));
+                LogicGenerator.addFunction(fname, HelperParser.transpileFunction(<string> helpers[i], params));
             } else {
                 LogicGenerator.addMixin(i, HelperParser.transpile(<string> helpers[i]));
             }
