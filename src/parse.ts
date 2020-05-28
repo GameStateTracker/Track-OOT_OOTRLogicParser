@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { execSync } from "child_process";
 import JSONFile from "./utils/JSONFile";
 import Translation from "./utils/Translation";
 import HelperParser from "./parser/HelperParser";
@@ -11,12 +12,17 @@ import LogicGenerator from "./parser/LogicGenerator";
 
 const inHelperFile  = path.join(__dirname, "../input/data/LogicHelpers.json");
 const inLogicDir  = path.join(__dirname, "../input/data/World");
-const outLogicFile = path.join(__dirname, "../output/Logic.json");
+const outputDir = path.join(__dirname, "../output/");
 
 const transRulesFile = path.join(__dirname, "../translation/rules.json");
 
 if (!fs.existsSync(inLogicDir)) {
-    fs.mkdirSync(inLogicDir, {
+    execSync('git clone "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "input"');
+} else {
+    execSync('cd input && git pull');
+}
+if (!fs.existsSync(outputDir)) {
+    fs.mkdirSync(outputDir, {
         recursive: true
     });
 }
@@ -35,5 +41,5 @@ fs.readdirSync(inLogicDir).forEach(function(file: string): void {
 });
 
 // write logic
-let helper = JSON.stringify(LogicGenerator.generate(), null, 4);
-fs.writeFileSync(outLogicFile, helper);
+let logic = JSON.stringify(LogicGenerator.generate(), null, 4);
+fs.writeFileSync(`${outputDir}/Logic.json`, logic);

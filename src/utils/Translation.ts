@@ -29,11 +29,8 @@ export default abstract class Translation {
 
     public static getOverride(value: string): JSONCObject | void {
         value = value.replace(/ /g, "_").replace(/^'|'$/, "");
-        console.log(value);
         if (overrides[value] != null) {
             let res = overrides[value];
-            console.log(res);
-            console.log("----------------------------");
             return res;
         }
     }
