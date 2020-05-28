@@ -1,12 +1,15 @@
 import path from "path";
 import JSONFile from "./JSONFile";
+import JSONCFile from "./JSONCFile";
 
 const predict_path = path.join(__dirname, "../../translation/predict.json");
 const unpredict_path = path.join(__dirname, "../../translation/unpredict.json");
-const translation: { [index: string]: any } = JSONFile.read(path.join(__dirname, "../../translation/trans.json"), {});
-const values: [string] = JSONFile.read(path.join(__dirname, "../../translation/values.json"), []);
-const predict = JSONFile.read(predict_path, {});
-const unpredict = JSONFile.read(unpredict_path, []);
+const translation: JSONCMap = <JSONCMap> JSONCFile.read(path.join(__dirname, "../../translation/trans.jsonc"), {});
+const values: string[] = <string[]> JSONFile.read(path.join(__dirname, "../../translation/values.json"), []);
+const predict: {[index: string]: string} = {}
+const unpredict: string[] = <string[]> JSONFile.read(unpredict_path, []);
+
+const overrides: JSONCMap = <JSONCMap> JSONCFile.read(path.join(__dirname, "../../translation/overrides.jsonc"), {});
 
 export default abstract class Translation {
 
@@ -16,24 +19,36 @@ export default abstract class Translation {
         Translation.rules.set(matches, expects);
     }
 
-    public static translate(value: string): string {
+    public static translateName(value: string, expects?: RegExp): string {
         if (translation[value] != null) {
-            return translation[value];
+            return <string> translation[value];
         }
 
-        return Translation.predict(value);
+        return Translation.predict(value, expects);
     }
 
-    private static predict(value: string): string {
+    public static getOverride(value: string): JSONCObject | void {
+        value = value.replace(/ /g, "_").replace(/^'|'$/, "");
+        console.log(value);
+        if (overrides[value] != null) {
+            let res = overrides[value];
+            console.log(res);
+            console.log("----------------------------");
+            return res;
+        }
+    }
+
+    private static predict(value: string, expects?: RegExp): string {
         let results: { [index: string]: number } = {};
-        let rule = null;
-        Translation.rules.forEach((v, k) => {
-            if (value.match(k)) {
-                rule = v;
-            }
-        });
+        if (expects == null) {
+            Translation.rules.forEach((v, k) => {
+                if (value.match(k)) {
+                    expects = v;
+                }
+            });
+        }
         for (let i of values) {
-            if (rule != null && !i.match(rule)) {
+            if (expects != null && !i.match(expects)) {
                 continue;
             }
             results[i] = calculateLevDistance(value, i);

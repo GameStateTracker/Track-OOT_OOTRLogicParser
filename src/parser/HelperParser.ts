@@ -1,6 +1,6 @@
-import RandONC from "../RandONC";
-import RandTokenizer from "../RandTokenizer";
-import LogicBuilder from "../LogicBuilder";
+import RandONC from "../utils/RandONC";
+import RandTokenizer from "../utils/RandTokenizer";
+import LogicBuilder from "../utils/LogicBuilder";
 import LogicGenerator from "./LogicGenerator";
 
 export default abstract class HelperParser {
@@ -30,16 +30,22 @@ export default abstract class HelperParser {
     }
 
     private static transpileFunction(input: string, params: string[]): JSONFunction {
+        //console.log(input);
         let token = RandTokenizer.tokenize(input);
+        //console.log(token);
+        let logic = LogicBuilder.build(token);
+        //console.log(logic);
+        //console.log("----------------------------");
         return {
             params: params,
-            logic: LogicBuilder.build(token)
+            logic: logic
         };
     }
 
     private static transpile(input: string): JSONLogic {
         let token = RandTokenizer.tokenize(input);
-        return LogicBuilder.build(token);
+        let logic = LogicBuilder.build(token);
+        return logic;
     }
 
 }

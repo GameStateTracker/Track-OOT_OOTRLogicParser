@@ -1,0 +1,338 @@
+{
+    // items
+    "Bow": {
+        "type": "value",
+        "el": "item.bow"
+    },
+    "Progressive_Hookshot": {
+        "type": "value",
+        "el": "item.hookshot"
+    },
+    "Hookshot": {
+        "type": "value",
+        "el": "item.hookshot"
+    },
+    "Longshot": {
+        "type": "min",
+        "el": {
+            "type": "value",
+            "el": "item.hookshot"
+        },
+        "value": 2
+    },
+    "Hammer": {
+        "type": "value",
+        "el": "item.hammer"
+    },
+    //"item.stick",
+    //"item.nut",
+    "Slingshot": {
+        "type": "value",
+        "el": "item.slingshot"
+    },
+    "Boomerang": {
+        "type": "value",
+        "el": "item.boomerang"
+    },
+    "Bomb_Bag": {
+        "type": "value",
+        "el": "item.bombs"
+    },
+    "Bombs": {
+        "type": "value",
+        "el": "item.bombs"
+    },
+    "Bombchus": {
+        "type": "value",
+        "el": "item.bombchu"
+    },
+    "Lens_of_Truth": {
+        "type": "value",
+        "el": "item.lens"
+    },
+    "Dins_Fire": {
+        "type": "value",
+        "el": "item.magic_din"
+    },
+    "Farores_Wind": {
+        "type": "value",
+        "el": "item.magic_farore"
+    },
+    "Nayrus_Love": {
+        "type": "value",
+        "el": "item.magic_nayru"
+    },
+    "Fire_Arrows": {
+        "type": "value",
+        "el": "item.arrow_fire"
+    },
+    "Ice_Arrows": {
+        "type": "value",
+        "el": "item.arrow_ice"
+    },
+    "Light_Arrows": {
+        "type": "value",
+        "el": "item.arrow_light"
+    },
+    "Ice_Trap": {
+        "type": "value",
+        "el": "item.ice_trap"
+    },
+    "Triforce_Piece": {
+        "type": "value",
+        "el": "item.triforce_piece"
+    },
+    "Arrows": {
+        "type": "value",
+        "el": "item.arrows"
+    },
+    "Ocarina": {
+        "type": "value",
+        "el": "item.ocarina"
+    },
+    //"item.bottle",
+    "Progressive_Wallet": {
+        "type": "value",
+        "el": "item.wallet"
+    },
+    //"item.bean",
+    "Gold_Skulltula_Token": {
+        "type": "value",
+        "el": "item.skulltula"
+    },
+    //"item.egg",
+    //"item.cojiro",
+    "Kokiri_Sword": {
+        "type": "value",
+        "el": "item.sword_kokiri"
+    },
+    //"item.sword_master",
+    //"item.sword_biggoron",
+    //"item.shield_kokiri",
+    //"item.shield_hylia",
+    "Mirror_Shield": {
+        "type": "value",
+        "el": "item.shield_mirror"
+    },
+    //"item.tunic_forest",
+    "Goron_Tunic": {
+        "type": "value",
+        "el": "item.tunic_fire"
+    },
+    "Zora_Tunic": {
+        "type": "value",
+        "el": "item.tunic_water"
+    },
+    //"item.tunics",
+    //"item.boots_normal",
+    "Iron_Boots": {
+        "type": "value",
+        "el": "item.boots_iron"
+    },
+    "Hover_Boots": {
+        "type": "value",
+        "el": "item.boots_hover"
+    },
+    //"item.boots",
+    "Progressive_Strength_Upgrade": {
+        "type": "value",
+        "el": "item.glove"
+    },
+    "Silver_Gauntlets": {
+        "type": "min",
+        "el": {
+            "type": "value",
+            "el": "item.glove"
+        },
+        "value": 2
+    },
+    "Golden_Gauntlets": {
+        "type": "min",
+        "el": {
+            "type": "value",
+            "el": "item.glove"
+        },
+        "value": 3
+    },
+    "Progressive_Scale": {
+        "type": "value",
+        "el": "item.scale"
+    },
+    "Stone_of_Agony": {
+        "type": "value",
+        "el": "item.stone_of_agony"
+    },
+    "Magic_Meter": {
+        "type": "value",
+        "el": "item.magic_power"
+    },
+    "Bottle_with_Letter": {
+        "type": "value",
+        "el": "item.zora_letter"
+    },
+    "Gerudo_Membership_Card": {
+        "type": "value",
+        "el": "item.membership"
+    },
+    "Zeldas_Lullaby": {
+        "type": "value",
+        "el": "item.song_zelda"
+    },
+    "Eponas_Song": {
+        "type": "value",
+        "el": "item.song_epona"
+    },
+    "Suns_Song": {
+        "type": "value",
+        "el": "item.song_sun"
+    },
+    //"item.song_saria",
+    "Song_of_Time": {
+        "type": "value",
+        "el": "item.song_time"
+    },
+    "Song_of_Storms": {
+        "type": "value",
+        "el": "item.song_storm"
+    },
+    //"item.warp_forest",
+    //"item.warp_fire",
+    //"item.warp_water",
+    //"item.warp_shadow",
+    //"item.warp_spirit",
+    //"item.warp_light",
+    "Kokiri_Emerald": {
+        "type": "value",
+        "el": "item.stone_forest"
+    },
+    "Goron_Ruby": {
+        "type": "value",
+        "el": "item.stone_fire"
+    },
+    "Zora_Sapphire": {
+        "type": "value",
+        "el": "item.stone_water"
+    },
+    "Forest_Medallion": {
+        "type": "value",
+        "el": "item.medallion_forest"
+    },
+    "Fire_Medallion": {
+        "type": "value",
+        "el": "item.medallion_fire"
+    },
+    "Water_Medallion": {
+        "type": "value",
+        "el": "item.medallion_water"
+    },
+    "Spirit_Medallion": {
+        "type": "value",
+        "el": "item.medallion_spirit"
+    },
+    "Shadow_Medallion": {
+        "type": "value",
+        "el": "item.medallion_shadow"
+    },
+    "Light_Medallion": {
+        "type": "value",
+        "el": "item.medallion_light"
+    },
+    "Small_Key_Forest_Temple": {
+        "type": "value",
+        "el": "item.key_small_forest"
+    },
+    "Boss_Key_Forest_Temple": {
+        "type": "value",
+        "el": "item.key_boss_forest"
+    },
+    "Small_Key_Fire_Temple": {
+        "type": "value",
+        "el": "item.key_small_fire"
+    },
+    "Boss_Key_Fire_Temple": {
+        "type": "value",
+        "el": "item.key_boss_fire"
+    },
+    "Small_Key_Water_Temple": {
+        "type": "value",
+        "el": "item.key_small_water"
+    },
+    "Boss_Key_Water_Temple": {
+        "type": "value",
+        "el": "item.key_boss_water"
+    },
+    "Small_Key_Shadow_Temple": {
+        "type": "value",
+        "el": "item.key_small_shadow"
+    },
+    "Boss_Key_Shadow_Temple": {
+        "type": "value",
+        "el": "item.key_boss_shadow"
+    },
+    "Small_Key_Spirit_Temple": {
+        "type": "value",
+        "el": "item.key_small_spirit"
+    },
+    "Boss_Key_Spirit_Temple": {
+        "type": "value",
+        "el": "item.key_boss_spirit"
+    },
+    "Small_Key_Ganons_Castle": {
+        "type": "value",
+        "el": "item.key_small_ganon"
+    },
+    "Boss_Key_Ganons_Castle": {
+        "type": "value",
+        "el": "item.key_boss_ganon"
+    },
+    "Small_Key_Gerudo_Fortress": {
+        "type": "value",
+        "el": "item.key_small_gerudo"
+    },
+    "Small_Key_Gerudo_Training_Grounds": {
+        "type": "value",
+        "el": "item.key_small_training"
+    },
+    "Small_Key_Bottom_of_the_Well": {
+        "type": "value",
+        "el": "item.key_small_well"
+    },
+    //"item.compass_deku",
+    //"item.dungeon_map_deku",
+    //"item.compass_dodongo",
+    //"item.dungeon_map_dodongo",
+    //"item.compass_jabujabu",
+    //"item.dungeon_map_jabujabu",
+    //"item.compass_temple_forest",
+    //"item.dungeon_map_temple_forest",
+    //"item.compass_temple_fire",
+    //"item.dungeon_map_temple_fire",
+    //"item.compass_temple_water",
+    //"item.dungeon_map_temple_water",
+    //"item.compass_temple_shadow",
+    //"item.dungeon_map_temple_shadow",
+    //"item.compass_temple_spirit",
+    //"item.dungeon_map_temple_spirit",
+    //"item.compass_well",
+    //"item.dungeon_map_well",
+    //"item.compass_ice",
+    //"item.dungeon_map_ice",
+    //"item.heart_piece",
+    //"item.heart_container",
+    //"item.heart_double",
+    //"item.sold_out",
+    "Blue_Fire": {
+        "type": "value",
+        "el": "item.blue_fire"
+    },
+    //"item.bugs",
+    //"item.fairy_spirit",
+    //"item.fish",
+    //"item.milk",
+    //"item.poe",
+    //"item.poe_big",
+    //"item.potion_red",
+    //"item.potion_green",
+    //"Blue_Potion": "item.potion_blue",
+    "": ""
+}

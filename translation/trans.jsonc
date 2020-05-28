@@ -206,5 +206,9 @@
     "Desert Grotto Deku Scrub Red Potion": "location.desert.c_colossus_grotto_salesman_1",
     "Desert Grotto Deku Scrub Green Potion": "location.desert.c_colossus_grotto_salesman_2",
     "Valley Grotto Deku Scrub Red Potion": "location.gerudo_valley.c_gerudo_behind_carpenter_tent_grotto_salesman_1",
-    "Valley Grotto Deku Scrub Green Potion": "location.gerudo_valley.c_gerudo_behind_carpenter_tent_grotto_salesman_2"
+    "Valley Grotto Deku Scrub Green Potion": "location.gerudo_valley.c_gerudo_behind_carpenter_tent_grotto_salesman_2",
+
+    // skips
+    "logic_fewer_tunic_requirements": "skip.fewer_tunic",
+    "logic_man_on_roof": "skip.man_on_roof"
 }

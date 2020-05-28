@@ -3,8 +3,10 @@ const AMOUNT = /(.*?)(?:\()([^,()]+),\s*([^,()]+)(?:\))(.*)/;
 const FUNCTIONS = /(.*?)([^()\s]+)\(([^()]+)\)(.*)/;
 const BRACKETS = /(.*?)(?:\()([^,()]+)(?:\))(.*)/;
 // operators
-const NOT = /(.*?)(?:not ([^,()\s]+))(.*)/;
-const COMPARATOR = /(.*?)([^\s]+)\s*((?:!|>|<|=)?=|<|>)\s*([^\s]+)(.*?)/;
+const NOT = /(.*?)(?:not ([^,()\s]+|'[^']+'))(.*)/;
+const COMPARATOR = /(.*?)([^\s]+)\s*((?:!|>|<|=)?=|<|>)\s*([^\s]+|'[^']+')(.*?)/;
+const VALUE = /[^\s]+|'[^']+'/;
+const LITERAL = /%[0-9]+%/;
 
 export default abstract class RandTokenizer {
 
@@ -49,58 +51,58 @@ export default abstract class RandTokenizer {
     }
 
     private static convert(term: string, tokens: string[]): string {
+        if (term.indexOf(" or ") >= 0) {
+            return term.split(" or ").map(t => {
+                if (!t.match(LITERAL)) {
+                    let cnt = ++RandTokenizer.count;
+                    tokens[cnt] = RandTokenizer.convert(t, tokens);
+                    return `%${cnt}%`;
+                }
+                return t;
+            }).join(" or ");
+        }
+        if (term.indexOf(" and ") >= 0) {
+            return term.split(" and ").map(t => {
+                if (!t.match(LITERAL)) {
+                    let cnt = ++RandTokenizer.count;
+                    tokens[cnt] = RandTokenizer.convert(t, tokens);
+                    return `%${cnt}%`;
+                }
+                return t;
+            }).join(" and ");
+        }
         let buf = null;
         if(!!(buf = NOT.exec(term))) {
             let cnt0 = ++RandTokenizer.count;
             if (buf[1] == "" && buf[3] == "") {
-                tokens[cnt0] = buf[2];
-                term = `not %${cnt0}%`;
+                tokens[cnt0] = RandTokenizer.convert(buf[2], tokens);
+                return `not %${cnt0}%`;
             } else {
                 let cnt1 = ++RandTokenizer.count;
                 tokens[cnt0] = `not %${cnt1}%`;
-                tokens[cnt1] = buf[2];
-                term = `${buf[1]}%${cnt0}%${buf[3]}`;
+                tokens[cnt1] = RandTokenizer.convert(buf[2], tokens);
+                return `${buf[1]}%${cnt0}%${buf[3]}`;
             }
         }
         if(!!(buf = COMPARATOR.exec(term))) {
             let cnt0 = ++RandTokenizer.count;
             let cnt1 = ++RandTokenizer.count;
             if (buf[1] == "" && buf[5] == "") {
-                tokens[cnt0] = buf[2];
-                tokens[cnt1] = buf[4];
-                term = `%${cnt0}% ${buf[3]} %${cnt1}%`;
+                tokens[cnt0] = RandTokenizer.convert(buf[2], tokens);
+                tokens[cnt1] = RandTokenizer.convert(buf[4], tokens);
+                return `%${cnt0}% ${buf[3]} %${cnt1}%`;
             } else {
                 let cnt2 = ++RandTokenizer.count;
                 tokens[cnt0] = `%${cnt1}% ${buf[3]} %${cnt2}%`;
-                tokens[cnt1] = buf[2];
-                tokens[cnt2] = buf[4];
-                term = `${buf[1]}%${cnt0}%${buf[5]}`;
+                tokens[cnt1] = RandTokenizer.convert(buf[2], tokens);
+                tokens[cnt2] = RandTokenizer.convert(buf[4], tokens);
+                return `${buf[1]}%${cnt0}%${buf[5]}`;
             }
         }
-        if (term.indexOf(" ") < 0) {
-            return term;
+        if (!term.match(VALUE)) {
+            console.error(`something went wrong at tokenizing term\n${term}\n---`);
         }
-        return term.split(" or ").map(term => {
-            if (term.indexOf(" ") < 0) {
-                if (!term.startsWith("%")) {
-                    let cnt = ++RandTokenizer.count;
-                    tokens[cnt] = term;
-                    return `%${cnt}%`;
-                }
-                return term;
-            }
-            return term.split(" and ").map(term => {
-                if (term.indexOf(" ") < 0) {
-                    if (!term.startsWith("%")) {
-                        let cnt = ++RandTokenizer.count;
-                        tokens[cnt] = term;
-                        return `%${cnt}%`;
-                    }
-                    return term;
-                }
-                return term;
-            }).join(" and ");
-        }).join(" or ");
+        return term;
     }
 
 }

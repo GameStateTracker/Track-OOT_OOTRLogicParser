@@ -2,16 +2,16 @@ import fs from "fs";
 import path from "path";
 import JSONFile from "./utils/JSONFile";
 import Translation from "./utils/Translation";
-import HelperParser from "./utils/parser/HelperParser";
-import LogicParser from "./utils/parser/LogicParser";
-import LogicGenerator from "./utils/parser/LogicGenerator";
+import HelperParser from "./parser/HelperParser";
+import LogicParser from "./parser/LogicParser";
+import LogicGenerator from "./parser/LogicGenerator";
 
 // TODO load LogicHelpers.json
 // TODO add "function" resolver [e.g. LogicHelpers.json > can_play(song): Ocarina and song]
 
 const inHelperFile  = path.join(__dirname, "../input/data/LogicHelpers.json");
 const inLogicDir  = path.join(__dirname, "../input/data/World");
-const outLogicFile = path.join(__dirname, "../output/data/Logic.json");
+const outLogicFile = path.join(__dirname, "../output/Logic.json");
 
 const transRulesFile = path.join(__dirname, "../translation/rules.json");
 

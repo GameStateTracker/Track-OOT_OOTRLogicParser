@@ -1,6 +1,6 @@
-import RandONC from "../RandONC";
-import RandTokenizer from "../RandTokenizer";
-import LogicBuilder from "../LogicBuilder";
+import RandONC from "../utils/RandONC";
+import RandTokenizer from "../utils/RandTokenizer";
+import LogicBuilder from "../utils/LogicBuilder";
 import LogicGenerator from "./LogicGenerator";
 
 export default abstract class LogicParser {

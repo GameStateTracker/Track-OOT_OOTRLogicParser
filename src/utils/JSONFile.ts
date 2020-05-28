@@ -8,7 +8,7 @@ declare global {
 
 export default abstract class JSONFile {
 
-    public static read(filename: string, def: any): any {
+    public static read(filename: string, def: JSONObject): JSONObject {
         if (fs.existsSync(filename)) {
             let data = fs.readFileSync(filename).toString();
             return JSON.parse(data);
@@ -16,7 +16,7 @@ export default abstract class JSONFile {
         return def;
     }
 
-    public static write(filename: string, data: any) {
+    public static write(filename: string, data: JSONObject) {
         fs.writeFileSync(filename, JSON.stringify(data, null, 4));
     }
 

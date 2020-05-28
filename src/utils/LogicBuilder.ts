@@ -40,6 +40,22 @@ export default abstract class LogicBuilder {
             }
             return el;
         }
+        if (current.indexOf(" == ") >= 0) {
+            let [ref, value] = current.split(" == ");
+            ref = token[parseInt(ref.slice(1, -1))];
+            value = token[parseInt(value.slice(1, -1))];
+            let el = new LiteralState(ref, value);
+            return el;
+        }
+        if (current.indexOf(" != ") >= 0) {
+            let [ref, value] = current.split(" != ");
+            ref = token[parseInt(ref.slice(1, -1))];
+            value = token[parseInt(value.slice(1, -1))];
+            let not = new OperatorNot();
+            let el = new LiteralState(ref, value);
+            not.append(el);
+            return not;
+        }
         if (current.startsWith("min(")) {
             let [ch, value] = current.slice(4, -1).split(", ");
             let el = new OperatorMin(parseInt(value) || 0);

@@ -1,5 +1,5 @@
 
-import Translation from "../Translation";
+import Translation from "../utils/Translation";
 
 declare global {
     type JSONLogic = {
@@ -81,7 +81,7 @@ export default abstract class LogicGenerator {
                 reg[LogicGenerator.translateRegionName(node)] = LogicGenerator.postCalcutate(<JSONLogic> LogicGenerator.exits.get(node));
             }
             for (let node of data.locations) {
-                reg[Translation.translate(node)] = LogicGenerator.postCalcutate(<JSONLogic> LogicGenerator.locations.get(node));
+                reg[Translation.translateName(node)] = LogicGenerator.postCalcutate(<JSONLogic> LogicGenerator.locations.get(node));
             }
             res.edges[LogicGenerator.translateRegionName(region)] = reg;
         }
@@ -89,7 +89,8 @@ export default abstract class LogicGenerator {
             res.mixins[LogicGenerator.translateMixinName(key)] = LogicGenerator.postCalcutate(value);
         });
         LogicGenerator.functions.forEach((value, key) => {
-            res.mixins[LogicGenerator.translateFunctionName(key)] = LogicGenerator.postCalcutate(value.logic);
+            //res.mixins[LogicGenerator.translateFunctionName(key)] = LogicGenerator.postCalcutate(value.logic);
+            res.mixins[LogicGenerator.translateFunctionName(key)] = value.logic;
         });
         return res;
     }
@@ -97,6 +98,10 @@ export default abstract class LogicGenerator {
     private static postCalcutate(input: JSONLogic): JSONLogic  {
         switch(input.type) {
             case "value":
+                let res = <JSONLogic> Translation.getOverride(<string> input.el);
+                if (res != null) {
+                    return res;
+                }
                 if (LogicGenerator.mixin.has(<string> input.el)) {
                     return {
                         type: "value",
@@ -104,7 +109,16 @@ export default abstract class LogicGenerator {
                     };
                 }
                 return input;
+            case "state":
+                return {
+                    type: "state",
+                    el: Translation.translateName(<string> input.el, /^(option\.|skip\.)/),
+                    value: (<string> input.value).replace(/^'|'$/g, "")
+                };
             case "function":
+                if (input.value == "at" || input.value == "here") {
+                    return input;
+                }
                 return {
                     type: "value",
                     el: <string> LogicGenerator.translateFunctionName(<string> input.value)
@@ -125,9 +139,22 @@ export default abstract class LogicGenerator {
                 };
             case "min":
             case "max":
+                    let buffer = parseInt(<string> input.value);
+                    if (isNaN(buffer)) {
+                        return {
+                            type: input.type == "min" ? "lte" : "gte",
+                            el: LogicGenerator.postCalcutate(<JSONLogic> input.el),
+                            value: (<string> input.value).replace(/^'|'$/g, "")
+                        };
+                    }
+                    return {
+                        type: input.type,
+                        el: LogicGenerator.postCalcutate(<JSONLogic> input.el),
+                        value: buffer
+                    };
             case "not":
                 return {
-                    type: input.type,
+                    type: "state",
                     el: LogicGenerator.postCalcutate(<JSONLogic> input.el)
                 };
             default:
