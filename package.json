@@ -10,14 +10,12 @@
   },
   "homepage": "https://bitbucket.org/zidargs/logicparser/src",
   "main": "parse.js",
+  "type": "module",
   "scripts": {
-    "parse": "tsc && node build/parse.js",
-    "tsc": "tsc"
+    "parse": "node src/parse.js"
   },
   "dependencies": {
-    "typescript": "^3.9.2"
   },
   "devDependencies": {
-    "@types/node": "^14.0.1"
   }
 }

@@ -1,31 +1,24 @@
 import fs from "fs";
 
-declare global {
-    type JSONCObject = string | number | boolean | JSONCArray | JSONCMap;
-    type JSONCArray = JSONCObject[];
-    type JSONCMap = { [index: string]: JSONCObject };
-}
+class JSONCFile {
 
-export default abstract class JSONCFile {
-
-    public static read(filename: string, def: JSONCObject): JSONCObject {
+    read(filename, def) {
         if (fs.existsSync(filename)) {
             let data = fs.readFileSync(filename).toString();
-            return JSONCFile.parse(data);
+            return this.parse(data);
         }
         return def;
     }
 
-    public static write(filename: string, data: any) {
+    write(filename, data) {
         fs.writeFileSync(filename, JSON.stringify(data, null, 4));
     }
 
-    private static parse(input: string): JSONCObject {
+    parse(input) {
         let buffer = removeComments(input);
         try {
             return JSON.parse(buffer);
         } catch(e) {
-            console.log(buffer);
             let pos = parseInt(e.message.slice(e.message.lastIndexOf(" ") + 1));
             let ref = input.split(LNBR_SEQ);
             let lines = buffer.split(LNBR_SEQ);
@@ -45,41 +38,34 @@ export default abstract class JSONCFile {
 
 }
 
-type StateBuffer = {
-    lines: string[],
-    linesRes: string[],
-    line: string[],
-    lineRes: string[]
-};
-
 const LNBR_SEQ = /(?:\r\n|\n|\r)/g;
 const STRING = /("(?:[^"\\]|\\.)*")/;
 const ALL_BUT_NL = /[^\r\n]/g;
 const COMMENT_START = /(\/(?:\*|\/))/g;
 
-function splitFirst(input: string, delimiter: string | RegExp): string[] {
+function splitFirst(input, delimiter) {
     let spl = input.split(delimiter);
     if (spl.length > 1) {
         return [
-            <string> spl.shift(),
+            spl.shift(),
             spl.join("")
         ];
     } else {
         return [
-            <string> spl.shift()
+            spl.shift()
         ];
     }
 }
 
-function removeComments(input: string): string {
-    let state: StateBuffer = {
+function removeComments(input) {
+    let state = {
         lines: input.split(LNBR_SEQ),
         linesRes: [],
         line: [],
         lineRes: []
     };
     while (!!state.lines.length) {
-        let line = <string> state.lines.shift();
+        let line = state.lines.shift();
         if (line.indexOf("//") < 0 && line.indexOf("/*") < 0) {
             state.linesRes.push(line);
         } else {
@@ -92,9 +78,9 @@ function removeComments(input: string): string {
     return state.linesRes.join("\n");
 }
 
-function removeCommentsLine(state: StateBuffer) {
+function removeCommentsLine(state) {
     while (!!state.line.length) {
-        let act = <string> state.line.shift();
+        let act = state.line.shift();
         if (act.startsWith('"')) {
             state.lineRes.push(act);
         } else if (act.indexOf("//") < 0 && act.indexOf("/*") < 0) {
@@ -105,7 +91,7 @@ function removeCommentsLine(state: StateBuffer) {
     }
 }
 
-function removeCommentsStart(state: StateBuffer, act: string) {
+function removeCommentsStart(state, act) {
     let spls = splitFirst(act, COMMENT_START);
     state.lineRes.push(spls[0]);
     if (spls[1].startsWith("//")) {
@@ -126,7 +112,7 @@ function removeCommentsStart(state: StateBuffer, act: string) {
                 state.line.unshift(remaining[1]);
             } else {
                 while (!!state.lines.length) {
-                    let line = <string> state.lines.shift();
+                    let line = state.lines.shift();
                     if (line.indexOf("*/") < 0) {
                         state.linesRes.push(line.replace(ALL_BUT_NL, " ") + "  ");
                     } else {
@@ -140,3 +126,5 @@ function removeCommentsStart(state: StateBuffer, act: string) {
         }
     }
 }
+
+export default new JSONCFile();
