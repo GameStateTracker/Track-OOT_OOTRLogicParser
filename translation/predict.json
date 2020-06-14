@@ -726,5 +726,6 @@
     "hints": "skip.gtg_clip",
     "gerudo_fortress": "option.gerudo_fortress_open",
     "bridge": "skip.navi_dive",
-    "lacs_condition": "option.cowsanity"
+    "for_age": "skip.zora_hover",
+    "item": "skip.gtg_clip"
 }

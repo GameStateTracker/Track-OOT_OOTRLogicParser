@@ -241,6 +241,9 @@
 
     "Ganons Tower Boss Key Chest": "location.castle_ganon.c_boss_key",
 
+    // options
+    "lacs_condition": "option.light_arrow_cutscene",
+
     // skips
     "logic_fewer_tunic_requirements": "skip.fewer_tunic",
     "logic_man_on_roof": "skip.man_on_roof"

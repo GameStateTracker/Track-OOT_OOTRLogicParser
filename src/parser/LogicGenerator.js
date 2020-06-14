@@ -71,7 +71,8 @@ class LogicGenerator {
             //res.mixins[translateFunctionName(key)] = postCalcutate(value.logic);
             res.mixins[translateFunctionName(key)] = {
                 category: "function",
-                logic: value.logic
+                params: value.params,
+                logic: postCalcutate(value.logic)
             };
         });
         return res;
