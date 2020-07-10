@@ -31,16 +31,9 @@ class HelperParser {
 }
 
 function transpileFunction(input, params) {
-    //console.log(input);
     let token = RandTokenizer.tokenize(input);
-    //console.log(token);
     let logic = LogicBuilder.build(token);
-    //console.log(logic);
-    //console.log("----------------------------");
-    return {
-        params,
-        logic
-    };
+    return logic;
 }
 
 function transpile(input) {

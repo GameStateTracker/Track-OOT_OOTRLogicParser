@@ -1,0 +1,30 @@
+{
+    "lacs_condition": {
+        "name": "option.light_arrow_cutscene",
+        "values": {
+            "vanilla": "vanilla",
+            "stones": "stones",
+            "medallions": "medallions",
+            "dungeons": "dungeons"
+        }
+    },
+    "damage_multiplier": {
+        "name": "option.damage_multiplier",
+        "values": {
+            "ohko": "ohko",
+            "quadruple": "quadruple"
+        }
+    },
+    "shuffle_scrubs": {
+        "name": "option.scrubsanity",
+        "values": {
+            "off": "off"
+        }
+    },
+    "zora_fountain": {
+        "name": "option.doors_open_zora",
+        "values": {
+            "open": "doors_open_zora_both"
+        }
+    }
+}

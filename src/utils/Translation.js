@@ -4,14 +4,15 @@ import JSONCFile from "./JSONCFile.js";
 
 const __dirname = path.resolve();
 
-const predict_path = path.join(__dirname, "/translation/predict.json");
+const predict_path = path.join(__dirname, "/translation/predicted.json");
 const unpredict_path = path.join(__dirname, "/translation/unpredict.json");
 const translation = JSONCFile.read(path.join(__dirname, "/translation/trans.jsonc"), {});
-const values = JSONFile.read(path.join(__dirname, "/translation/values.json"), []);
+const predict_values = JSONFile.read(path.join(__dirname, "/translation/predict_values.json"), []);
 const predict = {}
 const unpredict = JSONFile.read(unpredict_path, []);
 
-const overrides = JSONCFile.read(path.join(__dirname, "/translation/overrides.jsonc"), {});
+const values = JSONCFile.read(path.join(__dirname, "/translation/values.jsonc"), {});
+const states = JSONCFile.read(path.join(__dirname, "/translation/states.jsonc"), {});
 
 let rules = new Map();
 
@@ -29,10 +30,18 @@ class Translation {
         return predictTranslation(value, expects);
     }
 
-    getOverride(value) {
+    getValueName(value) {
         value = value.replace(/ /g, "_").replace(/^'|'$/, "");
-        if (overrides[value] != null) {
-            let res = overrides[value];
+        if (values[value] != null) {
+            let res = values[value];
+            return res;
+        }
+    }
+
+    getStateConfig(value) {
+        value = value.replace(/ /g, "_").replace(/^'|'$/, "");
+        if (states[value] != null) {
+            let res = states[value];
             return res;
         }
     }
@@ -48,7 +57,7 @@ function predictTranslation(value, expects) {
             }
         });
     }
-    for (let i of values) {
+    for (let i of predict_values) {
         if (expects != null && !i.match(expects)) {
             continue;
         }

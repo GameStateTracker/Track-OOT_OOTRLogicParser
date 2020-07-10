@@ -1,0 +1,36 @@
+{
+    "mixin.can_become_adult": {
+        "type": "or",
+        "el": [{
+            "type": "state",
+            "el": "option.starting_age",
+            "value": "adult"
+        }, {
+            "type": "at",
+            "node": "region.master_sword_pedestral",
+            "el": [
+                {
+                    "type": "true"
+                }
+            ]
+        }]
+    },
+    "mixin.can_become_child": {
+        "type": "or",
+        "el": [{
+            "type": "state",
+            "el": "option.starting_age",
+            "value": "child"
+        }, {
+            "type": "at",
+            "node": "region.master_sword_pedestral",
+            "el": [
+                {
+                    "type": "true"
+                }
+            ]
+        }]
+    },
+
+    "": ""
+}

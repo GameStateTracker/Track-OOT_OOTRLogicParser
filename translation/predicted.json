@@ -82,7 +82,6 @@
     "Dodongos Cavern GS Alcove Above Stairs": "location.dodongo.c_lobby_salesman",
     "Fire Temple MQ Map Room Side Chest": "location.temple_fire_mq.c_compass",
     "Fire Temple MQ Near Boss Chest": "location.temple_fire_mq.c_boss_key",
-    "damage_multiplier": "skip.gtg_clip",
     "Fire Temple Near Boss Chest": "location.temple_fire.c_boss_key",
     "Fire Temple Flare Dancer Chest": "location.temple_fire.c_near_boss",
     "Fire Temple Boss Key Chest": "location.temple_fire.c_dancer",
@@ -309,7 +308,6 @@
     "LW Deku Scrub Near Deku Theater Left": "location.woods.c_deku_theater_1",
     "LW GS Above Theater": "item.stone_water",
     "LW GS Bean Patch Near Theater": "area.temple_water",
-    "shuffle_scrubs": "skip.lab_hovers",
     "Butterfly Fairy": "item.cojiro",
     "Sheik in Forest": "item.tunic_forest",
     "SFM GS": "item.bow",
@@ -505,7 +503,6 @@
     "ZD Diving Minigame": "item.song_time",
     "ZD Chest": "item.nut",
     "Deliver Ruto's Letter": "item.zora_letter",
-    "zora_fountain": "skip.zora_cucco",
     "ZD King Zora Thawed": "skip.zora_hover",
     "ZD GS Frozen Waterfall": "item.stone_water",
     "ZD Gossip Stone": "location.goron.g_gossip_maze",
@@ -719,13 +716,5 @@
     "Water Temple Cracked Wall Chest": "location.temple_water.c_torches",
     "Water Temple Dragon Chest": "location.temple_water.c_map",
     "Water Temple Central Pillar Chest": "location.temple_water.c_torches",
-    "Water Temple GS Central Pillar": "location.temple_water.c_river",
-    "age": "skip.navi_dive",
-    "logic_rules": "skip.gtg_clip",
-    "open_forest": "option.forest_trial",
-    "hints": "skip.gtg_clip",
-    "gerudo_fortress": "option.gerudo_fortress_open",
-    "bridge": "skip.navi_dive",
-    "for_age": "skip.zora_hover",
-    "item": "skip.gtg_clip"
+    "Water Temple GS Central Pillar": "location.temple_water.c_river"
 }

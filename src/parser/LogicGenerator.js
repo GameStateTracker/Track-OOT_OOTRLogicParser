@@ -1,20 +1,35 @@
 
+import path from "path";
 import Translation from "../utils/Translation.js";
+import JSONCFile from "../utils/JSONCFile.js";
 
-let mixin = new Map();
+const __dirname = path.resolve();
+
+const function_overrides = JSONCFile.read(path.join(__dirname, "/translation/functions.jsonc"), {});
+const mixin_overrides = JSONCFile.read(path.join(__dirname, "/translation/mixin.jsonc"), {});
+
+let mixins = new Map();
 let functions = new Map();
 let exits = new Map();
 let locations = new Map();
 let structure = {};
 
+let used_mixins = new Set();
+let used_functions = new Set();
+
+let written_mixins = new Set();
+let written_functions = new Set();
+
+const unstate = {};
+
 class LogicGenerator {
 
     addMixin(key, value) {
-        mixin.set(key, value);
+        mixins.set(translateMixinName(key), value);
     }
 
     addFunction(key, value) {
-        functions.set(key, value);
+        functions.set(translateFunctionName(key), value);
     }
 
     addExit(region, key, value) {
@@ -40,6 +55,14 @@ class LogicGenerator {
     }
 
     generate()  {
+
+        for (let key in function_overrides) {
+            functions.set(key, function_overrides[key]);
+        }
+        for (let key in mixin_overrides) {
+            mixins.set(key, mixin_overrides[key]);
+        }
+
         let res = {
             edges: {},
             mixins: {}
@@ -61,20 +84,42 @@ class LogicGenerator {
             }
             res.edges[translateRegionName(region)] = reg;
         }
-        mixin.forEach((value, key) => {
-            res.mixins[translateMixinName(key)] = {
-                category: "mixin",
-                logic: postCalcutate(value)
-            };
-        });
-        functions.forEach((value, key) => {
-            //res.mixins[translateFunctionName(key)] = postCalcutate(value.logic);
-            res.mixins[translateFunctionName(key)] = {
-                category: "function",
-                params: value.params,
-                logic: postCalcutate(value.logic)
-            };
-        });
+        while (!!used_mixins.size || !!used_functions.size) {
+            // mixins
+            let mixinArr = Array.from(used_mixins);
+            used_mixins.clear();
+            while (!!mixinArr.length) {
+                let key = mixinArr.pop();
+                if (!written_mixins.has(key)) {
+                    written_mixins.add(key);
+                    let value = mixins.get(key);
+                    //res.mixins[key] = postCalcutate(value);
+                    res.mixins[key] = {
+                        category: "mixin",
+                        logic: postCalcutate(value)
+                    };
+                }
+            }
+            // functions
+            let functionArr = Array.from(used_functions);
+            used_functions.clear();
+            while (!!functionArr.length) {
+                let key = functionArr.pop();
+                if (!written_functions.has(key)) {
+                    written_functions.add(key);
+                    let value = functions.get(key);
+                    //res.mixins[key] = postCalcutate(value);
+                    res.mixins[key] = {
+                        category: "function",
+                        logic: postCalcutate(value)
+                    };
+                }
+            }
+        }
+        
+        
+        console.log(unstate);
+
         return res;
     }
 
@@ -84,11 +129,12 @@ function postCalcutate(input)  {
     let els = [];
     switch(input.type) {
         case "value":
-            let res = Translation.getOverride(input.el);
+            let res = Translation.getValueName(input.el);
             if (res != null) {
                 return res;
             }
-            if (mixin.has(input.el)) {
+            if (mixins.has(input.el)) {
+                used_mixins.add(input.el);
                 return {
                     type: "value",
                     el: translateMixinName(input.el)
@@ -96,15 +142,49 @@ function postCalcutate(input)  {
             }
             return input;
         case "state":
-            return {
-                type: "state",
-                el: Translation.translateName(input.el, /^(option\.|skip\.)/),
-                value: input.value.replace(/^'|'$/g, "")
-            };
+            let stapar = input.value.replace(/^'|'$/g, "");
+            let sta = Translation.getStateConfig(input.el);
+            if (sta == null) {
+                unstate[input.el] = unstate[input.el] || {
+                    name: "",
+                    values: {}
+                };
+                unstate[input.el].values[stapar] = "";
+                return {
+                    type: "state",
+                    el: input.el,
+                    value: stapar
+                };
+            } else {
+                return {
+                    type: "state",
+                    el: sta.name,
+                    value: sta.values[stapar]
+                };
+            }
+
+            
         case "function":
+            let param = input.el[0];
+            if (param != null) {
+                param = Translation.getValueName(param.el);
+                if (param != null) {
+                    param = param.el;
+                }
+            }
+            if (param == null) {
+                console.log("-------------------------------------------");
+                console.log(input);
+                console.log(param);
+            }
+            let fnName = translateFunctionName(input.value);
+            if (param != null) {
+                fnName = `${fnName}(${param})`;
+            }
+            used_functions.add(fnName);
             return {
                 type: "value",
-                el: translateFunctionName(input.value)
+                el: fnName
             };
         case "at":
             for (let el of input.el) {
@@ -159,14 +239,17 @@ function postCalcutate(input)  {
 }
 
 function translateRegionName(input) {
+    if (input.startsWith("region.")) return input;
     return `region.${input.toLowerCase().replace(/ /g, "_")}`;
 }
 
 function translateMixinName(input) {
+    if (input.startsWith("mixin.")) return input;
     return `mixin.${input.toLowerCase().replace(/ /g, "_")}`;
 }
 
 function translateFunctionName(input) {
+    if (input.startsWith("function.")) return input;
     return `function.${input.toLowerCase().replace(/ /g, "_")}`;
 }
 

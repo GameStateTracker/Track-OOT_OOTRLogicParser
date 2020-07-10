@@ -16,7 +16,7 @@ const inHelperFile  = path.join(__dirname, "/input/data/LogicHelpers.json");
 const inLogicDir  = path.join(__dirname, "/input/data/World");
 const outputDir = path.join(__dirname, "/output/");
 
-const transRulesFile = path.join(__dirname, "/translation/rules.json");
+const transRulesFile = path.join(__dirname, "/translation/predict_rules.json");
 
 if (!fs.existsSync(inLogicDir)) {
     execSync('git clone "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "input"');

@@ -13,18 +13,17 @@
         "el": "item.hookshot"
     },
     "Longshot": {
-        "type": "min",
-        "el": {
-            "type": "value",
-            "el": "item.hookshot"
-        },
-        "value": 2
+        "type": "value",
+        "el": "mixin.longshot"
     },
-    "Hammer": {
+    "Megaton_Hammer": {
         "type": "value",
         "el": "item.hammer"
     },
-    //"item.stick",
+    "Sticks": {
+        "type": "value",
+        "el": "item.stick"
+    },
     //"item.nut",
     "Slingshot": {
         "type": "value",
@@ -108,7 +107,10 @@
     },
     //"item.sword_master",
     //"item.sword_biggoron",
-    //"item.shield_kokiri",
+    "Deku_Shield": {
+        "type": "value",
+        "el": "item.shield_kokiri"
+    },
     //"item.shield_hylia",
     "Mirror_Shield": {
         "type": "value",
@@ -139,20 +141,12 @@
         "el": "item.glove"
     },
     "Silver_Gauntlets": {
-        "type": "min",
-        "el": {
-            "type": "value",
-            "el": "item.glove"
-        },
-        "value": 2
+        "type": "value",
+        "el": "mixin.silver_gauntlets"
     },
     "Golden_Gauntlets": {
-        "type": "min",
-        "el": {
-            "type": "value",
-            "el": "item.glove"
-        },
-        "value": 3
+        "type": "value",
+        "el": "mixin.golden_gauntlets"
     },
     "Progressive_Scale": {
         "type": "value",
@@ -186,7 +180,10 @@
         "type": "value",
         "el": "item.song_sun"
     },
-    //"item.song_saria",
+    "Sarias_Song": {
+        "type": "value",
+        "el": "item.song_saria"
+    },
     "Song_of_Time": {
         "type": "value",
         "el": "item.song_time"
@@ -201,6 +198,18 @@
     //"item.warp_shadow",
     //"item.warp_spirit",
     //"item.warp_light",
+    "Scarecrow_Song": {
+        "type": "value",
+        "el": "item.song_scarecrow"
+    },
+    "Scarecrow": {
+        "type": "value",
+        "el": "mixin.scarecrow"
+    },
+    "Distant_Scarecrow": {
+        "type": "value",
+        "el": "mixin.distant_scarecrow"
+    },
     "Kokiri_Emerald": {
         "type": "value",
         "el": "item.stone_forest"

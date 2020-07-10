@@ -1,0 +1,464 @@
+{
+    /* normal songs */
+    "function.can_play(item.song_zelda)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.ocarina"
+        }, {
+            "type": "value",
+            "el": "item.song_zelda"
+        }]
+    },
+    "function.can_play(item.song_epona)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.ocarina"
+        }, {
+            "type": "value",
+            "el": "item.song_epona"
+        }]
+    },
+    "function.can_play(item.song_saria)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.ocarina"
+        }, {
+            "type": "value",
+            "el": "item.song_saria"
+        }]
+    },
+    "function.can_play(item.song_sun)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.ocarina"
+        }, {
+            "type": "value",
+            "el": "item.song_sun"
+        }]
+    },
+    "function.can_play(item.song_time)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.ocarina"
+        }, {
+            "type": "value",
+            "el": "item.song_time"
+        }]
+    },
+    "function.can_play(item.song_storm)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.ocarina"
+        }, {
+            "type": "value",
+            "el": "item.song_storm"
+        }]
+    },
+
+    /* warp songs */
+    "function.can_play(item.warp_forest)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.ocarina"
+        }, {
+            "type": "value",
+            "el": "item.warp_forest"
+        }]
+    },
+    "function.can_play(item.warp_fire)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.ocarina"
+        }, {
+            "type": "value",
+            "el": "item.warp_fire"
+        }]
+    },
+    "function.can_play(item.warp_water)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.ocarina"
+        }, {
+            "type": "value",
+            "el": "item.warp_water"
+        }]
+    },
+    "function.can_play(item.warp_shadow)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.ocarina"
+        }, {
+            "type": "value",
+            "el": "item.warp_shadow"
+        }]
+    },
+    "function.can_play(item.warp_spirit)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.ocarina"
+        }, {
+            "type": "value",
+            "el": "item.warp_spirit"
+        }]
+    },
+    "function.can_play(item.warp_light)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.ocarina"
+        }, {
+            "type": "value",
+            "el": "item.warp_light"
+        }]
+    },
+
+    /* extra songs */
+    "function.can_play(item.song_scarecrow)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.ocarina"
+        }, {
+            "type": "value",
+            "el": "item.song_scarecrow"
+        }]
+    },
+
+    /* projectile check */
+    "has_projectile(child)": {
+        "type": "or",
+        "el": [{
+            "type": "value",
+            "el": "mixin.has_explosives"
+        }, {
+            "type": "value",
+            "el": "item.slingshot"
+        }, {
+            "type": "value",
+            "el": "item.boomerang"
+        }]
+    },
+    "has_projectile(adult)": {
+        "type": "or",
+        "el": [{
+            "type": "value",
+            "el": "mixin.has_explosives"
+        }, {
+            "type": "value",
+            "el": "item.bow"
+        }, {
+            "type": "value",
+            "el": "item.hookshot"
+        }]
+    },
+    "has_projectile(both)": {
+        "type": "or",
+        "el": [{
+            "type": "value",
+            "el": "mixin.has_explosives"
+        }, {
+            "type": "and",
+            "el": [{
+                "type": "or",
+                "el": [{
+                    "type": "value",
+                    "el": "item.slingshot"
+                }, {
+                    "type": "value",
+                    "el": "item.boomerang"
+                }]
+            },{
+                "type": "or",
+                "el": [{
+                    "type": "value",
+                    "el": "item.bow"
+                }, {
+                    "type": "value",
+                    "el": "item.hookshot"
+                }]
+            }]
+        }]
+    },
+    "has_projectile(either)": {
+        "type": "or",
+        "el": [{
+            "type": "value",
+            "el": "mixin.has_explosives"
+        }, {
+            "type": "value",
+            "el": "item.slingshot"
+        }, {
+            "type": "value",
+            "el": "item.boomerang"
+        }, {
+            "type": "value",
+            "el": "item.bow"
+        }, {
+            "type": "value",
+            "el": "item.hookshot"
+        }]
+    },
+
+    /* can use magic arrows */
+    "function.can_use(item.arrow_fire)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.arrow_fire"
+        }, {
+            "type": "value",
+            "el": "item.bow"
+        }, {
+            "type": "value",
+            "el": "item.magic_power"
+        }, {
+            "type": "value",
+            "el": "mixin.can_become_adult"
+        }]
+    },
+    "function.can_use(item.arrow_light)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.arrow_light"
+        }, {
+            "type": "value",
+            "el": "item.bow"
+        }, {
+            "type": "value",
+            "el": "item.magic_power"
+        }, {
+            "type": "value",
+            "el": "mixin.can_become_adult"
+        }]
+    },
+
+    /* can use magic item */
+    "function.can_use(item.lens)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.lens"
+        }, {
+            "type": "value",
+            "el": "item.magic_power"
+        }]
+    },
+    "function.can_use(item.magic_din)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.magic_din"
+        }, {
+            "type": "value",
+            "el": "item.magic_power"
+        }]
+    },
+    "function.can_use(item.magic_farore)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.magic_farore"
+        }, {
+            "type": "value",
+            "el": "item.magic_power"
+        }]
+    },
+    "function.can_use(item.magic_nayru)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.magic_nayru"
+        }, {
+            "type": "value",
+            "el": "item.magic_power"
+        }]
+    },
+
+    /* can use adult items */
+    "function.can_use(item.bow)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.bow"
+        }, {
+            "type": "value",
+            "el": "mixin.can_become_adult"
+        }]
+    },
+    "function.can_use(item.hammer)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.hammer"
+        }, {
+            "type": "value",
+            "el": "mixin.can_become_adult"
+        }]
+    },
+    "function.can_use(item.boots_iron)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.boots_iron"
+        }, {
+            "type": "value",
+            "el": "mixin.can_become_adult"
+        }]
+    },
+    "function.can_use(item.boots_hover)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.boots_hover"
+        }, {
+            "type": "value",
+            "el": "mixin.can_become_adult"
+        }]
+    },
+    "function.can_use(item.hookshot)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.hookshot"
+        }, {
+            "type": "value",
+            "el": "mixin.can_become_adult"
+        }]
+    },
+    "function.can_use(mixin.longshot)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "mixin.longshot"
+        }, {
+            "type": "value",
+            "el": "mixin.can_become_adult"
+        }]
+    },
+    "function.can_use(mixin.silver_gauntlets)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "mixin.silver_gauntlets"
+        }, {
+            "type": "value",
+            "el": "mixin.can_become_adult"
+        }]
+    },
+    "function.can_use(mixin.golden_gauntlets)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "mixin.golden_gauntlets"
+        }, {
+            "type": "value",
+            "el": "mixin.can_become_adult"
+        }]
+    },
+    "function.can_use(item.tunic_fire)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.tunic_fire"
+        }, {
+            "type": "value",
+            "el": "mixin.can_become_adult"
+        }]
+    },
+    "function.can_use(item.tunic_water)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.tunic_fire"
+        }, {
+            "type": "value",
+            "el": "mixin.can_become_adult"
+        }]
+    },
+    "function.can_use(mixin.scarecrow)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "mixin.scarecrow"
+        }, {
+            "type": "value",
+            "el": "mixin.can_become_adult"
+        }]
+    },
+    "function.can_use(mixin.distant_scarecrow)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "mixin.distant_scarecrow"
+        }, {
+            "type": "value",
+            "el": "mixin.can_become_adult"
+        }]
+    },
+    
+    /* can use child items */
+    "function.can_use(item.slingshot)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.slingshot"
+        }, {
+            "type": "value",
+            "el": "mixin.can_become_child"
+        }]
+    },
+    "function.can_use(item.boomerang)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.boomerang"
+        }, {
+            "type": "value",
+            "el": "mixin.can_become_child"
+        }]
+    },
+    "function.can_use(item.sword_kokiri)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.sword_kokiri"
+        }, {
+            "type": "value",
+            "el": "mixin.can_become_child"
+        }]
+    },
+    "function.can_use(item.shield_kokiri)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.shield_kokiri"
+        }, {
+            "type": "value",
+            "el": "mixin.can_become_child"
+        }]
+    },
+    "function.can_use(item.stick)": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.stick"
+        }, {
+            "type": "value",
+            "el": "mixin.can_become_child"
+        }]
+    },
+
+    "": ""
+}
