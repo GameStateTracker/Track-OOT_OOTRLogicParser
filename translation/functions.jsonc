@@ -136,7 +136,7 @@
     },
 
     /* projectile check */
-    "has_projectile(child)": {
+    "function.has_projectile(child)": {
         "type": "or",
         "el": [{
             "type": "value",
@@ -149,7 +149,7 @@
             "el": "item.boomerang"
         }]
     },
-    "has_projectile(adult)": {
+    "function.has_projectile(adult)": {
         "type": "or",
         "el": [{
             "type": "value",
@@ -162,7 +162,7 @@
             "el": "item.hookshot"
         }]
     },
-    "has_projectile(both)": {
+    "function.has_projectile(both)": {
         "type": "or",
         "el": [{
             "type": "value",
@@ -190,7 +190,7 @@
             }]
         }]
     },
-    "has_projectile(either)": {
+    "function.has_projectile(either)": {
         "type": "or",
         "el": [{
             "type": "value",

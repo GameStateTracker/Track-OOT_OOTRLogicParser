@@ -1,5 +1,35 @@
 {
-    // items
+    /* temporary override */
+    "Time_Travel": {
+        "type": "true"
+    },
+    "is_starting_age": {
+        "type": "true"
+    },
+
+    /* mixins */
+    "is_child": {
+        "type": "value",
+        "el": "mixin.can_become_child"
+    },
+    "is_adult": {
+        "type": "value",
+        "el": "mixin.can_become_adult"
+    },
+
+    /* specials */
+    "Showed_Mido_Sword_&_Shield": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "item.sword_kokiri"
+        }, {
+            "type": "value",
+            "el": "item.shield_kokiri"
+        }]
+    },
+
+    /* items */
     "Bow": {
         "type": "value",
         "el": "item.bow"
@@ -24,7 +54,10 @@
         "type": "value",
         "el": "item.stick"
     },
-    //"item.nut",
+    "Nuts": {
+        "type": "value",
+        "el": "item.nut"
+    },
     "Slingshot": {
         "type": "value",
         "el": "item.slingshot"
@@ -89,17 +122,70 @@
         "type": "value",
         "el": "item.ocarina"
     },
-    //"item.bottle",
+    "has_bottle": {
+        "type": "value",
+        "el": "item.bottle"
+    },
     "Progressive_Wallet": {
         "type": "value",
         "el": "item.wallet"
     },
-    //"item.bean",
+    "Magic_Bean": {
+        "type": "value",
+        "el": "item.bean"
+    },
+    "Magic_Bean_Pack": {
+        "type": "value",
+        "el": "item.bean"
+    },
     "Gold_Skulltula_Token": {
         "type": "value",
         "el": "item.skulltula"
     },
-    //"item.egg",
+    "Weird_Egg": {
+        "type": "value",
+        "el": "item.egg"
+    },
+    "Zeldas_Letter": {
+        "type": "min",
+        "el": {
+            "type": "value",
+            "el": "item.egg"
+        },
+        "value": 3
+    },
+    "Skull_Mask": {
+        "type": "min",
+        "el": {
+            "type": "value",
+            "el": "item.egg"
+        },
+        "value": 5
+    },
+    "Mask_of_Truth": {
+        "type": "min",
+        "el": {
+            "type": "value",
+            "el": "item.egg"
+        },
+        "value": 8
+    },
+    "Eyedrops": {
+        "type": "min",
+        "el": {
+            "type": "value",
+            "el": "item.cojiro"
+        },
+        "value": 9
+    },
+    "Claim_Check": {
+        "type": "min",
+        "el": {
+            "type": "value",
+            "el": "item.cojiro"
+        },
+        "value": 10
+    },
     //"item.cojiro",
     "Kokiri_Sword": {
         "type": "value",
@@ -111,7 +197,14 @@
         "type": "value",
         "el": "item.shield_kokiri"
     },
-    //"item.shield_hylia",
+    "Buy_Deku_Shield": {
+        "type": "value",
+        "el": "item.shield_kokiri"
+    },
+    "Buy_Hylian_Shield": {
+        "type": "value",
+        "el": "item.shield_hylia"
+    },
     "Mirror_Shield": {
         "type": "value",
         "el": "item.shield_mirror"
@@ -161,6 +254,10 @@
         "el": "item.magic_power"
     },
     "Bottle_with_Letter": {
+        "type": "value",
+        "el": "item.zora_letter"
+    },
+    "Rutos_Letter": {
         "type": "value",
         "el": "item.zora_letter"
     },

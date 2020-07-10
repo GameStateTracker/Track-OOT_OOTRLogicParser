@@ -56,6 +56,11 @@ class LogicGenerator {
 
     generate()  {
 
+        console.log("");
+        console.log("-------------------------------------------");
+        console.log("generate logic output");
+        console.log("");
+
         for (let key in function_overrides) {
             functions.set(key, function_overrides[key]);
         }
@@ -109,6 +114,7 @@ class LogicGenerator {
                     written_functions.add(key);
                     let value = functions.get(key);
                     //res.mixins[key] = postCalcutate(value);
+                    console.log(key);
                     res.mixins[key] = {
                         category: "function",
                         logic: postCalcutate(value)
@@ -117,7 +123,10 @@ class LogicGenerator {
             }
         }
         
-        
+        console.log("");
+        console.log("-------------------------------------------");
+        console.log("states not converted");
+        console.log("");
         console.log(unstate);
 
         return res;
@@ -129,17 +138,22 @@ function postCalcutate(input)  {
     let els = [];
     switch(input.type) {
         case "value":
+            if (input.el.startsWith("item.") || input.el.startsWith("mixin.") || input.el.startsWith("function.") || input.el.startsWith("region.")) {
+                return input;
+            }
             let res = Translation.getValueName(input.el);
             if (res != null) {
                 return res;
             }
-            if (mixins.has(input.el)) {
-                used_mixins.add(input.el);
+            let mixname = translateMixinName(input.el);
+            if (mixins.has(mixname)) {
+                used_mixins.add(mixname);
                 return {
                     type: "value",
-                    el: translateMixinName(input.el)
+                    el: mixname
                 };
             }
+            console.log(input);
             return input;
         case "state":
             let stapar = input.value.replace(/^'|'$/g, "");
@@ -162,23 +176,15 @@ function postCalcutate(input)  {
                     value: sta.values[stapar]
                 };
             }
-
-            
         case "function":
+            let fnName = translateFunctionName(input.value);
             let param = input.el[0];
             if (param != null) {
-                param = Translation.getValueName(param.el);
-                if (param != null) {
-                    param = param.el;
-                }
-            }
-            if (param == null) {
-                console.log("-------------------------------------------");
-                console.log(input);
-                console.log(param);
-            }
-            let fnName = translateFunctionName(input.value);
-            if (param != null) {
+                param = param.el
+                let paramBuff = Translation.getValueName(param);
+                if (paramBuff != null) {
+                    param = paramBuff.el;
+                } 
                 fnName = `${fnName}(${param})`;
             }
             used_functions.add(fnName);

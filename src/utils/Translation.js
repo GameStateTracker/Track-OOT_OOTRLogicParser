@@ -26,12 +26,11 @@ class Translation {
         if (translation[value] != null) {
             return translation[value];
         }
-
         return predictTranslation(value, expects);
     }
 
     getValueName(value) {
-        value = value.replace(/ /g, "_").replace(/^'|'$/, "");
+        value = value.replace(/ /g, "_").replace(/^'|'$/g, "");
         if (values[value] != null) {
             let res = values[value];
             return res;
@@ -39,7 +38,7 @@ class Translation {
     }
 
     getStateConfig(value) {
-        value = value.replace(/ /g, "_").replace(/^'|'$/, "");
+        value = value.replace(/ /g, "_").replace(/^'|'$/g, "");
         if (states[value] != null) {
             let res = states[value];
             return res;

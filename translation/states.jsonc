@@ -2,29 +2,59 @@
     "lacs_condition": {
         "name": "option.light_arrow_cutscene",
         "values": {
-            "vanilla": "vanilla",
-            "stones": "stones",
-            "medallions": "medallions",
-            "dungeons": "dungeons"
+            "vanilla": "light_arrow_cutscene_vanilla",
+            "stones": "light_arrow_cutscene_stones",
+            "medallions": "light_arrow_cutscene_medallions",
+            "dungeons": "light_arrow_cutscene_dungeons"
         }
     },
     "damage_multiplier": {
         "name": "option.damage_multiplier",
         "values": {
-            "ohko": "ohko",
-            "quadruple": "quadruple"
+            "ohko": "damage_multiplier_ohko",
+            "quadruple": "damage_multiplier_quadruple"
         }
     },
     "shuffle_scrubs": {
         "name": "option.scrubsanity",
         "values": {
-            "off": "off"
+            "off": "scrubsanity_off"
         }
     },
     "zora_fountain": {
         "name": "option.doors_open_zora",
         "values": {
             "open": "doors_open_zora_both"
+        }
+    },
+    "bridge": {
+        "name": "option.ganon_castle_open",
+        "values": {
+            "open": "ganon_castle_open_open",
+            "vanilla": "ganon_castle_open_default",
+            "stones": "ganon_castle_open_stones",
+            "medallions": "ganon_castle_open_medallion",
+            "dungeons": "ganon_castle_open_dungeon",
+            "tokens": "ganon_castle_open_skulltulas"
+        }
+    },
+    "gerudo_fortress": {
+        "name": "option.gerudo_fortress_open",
+        "values": {
+            "normal": "gerudo_fortress_open_default",
+            "fast": "gerudo_fortress_open_one"
+        }
+    },
+    "open_forest": {
+        "name": "option.doors_open_forest",
+        "values": {
+            "closed": "doors_open_forest_closed"
+        }
+    },
+    "logic_rules": {
+        "name": "option.logic_rules",
+        "values": {
+            "glitchless": "logic_rules_glitchless"
         }
     }
 }
