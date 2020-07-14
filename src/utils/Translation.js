@@ -7,7 +7,7 @@ const __dirname = path.resolve();
 const predict_path = path.join(__dirname, "/translation/predicted.json");
 const unpredict_path = path.join(__dirname, "/translation/unpredict.json");
 const translation = JSONCFile.read(path.join(__dirname, "/translation/trans.jsonc"), {});
-const predict_values = JSONFile.read(path.join(__dirname, "/translation/predict_values.json"), []);
+let predict_values = JSONFile.read(path.join(__dirname, "/translation/predict_values.json"), []);
 const predict = {}
 const unpredict = JSONFile.read(unpredict_path, []);
 
@@ -15,6 +15,8 @@ const values = JSONCFile.read(path.join(__dirname, "/translation/values.jsonc"),
 const states = JSONCFile.read(path.join(__dirname, "/translation/states.jsonc"), {});
 
 let rules = new Map();
+
+predict_values = predict_values.filter(el => !(new Set(Object.values(translation))).has(el));
 
 class Translation {
 

@@ -228,6 +228,7 @@
     "Bottom of the Well Back Left Bombable": "location.well.c_back_left_bombable",
     "Bottom of the Well Front Left Hidden Wall": "location.well.c_front_left_hidden_wall",
     "Bottom of the Well Front Center Bombable": "location.well.c_front_center_bombable",
+    "Bottom of the Well Back Left Bombable Chest": "location.well.c_back_left_bombable",
     "Bottom of the Well Right Bottom Hidden Wall": "location.well.c_right_bottom_hidden_wall",
 
     // botw MQ
