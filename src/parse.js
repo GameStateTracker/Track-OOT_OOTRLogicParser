@@ -9,9 +9,6 @@ import LogicGenerator from "./parser/LogicGenerator.js";
 
 const __dirname = path.resolve();
 
-// TODO load LogicHelpers.json
-// TODO add "function" resolver [e.g. LogicHelpers.json > can_play(song): Ocarina and song]
-
 const inHelperFile  = path.join(__dirname, "/input/data/LogicHelpers.json");
 const inLogicDir  = path.join(__dirname, "/input/data/World");
 const outputDir = path.join(__dirname, "/output/");

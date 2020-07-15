@@ -215,31 +215,126 @@
     "Goron Grotto Deku Scrub Bombs": "location.goron.c_grotto_salesman_2",
     "Goron Grotto Deku Scrub Arrows": "location.goron.c_grotto_salesman_3",
 
+    // deku
+    "Deku Tree Map Chest": "location.deku.c_lobby",
+    "Deku Tree Basement Chest": "location.deku.c_basement",
+    "Deku Tree Slingshot Chest": "location.deku.c_slingshot",
+    "Deku Tree Slingshot Room Side Chest": "location.deku.c_slingshot_side",
+    "Deku Tree Compass Chest": "location.deku.c_compass",
+    "Deku Tree Compass Room Side Chest": "location.deku.c_compass_side",
+    "Deku Tree GS Basement Vines": "location.deku.s_basement_vines_child",
+    "Deku Tree GS Compass Room": "location.deku.s_3f_compass_side_child",
+    "Deku Tree GS Basement Gate": "location.deku.s_basement_metal_gate_child",
+    "Deku Tree GS Basement Back Room": "location.deku.s_bombable_behind_web_child",
+    
+    "Deku Tree Queen Gohma Heart": "location.deku.c_gohma",
+    "Queen Gohma": "location.deku.c_gohma",
+
+    // deku MQ
+    "Deku Tree MQ Map Chest": "location.deku_mq.c_lobby",
+    "Deku Tree MQ Slingshot Chest": "location.deku_mq.c_slingshot",
+    "Deku Tree MQ Slingshot Room Back Chest": "location.deku_mq.c_slingshot_back",
+    "Deku Tree MQ Basement Chest": "location.deku_mq.c_basement",
+    "Deku Tree MQ Compass Chest": "location.deku_mq.c_compass",
+    "Deku Tree MQ Before Spinning Log Chest": "location.deku_mq.c_before_log",
+    "Deku Tree MQ After Spinning Log Chest": "location.deku_mq.c_after_log",
+    "Deku Tree MQ Deku Scrub": "location.deku_mq.c_basement_salesman",
+    "Deku Tree MQ GS Basement Graves Room": "location.deku_mq.s_basement_grave_ceiling_child",
+    "Deku Tree MQ GS Compass Room": "location.deku_mq.s_2f_compass_side_child",
+    "Deku Tree MQ GS Lobby": "location.deku_mq.s_crate_near_map_child",
+    "Deku Tree MQ GS Basement Back Room": "location.deku_mq.s_basement_back_room_child",
+
+    // dodongo
+    "Dodongos Cavern Compass Chest": "location.dodongo.c_compass",
+    "Dodongos Cavern Map Chest": "location.dodongo.c_map",
+    "Dodongos Cavern Bomb Flower Platform Chest": "location.dodongo.c_bomb_flower_platform",
+    "Dodongos Cavern End of Bridge Chest": "location.dodongo.c_end_bridge",
+    "Dodongos Cavern Bomb Bag Chest": "location.dodongo.c_bomb_bag",
+    "Dodongos Cavern Deku Scrub Lobby": "location.dodongo.c_lobby_salesman",
+    "Dodongos Cavern Deku Scrub Near Bomb Bag Left": "location.dodongo.c_near_bomb_bag_salesman_1",
+    "Dodongos Cavern Deku Scrub Near Bomb Bag Right": "location.dodongo.c_near_bomb_bag_salesman_2",
+    "Dodongos Cavern Deku Scrub Side Room Near Dodongos": "location.dodongo.c_east_corridor_salesman",
+    "Dodongos Cavern Boss Room Chest": "location.dodongo.c_chest_above_dodongo",
+    "Dodongos Cavern GS Vines Above Stairs": "location.dodongo.s_above_big_staircase_adult",
+    "Dodongos Cavern GS Back Room": "location.dodongo.s_near_boss_bombable",
+    "Dodongos Cavern GS Alcove Above Stairs": "location.dodongo.s_big_staircase_vines",
+    "Dodongos Cavern GS Scarecrow": "location.dodongo.s_east_corridor_scarecrow_adult",
+    "Dodongos Cavern GS Side Room Near Lower Lizalfos": "location.dodongo.s_east_corridor_bombable",
+    
+    "Dodongos Cavern King Dodongo Heart": "location.dodongo.c_dodongo",
+    "King Dodongo": "location.dodongo.c_dodongo",
+
+    // dodongo MQ
+    "Dodongos Cavern MQ Map Chest": "location.dodongo_mq.c_map",
+    "Dodongos Cavern MQ Compass Chest": "location.dodongo_mq.c_compass",
+    "Dodongos Cavern MQ Bomb Bag Chest": "location.dodongo_mq.c_bomb_bag",
+    "Dodongos Cavern MQ Under Grave Chest": "location.dodongo_mq.c_under_grave",
+    "Dodongos Cavern MQ Torch Puzzle Room Chest": "location.dodongo_mq.c_torch_puzzle_room",
+    "Dodongos Cavern MQ Deku Scrub Side Room Near Lower Lizalfos": "location.dodongo_mq.c_1f_right",
+    "Dodongos Cavern MQ Deku Scrub Staircase": "location.dodongo_mq.c_above_stairs",
+    "Dodongos Cavern MQ Larvae Room Chest": "location.dodongo_mq.c_gohma_larva_room",
+    "Dodongos Cavern MQ Deku Scrub Lobby Front": "location.dodongo_mq.c_main_room_salesman_1",
+    "Dodongos Cavern MQ Deku Scrub Lobby Rear": "location.dodongo_mq.c_main_room_salesman_2",
+    "Dodongos Cavern MQ GS Song of Time Block Room": "location.dodongo_mq.s_time_block_room",
+    "Dodongos Cavern MQ GS Scrub Room": "location.dodongo_mq.s_scrub_poe_room",
+    "Dodongos Cavern MQ GS Lizalfos Room": "location.dodongo_mq.s_upper_lizalfos_room",
+    "Dodongos Cavern MQ GS Back Area": "location.dodongo_mq.s_back_area",
+    "Dodongos Cavern MQ GS Larvae Room": "location.dodongo_mq.s_gohma_larva_skulltula",
+
+    // jabu
+
+    // jabu MQ
+
     // botw
-    "Bottom of the Well Basement Chest": "location.well.c_basement_ches",
-    "Bottom of the Well Locked Pits": "location.well.c_locked_pits",
-    "Bottom of the Well Behind Right Grate": "location.well.c_behind_right_grate",
-    "Bottom of the Well Defeat Boss": "location.well.c_defeat_boss",
+    "Bottom of the Well Freestanding Key": "location.well.c_coffin_key",
+    "Bottom of the Well Front Left Fake Wall Chest": "location.well.c_front_left_hidden_wall",
+    "Bottom of the Well Front Center Bombable Chest": "location.well.c_front_center_bombable",
+    "Bottom of the Well Right Bottom Fake Wall Chest": "location.well.c_right_bottom_hidden_wall",
+    "Bottom of the Well Back Left Bombable Chest": "location.well.c_back_left_bombable",
     "Bottom of the Well Invisible Chest": "location.well.c_invisible",
     "Bottom of the Well Underwater Front Chest": "location.well.c_underwater_front",
     "Bottom of the Well Underwater Left Chest": "location.well.c_underwater_left",
-    "Bottom of the Well Center Large Chest": "location.well.c__center_large",
-    "Bottom of the Well Center Small Chest": "location.well.c_center_small",
-    "Bottom of the Well Back Left Bombable": "location.well.c_back_left_bombable",
-    "Bottom of the Well Front Left Hidden Wall": "location.well.c_front_left_hidden_wall",
-    "Bottom of the Well Front Center Bombable": "location.well.c_front_center_bombable",
-    "Bottom of the Well Back Left Bombable Chest": "location.well.c_back_left_bombable",
-    "Bottom of the Well Right Bottom Hidden Wall": "location.well.c_right_bottom_hidden_wall",
+    "Bottom of the Well Compass Chest": "location.well.c_basement_ches",
+    "Bottom of the Well Map Chest": "location.well.c__center_large",
+    "Bottom of the Well Fire Keese Chest": "location.well.c_locked_pits",
+    "Bottom of the Well Center Skulltula Chest": "location.well.c_center_small",
+    "Bottom of the Well Like Like Chest": "location.well.c_behind_right_grate",
+    "Bottom of the Well Lens of Truth Chest": "location.well.c_defeat_boss",
+    "Bottom of the Well GS West Inner Room": "location.well.s_west_inner_child",
+    "Bottom of the Well GS East Inner Room": "location.well.s_east_inner_child",
+    "Bottom of the Well GS Like Like Cage": "location.well.s_locked_pits_child",
 
     // botw MQ
     "Bottom of the Well MQ Dead Hand Freestanding Key": "location.well_mq.c_deadhand_freestanding_key",
     "Bottom of the Well MQ East Inner Room Freestanding Key": "location.well_mq.c_east_inner_freestanding_key",
     "Bottom of the Well MQ Compass Chest": "location.well_mq.c_compass_chest",
     "Bottom of the Well MQ Map Chest": "location.well_mq.c_map_chest",
-    "Bottom of the Well MQ Lens Chest": "location.well_mq.c_lens_chest",
+    "Bottom of the Well MQ Lens of Truth Chest": "location.well_mq.c_lens_chest",
+    "Bottom of the Well MQ GS Basement": "location.well_mq.s_basement",
+    "Bottom of the Well MQ GS West Inner Room": "location.well_mq.s_west_inner",
+    "Bottom of the Well MQ GS Coffin Room": "location.well_mq.s_coffin_room",
+
+    // forest
+
+    // forest MQ
+
+    // fire
+
+    // fire MQ
+
+    // water
+
+    // water MQ
+
+    // shadow
+
+    // shadow MQ
+
+    // spirit
+
+    // spirit MQ
 
     // ganons castle
-
     "Ganons Tower Boss Key Chest": "location.castle_ganon.c_boss_key",
 
     // options

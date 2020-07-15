@@ -1,0 +1,67 @@
+joint checks
+
+    deku
+        location.deku.c_gohma
+        location.deku_mq.c_gohma
+        
+    =======================================================
+
+    dodongo
+        location.dodongo.c_dodongo
+        location.dodongo_mq.c_dodongo
+        ---------------------------------------------------
+        location.dodongo.c_chest_above_dodongo
+        location.dodongo_mq.c_chest_above_dodongo
+
+    =======================================================
+
+    jabu
+        location.jabujabu.c_barinade
+        location.jabujabu_mq.c_barinade
+
+    =======================================================
+
+    forest
+        location.temple_forest.c_phantomganon
+        location.temple_forest_mq.c_phantomganon
+
+    =======================================================
+
+    fire
+        location.temple_fire.c_volvagia
+        location.temple_fire_mq.c_volvagia
+
+    =======================================================
+
+    water
+        location.temple_water.c_morpha
+        location.temple_water_mq.c_morpha
+
+    =======================================================
+
+    shadow
+        location.temple_shadow.c_bongobongo
+        location.temple_shadow_mq.c_bongobongo
+
+    =======================================================
+
+    spirit
+        location.temple_spirit.c_twinrova
+        location.temple_spirit_mq.c_twinrova
+
+    =======================================================
+
+    ganons castle
+        location.castle_ganon.c_boss
+        location.castle_ganon_mq.c_boss
+
+###########################################################
+
+check changes
+
+    well
+        logic.location.well.s_center_child
+        logic.location.well.s_west_inner_child
+        ---------------------------------------------------
+        logic.location.well.s_center_locked_room_child
+        logic.location.well.s_east_inner_child
