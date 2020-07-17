@@ -329,6 +329,14 @@
     "Bottom of the Well MQ GS Basement": "location.well_mq.s_basement",
     "Bottom of the Well MQ GS West Inner Room": "location.well_mq.s_west_inner",
     "Bottom of the Well MQ GS Coffin Room": "location.well_mq.s_coffin_room",
+	
+	// ice cavern
+	
+	// ice cavern MQ
+	
+	// gtg
+	
+	// gtg MQ
 
     // forest
 
@@ -339,8 +347,38 @@
     // fire MQ
 
     // water
+	"Water Temple Map Chest": "location.temple_water.c_map",
+	"Water Temple Compass Chest": "location.temple_water.c_compass",
+	"Water Temple Torches Chest": "location.temple_water.c_torches",
+	"Water Temple Central Bow Target Chest": "location.temple_water.c_central_bow",
+	"Water Temple GS Behind Gate": "location.temple_water.s_lowest_level_south_adult",
+	"Water Temple Boss Key Chest": "location.temple_water.c_boss_key",
+	"Water Temple GS Near Boss Key Chest": "location.temple_water.s_near_boss_key_adult",
+	"Water Temple Cracked Wall Chest": "location.temple_water.c_cracked_wall",
+	"Water Temple Dragon Chest": "location.temple_water.c_chest_dragon",
+	"Water Temple Central Pillar Chest": "location.temple_water.c_center_pillar",
+	"Water Temple GS Central Pillar": "location.temple_water.s_center_pillar_adult",
+	"Water Temple Longshot Chest": "location.temple_water.c_dark_link",
+	"Water Temple River Chest": "location.temple_water.c_river",
+	"Water Temple GS River": "location.temple_water.s_river_adult",
+	"Water Temple GS Falling Platform Room": "location.temple_water.s_big_waterfall_adult",
+	
+	"Water Temple Morpha Heart": "location.temple_water.c_morpha",
+	"Morpha": "location.temple_water.c_morpha",
 
     // water MQ
+	"Water Temple MQ Map Chest": "location.temple_water_mq.c_map",
+	"Water Temple MQ Central Pillar Chest": "location.temple_water_mq.c_central_pillar",
+	"Water Temple MQ Compass Chest": "location.temple_water_mq.c_compass",
+	"Water Temple MQ Longshot Chest": "location.temple_water_mq.c_longshot",
+	"Water Temple MQ GS Lizalfos Hallway": "location.temple_water_mq.s_lizalfos_hallway_adult",
+	"Water Temple MQ GS Before Upper Water Switch": "location.temple_water_mq.s_before_upper_water_switch",
+	"Water Temple MQ Boss Key Chest": "location.temple_water_mq.c_boss_key",
+	"Water Temple MQ GS River": "location.temple_water_mq.s_serpent_river_adult",
+	"Water Temple MQ Freestanding Key": "location.temple_water_mq.c_freestanding_key",
+	"Water Temple MQ GS Triple Wall Torch": "location.temple_water_mq.s_south_basement_adult",
+	"Water Temple MQ GS Freestanding Key Area": "location.temple_water_mq.s_north_basement_adult",
+	
 
     // shadow
 	"Shadow Temple Map Chest": "location.temple_shadow.c_map",
