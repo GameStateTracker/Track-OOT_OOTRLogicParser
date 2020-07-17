@@ -331,8 +331,23 @@
     "Bottom of the Well MQ GS Coffin Room": "location.well_mq.s_coffin_room",
 	
 	// ice cavern
+	"Ice Cavern Map Chest": "location.ice_cavern.c_map",
+	"Ice Cavern Compass Chest": "location.ice_cavern.c_compass",
+	"Ice Cavern Iron Boots Chest": "location.ice_cavern.c_boots",
+	"Sheik in Ice Cavern": "location.ice_cavern.c_sheik",
+	"Ice Cavern Freestanding PoH": "location.ice_cavern.c_hp",
+	"Ice Cavern GS Spinning Scythe Room": "location.ice_cavern.s_ice_blades_adult",
+	"Ice Cavern GS Heart Piece Room": "location.ice_cavern.s_compass_room_adult",
+	"Ice Cavern GS Push Block Room": "location.ice_cavern.s_block_puzzle_adult",
 	
 	// ice cavern MQ
+	"Ice Cavern MQ Map Chest": "location.ice_cavern_mq.c_map",
+	"Ice Cavern MQ Iron Boots Chest": "location.ice_cavern_mq.c_boots",
+	"Ice Cavern MQ GS Ice Block": "location.ice_cavern_mq.s_under_ice_block",
+	"Ice Cavern MQ GS Scarecrow": "location.ice_cavern_mq.s_scarecrow",
+	"Ice Cavern MQ Compass Chest": "location.ice_cavern_mq.c_compass",
+	"Ice Cavern MQ Freestanding PoH": "location.ice_cavern_mq.c_hp",
+	"Ice Cavern MQ GS Red Ice": "location.ice_cavern_mq.s_hp_room",
 	
 	// gtg
 	

@@ -61,6 +61,12 @@ joint checks
         location.castle_ganon.c_boss
         location.castle_ganon_mq.c_boss
 
+    =======================================================
+
+    ice cavern
+	location.ice_cavern.c_sheik
+	location.ice_cavern_mq.c_sheik
+
 ###########################################################
 
 check changes
