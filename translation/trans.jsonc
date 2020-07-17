@@ -343,8 +343,48 @@
     // forest MQ
 
     // fire
+	"Fire Temple Near Boss Chest": "location.temple_fire.c_near_boss",
+	"Fire Temple Flare Dancer Chest": "location.temple_fire.c_dancer",
+	"Fire Temple Boss Key Chest": "location.temple_fire.c_boss_key",
+	"Fire Temple GS Boss Key Loop": "location.temple_fire.s_near_boss_key_adult",
+	"Fire Temple Big Lava Room Lower Open Door Chest": "location.temple_fire.c_big_lava_open",
+	"Fire Temple Big Lava Room Blocked Door Chest": "location.temple_fire.c_big_lava_bomb",
+	"Fire Temple GS Song of Time Room": "location.temple_fire.s_big_lava_time_block_adult",
+	"Fire Temple Boulder Maze Lower Chest": "location.temple_fire.c_boulder_maze_lower",
+	"Fire Temple Boulder Maze Upper Chest": "location.temple_fire.c_boulder_maze_upper",
+	"Fire Temple Boulder Maze Side Room Chest": "location.temple_fire.c_boulder_maze_side",
+	"Fire Temple Boulder Maze Shortcut Chest": "location.temple_fire.c_boulder_maze_bomb",
+	"Fire Temple Scarecrow Chest": "location.temple_fire.c_scarecrow",
+	"Fire Temple Map Chest": "location.temple_fire.c_map",
+	"Fire Temple Compass Chest": "location.temple_fire.c_compass",
+	"Fire Temple GS Boulder Maze": "location.temple_fire.s_boulder_maze_bombable_adult",
+	"Fire Temple GS Scarecrow Climb": "location.temple_fire.s_boulder_maze_scarecrow1_adult",
+	"Fire Temple GS Scarecrow Top": "location.temple_fire.s_boulder_maze_scarecrow2_adult",
+	"Fire Temple Highest Goron Chest": "location.temple_fire.c_highest_goron",
+	"Fire Temple Megaton Hammer Chest": "location.temple_fire.c_hammer",
+	
+	
+	"Fire Temple Volvagia Heart": "location.temple_fire.c_volvagia",
+	"Volvagia":"location.temple_fire.c_volvagia",
 
     // fire MQ
+	"Fire Temple MQ Map Room Side Chest": "location.temple_fire_mq.c_map_room_small_chest",
+	"Fire Temple MQ Near Boss Chest": "location.temple_fire_mq.c_chest_near_boss",
+	"Fire Temple MQ Megaton Hammer Chest": "location.temple_fire_mq.c_megaton_hammer",
+	"Fire Temple MQ Map Chest": "location.temple_fire_mq.c_map",
+	"Fire Temple MQ Boss Key Chest": "location.temple_fire_mq.c_boss_key",
+	"Fire Temple MQ Big Lava Room Blocked Door Chest": "location.temple_fire_mq.c_big_lava_bomb",
+	"Fire Temple MQ GS Big Lava Room Open Door": "location.temple_fire_mq.s_big_lava_adult",
+	"Fire Temple MQ Lizalfos Maze Lower Chest": "location.temple_fire_mq.c_boulder_maze_lower",
+	"Fire Temple MQ Lizalfos Maze Side Room Chest": "location.temple_fire_mq.c_boulder_maze_side",
+	"Fire Temple MQ Lizalfos Maze Upper Chest": "location.temple_fire_mq.c_boulder_maze_upper",
+	"Fire Temple MQ Compass Chest": "location.temple_fire_mq.c_compass",
+	"Fire Temple MQ GS Skull On Fire": "location.temple_fire_mq.s_east_tower_top_adult",
+	"Fire Temple MQ Freestanding Key": "location.temple_fire_mq.c_freestanding_key",
+	"Fire Temple MQ Chest On Fire": "location.temple_fire_mq.c_west_tower_top",
+	"Fire Temple MQ GS Fire Wall Maze Side Room": "location.temple_fire_mq.s_fire_wall_maze_side_adult",
+	"Fire Temple MQ GS Fire Wall Maze Center": "location.temple_fire_mq.s_fire_wall_maze_center_adult",
+	"Fire Temple MQ GS Above Fire Wall Maze": "location.temple_fire_mq.s_above_fire_wall_maze_adult",
 
     // water
 	"Water Temple Map Chest": "location.temple_water.c_map",
