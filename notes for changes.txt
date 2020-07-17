@@ -48,6 +48,12 @@ joint checks
     spirit
         location.temple_spirit.c_twinrova
         location.temple_spirit_mq.c_twinrova
+	---------------------------------------------------
+	location.temple_spirit.c_shield
+	location.temple_spirit_mq.c_mirror_shield
+	---------------------------------------------------
+	location.temple_spirit.c_gauntlets
+	location.temple_spirit_mq.c_gauntlets
 
     =======================================================
 
