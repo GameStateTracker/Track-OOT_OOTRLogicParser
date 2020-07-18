@@ -298,8 +298,35 @@
     "Dodongos Cavern MQ GS Larvae Room": "location.dodongo_mq.s_gohma_larva_skulltula",
 
     // jabu
+	"Jabu Jabus Belly Boomerang Chest": "location.jabujabu.c_boomerang",
+    "Jabu Jabus Belly GS Water Switch Room": "location.jabujabu.s_b1_rising_water_child",
+    "Jabu Jabus Belly GS Lobby Basement Lower": "location.jabujabu.s_b1_ruto1_child",
+    "Jabu Jabus Belly GS Lobby Basement Upper": "location.jabujabu.s_b1_ruto2_child",
+    "Jabu Jabus Belly Deku Scrub": "location.jabujabu.c_elevator_dive_salesman",
+	"Jabu Jabus Belly Map Chest": "location.jabujabu.c_map",
+    "Jabu Jabus Belly Compass Chest": "location.jabujabu.c_compass",
+    "Jabu Jabus Belly GS Near Boss": "location.jabujabu.s_1f_near_boss_child",
+	
+	"Jabu Jabus Belly Barinade Heart": "location.jabujabu.c_barinade",
+    "Barinade": "location.jabujabu.c_barinade",
 
     // jabu MQ
+	"Jabu Jabus Belly MQ Map Chest": "location.jabujabu_mq.c_map",
+    "Jabu Jabus Belly MQ First Room Side Chest": "location.jabujabu_mq.c_entry_side_chest",
+	"Jabu Jabus Belly MQ Second Room Lower Chest": "location.jabujabu_mq.c_second_room_lower_chest",
+    "Jabu Jabus Belly MQ Second Room Upper Chest": "location.jabujabu_mq.c_second_room_upper",
+    "Jabu Jabus Belly MQ Compass Chest": "location.jabujabu_mq.c_compass",
+    "Jabu Jabus Belly MQ Basement Near Vines Chest": "location.jabujabu_mq.c_basement_south_chest",
+    "Jabu Jabus Belly MQ Basement Near Switches Chest": "location.jabujabu_mq.c_basement_north_chest",
+    "Jabu Jabus Belly MQ Boomerang Room Small Chest": "location.jabujabu_mq.c_boomerang_room_small_chest",
+    "Jabu Jabus Belly MQ Boomerang Chest": "location.jabujabu_mq.c_boomerang_chest",
+    "Jabu Jabus Belly MQ GS Boomerang Chest Room": "location.jabujabu_mq.s_boomerang_room",
+	"Jabu Jabus Belly MQ Falling Like Like Room Chest": "location.jabujabu_mq.c_like_like_chest",
+    "Jabu Jabus Belly MQ GS Tailpasaran Room": "location.jabujabu_mq.s_electric_worm_room",
+    "Jabu Jabus Belly MQ GS Invisible Enemies Room": "location.jabujabu_mq.s_invisible_enemies_room",
+	"Jabu Jabus Belly MQ Cow" : "location.jabujabu_mq.c_cow",
+	"Jabu Jabus Belly MQ Near Boss Chest": "location.jabujabu_mq.c_near_boss",
+    "Jabu Jabus Belly MQ GS Near Boss": "location.jabujabu_mq.s_near_boss_gs",
 
     // botw
     "Bottom of the Well Freestanding Key": "location.well.c_coffin_key",
