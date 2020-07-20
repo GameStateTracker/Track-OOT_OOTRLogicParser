@@ -9,7 +9,8 @@ export default class OperatorNot extends AbstractOperator {
     toJSON()  {
         return {
             type: "not",
-            el: this.children.slice(0,1).map(e => e.toJSON())[0]
+            el: this.children.map(e => e.toJSON())
+			//el: this.children.slice(0,1).map(e => e.toJSON())[0]
         };
     }
 

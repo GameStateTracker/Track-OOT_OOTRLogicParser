@@ -34,5 +34,16 @@
         }]
     },
 
+	"mixin.is_night": {
+        "type": "state",
+        "el": "filter.time",
+        "value": "night"
+    },
+	"mixin.is_day": {
+        "type": "state",
+        "el": "filter.time",
+        "value": "day"
+    },
+	
     "": ""
 }
