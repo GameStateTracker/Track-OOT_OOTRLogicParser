@@ -19,11 +19,11 @@
 	
 	"at_night": {
 		"type": "value",
-		"type": "mixin.is_night"
+		"el": "mixin.is_night"
 	},
 	"at_day": {
 		"type": "value",
-		"type": "mixin.is_day"
+		"el": "mixin.is_day"
 	},
 
     /* specials */
