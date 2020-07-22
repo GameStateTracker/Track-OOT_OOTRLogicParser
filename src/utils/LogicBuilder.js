@@ -41,6 +41,13 @@ class LogicBuilder {
             }
             return el;
         }
+		if (current.indexOf("not ") >= 0) {
+            let [ref, value] = current.split("not ");
+            value = token[parseInt(value.slice(1, -1))];
+            let not = new OperatorNot();
+            not.append(this.resolveToken(value, token));
+            return not;
+        }
         if (current.indexOf(" == ") >= 0) {
             let [ref, value] = current.split(" == ");
             ref = token[parseInt(ref.slice(1, -1))];

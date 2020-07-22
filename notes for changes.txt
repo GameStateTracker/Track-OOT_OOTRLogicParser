@@ -60,6 +60,9 @@ joint checks
     ganons castle
         location.castle_ganon.c_boss
         location.castle_ganon_mq.c_boss
+	---------------------------------------------------
+	location.castle_ganon.c_boss_key
+	location.castle_ganon_mq.c_boss_key
 
     =======================================================
 

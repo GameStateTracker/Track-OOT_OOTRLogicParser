@@ -235,9 +235,12 @@ function postCalcutate(input)  {
                     value: buffer
                 };
         case "not":
+            for (let el of input.el) {
+                els.push(postCalcutate(el));
+            }
             return {
-                type: "state",
-                el: postCalcutate(input.el)
+                type: input.type,
+                el: els
             };
         default:
             return input;
