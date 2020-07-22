@@ -74,22 +74,16 @@ class LogicGenerator {
 
         let res = {
             edges: {},
-            mixins: {}
+            logic: {}
         };
         for (let region in structure) {
             let data = structure[region];
             let reg = {};
             for (let node of data.exits) {
-                reg[translateRegionName(node)] = {
-                    category: "exit",
-                    logic: postCalcutate(exits.get(node))
-                };
+                reg[translateRegionName(node)] = postCalcutate(exits.get(node));
             }
             for (let node of data.locations) {
-                reg[Translation.translateName(node)] = {
-                    category: "location",
-                    logic: postCalcutate(locations.get(node))
-                };
+                reg[Translation.translateName(node)] = postCalcutate(locations.get(node));
             }
             res.edges[translateRegionName(region)] = reg;
         }
@@ -102,7 +96,7 @@ class LogicGenerator {
                 if (!written_mixins.has(key)) {
                     written_mixins.add(key);
                     let value = mixins.get(key);
-                    res.mixins[key] = postCalcutate(value);
+                    res.logic[key] = postCalcutate(value);
                 }
             }
             // functions
@@ -113,7 +107,7 @@ class LogicGenerator {
                 if (!written_functions.has(key)) {
                     written_functions.add(key);
                     let value = functions.get(key);
-                    res.mixins[key] = postCalcutate(value);
+                    res.logic[key] = postCalcutate(value);
                 }
             }
         }
@@ -265,12 +259,9 @@ function postCalcutate(input)  {
                     value: buffer
                 };
         case "not":
-            for (let el of input.el) {
-                els.push(postCalcutate(el));
-            }
             return {
-                type: input.type,
-                el: els
+                type: "not",
+                el: postCalcutate(input.el)
             };
         default:
             return input;
