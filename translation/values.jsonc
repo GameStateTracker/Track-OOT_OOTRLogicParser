@@ -25,6 +25,19 @@
 		"type": "value",
 		"el": "mixin.is_day"
 	},
+	
+	"Forest_Temple_Jo_and_Beth": {
+		"type": "value",
+		"el": "mixin.jo_and_beth"
+	},
+	"Forest_Temple_Amy_and_Meg": {
+		"type": "value",
+		"el": "mixin.amy_and_meg"
+	},
+    "at_dampe_time": {
+        "type": "value",
+        "el": "mixin.is_night"
+    },
 
     /* specials */
     "Showed_Mido_Sword_&_Shield": {
@@ -36,6 +49,188 @@
             "type": "value",
             "el": "item.shield_kokiri"
         }]
+    },
+
+    "Drain_Well": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "mixin.can_become_child"
+        }, {
+            "type": "value",
+            "el": "function.can_play(item.song_storm)"
+        }]
+    },
+    "GC_Woods_Warp_Open": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "mixin.can_blast_or_smash"
+        }, {
+            "type": "value",
+            "el": "function.can_use(item.magic_din)"
+        }]
+    },
+    "Goron_City_Child_Fire": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "mixin.can_become_child"
+        }, {
+            "type": "value",
+            "el": "function.can_use(item.magic_din)"
+        }]
+    },
+    "Stop_GC_Rolling_Goron_as_Adult": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "mixin.can_become_adult"
+        }, {
+            "type": "value",
+            "el": "item.glove"
+        }, {
+            "type": "or",
+            "el": [{
+                "type": "value",
+                "el": "mixin.has_explosives"
+            }, {
+                "type": "value",
+                "el": "item.bow"
+            }, {
+                "type": "and",
+                "el": [{
+                    "type": "value",
+                    "el": "skip.linkthegoron_dins"
+                }, {
+                    "type": "value",
+                    "el": "function.can_use(item.magic_din)"
+                }]
+            }]
+        }]
+    },
+    "Child_Water_Temple": {
+        "type": "value",
+        "el": "mixin.can_become_child"
+    },
+    "had_night_start": {
+        "type": "value",
+        "el": "option.time_start_night"
+    },
+    "Links_Cow": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "function.can_play(item.song_epona"
+        }, {
+            "type": "value",
+            "el": "mixin.can_become_adult"
+        }, {
+            "type": "value",
+            "el": "mixin.is_day"
+        }]
+    },
+    "Epona": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "function.can_play(item.song_epona"
+        }, {
+            "type": "value",
+            "el": "mixin.can_become_adult"
+        }, {
+            "type": "value",
+            "el": "mixin.is_day"
+        }]
+    },
+    "Bonooru": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "mixin.can_become_child"
+        }, {
+            "type": "value",
+            "el": "item.ocarina"
+        }]
+    },
+    "Dampes_Windmill_Access": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "mixin.can_become_adult"
+        }, {
+            "type": "value",
+            "el": "function.can_use(item.song_time"
+        }]
+    },
+    "Eyedrops_Access": {
+        "type": "min",
+        "el": {
+            "type": "value",
+            "el": "item.cojiro"
+        },
+        "value": 9
+    },
+    "disable_trade_revert": {
+        "type": "and",
+        "el": [{
+            "type": "not",
+            "el": [{
+                "type": "state",
+                "el": "option.entrance_shuffle",
+                "value": "entrance_shuffle_off"
+            }]
+        }, {
+            "type": "not",
+            "el": [{
+                "type": "state",
+                "el": "option.entrance_shuffle",
+                "value": "entrance_shuffle_dungeon"
+            }]
+        }]
+    },
+    "King_Zora_Thawed": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "mixin.can_become_adult"
+        }, {
+            "type": "value",
+            "el": "item.blue_fire"
+        }]
+    },
+
+    "Deku_Tree_Clear": {
+        "type": "value",
+        "el": "location.deku.c_gohma"
+    },
+    "Water_Temple_Clear": {
+        "type": "value",
+        "el": "location.temple_water.c_morpha"
+    },
+    "Forest_Trial_Clear": {
+        "type": "value",
+        "el": "location.castle_ganon.k_forest_trial"
+    },
+    "Fire_Trial_Clear": {
+        "type": "value",
+        "el": "location.castle_ganon.k_fire_trial"
+    },
+    "Water_Trial_Clear": {
+        "type": "value",
+        "el": "location.castle_ganon.k_water_trial"
+    },
+    "Shadow_Trial_Clear": {
+        "type": "value",
+        "el": "location.castle_ganon.k_shadow_trial"
+    },
+    "Spirit_Trial_Clear": {
+        "type": "value",
+        "el": "location.castle_ganon.k_spirit_trial"
+    },
+    "Light_Trial_Clear": {
+        "type": "value",
+        "el": "location.castle_ganon.k_light_trial"
     },
 
     /* items */
@@ -86,6 +281,30 @@
     "Bombchus": {
         "type": "value",
         "el": "item.bombchu"
+    },
+    "Bombchus_5": {
+        "type": "value",
+        "el": "item.bombchu_5"
+    },
+    "Bombchus_10": {
+        "type": "value",
+        "el": "item.bombchu_10"
+    },
+    "Bombchus_20": {
+        "type": "value",
+        "el": "item.bombchu_20"
+    },
+    "Buy_Bombchu_5": {
+        "type": "value",
+        "el": "item.bombchu_5"
+    },
+    "Buy_Bombchu_10": {
+        "type": "value",
+        "el": "item.bombchu_10"
+    },
+    "Buy_Bombchu_20": {
+        "type": "value",
+        "el": "item.bombchu_20"
     },
     "Lens_of_Truth": {
         "type": "value",
@@ -440,11 +659,36 @@
         "type": "value",
         "el": "item.blue_fire"
     },
-    //"item.bugs",
-    //"item.fairy_spirit",
-    //"item.fish",
+    "Bugs": {
+        "type": "value",
+        "el": "item.bugs"
+    },
+    "Buy_Bottle_Bug": {
+        "type": "value",
+        "el": "item.bugs_1"
+    },
+    "Fairy": {
+        "type": "value",
+        "el": "item.fairy"
+    },
+    "Buy_Fairys_Spirit": {
+        "type": "value",
+        "el": "item.fairy_1"
+    },
+    "Fish": {
+        "type": "value",
+        "el": "item.fish"
+    },
+    "Buy_Fish": {
+        "type": "value",
+        "el": "item.fish_1"
+    },
     //"item.milk",
     //"item.poe",
+    "Big_Poe": {
+        "type": "value",
+        "el": "item.poe_big"
+    },
     "Bottle_with_Big_Poe": {
 		"type": "value",
 		"el": "item.poe_big"
@@ -454,10 +698,45 @@
     //"Blue_Potion": "item.potion_blue",
 	
 	/* options */
+    "open_door_of_time": {
+        "type": "value",
+        "el": "option.doors_open_temple"
+    },
+    "free_scarecrow": {
+        "type": "value",
+        "el": "option.freescarecrow"
+    },
 	"shuffle_dungeon_entrances": {
-		"type": "value",
-        "el": "option.entrance_shuffle_dungeons"
-	},	
+        "type": "not",
+        "el": [{
+            "type": "state",
+            "el": "option.entrance_shuffle",
+            "value": "entrance_shuffle_off"
+        }]
+    },
+    "shuffle_interior_entrances": {
+        "type": "and",
+        "el": [{
+            "type": "not",
+            "el": [{
+                "type": "state",
+                "el": "option.entrance_shuffle",
+                "value": "entrance_shuffle_off"
+            }]
+        }, {
+            "type": "not",
+            "el": [{
+                "type": "state",
+                "el": "option.entrance_shuffle",
+                "value": "entrance_shuffle_dungeon"
+            }]
+        }]
+    },
+    "shuffle_overworld_entrances": {
+            "type": "state",
+            "el": "option.entrance_shuffle",
+            "value": "entrance_shuffle_all"
+    },	
 	"keysanity": {
 		"type": "value",
         "el": "option.keysanity_small"
@@ -470,6 +749,48 @@
 		"type": "value",
         "el": "option.shuffle_egg"
 	},
+    "skipped_trials[Forest]": {
+        "type": "not",
+        "el": [{
+            "type": "value",
+            "el": "option.forest_trial"
+         }]
+    },
+    "skipped_trials[Fire]": {
+        "type": "not",
+        "el": [{
+            "type": "value",
+            "el": "option.fire_trial"
+         }]
+    },
+    "skipped_trials[Water]": {
+        "type": "not",
+        "el": [{
+            "type": "value",
+            "el": "option.water_trial"
+         }]
+    },
+    "skipped_trials[Shadow]": {
+        "type": "not",
+        "el": [{
+            "type": "value",
+            "el": "option.shadow_trial"
+         }]
+    },
+    "skipped_trials[Spirit]": {
+        "type": "not",
+        "el": [{
+            "type": "value",
+            "el": "option.spirit_trial"
+         }]
+    },
+    "skipped_trials[Light]": {
+        "type": "not",
+        "el": [{
+            "type": "value",
+            "el": "option.light_trial"
+         }]
+    },
 	
 	/* skips */
 	"logic_grottos_without_agony": {
