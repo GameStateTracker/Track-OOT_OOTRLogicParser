@@ -139,6 +139,7 @@ function findMixins(input) {
             return;
         case "min":
         case "max":
+        case "not":
             findMixins(input.el);
             return;
         default:
