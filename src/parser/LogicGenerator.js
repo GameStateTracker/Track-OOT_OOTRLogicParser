@@ -83,7 +83,7 @@ class LogicGenerator {
                 reg[translateRegionName(node)] = postCalcutate(exits.get(node));
             }
             for (let node of data.locations) {
-                reg[Translation.translateName(node)] = postCalcutate(locations.get(node));
+                reg[`logic.${Translation.translateName(node)}`] = postCalcutate(locations.get(node));
             }
             res.edges[translateRegionName(region)] = reg;
         }
@@ -217,18 +217,15 @@ function postCalcutate(input)  {
                 el: fnName
             };
         case "at":
-            for (let el of input.el) {
-                els.push(postCalcutate(el));
-            }
             return {
                 type: "at",
                 node: translateRegionName(input.node),
-                el: els
+                el: postCalcutate(input.el)
             };
         case "here":
             return {
                 type: "here",
-                el: [postCalcutate(input.el[0])]
+                el: postCalcutate(input.el)
             };
         case "and":
         case "nand":
