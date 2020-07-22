@@ -6,7 +6,7 @@ import JSONCFile from "../utils/JSONCFile.js";
 const __dirname = path.resolve();
 
 const function_overrides = JSONCFile.read(path.join(__dirname, "/translation/functions.jsonc"), {});
-const mixin_overrides = JSONCFile.read(path.join(__dirname, "/translation/mixin.jsonc"), {});
+const mixin_overrides = JSONCFile.read(path.join(__dirname, "/translation/mixins.jsonc"), {});
 
 let mixins = new Map();
 let functions = new Map();
@@ -62,10 +62,14 @@ class LogicGenerator {
         console.log("");
 
         for (let key in function_overrides) {
+            if (key == "") continue;
             functions.set(key, function_overrides[key]);
+            console.log(`added function override: ${key}`);
         }
         for (let key in mixin_overrides) {
+            if (key == "") continue;
             mixins.set(key, mixin_overrides[key]);
+            console.log(`added mixin override: ${key}`);
         }
 
         let res = {
@@ -98,11 +102,7 @@ class LogicGenerator {
                 if (!written_mixins.has(key)) {
                     written_mixins.add(key);
                     let value = mixins.get(key);
-                    //res.mixins[key] = postCalcutate(value);
-                    res.mixins[key] = {
-                        category: "mixin",
-                        logic: postCalcutate(value)
-                    };
+                    res.mixins[key] = postCalcutate(value);
                 }
             }
             // functions
@@ -113,12 +113,7 @@ class LogicGenerator {
                 if (!written_functions.has(key)) {
                     written_functions.add(key);
                     let value = functions.get(key);
-                    //res.mixins[key] = postCalcutate(value);
-                    console.log(key);
-                    res.mixins[key] = {
-                        category: "function",
-                        logic: postCalcutate(value)
-                    };
+                    res.mixins[key] = postCalcutate(value);
                 }
             }
         }
@@ -127,11 +122,37 @@ class LogicGenerator {
         console.log("-------------------------------------------");
         console.log("states not converted");
         console.log("");
-        console.log(unstate);
+        console.log(JSON.stringify(unstate, null, 4));
 
         return res;
     }
 
+}
+
+function findMixins(input) {
+    switch (input.type) {
+        case "true":
+        case "false":
+        case "state":
+            return;
+        case "value":
+            if (mixins.has(input.el)) {
+                if (!used_mixins.has(input.el)) {
+                    used_mixins.add(input.el);
+                    console.log(`used mixin    : ${input.el}`);
+                }
+            }
+            return;
+        case "min":
+        case "max":
+            findMixins(input.el);
+            return;
+        default:
+            for (let el of input.el) {
+                findMixins(el);
+            }
+            return;
+    }
 }
 
 function postCalcutate(input)  {
@@ -143,17 +164,23 @@ function postCalcutate(input)  {
             }
             let res = Translation.getValueName(input.el);
             if (res != null) {
+                findMixins(res);
                 return res;
             }
             let mixname = translateMixinName(input.el);
             if (mixins.has(mixname)) {
-                used_mixins.add(mixname);
+                if (!used_mixins.has(mixname)) {
+                    used_mixins.add(mixname);
+                    console.log(`used mixin    : ${mixname}`);
+                }
                 return {
                     type: "value",
                     el: mixname
                 };
             }
-            console.log(input);
+            if (input.el.indexOf(".") < 0) {
+                console.log(`no translation: ${input.el}`);
+            }
             return input;
         case "state":
             let stapar = input.value.replace(/^'|'$/g, "");
@@ -187,7 +214,10 @@ function postCalcutate(input)  {
                 } 
                 fnName = `${fnName}(${param})`;
             }
-            used_functions.add(fnName);
+            if (!used_functions.has(fnName)) {
+                used_functions.add(fnName);
+                console.log(`used function : ${fnName}`);
+            }
             return {
                 type: "value",
                 el: fnName

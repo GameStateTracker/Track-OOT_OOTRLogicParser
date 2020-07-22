@@ -1,4 +1,18 @@
 {
+    "filter.time": {
+        "name": "filter.time",
+        "values": {
+            "day": "day",
+            "night": "night"
+        }
+    },
+    "option.starting_age": {
+        "name": "option.starting_age",
+        "values": {
+            "adult": "adult",
+            "child": "child"
+        }
+    },
     "lacs_condition": {
         "name": "option.light_arrow_cutscene",
         "values": {
@@ -55,6 +69,14 @@
         "name": "option.logic_rules",
         "values": {
             "glitchless": "logic_rules_glitchless"
+        }
+    },
+    "option.entrance_shuffle": {
+        "name": "option.entrance_shuffle",
+        "values": {
+            "entrance_shuffle_off": "entrance_shuffle_off",
+            "entrance_shuffle_dungeon": "entrance_shuffle_dungeon",
+            "entrance_shuffle_all": "entrance_shuffle_all"
         }
     }
 }
