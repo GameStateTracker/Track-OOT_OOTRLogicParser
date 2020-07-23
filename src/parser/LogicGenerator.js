@@ -7,7 +7,7 @@ const __dirname = path.resolve();
 
 const function_overrides = JSONCFile.read(path.join(__dirname, "/translation/functions.jsonc"), {});
 const mixin_overrides = JSONCFile.read(path.join(__dirname, "/translation/mixins.jsonc"), {});
-const event_override = JSONCFile.read(path.join(__dirname, "translation/events.jsonc"), {});
+const event_overrides = JSONCFile.read(path.join(__dirname, "/translation/events.jsonc"), {});
 
 let mixins = new Map();
 let functions = new Map();
@@ -90,6 +90,11 @@ class LogicGenerator {
             mixins.set(key, mixin_overrides[key]);
             console.log(`added mixin override: ${key}`);
         }
+        for (let key in event_overrides) {
+            if (key == "") continue;
+            events.set(key, event_overrides[key]);
+            console.log(`added event override: ${key}`);
+        }
 
         let res = {
             edges: {},
@@ -109,7 +114,7 @@ class LogicGenerator {
             }
             res.edges[translateRegionName(region)] = reg;
         }
-        while (!!used_mixins.size || !!used_functions.size) {
+        while (!!used_mixins.size || !!used_functions.size || !!used_events.size) {
             // mixins
             let mixinArr = Array.from(used_mixins);
             used_mixins.clear();
@@ -130,6 +135,17 @@ class LogicGenerator {
                     written_functions.add(key);
                     let value = functions.get(key);
                     res.logic[key] = postCalcutate(value);
+                }
+            }
+            // events
+            let eventArr = Array.from(used_events);
+            used_events.clear();
+            while (!!eventArr.length) {
+                let key = eventArr.pop();
+                if(!written_events.has(key)) {
+                    written_events.add(key);
+                    let value = events.get(key);
+                    res.edges[key] = postCalcutate(value);
                 }
             }
         }
