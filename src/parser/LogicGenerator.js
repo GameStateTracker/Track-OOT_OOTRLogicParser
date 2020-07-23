@@ -7,18 +7,22 @@ const __dirname = path.resolve();
 
 const function_overrides = JSONCFile.read(path.join(__dirname, "/translation/functions.jsonc"), {});
 const mixin_overrides = JSONCFile.read(path.join(__dirname, "/translation/mixins.jsonc"), {});
+const event_override = JSONCFile.read(path.join(__dirname, "translation/events.jsonc"), {});
 
 let mixins = new Map();
 let functions = new Map();
 let exits = new Map();
 let locations = new Map();
+let events = new Map();
 let structure = {};
 
 let used_mixins = new Set();
 let used_functions = new Set();
+let used_events = new Set();
 
 let written_mixins = new Set();
 let written_functions = new Set();
+let written_events = new Set();
 
 const unstate = {};
 
@@ -36,7 +40,8 @@ class LogicGenerator {
         if (structure[region] == null) {
             structure[region] = {
                 locations: [],
-                exits: []
+                exits: [],
+                events: []
             };
         }
         structure[region].exits.push(key);
@@ -47,12 +52,26 @@ class LogicGenerator {
         if (structure[region] == null) {
             structure[region] = {
                 locations: [],
-                exits: []
+                exits: [],
+                events: []
             };
         }
         structure[region].locations.push(key);
         locations.set(key, value);
     }
+
+    addEvent(region, key, value) {
+        if (structure[region] == null) {
+            structure[region] = {
+                locations: [],
+                exits: [],
+                events: []
+            };
+        }
+        structure[region].events.push(key);
+        events.set(key, value);
+    }
+
 
     generate()  {
 
@@ -84,6 +103,9 @@ class LogicGenerator {
             }
             for (let node of data.locations) {
                 reg[`logic.${Translation.translateName(node)}`] = postCalcutate(locations.get(node));
+            }
+            for (let node of data.events) {
+                reg[translateEventName(node)] = postCalcutate(events.get(node));
             }
             res.edges[translateRegionName(region)] = reg;
         }
@@ -269,6 +291,11 @@ function postCalcutate(input)  {
 function translateRegionName(input) {
     if (input.startsWith("region.")) return input;
     return `region.${input.toLowerCase().replace(/ /g, "_")}`;
+}
+
+function translateEventName(input) {
+    if(input.startsWith("event.")) return input;
+    return `event.${input.toLowerCase().replace(/ /g, "_")}`;
 }
 
 function translateMixinName(input) {

@@ -16,6 +16,10 @@ class LogicParser {
                 let rule = value.exits[i];
                 LogicGenerator.addExit(value.region_name, i, transpile(rule));
             }
+            for (let i in value.events) {
+                let rule = value.events[i];
+                LogicGenerator.addEvent(value.region_name, i, transpile(rule));
+            }
         })
     }
 
