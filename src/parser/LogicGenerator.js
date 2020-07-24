@@ -117,7 +117,7 @@ class LogicGenerator {
             }
             res.edges[translateRegionName(region)] = reg;
         }
-        while (!!used_mixins.size || /*!!used_functions.size*/ || !!used_events.size) {
+        while (!!used_mixins.size || !!used_functions.size || !!used_events.size) {
             // mixins
             let mixinArr = Array.from(used_mixins);
             used_mixins.clear();
@@ -130,7 +130,7 @@ class LogicGenerator {
                 }
             }
             // functions
-            /*let functionArr = Array.from(used_functions);
+            let functionArr = Array.from(used_functions);
             used_functions.clear();
             while (!!functionArr.length) {
                 let key = functionArr.pop();
@@ -139,7 +139,7 @@ class LogicGenerator {
                     let value = functions.get(key);
                     res.logic[key] = postCalcutate(value);
                 }
-            }*/
+            }
             // events
             let eventArr = Array.from(used_events);
             used_events.clear();
