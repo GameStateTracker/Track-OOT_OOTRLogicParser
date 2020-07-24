@@ -44,6 +44,9 @@ class LogicGenerator {
                 events: []
             };
         }
+		while( exits.has(key)) {
+			key = key + "1";
+		}
         structure[region].exits.push(key);
         exits.set(key, value);
     }
@@ -114,7 +117,7 @@ class LogicGenerator {
             }
             res.edges[translateRegionName(region)] = reg;
         }
-        while (!!used_mixins.size || !!used_functions.size || !!used_events.size) {
+        while (!!used_mixins.size || /*!!used_functions.size*/ || !!used_events.size) {
             // mixins
             let mixinArr = Array.from(used_mixins);
             used_mixins.clear();
@@ -127,7 +130,7 @@ class LogicGenerator {
                 }
             }
             // functions
-            let functionArr = Array.from(used_functions);
+            /*let functionArr = Array.from(used_functions);
             used_functions.clear();
             while (!!functionArr.length) {
                 let key = functionArr.pop();
@@ -136,7 +139,7 @@ class LogicGenerator {
                     let value = functions.get(key);
                     res.logic[key] = postCalcutate(value);
                 }
-            }
+            }*/
             // events
             let eventArr = Array.from(used_events);
             used_events.clear();
@@ -190,6 +193,7 @@ function findMixins(input) {
 
 function postCalcutate(input)  {
     let els = [];
+	//console.log(input);
     switch(input.type) {
         case "value":
             if (input.el.startsWith("item.") || input.el.startsWith("mixin.") || input.el.startsWith("function.") || input.el.startsWith("region.")) {
@@ -306,7 +310,7 @@ function postCalcutate(input)  {
 
 function translateRegionName(input) {
     if (input.startsWith("region.")) return input;
-    return `region.${input.toLowerCase().replace(/ /g, "_")}`;
+    return `region.${input.toLowerCase().replace(/ /g, "_").replace(/1/g, "")}`;
 }
 
 function translateEventName(input) {

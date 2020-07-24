@@ -153,21 +153,8 @@
         ]
     },
     "Epona": {
-        "type": "and",
-        "el": [
-            {
-                "type": "value",
-                "el": "function.can_play(item.song_epona"
-            },
-            {
-                "type": "value",
-                "el": "mixin.can_become_adult"
-            },
-            {
-                "type": "value",
-                "el": "mixin.is_day"
-            }
-        ]
+        "type": "value",
+        "el": "event.epona"
     },
     "Bonooru": {
         "type": "and",
