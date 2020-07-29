@@ -48,27 +48,27 @@ joint checks
     spirit
         location.temple_spirit.c_twinrova
         location.temple_spirit_mq.c_twinrova
-	---------------------------------------------------
-	location.temple_spirit.c_shield
-	location.temple_spirit_mq.c_mirror_shield
-	---------------------------------------------------
-	location.temple_spirit.c_gauntlets
-	location.temple_spirit_mq.c_gauntlets
+	    ---------------------------------------------------
+        location.temple_spirit.c_shield
+        location.temple_spirit_mq.c_mirror_shield
+	    ---------------------------------------------------
+        location.temple_spirit.c_gauntlets
+        location.temple_spirit_mq.c_gauntlets
 
     =======================================================
 
     ganons castle
         location.castle_ganon.c_boss
         location.castle_ganon_mq.c_boss
-	---------------------------------------------------
-	location.castle_ganon.c_boss_key
-	location.castle_ganon_mq.c_boss_key
+	    ---------------------------------------------------
+        location.castle_ganon.c_boss_key
+        location.castle_ganon_mq.c_boss_key
 
     =======================================================
 
     ice cavern
-	location.ice_cavern.c_sheik
-	location.ice_cavern_mq.c_sheik
+        location.ice_cavern.c_sheik
+        location.ice_cavern_mq.c_sheik
 
 ###########################################################
 
