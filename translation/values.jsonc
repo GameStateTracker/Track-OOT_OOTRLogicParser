@@ -153,21 +153,8 @@
         ]
     },
     "Epona": {
-        "type": "and",
-        "el": [
-            {
-                "type": "value",
-                "el": "function.can_play(item.song_epona"
-            },
-            {
-                "type": "value",
-                "el": "mixin.can_become_adult"
-            },
-            {
-                "type": "value",
-                "el": "mixin.is_day"
-            }
-        ]
+        "type": "value",
+        "el": "event.epona"
     },
     "Bonooru": {
         "type": "and",
@@ -552,6 +539,30 @@
     "Song_of_Storms": {
         "type": "value",
         "el": "item.song_storm"
+    },
+    "Minuet_of_Forest": {
+        "type": "value",
+        "el": "item.warp_forest"
+    },
+    "Bolero_of_Fire": {
+        "type": "value",
+        "el": "item.warp_fire"
+    },
+    "Serenade_of_Water": {
+        "type": "value",
+        "el": "item.warp_water"
+    },
+    "Nocturne_of_Shadow": {
+        "type": "value",
+        "el": "item.warp_shadow"
+    },
+    "Requiem_of_Spirit": {
+        "type": "value",
+        "el": "item.warp_spirit"
+    },
+    "Prelude_of_Light": {
+        "type": "value",
+        "el": "item.warp_light"
     },
     //"item.warp_forest",
     //"item.warp_fire",
