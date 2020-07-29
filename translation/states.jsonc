@@ -72,6 +72,12 @@
             "glitchless": "logic_rules_glitchless"
         }
     },
+    "open_kakariko": {
+        "name": "option.open_kakariko",
+        "values": {
+            "open": "kakariko_open"
+        }
+    },
     "option.entrance_shuffle": {
         "name": "option.entrance_shuffle",
         "values": {
