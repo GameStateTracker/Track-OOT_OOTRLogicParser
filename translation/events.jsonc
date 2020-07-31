@@ -9,7 +9,7 @@
         "el": "location.deku.c_gohma"
     },
 
-    "event.king_zora_thawed": {
+    "King Zora Thawed": {
                 "type": "and",
                 "el": [
                     {
