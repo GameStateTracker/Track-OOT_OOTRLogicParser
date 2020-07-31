@@ -721,11 +721,11 @@
     //"item.sold_out",
     "Blue_Fire": {
         "type": "value",
-        "el": "item.blue_fire"
+        "el": "item.bottle"
     },
     "Bugs": {
         "type": "value",
-        "el": "item.bugs"
+        "el": "item.bottle"
     },
     "Buy_Bottle_Bug": {
         "type": "value",
@@ -741,7 +741,7 @@
     },
     "Fish": {
         "type": "value",
-        "el": "item.fish"
+        "el": "item.bottle"
     },
     "Buy_Fish": {
         "type": "value",
