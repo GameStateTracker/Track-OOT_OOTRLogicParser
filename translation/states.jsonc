@@ -83,6 +83,8 @@
         "values": {
             "entrance_shuffle_off": "entrance_shuffle_off",
             "entrance_shuffle_dungeon": "entrance_shuffle_dungeon",
+            "entrance_shuffle_simple": "entrance_shuffle_simple",
+            "entrance_shuffle_indoor": "entrance_shuffle_indoor",
             "entrance_shuffle_all": "entrance_shuffle_all"
         }
     }

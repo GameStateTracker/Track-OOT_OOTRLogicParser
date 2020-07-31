@@ -6,6 +6,10 @@
     "is_starting_age": {
         "type": "true"
     },
+    // I have no good way of setting this up in logic as it pings in two different places, so this might be permanent
+    "complete_mask_quest": {
+        "type": "true"
+    },
     /* mixins */
     "is_child": {
         "type": "value",
@@ -25,11 +29,11 @@
     },
     "Forest_Temple_Jo_and_Beth": {
         "type": "value",
-        "el": "mixin.jo_and_beth"
+        "el": "event.jo_and_beth"
     },
     "Forest_Temple_Amy_and_Meg": {
         "type": "value",
-        "el": "mixin.amy_and_meg"
+        "el": "event.amy_and_meg"
     },
     "at_dampe_time": {
         "type": "value",
@@ -37,158 +41,92 @@
     },
     /* specials */
     "Showed_Mido_Sword_&_Shield": {
-        "type": "and",
-        "el": [
-            {
-                "type": "value",
-                "el": "item.sword_kokiri"
-            },
-            {
-                "type": "value",
-                "el": "item.shield_kokiri"
-            }
-        ]
+        "type": "value",
+        "el": "event.showed_mido_sword_&_shield"
     },
     "Drain_Well": {
-        "type": "and",
-        "el": [
-            {
-                "type": "value",
-                "el": "mixin.can_become_child"
-            },
-            {
-                "type": "value",
-                "el": "function.can_play(item.song_storm)"
-            }
-        ]
+        "type": "value",
+        "el": "event.drain_well"
+    },
+    "Kakariko_Village_Gate_Open": {
+        "type": "value",
+        "el": "event.kakariko_village_gate_open"
+    },
+    "Wake_Up_Adult_Talon": {
+        "type": "value",
+        "el": "event.wake_up_adult_talon"
+    },
+    "Drain_Well": {
+        "type": "value",
+        "el": "event.drain_well"
     },
     "GC_Woods_Warp_Open": {
-        "type": "and",
-        "el": [
-            {
-                "type": "value",
-                "el": "mixin.can_blast_or_smash"
-            },
-            {
-                "type": "value",
-                "el": "function.can_use(item.magic_din)"
-            }
-        ]
+        "type": "value",
+        "el": "event.gc_woods_warp_open"
     },
     "Goron_City_Child_Fire": {
-        "type": "and",
-        "el": [
-            {
-                "type": "value",
-                "el": "mixin.can_become_child"
-            },
-            {
-                "type": "value",
-                "el": "function.can_use(item.magic_din)"
-            }
-        ]
+        "type": "value",
+        "el": "event.goron_city_child_fire"
     },
     "Stop_GC_Rolling_Goron_as_Adult": {
-        "type": "and",
-        "el": [
-            {
-                "type": "value",
-                "el": "mixin.can_become_adult"
-            },
-            {
-                "type": "value",
-                "el": "item.glove"
-            },
-            {
-                "type": "or",
-                "el": [
-                    {
-                        "type": "value",
-                        "el": "mixin.has_explosives"
-                    },
-                    {
-                        "type": "value",
-                        "el": "item.bow"
-                    },
-                    {
-                        "type": "and",
-                        "el": [
-                            {
-                                "type": "value",
-                                "el": "skip.linkthegoron_dins"
-                            },
-                            {
-                                "type": "value",
-                                "el": "function.can_use(item.magic_din)"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
+        "type": "value",
+        "el": "event.stop_gc_rolling_goron_as_adult"
     },
     "Child_Water_Temple": {
         "type": "value",
-        "el": "mixin.can_become_child"
+        "el": "event.child_water_temple"
     },
     "had_night_start": {
         "type": "value",
         "el": "option.time_start_night"
     },
     "Links_Cow": {
-        "type": "and",
-        "el": [
-            {
-                "type": "value",
-                "el": "function.can_play(item.song_epona"
-            },
-            {
-                "type": "value",
-                "el": "mixin.can_become_adult"
-            },
-            {
-                "type": "value",
-                "el": "mixin.is_day"
-            }
-        ]
+        "type": "value",
+        "el": "event.links_cow"
     },
     "Epona": {
         "type": "value",
         "el": "event.epona"
     },
     "Bonooru": {
-        "type": "and",
-        "el": [
-            {
-                "type": "value",
-                "el": "mixin.can_become_child"
-            },
-            {
-                "type": "value",
-                "el": "item.ocarina"
-            }
-        ]
+        "type": "value",
+        "el": "event.bonooru"
     },
     "Dampes_Windmill_Access": {
-        "type": "and",
-        "el": [
-            {
-                "type": "value",
-                "el": "mixin.can_become_adult"
-            },
-            {
-                "type": "value",
-                "el": "function.can_use(item.song_time"
-            }
-        ]
+        "type": "value",
+        "el": "event.dampes_windmill_access"
+    },
+    "Cojiro_Access": {
+        "type": "value",
+        "el": "event.cojiro_access"
+    },
+    "Odd_Potion_Access": {
+        "type": "value",
+        "el": "event.odd_potion_access"
+    },
+    "Eyeball_Frog_Access": {
+        "type": "value",
+        "el": "event.eyeball_frog_access"
+    },
+    "Poachers_Saw_Access": {
+        "type": "value",
+        "el": "event.poachers_saw_access"
+    },
+    "Odd_Mushroom_Access": {
+        "type": "value",
+        "el": "event.odd_mushroom_access"
+    },
+    "Broken_Sword_Access": {
+        "type": "value",
+        "el": "event.broken_sword_access"
+    },
+    "Prescription_Access": {
+        "type": "value",
+        "el": "event.prescription_access"
     },
     "Eyedrops_Access": {
-        "type": "min",
-        "el": {
-            "type": "value",
-            "el": "item.cojiro"
-        },
-        "value": 9
+        "type": "value",
+        "el": "event.eyedrops_access"
     },
     "disable_trade_revert": {
         "type": "and",
@@ -211,50 +149,49 @@
             }
         ]
     },
+    "Carpenter_Rescue": {
+        "type": "value",
+        "el": "event.carpenter_rescue"
+    },
+    "GF_Gate_Open": {
+        "type": "value",
+        "el": "event.gf_gate_open"
+    },
     "King_Zora_Thawed": {
-        "type": "and",
-        "el": [
-            {
-                "type": "value",
-                "el": "mixin.can_become_adult"
-            },
-            {
-                "type": "value",
-                "el": "item.blue_fire"
-            }
-        ]
+        "type": "value",
+        "el": "event.king_zora_thawed"
     },
     "Deku_Tree_Clear": {
         "type": "value",
-        "el": "location.deku.c_gohma"
+        "el": "event.deku_tree_clear"
     },
     "Water_Temple_Clear": {
         "type": "value",
-        "el": "location.temple_water.c_morpha"
+        "el": "event.water_temple_clear"
     },
     "Forest_Trial_Clear": {
         "type": "value",
-        "el": "location.castle_ganon.k_forest_trial"
+        "el": "event.forest_trial_clear"
     },
     "Fire_Trial_Clear": {
         "type": "value",
-        "el": "location.castle_ganon.k_fire_trial"
+        "el": "event.fire_trial_clear"
     },
     "Water_Trial_Clear": {
         "type": "value",
-        "el": "location.castle_ganon.k_water_trial"
+        "el": "event.water_trial_clear"
     },
     "Shadow_Trial_Clear": {
         "type": "value",
-        "el": "location.castle_ganon.k_shadow_trial"
+        "el": "event.shadow_trial_clear"
     },
     "Spirit_Trial_Clear": {
         "type": "value",
-        "el": "location.castle_ganon.k_spirit_trial"
+        "el": "event.spirit_trial_clear"
     },
     "Light_Trial_Clear": {
         "type": "value",
-        "el": "location.castle_ganon.k_light_trial"
+        "el": "event.light_trial_clear"
     },
     /* items */
     "Bow": {
@@ -302,6 +239,10 @@
         "el": "item.bombs"
     },
     "Bombchus": {
+        "type": "value",
+        "el": "item.bombchu"
+    },
+    "Bombchu_Drop": {
         "type": "value",
         "el": "item.bombchu"
     },
@@ -421,6 +362,78 @@
         },
         "value": 8
     },
+    "Pocket_Egg": {
+        "type": "min",
+        "el": {
+            "type": "value",
+            "el": "item.cojiro"
+        },
+        "value": 1
+    },
+    "Pocket_Cucco": {
+        "type": "min",
+        "el": {
+            "type": "value",
+            "el": "item.cojiro"
+        },
+        "value": 1
+    },
+    "Cojiro": {
+        "type": "min",
+        "el": {
+            "type": "value",
+            "el": "item.cojiro"
+        },
+        "value": 2
+    },
+    "Odd_Mushroom": {
+        "type": "min",
+        "el": {
+            "type": "value",
+            "el": "item.cojiro"
+        },
+        "value": 3
+    },
+    "Odd_Potion": {
+        "type": "min",
+        "el": {
+            "type": "value",
+            "el": "item.cojiro"
+        },
+        "value": 4
+    },
+    "Poachers_Saw": {
+        "type": "min",
+        "el": {
+            "type": "value",
+            "el": "item.cojiro"
+        },
+        "value": 5
+    },
+    "Broken_Sword": {
+        "type": "min",
+        "el": {
+            "type": "value",
+            "el": "item.cojiro"
+        },
+        "value": 6
+    },
+    "Prescription": {
+        "type": "min",
+        "el": {
+            "type": "value",
+            "el": "item.cojiro"
+        },
+        "value": 7
+    },
+    "Eyeball_Frog": {
+        "type": "min",
+        "el": {
+            "type": "value",
+            "el": "item.cojiro"
+        },
+        "value": 8
+    },
     "Eyedrops": {
         "type": "min",
         "el": {
@@ -511,6 +524,10 @@
     "Rutos_Letter": {
         "type": "value",
         "el": "item.zora_letter"
+    },
+    "Deliver_Letter": {
+        "type": "value",
+        "el": "mixin.deliver_letter"
     },
     "Gerudo_Membership_Card": {
         "type": "value",
@@ -752,6 +769,10 @@
         "type": "value",
         "el": "option.freescarecrow"
     },
+    "shuffle_gerudo_card": {
+        "type": "value",
+        "el": "option.gerudo_card_shuffle"
+    },
     "shuffle_dungeon_entrances": {
         "type": "not",
         "el": {
@@ -759,6 +780,27 @@
             "el": "option.entrance_shuffle",
             "value": "entrance_shuffle_off"
         }
+    },
+    "shuffle_special_indoor_entrances": {
+        "type": "and",
+        "el": [
+            {
+                "type": "not",
+                "el": {
+                    "type": "state",
+                    "el": "option.entrance_shuffle",
+                    "value": "entrance_shuffle_off"
+                }
+            },
+            {
+                "type": "not",
+                "el": {
+                    "type": "state",
+                    "el": "option.entrance_shuffle",
+                    "value": "entrance_shuffle_dungeon"
+                }
+            }
+        ]
     },
     "shuffle_interior_entrances": {
         "type": "and",
@@ -777,6 +819,14 @@
                     "type": "state",
                     "el": "option.entrance_shuffle",
                     "value": "entrance_shuffle_dungeon"
+                }
+            },
+            {
+                "type": "not",
+                "el": {
+                    "type": "state",
+                    "el": "option.entrance_shuffle",
+                    "value": "entrance_shuffle_simple"
                 }
             }
         ]

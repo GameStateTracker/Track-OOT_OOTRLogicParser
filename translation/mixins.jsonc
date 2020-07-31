@@ -9,12 +9,10 @@
             "value": "adult"
         }, {
             "type": "at",
-            "node": "region.master_sword_pedestral",
-            "el": [
-                {
-                    "type": "true"
-                }
-            ]
+            "node": "region.beyond_door_of_time",
+            "el": {
+                 "type": "true"
+            }
         }]
     },
     "mixin.can_become_child": {
@@ -25,12 +23,10 @@
             "value": "child"
         }, {
             "type": "at",
-            "node": "region.master_sword_pedestral",
-            "el": [
-                {
-                    "type": "true"
-                }
-            ]
+            "node": "region.beyond_door_of_time",
+            "el": {
+                "type": "true"
+            }
         }]
     },
 
@@ -43,6 +39,17 @@
         "type": "state",
         "el": "filter.time",
         "value": "day"
+    },
+
+    "mixin.deliver_letter": {
+        "type": "and",
+        "el": [{
+            "type": "value",
+            "el": "mixin.can_become_child"
+        }, {
+            "type": "value",
+            "el": "item.zora_letter"
+        }]
     },
 	
 	"mixin.jo_and_beth": {
