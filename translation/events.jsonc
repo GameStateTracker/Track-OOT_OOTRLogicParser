@@ -1,3 +1,63 @@
 {
+	"Water Temple Clear": {
+        "type": "value",
+        "el": "location.temple_water.c_morpha"
+    },
 	
+	"Deku Tree Clear": {
+        "type": "value",
+        "el": "location.deku.c_gohma"
+    },
+
+    "King Zora Thawed": {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "value",
+                        "el": "mixin.can_become_adult"
+                    },
+                    {
+                    	"type": "value",
+                    	"el": "item.bottle"
+                    },
+                    {
+                        "type": "or",
+                        "el": [
+                        	{
+                        		"type": "at",
+                        		"node": "region.ganons_castle_water_trial",
+                        		"el": {
+                        				"type": "true"
+                        		}
+                        	},
+                        	{
+                        		"type": "at",
+                        		"node": "region.ice_cavern_map_room",
+                        		"el": {
+                        				"type": "true"
+                        		}
+                        	},
+                        	{
+                        		"type": "and",
+                        		"el": [
+                        			{
+                        				"type": "value",
+                        				"el": "option.consider_buyable"
+                        			},
+                        			{
+                        				"type": "min",
+                        				"el": {
+                        					"type": "value",
+                        					"el": "item.wallet"
+                        				},
+                        				"value": 3
+                        			}
+                        		]
+                        	}
+                        ]
+                    }
+                ]
+            },
+
+    "": ""
 }

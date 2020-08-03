@@ -62,7 +62,8 @@
     "open_forest": {
         "name": "option.doors_open_forest",
         "values": {
-            "closed": "doors_open_forest_closed"
+            "closed": "doors_open_forest_closed",
+            "open": "doors_open_forest_open"
         }
     },
     "logic_rules": {
@@ -82,6 +83,8 @@
         "values": {
             "entrance_shuffle_off": "entrance_shuffle_off",
             "entrance_shuffle_dungeon": "entrance_shuffle_dungeon",
+            "entrance_shuffle_simple": "entrance_shuffle_simple",
+            "entrance_shuffle_indoor": "entrance_shuffle_indoor",
             "entrance_shuffle_all": "entrance_shuffle_all"
         }
     }
