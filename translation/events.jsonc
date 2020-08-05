@@ -13,7 +13,7 @@
                 "type": "and",
                 "el": [
                     {
-                        "type": "value",
+                        "type": "mixin",
                         "el": "mixin.can_become_adult"
                     },
                     {

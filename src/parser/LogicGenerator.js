@@ -169,8 +169,9 @@ function findMixins(input) {
         case "true":
         case "false":
         case "state":
-            return;
         case "value":
+            return;
+        case "mixin":
             if (mixins.has(input.el)) {
                 if (!used_mixins.has(input.el)) {
                     used_mixins.add(input.el);
@@ -196,7 +197,21 @@ function postCalcutate(input)  {
 	//console.log(input);
     switch(input.type) {
         case "value":
-            if (input.el.startsWith("item.") || input.el.startsWith("mixin.") || input.el.startsWith("function.") || input.el.startsWith("region.")) {
+            if (input.el.startsWith("item.") || input.el.startsWith("region.")) {
+                return input;
+            }
+            if (input.el.startsWith("mixin.")) {
+                if (!used_mixins.has(input.el)) {
+                    used_mixins.add(input.el);
+                    console.log(`used mixin    : ${input.el}`);
+                }
+                return input;
+            }
+            if (input.el.startsWith("function.")) {
+                if (!used_functions.has(input.el)) {
+                    used_functions.add(input.el);
+                    console.log(`used function : ${input.el}`);
+                }
                 return input;
             }
             let res = Translation.getValueName(input.el);
@@ -211,7 +226,7 @@ function postCalcutate(input)  {
                     console.log(`used mixin    : ${mixname}`);
                 }
                 return {
-                    type: "value",
+                    type: "mixin",
                     el: mixname
                 };
             }
@@ -256,7 +271,7 @@ function postCalcutate(input)  {
                 console.log(`used function : ${fnName}`);
             }
             return {
-                type: "value",
+                type: "mixin",
                 el: fnName
             };
         case "at":

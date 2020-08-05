@@ -12,19 +12,19 @@
     },
     /* mixins */
     "is_child": {
-        "type": "value",
+        "type": "mixin",
         "el": "mixin.can_become_child"
     },
     "is_adult": {
-        "type": "value",
+        "type": "mixin",
         "el": "mixin.can_become_adult"
     },
     "at_night": {
-        "type": "value",
+        "type": "mixin",
         "el": "mixin.is_night"
     },
     "at_day": {
-        "type": "value",
+        "type": "mixin",
         "el": "mixin.is_day"
     },
     "Forest_Temple_Jo_and_Beth": {
@@ -36,7 +36,7 @@
         "el": "event.amy_and_meg"
     },
     "at_dampe_time": {
-        "type": "value",
+        "type": "mixin",
         "el": "mixin.is_night"
     },
     /* specials */
@@ -55,10 +55,6 @@
     "Wake_Up_Adult_Talon": {
         "type": "value",
         "el": "event.wake_up_adult_talon"
-    },
-    "Drain_Well": {
-        "type": "value",
-        "el": "event.drain_well"
     },
     "GC_Woods_Warp_Open": {
         "type": "value",
@@ -498,11 +494,11 @@
         "el": "item.glove"
     },
     "Silver_Gauntlets": {
-        "type": "value",
+        "type": "mixin",
         "el": "mixin.silver_gauntlets"
     },
     "Golden_Gauntlets": {
-        "type": "value",
+        "type": "mixin",
         "el": "mixin.golden_gauntlets"
     },
     "Progressive_Scale": {
@@ -526,7 +522,7 @@
         "el": "item.zora_letter"
     },
     "Deliver_Letter": {
-        "type": "value",
+        "type": "mixin",
         "el": "mixin.deliver_letter"
     },
     "Gerudo_Membership_Card": {
@@ -592,11 +588,11 @@
         "el": "item.song_scarecrow"
     },
     "Scarecrow": {
-        "type": "value",
+        "type": "mixin",
         "el": "mixin.scarecrow"
     },
     "Distant_Scarecrow": {
-        "type": "value",
+        "type": "mixin",
         "el": "mixin.distant_scarecrow"
     },
     "Kokiri_Emerald": {
