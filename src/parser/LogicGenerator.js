@@ -211,7 +211,7 @@ function postCalcutate(input)  {
                     console.log(`used mixin    : ${mixname}`);
                 }
                 return {
-                    type: "value",
+                    type: "mixin",
                     el: mixname
                 };
             }
@@ -256,7 +256,7 @@ function postCalcutate(input)  {
                 console.log(`used function : ${fnName}`);
             }
             return {
-                type: "value",
+                type: "mixin",
                 el: fnName
             };
         case "at":
