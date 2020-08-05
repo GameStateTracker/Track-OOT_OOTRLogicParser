@@ -139,7 +139,7 @@
     "function.has_projectile(child)": {
         "type": "or",
         "el": [{
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.has_explosives"
         }, {
             "type": "value",
@@ -152,7 +152,7 @@
     "function.has_projectile(adult)": {
         "type": "or",
         "el": [{
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.has_explosives"
         }, {
             "type": "value",
@@ -165,7 +165,7 @@
     "function.has_projectile(both)": {
         "type": "or",
         "el": [{
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.has_explosives"
         }, {
             "type": "and",
@@ -193,7 +193,7 @@
     "function.has_projectile(either)": {
         "type": "or",
         "el": [{
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.has_explosives"
         }, {
             "type": "value",
@@ -223,7 +223,7 @@
             "type": "value",
             "el": "item.magic_power"
         }, {
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.can_become_adult"
         }]
     },
@@ -239,7 +239,7 @@
             "type": "value",
             "el": "item.magic_power"
         }, {
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.can_become_adult"
         }]
     },
@@ -293,7 +293,7 @@
             "type": "value",
             "el": "item.bow"
         }, {
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.can_become_adult"
         }]
     },
@@ -303,7 +303,7 @@
             "type": "value",
             "el": "item.hammer"
         }, {
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.can_become_adult"
         }]
     },
@@ -313,7 +313,7 @@
             "type": "value",
             "el": "item.boots_iron"
         }, {
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.can_become_adult"
         }]
     },
@@ -323,7 +323,7 @@
             "type": "value",
             "el": "item.boots_hover"
         }, {
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.can_become_adult"
         }]
     },
@@ -333,37 +333,37 @@
             "type": "value",
             "el": "item.hookshot"
         }, {
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.can_become_adult"
         }]
     },
     "function.can_use(mixin.longshot)": {
         "type": "and",
         "el": [{
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.longshot"
         }, {
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.can_become_adult"
         }]
     },
     "function.can_use(mixin.silver_gauntlets)": {
         "type": "and",
         "el": [{
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.silver_gauntlets"
         }, {
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.can_become_adult"
         }]
     },
     "function.can_use(mixin.golden_gauntlets)": {
         "type": "and",
         "el": [{
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.golden_gauntlets"
         }, {
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.can_become_adult"
         }]
     },
@@ -373,7 +373,7 @@
             "type": "value",
             "el": "item.tunic_fire"
         }, {
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.can_become_adult"
         }]
     },
@@ -383,27 +383,27 @@
             "type": "value",
             "el": "item.tunic_fire"
         }, {
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.can_become_adult"
         }]
     },
     "function.can_use(mixin.scarecrow)": {
         "type": "and",
         "el": [{
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.scarecrow"
         }, {
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.can_become_adult"
         }]
     },
     "function.can_use(mixin.distant_scarecrow)": {
         "type": "and",
         "el": [{
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.distant_scarecrow"
         }, {
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.can_become_adult"
         }]
     },
@@ -415,7 +415,7 @@
             "type": "value",
             "el": "item.slingshot"
         }, {
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.can_become_child"
         }]
     },
@@ -425,7 +425,7 @@
             "type": "value",
             "el": "item.boomerang"
         }, {
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.can_become_child"
         }]
     },
@@ -435,7 +435,7 @@
             "type": "value",
             "el": "item.sword_kokiri"
         }, {
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.can_become_child"
         }]
     },
@@ -445,7 +445,7 @@
             "type": "value",
             "el": "item.shield_kokiri"
         }, {
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.can_become_child"
         }]
     },
@@ -455,7 +455,7 @@
             "type": "value",
             "el": "item.stick"
         }, {
-            "type": "value",
+            "type": "mixin",
             "el": "mixin.can_become_child"
         }]
     },
