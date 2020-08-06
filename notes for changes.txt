@@ -80,3 +80,9 @@ check changes
         ---------------------------------------------------
         logic.location.well.s_center_locked_room_child
         logic.location.well.s_east_inner_child
+
+###########################################################
+
+changes to be made
+
+add custom_mixin.json and adjust mixin_overrides to accommodate

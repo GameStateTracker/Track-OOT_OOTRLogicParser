@@ -31,14 +31,67 @@
     },
 
 	"mixin.is_night": {
-        "type": "state",
-        "el": "filter.time",
-        "value": "night"
+        "type": "not",
+        "el": {
+            "type": "state",
+            "el": "filter.time",
+            "value": "day"
+        }
     },
 	"mixin.is_day": {
-        "type": "state",
-        "el": "filter.time",
-        "value": "day"
+        "type": "not",
+        "el": {
+            "type": "state",
+            "el": "filter.time",
+            "value": "night"
+        }
+    },
+
+    "mixin.longshot": {
+        "type": "min",
+        "el": {
+            "type": "value",
+            "el": "item.hookshot"
+        },
+        "value": 2
+    },
+    "mixin.silver_gauntlets": {
+        "type": "min",
+        "el": {
+            "type": "value",
+            "el": "item.glove"
+        },
+        "value": 2
+    },
+    "mixin.golden_gauntlets": {
+        "type": "min",
+        "el": {
+            "type": "value",
+            "el": "item.glove"
+        },
+        "value": 3
+    },
+    "mixin.scarecrow": {
+        "type": "and",
+        "el": [{
+                "type": "value",
+                "el": "event.bonooru"
+            }, {
+                "type": "value",
+                "el": "item.hookshot"
+            }
+        ]
+    },
+    "mixin.distant_scarecrow": {
+        "type": "and",
+        "el": [{
+                "type": "value",
+                "el": "event.bonooru"
+            }, {
+                "type": "mixin",
+                "el": "mixin.longshot"
+            }
+        ]
     },
 
     "mixin.deliver_letter": {
@@ -51,58 +104,6 @@
             "el": "item.zora_letter"
         }]
     },
-	
-	"mixin.jo_and_beth": {
-		"type": "or",
-        "el": [{
-                "type": "value",
-                "el": "option.ignore_poe_death_fot"
-            },
-            {
-                "type": "or",
-                "el": [{
-                        "type": "and",
-                        "el": [{
-                                "type": "value",
-                                "el": "location.temple_forest.c_poe_red",
-                                "category": "location"
-                            }, {
-                                "type": "value",
-                                "el": "location.temple_forest.c_poe_blue",
-                                "category": "location"
-                            }
-                        ]
-                    }, {
-                        "type": "and",
-                        "el": [{
-                                "type": "value",
-                                "el": "location.temple_forest_mq.c_map",
-                                "category": "location"
-                            }, {
-                                "type": "value",
-                                "el": "location.temple_forest_mq.c_compass",
-                                "category": "location"
-                            }]
-                    }]
-            }]
-	},
-	"mixin.amy_and_meg": {
-	"type": "or",
-        "el": [ {
-                "type": "value",
-                "el": "option.ignore_poe_death_fot"
-            }, {
-                    "type": "and",
-                    "el": [ {
-                        "type": "value",
-                        "el": "location.temple_forest.k_poe_green",
-                        "category": "location"
-                    }, {
-                        "type": "value",
-                        "el": "location.temple_forest.c_poe_purple",
-                        "category": "location"
-                    }]
-            }]
-	},
+    
     "": ""
 }
