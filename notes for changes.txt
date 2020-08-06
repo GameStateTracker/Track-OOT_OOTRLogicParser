@@ -87,4 +87,4 @@ changes to be made
 
 add custom_mixin.json and adjust mixin_overrides to accommodate
 
-add overrides for locations and regions
+add overrides for locations and regions (added, can be used to override events, too)

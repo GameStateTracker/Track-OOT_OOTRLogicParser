@@ -1,36 +1,115 @@
 {
-
     /* time travel */
+    "mixin.is_starting_age": { // not working correctly
+        "type": "or",
+        "el": [
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "not",
+                        "el": {
+                            "type": "state",
+                            "el": "filter.age",
+                            "value": "adult"
+                        }
+                    },
+                    {
+                        "type": "state",
+                        "el": "option.starting_age",
+                        "value": "child"
+                    }
+                ]
+            },
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "not",
+                        "el": {
+                            "type": "state",
+                            "el": "filter.age",
+                            "value": "child"
+                        }
+                    },
+                    {
+                        "type": "state",
+                        "el": "option.starting_age",
+                        "value": "adult"
+                    }
+                ]
+            }
+        ]
+    },
     "mixin.can_become_adult": {
         "type": "or",
-        "el": [{
-            "type": "state",
-            "el": "option.starting_age",
-            "value": "adult"
-        }, {
-            "type": "at",
-            "node": "region.beyond_door_of_time",
-            "el": {
-                 "type": "true"
+        "el": [
+            {
+                "type": "state",
+                "el": "option.starting_age",
+                "value": "adult"
+            },
+            {
+                "type": "at",
+                "node": "region.beyond_door_of_time",
+                "el": {
+                    "type": "true"
+                }
             }
-        }]
+        ]
     },
     "mixin.can_become_child": {
         "type": "or",
-        "el": [{
-            "type": "state",
-            "el": "option.starting_age",
-            "value": "child"
-        }, {
-            "type": "at",
-            "node": "region.beyond_door_of_time",
-            "el": {
-                "type": "true"
+        "el": [
+            {
+                "type": "state",
+                "el": "option.starting_age",
+                "value": "child"
+            },
+            {
+                "type": "at",
+                "node": "region.beyond_door_of_time",
+                "el": {
+                    "type": "true"
+                }
             }
-        }]
+        ]
     },
-
-	"mixin.is_night": {
+    "mixin.is_child": {
+        "type": "and",
+        "el": [
+            {
+                "type": "not",
+                "el": {
+                    "type": "state",
+                    "el": "filter.age",
+                    "value": "adult"
+                }
+            },
+            {
+                "type": "mixin",
+                "el": "mixin.can_become_child"
+            }
+        ]
+    },
+    "mixin.is_adult": {
+        "type": "and",
+        "el": [
+            {
+                "type": "not",
+                "el": {
+                    "type": "state",
+                    "el": "filter.age",
+                    "value": "child"
+                }
+            },
+            {
+                "type": "mixin",
+                "el": "mixin.can_become_adult"
+            }
+        ]
+    },
+    "mixin.is_night": {
         "type": "not",
         "el": {
             "type": "state",
@@ -38,7 +117,7 @@
             "value": "day"
         }
     },
-	"mixin.is_day": {
+    "mixin.is_day": {
         "type": "not",
         "el": {
             "type": "state",
@@ -46,7 +125,6 @@
             "value": "night"
         }
     },
-
     "mixin.longshot": {
         "type": "min",
         "el": {
@@ -73,10 +151,12 @@
     },
     "mixin.scarecrow": {
         "type": "and",
-        "el": [{
+        "el": [
+            {
                 "type": "value",
                 "el": "event.bonooru"
-            }, {
+            },
+            {
                 "type": "value",
                 "el": "item.hookshot"
             }
@@ -84,26 +164,29 @@
     },
     "mixin.distant_scarecrow": {
         "type": "and",
-        "el": [{
+        "el": [
+            {
                 "type": "value",
                 "el": "event.bonooru"
-            }, {
+            },
+            {
                 "type": "mixin",
                 "el": "mixin.longshot"
             }
         ]
     },
-
     "mixin.deliver_letter": {
         "type": "and",
-        "el": [{
-            "type": "mixin",
-            "el": "mixin.can_become_child"
-        }, {
-            "type": "value",
-            "el": "item.zora_letter"
-        }]
+        "el": [
+            {
+                "type": "mixin",
+                "el": "mixin.can_become_child"
+            },
+            {
+                "type": "value",
+                "el": "item.zora_letter"
+            }
+        ]
     },
-    
     "": ""
 }
