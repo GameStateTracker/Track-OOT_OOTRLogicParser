@@ -14,11 +14,25 @@
             "night": "night"
         }
     },
+    "filter.age": {
+        "name": "filter.age",
+        "values": {
+            "adult": "adult",
+            "child": "child"
+        }
+    },
     "option.starting_age": {
         "name": "option.starting_age",
         "values": {
             "adult": "adult",
             "child": "child"
+        }
+    },
+    "hints": {
+        "name": "option.hints_condition",
+        "values": {
+            "mask": "hints_condition_mask",
+            "agony": "hints_condition_agony"
         }
     },
     "lacs_condition": {
