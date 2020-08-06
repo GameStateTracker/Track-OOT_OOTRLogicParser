@@ -90,8 +90,14 @@ class LogicGenerator {
         }
         for (let key in mixin_overrides) {
             if (key == "") continue;
-            mixins.set(key, mixin_overrides[key]);
-            console.log(`added mixin override: ${key}`);
+			if(!mixins.has(key)) {
+				mixins.set(translateMixinName(key), mixin_overrides[key]);
+				console.log(`added mixin override: ${key}`);
+			} else {
+				mixins.set(translateMixinName(key), mixin_overrides[key]);
+				used_mixins.add(translateMixinName(key));
+				console.log(`added mixin override: ${key}`);
+			}
         }
         for (let key in event_overrides) {
             if (key == "") continue;

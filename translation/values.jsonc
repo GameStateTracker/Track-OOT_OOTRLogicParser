@@ -29,11 +29,11 @@
     },
     "Forest_Temple_Jo_and_Beth": {
         "type": "value",
-        "el": "event.jo_and_beth"
+        "el": "event.forest_temple_jo_and_beth"
     },
     "Forest_Temple_Amy_and_Meg": {
         "type": "value",
-        "el": "event.amy_and_meg"
+        "el": "event.forest_temple_amy_and_meg"
     },
     "at_dampe_time": {
         "type": "mixin",
@@ -917,7 +917,7 @@
     },
     "logic_water_hookshot_entry": {
         "type": "value",
-        "el": "skip.morpha_scale"
+        "el": "skip.water_temple_early_hookshot"
     },
     "logic_lab_diving": {
         "type": "value",
@@ -936,8 +936,9 @@
         "el": "skip.naked_wasteland"
     },
     "logic_lens_wasteland": {
-        "type": "value",
-        "el": "skip.lens_required_never"
+        "type": "state",
+        "el": "skip.lens_required",
+        "value": "lens_required_never"
     },
     "logic_reverse_wasteland": {
         "type": "value",
@@ -1044,8 +1045,12 @@
         "el": "skip.zora_cucco"
     },
     "logic_lens_botw": {
-        "type": "value",
-        "el": "skip.lens_required_never"
+        "type": "not",
+        "el": {
+            "type": "state",
+            "el": "skip.lens_required",
+            "value": "lens_required_default"
+        }
     },
     "logic_child_deadhand": {
         "type": "value",
@@ -1108,8 +1113,12 @@
         "el": "skip.jjmq_sot_boomerang"
     },
     "logic_lens_jabu_mq": {
-        "type": "value",
-        "el": "skip.lens_required_never"
+        "type": "not",
+        "el": {
+            "type": "state",
+            "el": "skip.lens_required",
+            "value": "lens_required_default"
+        }
     },
     "logic_ice_mq_scarecrow": {
         "type": "value",
@@ -1120,16 +1129,24 @@
         "el": "skip.gtg_rupees_nohookshot"
     },
     "logic_lens_gtg": {
-        "type": "value",
-        "el": "skip.lens_required_never"
+        "type": "not",
+        "el": {
+            "type": "state",
+            "el": "skip.lens_required",
+            "value": "lens_required_default"
+        }
     },
     "logic_gtg_fake_wall": {
         "type": "value",
         "el": "skip.gtg_ledge_hovers"
     },
     "logic_lens_gtg_mq": {
-        "type": "value",
-        "el": "skip.lens_required_never"
+        "type": "not",
+        "el": {
+            "type": "state",
+            "el": "skip.lens_required",
+            "value": "lens_required_default"
+        }
     },
     "logic_gtg_mq_without_hookshot": {
         "type": "value",
@@ -1268,16 +1285,24 @@
         "el": "skip.wt_platform_gs_hookshot"
     },
     "logic_lens_shadow": {
-        "type": "value",
-        "el": "skip.lens_required_never"
+        "type": "not",
+        "el": {
+            "type": "state",
+            "el": "skip.lens_required",
+            "value": "lens_required_default"
+        }
     },
     "logic_shadow_umbrella": {
         "type": "value",
         "el": "skip.shadow_temple_stone_umbrella_skip"
     },
     "logic_lens_shadow_back": {
-        "type": "value",
-        "el": "skip.lens_required_never"
+        "type": "not",
+        "el": {
+            "type": "state",
+            "el": "skip.lens_required",
+            "value": "lens_required_default"
+        }
     },
     "logic_shadow_freestanding_key": {
         "type": "value",
@@ -1288,8 +1313,12 @@
         "el": "skip.shadow_temple_river_statue_bombchu"
     },
     "logic_lens_shadow_mq": {
-        "type": "value",
-        "el": "skip.lens_required_never"
+        "type": "not",
+        "el": {
+            "type": "state",
+            "el": "skip.lens_required",
+            "value": "lens_required_default"
+        }
     },
     "logic_shadow_mq_gap": {
         "type": "value",
@@ -1300,8 +1329,12 @@
         "el": "skip.shtmq_lower_nofire"
     },
     "logic_lens_shadow_mq_back": {
-        "type": "value",
-        "el": "skip.lens_required_never"
+        "type": "not",
+        "el": {
+            "type": "state",
+            "el": "skip.lens_required",
+            "value": "lens_required_default"
+        }
     },
     "logic_spirit_child_bombchu": {
         "type": "value",
@@ -1324,8 +1357,12 @@
         "el": "skip.spt_main_room_gs_boomerang"
     },
     "logic_lens_spirit": {
-        "type": "value",
-        "el": "skip.lens_required_never"
+        "type": "not",
+        "el": {
+            "type": "state",
+            "el": "skip.lens_required",
+            "value": "lens_required_default"
+        }
     },
     "logic_spirit_wall": {
         "type": "value",
@@ -1336,8 +1373,12 @@
         "el": "skip.sptmq_frozen_nofire"
     },
     "logic_lens_spirit_mq": {
-        "type": "value",
-        "el": "skip.lens_required_never"
+        "type": "not",
+        "el": {
+            "type": "state",
+            "el": "skip.lens_required",
+            "value": "lens_required_default"
+        }
     },
     "logic_spirit_mq_lower_adult": {
         "type": "value",
@@ -1348,16 +1389,24 @@
         "el": "skip.sptmq_sunblock_gs_boomerang"
     },
     "logic_lens_castle": {
-        "type": "value",
-        "el": "skip.lens_required_never"
+        "type": "not",
+        "el": {
+            "type": "state",
+            "el": "skip.lens_required",
+            "value": "lens_required_default"
+        }
     },
     "logic_spirit_trial_hookshot": {
         "type": "value",
         "el": "skip.spirit_trial_without_hookshot"
     },
     "logic_lens_castle_mq": {
-        "type": "value",
-        "el": "skip.lens_required_never"
+        "type": "not",
+        "el": {
+            "type": "state",
+            "el": "skip.lens_required",
+            "value": "lens_required_default"
+        }
     },
     "logic_shadow_trial_mq": {
         "type": "value",

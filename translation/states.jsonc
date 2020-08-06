@@ -1,4 +1,12 @@
 {
+    "skip.lens_required": {
+        "name": "skip.lens_required",
+        "values": {
+            "lens_required_never": "lens_required_never",
+            "lens_required_wasteland": "lens_required_wasteland",
+            "lens_required_default": "lens_required_default"
+        }
+    },
     "filter.time": {
         "name": "filter.time",
         "values": {
