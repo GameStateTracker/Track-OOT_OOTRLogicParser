@@ -96,6 +96,10 @@ class LogicBuilder {
             let next = token[parseInt(current.slice(1, -1))];
             return this.resolveToken(next, token);
         }
+		if (current.startsWith(" %") && current.endsWith("%")) {
+            let next = token[parseInt(current.slice(2, -1))];
+            return this.resolveToken(next, token);
+        }
         if (current == 'False') {
             return new LiteralFalse();
         }

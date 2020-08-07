@@ -17,6 +17,13 @@ let locations = new Map();
 let events = new Map();
 let logicOverrides = new Map();
 let structure = {};
+let mixinsGlitched = new Map();
+let functionsGlitched = new Map();
+let exitsGlitched = new Map();
+let locationsGlitched = new Map();
+let eventsGlitched = new Map();
+let logicOverridesGlitched = new Map();
+let structureGlitched = {};
 
 const unstate = {};
 
@@ -67,6 +74,54 @@ class LogicGenerator {
         }
         structure[region].events.push(key);
         events.set(key, value);
+    }
+
+
+    addMixinGlitched(key, value) {
+        mixinsGlitched.set(translateMixinName(key), value);
+    }
+
+    addFunctionGlitched(key, value) {
+        functionsGlitched.set(translateFunctionName(key), value);
+    }
+
+    addExitGlitched(region, key, value) {
+        if (structureGlitched[region] == null) {
+            structureGlitched[region] = {
+                locations: [],
+                exits: [],
+                events: []
+            };
+        }
+        while( exitsGlitched.has(key)) {
+            key = key + "1";
+        }
+        structureGlitched[region].exits.push(key);
+        exitsGlitched.set(key, value);
+    }
+
+    addLocationGlitched(region, key, value) {
+        if (structureGlitched[region] == null) {
+            structureGlitched[region] = {
+                locations: [],
+                exits: [],
+                events: []
+            };
+        }
+        structureGlitched[region].locations.push(key);
+        locationsGlitched.set(key, value);
+    }
+
+    addEventGlitched(region, key, value) {
+        if (structureGlitched[region] == null) {
+            structureGlitched[region] = {
+                locations: [],
+                exits: [],
+                events: []
+            };
+        }
+        structureGlitched[region].events.push(key);
+        eventsGlitched.set(key, value);
     }
 
 
@@ -132,7 +187,82 @@ class LogicGenerator {
             res.logic[key] = postCalcutate(value);
         }
         // functions
-        for (var [key, value] of mixins) {
+        for (var [key, value] of functions) {
+            res.logic[key] = postCalcutate(value);
+        }
+        
+        console.log("");
+        console.log("-------------------------------------------");
+        console.log("states not converted");
+        console.log("");
+        console.log(JSON.stringify(unstate, null, 4));
+
+        return res;
+    }
+
+    generateGlitched()  {
+
+        console.log("");
+        console.log("-------------------------------------------");
+        console.log("generate glitched logic output");
+        console.log("");
+
+        for (let key in function_overrides) {
+            if (key == "") continue;
+            functions.set(key, function_overrides[key]);
+            console.log(`added function override: ${key}`);
+        }
+        for (let key in mixin_overrides) {
+            if (key == "") continue;
+            mixins.set(translateMixinName(key), mixin_overrides[key]);
+            console.log(`added mixin override: ${key}`);
+        }
+        for (let key in event_overrides) {
+            if (key == "") continue;
+            events.set(key, event_overrides[key]);
+            console.log(`added event override: ${key}`);
+        }
+
+        let res = {
+            edges: {},
+            logic: {}
+        };
+        for (let region in structureGlitched) {
+            let data = structureGlitched[region];
+            let reg = {};
+            let regName = translateRegionName(region);
+            for (let node of data.exits) {
+                let name = translateRegionName(node);
+                if (logic_overrides[regName] != null && logic_overrides[regName][name] != null) {
+                    reg[name] = logic_overrides[regName][name];
+                } else {
+                    reg[name] = postCalcutate(exitsGlitched.get(node));
+                }
+            }
+            for (let node of data.locations) {
+                let name = `logic.${Translation.translateName(node)}`;
+                if (logic_overrides[regName] != null && logic_overrides[regName][name] != null) {
+                    reg[name] = logic_overrides[regName][name];
+                } else {
+                    reg[name] = postCalcutate(locationsGlitched.get(node));
+                }
+            }
+            for (let node of data.events) {
+                let name = translateEventName(node);
+                if (logic_overrides[regName] != null && logic_overrides[regName][name] != null) {
+                    reg[name] = logic_overrides[regName][name];
+                } else {
+                    reg[name] = postCalcutate(eventsGlitched.get(node));
+                }
+            }
+            res.edges[regName] = reg;
+        }
+        // mixins
+        for (var [key, value] of mixinsGlitched) {
+            res.logic[key] = postCalcutate(value);
+        }
+        // functions
+        for (var [key, value] of functionsGlitched) {
             res.logic[key] = postCalcutate(value);
         }
         

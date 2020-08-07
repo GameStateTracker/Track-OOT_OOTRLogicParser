@@ -11,6 +11,7 @@ const __dirname = path.resolve();
 
 const inHelperFile  = path.join(__dirname, "/input/data/LogicHelpers.json");
 const inLogicDir  = path.join(__dirname, "/input/data/World");
+const inGlitchedDir  = path.join(__dirname, "/input/data/Glitched World");
 const outputDir = path.join(__dirname, "/output/");
 
 const transRulesFile = path.join(__dirname, "/translation/predict_rules.json");
@@ -38,7 +39,13 @@ fs.readdirSync(inLogicDir).forEach(function(file) {
     let iname = path.join(inLogicDir, file);
     LogicParser.parse(fs.readFileSync(iname).toString());
 });
+fs.readdirSync(inGlitchedDir).forEach(function(file) {
+    let iname = path.join(inGlitchedDir, file);
+    LogicParser.parseGlitched(fs.readFileSync(iname).toString());
+});
 
 // write logic
 let logic = JSON.stringify(LogicGenerator.generate(), null, 4);
+let glitched = JSON.stringify(LogicGenerator.generateGlitched(), null, 4);
 fs.writeFileSync(`${outputDir}/Logic.json`, logic);
+fs.writeFileSync(`${outputDir}/Glitched.json`, glitched);

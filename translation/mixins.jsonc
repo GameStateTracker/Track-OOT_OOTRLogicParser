@@ -1,6 +1,6 @@
 {
     /* time travel */
-    "mixin.is_starting_age": { // not working correctly
+    "mixin.is_starting_age": { 
         "type": "or",
         "el": [
             {

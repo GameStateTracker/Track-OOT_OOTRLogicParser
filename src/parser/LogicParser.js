@@ -23,6 +23,24 @@ class LogicParser {
         })
     }
 
+	parseGlitched(input) {
+        let output = RandONC.parse(input);
+        output.forEach((value) => {
+            for (let i in value.locations) {
+                let rule = value.locations[i];
+                LogicGenerator.addLocationGlitched(value.region_name, i, transpile(rule));
+            }
+            for (let i in value.exits) {
+                let rule = value.exits[i];
+                LogicGenerator.addExitGlitched(value.region_name, i, transpile(rule));
+            }
+            for (let i in value.events) {
+                let rule = value.events[i];
+                LogicGenerator.addEventGlitched(value.region_name, i, transpile(rule));
+            }
+        })
+    }
+	
 }
 
 function transpile(input) {
