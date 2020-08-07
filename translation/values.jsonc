@@ -216,7 +216,27 @@
         "type": "value",
         "el": "item.stick"
     },
+    "Buy_Deku_Stick_1": {
+        "type": "value",
+        "el": "item.stick_1"
+    },
+    "Deku_Stick_Drop": {
+        "type": "value",
+        "el": "item.stick"
+    },
     "Nuts": {
+        "type": "value",
+        "el": "item.nut"
+    },
+    "Buy_Deku_Nut_5": {
+        "type": "value",
+        "el": "item.nut_5"
+    },
+    "Buy_Deku_Nut_10": {
+        "type": "value",
+        "el": "item.nut_10"
+    },
+    "Deku_Nut_Drop": {
         "type": "value",
         "el": "item.nut"
     },
@@ -454,7 +474,10 @@
         "el": "item.sword_kokiri"
     },
     //"item.sword_master",
-    //"item.sword_biggoron",
+    "Biggoron_Sword": {
+        "type": "value",
+        "el": "item.sword_biggoron"
+    },
     "Deku_Shield": {
         "type": "value",
         "el": "item.shield_kokiri"
@@ -476,11 +499,18 @@
         "type": "value",
         "el": "item.tunic_fire"
     },
+    "Buy_Goron_Tunic": {
+        "type": "value",
+        "el": "item.tunic_fire_1"
+    },
     "Zora_Tunic": {
         "type": "value",
         "el": "item.tunic_water"
     },
-    //"item.tunics",
+    "Buy_Zora_Tunic": {
+        "type": "value",
+        "el": "item.tunic_water_1"
+    },
     //"item.boots_normal",
     "Iron_Boots": {
         "type": "value",
@@ -579,12 +609,6 @@
         "type": "value",
         "el": "item.warp_light"
     },
-    //"item.warp_forest",
-    //"item.warp_fire",
-    //"item.warp_water",
-    //"item.warp_shadow",
-    //"item.warp_spirit",
-    //"item.warp_light",
     "Scarecrow_Song": {
         "type": "value",
         "el": "item.song_scarecrow"
@@ -721,6 +745,10 @@
         "type": "value",
         "el": "item.bottle"
     },
+    "Buy_Blue_Fire": {
+        "type": "value",
+        "el": "item.blue_fire_1"
+    },
     "Bugs": {
         "type": "value",
         "el": "item.bottle"
@@ -758,6 +786,17 @@
     //"item.potion_red",
     //"item.potion_green",
     //"Blue_Potion": "item.potion_blue",
+
+    /* dummy items */
+    "item": {
+        "type": "value",
+        "el": "item.dummy"
+    },
+    "song": {
+        "type": "value",
+        "el": "item.song_dummy"
+    },
+
     /* options */
     "open_door_of_time": {
         "type": "value",
