@@ -15,19 +15,32 @@ let functions = new Map();
 let exits = new Map();
 let locations = new Map();
 let events = new Map();
-let logicOverrides = new Map();
 let structure = {};
-let mixinsGlitched = new Map();
-let functionsGlitched = new Map();
-let exitsGlitched = new Map();
-let locationsGlitched = new Map();
-let eventsGlitched = new Map();
-let logicOverridesGlitched = new Map();
-let structureGlitched = {};
 
 const unstate = {};
 
+function wrapNotEraFilter(rule, value) {
+    return {
+        "type": "and",
+        "el": [
+            {
+                "type": "not",
+                "el": {
+                    "type": "state",
+                    "el": "filter.era",
+                    "value": value
+                }
+            },
+            rule
+        ]
+    };
+}
+
 class LogicGenerator {
+
+    reset() {
+        structure = {};
+    }
 
     addMixin(key, value) {
         mixins.set(translateMixinName(key), value);
@@ -76,55 +89,6 @@ class LogicGenerator {
         events.set(key, value);
     }
 
-
-    addMixinGlitched(key, value) {
-        mixinsGlitched.set(translateMixinName(key), value);
-    }
-
-    addFunctionGlitched(key, value) {
-        functionsGlitched.set(translateFunctionName(key), value);
-    }
-
-    addExitGlitched(region, key, value) {
-        if (structureGlitched[region] == null) {
-            structureGlitched[region] = {
-                locations: [],
-                exits: [],
-                events: []
-            };
-        }
-        while( exitsGlitched.has(key)) {
-            key = key + "1";
-        }
-        structureGlitched[region].exits.push(key);
-        exitsGlitched.set(key, value);
-    }
-
-    addLocationGlitched(region, key, value) {
-        if (structureGlitched[region] == null) {
-            structureGlitched[region] = {
-                locations: [],
-                exits: [],
-                events: []
-            };
-        }
-        structureGlitched[region].locations.push(key);
-        locationsGlitched.set(key, value);
-    }
-
-    addEventGlitched(region, key, value) {
-        if (structureGlitched[region] == null) {
-            structureGlitched[region] = {
-                locations: [],
-                exits: [],
-                events: []
-            };
-        }
-        structureGlitched[region].events.push(key);
-        eventsGlitched.set(key, value);
-    }
-
-
     generate()  {
 
         console.log("");
@@ -135,17 +99,17 @@ class LogicGenerator {
         for (let key in function_overrides) {
             if (key == "") continue;
             functions.set(key, function_overrides[key]);
-            console.log(`added function override: ${key}`);
+            //console.log(`added function override: ${key}`);
         }
         for (let key in mixin_overrides) {
             if (key == "") continue;
             mixins.set(translateMixinName(key), mixin_overrides[key]);
-            console.log(`added mixin override: ${key}`);
+            //console.log(`added mixin override: ${key}`);
         }
         for (let key in event_overrides) {
             if (key == "") continue;
             events.set(key, event_overrides[key]);
-            console.log(`added event override: ${key}`);
+            //console.log(`added event override: ${key}`);
         }
 
         let res = {
@@ -154,117 +118,73 @@ class LogicGenerator {
         };
         for (let region in structure) {
             let data = structure[region];
-            let reg = {};
+            let regC = {};
+            let regA = {};
             let regName = translateRegionName(region);
             for (let node of data.exits) {
                 let name = translateRegionName(node);
                 if (logic_overrides[regName] != null && logic_overrides[regName][name] != null) {
-                    reg[name] = logic_overrides[regName][name];
+                    regC[`${name}[child]`] = postCalcutate(logic_overrides[regName][name], "child", regName);
+                    regA[`${name}[adult]`] = postCalcutate(logic_overrides[regName][name], "adult", regName);
                 } else {
-                    reg[name] = postCalcutate(exits.get(node));
+                    regC[`${name}[child]`] = postCalcutate(exits.get(node), "child", regName);
+                    regA[`${name}[adult]`] = postCalcutate(exits.get(node), "adult", regName);
                 }
             }
             for (let node of data.locations) {
                 let name = `logic.${Translation.translateName(node)}`;
                 if (logic_overrides[regName] != null && logic_overrides[regName][name] != null) {
-                    reg[name] = logic_overrides[regName][name];
+                    regC[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName), "adult");
+                    regA[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName), "child");
                 } else {
-                    reg[name] = postCalcutate(locations.get(node));
+                    regC[name] = wrapNotEraFilter(postCalcutate(locations.get(node), "child", regName), "adult");
+                    regA[name] = wrapNotEraFilter(postCalcutate(locations.get(node), "adult", regName), "child");
                 }
             }
             for (let node of data.events) {
                 let name = translateEventName(node);
                 if (logic_overrides[regName] != null && logic_overrides[regName][name] != null) {
-                    reg[name] = logic_overrides[regName][name];
+                    regC[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName), "adult");
+                    regA[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName), "child");
                 } else {
-                    reg[name] = postCalcutate(events.get(node));
+                    regC[name] = wrapNotEraFilter(postCalcutate(events.get(node), "child", regName), "adult");
+                    regA[name] = wrapNotEraFilter(postCalcutate(events.get(node), "adult", regName), "child");
                 }
             }
-            res.edges[regName] = reg;
+            res.edges[`${regName}[child]`] = regC;
+            res.edges[`${regName}[adult]`] = regA;
         }
         // mixins
         for (var [key, value] of mixins) {
-            res.logic[key] = postCalcutate(value);
+            res.logic[`${key}[child]`] = postCalcutate(value, "child");
+            res.logic[`${key}[adult]`] = postCalcutate(value, "adult");
         }
         // functions
         for (var [key, value] of functions) {
-            res.logic[key] = postCalcutate(value);
-        }
-        
-        console.log("");
-        console.log("-------------------------------------------");
-        console.log("states not converted");
-        console.log("");
-        console.log(JSON.stringify(unstate, null, 4));
-
-        return res;
-    }
-
-    generateGlitched()  {
-
-        console.log("");
-        console.log("-------------------------------------------");
-        console.log("generate glitched logic output");
-        console.log("");
-
-        for (let key in function_overrides) {
-            if (key == "") continue;
-            functions.set(key, function_overrides[key]);
-            console.log(`added function override: ${key}`);
-        }
-        for (let key in mixin_overrides) {
-            if (key == "") continue;
-            mixins.set(translateMixinName(key), mixin_overrides[key]);
-            console.log(`added mixin override: ${key}`);
-        }
-        for (let key in event_overrides) {
-            if (key == "") continue;
-            events.set(key, event_overrides[key]);
-            console.log(`added event override: ${key}`);
+            res.logic[`${key}[child]`] = postCalcutate(value, "child");
+            res.logic[`${key}[adult]`] = postCalcutate(value, "adult");
         }
 
-        let res = {
-            edges: {},
-            logic: {}
+        // BEGIN overrides
+        res.edges["region.root"] = {
+            "region.root[child]": {
+                "type": "state",
+                "el": "option.starting_age",
+                "value": "child"
+            },
+            "region.root[adult]": {
+                "type": "state",
+                "el": "option.starting_age",
+                "value": "adult"
+            }
         };
-        for (let region in structureGlitched) {
-            let data = structureGlitched[region];
-            let reg = {};
-            let regName = translateRegionName(region);
-            for (let node of data.exits) {
-                let name = translateRegionName(node);
-                if (logic_overrides[regName] != null && logic_overrides[regName][name] != null) {
-                    reg[name] = logic_overrides[regName][name];
-                } else {
-                    reg[name] = postCalcutate(exitsGlitched.get(node));
-                }
-            }
-            for (let node of data.locations) {
-                let name = `logic.${Translation.translateName(node)}`;
-                if (logic_overrides[regName] != null && logic_overrides[regName][name] != null) {
-                    reg[name] = logic_overrides[regName][name];
-                } else {
-                    reg[name] = postCalcutate(locationsGlitched.get(node));
-                }
-            }
-            for (let node of data.events) {
-                let name = translateEventName(node);
-                if (logic_overrides[regName] != null && logic_overrides[regName][name] != null) {
-                    reg[name] = logic_overrides[regName][name];
-                } else {
-                    reg[name] = postCalcutate(eventsGlitched.get(node));
-                }
-            }
-            res.edges[regName] = reg;
-        }
-        // mixins
-        for (var [key, value] of mixinsGlitched) {
-            res.logic[key] = postCalcutate(value);
-        }
-        // functions
-        for (var [key, value] of functionsGlitched) {
-            res.logic[key] = postCalcutate(value);
-        }
+        res.edges["region.beyond_door_of_time[child]"]["region.root_exits[adult]"] = {
+            "type": "true"
+        };
+        res.edges["region.beyond_door_of_time[adult]"]["region.root_exits[child]"] = {
+            "type": "true"
+        };
+        // END overrides
         
         console.log("");
         console.log("-------------------------------------------");
@@ -277,20 +197,49 @@ class LogicGenerator {
 
 }
 
-function postCalcutate(input)  {
+function postCalcutate(input, age = "", region = "")  {
     let els = [];
 	//console.log(input);
     switch(input.type) {
+        case "mixin":
+            if (age != "") {
+                return {
+                    type: "mixin",
+                    el: `${input.el}[${age}]`
+                };
+            }
+            return input;
         case "value":
-            if (input.el.startsWith("item.") || input.el.startsWith("region.") || input.el.startsWith("mixin.") || input.el.startsWith("function.")) {
+            if (input.el.indexOf(".") >= 0) {
+                if (input.el.startsWith("mixin.") || input.el.startsWith("function.") && age != "") {
+                    return {
+                        type: "mixin",
+                        el: `${input.el}[${age}]`
+                    };
+                }
+                if (input.el.startsWith("event.") || input.el.startsWith("logic.location.")) {
+                    return {
+                        type: "at",
+                        node: input.el,
+                        el: {
+                            type: "true"
+                        }
+                    };
+                }
                 return input;
             }
             let res = Translation.getValueName(input.el);
             if (res != null) {
-                return res;
+                return postCalcutate(res, age, region);
             }
             let mixname = translateMixinName(input.el);
             if (mixins.has(mixname)) {
+                if (age != "") {
+                    return {
+                        type: "mixin",
+                        el: `${mixname}[${age}]`
+                    };
+                }
                 return {
                     type: "mixin",
                     el: mixname
@@ -301,6 +250,17 @@ function postCalcutate(input)  {
             }
             return input;
         case "state":
+            if (input.el == "age" && age != "") {
+                if (input.value == age) {
+                    return {
+                        type: "true"
+                    };
+                } else {
+                    return {
+                        type: "false"
+                    };
+                }
+            }
             let stapar = input.value.replace(/^'|'$/g, "");
             let sta = Translation.getStateConfig(input.el);
             if (sta == null) {
@@ -332,20 +292,48 @@ function postCalcutate(input)  {
                 } 
                 fnName = `${fnName}(${param})`;
             }
+            if (age != "") {
+                return {
+                    type: "mixin",
+                    el: `${fnName}[${age}]`
+                };
+            }
             return {
                 type: "mixin",
                 el: fnName
             };
         case "at":
             return {
-                type: "at",
-                node: translateRegionName(input.node),
-                el: postCalcutate(input.el)
+                type: "and",
+                el: [
+                    {
+                        type: "at",
+                        node: `${translateRegionName(input.node)}[child]`,
+                        el: postCalcutate(input.el, "child", region)
+                    },
+                    {
+                        type: "at",
+                        node: `${translateRegionName(input.node)}[adult]`,
+                        el: postCalcutate(input.el, "adult", region)
+                    }
+                ]
             };
+            return ;
         case "here":
             return {
-                type: "here",
-                el: postCalcutate(input.el)
+                type: "and",
+                el: [
+                    {
+                        type: "at",
+                        node: `${translateRegionName(region)}[child]`,
+                        el: postCalcutate(input.el, "child", region)
+                    },
+                    {
+                        type: "at",
+                        node: `${translateRegionName(region)}[adult]`,
+                        el: postCalcutate(input.el, "adult", region)
+                    }
+                ]
             };
         case "and":
         case "nand":
@@ -354,7 +342,7 @@ function postCalcutate(input)  {
         case "xor":
         case "xnor":
             for (let el of input.el) {
-                els.push(postCalcutate(el));
+                els.push(postCalcutate(el, age, region));
             }
             return {
                 type: input.type,
@@ -366,19 +354,19 @@ function postCalcutate(input)  {
                 if (isNaN(buffer)) {
                     return {
                         type: input.type == "min" ? "lte" : "gte",
-                        el: postCalcutate(input.el),
+                        el: postCalcutate(input.el, age, region),
                         value: input.value.replace(/^'|'$/g, "")
                     };
                 }
                 return {
                     type: input.type,
-                    el: postCalcutate(input.el),
+                    el: postCalcutate(input.el, age, region),
                     value: buffer
                 };
         case "not":
             return {
                 type: "not",
-                el: postCalcutate(input.el)
+                el: postCalcutate(input.el, age, region)
             };
         default:
             return input;
