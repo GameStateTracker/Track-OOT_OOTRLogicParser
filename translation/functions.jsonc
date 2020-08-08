@@ -381,7 +381,7 @@
         "type": "and",
         "el": [{
             "type": "value",
-            "el": "item.tunic_fire"
+            "el": "item.tunic_water"
         }, {
             "type": "mixin",
             "el": "mixin.can_become_adult"

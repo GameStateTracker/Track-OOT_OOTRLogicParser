@@ -13,13 +13,13 @@
     /* mixins */
     "is_child": {
         "type": "mixin",
-        //"el": "mixin.is_child"
-        "el": "mixin.can_become_child"
+        "el": "mixin.is_child"
+        //"el": "mixin.can_become_child"
     },
     "is_adult": {
         "type": "mixin",
-        //"el": "mixin.is_adult"
-        "el": "mixin.can_become_adult"
+        "el": "mixin.is_adult"
+        //"el": "mixin.can_become_adult"
     },
     "at_night": {
         "type": "mixin",
