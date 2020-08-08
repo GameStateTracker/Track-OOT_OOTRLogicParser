@@ -10,7 +10,7 @@
                         "type": "not",
                         "el": {
                             "type": "state",
-                            "el": "filter.age",
+                            "el": "filter.era",
                             "value": "adult"
                         }
                     },
@@ -28,7 +28,7 @@
                         "type": "not",
                         "el": {
                             "type": "state",
-                            "el": "filter.age",
+                            "el": "filter.era",
                             "value": "child"
                         }
                     },
@@ -82,7 +82,7 @@
                 "type": "not",
                 "el": {
                     "type": "state",
-                    "el": "filter.age",
+                    "el": "filter.era",
                     "value": "adult"
                 }
             },
@@ -99,7 +99,7 @@
                 "type": "not",
                 "el": {
                     "type": "state",
-                    "el": "filter.age",
+                    "el": "filter.era",
                     "value": "child"
                 }
             },
