@@ -33,19 +33,24 @@ rules.forEach((v, k) => {
     Translation.addRule(new RegExp(k, "i"), new RegExp(v, "i"));
 });
 
-// parse logic
+// parse helpers
 HelperParser.parse(fs.readFileSync(inHelperFile).toString());
+
+// parse logic
 fs.readdirSync(inLogicDir).forEach(function(file) {
     let iname = path.join(inLogicDir, file);
     LogicParser.parse(fs.readFileSync(iname).toString());
 });
+let logic = JSON.stringify(LogicGenerator.generate(), null, 4);
+fs.writeFileSync(`${outputDir}/logic.json`, logic);
+
+// rreset generator
+LogicGenerator.reset();
+
+// parse glitched logic
 fs.readdirSync(inGlitchedDir).forEach(function(file) {
     let iname = path.join(inGlitchedDir, file);
-    LogicParser.parseGlitched(fs.readFileSync(iname).toString());
+    LogicParser.parse(fs.readFileSync(iname).toString());
 });
-
-// write logic
-let logic = JSON.stringify(LogicGenerator.generate(), null, 4);
-let glitched = JSON.stringify(LogicGenerator.generateGlitched(), null, 4);
-fs.writeFileSync(`${outputDir}/Logic.json`, logic);
-fs.writeFileSync(`${outputDir}/Glitched.json`, glitched);
+let glitched = JSON.stringify(LogicGenerator.generate(), null, 4);
+fs.writeFileSync(`${outputDir}/glitched.json`, glitched);

@@ -7,12 +7,9 @@
                 "type": "and",
                 "el": [
                     {
-                        "type": "not",
-                        "el": {
-                            "type": "state",
-                            "el": "filter.era",
-                            "value": "adult"
-                        }
+                        "type": "state",
+                        "el": "age",
+                        "value": "child"
                     },
                     {
                         "type": "state",
@@ -25,12 +22,9 @@
                 "type": "and",
                 "el": [
                     {
-                        "type": "not",
-                        "el": {
-                            "type": "state",
-                            "el": "filter.era",
-                            "value": "child"
-                        }
+                        "type": "state",
+                        "el": "age",
+                        "value": "adult"
                     },
                     {
                         "type": "state",
@@ -76,38 +70,14 @@
         ]
     },
     "mixin.is_child": {
-        "type": "and",
-        "el": [
-            {
-                "type": "not",
-                "el": {
-                    "type": "state",
-                    "el": "filter.era",
-                    "value": "adult"
-                }
-            },
-            {
-                "type": "mixin",
-                "el": "mixin.can_become_child"
-            }
-        ]
+        "type": "state",
+        "el": "age",
+        "value": "child"
     },
     "mixin.is_adult": {
-        "type": "and",
-        "el": [
-            {
-                "type": "not",
-                "el": {
-                    "type": "state",
-                    "el": "filter.era",
-                    "value": "child"
-                }
-            },
-            {
-                "type": "mixin",
-                "el": "mixin.can_become_adult"
-            }
-        ]
+        "type": "state",
+        "el": "age",
+        "value": "adult"
     },
     "mixin.is_night": {
         "type": "not",

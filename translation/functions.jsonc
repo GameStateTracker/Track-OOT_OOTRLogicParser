@@ -224,7 +224,7 @@
             "el": "item.magic_power"
         }, {
             "type": "mixin",
-            "el": "mixin.can_become_adult"
+            "el": "mixin.is_adult"
         }]
     },
     "function.can_use(item.arrow_light)": {
@@ -240,7 +240,7 @@
             "el": "item.magic_power"
         }, {
             "type": "mixin",
-            "el": "mixin.can_become_adult"
+            "el": "mixin.is_adult"
         }]
     },
 
@@ -294,7 +294,7 @@
             "el": "item.bow"
         }, {
             "type": "mixin",
-            "el": "mixin.can_become_adult"
+            "el": "mixin.is_adult"
         }]
     },
     "function.can_use(item.hammer)": {
@@ -304,7 +304,7 @@
             "el": "item.hammer"
         }, {
             "type": "mixin",
-            "el": "mixin.can_become_adult"
+            "el": "mixin.is_adult"
         }]
     },
     "function.can_use(item.boots_iron)": {
@@ -314,7 +314,7 @@
             "el": "item.boots_iron"
         }, {
             "type": "mixin",
-            "el": "mixin.can_become_adult"
+            "el": "mixin.is_adult"
         }]
     },
     "function.can_use(item.boots_hover)": {
@@ -324,7 +324,7 @@
             "el": "item.boots_hover"
         }, {
             "type": "mixin",
-            "el": "mixin.can_become_adult"
+            "el": "mixin.is_adult"
         }]
     },
     "function.can_use(item.hookshot)": {
@@ -334,7 +334,7 @@
             "el": "item.hookshot"
         }, {
             "type": "mixin",
-            "el": "mixin.can_become_adult"
+            "el": "mixin.is_adult"
         }]
     },
     "function.can_use(mixin.longshot)": {
@@ -344,7 +344,7 @@
             "el": "mixin.longshot"
         }, {
             "type": "mixin",
-            "el": "mixin.can_become_adult"
+            "el": "mixin.v"
         }]
     },
     "function.can_use(mixin.silver_gauntlets)": {
@@ -354,7 +354,7 @@
             "el": "mixin.silver_gauntlets"
         }, {
             "type": "mixin",
-            "el": "mixin.can_become_adult"
+            "el": "mixin.is_adult"
         }]
     },
     "function.can_use(mixin.golden_gauntlets)": {
@@ -364,7 +364,7 @@
             "el": "mixin.golden_gauntlets"
         }, {
             "type": "mixin",
-            "el": "mixin.can_become_adult"
+            "el": "mixin.is_adult"
         }]
     },
     "function.can_use(item.tunic_fire)": {
@@ -374,7 +374,7 @@
             "el": "item.tunic_fire"
         }, {
             "type": "mixin",
-            "el": "mixin.can_become_adult"
+            "el": "mixin.is_adult"
         }]
     },
     "function.can_use(item.tunic_water)": {
@@ -384,7 +384,7 @@
             "el": "item.tunic_fire"
         }, {
             "type": "mixin",
-            "el": "mixin.can_become_adult"
+            "el": "mixin.is_adult"
         }]
     },
     "function.can_use(mixin.scarecrow)": {
@@ -394,7 +394,7 @@
             "el": "mixin.scarecrow"
         }, {
             "type": "mixin",
-            "el": "mixin.can_become_adult"
+            "el": "mixin.is_adult"
         }]
     },
     "function.can_use(mixin.distant_scarecrow)": {
@@ -404,7 +404,7 @@
             "el": "mixin.distant_scarecrow"
         }, {
             "type": "mixin",
-            "el": "mixin.can_become_adult"
+            "el": "mixin.is_adult"
         }]
     },
     
@@ -416,7 +416,7 @@
             "el": "item.slingshot"
         }, {
             "type": "mixin",
-            "el": "mixin.can_become_child"
+            "el": "mixin.is_child"
         }]
     },
     "function.can_use(item.boomerang)": {
@@ -426,7 +426,7 @@
             "el": "item.boomerang"
         }, {
             "type": "mixin",
-            "el": "mixin.can_become_child"
+            "el": "mixin.is_child"
         }]
     },
     "function.can_use(item.sword_kokiri)": {
@@ -436,7 +436,7 @@
             "el": "item.sword_kokiri"
         }, {
             "type": "mixin",
-            "el": "mixin.can_become_child"
+            "el": "mixin.is_child"
         }]
     },
     "function.can_use(item.shield_kokiri)": {
@@ -446,7 +446,7 @@
             "el": "item.shield_kokiri"
         }, {
             "type": "mixin",
-            "el": "mixin.can_become_child"
+            "el": "mixin.is_child"
         }]
     },
     "function.can_use(item.stick)": {
@@ -456,7 +456,7 @@
             "el": "item.stick"
         }, {
             "type": "mixin",
-            "el": "mixin.can_become_child"
+            "el": "mixin.is_child"
         }]
     },
 
