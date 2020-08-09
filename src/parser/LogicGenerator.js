@@ -304,7 +304,7 @@ function postCalcutate(input, age = "", region = "")  {
             };
         case "at":
             return {
-                type: "and",
+                type: "or",
                 el: [
                     {
                         type: "at",
@@ -321,7 +321,7 @@ function postCalcutate(input, age = "", region = "")  {
             return ;
         case "here":
             return {
-                type: "and",
+                type: "or",
                 el: [
                     {
                         type: "at",
