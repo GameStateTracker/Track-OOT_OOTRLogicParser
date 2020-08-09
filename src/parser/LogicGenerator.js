@@ -217,7 +217,7 @@ function postCalcutate(input, age = "", region = "")  {
                         el: `${input.el}[${age}]`
                     };
                 }
-                if (input.el.startsWith("event.") || input.el.startsWith("logic.location.")) {
+                /*if (input.el.startsWith("event.") || input.el.startsWith("logic.location.")) {
                     return {
                         type: "at",
                         node: input.el,
@@ -225,7 +225,7 @@ function postCalcutate(input, age = "", region = "")  {
                             type: "true"
                         }
                     };
-                }
+                }*/
                 return input;
             }
             let res = Translation.getValueName(input.el);
