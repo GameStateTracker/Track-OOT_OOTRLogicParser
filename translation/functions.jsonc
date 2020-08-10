@@ -344,7 +344,7 @@
             "el": "mixin.longshot"
         }, {
             "type": "mixin",
-            "el": "mixin.v"
+            "el": "mixin.is_adult"
         }]
     },
     "function.can_use(mixin.silver_gauntlets)": {
@@ -381,7 +381,7 @@
         "type": "and",
         "el": [{
             "type": "value",
-            "el": "item.tunic_fire"
+            "el": "item.tunic_water"
         }, {
             "type": "mixin",
             "el": "mixin.is_adult"

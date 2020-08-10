@@ -58,6 +58,19 @@
                     }
                 ]
             },
+    "GF Gate Open": {
+        "type": "and",
+        "el": [
+            {
+                "type": "mixin",
+                "el": "mixin.is_adult"
+            },
+            {
+                "type": "value",
+                "el": "item.membership"
+            }
+        ]
+    },
 
     "": ""
 }
