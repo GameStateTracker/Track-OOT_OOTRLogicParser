@@ -4,5 +4,71 @@
             "type": "mixin",
             "el": "mixin.is_starting_age"
         }
+    },
+
+    "region.deku_tree_basement_ledge": {
+        "logic.location.deku.c_gohma": {
+            "type": "and",
+            "el": [
+                {
+                    "type": "at",
+                    "node": "region.deku_tree_basement_ledge",
+                    "el": {
+                        "type": "mixin",
+                        "el": "mixin.has_shield"
+                    }
+                },
+                {
+                    "type": "or",
+                    "el": [
+                        {
+                            "type": "mixin",
+                            "el": "mixin.is_adult"
+                        },
+                        {
+                            "type": "value",
+                            "el": "item.sword_kokiri"
+                        },
+                        {
+                            "type": "value",
+                            "el": "item.stick"
+                        }
+                    ]
+                },
+                {
+                    "type": "mixin",
+                    "el": "mixin.has_fire_source"
+                }
+            ]
+        }
+    },
+    "region.hyrule_castle_grounds": {
+        "region.hc_garden": {
+            "type": "value",
+            "el": "item.egg"
+        }
+    },
+    "region.market_guard_house": {
+        "logic.location.castle_town.c_poes": {
+            "type": "and",
+            "el": [
+                {
+                    "type": "mixin",
+                    "el": "mixin.is_adult"
+                },
+                {
+                    "type": "value",
+                    "el": "item.bottle"
+                },
+                {
+                    "type": "value",
+                    "el": "item.bow"
+                },
+                {
+                    "type": "value",
+                    "el": "event.epona"
+                }
+            ]
+        }
     }
 }
