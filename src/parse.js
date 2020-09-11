@@ -53,4 +53,4 @@ fs.readdirSync(inGlitchedDir).forEach(function(file) {
     LogicParser.parse(fs.readFileSync(iname).toString());
 });
 let glitched = JSON.stringify(LogicGenerator.generate(), null, 4);
-fs.writeFileSync(`${outputDir}/glitched.json`, glitched);
+fs.writeFileSync(`${outputDir}/logic_glitched.json`, glitched);

@@ -158,5 +158,101 @@
             }
         ]
     },
+    "mixin.can_build_rainbow_bridge": {
+        "type": "or",
+        "el": [
+            {
+                "type": "state",
+                "el": "option.ganon_castle_open",
+                "value": "ganon_castle_open_open"
+            },
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "state",
+                        "el": "option.ganon_castle_open",
+                        "value": "ganon_castle_open_default"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_shadow"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_spirit"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.arrow_light"
+                    }
+                ]
+            },
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "state",
+                        "el": "option.ganon_castle_open",
+                        "value": "ganon_castle_open_stones"
+                    },
+                    {
+                        "type": "mixin",
+                        "el": "mixin.has_all_stones"
+                    }
+                ]
+            },
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "state",
+                        "el": "option.ganon_castle_open",
+                        "value": "ganon_castle_open_medallion"
+                    },
+                    {
+                        "type": "mixin",
+                        "el": "mixin.has_all_medallions"
+                    }
+                ]
+            },
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "state",
+                        "el": "option.ganon_castle_open",
+                        "value": "ganon_castle_open_dungeon"
+                    },
+                    {
+                        "type": "mixin",
+                        "el": "mixin.has_all_stones"
+                    },
+                    {
+                        "type": "mixin",
+                        "el": "mixin.has_all_medallions"
+                    }
+                ]
+            },
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "state",
+                        "el": "option.ganon_castle_open",
+                        "value": "ganon_castle_open_skulltulas"
+                    },
+                    {
+                        "type": "min",
+                        "el": {
+                            "type": "value",
+                            "el": "item.skulltula"
+                        },
+                        "value": 100
+                    }
+                ]
+            }
+        ]
+    },
     "": ""
 }
