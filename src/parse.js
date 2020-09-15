@@ -39,7 +39,11 @@ HelperParser.parse(fs.readFileSync(inHelperFile).toString());
 // parse logic
 fs.readdirSync(inLogicDir).forEach(function(file) {
     let iname = path.join(inLogicDir, file);
-    LogicParser.parse(fs.readFileSync(iname).toString());
+    let mq = 0;
+    let dungeon = 1;
+    if(iname.endsWith("MQ.json")) mq = 1;
+    if(iname.endsWith("Overworld.json")) dungeon = 0;
+    LogicParser.parse(fs.readFileSync(iname).toString(), mq, dungeon);
 });
 let logic = JSON.stringify(LogicGenerator.generate(), null, 4);
 fs.writeFileSync(`${outputDir}/logic.json`, logic);
@@ -50,7 +54,11 @@ LogicGenerator.reset();
 // parse glitched logic
 fs.readdirSync(inGlitchedDir).forEach(function(file) {
     let iname = path.join(inGlitchedDir, file);
-    LogicParser.parse(fs.readFileSync(iname).toString());
+    let mq = 0;
+    let dungeon = 1;
+    if(iname.endsWith("MQ.json")) mq = 1;
+    if(iname.endsWith("Overworld.json")) dungeon = 0;
+    LogicParser.parse(fs.readFileSync(iname).toString(), mq, dungeon);
 });
 let glitched = JSON.stringify(LogicGenerator.generate(), null, 4);
 fs.writeFileSync(`${outputDir}/logic_glitched.json`, glitched);
