@@ -43,7 +43,6 @@ fs.readdirSync(inLogicDir).forEach(function(file) {
     let dungeon = 1;
     if(iname.endsWith("MQ.json")) mq = 1;
     if(iname.endsWith("Overworld.json")) dungeon = 0;
-    console.log(mq);
     LogicParser.parse(fs.readFileSync(iname).toString(), mq, dungeon);
 });
 let logic = JSON.stringify(LogicGenerator.generate(), null, 4);
