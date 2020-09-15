@@ -185,6 +185,272 @@ class LogicGenerator {
             "type": "true"
         };
         // END overrides
+        // BEGIN Gateways
+        res.edges["region.bottom_of_the_well_gateway[child]"] = {
+            "region.kakariko_village[child]": {
+                "type": "true"
+            },
+            "region.bottom_of_the_well[child]": {
+                "type": "true"
+            },
+            "region.bottom_of_the_well_mq[child]": {
+                "type": "true"
+            }
+        };
+        res.edges["region.bottom_of_the_well_gateway[adult]"] = {
+            "region.kakariko_village[adult]": {
+                "type": "true"
+            },
+            "region.bottom_of_the_well[adult]": {
+                "type": "true"
+            },
+            "region.bottom_of_the_well_mq[adult]": {
+                "type": "true"
+            }
+        };
+        res.edges["region.deku_tree_gateway[child]"] = {
+            "region.kf_outside_deku_tree[child]": {
+                "type": "true"
+            },
+            "region.deku_tree_lobby[child]": {
+                "type": "true"
+            },
+            "region.deku_tree_lobby_mq[child]": {
+                "type": "true"
+            }
+        };
+        res.edges["region.deku_tree_gateway[adult]"] = {
+            "region.kf_outside_deku_tree[adult]": {
+                "type": "true"
+            },
+            "region.deku_tree_lobby[adult]": {
+                "type": "true"
+            },
+            "region.deku_tree_lobby_mq[adult]": {
+                "type": "true"
+            }
+        };
+        res.edges["region.dodongos_cavern_gateway[child]"] = {
+            "region.dodongos_cavern_entryway[child]": {
+                "type": "true"
+            },
+            "region.dodongos_cavern_beginning[child]": {
+                "type": "true"
+            },
+            "region.dodongos_cavern_beginning_mq[child]": {
+                "type": "true"
+            }
+        };
+        res.edges["region.dodongos_cavern_gateway[adult]"] = {
+            "region.dodongos_cavern_entryway[adult]": {
+                "type": "true"
+            },
+            "region.dodongos_cavern_beginning[adult]": {
+                "type": "true"
+            },
+            "region.dodongos_cavern_beginning_mq[adult]": {
+                "type": "true"
+            }
+        };
+        res.edges["region.fire_temple_gateway[child]"] = {
+            "region.fire_temple_entrance[child]": {
+                "type": "true"
+            },
+            "region.fire_temple_lower[child]": {
+                "type": "true"
+            },
+            "region.fire_temple_lower_mq[child]": {
+                "type": "true"
+            }
+        };
+        res.edges["region.fire_temple_gateway[adult]"] = {
+            "region.fire_temple_entrance[adult]": {
+                "type": "true"
+            },
+            "region.fire_temple_lower[adult]": {
+                "type": "true"
+            },
+            "region.fire_temple_lower_mq[adult]": {
+                "type": "true"
+            }
+        };
+        res.edges["region.forest_temple_gateway[child]"] = {
+            "region.sacred_forest_meadow[child]": {
+                "type": "true"
+            },
+            "region.forest_temple_lobby[child]": {
+                "type": "true"
+            },
+            "region.forest_temple_lobby_mq[child]": {
+                "type": "true"
+            }
+        };
+        res.edges["region.forest_temple_gateway[adult]"] = {
+            "region.sacred_forest_meadow[adult]": {
+                "type": "true"
+            },
+            "region.forest_temple_lobby[adult]": {
+                "type": "true"
+            },
+            "region.forest_temple_lobby_mq[adult]": {
+                "type": "true"
+            }
+        };
+        res.edges["region.ganons_castle_gateway[child]"] = {
+            "region.ganons_castle_grounds[child]": {
+                "type": "true"
+            },
+            "region.ganons_castle_lobby[child]": {
+                "type": "true"
+            },
+            "region.ganons_castle_lobby_mq[child]": {
+                "type": "true"
+            }
+        };
+        res.edges["region.ganons_castle_gateway[adult]"] = {
+            "region.ganons_castle_grounds[adult]": {
+                "type": "true"
+            },
+            "region.ganons_castle_lobby[adult]": {
+                "type": "true"
+            },
+            "region.ganons_castle_lobby_mq[adult]": {
+                "type": "true"
+            }
+        };
+        res.edges["region.gerudo_training_grounds_gateway[child]"] = {
+            "region.gerudo_fortress[child]": {
+                "type": "true"
+            },
+            "region.gerudo_training_grounds_lobby[child]": {
+                "type": "true"
+            },
+            "region.gerudo_training_grounds_lobby_mq[child]": {
+                "type": "true"
+            }
+        };
+        res.edges["region.gerudo_training_grounds_gateway[adult]"] = {
+            "region.gerudo_fortress[adult]": {
+                "type": "true"
+            },
+            "region.gerudo_training_grounds_lobby[adult]": {
+                "type": "true"
+            },
+            "region.gerudo_training_grounds_lobby_mq[adult]": {
+                "type": "true"
+            }
+        };
+        res.edges["region.ice_cavern_gateway[child]"] = {
+            "region.zoras_fountain[child]": {
+                "type": "true"
+            },
+            "region.ice_cavern_beginning[child]": {
+                "type": "true"
+            },
+            "region.ice_cavern_beginning_mq[child]": {
+                "type": "true"
+            }
+        };
+        res.edges["region.ice_cavern_gateway[adult]"] = {
+            "region.zoras_fountain[adult]": {
+                "type": "true"
+            },
+            "region.ice_cavern_beginning[adult]": {
+                "type": "true"
+            },
+            "region.ice_cavern_beginning_mq[adult]": {
+                "type": "true"
+            }
+        };
+        res.edges["region.jabu_jabus_belly_gateway[child]"] = {
+            "region.zoras_fountain[child]": {
+                "type": "true"
+            },
+            "region.jabu_jabus_belly_beginning[child]": {
+                "type": "true"
+            },
+            "region.jabu_jabus_belly_beginning_mq[child]": {
+                "type": "true"
+            }
+        };
+        res.edges["region.jabu_jabus_belly_gateway[adult]"] = {
+            "region.zoras_fountain[adult]": {
+                "type": "true"
+            },
+            "region.jabu_jabus_belly_beginning[adult]": {
+                "type": "true"
+            },
+            "region.jabu_jabus_belly_beginning_mq[adult]": {
+                "type": "true"
+            }
+        };
+        res.edges["region.shadow_temple_gateway[child]"] = {
+            "region.graveyard_warp_pad_region[child]": {
+                "type": "true"
+            },
+            "region.shadow_temple_entryway[child]": {
+                "type": "true"
+            },
+            "region.shadow_temple_entryway_mq[child]": {
+                "type": "true"
+            }
+        };
+        res.edges["region.shadow_temple_gateway[adult]"] = {
+            "region.graveyard_warp_pad_region[adult]": {
+                "type": "true"
+            },
+            "region.shadow_temple_entryway[adult]": {
+                "type": "true"
+            },
+            "region.shadow_temple_entryway_mq[adult]": {
+                "type": "true"
+            }
+        };
+        res.edges["region.spirit_temple_gateway[child]"] = {
+            "region.desert_colossus[child]": {
+                "type": "true"
+            },
+            "region.spirit_temple_lobby[child]": {
+                "type": "true"
+            },
+            "region.spirit_temple_lobby_mq[child]": {
+                "type": "true"
+            }
+        };
+        res.edges["region.spirit_temple_gateway[adult]"] = {
+            "region.desert_colossus[adult]": {
+                "type": "true"
+            },
+            "region.spirit_temple_lobby[adult]": {
+                "type": "true"
+            },
+            "region.spirit_temple_lobby_mq[adult]": {
+                "type": "true"
+            }
+        };
+        res.edges["region.water_temple_gateway[child]"] = {
+            "region.lake_hylia[child]": {
+                "type": "true"
+            },
+            "region.water_temple_lobby[child]": {
+                "type": "true"
+            },
+            "region.water_temple_lobby_mq[child]": {
+                "type": "true"
+            }
+        };
+        res.edges["region.water_temple_gateway[adult]"] = {
+            "region.lake_hylia[adult]": {
+                "type": "true"
+            },
+            "region.water_temple_lobby[adult]": {
+                "type": "true"
+            },
+            "region.water_temple_lobby_mq[adult]": {
+                "type": "true"
+            }
+        };
+        // END Gateways
         
         console.log("");
         console.log("-------------------------------------------");
