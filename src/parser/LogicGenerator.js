@@ -3,6 +3,9 @@ import path from "path";
 import Translation from "../utils/Translation.js";
 import JSONCFile from "../utils/JSONCFile.js";
 
+const INDEX_DELIMITER = "--#";
+const INDEX_DELIMITER_REGEX = new RegExp(`${INDEX_DELIMITER}[0-9]*$`);
+
 const __dirname = path.resolve();
 
 const function_overrides = JSONCFile.read(path.join(__dirname, "/translation/functions.jsonc"), {});
@@ -58,11 +61,14 @@ class LogicGenerator {
                 events: []
             };
         }
-		while( exits.has(key)) {
-			key = key + "1";
-		}
-        structure[region].exits.push(key);
-        exits.set(key, value);
+        let idx = 0;
+        let name = `${key}${INDEX_DELIMITER}${idx}`
+		while (exits.has(name)) {
+            idx++;
+            name = `${key}${INDEX_DELIMITER}${idx}`;
+        }
+        structure[region].exits.push(name);
+        exits.set(name, value);
     }
 
     addLocation(region, key, value) {
@@ -73,8 +79,14 @@ class LogicGenerator {
                 events: []
             };
         }
-        structure[region].locations.push(key);
-        locations.set(key, value);
+        let idx = 0;
+        let name = `${key}${INDEX_DELIMITER}${idx}`
+		while (locations.has(name)) {
+            idx++;
+            name = `${key}${INDEX_DELIMITER}${idx}`;
+        }
+        structure[region].locations.push(name);
+        locations.set(name, value);
     }
 
     addEvent(region, key, value) {
@@ -85,8 +97,14 @@ class LogicGenerator {
                 events: []
             };
         }
-        structure[region].events.push(key);
-        events.set(key, value);
+        let idx = 0;
+        let name = `${key}${INDEX_DELIMITER}${idx}`
+		while (events.has(name)) {
+            name = `${key}${INDEX_DELIMITER}${++idx}`;
+        }
+        console.log(name);
+        structure[region].events.push(name);
+        events.set(name, value);
     }
 
     generate()  {
@@ -132,7 +150,7 @@ class LogicGenerator {
                 }
             }
             for (let node of data.locations) {
-                let name = `logic.${Translation.translateName(node)}`;
+                let name = translateLocationName(node);
                 if (logic_overrides[regName] != null && logic_overrides[regName][name] != null) {
                     regC[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName), "adult");
                     regA[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName), "child");
@@ -641,12 +659,17 @@ function postCalcutate(input, age = "", region = "")  {
 
 function translateRegionName(input) {
     if (input.startsWith("region.")) return input;
-    return `region.${input.toLowerCase().replace(/ /g, "_").replace(/1/g, "")}`;
+    return `region.${input.toLowerCase().replace(/ /g, "_").replace(INDEX_DELIMITER_REGEX, "")}`;
+}
+
+function translateLocationName(input) {
+    if (input.startsWith("logic.")) return input;
+    return `logic.${Translation.translateName(input.replace(INDEX_DELIMITER_REGEX, ""))}`;
 }
 
 function translateEventName(input) {
     if(input.startsWith("event.")) return input;
-    return `event.${input.toLowerCase().replace(/ /g, "_")}`;
+    return `event.${input.toLowerCase().replace(/ /g, "_").replace(INDEX_DELIMITER_REGEX, "")}`;
 }
 
 function translateMixinName(input) {
