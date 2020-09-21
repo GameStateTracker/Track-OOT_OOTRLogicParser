@@ -928,43 +928,43 @@
     /* skips */
     "logic_grottos_without_agony": {
         "type": "value",
-        "el": "skip.hidden_grotto_no_agony"
+        "el": "skip.grottos_without_agony"
     },
     "logic_fewer_tunic_requirements": {
         "type": "value",
-        "el": "skip.fewer_tunic"
+        "el": "skip.fewer_tunic_requirements"
     },
     "logic_adult_kokiri_gs": {
         "type": "value",
-        "el": "skip.forest_adult_gs_hover"
+        "el": "skip.adult_kokiri_gs"
     },
     "logic_lost_woods_bridge": {
         "type": "value",
-        "el": "skip.lost_woods_bridge_jump"
+        "el": "skip.lost_woods_bridge"
     },
     "logic_mido_backflip": {
         "type": "value",
-        "el": "skip.mido_skip"
+        "el": "skip.mido_backflip"
     },
     "logic_lost_woods_gs_bean": {
         "type": "value",
-        "el": "skip.lost_woods_stage_skulltula_no_beans"
+        "el": "skip.lost_woods_gs_bean"
     },
     "logic_lab_wall_gs": {
         "type": "value",
-        "el": "skip.lake_lab_gs_jumpslash"
+        "el": "skip.lab_wall_gs"
     },
     "logic_water_hookshot_entry": {
         "type": "value",
-        "el": "skip.water_temple_early_hookshot"
+        "el": "skip.water_hookshot_entry"
     },
     "logic_lab_diving": {
         "type": "value",
-        "el": "skip.lab_hookshot"
+        "el": "skip.lab_diving"
     },
     "logic_valley_crate_hovers": {
         "type": "value",
-        "el": "skip.gerudo_crate_hovers"
+        "el": "skip.valley_crate_hovers"
     },
     "logic_gerudo_kitchen": {
         "type": "value",
@@ -972,12 +972,21 @@
     },
     "logic_wasteland_crossing": {
         "type": "value",
-        "el": "skip.naked_wasteland"
+        "el": "skip.wasteland_crossing"
     },
     "logic_lens_wasteland": {
-        "type": "state",
-        "el": "skip.lens_required",
-        "value": "lens_required_never"
+        "type": "or",
+        "el": [
+            {
+                "type": "state",
+                "el": "skip.lens_required",
+                "value": "lens_required_never"
+            },
+            {
+                "type": "value",
+                "el": "skip.lens_wasteland"
+            }
+        ]
     },
     "logic_reverse_wasteland": {
         "type": "value",
@@ -985,15 +994,15 @@
     },
     "logic_colossus_gs": {
         "type": "value",
-        "el": "skip.colossus_hill_GS_hookshot"
+        "el": "skip.colossus_gs"
     },
     "logic_kakariko_tower_gs": {
         "type": "value",
-        "el": "skip.kakariko_gs_with_jumpslash"
+        "el": "skip.kakariko_tower_gs"
     },
     "logic_visible_collisions": {
         "type": "value",
-        "el": "skip.one_way_pass"
+        "el": "skip.visible_collisions"
     },
     "logic_man_on_roof": {
         "type": "value",
@@ -1001,39 +1010,39 @@
     },
     "logic_windmill_poh": {
         "type": "value",
-        "el": "skip.windmill_hp"
+        "el": "skip.windmill_poh"
     },
     "logic_graveyard_poh": {
         "type": "value",
-        "el": "skip.graveyard_poh_boomerang"
+        "el": "skip.graveyard_poh"
     },
     "logic_child_dampe_race_poh": {
         "type": "value",
-        "el": "skip.child_dampe_race"
+        "el": "skip.child_dampe_race_poh"
     },
     "logic_shadow_fire_arrow_entry": {
         "type": "value",
-        "el": "skip.shadow_temple_entry_fire_arrow"
+        "el": "skip.shadow_fire_arrow_entry"
     },
     "logic_dmt_bombable": {
         "type": "value",
-        "el": "skip.dm_bomb_strength"
+        "el": "skip.dmt_bombable"
     },
     "logic_dmt_soil_gs": {
         "type": "value",
-        "el": "skip.dm_soil_no_explosives"
+        "el": "skip.dmt_soil_gs"
     },
     "logic_trail_gs_lower_hookshot": {
         "type": "value",
-        "el": "skip.dm_lower_gs_hookshot"
+        "el": "skip.trail_gs_lower_hookshot"
     },
     "logic_trail_gs_lower_bean": {
         "type": "value",
-        "el": "skip.dm_lower_gs_bean"
+        "el": "skip.trail_gs_lower_bean"
     },
     "logic_trail_gs_upper": {
         "type": "value",
-        "el": "skip.dm_upper_gs_no_hammer"
+        "el": "skip.trail_gs_upper"
     },
     "logic_biggoron_bolero": {
         "type": "value",
@@ -1041,55 +1050,64 @@
     },
     "logic_link_goron_dins": {
         "type": "value",
-        "el": "skip.linkthegoron_dins"
+        "el": "skip.link_goron_dins"
     },
     "logic_goron_city_leftmost": {
         "type": "value",
-        "el": "skip.goron_left_maze_hovers"
+        "el": "skip.goron_city_leftmost"
     },
     "logic_goron_city_pot_with_strength": {
         "type": "value",
-        "el": "skip.goron_spinning_pot_strength"
+        "el": "skip.goron_city_pot_with_strength"
     },
     "logic_goron_city_pot": {
         "type": "value",
-        "el": "skip.goron_pot_bombchu"
+        "el": "skip.goron_city_pot"
     },
     "logic_child_rolling_with_strength": {
         "type": "value",
-        "el": "skip.hotrodder_child_strength"
+        "el": "skip.child_rolling_with_strength"
     },
     "logic_crater_upper_to_lower": {
         "type": "value",
-        "el": "skip.dmc_mash_hammer"
+        "el": "skip.crater_upper_to_lower"
     },
     "logic_crater_bean_poh_with_hovers": {
         "type": "value",
-        "el": "skip.crater_bean_hp"
+        "el": "skip.crater_bean_poh_with_hovers"
     },
     "logic_zora_river_lower": {
         "type": "value",
-        "el": "skip.zora_1st_hp_no_hovers"
+        "el": "skip.zora_river_lower"
     },
     "logic_zora_river_upper": {
         "type": "value",
-        "el": "skip.zora_2nd_hp_no_hovers"
+        "el": "skip.zora_river_upper"
     },
     "logic_zora_with_hovers": {
         "type": "value",
-        "el": "skip.zora_hover"
+        "el": "skip.zora_with_hover"
     },
     "logic_zora_with_cucco": {
         "type": "value",
-        "el": "skip.zora_cucco"
+        "el": "skip.zora_with_cucco"
     },
     "logic_lens_botw": {
-        "type": "not",
-        "el": {
-            "type": "state",
-            "el": "skip.lens_required",
-            "value": "lens_required_default"
-        }
+        "type": "or",
+        "el": [
+            {
+                "type": "not",
+                "el": {
+                    "type": "state",
+                    "el": "skip.lens_required",
+                    "value": "lens_required_default"
+                }
+            },
+            {
+                "type": "value",
+                "el": "skip.lens_botw"
+            }
+        ]
     },
     "logic_child_deadhand": {
         "type": "value",
@@ -1097,51 +1115,51 @@
     },
     "logic_botw_basement": {
         "type": "value",
-        "el": "skip.botw_strength_sticks"
+        "el": "skip.botw_basement"
     },
     "logic_botw_cage_gs": {
         "type": "value",
-        "el": "skip.well_cage_gs_no_boomerang"
+        "el": "skip.botw_cage_gs"
     },
     "logic_botw_mq_dead_hand_key": {
         "type": "value",
-        "el": "skip.wellmq_deadhand_key_boomerang"
+        "el": "skip.botw_mq_dead_hand_key"
     },
     "logic_deku_basement_gs": {
         "type": "value",
-        "el": "skip.deku_vine_gs"
+        "el": "skip.deku_basement_gs"
     },
     "logic_deku_b1_webs_with_bow": {
         "type": "value",
-        "el": "skip.deku_b1_webs_bow"
+        "el": "skip.deku_b1_webs_with_bow"
     },
     "logic_deku_b1_skip": {
         "type": "value",
-        "el": "skip.deku_tree_B1_skip"
+        "el": "skip.deku_b1_skip"
     },
     "logic_dc_scarecrow_gs": {
         "type": "value",
-        "el": "skip.dodongo_scarecrow_armos"
+        "el": "skip.dc_scarecrow_gs"
     },
     "logic_dc_staircase": {
         "type": "value",
-        "el": "skip.dodongo_staircase"
+        "el": "skip.dc_staircase"
     },
     "logic_dc_slingshot_skip": {
         "type": "value",
-        "el": "skip.dodongo_child_slingshot_skip"
+        "el": "skip.dc_slingshot_skip"
     },
     "logic_dc_jump": {
         "type": "value",
-        "el": "skip.dodongo_spike"
+        "el": "skip.dc_jump"
     },
     "logic_dc_mq_child_bombs": {
         "type": "value",
-        "el": "skip.dodongomq_early_bombbag_child"
+        "el": "skip.dc_mq_child_bombs"
     },
     "logic_jabu_scrub_jump_dive": {
         "type": "value",
-        "el": "skip.jabu_scrub_dive"
+        "el": "skip.jabu_scrub_jump_dive"
     },
     "logic_jabu_boss_gs_adult": {
         "type": "value",
@@ -1149,311 +1167,410 @@
     },
     "logic_jabu_mq_sot_gs": {
         "type": "value",
-        "el": "skip.jjmq_sot_boomerang"
+        "el": "skip.jabu_mq_sot_gs"
     },
     "logic_lens_jabu_mq": {
-        "type": "not",
-        "el": {
-            "type": "state",
-            "el": "skip.lens_required",
-            "value": "lens_required_default"
-        }
+        "type": "or",
+        "el": [
+            {
+                "type": "not",
+                "el": {
+                    "type": "state",
+                    "el": "skip.lens_required",
+                    "value": "lens_required_default"
+                }
+            },
+            {
+                "type": "value",
+                "el": "skip.lens_jabu_mq"
+            }
+        ]
     },
     "logic_ice_mq_scarecrow": {
         "type": "value",
-        "el": "skip.icmq_scarecrow_gs_noitems"
+        "el": "skip.ice_mq_scarecrow"
     },
     "logic_gtg_without_hookshot": {
         "type": "value",
-        "el": "skip.gtg_rupees_nohookshot"
+        "el": "skip.gtg_without_hookshot"
     },
     "logic_lens_gtg": {
-        "type": "not",
-        "el": {
-            "type": "state",
-            "el": "skip.lens_required",
-            "value": "lens_required_default"
-        }
+        "type": "or",
+        "el": [
+            {
+                "type": "not",
+                "el": {
+                    "type": "state",
+                    "el": "skip.lens_required",
+                    "value": "lens_required_default"
+                }
+            },
+            {
+                "type": "value",
+                "el": "skip.lens_gtg"
+            }
+        ]
     },
     "logic_gtg_fake_wall": {
         "type": "value",
-        "el": "skip.gtg_ledge_hovers"
+        "el": "skip.gtg_fake_wall"
     },
     "logic_lens_gtg_mq": {
-        "type": "not",
-        "el": {
-            "type": "state",
-            "el": "skip.lens_required",
-            "value": "lens_required_default"
-        }
+        "type": "or",
+        "el": [
+            {
+                "type": "not",
+                "el": {
+                    "type": "state",
+                    "el": "skip.lens_required",
+                    "value": "lens_required_default"
+                }
+            },
+            {
+                "type": "value",
+                "el": "skip.lens_gtg_mq"
+            }
+        ]
     },
     "logic_gtg_mq_without_hookshot": {
         "type": "value",
-        "el": "skip.gtgmq_rupees_nohookshot"
+        "el": "skip.gtg_mq_without_hookshot"
     },
     "logic_gtg_mq_with_hookshot": {
         "type": "value",
-        "el": "skip.gtgmq_silver_hook"
+        "el": "skip.gtg_mq_with_hookshot"
     },
     "logic_forest_outdoors_ledge": {
         "type": "value",
-        "el": "skip.forest_temple_ledge"
+        "el": "skip.forest_outdoors_ledge"
     },
     "logic_forest_outdoor_east_gs": {
         "type": "value",
-        "el": "skip.forest_temple_east_gs"
+        "el": "skip.forest_outdoor_east_gs"
     },
     "logic_forest_vines": {
         "type": "value",
-        "el": "skip.fot_east_vines_hook"
+        "el": "skip.forest_vines"
     },
     "logic_forest_scarecrow": {
         "type": "value",
-        "el": "skip.forest_temple_pierre_early"
+        "el": "skip.forest_scarecrow"
     },
     "logic_forest_outside_backdoor": {
         "type": "value",
-        "el": "skip.forest_temple_floormaster_strength"
+        "el": "skip.forest_outside_backdoor"
     },
     "logic_forest_mq_block_puzzle": {
         "type": "value",
-        "el": "skip.fotmq_puzzle_bombchu"
+        "el": "skip.forest_mq_block_puzzle"
     },
     "logic_forest_mq_hallway_switch": {
         "type": "value",
-        "el": "skip.fotmq_hallway_hook"
+        "el": "skip.forest_mq_hallway_switch"
     },
     "logic_forest_well_swim": {
         "type": "value",
-        "el": "skip.fotmq_well_hook"
+        "el": "skip.forest_well_swim"
     },
     "logic_fire_boss_door_jump": {
         "type": "value",
-        "el": "skip.fit_bossdoor_noitems"
+        "el": "skip.fire_boss_door_jump"
     },
     "logic_fire_song_of_time": {
         "type": "value",
-        "el": "skip.fit_gs_nosot"
+        "el": "skip.fire_song_of_time"
     },
     "logic_fire_strength": {
         "type": "value",
-        "el": "skip.fit_climb_nostrength"
+        "el": "skip.fire_strength"
     },
     "logic_fire_scarecrow": {
         "type": "value",
-        "el": "skip.fit_east_noscarecrow"
+        "el": "skip.fire_scarecrow"
     },
     "logic_fire_flame_maze": {
         "type": "value",
-        "el": "skip.fit_fire_maze_skip"
+        "el": "skip.fire_flame_maze"
     },
     "logic_rusted_switches": {
         "type": "value",
-        "el": "skip.hammer_through_wall"
+        "el": "skip.rusted_switches"
     },
     "logic_fire_mq_near_boss": {
         "type": "value",
-        "el": "skip.fitmq_near_boss_nocrate"
+        "el": "skip.fire_mq_near_boss"
     },
     "logic_fire_mq_bk_chest": {
         "type": "value",
-        "el": "skip.fitmq_bosskey_nobow"
+        "el": "skip.fire_mq_bk_chest"
     },
     "logic_fire_mq_bombable_chest": {
         "type": "value",
-        "el": "skip.fitmq_bombable_no_hook"
+        "el": "skip.fire_mq_bombable_chest"
     },
     "logic_fire_mq_climb": {
         "type": "value",
-        "el": "skip.fitmq_climb_no_fire"
+        "el": "skip.fire_mq_climb"
     },
     "logic_fire_mq_maze_side_room": {
         "type": "value",
-        "el": "skip.fitmq_boulder_side"
+        "el": "skip.fire_mq_maze_side_room"
     },
     "logic_fire_mq_flame_maze": {
         "type": "value",
-        "el": "skip.fitmq_fire_maze_skip"
+        "el": "skip.fire_mq_flame_maze"
     },
     "logic_water_temple_torch_longshot": {
         "type": "value",
-        "el": "skip.wt_torch_longshot"
+        "el": "skip.water_temple_torch_longshot"
     },
     "logic_water_central_bow": {
         "type": "value",
-        "el": "skip.wt_central_bow_nothing"
+        "el": "skip.water_central_bow"
     },
     "logic_water_cracked_wall_nothing": {
         "type": "value",
-        "el": "skip.wt_cracked_noitems"
+        "el": "skip.water_cracked_wall_nothing"
     },
     "logic_water_cracked_wall_hovers": {
         "type": "value",
-        "el": "skip.wt_cracked_wall_hovers"
+        "el": "skip.water_cracked_wall_hovers"
     },
     "logic_water_boss_key_region": {
         "type": "value",
-        "el": "skip.wt_boss_key_hovers"
+        "el": "skip.water_boss_key_region"
     },
     "logic_water_dragon_bombchu": {
         "type": "value",
-        "el": "skip.wt_dragon_bombchu"
+        "el": "skip.water_dragon_bombchu"
     },
     "logic_water_dragon_jump_dive": {
         "type": "value",
-        "el": "skip.wt_dragon_jump_dive"
+        "el": "skip.water_dragon_jump_dive"
     },
     "logic_water_bk_jump_dive": {
         "type": "value",
-        "el": "skip.wt_bosskey_jumpdive"
+        "el": "skip.water_bk_jump_dive"
     },
     "logic_water_bk_chest": {
         "type": "value",
-        "el": "skip.wt_bosskey_iron_boots"
+        "el": "skip.water_bk_chest"
     },
     "logic_water_north_basement_ledge_jump": {
         "type": "value",
-        "el": "skip.wt_bosskey_noitem"
+        "el": "skip.water_north_basement_ledge_jump"
     },
     "logic_water_river_gs": {
         "type": "value",
-        "el": "skip.wt_serpent_gs_noirons"
+        "el": "skip.water_river_gs"
     },
     "logic_water_falling_platform_gs": {
         "type": "value",
-        "el": "skip.wt_platform_gs_hookshot"
+        "el": "skip.water_falling_platform_gs"
     },
     "logic_lens_shadow": {
-        "type": "not",
-        "el": {
-            "type": "state",
-            "el": "skip.lens_required",
-            "value": "lens_required_default"
-        }
+        "type": "or",
+        "el": [
+            {
+                "type": "not",
+                "el": {
+                    "type": "state",
+                    "el": "skip.lens_required",
+                    "value": "lens_required_default"
+                }
+            },
+            {
+                "type": "value",
+                "el": "skip.lens_shadow"
+            }
+        ]
     },
     "logic_shadow_umbrella": {
         "type": "value",
-        "el": "skip.shadow_temple_stone_umbrella_skip"
+        "el": "skip.shadow_umbrella"
     },
     "logic_lens_shadow_back": {
-        "type": "not",
-        "el": {
-            "type": "state",
-            "el": "skip.lens_required",
-            "value": "lens_required_default"
-        }
+        "type": "or",
+        "el": [
+            {
+                "type": "not",
+                "el": {
+                    "type": "state",
+                    "el": "skip.lens_required",
+                    "value": "lens_required_default"
+                }
+            },
+            {
+                "type": "value",
+                "el": "skip.lens_shadow_back"
+            }
+        ]
     },
     "logic_shadow_freestanding_key": {
         "type": "value",
-        "el": "skip.shadow_temple_freestand_bombchu"
+        "el": "skip.shadow_freestand_key"
     },
     "logic_shadow_statue": {
         "type": "value",
-        "el": "skip.shadow_temple_river_statue_bombchu"
+        "el": "skip.shadow_statue"
     },
     "logic_lens_shadow_mq": {
-        "type": "not",
-        "el": {
-            "type": "state",
-            "el": "skip.lens_required",
-            "value": "lens_required_default"
-        }
+        "type": "or",
+        "el": [
+            {
+                "type": "not",
+                "el": {
+                    "type": "state",
+                    "el": "skip.lens_required",
+                    "value": "lens_required_default"
+                }
+            },
+            {
+                "type": "value",
+                "el": "skip.lens_shadow_mq"
+            }
+        ]
     },
     "logic_shadow_mq_gap": {
         "type": "value",
-        "el": "skip.shtmq_torch_bow"
+        "el": "skip.shadow_mq_gap"
     },
     "logic_shadow_mq_huge_pit": {
         "type": "value",
-        "el": "skip.shtmq_lower_nofire"
+        "el": "skip.shadow_mq_huge_pit"
     },
     "logic_lens_shadow_mq_back": {
-        "type": "not",
-        "el": {
-            "type": "state",
-            "el": "skip.lens_required",
-            "value": "lens_required_default"
-        }
+        "type": "or",
+        "el": [
+            {
+                "type": "not",
+                "el": {
+                    "type": "state",
+                    "el": "skip.lens_required",
+                    "value": "lens_required_default"
+                }
+            },
+            {
+                "type": "value",
+                "el": "skip.lens_shadow_mq_back"
+            }
+        ]
     },
     "logic_spirit_child_bombchu": {
         "type": "value",
-        "el": "skip.spt_child_bridge_bombchu"
+        "el": "skip.spirit_child_bombchu"
     },
     "logic_spirit_lower_adult_switch": {
         "type": "value",
-        "el": "skip.spt_adult_switch_bombs"
+        "el": "skip.spirit_lower_adult_switch"
     },
     "logic_spirit_map_chest": {
         "type": "value",
-        "el": "skip.spt_map_bow"
+        "el": "skip.spirit_map_chest"
     },
     "logic_spirit_sun_chest": {
         "type": "value",
-        "el": "skip.spt_sun_chest_bow"
+        "el": "skip.spirit_sun_chest"
     },
     "logic_spirit_lobby_gs": {
         "type": "value",
-        "el": "skip.spt_main_room_gs_boomerang"
+        "el": "skip.spirit_lobby_gs"
     },
     "logic_lens_spirit": {
-        "type": "not",
-        "el": {
-            "type": "state",
-            "el": "skip.lens_required",
-            "value": "lens_required_default"
-        }
+        "type": "or",
+        "el": [
+            {
+                "type": "not",
+                "el": {
+                    "type": "state",
+                    "el": "skip.lens_required",
+                    "value": "lens_required_default"
+                }
+            },
+            {
+                "type": "value",
+                "el": "skip.lens_spirit"
+            }
+        ]
     },
     "logic_spirit_wall": {
         "type": "value",
-        "el": "skip.spt_shifting_wall_noitems"
+        "el": "skip.spirit_wall"
     },
     "logic_spirit_mq_frozen_eye": {
         "type": "value",
-        "el": "skip.sptmq_frozen_nofire"
+        "el": "skip.spirit_mq_frozen_eye"
     },
     "logic_lens_spirit_mq": {
-        "type": "not",
-        "el": {
-            "type": "state",
-            "el": "skip.lens_required",
-            "value": "lens_required_default"
-        }
+        "type": "or",
+        "el": [
+            {
+                "type": "not",
+                "el": {
+                    "type": "state",
+                    "el": "skip.lens_required",
+                    "value": "lens_required_default"
+                }
+            },
+            {
+                "type": "value",
+                "el": "skip.lens_spirit_mq"
+            }
+        ]
     },
     "logic_spirit_mq_lower_adult": {
         "type": "value",
-        "el": "skip.sptmq_lower_no_firearrows"
+        "el": "skip.spirit_mq_lower_adult"
     },
     "logic_spirit_mq_sun_block_gs": {
         "type": "value",
-        "el": "skip.sptmq_sunblock_gs_boomerang"
+        "el": "skip.spirit_mq_sun_block_gs"
     },
     "logic_lens_castle": {
-        "type": "not",
-        "el": {
-            "type": "state",
-            "el": "skip.lens_required",
-            "value": "lens_required_default"
-        }
+        "type": "or",
+        "el": [
+            {
+                "type": "not",
+                "el": {
+                    "type": "state",
+                    "el": "skip.lens_required",
+                    "value": "lens_required_default"
+                }
+            },
+            {
+                "type": "value",
+                "el": "skip.lens_castle"
+            }
+        ]
     },
     "logic_spirit_trial_hookshot": {
         "type": "value",
-        "el": "skip.spirit_trial_without_hookshot"
+        "el": "skip.spirit_trial_hookshot"
     },
     "logic_lens_castle_mq": {
-        "type": "not",
-        "el": {
-            "type": "state",
-            "el": "skip.lens_required",
-            "value": "lens_required_default"
-        }
+        "type": "or",
+        "el": [
+            {
+                "type": "not",
+                "el": {
+                    "type": "state",
+                    "el": "skip.lens_required",
+                    "value": "lens_required_default"
+                }
+            },
+            {
+                "type": "value",
+                "el": "skip.lens_castle_mq"
+            }
+        ]
     },
     "logic_shadow_trial_mq": {
         "type": "value",
-        "el": "skip.sht_mq_no_fire"
+        "el": "skip.shadow_trial_mq"
     },
     "logic_light_trial_mq": {
         "type": "value",
-        "el": "skip.light_trial_mq_nohookshot"
+        "el": "skip.light_trial_mq"
     },
     "": ""
 }
