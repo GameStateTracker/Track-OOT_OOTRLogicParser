@@ -9,6 +9,7 @@ import LogicGenerator from "./parser/LogicGenerator.js";
 
 const __dirname = path.resolve();
 
+const inGatewayFile  = path.join(__dirname, "/gateways/gateways.json");
 const inHelperFile  = path.join(__dirname, "/input/data/LogicHelpers.json");
 const inLogicDir  = path.join(__dirname, "/input/data/World");
 const inGlitchedDir  = path.join(__dirname, "/input/data/Glitched World");
@@ -37,13 +38,12 @@ rules.forEach((v, k) => {
 HelperParser.parse(fs.readFileSync(inHelperFile).toString());
 
 // parse logic
+LogicParser.parse(fs.readFileSync(inGatewayFile).toString(), 0);
 fs.readdirSync(inLogicDir).forEach(function(file) {
     let iname = path.join(inLogicDir, file);
     let mq = 0;
-    let dungeon = 1;
     if(iname.endsWith("MQ.json")) mq = 1;
-    if(iname.endsWith("Overworld.json")) dungeon = 0;
-    LogicParser.parse(fs.readFileSync(iname).toString(), mq, dungeon);
+    LogicParser.parse(fs.readFileSync(iname).toString(), mq);
 });
 let logic = JSON.stringify(LogicGenerator.generate(), null, 4);
 fs.writeFileSync(`${outputDir}/logic.json`, logic);
@@ -52,13 +52,12 @@ fs.writeFileSync(`${outputDir}/logic.json`, logic);
 LogicGenerator.reset();
 
 // parse glitched logic
+LogicParser.parse(fs.readFileSync(inGatewayFile).toString(), 0, 0);
 fs.readdirSync(inGlitchedDir).forEach(function(file) {
     let iname = path.join(inGlitchedDir, file);
     let mq = 0;
-    let dungeon = 1;
     if(iname.endsWith("MQ.json")) mq = 1;
-    if(iname.endsWith("Overworld.json")) dungeon = 0;
-    LogicParser.parse(fs.readFileSync(iname).toString(), mq, dungeon);
+    LogicParser.parse(fs.readFileSync(iname).toString(), mq);
 });
 let glitched = JSON.stringify(LogicGenerator.generate(), null, 4);
 fs.writeFileSync(`${outputDir}/logic_glitched.json`, glitched);
