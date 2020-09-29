@@ -7,11 +7,6 @@ import LogicGenerator from "./LogicGenerator.js";
 const __dirname = path.resolve();
 const inExitRenameFile  = path.join(__dirname, "/gateways/exitRename.json");
 const renameData = JSON.parse(fs.readFileSync(inExitRenameFile, 'utf8'));
-const dungeonExits = ["Kakariko Village", "KF Outside Deku Tree", "Dodongos Cavern Entryway", "Fire Temple Entrance", "Sacred Forest Meadow", "Ganons Castle Grounds", "Gerudo Fortress", "Zoras Fountain", "Zoras Fountain", "Graveyard Warp Pad Region", "Desert Colossus", "Lake Hylia"]
-const dungeonEntrances = ["Bottom of the Well Gateway", "Deku Tree Gateway", "Dodongos Cavern Gateway", "Fire Temple Gateway", "Forest Temple Gateway", "Ganons Castle Gateway", "Gerudo Training Grounds Gateway", "Ice Cavern Gateway", "Jabu Jabus Belly Gateway", "Shadow Temple Gateway", "Spirit Temple Gateway", "Water Temple Gateway"]
-const overworldExits = ["Bottom of the Well", "Deku Tree Lobby", "Dodongos Cavern Beginning", "Fire Temple Lower", "Forest Temple Lobby", "Ganons Castle Lobby", "Gerudo Training Grounds Lobby", "Ice Cavern Beginning", "Jabu Jabus Belly Beginning", "Shadow Temple Entryway", "Spirit Temple Lobby", "Water Temple Lobby"]
-let zora = 0;
-let zoramq = 0;
 
 class LogicParser {
 
