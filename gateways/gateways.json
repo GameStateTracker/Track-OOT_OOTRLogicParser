@@ -97,12 +97,10 @@
     },
     {
         "region_name": "Kokiri Bridge Gateway",
-        "locations": {
-            "LW Gift from Saria": "True"
-        },
         "exits": {
             "Kokiri Forest": "True",
-            "LW Bridge From Forest": "True"
+            "LW Bridge": "True",
+            "LW Bridge From Forest": "can_leave_forest"
         }
     },
     {
@@ -256,17 +254,14 @@
         "region_name": "Crater Goron Gateway",
         "exits": {
             "GC Darunias Chamber": "True",
-            "DMC Lower Local": "can_use(Goron_Tunic)",
-            "DMC Great Fairy Fountain": "can_use(Megaton_Hammer)",
-            "DMC Hammer Grotto": "can_use(Megaton_Hammer)"
+            "DMC Lower Local": "logic_fewer_tunic_requirements or can_use(Goron_Tunic)"
         }
     },
     {
         "region_name": "Crater Mountain Gateway",
         "exits": {
             "Death Mountain Summit": "True",
-            "DMC Upper Local": "can_use(Goron_Tunic)",
-            "DMC Upper Grotto": "here(can_blast_or_smash)"
+            "DMC Upper Local": "is_child or (logic_fewer_tunic_requirements or can_use(Goron_Tunic))"
         }
     },
     {

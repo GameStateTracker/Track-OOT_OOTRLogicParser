@@ -84,6 +84,9 @@
         "Kokiri Forest": "Kokiri Bridge Gateway",
         "Hyrule Field": "Field Woods Gateway"
     },
+    "LW Bridge From Forest": {
+        "LW Bridge": "Kokiri Bridge Gateway"
+    },
     "Lost Woods": {
         "GC Woods Warp": "GC Woods Gateway",
         "LW Forest Exit": "Kokiri Woods Gateway",
@@ -166,13 +169,19 @@
         "DMC Lower Local": "Crater Goron Gateway"
     },
     "DMC Lower Local": {
-        "DMC Lower Nearby": "Crater Goron Gateway"
+        "DMC Ladder Area Nearby": "Crater Goron Gateway"
+    },
+    "DMC Lower Nearby": {
+        "GC Darunias Chamber": "DMC Ladder Area Nearby"
     },
     "Death Mountain Summit": {
         "DMC Upper Local": "Crater Mountain Gateway"
     },
     "DMC Upper Local": {
-        "DMC Upper Nearby": "Crater Mountain Gateway"
+        "DMC Ladder Area Nearby": "Crater Mountain Gateway"
+    },
+    "DMC Upper Nearby": {
+        "Death Mountain Summit": "DMC Ladder Area Nearby"
     },
     "ZR Behind Waterfall": {
         "Zoras Domain": "River Domain Gateway"
