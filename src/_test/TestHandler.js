@@ -1,5 +1,4 @@
 import LogicGraph from "./LogicGraph.js";
-import Compiler from "./EdgeLogicCompiler.js";
 
 const LOGIC_PROCESSOR = new LogicGraph();
 
@@ -14,14 +13,19 @@ function getter(mem, key) {
     }
 }
 
-export function testLogic(logic, data, root) {
+export function testLogic(logic, data) {
     LOGIC_PROCESSOR.load(logic);
-    LOGIC_PROCESSOR.setAll(data);
-    return LOGIC_PROCESSOR.traverse(root);
-}
+    const edges = LOGIC_PROCESSOR.getEdges();
+    const resTrv = [];
+    const resNon = [];
 
-export function testEdge(logic, data) {
-    let fn = Compiler.compile(logic);
-    const valueGetter = getter.bind(data);
-    return fn(valueGetter, execute);
+    // TODO
+    // traverse edges and return 2 arrays:
+    // 1. all traversable edges
+    // 2. all non traversable edges
+    for (let [name, edge] of edges) {
+        // TODO
+    }
+
+    return [resTrv, resNon];
 }
