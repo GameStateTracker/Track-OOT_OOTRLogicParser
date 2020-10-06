@@ -6,6 +6,7 @@ import Translation from "./utils/Translation.js";
 import HelperParser from "./parser/HelperParser.js";
 import LogicParser from "./parser/LogicParser.js";
 import LogicGenerator from "./parser/LogicGenerator.js";
+import { testLogic } from "./_test/TestHandler.js";
 
 const __dirname = path.resolve();
 
@@ -34,30 +35,43 @@ rules.forEach((v, k) => {
     Translation.addRule(new RegExp(k, "i"), new RegExp(v, "i"));
 });
 
+// parser for normal logic
+function parseLogic() {
+    LogicParser.parse(fs.readFileSync(inGatewayFile).toString(), 0);
+    fs.readdirSync(inLogicDir).forEach(function(file) {
+        const iname = path.join(inLogicDir, file);
+        let mq = 0;
+        if(iname.endsWith("MQ.json")) mq = 1;
+        LogicParser.parse(fs.readFileSync(iname).toString(), mq);
+    });
+    const logic = LogicGenerator.generate();
+    testLogic(logic);
+    const logicData = JSON.stringify(logic, null, 4);
+    fs.writeFileSync(`${outputDir}/logic.json`, logicData);
+};
+
+// parser for glitched logic
+function parseGlitchedLogic() {
+    LogicParser.parse(fs.readFileSync(inGatewayFile).toString(), 0, 0);
+    fs.readdirSync(inGlitchedDir).forEach(function(file) {
+        const iname = path.join(inGlitchedDir, file);
+        let mq = 0;
+        if(iname.endsWith("MQ.json")) mq = 1;
+        LogicParser.parse(fs.readFileSync(iname).toString(), mq);
+    });
+    const logic = LogicGenerator.generate();
+    //testLogic(logic);
+    const logicData = JSON.stringify(logic, null, 4);
+    fs.writeFileSync(`${outputDir}/logic_glitched.json`, logicData);
+};
+
+// --------------------------
+
 // parse helpers
 HelperParser.parse(fs.readFileSync(inHelperFile).toString());
-
 // parse logic
-LogicParser.parse(fs.readFileSync(inGatewayFile).toString(), 0);
-fs.readdirSync(inLogicDir).forEach(function(file) {
-    let iname = path.join(inLogicDir, file);
-    let mq = 0;
-    if(iname.endsWith("MQ.json")) mq = 1;
-    LogicParser.parse(fs.readFileSync(iname).toString(), mq);
-});
-let logic = JSON.stringify(LogicGenerator.generate(), null, 4);
-fs.writeFileSync(`${outputDir}/logic.json`, logic);
-
-// rreset generator
+parseLogic();
+// reset generator
 LogicGenerator.reset();
-
 // parse glitched logic
-LogicParser.parse(fs.readFileSync(inGatewayFile).toString(), 0, 0);
-fs.readdirSync(inGlitchedDir).forEach(function(file) {
-    let iname = path.join(inGlitchedDir, file);
-    let mq = 0;
-    if(iname.endsWith("MQ.json")) mq = 1;
-    LogicParser.parse(fs.readFileSync(iname).toString(), mq);
-});
-let glitched = JSON.stringify(LogicGenerator.generate(), null, 4);
-fs.writeFileSync(`${outputDir}/logic_glitched.json`, glitched);
+parseGlitchedLogic();

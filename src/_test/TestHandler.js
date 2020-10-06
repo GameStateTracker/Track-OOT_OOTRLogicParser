@@ -1,31 +1,25 @@
+import fs from "fs";
+import path from "path";
+import JSONFile from "../utils/JSONFile.js";
 import LogicGraph from "./LogicGraph.js";
 
+const __dirname = path.resolve();
+const currentDir = path.join(__dirname, "src/_test/");
+
 const LOGIC_PROCESSOR = new LogicGraph();
+const savestate = JSONFile.read(`${currentDir}/savestate.json`);
 
-function execute() {
-    return 1;
-}
+// TODO better get edged one by one
+// would make it possible to dynamically set starting age to target edges age
 
-function getter(mem, key) {
-    const buf = new Map(Object.entries(mem));
-    if (buf.has(key)) {
-        return buf.get(key);
-    }
-}
-
-export function testLogic(logic, data) {
+export function testLogic(logic) {
     LOGIC_PROCESSOR.load(logic);
-    const edges = LOGIC_PROCESSOR.getEdges();
-    const resTrv = [];
-    const resNon = [];
+    LOGIC_PROCESSOR.setAll(savestate.data);
+    
+    const res = LOGIC_PROCESSOR.traverse("region.root");
 
-    // TODO
-    // traverse edges and return 2 arrays:
-    // 1. all traversable edges
-    // 2. all non traversable edges
-    for (let [name, edge] of edges) {
-        // TODO
-    }
+    const data = JSON.stringify(res, null, 4);
+    fs.writeFileSync(`${currentDir}/output.json`, data);
 
-    return [resTrv, resNon];
+    return res;
 }

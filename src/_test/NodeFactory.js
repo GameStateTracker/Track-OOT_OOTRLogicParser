@@ -73,6 +73,10 @@ class Edge {
         return `${SOURCE.get(this)} => ${TARGET.get(this)}`;
     }
 
+    toJSON() {
+        return this.toString();
+    }
+
 }
 
 /* node factory */
