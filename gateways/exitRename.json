@@ -1,0 +1,192 @@
+{
+    "Kakariko Village": {
+        "Bottom of the Well": "Bottom of the Well Gateway",
+        "Hyrule Field": "Kakariko Field Gateway",
+        "Graveyard": "Graveyard Kakariko Gateway"
+    },
+    "KF Outside Deku Tree": {
+        "Deku Tree Lobby": "Deku Tree Gateway"
+    },
+    "Dodongos Cavern Entryway": {
+        "Dodongos Cavern Beginning": "Dodongos Cavern Gateway"
+    },
+    "Zoras Fountain": {
+        "Ice Cavern Beginning": "Ice Cavern Gateway",
+        "Jabu Jabus Belly Beginning": "Jabu Jabus Belly Gateway",
+        "ZD Behind King Zora": "Fountain Domain Gateway"
+    },
+    "Gerudo Fortress": {
+        "Gerudo Training Grounds Lobby": "Gerudo Training Grounds Gateway",
+        "GV Fortress Side": "Valley Fortress Gateway"
+    },
+    "Sacred Forest Meadow": {
+        "Forest Temple Lobby": "Forest Temple Gateway"
+    },
+    "Fire Temple Entrance": {
+        "Fire Temple Lower": "Fire Temple Gateway"
+    },
+    "Lake Hylia": {
+        "Water Temple Lobby": "Water Temple Gateway",
+        "Hyrule Field": "Lake Field Gateway",
+        "Zoras Domain": "Domain Lake Gateway"
+    },
+    "Graveyard Warp Pad Region": {
+        "Shadow Temple Entryway": "Shadow Temple Gateway"
+    },
+    "Desert Colossus": {
+        "Spirit Temple Lobby": "Spirit Temple Gateway",
+        "Wasteland Near Colossus": "Wasteland Colossus Gateway"
+    },
+    "Ganons Castle Grounds": {
+        "Ganons Castle Lobby": "Ganons Castle Gateway"
+    },
+    "Bottom of the Well": {
+        "Kakariko Village": "Bottom of the Well Gateway"
+    },
+    "Deku Tree Lobby": {
+        "Deku Tree Lobby": "Deku Tree Gateway"
+    },
+    "Dodongos Cavern Beginning": {
+        "Dodongos Cavern Beginning": "Dodongos Cavern Gateway"
+    },
+    "Jabu Jabus Belly Beginning": {
+        "Zoras Fountain": "Jabu Jabus Belly Gateway"
+    },
+    "Ice Cavern Beginning": {
+        "Zoras Fountain": "Ice Cavern Gateway"
+    },
+    "Gerudo Training Grounds Lobby": {
+        "Gerudo Fortress": "Gerudo Training Grounds Gateway"
+    },
+    "Forest Temple Lobby": {
+        "Sacred Forest Meadow": "Forest Temple Gateway"
+    },
+    "Fire Temple Lower": {
+        "Fire Temple Entrance": "Fire Temple Gateway"
+    },
+    "Water Temple Lobby": {
+        "Lake Hylia": "Water Temple Gateway"
+    },
+    "Shadow Temple Entryway": {
+        "Graveyard Warp Pad Region": "Shadow Temple Gateway"
+    },
+    "Spirit Temple Lobby": {
+        "Desert Colossus": "Spirit Temple Gateway"
+    },
+    "Ganons Castle Lobby": {
+        "Ganons Castle Grounds": "Ganons Castle Gateway"
+    },
+    "Kokiri Forest": {
+        "LW Bridge From Forest": "Kokiri Bridge Gateway",
+        "Lost Woods": "Kokiri Woods Gateway"
+    },
+    "LW Bridge": {
+        "Kokiri Forest": "Kokiri Bridge Gateway",
+        "Hyrule Field": "Field Woods Gateway"
+    },
+    "LW Bridge From Forest": {
+        "LW Bridge": "Kokiri Bridge Gateway"
+    },
+    "Lost Woods": {
+        "GC Woods Warp": "GC Woods Gateway",
+        "LW Forest Exit": "Kokiri Woods Gateway",
+        "Zora River": "River Woods Gateway"
+    },
+    "GC Woods Warp": {
+        "Lost Woods": "GC Woods Gateway"
+    },
+    "Zora River": {
+        "Lost Woods": "River Woods Gateway"
+    },
+    "LW Beyond Mido": {
+        "SFM Entryway": "Meadows Woods Gateway"
+    },
+    "SFM Entryway": {
+        "LW Beyond Mido": "Meadows Woods Gateway"
+    },
+    "Hyrule Field": {
+        "Lake Hylia": "Lake Field Gateway",
+        "Gerudo Valley": "Valley Field Gateway",
+        "Market Entrance": "MarketEntrance Field Gateway",
+        "Kakariko Village": "Kakariko Field Gateway",
+        "ZR Front": "River Field Gateway",
+        "Lon Lon Ranch": "Ranch Field Gateway"
+    },
+    "Gerudo Valley": {
+        "Hyrule Field": "Valley Field Gateway"
+    },
+    "Market Entrance": {
+        "Hyrule Field": "MarketEntrance Field Gateway",
+        "Market": "MarketEntrance Market Gateway"
+    },
+    "ZR Front": {
+        "Hyrule Field": "River Field Gateway"
+    },
+    "Lon Lon Ranch": {
+        "Hyrule Field": "Ranch Field Gateway"
+    },
+    "Zoras Domain": {
+        "Lake Hylia": "Domain Lake Gateway",
+        "ZR Behind Waterfall": "River Domain Gateway"
+    },
+    "GV Fortress Side": {
+        "Gerudo Fortress": "Valley Fortress Gateway"
+    },
+    "GF Outside Gate": {
+        "Wasteland Near Fortress": "Wasteland Fortress Gateway"
+    },
+    "Wasteland Near Fortress": {
+        "GF Outside Gate": "Wasteland Fortress Gateway"
+    },
+    "Wasteland Near Colossus": {
+        "Desert Colossus": "Wasteland Colossus Gateway"
+    },
+    "Market":{
+        "Market Entrance": "MarketEntrance Market Gateway",
+        "Castle Grounds": "Grounds Market Gateway",
+        "ToT Entrance": "ToT Market Gateway"
+    },
+    "Castle Grounds": {
+        "Market": "Grounds Market Gateway"
+    },
+    "ToT Entrance": {
+        "Market": "ToT Market Gateway"
+    },
+    "Graveyard": {
+        "Kakariko Village": "Graveyard Kakariko Gateway"
+    },
+    "Kak Behind Gate": {
+        "Death Mountain": "Mountain Kakariko Gateway"
+    },
+    "Death Mountain": {
+        "Kak Behind Gate": "Mountain Kakariko Gateway",
+        "Goron City": "Mountain Goron Gateway"
+    },
+    "Goron City": {
+        "Death Mountain": "Mountain Goron Gateway"
+    },
+    "GC Darunias Chamber": {
+        "DMC Lower Local": "Crater Goron Gateway"
+    },
+    "DMC Lower Local": {
+        "DMC Ladder Area Nearby": "Crater Goron Gateway"
+    },
+    "DMC Lower Nearby": {
+        "GC Darunias Chamber": "DMC Ladder Area Nearby"
+    },
+    "Death Mountain Summit": {
+        "DMC Upper Local": "Crater Mountain Gateway"
+    },
+    "DMC Upper Local": {
+        "DMC Ladder Area Nearby": "Crater Mountain Gateway"
+    },
+    "DMC Upper Nearby": {
+        "Death Mountain Summit": "DMC Ladder Area Nearby"
+    },
+    "ZR Behind Waterfall": {
+        "Zoras Domain": "River Domain Gateway"
+    },
+    "ZD Behind King Zora": {
+        "Zoras Fountain": "Fountain Domain Gateway"
+    }
+}
