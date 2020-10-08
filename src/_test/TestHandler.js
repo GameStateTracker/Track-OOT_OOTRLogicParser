@@ -16,10 +16,12 @@ export function testLogic(logic) {
     LOGIC_PROCESSOR.load(logic);
     LOGIC_PROCESSOR.setAll(savestate.data);
     
-    const res = LOGIC_PROCESSOR.traverse("region.root");
+    const [res, failed] = LOGIC_PROCESSOR.traverse("region.root");
 
     const data = JSON.stringify(res, null, 4);
+    const dataFailed = JSON.stringify(failed, null, 4);
     fs.writeFileSync(`${currentDir}/output.json`, data);
+    fs.writeFileSync(`${currentDir}/failed.json`, dataFailed);
 
     return res;
 }

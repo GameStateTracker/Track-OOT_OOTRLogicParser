@@ -139,6 +139,7 @@ export default class LogicGraph {
     traverse(startNode) {
         const allTargets = this.getTargetNodes();
         const reachableNodes = new Set();
+        const untraversible = new Set();
         const traversible = new Set();
         const mixins = MIXINS.get(this);
         const mem_i = MEM_I.get(this);
@@ -187,12 +188,17 @@ export default class LogicGraph {
                         }
                     } else {
                         queue.push(edge);
+                        untraversible.add(edge)
                     }
                 }
             }
             DIRTY.set(this, false);
         }
-        return Array.from(traversible);
+        for(let trav of traversible)
+        {
+            if(untraversible.has(trav)) untraversible.delete(trav);
+        }
+        return [Array.from(traversible), Array.from(untraversible)];
     }
 
     set(key, value) {
