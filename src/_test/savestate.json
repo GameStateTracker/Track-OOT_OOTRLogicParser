@@ -1,7 +1,7 @@
 {
     "name": "20200930143415_",
     "version": 5,
-    "timestamp": "2020-10-07T23:44:52.824Z",
+    "timestamp": "2020-10-10T20:46:14.425Z",
     "autosave": false,
     "notes": "",
     "data": {
@@ -22,7 +22,7 @@
         "option.skullsanity": false,
         "option.doors_open_forest": "doors_open_forest_open",
         "option.doors_open_mountain": false,
-        "option.doors_open_temple": true,
+        "option.doors_open_temple": false,
         "option.doors_open_zora": "doors_open_zora_closed",
         "option.gerudo_fortress_open": "gerudo_fortress_open_default",
         "option.ganon_castle_open": "ganon_castle_open_default",
@@ -262,7 +262,12 @@
         "item.boots_hover": 1,
         "item.boots_iron": 1,
         "item.heart_double": 1,
-        "item.heart_container": 5
+        "item.heart_container": 5,
+        "option.shuffleMediCarpet": true,
+        "location.desert.c_bombchu_wasteland": false,
+        "location.goron.c_medigoron": false,
+        "filter.gossipstones": "true",
+        "item.wallet": 3
     },
     "extra": {
         "exits": {
