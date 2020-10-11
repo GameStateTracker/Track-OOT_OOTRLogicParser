@@ -98,7 +98,8 @@
     "zora_fountain": {
         "name": "option.doors_open_zora",
         "values": {
-            "open": "doors_open_zora_both"
+            "open": "doors_open_zora_both",
+            "adult": "doors_open_zora_adult"
         }
     },
     "bridge": {
