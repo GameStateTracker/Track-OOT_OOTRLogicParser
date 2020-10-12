@@ -102,7 +102,7 @@ class LogicGenerator {
 		while (events.has(name)) {
             name = `${key}${INDEX_DELIMITER}${++idx}`;
         }
-        console.log(name);
+        //console.log(name);
         structure[region].events.push(name);
         events.set(name, value);
     }

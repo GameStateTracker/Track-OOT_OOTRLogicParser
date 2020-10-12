@@ -15,7 +15,6 @@
     "Butterfly Fairy": "location.butterfly_fairy",
     "Big Poe Kill": "location.big_poe",
     "Bug Rock": "location.bug_rock",
-    "Wasteland Bombchu Salesman": "location.bombchu_wasteland",
     "Fairy Pond": "location.woods.fairy_pond",
     "Master Sword Pedestal": "location.master_sword",
     "Market Bombchu Bowling Bombchus": "location.bowling_bombchus",
@@ -263,6 +262,7 @@
     "Colossus Great Fairy Reward": "location.desert.c_colossus_fairy",
     "Colossus Deku Scrub Grotto Front": "location.desert.c_colossus_grotto_salesman_1",
     "Colossus Deku Scrub Grotto Rear": "location.desert.c_colossus_grotto_salesman_2",
+    "Wasteland Bombchu Salesman": "location.desert.c_bombchu_wasteland",
 
     // death mountain
     "DMT Chest": "location.mountain.c_outside_goron_chest",
@@ -300,6 +300,7 @@
     "GC Deku Scrub Grotto Left": "location.goron.c_grotto_salesman_1",
     "GC Deku Scrub Grotto Center": "location.goron.c_grotto_salesman_2",
     "GC Deku Scrub Grotto Right": "location.goron.c_grotto_salesman_3",
+    "GC Medigoron": "location.goron.c_medigoron",
 
     // deku
     "Deku Tree Map Chest": "location.deku.c_lobby",

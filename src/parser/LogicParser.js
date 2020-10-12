@@ -14,7 +14,6 @@ class LogicParser {
         let output = RandONC.parse(input);
         output.forEach((value) => {
             if(mq === 1) value.region_name = value.region_name + " MQ"
-            //console.log(value.region_name);
             for (let i in value.locations) {
                 let rule = value.locations[i];
                 LogicGenerator.addLocation(value.region_name, i, transpile(rule));

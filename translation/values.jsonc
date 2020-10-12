@@ -189,6 +189,10 @@
         "type": "value",
         "el": "event.light_trial_clear"
     },
+    "Raise_Water_Level": {
+        "type": "value",
+        "el": "event.raise_water_level"
+    },
     /* items */
     "Bow": {
         "type": "value",
@@ -1572,5 +1576,67 @@
         "type": "value",
         "el": "skip.light_trial_mq"
     },
+    //unadded
+    "logic_dc_vines_gs": {
+        "type": "value",
+        "el": "skip.dc_vines_gs"
+    },
+    "logic_dc_scrub_room": {
+        "type": "value",
+        "el": "skip.dc_scrub_room"
+    },
+    "logic_forest_first_gs": {
+        "type": "value",
+        "el": "skip.forest_first_gs"
+    },
+    "logic_ice_block_gs": {
+        "type": "value",
+        "el": "skip.ice_block_gs"
+    },
+    "logic_dmt_climb_hovers": {
+        "type": "value",
+        "el": "skip.dmt_climb_hovers"
+    },
+    "logic_goron_grotto": {
+        "type": "value",
+        "el": "skip.goron_grotto"
+    },
+    "logic_domain_gs": {
+        "type": "value",
+        "el": "skip.domain_gs"
+    },
+    "logic_castle_storms_gs": {
+        "type": "value",
+        "el": "skip.castle_storms_gs"
+    },
+    "logic_shadow_umbrella_gs": {
+        "type": "value",
+        "el": "skip.shadow_umbrella_gs"
+    },
+    "logic_spirit_lobby_jump": {
+        "type": "value",
+        "el": "skip.spirit_lobby_jump"
+    },
+    "logic_water_dragon_adult": {
+        "type": "value",
+        "el": "skip.water_dragon_adult"
+    },
+    "logic_water_dragon_child": {
+        "type": "value",
+        "el": "skip.water_dragon_child"
+    },
+    "logic_water_central_gs_irons": {
+        "type": "value",
+        "el": "skip.water_central_gs_irons"
+    },
+    "logic_water_falling_platform_gs_hookshot": {
+        "type": "value",
+        "el": "skip.water_falling_platform_gs_hookshot"
+    },
+    "logic_water_falling_platform_gs_boomerang": {
+        "type": "value",
+        "el": "skip.water_falling_platform_gs_boomerang"
+    },
+
     "": ""
 }
