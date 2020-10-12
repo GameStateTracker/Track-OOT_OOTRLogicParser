@@ -45,9 +45,9 @@ function parseLogic() {
         LogicParser.parse(fs.readFileSync(iname).toString(), mq);
     });
     const logic = LogicGenerator.generate();
-    const filtered = filterLogic(logic, "normal_");
     const logicData = JSON.stringify(logic, null, 4);
     fs.writeFileSync(`${outputDir}/logic.full.json`, logicData);
+    const filtered = filterLogic(logic);
     const filteredData = JSON.stringify(filtered, null, 4);
     fs.writeFileSync(`${outputDir}/logic.json`, filteredData);
 };
@@ -62,9 +62,9 @@ function parseGlitchedLogic() {
         LogicParser.parse(fs.readFileSync(iname).toString(), mq);
     });
     const logic = LogicGenerator.generate();
-    const filtered = filterLogic(logic, "glitched_");
     const logicData = JSON.stringify(logic, null, 4);
     fs.writeFileSync(`${outputDir}/logic_glitched.full.json`, logicData);
+    const filtered = filterLogic(logic);
     const filteredData = JSON.stringify(filtered, null, 4);
     fs.writeFileSync(`${outputDir}/logic_glitched.json`, filteredData);
 };

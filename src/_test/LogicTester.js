@@ -1,4 +1,3 @@
-import fs from "fs";
 import path from "path";
 import JSONFile from "../utils/JSONFile.js";
 import LogicGraph from "./LogicGraph.js";
@@ -20,10 +19,7 @@ function testAdultLogic() {
     return LOGIC_PROCESSOR.traverse("region.root");
 }
 
-export function testLogic(logic, prefix) {
-    if (!prefix || typeof prefix != "string") {
-        prefix = "";
-    }
+export function testLogic(logic) {
     LOGIC_PROCESSOR.load(logic);
     LOGIC_PROCESSOR.setAll(savestate.data);
     const edges = LOGIC_PROCESSOR.getEdges().map(e => e.join(" => "));
@@ -38,22 +34,18 @@ export function testLogic(logic, prefix) {
             failed.add(edge);
         }
     }
-    const dataSuccess = JSON.stringify(Array.from(success), null, 4);
-    const dataFailed = JSON.stringify(Array.from(failed), null, 4);
-    fs.writeFileSync(`${currentDir}/${prefix}success.json`, dataSuccess);
-    fs.writeFileSync(`${currentDir}/${prefix}failed.json`, dataFailed);
     return [success, failed];
 }
 
-export function filterLogic(logic, prefix) {
-    const [success, failed] = testLogic(logic, prefix);
+export function filterLogic(logic) {
+    const [success, failed] = testLogic(logic);
     const res = {edges: {}, logic: logic.logic};
     for (let name in logic.edges) {
-        res[name] = {};
+        res.edges[name] = {};
         let children = logic.edges[name];
         for (let child in children) {
             if (success.has(`${name} => ${child}`)) {
-                res[name][child] = logic.edges[name][child];
+                res.edges[name][child] = logic.edges[name][child];
             }
         }
     }
