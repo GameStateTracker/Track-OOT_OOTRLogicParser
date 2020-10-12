@@ -6,7 +6,7 @@ import Translation from "./utils/Translation.js";
 import HelperParser from "./parser/HelperParser.js";
 import LogicParser from "./parser/LogicParser.js";
 import LogicGenerator from "./parser/LogicGenerator.js";
-import { testLogic } from "./_test/TestHandler.js";
+import { filterLogic } from "./_test/LogicTester.js";
 
 const __dirname = path.resolve();
 
@@ -45,9 +45,11 @@ function parseLogic() {
         LogicParser.parse(fs.readFileSync(iname).toString(), mq);
     });
     const logic = LogicGenerator.generate();
-    testLogic(logic);
+    const filtered = filterLogic(logic, "normal_");
     const logicData = JSON.stringify(logic, null, 4);
-    fs.writeFileSync(`${outputDir}/logic.json`, logicData);
+    fs.writeFileSync(`${outputDir}/logic.full.json`, logicData);
+    const filteredData = JSON.stringify(filtered, null, 4);
+    fs.writeFileSync(`${outputDir}/logic.json`, filteredData);
 };
 
 // parser for glitched logic
@@ -60,9 +62,11 @@ function parseGlitchedLogic() {
         LogicParser.parse(fs.readFileSync(iname).toString(), mq);
     });
     const logic = LogicGenerator.generate();
-    //testLogic(logic);
+    const filtered = filterLogic(logic, "glitched_");
     const logicData = JSON.stringify(logic, null, 4);
-    fs.writeFileSync(`${outputDir}/logic_glitched.json`, logicData);
+    fs.writeFileSync(`${outputDir}/logic_glitched.full.json`, logicData);
+    const filteredData = JSON.stringify(filtered, null, 4);
+    fs.writeFileSync(`${outputDir}/logic_glitched.json`, filteredData);
 };
 
 // --------------------------
