@@ -277,5 +277,19 @@
             "ZD Behind King Zora": "True",
             "Zoras Fountain": "True"
         }
+    },
+    {
+        "region_name": "ChildCastle Fairy Gateway",
+        "exits": {
+            "Castle Grounds": "True",
+            "HC Great Fairy Fountain": "True"
+        }
+    },
+    {
+        "region_name": "AdultCastle Fairy Gateway",
+        "exits": {
+            "Castle Grounds": "True",
+            "OGC Great Fairy Fountain": "True"
+        }
     }
 ]
