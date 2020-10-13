@@ -33,5 +33,28 @@
                 }
             ]
         }
+    },
+    "region.child_spirit_temple_mq": {
+        "logic.location.temple_spirit_mq.c_child_center": {
+            "type": "and",
+            "el": [
+                {
+                    "type": "mixin",
+                    "el": "mixin.can_become_adult"
+                },
+                {
+                    "type": "value",
+                    "el": "item.hammer"
+                },
+                {
+                    "type": "min",
+                    "el": {
+                        "type": "value",
+                        "el": "item.key_small_spirit"
+                    },
+                    "value": 7
+                }
+            ]
+        }
     }
 }

@@ -281,14 +281,14 @@
     {
         "region_name": "ChildCastle Fairy Gateway",
         "exits": {
-            "Castle Grounds": "True",
+            "Hyrule Castle Grounds": "True",
             "HC Great Fairy Fountain": "True"
         }
     },
     {
         "region_name": "AdultCastle Fairy Gateway",
         "exits": {
-            "Castle Grounds": "True",
+            "Ganons Castle Grounds": "True",
             "OGC Great Fairy Fountain": "True"
         }
     }
