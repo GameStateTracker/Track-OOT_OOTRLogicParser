@@ -11,12 +11,12 @@ const savestate = JSONFile.read(`${currentDir}/savestate.json`);
 
 function testChildLogic() {
     LOGIC_PROCESSOR.set("option.starting_age", "child");
-    return LOGIC_PROCESSOR.traverse("region.root");
+    return LOGIC_PROCESSOR.execute();
 }
 
 function testAdultLogic() {
     LOGIC_PROCESSOR.set("option.starting_age", "adult");
-    return LOGIC_PROCESSOR.traverse("region.root");
+    return LOGIC_PROCESSOR.execute();
 }
 
 export function testLogic(logic) {
