@@ -7,6 +7,7 @@ import LogicGenerator from "./LogicGenerator.js";
 const __dirname = path.resolve();
 const inExitRenameFile  = path.join(__dirname, "/gateways/exitRename.json");
 const renameData = JSON.parse(fs.readFileSync(inExitRenameFile, 'utf8'));
+const exits = ["Kakariko Village", "KF Outside Deku Tree", "Dodongos Cavern Entryway", "Zoras Fountain", "Gerudo Fortress", "Sacred Forest Meadow", "Fire Temple Entrance", "Lake Hylia", "Graveyard Warp Pad Region", "Desert Colossus", "Ganons Castle Grounds"]
 
 class LogicParser {
 
@@ -20,6 +21,9 @@ class LogicParser {
             }
             for (let i in value.exits) {
                 let rule = value.exits[i];
+                if(mq === 1) {
+                    if(!exits.includes(i)) i = i + " MQ"
+                }
                 let regionName = value.region_name
                 if(regionName.endsWith(" MQ")) regionName = regionName.replace(" MQ", "");
                 if(renameData.hasOwnProperty(regionName)) {

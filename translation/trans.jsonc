@@ -342,9 +342,9 @@
     "Dodongos Cavern Deku Scrub Near Bomb Bag Right": "location.dodongo.c_near_bomb_bag_salesman_2",
     "Dodongos Cavern Deku Scrub Side Room Near Dodongos": "location.dodongo.c_east_corridor_salesman",
     "Dodongos Cavern Boss Room Chest": "location.dodongo.c_chest_above_dodongo",
-    "Dodongos Cavern GS Vines Above Stairs": "location.dodongo.s_above_big_staircase_adult",
+    "Dodongos Cavern GS Vines Above Stairs": "location.dodongo.s_big_staircase_vines",
     "Dodongos Cavern GS Back Room": "location.dodongo.s_near_boss_bombable",
-    "Dodongos Cavern GS Alcove Above Stairs": "location.dodongo.s_big_staircase_vines",
+    "Dodongos Cavern GS Alcove Above Stairs": "location.dodongo.s_above_big_staircase_adult",
     "Dodongos Cavern GS Scarecrow": "location.dodongo.s_east_corridor_scarecrow_adult",
     "Dodongos Cavern GS Side Room Near Lower Lizalfos": "location.dodongo.s_east_corridor_bombable",
     

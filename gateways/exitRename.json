@@ -38,7 +38,8 @@
         "Wasteland Near Colossus": "Wasteland Colossus Gateway"
     },
     "Ganons Castle Grounds": {
-        "Ganons Castle Lobby": "Ganons Castle Gateway"
+        "Ganons Castle Lobby": "Ganons Castle Gateway",
+        "OGC Great Fairy Fountain": "AdultCastle Fairy Gateway"
     },
     "Bottom of the Well": {
         "Kakariko Village": "Bottom of the Well Gateway"
@@ -99,10 +100,10 @@
         "Lost Woods": "River Woods Gateway"
     },
     "LW Beyond Mido": {
-        "SFM Entryway": "Meadows Woods Gateway"
+        "SFM Entryway": "Meadow Woods Gateway"
     },
     "SFM Entryway": {
-        "LW Beyond Mido": "Meadows Woods Gateway"
+        "LW Beyond Mido": "Meadow Woods Gateway"
     },
     "Hyrule Field": {
         "Lake Hylia": "Lake Field Gateway",
@@ -188,5 +189,14 @@
     },
     "ZD Behind King Zora": {
         "Zoras Fountain": "Fountain Domain Gateway"
+    },
+    "OGC Great Fairy Fountain": {
+        "Castle Grounds": "AdultCastle Fairy Gateway"
+    },
+    "Hyrule Castle Grounds": {
+        "HC Great Fairy Fountain": "ChildCastle Fairy Gateway"
+    },
+    "HC Great Fairy Fountain": {
+        "Castle Grounds": "ChildCastle Fairy Gateway"
     }
 }

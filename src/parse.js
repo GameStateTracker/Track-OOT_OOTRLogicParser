@@ -54,7 +54,7 @@ function parseLogic() {
 
 // parser for glitched logic
 function parseGlitchedLogic() {
-    LogicParser.parse(fs.readFileSync(inGatewayFile).toString(), 0, 0);
+    LogicParser.parse(fs.readFileSync(inGatewayFile).toString(), 0);
     fs.readdirSync(inGlitchedDir).forEach(function(file) {
         const iname = path.join(inGlitchedDir, file);
         let mq = 0;
