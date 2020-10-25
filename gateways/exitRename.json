@@ -5,36 +5,36 @@
         "Graveyard": "Graveyard Kakariko Gateway"
     },
     "KF Outside Deku Tree": {
-        "Deku Tree Lobby": "Deku Tree Gateway"
+        "Deku Tree Lobby": "Deku Tree Entrance"
     },
     "Dodongos Cavern Entryway": {
         "Dodongos Cavern Beginning": "Dodongos Cavern Gateway"
     },
     "Zoras Fountain": {
-        "Ice Cavern Beginning": "Ice Cavern Gateway",
-        "Jabu Jabus Belly Beginning": "Jabu Jabus Belly Gateway",
+        "Ice Cavern Beginning": "Ice Cavern Entrance",
+        "Jabu Jabus Belly Beginning": "Jabu Jabus Belly Entrance",
         "ZD Behind King Zora": "Fountain Domain Gateway"
     },
     "Gerudo Fortress": {
-        "Gerudo Training Grounds Lobby": "Gerudo Training Grounds Gateway",
+        "Gerudo Training Grounds Lobby": "Gerudo Training Grounds Entrance",
         "GV Fortress Side": "Valley Fortress Gateway"
     },
     "Sacred Forest Meadow": {
-        "Forest Temple Lobby": "Forest Temple Gateway"
+        "Forest Temple Lobby": "Forest Temple Entrance"
     },
     "Fire Temple Entrance": {
         "Fire Temple Lower": "Fire Temple Gateway"
     },
     "Lake Hylia": {
-        "Water Temple Lobby": "Water Temple Gateway",
+        "Water Temple Lobby": "Water Temple Entrance",
         "Hyrule Field": "Lake Field Gateway",
         "Zoras Domain": "Domain Lake Gateway"
     },
     "Graveyard Warp Pad Region": {
-        "Shadow Temple Entryway": "Shadow Temple Gateway"
+        "Shadow Temple Entryway": "Shadow Temple Entrance"
     },
     "Desert Colossus": {
-        "Spirit Temple Lobby": "Spirit Temple Gateway",
+        "Spirit Temple Lobby": "Spirit Temple Entrance",
         "Wasteland Near Colossus": "Wasteland Colossus Gateway"
     },
     "Ganons Castle Grounds": {
@@ -42,7 +42,7 @@
         "OGC Great Fairy Fountain": "AdultCastle Fairy Gateway"
     },
     "Bottom of the Well": {
-        "Kakariko Village": "Bottom of the Well Gateway"
+        "Kakariko Village": "Bottom of the Well Entrance"
     },
     "Deku Tree Lobby": {
         "Deku Tree Lobby": "Deku Tree Gateway"

@@ -1,16 +1,30 @@
 [
     {
-        "region_name": "Bottom of the Well Gateway",
+        "region_name": "Bottom of the Well Entrance",
         "exits": {
             "Kakariko Village": "True",
+            "Bottom of the Well Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Bottom of the Well Gateway",
+        "exits": {
+            "Bottom of the Well Entrance": "True",
             "Bottom of the Well": "True",
             "Bottom of the Well MQ": "True"
         }
     },
     {
-        "region_name": "Deku Tree Gateway",
+        "region_name": "Deku Tree Entrance",
         "exits": {
             "KF Outside Deku Tree": "True",
+            "Deku Tree Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Deku Tree Gateway",
+        "exits": {
+            "Deku Tree Entrance": "True",
             "Deku Tree Lobby": "True",
             "Deku Tree Lobby MQ": "True"
         }
@@ -24,33 +38,61 @@
         }
     },
     {
-        "region_name": "Jabu Jabus Belly Gateway",
+        "region_name": "Jabu Jabus Belly Entrance",
         "exits": {
             "Zoras Fountain": "True",
+            "Jabu Jabus Belly Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Jabu Jabus Belly Gateway",
+        "exits": {
+            "ZJabu Jabus Belly Entrance": "True",
             "Jabu Jabus Belly Beginning": "True",
             "Jabu Jabus Belly Beginning MQ": "True"
         }
     },
     {
-        "region_name": "Ice Cavern Gateway",
+        "region_name": "Ice Cavern Entrance",
         "exits": {
             "Zoras Fountain": "True",
+            "Ice Cavern Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Ice Cavern Gateway",
+        "exits": {
+            "Ice Cavern Entrance": "True",
             "Ice Cavern Beginning": "True",
             "Ice Cavern Beginning MQ": "True"
         }
     },
     {
-        "region_name": "Gerudo Training Grounds Gateway",
+        "region_name": "Gerudo Training Grounds Entrance",
         "exits": {
             "Gerudo Fortress": "True",
+            "Gerudo Training Grounds Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Gerudo Training Grounds Gateway",
+        "exits": {
+            "Gerudo Training Grounds Entrance": "True",
             "Gerudo Training Grounds Lobby": "True",
             "Gerudo Training Grounds Lobby MQ": "True"
         }
     },
     {
-        "region_name": "Forest Temple Gateway",
+        "region_name": "Forest Temple Entrance",
         "exits": {
             "Sacred Forest Meadow": "True",
+            "Forest Temple Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Forest Temple Gateway",
+        "exits": {
+            "Forest Temple Entrance": "True",
             "Forest Temple Lobby": "True",
             "Forest Temple Lobby MQ": "True"
         }
@@ -64,25 +106,46 @@
         }
     },
     {
-        "region_name": "Water Temple Gateway",
+        "region_name": "Water Temple Entrance",
         "exits": {
             "Lake Hylia": "True",
+            "Water Temple Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Water Temple Gateway",
+        "exits": {
+            "Water Temple Entrance": "True",
             "Water Temple Lobby": "True",
             "Water Temple Lobby MQ": "True"
         }
     },
     {
-        "region_name": "Shadow Temple Gateway",
+        "region_name": "Shadow Temple Entrance",
         "exits": {
             "Graveyard Warp Pad Region": "True",
+            "Shadow Temple Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Shadow Temple Gateway",
+        "exits": {
+            "Shadow Temple Entrance": "True",
             "Shadow Temple Entryway": "True",
             "Shadow Temple Entryway MQ": "True"
         }
     },
     {
-        "region_name": "Spirit Temple Gateway",
+        "region_name": "Spirit Temple Entrance",
         "exits": {
             "Desert Colossus": "True",
+            "Spirit Temple Entrance": "True"
+        }
+    },
+    {
+        "region_name": "Spirit Temple Gateway",
+        "exits": {
+            "Spirit Temple Entrance": "True",
             "Spirit Temple Lobby": "True",
             "Spirit Temple Lobby MQ": "True"
         }
