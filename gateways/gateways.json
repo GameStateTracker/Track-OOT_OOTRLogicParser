@@ -158,6 +158,565 @@
             "Ganons Castle Lobby MQ": "True"
         }
     },
+
+
+
+    {
+        "region_name": "HF Tektite Grotto Entrance",
+        "exits": {
+            "HF Tektite Grotto": "True",
+            "Hyrule Field": "True"
+        }
+    },
+    {
+        "region_name": "HF Near Kak Grotto Entrance",
+        "exits": {
+            "HF Near Kak Grotto": "True",
+            "Hyrule Field": "True"
+        }
+    },
+    {
+        "region_name": "HF Fairy Grotto Entrance",
+        "exits": {
+            "HF Fairy Grotto": "True",
+            "Hyrule Field": "True"
+        }
+    },
+    {
+        "region_name": "HF Near Market Grotto Entrance",
+        "exits": {
+            "HF Near Market Grotto": "True",
+            "Hyrule Field": "True"
+        }
+    },
+    {
+        "region_name": "HF Cow Grotto Entrance",
+        "exits": {
+            "HF Cow Grotto": "True",
+            "Hyrule Field": "True"
+        }
+    },
+    {
+        "region_name": "HF Inside Fence Grotto Entrance",
+        "exits": {
+            "HF Inside Fence Grotto": "True",
+            "Hyrule Field": "True"
+        }
+    },
+    {
+        "region_name": "HF Open Grotto Entrance",
+        "exits": {
+            "HF Open Grotto": "True",
+            "Hyrule Field": "True"
+        }
+    },
+    {
+        "region_name": "HF Southeast Grotto Entrance",
+        "exits": {
+            "HF Southeast Grotto": "True",
+            "Hyrule Field": "True"
+        }
+    },
+
+    {
+        "region_name": "KF Midos House Entrance",
+        "exits": {
+            "KF Midos House": "True",
+            "Kokiri Forest": "True"
+        }
+    },
+    {
+        "region_name": "KF Sarias House Entrance",
+        "exits": {
+            "KF Sarias House": "True",
+            "Kokiri Forest": "True"
+        }
+    },
+    {
+        "region_name": "KF House of Twins Entrance",
+        "exits": {
+            "KF House of Twins": "True",
+            "Kokiri Forest": "True"
+        }
+    },
+    {
+        "region_name": "KF Know It All House Entrance",
+        "exits": {
+            "KF Know It All House": "True",
+            "Kokiri Forest": "True"
+        }
+    },
+    {
+        "region_name": "KF Kokiri Shop Entrance",
+        "exits": {
+            "KF Kokiri Shop": "True",
+            "Kokiri Forest": "True"
+        }
+    },
+    {
+        "region_name": "KF Links House Entrance",
+        "exits": {
+            "KF Links House": "True",
+            "Kokiri Forest": "True"
+        }
+    },
+    {
+        "region_name": "KF Storms Grotto Entrance",
+        "exits": {
+            "KF Storms Grotto": "True",
+            "Kokiri Forest": "True"
+        }
+    },
+
+    {
+        "region_name": "LW Near Shortcuts Grotto Entrance",
+        "exits": {
+            "LW Near Shortcuts Grotto": "True",
+            "Lost Woods": "True"
+        }
+    },
+    {
+        "region_name": "LW Scrubs Grotto Entrance",
+        "exits": {
+            "LW Scrubs Grotto": "True",
+            "LW Beyond Mido": "True"
+        }
+    },
+    {
+        "region_name": "Deku Theater Entrance",
+        "exits": {
+            "Deku Theater": "True",
+            "LW Beyond Mido": "True"
+        }
+    },
+
+    {
+        "region_name": "SFM Wolfos Grotto Entrance",
+        "exits": {
+            "SFM Wolfos Grotto": "True",
+            "SFM Entryway": "True"
+        }
+    },
+    {
+        "region_name": "SFM Storms Grotto Entrance",
+        "exits": {
+            "SFM Storms Grotto": "True",
+            "Sacred Forest Meadow": "True"
+        }
+    },
+    {
+        "region_name": "SFM Fairy Grotto Entrance",
+        "exits": {
+            "SFM Fairy Grotto": "True",
+            "Sacred Forest Meadow": "True"
+        }
+    },
+
+    {
+        "region_name": "Market Guard House Entrance",
+        "exits": {
+            "Market Guard House": "True",
+            "Market Entrance": "True"
+        }
+    },
+    {
+        "region_name": "Market Mask Shop Entrance",
+        "exits": {
+            "Market Mask Shop": "True",
+            "Market": "True"
+        }
+    },
+    {
+        "region_name": "Market Bombchu Bowling Entrance",
+        "exits": {
+            "Market Bombchu Bowling": "True",
+            "Market": "True"
+        }
+    },
+    {
+        "region_name": "Market Potion Shop Entrance",
+        "exits": {
+            "Market Potion Shop": "True",
+            "Market": "True"
+        }
+    },
+    {
+        "region_name": "Market Treasure Chest Game Entrance",
+        "exits": {
+            "Market Treasure Chest Game": "True",
+            "Market": "True"
+        }
+    },
+    {
+        "region_name": "Market Bombchu Shop Entrance",
+        "exits": {
+            "Market Bombchu Shop": "True",
+            "Market": "True"
+        }
+    },
+    {
+        "region_name": "Market Man in Green House Entrance",
+        "exits": {
+            "Market Man in Green House": "True",
+            "Market": "True"
+        }
+    },
+    {
+        "region_name": "Market Bazaar Entrance",
+        "exits": {
+            "Market Bazaar": "True",
+            "Market": "True"
+        }
+    },
+    {
+        "region_name": "Market Shooting Gallery Entrance",
+        "exits": {
+            "Market Shooting Gallery": "True",
+            "Market": "True"
+        }
+    },
+
+    {
+        "region_name": "LLR Talons House Entrance",
+        "exits": {
+            "LLR Talons House": "True",
+            "Lon Lon Ranch": "True"
+        }
+    },
+    {
+        "region_name": "LLR Stables Entrance",
+        "exits": {
+            "LLR Stables": "True",
+            "Lon Lon Ranch": "True"
+        }
+    },
+    {
+        "region_name": "LLR Tower Entrance",
+        "exits": {
+            "LLR Tower": "True",
+            "Lon Lon Ranch": "True"
+        }
+    },
+    {
+        "region_name": "LLR Grotto Entrance",
+        "exits": {
+            "LLR Grotto": "True",
+            "Lon Lon Ranch": "True"
+        }
+    },
+
+    {
+        "region_name": "HC Storms Grotto Entrance",
+        "exits": {
+            "HC Storms Grotto": "True",
+            "Hyrule Castle Grounds": "True"
+        }
+    },
+    {
+        "region_name": "HC Great Fairy Fountain Entrance",
+        "exits": {
+            "Hyrule Castle Grounds": "True",
+            "HC Great Fairy Fountain": "True"
+        }
+    },
+    {
+        "region_name": "OGC Great Fairy Fountain Entrance",
+        "exits": {
+            "Ganons Castle Grounds": "True",
+            "OGC Great Fairy Fountain": "True"
+        }
+    },
+
+    {
+        "region_name": "Kak Carpenter Boss House Entrance",
+        "exits": {
+            "Kak Carpenter Boss House": "True",
+            "Kakariko Village": "True"
+        }
+    },
+    {
+        "region_name": "Kak House of Skulltula Entrance",
+        "exits": {
+            "Kak House of Skulltula": "True",
+            "Kakariko Village": "True"
+        }
+    },
+    {
+        "region_name": "Kak Impas House Entrance",
+        "exits": {
+            "Kak Impas House": "True",
+            "Kakariko Village": "True"
+        }
+    },
+    {
+        "region_name": "Kak Impas House Back Entrance",
+        "exits": {
+            "Kak Impas House Back": "True",
+            "Kak Impas Ledge": "True"
+        }
+    },
+    {
+        "region_name": "Kak Odd Medicine Building Entrance",
+        "exits": {
+            "Kak Odd Medicine Building": "True",
+            "Kak Backyard": "True"
+        }
+    },
+    {
+        "region_name": "Kak Bazaar Entrance",
+        "exits": {
+            "Kak Bazaar": "True",
+            "Kakariko Village": "True"
+        }
+    },
+    {
+        "region_name": "Kak Shooting Gallery Entrance",
+        "exits": {
+            "Kak Shooting Gallery": "True",
+            "Kakariko Village": "True"
+        }
+    },
+    {
+        "region_name": "Kak Windmill Entrance",
+        "exits": {
+            "Kak Windmill": "True",
+            "Kakariko Village": "True"
+        }
+    },
+    {
+        "region_name": "Kak Potion Shop Front Entrance",
+        "exits": {
+            "Kak Potion Shop Front": "True",
+            "Kakariko Village": "True"
+        }
+    },
+    {
+        "region_name": "Kak Potion Shop Back Entrance",
+        "exits": {
+            "Kak Potion Shop Back": "True",
+            "Kakariko Village": "True"
+        }
+    },
+    {
+        "region_name": "Kak Open Grotto Entrance",
+        "exits": {
+            "Kak Open Grotto": "True",
+            "Kak Backyard": "True"
+        }
+    },
+    {
+        "region_name": "Kak Redead Grotto Entrance",
+        "exits": {
+            "Kak Redead Grotto": "True",
+            "Kakariko Village": "True"
+        }
+    },
+
+    {
+        "region_name": "Graveyard Dampes House Entrance",
+        "exits": {
+            "Graveyard Dampes House": "True",
+            "Graveyard": "True"
+        }
+    },
+    {
+        "region_name": "Graveyard Shield Grave Entrance",
+        "exits": {
+            "Graveyard Shield Grave": "True",
+            "Graveyard": "True"
+        }
+    },
+    {
+        "region_name": "Graveyard Heart Piece Grave Entrance",
+        "exits": {
+            "Graveyard Heart Piece Grave": "True",
+            "Graveyard": "True"
+        }
+    },
+    {
+        "region_name": "Graveyard Composers Grave Entrance",
+        "exits": {
+            "Graveyard Composers Grave": "True",
+            "Graveyard": "True"
+        }
+    },
+    {
+        "region_name": "Graveyard Dampes Grave Entrance",
+        "exits": {
+            "Graveyard Dampes Grave": "True",
+            "Graveyard": "True"
+        }
+    },
+
+    {
+        "region_name": "DMT Great Fairy Fountain Entrance",
+        "exits": {
+            "DMT Great Fairy Fountain": "True",
+            "Death Mountain Summit": "True"
+        }
+    },
+    {
+        "region_name": "DMT Storms Grotto Entrance",
+        "exits": {
+            "DMT Storms Grotto": "True",
+            "Death Mountain": "True"
+        }
+    },
+    {
+        "region_name": "DMT Cow Grotto Entrance",
+        "exits": {
+            "DMT Cow Grotto": "True",
+            "Death Mountain Summit": "True"
+        }
+    },
+    {
+        "region_name": "DMC Great Fairy Fountain Entrance",
+        "exits": {
+            "DMC Great Fairy Fountain": "True",
+            "DMC Lower Nearby": "True"
+        }
+    },
+    {
+        "region_name": "DMC Hammer Grotto Entrance",
+        "exits": {
+            "DMC Hammer Grotto": "True",
+            "DMC Lower Nearby": "True"
+        }
+    },
+    {
+        "region_name": "DMC Upper Grotto Entrance",
+        "exits": {
+            "DMC Upper Grotto": "True",
+            "DMC Upper Nearby": "True"
+        }
+    },
+
+    {
+        "region_name": "GC Shop Entrance",
+        "exits": {
+            "GC Shop": "True",
+            "Goron City": "True"
+        }
+    },
+    {
+        "region_name": "GC Grotto Entrance",
+        "exits": {
+            "GC Grotto": "True",
+            "Goron City": "True"
+        }
+    },
+
+    {
+        "region_name": "ZR Storms Grotto Entrance",
+        "exits": {
+            "ZR Storms Grotto": "True",
+            "Zora River": "True"
+        }
+    },
+    {
+        "region_name": "ZR Fairy Grotto Entrance",
+        "exits": {
+            "ZR Fairy Grotto": "True",
+            "Zora River": "True"
+        }
+    },
+    {
+        "region_name": "ZR Open Grotto Entrance",
+        "exits": {
+            "ZR Open Grotto": "True",
+            "Zora River": "True"
+        }
+    },
+    {
+        "region_name": "ZD Shop Entrance",
+        "exits": {
+            "ZD Shop": "True",
+            "Zoras Domain": "True"
+        }
+    },
+    {
+        "region_name": "ZD Storms Grotto Entrance",
+        "exits": {
+            "ZD Storms Grotto": "True",
+            "Zoras Domain": "True"
+        }
+    },
+    {
+        "region_name": "ZF Great Fairy Fountain Entrance",
+        "exits": {
+            "ZF Great Fairy Fountain": "True",
+            "Zoras Fountain": "True"
+        }
+    },
+
+    {
+        "region_name": "LH Lab Entrance",
+        "exits": {
+            "LH Lab": "True",
+            "Lake Hylia": "True"
+        }
+    },
+    {
+        "region_name": "LH Fishing Hole Entrance",
+        "exits": {
+            "LH Fishing Hole": "True",
+            "Lake Hylia": "True"
+        }
+    },
+    {
+        "region_name": "LH Grotto Entrance",
+        "exits": {
+            "LH Grotto": "True",
+            "Lake Hylia": "True"
+        }
+    },
+
+    {
+        "region_name": "GV Carpenter Tent Entrance",
+        "exits": {
+            "GV Carpenter Tent": "True",
+            "GV Fortess Side": "True"
+        }
+    },
+    {
+        "region_name": "GV Storms Grotto Entrance",
+        "exits": {
+            "GV Storms Grotto": "True",
+            "GV Fortess Side": "True"
+        }
+    },
+    {
+        "region_name": "GV Octorok Grotto Entrance",
+        "exits": {
+            "GV Octorok Grotto": "True",
+            "Gerudo Valley": "True"
+        }
+    },
+    {
+        "region_name": "GF Storms Grotto Entrance",
+        "exits": {
+            "GF Storms Grotto": "True",
+            "Gerudo Fortess": "True"
+        }
+    },
+
+    {
+        "region_name": "Colossus Great Fairy Fountain Entrance",
+        "exits": {
+            "Colossus Great Fairy Fountain": "True",
+            "Desert Colossus": "True"
+        }
+    },
+    {
+        "region_name": "Colossus Grotto Entrance",
+        "exits": {
+            "Colossus Grotto": "True",
+            "Desert Colossus": "True"
+        }
+    },
+
+
+
     {
         "region_name": "Kokiri Bridge Gateway",
         "exits": {
@@ -339,20 +898,6 @@
         "exits": {
             "ZD Behind King Zora": "True",
             "Zoras Fountain": "True"
-        }
-    },
-    {
-        "region_name": "ChildCastle Fairy Gateway",
-        "exits": {
-            "Hyrule Castle Grounds": "True",
-            "HC Great Fairy Fountain": "True"
-        }
-    },
-    {
-        "region_name": "AdultCastle Fairy Gateway",
-        "exits": {
-            "Ganons Castle Grounds": "True",
-            "OGC Great Fairy Fountain": "True"
         }
     }
 ]
