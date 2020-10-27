@@ -139,7 +139,7 @@
         "region_name": "Spirit Temple Entrance",
         "exits": {
             "Desert Colossus": "True",
-            "Spirit Temple Entrance": "True"
+            "Spirit Temple Gateway": "True"
         }
     },
     {
