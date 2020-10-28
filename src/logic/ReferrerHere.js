@@ -6,6 +6,12 @@ export default class LogicHere extends AbstractOperator {
         super();
     }
 
+    append(el) {
+        if (this.children.length < 1) {
+            super.append(el);
+        }
+    }
+
     toJSON()  {
         return {
             type: "here",

@@ -19,8 +19,8 @@ import LogicFunction from "../logic/LogicFunction.js";
 class LogicBuilder {
 
     build(token) {
-        let root = token[0];
-        let result = this.resolveToken(root, token);
+        const root = token[0];
+        const result = this.resolveToken(root, token);
         return result.toJSON();
     }
 
@@ -43,22 +43,22 @@ class LogicBuilder {
         }
 		if (current.indexOf("not ") >= 0) {
             let [ref, value] = current.split("not ");
-            value = token[parseInt(value.slice(1, -1))];
+            value = this.resolveToken(value, token);
             let not = new OperatorNot();
-            not.append(this.resolveToken(value, token));
+            not.append(value);
             return not;
         }
         if (current.indexOf(" == ") >= 0) {
             let [ref, value] = current.split(" == ");
-            ref = token[parseInt(ref.slice(1, -1))];
-            value = token[parseInt(value.slice(1, -1))];
+            ref = token[parseInt(ref.slice(2, -2))];
+            value = token[parseInt(value.slice(2, -2))];
             let el = new LiteralState(ref, value);
             return el;
         }
         if (current.indexOf(" != ") >= 0) {
             let [ref, value] = current.split(" != ");
-            ref = token[parseInt(ref.slice(1, -1))];
-            value = token[parseInt(value.slice(1, -1))];
+            ref = token[parseInt(ref.slice(2, -2))];
+            value = token[parseInt(value.slice(2, -2))];
             let not = new OperatorNot();
             let el = new LiteralState(ref, value);
             not.append(el);
@@ -72,7 +72,7 @@ class LogicBuilder {
         }
         if (current.startsWith("at(")) {
             let [value, ch] = current.slice(3, -1).split(", ");
-            value = token[parseInt(value.slice(1, -1))].replace(/^'(.*)'$/, "$1")
+            value = token[parseInt(value.slice(2, -2))].replace(/^'(.*)'$/, "$1");
             let el = new ReferrerAt(value);
             el.append(this.resolveToken(ch, token));
             return el;
@@ -92,12 +92,12 @@ class LogicBuilder {
             }
             return el;
         }
-        if (current.startsWith("%") && current.endsWith("%")) {
-            let next = token[parseInt(current.slice(1, -1))];
+        if (current.startsWith("{{") && current.endsWith("}}")) {
+            let next = token[parseInt(current.slice(2, -2))];
             return this.resolveToken(next, token);
         }
-		if (current.startsWith(" %") && current.endsWith("%")) {
-            let next = token[parseInt(current.slice(2, -1))];
+		if (current.startsWith(" {{") && current.endsWith("}}")) {
+            let next = token[parseInt(current.slice(3, -2))];
             return this.resolveToken(next, token);
         }
         if (current == 'False') {
@@ -106,10 +106,6 @@ class LogicBuilder {
         if (current == 'True') {
             return new LiteralTrue();
         }
-
-
-        // TODO implement this
-        // XXX this is just demo code
         return new LiteralValue(current);
     }
 

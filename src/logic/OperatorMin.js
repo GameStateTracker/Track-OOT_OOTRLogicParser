@@ -9,6 +9,12 @@ export default class OperatorMin extends AbstractOperator {
         this.#value = value;
     }
 
+    append(el) {
+        if (this.children.length < 1) {
+            super.append(el);
+        }
+    }
+
     toJSON()  {
         return {
             type: "min",

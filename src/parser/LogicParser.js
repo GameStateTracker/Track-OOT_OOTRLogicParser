@@ -61,7 +61,7 @@ class LogicParser {
 }
 
 function transpile(input) {
-    let token = RandTokenizer.tokenize(input);
+    const token = RandTokenizer.tokenize(input);
     return LogicBuilder.build(token);
 }
 

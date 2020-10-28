@@ -6,59 +6,59 @@ const BRACKETS = /(.*?)(?:\()([^,()]+)(?:\))(.*)/;
 const NOT = /(.*?)(?:not ([^,()\s]+|'[^']+'))(.*)/;
 const COMPARATOR = /(.*?)([^\s]+)\s*((?:!|>|<|=)?=|<|>)\s*([^\s]+|'[^']+')(.*?)/;
 const VALUE = /[^\s]+|'[^']+'/;
-const LITERAL = /%[0-9]+%/;
+const LITERAL = /\{\{[0-9]+\}\}/;
 
 let count = 0;
 
 class RandTokenizer {
 
-    tokenize(term, tokens = []) {
+    tokenize(term, token = []) {
         count = 0;
-        tokens[0] = generate(term.trim(), tokens);
-        return tokens;
+        token[0] = generate(term.trim(), token);
+        return token;
     }
 
 }
 
-function generate(term, tokens) {
+function generate(term, token) {
     let buf = null;
     if(!!(buf = FUNCTIONS.exec(term))) {
         // parse function calls
         let cnt = ++count;
-        tokens[cnt] = `${buf[2]}(${params(buf[3].trim(), tokens)})`;
-        return generate(`${buf[1]}%${cnt}%${buf[4]}`, tokens);
+        token[cnt] = `${buf[2]}(${params(buf[3].trim(), token)})`;
+        return generate(`${buf[1]}{{${cnt}}}${buf[4]}`, token);
     } else if(!!(buf = AMOUNT.exec(term))) {
         // parse amount syntax (why ever you would write it that way...)
         let cnt0 = ++count;
         let cnt1 = ++count;
-        tokens[cnt1] = buf[2];
-        tokens[cnt0] = `min(%${cnt1}%, ${buf[3]})`;
-        return generate(`${buf[1]}%${cnt0}%${buf[4]}`, tokens);
+        token[cnt1] = buf[2];
+        token[cnt0] = `min({{${cnt1}}}, ${buf[3]})`;
+        return generate(`${buf[1]}{{${cnt0}}}${buf[4]}`, token);
     } else if(!!(buf = BRACKETS.exec(term))) {
         // parse normal brackets
         let cnt = ++count;
-        tokens[cnt] = convert(buf[2].trim(), tokens);
-        return generate(`${buf[1]}%${cnt}%${buf[3]}`, tokens);
+        token[cnt] = convert(buf[2].trim(), token);
+        return generate(`${buf[1]}{{${cnt}}}${buf[3]}`, token);
     } else {
-        return convert(term, tokens);
+        return convert(term, token);
     }
 }
 
-function params(term, tokens) {
+function params(term, token) {
     return term.split(",").map(el => {
         let cnt = ++count;
-        tokens[cnt] = generate(el.trim(), tokens);
-        return `%${cnt}%`;
+        token[cnt] = generate(el.trim(), token);
+        return `{{${cnt}}}`;
     }).join(", ");
 }
 
-function convert(term, tokens) {
+function convert(term, token) {
     if (term.indexOf(" or ") >= 0) {
         return term.split(" or ").map(t => {
             if (!t.match(LITERAL)) {
                 let cnt = ++count;
-                tokens[cnt] = convert(t, tokens);
-                return `%${cnt}%`;
+                token[cnt] = convert(t, token);
+                return `{{${cnt}}}`;
             }
             return t;
         }).join(" or ");
@@ -67,8 +67,8 @@ function convert(term, tokens) {
         return term.split(" and ").map(t => {
             if (!t.match(LITERAL)) {
                 let cnt = ++count;
-                tokens[cnt] = convert(t, tokens);
-                return `%${cnt}%`;
+                token[cnt] = convert(t, token);
+                return `{{${cnt}}}`;
             }
             return t;
         }).join(" and ");
@@ -77,28 +77,28 @@ function convert(term, tokens) {
     if(!!(buf = NOT.exec(term))) {
         let cnt0 = ++count;
         if (buf[1] == "" && buf[3] == "") {
-            tokens[cnt0] = convert(buf[2], tokens);
-            return `not %${cnt0}%`;
+            token[cnt0] = convert(buf[2], token);
+            return `not {{${cnt0}}}`;
         } else {
             let cnt1 = ++count;
-            tokens[cnt0] = `not %${cnt1}%`;
-            tokens[cnt1] = convert(buf[2], tokens);
-            return `${buf[1]}%${cnt0}%${buf[3]}`;
+            token[cnt0] = `not {{${cnt1}}}`;
+            token[cnt1] = convert(buf[2], token);
+            return `${buf[1]}{{${cnt0}}}${buf[3]}`;
         }
     }
     if(!!(buf = COMPARATOR.exec(term))) {
         let cnt0 = ++count;
         let cnt1 = ++count;
         if (buf[1] == "" && buf[5] == "") {
-            tokens[cnt0] = convert(buf[2], tokens);
-            tokens[cnt1] = convert(buf[4], tokens);
-            return `%${cnt0}% ${buf[3]} %${cnt1}%`;
+            token[cnt0] = convert(buf[2], token);
+            token[cnt1] = convert(buf[4], token);
+            return `{{${cnt0}}} ${buf[3]} {{${cnt1}}}`;
         } else {
             let cnt2 = ++count;
-            tokens[cnt0] = `%${cnt1}% ${buf[3]} %${cnt2}%`;
-            tokens[cnt1] = convert(buf[2], tokens);
-            tokens[cnt2] = convert(buf[4], tokens);
-            return `${buf[1]}%${cnt0}%${buf[5]}`;
+            token[cnt0] = `{{${cnt1}}} ${buf[3]} {{${cnt2}}}`;
+            token[cnt1] = convert(buf[2], token);
+            token[cnt2] = convert(buf[4], token);
+            return `${buf[1]}{{${cnt0}}}${buf[5]}`;
         }
     }
     if (!term.match(VALUE)) {
