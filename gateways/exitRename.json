@@ -16,11 +16,10 @@
     "KF Outside Deku Tree": {
         "Deku Tree Lobby": "Deku Tree Entrance"
     },
-    "Dodongos Cavern Entryway": {
-        "Dodongos Cavern Beginning": "Dodongos Cavern Gateway"
+    "ZF Ice Ledge": {
+        "Ice Cavern Beginning": "Ice Cavern Entrance"
     },
     "Zoras Fountain": {
-        "Ice Cavern Beginning": "Ice Cavern Entrance",
         "Jabu Jabus Belly Beginning": "Jabu Jabus Belly Entrance",
         "ZD Behind King Zora": "Fountain Domain Gateway",
         "ZF Great Fairy Fountain": "ZF Great Fairy Fountain Entrance"
@@ -31,19 +30,20 @@
         "GF Storms Grotto": "GF Storms Grotto Entrance"
     },
     "Sacred Forest Meadow": {
-        "Forest Temple Lobby": "Forest Temple Entrance",
         "SFM Storms Grotto": "SFM Storms Grotto Entrance",
         "SFM Fairy Grotto": "SFM Fairy Grotto Entrance"
     },
-    "Fire Temple Entrance": {
-        "Fire Temple Lower": "Fire Temple Gateway"
+    "SFM Forest Temple Entrance Ledge": {
+        "Forest Temple Lobby": "Forest Temple Entrance"
+    },
+    "DMC Fire Temple Entrance": {
+        "Fire Temple Lower": "Fire Temple Entrance"
     },
     "Lake Hylia": {
         "Water Temple Lobby": "Water Temple Entrance",
         "Hyrule Field": "Lake Field Gateway",
         "Zoras Domain": "Domain Lake Gateway",
         "LH Lab": "LH Lab Entrance",
-        "LH Fishing Hole": "LH Fishing Hole Entrance",
         "LH Grotto": "LH Grotto Entrance"
     },
     "Graveyard Warp Pad Region": {
@@ -63,25 +63,25 @@
         "Kakariko Village": "Bottom of the Well Gateway"
     },
     "Deku Tree Lobby": {
-        "Deku Tree Lobby": "Deku Tree Gateway"
+        "KF Outside Deku Tree": "Deku Tree Gateway"
     },
     "Dodongos Cavern Beginning": {
-        "Dodongos Cavern Beginning": "Dodongos Cavern Gateway"
+        "Death Mountain": "Dodongos Cavern Gateway"
     },
     "Jabu Jabus Belly Beginning": {
         "Zoras Fountain": "Jabu Jabus Belly Gateway"
     },
     "Ice Cavern Beginning": {
-        "Zoras Fountain": "Ice Cavern Gateway"
+        "ZF Ice Ledge": "Ice Cavern Gateway"
     },
     "Gerudo Training Grounds Lobby": {
         "Gerudo Fortress": "Gerudo Training Grounds Gateway"
     },
     "Forest Temple Lobby": {
-        "Sacred Forest Meadow": "Forest Temple Gateway"
+        "SFM Forest Temple Entrance Ledge": "Forest Temple Gateway"
     },
     "Fire Temple Lower": {
-        "Fire Temple Entrance": "Fire Temple Gateway"
+        "DMC Fire Temple Entrance": "Fire Temple Gateway"
     },
     "Water Temple Lobby": {
         "Lake Hylia": "Water Temple Gateway"
@@ -138,6 +138,7 @@
         "SFM Wolfos Grotto": "SFM Wolfos Grotto Entrance"
     },
     "Hyrule Field": {
+        "LW Bridge": "Field Woods Gateway",
         "Lake Hylia": "Lake Field Gateway",
         "Gerudo Valley": "Valley Field Gateway",
         "Market Entrance": "MarketEntrance Field Gateway",
@@ -154,8 +155,7 @@
         "HF Southeast Grotto": "HF Southeast Grotto Entrance"
     },
     "Gerudo Valley": {
-        "Hyrule Field": "Valley Field Gateway",
-        "GV Octorok Grotto": "GV Octorok Grotto Entrance"
+        "Hyrule Field": "Valley Field Gateway"
     },
     "Market Entrance": {
         "Hyrule Field": "MarketEntrance Field Gateway",
@@ -197,13 +197,15 @@
         "Castle Grounds": "Grounds Market Gateway",
         "ToT Entrance": "ToT Market Gateway",
         "Market Mask Shop": "Market Mask Shop Entrance",
-        "Market Bombchu Bowling": "Market Bombchu Bowling Entrance",
         "Market Potion Shop": "Market Potion Shop Entrance",
         "Market Treasure Chest Game": "Market Treasure Chest Game Entrance",
-        "Market Bombchu Shop": "Market Bombchu Shop Entrance",
         "Market Man in Green House": "Market Man in Green House Entrance",
         "Market Bazaar": "Market Bazaar Entrance",
         "Market Shooting Gallery": "Market Shooting Gallery Entrance"
+    },
+    "Market Back Alley": {
+        "Market Bombchu Bowling": "Market Bombchu Bowling Entrance",
+        "Market Bombchu Shop": "Market Bombchu Shop Entrance"
     },
     "Castle Grounds": {
         "Market": "Grounds Market Gateway"
@@ -225,11 +227,14 @@
     "Death Mountain": {
         "Kak Behind Gate": "Mountain Kakariko Gateway",
         "Goron City": "Mountain Goron Gateway",
-        "DMT Storms Grotto": "DMT Storms Grotto Entrance"
+        "DMT Storms Grotto": "DMT Storms Grotto Entrance",
+        "Dodongos Cavern Beginning": "Dodongos Cavern Entrance"
     },
     "Goron City": {
         "Death Mountain": "Mountain Goron Gateway",
-        "GC Shop": "GC Shop Entrance",
+        "GC Shop": "GC Shop Entrance"
+    },
+    "GC Grotto Platform": {
         "GC Grotto": "GC Grotto Entrance"
     },
     "GC Darunias Chamber": {
@@ -357,10 +362,10 @@
         "Market": "Market Treasure Chest Game Entrance"
     },
     "Market Bombchu Shop": {
-        "Market": "Market Bombchu Shop Entrance"
+        "Market Back Alley": "Market Bombchu Shop Entrance"
     },
     "Market Man in Green House": {
-        "Market": "Market Man in Green House Entrance"
+        "Market Back Alley": "Market Man in Green House Entrance"
     },
     "Market Bazaar": {
         "Market": "Market Bazaar Entrance"
@@ -456,7 +461,7 @@
         "Goron City": "GC Shop Entrance"
     },
     "GC Grotto": {
-        "Goron City": "GC Grotto Entrance"
+        "GC Grotto Platform": "GC Grotto Entrance"
     },
     "ZR Storms Grotto": {
         "Zora River": "ZR Storms Grotto Entrance"
@@ -480,22 +485,28 @@
         "Lake Hylia": "LH Lab Entrance"
     },
     "LH Fishing Hole": {
-        "Lake Hylia": "LH Fishing Hole Entrance"
+        "LH Fishing Island": "LH Fishing Hole Entrance"
+    },
+    "LH Fishing Island": {
+        "LH Fishing Hole": "LH Fishing Hole Entrance"
     },
     "LH Grotto": {
         "Lake Hylia": "LH Grotto Entrance"
     },
     "GV Carpenter Tent": {
-        "GV Fortess Side": "GV Carpenter Tent Entrance"
+        "GV Fortress Side": "GV Carpenter Tent Entrance"
     },
     "GV Storms Grotto": {
-        "GV Fortess Side": "GV Storms Grotto Entrance"
+        "GV Fortress Side": "GV Storms Grotto Entrance"
     },
     "GV Octorok Grotto": {
-        "Gerudo Valley": "GV Octorok Grotto Entrance"
+        "GV Grotto Ledge": "GV Octorok Grotto Entrance"
+    },
+    "GV Grotto Ledge": {
+        "GV Octorok Grotto": "GV Octorok Grotto Entrance"
     },
     "GF Storms Grotto": {
-        "Gerudo Fortess": "GF Storms Grotto Entrance"
+        "Gerudo Fortress": "GF Storms Grotto Entrance"
     },
     "Colossus Great Fairy Fountain": {
         "Desert Colossus": "Colossus Great Fairy Fountain Entrance"

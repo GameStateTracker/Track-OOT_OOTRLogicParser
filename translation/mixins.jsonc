@@ -158,7 +158,7 @@
             }
         ]
     },
-    "mixin.can_build_rainbow_bridge": {
+    "mixin.can_build_rainbow_bridge[adult]": {
         "type": "or",
         "el": [
             {
@@ -198,7 +198,7 @@
                     },
                     {
                         "type": "mixin",
-                        "el": "mixin.has_all_stones"
+                        "el": "function.has_stones(bridge_stones)[adult]"
                     }
                 ]
             },
@@ -212,7 +212,7 @@
                     },
                     {
                         "type": "mixin",
-                        "el": "mixin.has_all_medallions"
+                        "el": "function.has_medallions(bridge_medallions)[adult]"
                     }
                 ]
             },
@@ -226,11 +226,7 @@
                     },
                     {
                         "type": "mixin",
-                        "el": "mixin.has_all_stones"
-                    },
-                    {
-                        "type": "mixin",
-                        "el": "mixin.has_all_medallions"
+                        "el": "function.has_dungeon_rewards(bridge_rewards)[adult]"
                     }
                 ]
             },
@@ -243,12 +239,105 @@
                         "value": "ganon_castle_open_skulltulas"
                     },
                     {
-                        "type": "min",
-                        "el": {
-                            "type": "value",
-                            "el": "item.skulltula"
-                        },
-                        "value": 100
+                        "type": "gte",
+                        "el": [
+                            {
+                                "type": "value",
+                                "el": "item.skulltula"
+                            },
+                            {
+                                "type": "value",
+                                "el": "option.ganon_castle_skulltulas"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "mixin.can_trigger_lacs": {
+        "type": "or",
+        "el": [
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "state",
+                        "el": "option.light_arrow_cutscene",
+                        "value": "light_arrow_cutscene_vanilla"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_shadow"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_spirit"
+                    }
+                ]
+            },
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "state",
+                        "el": "option.light_arrow_cutscene",
+                        "value": "light_arrow_cutscene_stones"
+                    },
+                    {
+                        "type": "mixin",
+                        "el": "function.has_stones(lacs_stones)"
+                    }
+                ]
+            },
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "state",
+                        "el": "option.light_arrow_cutscene",
+                        "value": "light_arrow_cutscene_medallions"
+                    },
+                    {
+                        "type": "mixin",
+                        "el": "function.has_medallions(lacs_medallions)"
+                    }
+                ]
+            },
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "state",
+                        "el": "option.light_arrow_cutscene",
+                        "value": "light_arrow_cutscene_dungeons"
+                    },
+                    {
+                        "type": "mixin",
+                        "el": "function.has_dungeon_rewards(lacs_rewards)"
+                    }
+                ]
+            },
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "state",
+                        "el": "option.light_arrow_cutscene",
+                        "value": "light_arrow_cutscene_skulltulas"
+                    },
+                    {
+                        "type": "gte",
+                        "el": [
+                            {
+                                "type": "value",
+                                "el": "item.skulltula"
+                            },
+                            {
+                                "type": "value",
+                                "el": "option.lacs_skulltulas"
+                            }
+                        ]
                     }
                 ]
             }

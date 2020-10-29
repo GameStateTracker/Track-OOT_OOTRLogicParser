@@ -812,15 +812,38 @@
         "type": "value",
         "el": "option.gerudo_card_shuffle"
     },
-    "shuffle_dungeon_entrances": {
-        "type": "not",
-        "el": {
-            "type": "state",
-            "el": "option.entrance_shuffle",
-            "value": "entrance_shuffle_off"
-        }
+    "entrance_shuffle": {
+        "type": "or",
+        "el": [
+            {
+                "type": "value",
+                "el": "option.shuffle_grottos"
+            },
+            {
+                "type": "value",
+                "el": "option.shuffle_dungeons"
+            },
+            {
+                "type": "value",
+                "el": "option.shuffle_overworld"
+            },
+            {
+                "type": "state",
+                "el": "option.entrance_shuffle_interior",
+                "value": "entrance_shuffle_simple"
+            },
+            {
+                "type": "state",
+                "el": "option.entrance_shuffle_interior",
+                "value": "entrance_shuffle_all"
+            }
+        ]
     },
-    "shuffle_special_indoor_entrances": {
+    "shuffle_dungeon_entrances": {
+        "type": "value",
+        "el": "option.shuffle_dungeons"
+    },
+    /*"shuffle_special_indoor_entrances": {
         "type": "and",
         "el": [
             {
@@ -869,11 +892,10 @@
                 }
             }
         ]
-    },
+    },*/
     "shuffle_overworld_entrances": {
-        "type": "state",
-        "el": "option.entrance_shuffle",
-        "value": "entrance_shuffle_all"
+        "type": "value",
+        "el": "option.shuffle_overworld"
     },
     "keysanity": {
         "type": "value",

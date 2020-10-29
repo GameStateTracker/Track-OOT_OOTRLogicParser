@@ -30,6 +30,13 @@
         }
     },
     {
+        "region_name": "Dodongos Cavern Entrance",
+        "exits": {
+            "Death Mountain": "True",
+            "Dodongos Cavern Gateway": "True"
+        }
+    },
+    {
         "region_name": "Dodongos Cavern Gateway",
         "exits": {
             "Dodongos Cavern Entryway": "True",
@@ -55,7 +62,7 @@
     {
         "region_name": "Ice Cavern Entrance",
         "exits": {
-            "Zoras Fountain": "True",
+            "ZF Ice Ledge": "True",
             "Ice Cavern Gateway": "True"
         }
     },
@@ -85,7 +92,7 @@
     {
         "region_name": "Forest Temple Entrance",
         "exits": {
-            "Sacred Forest Meadow": "True",
+            "SFM Forest Temple Entrance Ledge": "True",
             "Forest Temple Gateway": "True"
         }
     },
@@ -95,6 +102,13 @@
             "Forest Temple Entrance": "True",
             "Forest Temple Lobby": "True",
             "Forest Temple Lobby MQ": "True"
+        }
+    },
+    {
+        "region_name": "Fire Temple Entrance",
+        "exits": {
+            "Fire Temple Gateway": "True",
+            "DMC Fire Temple Entrance": "True"
         }
     },
     {
@@ -351,14 +365,14 @@
         "region_name": "Market Bombchu Shop Entrance",
         "exits": {
             "Market Bombchu Shop": "True",
-            "Market": "True"
+            "Market Back Alley": "True"
         }
     },
     {
         "region_name": "Market Man in Green House Entrance",
         "exits": {
             "Market Man in Green House": "True",
-            "Market": "True"
+            "Market Back Alley": "True"
         }
     },
     {
@@ -602,7 +616,7 @@
         "region_name": "GC Grotto Entrance",
         "exits": {
             "GC Grotto": "True",
-            "Goron City": "True"
+            "GC Grotto Platform": "True"
         }
     },
 
@@ -660,7 +674,7 @@
         "region_name": "LH Fishing Hole Entrance",
         "exits": {
             "LH Fishing Hole": "True",
-            "Lake Hylia": "True"
+            "LH Fishing Island": "True"
         }
     },
     {
@@ -689,7 +703,7 @@
         "region_name": "GV Octorok Grotto Entrance",
         "exits": {
             "GV Octorok Grotto": "True",
-            "Gerudo Valley": "True"
+            "GV Grotto Ledge": "True"
         }
     },
     {
