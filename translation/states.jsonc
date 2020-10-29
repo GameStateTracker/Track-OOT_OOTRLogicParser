@@ -159,6 +159,14 @@
             "ganon_castle_open_dungeon": "ganon_castle_open_dungeon",
             "ganon_castle_open_skulltulas": "ganon_castle_open_skulltulas"
         }
+    },
+    "option.entrance_shuffle_interior": {
+        "name": "option.entrance_shuffle_interior",
+        "values": {
+            "entrance_shuffle_simple": "entrance_shuffle_simple",
+            "entrance_shuffle_all": "entrance_shuffle_all"
+        }
     }
+
 
 }

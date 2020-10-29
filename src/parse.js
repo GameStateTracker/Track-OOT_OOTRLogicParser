@@ -19,9 +19,9 @@ const outputDir = path.join(__dirname, "/output/");
 const transRulesFile = path.join(__dirname, "/translation/predict_rules.json");
 
 if (!fs.existsSync(inLogicDir)) {
-    execSync('git clone --branch "5.2.77" "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "input"');
+    execSync('git clone --branch "5.2.84" "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "input"');
 } else {
-    execSync('cd input && git pull --rebase "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "5.2.77"');
+    execSync('cd input && git pull --rebase "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "5.2.84"');
 }
 if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, {
