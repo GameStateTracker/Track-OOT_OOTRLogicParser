@@ -360,6 +360,12 @@ function postCalcutate(input, age = "", region = "")  {
         case "nor":
         case "xor":
         case "xnor":
+        case "add":
+        case "sub":
+        case "mul":
+        case "div":
+        case "mod":
+        case "pow":
             for (let el of input.el) {
                 els.push(postCalcutate(el, age, region));
             }

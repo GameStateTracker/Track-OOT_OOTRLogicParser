@@ -30,12 +30,12 @@ const TRANSPILERS = {
     "gte":      (logic) => twoElementOperation(logic.el, ">="),
 
     /* math */
-    "add":      (logic) => mathOperation(logic.el, "+"),
-    "sub":      (logic) => mathOperation(logic.el, "-"),
-    "mul":      (logic) => mathOperation(logic.el, "*"),
-    "div":      (logic) => mathOperation(logic.el, "/"),
-    "mod":      (logic) => mathOperation(logic.el, "%"),
-    "pow":      (logic) => mathOperation(logic.el, "**"),
+    "add":      (logic) => mathMultiElementOperation(logic.el, "+"),
+    "sub":      (logic) => mathMultiElementOperation(logic.el, "-"),
+    "mul":      (logic) => mathMultiElementOperation(logic.el, "*"),
+    "div":      (logic) => mathMultiElementOperation(logic.el, "/"),
+    "mod":      (logic) => mathMultiElementOperation(logic.el, "%"),
+    "pow":      (logic) => mathTwoElementOperation(logic.el, "**"),
 
     /* special */
     "at":       (logic) => !!logic.el ? `((val("${escape(logic.node)}")||0)&&${buildLogic(logic.el)})` : `(val("${escape(logic.node)}")||0)`,
@@ -83,14 +83,24 @@ function toNumber(val) {
     return `(parseInt(${val})||0)`
 }
 
-function mathOperation(els, join) {
+function mathTwoElementOperation(els, join) {
     if (els.length == 0) {
         return 0;
     }
     if (els.length == 1) {
         return buildLogic(els[0]);
     }
-    return `(parseInt(${els.map(buildLogic).map(toNumber).join(join)})||0)`;
+    return toNumber(`${buildLogic(toNumber(els[0]))}${join}${buildLogic(toNumber(els[1]))}`);
+}
+
+function mathMultiElementOperation(els, join) {
+    if (els.length == 0) {
+        return 0;
+    }
+    if (els.length == 1) {
+        return buildLogic(els[0]);
+    }
+    return toNumber(`${els.map(buildLogic).map(toNumber).join(join)}`);
 }
 
 /* INITIATOR */

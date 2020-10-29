@@ -9,6 +9,12 @@ export default class LogicAt extends AbstractOperator {
         this.#node = node;
     }
 
+    append(el) {
+        if (this.children.length < 1) {
+            super.append(el);
+        }
+    }
+
     toJSON()  {
         return {
             type: "at",
