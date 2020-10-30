@@ -134,9 +134,11 @@
         }
     },
     "open_kakariko": {
-        "name": "option.open_kakariko",
+        "name": "option.doors_open_kakariko",
         "values": {
-            "open": "kakariko_open"
+            "closed": "doors_open_kakariko_closed",
+            "zelda": "doors_open_kakariko_zelda",
+            "open": "doors_open_kakariko_open"
         }
     },
     "option.entrance_shuffle": {
