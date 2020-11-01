@@ -56,5 +56,56 @@
                 }
             ]
         }
+    },
+    "region.zoras_domain": {
+        "event.king_zora_thawed": {
+            "type": "and",
+            "el": [
+                {
+                    "type": "mixin",
+                    "el": "mixin.can_become_adult"
+                },
+                {
+                    "type": "value",
+                    "el": "item.bottle"
+                },
+                {
+                    "type": "or",
+                    "el": [
+                        {
+                            "type": "at",
+                            "node": "region.ganons_castle_water_trial",
+                            "el": {
+                                "type": "true"
+                            }
+                        },
+                        {
+                            "type": "at",
+                            "node": "region.ice_cavern_map_room",
+                            "el": {
+                                "type": "true"
+                            }
+                        },
+                        {
+                            "type": "and",
+                            "el": [
+                                {
+                                    "type": "value",
+                                    "el": "option.consider_buyable"
+                                },
+                                {
+                                    "type": "min",
+                                    "el": {
+                                        "type": "value",
+                                        "el": "item.wallet"
+                                    },
+                                    "value": 3
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
     }
 }

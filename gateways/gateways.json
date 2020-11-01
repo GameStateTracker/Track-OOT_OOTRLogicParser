@@ -152,7 +152,7 @@
     {
         "region_name": "Spirit Temple Entrance",
         "exits": {
-            "Desert Colossus": "True",
+            "Desert Colossus From Spirit Lobby": "True",
             "Spirit Temple Gateway": "True"
         }
     },
