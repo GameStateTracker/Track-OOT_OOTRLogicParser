@@ -63,27 +63,41 @@
             "el": [
                 {
                     "type": "mixin",
-                    "el": "mixin.can_become_adult"
-                },
-                {
-                    "type": "value",
-                    "el": "item.bottle"
+                    "el": "mixin.is_adult"
                 },
                 {
                     "type": "or",
                     "el": [
                         {
                             "type": "at",
-                            "node": "region.ganons_castle_water_trial",
+                            "node": "region.ganons_castle_water_trial_mq",
                             "el": {
-                                "type": "true"
+                                "type": "value",
+                                "el": "item.bottle"
                             }
                         },
                         {
                             "type": "at",
-                            "node": "region.ice_cavern_map_room",
+                            "node": "region.ganons_castle_water_trial_right",
                             "el": {
-                                "type": "true"
+                                "type": "value",
+                                "el": "item.bottle"
+                            }
+                        },
+                        {
+                            "type": "at",
+                            "node": "region.gerudo_training_grounds_stalfos_room_mq",
+                            "el": {
+                                "type": "value",
+                                "el": "item.bottle"
+                            }
+                        },
+                        {
+                            "type": "at",
+                            "node": "region.ice_cavern",
+                            "el": {
+                                "type": "value",
+                                "el": "item.bottle"
                             }
                         },
                         {
@@ -99,7 +113,7 @@
                                         "type": "value",
                                         "el": "item.wallet"
                                     },
-                                    "value": 3
+                                    "value": 2
                                 }
                             ]
                         }
