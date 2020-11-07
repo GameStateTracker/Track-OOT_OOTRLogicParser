@@ -2,471 +2,618 @@
     /* normal songs */
     "function.can_play(item.song_zelda)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.ocarina"
-        }, {
-            "type": "value",
-            "el": "item.song_zelda"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.ocarina"
+            },
+            {
+                "type": "value",
+                "el": "item.song_zelda"
+            }
+        ]
     },
     "function.can_play(item.song_epona)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.ocarina"
-        }, {
-            "type": "value",
-            "el": "item.song_epona"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.ocarina"
+            },
+            {
+                "type": "value",
+                "el": "item.song_epona"
+            }
+        ]
     },
     "function.can_play(item.song_saria)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.ocarina"
-        }, {
-            "type": "value",
-            "el": "item.song_saria"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.ocarina"
+            },
+            {
+                "type": "value",
+                "el": "item.song_saria"
+            }
+        ]
     },
     "function.can_play(item.song_sun)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.ocarina"
-        }, {
-            "type": "value",
-            "el": "item.song_sun"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.ocarina"
+            },
+            {
+                "type": "value",
+                "el": "item.song_sun"
+            }
+        ]
     },
     "function.can_play(item.song_time)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.ocarina"
-        }, {
-            "type": "value",
-            "el": "item.song_time"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.ocarina"
+            },
+            {
+                "type": "value",
+                "el": "item.song_time"
+            }
+        ]
     },
     "function.can_play(item.song_storm)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.ocarina"
-        }, {
-            "type": "value",
-            "el": "item.song_storm"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.ocarina"
+            },
+            {
+                "type": "value",
+                "el": "item.song_storm"
+            }
+        ]
     },
-
     /* warp songs */
     "function.can_play(item.warp_forest)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.ocarina"
-        }, {
-            "type": "value",
-            "el": "item.warp_forest"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.ocarina"
+            },
+            {
+                "type": "value",
+                "el": "item.warp_forest"
+            }
+        ]
     },
     "function.can_play(item.warp_fire)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.ocarina"
-        }, {
-            "type": "value",
-            "el": "item.warp_fire"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.ocarina"
+            },
+            {
+                "type": "value",
+                "el": "item.warp_fire"
+            }
+        ]
     },
     "function.can_play(item.warp_water)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.ocarina"
-        }, {
-            "type": "value",
-            "el": "item.warp_water"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.ocarina"
+            },
+            {
+                "type": "value",
+                "el": "item.warp_water"
+            }
+        ]
     },
     "function.can_play(item.warp_shadow)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.ocarina"
-        }, {
-            "type": "value",
-            "el": "item.warp_shadow"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.ocarina"
+            },
+            {
+                "type": "value",
+                "el": "item.warp_shadow"
+            }
+        ]
     },
     "function.can_play(item.warp_spirit)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.ocarina"
-        }, {
-            "type": "value",
-            "el": "item.warp_spirit"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.ocarina"
+            },
+            {
+                "type": "value",
+                "el": "item.warp_spirit"
+            }
+        ]
     },
     "function.can_play(item.warp_light)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.ocarina"
-        }, {
-            "type": "value",
-            "el": "item.warp_light"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.ocarina"
+            },
+            {
+                "type": "value",
+                "el": "item.warp_light"
+            }
+        ]
     },
-
     /* extra songs */
     "function.can_play(item.song_scarecrow)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.ocarina"
-        }, {
-            "type": "value",
-            "el": "item.song_scarecrow"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.ocarina"
+            },
+            {
+                "type": "or",
+                "el": [
+                    {
+                        "type": "value",
+                        "el": "item.song_scarecrow"
+                    },
+                    {
+                        "type": "value",
+                        "el": "option.free_scarecrow"
+                    }
+                ]
+            }
+        ]
     },
-
     /* projectile check */
     "function.has_projectile(child)": {
         "type": "or",
-        "el": [{
-            "type": "mixin",
-            "el": "mixin.has_explosives"
-        }, {
-            "type": "value",
-            "el": "item.slingshot"
-        }, {
-            "type": "value",
-            "el": "item.boomerang"
-        }]
+        "el": [
+            {
+                "type": "mixin",
+                "el": "mixin.has_explosives"
+            },
+            {
+                "type": "value",
+                "el": "item.slingshot"
+            },
+            {
+                "type": "value",
+                "el": "item.boomerang"
+            }
+        ]
     },
     "function.has_projectile(adult)": {
         "type": "or",
-        "el": [{
-            "type": "mixin",
-            "el": "mixin.has_explosives"
-        }, {
-            "type": "value",
-            "el": "item.bow"
-        }, {
-            "type": "value",
-            "el": "item.hookshot"
-        }]
+        "el": [
+            {
+                "type": "mixin",
+                "el": "mixin.has_explosives"
+            },
+            {
+                "type": "value",
+                "el": "item.bow"
+            },
+            {
+                "type": "value",
+                "el": "item.hookshot"
+            }
+        ]
     },
     "function.has_projectile(both)": {
         "type": "or",
-        "el": [{
-            "type": "mixin",
-            "el": "mixin.has_explosives"
-        }, {
-            "type": "and",
-            "el": [{
-                "type": "or",
-                "el": [{
-                    "type": "value",
-                    "el": "item.slingshot"
-                }, {
-                    "type": "value",
-                    "el": "item.boomerang"
-                }]
-            },{
-                "type": "or",
-                "el": [{
-                    "type": "value",
-                    "el": "item.bow"
-                }, {
-                    "type": "value",
-                    "el": "item.hookshot"
-                }]
-            }]
-        }]
+        "el": [
+            {
+                "type": "mixin",
+                "el": "mixin.has_explosives"
+            },
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "or",
+                        "el": [
+                            {
+                                "type": "value",
+                                "el": "item.slingshot"
+                            },
+                            {
+                                "type": "value",
+                                "el": "item.boomerang"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "or",
+                        "el": [
+                            {
+                                "type": "value",
+                                "el": "item.bow"
+                            },
+                            {
+                                "type": "value",
+                                "el": "item.hookshot"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     "function.has_projectile(either)": {
         "type": "or",
-        "el": [{
-            "type": "mixin",
-            "el": "mixin.has_explosives"
-        }, {
-            "type": "value",
-            "el": "item.slingshot"
-        }, {
-            "type": "value",
-            "el": "item.boomerang"
-        }, {
-            "type": "value",
-            "el": "item.bow"
-        }, {
-            "type": "value",
-            "el": "item.hookshot"
-        }]
+        "el": [
+            {
+                "type": "mixin",
+                "el": "mixin.has_explosives"
+            },
+            {
+                "type": "value",
+                "el": "item.slingshot"
+            },
+            {
+                "type": "value",
+                "el": "item.boomerang"
+            },
+            {
+                "type": "value",
+                "el": "item.bow"
+            },
+            {
+                "type": "value",
+                "el": "item.hookshot"
+            }
+        ]
     },
-
     /* can use magic arrows */
     "function.can_use(item.arrow_fire)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.arrow_fire"
-        }, {
-            "type": "value",
-            "el": "item.bow"
-        }, {
-            "type": "value",
-            "el": "item.magic_power"
-        }, {
-            "type": "mixin",
-            "el": "mixin.is_adult"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.arrow_fire"
+            },
+            {
+                "type": "value",
+                "el": "item.bow"
+            },
+            {
+                "type": "value",
+                "el": "item.magic_power"
+            },
+            {
+                "type": "mixin",
+                "el": "mixin.is_adult"
+            }
+        ]
     },
     "function.can_use(item.arrow_light)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.arrow_light"
-        }, {
-            "type": "value",
-            "el": "item.bow"
-        }, {
-            "type": "value",
-            "el": "item.magic_power"
-        }, {
-            "type": "mixin",
-            "el": "mixin.is_adult"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.arrow_light"
+            },
+            {
+                "type": "value",
+                "el": "item.bow"
+            },
+            {
+                "type": "value",
+                "el": "item.magic_power"
+            },
+            {
+                "type": "mixin",
+                "el": "mixin.is_adult"
+            }
+        ]
     },
-
     /* can use magic item */
     "function.can_use(item.lens)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.lens"
-        }, {
-            "type": "value",
-            "el": "item.magic_power"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.lens"
+            },
+            {
+                "type": "value",
+                "el": "item.magic_power"
+            }
+        ]
     },
     "function.can_use(item.magic_din)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.magic_din"
-        }, {
-            "type": "value",
-            "el": "item.magic_power"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.magic_din"
+            },
+            {
+                "type": "value",
+                "el": "item.magic_power"
+            }
+        ]
     },
     "function.can_use(item.magic_farore)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.magic_farore"
-        }, {
-            "type": "value",
-            "el": "item.magic_power"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.magic_farore"
+            },
+            {
+                "type": "value",
+                "el": "item.magic_power"
+            }
+        ]
     },
     "function.can_use(item.magic_nayru)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.magic_nayru"
-        }, {
-            "type": "value",
-            "el": "item.magic_power"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.magic_nayru"
+            },
+            {
+                "type": "value",
+                "el": "item.magic_power"
+            }
+        ]
     },
-
     /* can use adult items */
     "function.can_use(item.bow)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.bow"
-        }, {
-            "type": "mixin",
-            "el": "mixin.is_adult"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.bow"
+            },
+            {
+                "type": "mixin",
+                "el": "mixin.is_adult"
+            }
+        ]
     },
     "function.can_use(item.hammer)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.hammer"
-        }, {
-            "type": "mixin",
-            "el": "mixin.is_adult"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.hammer"
+            },
+            {
+                "type": "mixin",
+                "el": "mixin.is_adult"
+            }
+        ]
     },
     "function.can_use(item.boots_iron)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.boots_iron"
-        }, {
-            "type": "mixin",
-            "el": "mixin.is_adult"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.boots_iron"
+            },
+            {
+                "type": "mixin",
+                "el": "mixin.is_adult"
+            }
+        ]
     },
     "function.can_use(item.boots_hover)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.boots_hover"
-        }, {
-            "type": "mixin",
-            "el": "mixin.is_adult"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.boots_hover"
+            },
+            {
+                "type": "mixin",
+                "el": "mixin.is_adult"
+            }
+        ]
     },
     "function.can_use(item.hookshot)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.hookshot"
-        }, {
-            "type": "mixin",
-            "el": "mixin.is_adult"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.hookshot"
+            },
+            {
+                "type": "mixin",
+                "el": "mixin.is_adult"
+            }
+        ]
     },
     "function.can_use(mixin.longshot)": {
         "type": "and",
-        "el": [{
-            "type": "mixin",
-            "el": "mixin.longshot"
-        }, {
-            "type": "mixin",
-            "el": "mixin.is_adult"
-        }]
+        "el": [
+            {
+                "type": "mixin",
+                "el": "mixin.longshot"
+            },
+            {
+                "type": "mixin",
+                "el": "mixin.is_adult"
+            }
+        ]
     },
     "function.can_use(mixin.silver_gauntlets)": {
         "type": "and",
-        "el": [{
-            "type": "mixin",
-            "el": "mixin.silver_gauntlets"
-        }, {
-            "type": "mixin",
-            "el": "mixin.is_adult"
-        }]
+        "el": [
+            {
+                "type": "mixin",
+                "el": "mixin.silver_gauntlets"
+            },
+            {
+                "type": "mixin",
+                "el": "mixin.is_adult"
+            }
+        ]
     },
     "function.can_use(mixin.golden_gauntlets)": {
         "type": "and",
-        "el": [{
-            "type": "mixin",
-            "el": "mixin.golden_gauntlets"
-        }, {
-            "type": "mixin",
-            "el": "mixin.is_adult"
-        }]
+        "el": [
+            {
+                "type": "mixin",
+                "el": "mixin.golden_gauntlets"
+            },
+            {
+                "type": "mixin",
+                "el": "mixin.is_adult"
+            }
+        ]
     },
     "function.can_use(item.tunic_fire)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.tunic_fire"
-        }, {
-            "type": "mixin",
-            "el": "mixin.is_adult"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.tunic_fire"
+            },
+            {
+                "type": "mixin",
+                "el": "mixin.is_adult"
+            }
+        ]
     },
     "function.can_use(item.tunic_water)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.tunic_water"
-        }, {
-            "type": "mixin",
-            "el": "mixin.is_adult"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.tunic_water"
+            },
+            {
+                "type": "mixin",
+                "el": "mixin.is_adult"
+            }
+        ]
     },
     "function.can_use(mixin.scarecrow)": {
         "type": "and",
-        "el": [{
-            "type": "mixin",
-            "el": "mixin.scarecrow"
-        }, {
-            "type": "mixin",
-            "el": "mixin.is_adult"
-        }]
+        "el": [
+            {
+                "type": "mixin",
+                "el": "mixin.is_adult"
+            },
+            {
+                "type": "mixin",
+                "el": "mixin.hookshot"
+            },
+            {
+                "type": "mixin",
+                "el": "function.can_play(item.song_scarecrow)"
+            }
+        ]
     },
     "function.can_use(mixin.distant_scarecrow)": {
         "type": "and",
-        "el": [{
-            "type": "mixin",
-            "el": "mixin.distant_scarecrow"
-        }, {
-            "type": "mixin",
-            "el": "mixin.is_adult"
-        }]
+        "el": [
+            {
+                "type": "mixin",
+                "el": "mixin.is_adult"
+            },
+            {
+                "type": "mixin",
+                "el": "mixin.longshot"
+            },
+            {
+                "type": "mixin",
+                "el": "function.can_play(item.song_scarecrow)"
+            }
+        ]
     },
-    
     /* can use child items */
     "function.can_use(item.slingshot)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.slingshot"
-        }, {
-            "type": "mixin",
-            "el": "mixin.is_child"
-        }]
+        "el": [
+            {
+                "type": "mixin",
+                "el": "mixin.is_child"
+            },
+            {
+                "type": "mixin",
+                "el": "mixin.longshot"
+            }
+        ]
     },
     "function.can_use(item.boomerang)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.boomerang"
-        }, {
-            "type": "mixin",
-            "el": "mixin.is_child"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.boomerang"
+            },
+            {
+                "type": "mixin",
+                "el": "mixin.is_child"
+            }
+        ]
     },
     "function.can_use(item.sword_kokiri)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.sword_kokiri"
-        }, {
-            "type": "mixin",
-            "el": "mixin.is_child"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.sword_kokiri"
+            },
+            {
+                "type": "mixin",
+                "el": "mixin.is_child"
+            }
+        ]
     },
     "function.can_use(item.shield_kokiri)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.shield_kokiri"
-        }, {
-            "type": "mixin",
-            "el": "mixin.is_child"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.shield_kokiri"
+            },
+            {
+                "type": "mixin",
+                "el": "mixin.is_child"
+            }
+        ]
     },
     "function.can_use(item.stick)": {
         "type": "and",
-        "el": [{
-            "type": "value",
-            "el": "item.stick"
-        }, {
-            "type": "mixin",
-            "el": "mixin.is_child"
-        }]
+        "el": [
+            {
+                "type": "value",
+                "el": "item.stick"
+            },
+            {
+                "type": "mixin",
+                "el": "mixin.is_child"
+            }
+        ]
     },
-
-   /* Specials */
-   "function.has_stones(lacs_stones)": {
+    /* Specials */
+    "function.has_stones(lacs_stones)": {
         "type": "gte",
         "el": [
             {
-            "type": "add",
-            "el": [
+                "type": "add",
+                "el": [
                     {
                         "type": "value",
                         "el": "item.stone_forest"
@@ -486,208 +633,208 @@
                 "el": "option.stone_count_lacs"
             }
         ]
-   },
-   "function.has_medallions(lacs_medallions)": {
-       "type": "gte",
-       "el": [
-           {
-               "type": "add",
-               "el": [
-                   {
-                       "type": "value",
-                       "el": "item.medallion_forest"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.medallion_fire"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.medallion_water"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.medallion_spirit"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.medallion_shadow"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.medallion_light"
-                   }
-               ]
-           },
-           {
-               "type": "value",
-               "el": "option.medallion_count_lacs"
-           }
-       ]
-   },
-   "function.has_dungeon_rewards(lacs_rewards)": {
-       "type": "gte",
-       "el": [
-           {
-               "type": "add",
-               "el": [
-                   {
-                       "type": "value",
-                       "el": "item.medallion_forest"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.medallion_fire"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.medallion_water"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.medallion_spirit"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.medallion_shadow"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.medallion_light"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.stone_forest"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.stone_fire"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.stone_water"
-                   }
-               ]
-           },
-           {
-               "type": "value",
-               "el": "option.dungeon_count_lacs"
-           }
-       ]
-   },
-   "function.has_stones(bridge_stones)": {
-       "type": "gte",
-       "el": [
-           {
-           "type": "add",
-           "el": [
-                   {
-                       "type": "value",
-                       "el": "item.stone_forest"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.stone_fire"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.stone_water"
-                   }
-               ]
-           },
-           {
-               "type": "value",
-               "el": "option.stone_count_bridge"
-           }
-       ]
-   },
-   "function.has_medallions(bridge_medallions)": {
-       "type": "gte",
-       "el": [
-           {
-               "type": "add",
-               "el": [
-                   {
-                       "type": "value",
-                       "el": "item.medallion_forest"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.medallion_fire"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.medallion_water"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.medallion_spirit"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.medallion_shadow"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.medallion_light"
-                   }
-               ]
-           },
-           {
-               "type": "value",
-               "el": "option.medallion_count_bridge"
-           }
-      ]
-   },
-   "function.has_dungeon_rewards(bridge_rewards)": {
-       "type": "gte",
-       "el": [
-           {
-               "type": "add",
-               "el": [
-                   {
-                       "type": "value",
-                       "el": "item.medallion_forest"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.medallion_fire"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.medallion_water"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.medallion_spirit"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.medallion_shadow"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.medallion_light"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.stone_forest"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.stone_fire"
-                   },
-                   {
-                       "type": "value",
-                       "el": "item.stone_water"
-                   }
-               ]
-           },
-           {
-               "type": "value",
-               "el": "option.dungeon_count_bridge"
-           }
-       ]
-   },
+    },
+    "function.has_medallions(lacs_medallions)": {
+        "type": "gte",
+        "el": [
+            {
+                "type": "add",
+                "el": [
+                    {
+                        "type": "value",
+                        "el": "item.medallion_forest"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_fire"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_water"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_spirit"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_shadow"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_light"
+                    }
+                ]
+            },
+            {
+                "type": "value",
+                "el": "option.medallion_count_lacs"
+            }
+        ]
+    },
+    "function.has_dungeon_rewards(lacs_rewards)": {
+        "type": "gte",
+        "el": [
+            {
+                "type": "add",
+                "el": [
+                    {
+                        "type": "value",
+                        "el": "item.medallion_forest"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_fire"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_water"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_spirit"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_shadow"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_light"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.stone_forest"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.stone_fire"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.stone_water"
+                    }
+                ]
+            },
+            {
+                "type": "value",
+                "el": "option.dungeon_count_lacs"
+            }
+        ]
+    },
+    "function.has_stones(bridge_stones)": {
+        "type": "gte",
+        "el": [
+            {
+                "type": "add",
+                "el": [
+                    {
+                        "type": "value",
+                        "el": "item.stone_forest"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.stone_fire"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.stone_water"
+                    }
+                ]
+            },
+            {
+                "type": "value",
+                "el": "option.stone_count_bridge"
+            }
+        ]
+    },
+    "function.has_medallions(bridge_medallions)": {
+        "type": "gte",
+        "el": [
+            {
+                "type": "add",
+                "el": [
+                    {
+                        "type": "value",
+                        "el": "item.medallion_forest"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_fire"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_water"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_spirit"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_shadow"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_light"
+                    }
+                ]
+            },
+            {
+                "type": "value",
+                "el": "option.medallion_count_bridge"
+            }
+        ]
+    },
+    "function.has_dungeon_rewards(bridge_rewards)": {
+        "type": "gte",
+        "el": [
+            {
+                "type": "add",
+                "el": [
+                    {
+                        "type": "value",
+                        "el": "item.medallion_forest"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_fire"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_water"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_spirit"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_shadow"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_light"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.stone_forest"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.stone_fire"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.stone_water"
+                    }
+                ]
+            },
+            {
+                "type": "value",
+                "el": "option.dungeon_count_bridge"
+            }
+        ]
+    },
     "": ""
 }
