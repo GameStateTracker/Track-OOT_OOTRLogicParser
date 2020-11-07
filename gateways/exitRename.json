@@ -90,7 +90,7 @@
         "Graveyard Warp Pad Region": "Shadow Temple Gateway"
     },
     "Spirit Temple Lobby": {
-        "Desert Colossus": "Spirit Temple Gateway"
+        "Desert Colossus From Spirit Lobby": "Spirit Temple Gateway"
     },
     "Ganons Castle Lobby": {
         "Ganons Castle Grounds": "Ganons Castle Gateway"
@@ -449,13 +449,13 @@
         "Death Mountain Summit": "DMT Cow Grotto Entrance"
     },
     "DMC Great Fairy Fountain": {
-        "DMC Lower Nearby": "DMC Great Fairy Fountain Entrance"
+        "DMC Lower Local": "DMC Great Fairy Fountain Entrance"
     },
     "DMC Hammer Grotto": {
-        "DMC Lower Nearby": "DMC Hammer Grotto Entrance"
+        "DMC Lower Local": "DMC Hammer Grotto Entrance"
     },
     "DMC Upper Grotto": {
-        "DMC Upper Nearby": "DMC Upper Grotto Entrance"
+        "DMC Upper Local": "DMC Upper Grotto Entrance"
     },
     "GC Shop": {
         "Goron City": "GC Shop Entrance"
