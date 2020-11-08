@@ -550,8 +550,8 @@
                 "el": "mixin.is_child"
             },
             {
-                "type": "mixin",
-                "el": "mixin.longshot"
+                "type": "value",
+                "el": "item.slingshot"
             }
         ]
     },
