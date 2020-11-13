@@ -1,0 +1,1526 @@
+{
+    "Bottom of the Well Entrance": {
+        "Kakariko Village": false,
+        "Bottom of the Well Gateway": false
+    },
+    "Bottom of the Well Gateway": {
+        "Bottom of the Well Entrance": false,
+        "Bottom of the Well": false,
+        "Bottom of the Well MQ": false
+    },
+    "Deku Tree Entrance": {
+        "KF Outside Deku Tree": false,
+        "Deku Tree Gateway": false
+    },
+    "Deku Tree Gateway": {
+        "Deku Tree Entrance": false,
+        "Deku Tree Lobby": false,
+        "Deku Tree Lobby MQ": false
+    },
+    "Dodongos Cavern Entrance": {
+        "Death Mountain": false,
+        "Dodongos Cavern Gateway": false
+    },
+    "Dodongos Cavern Gateway": {
+        "Dodongos Cavern Entryway": false,
+        "Dodongos Cavern Beginning": false,
+        "Dodongos Cavern Beginning MQ": false
+    },
+    "Jabu Jabus Belly Entrance": {
+        "Zoras Fountain": false,
+        "Jabu Jabus Belly Gateway": false
+    },
+    "Jabu Jabus Belly Gateway": {
+        "ZJabu Jabus Belly Entrance": false,
+        "Jabu Jabus Belly Beginning": false,
+        "Jabu Jabus Belly Beginning MQ": false
+    },
+    "Ice Cavern Entrance": {
+        "ZF Ice Ledge": false,
+        "Ice Cavern Gateway": false
+    },
+    "Ice Cavern Gateway": {
+        "Ice Cavern Entrance": false,
+        "Ice Cavern Beginning": false,
+        "Ice Cavern Beginning MQ": false
+    },
+    "Gerudo Training Grounds Entrance": {
+        "Gerudo Fortress": false,
+        "Gerudo Training Grounds Gateway": false
+    },
+    "Gerudo Training Grounds Gateway": {
+        "Gerudo Training Grounds Entrance": false,
+        "Gerudo Training Grounds Lobby": false,
+        "Gerudo Training Grounds Lobby MQ": false
+    },
+    "Forest Temple Entrance": {
+        "SFM Forest Temple Entrance Ledge": false,
+        "Forest Temple Gateway": false
+    },
+    "Forest Temple Gateway": {
+        "Forest Temple Entrance": false,
+        "Forest Temple Lobby": false,
+        "Forest Temple Lobby MQ": false
+    },
+    "Fire Temple Entrance": {
+        "Fire Temple Gateway": false,
+        "DMC Fire Temple Entrance": false
+    },
+    "Fire Temple Gateway": {
+        "Fire Temple Entrance": false,
+        "Fire Temple Lower": false,
+        "Fire Temple Lower MQ": false
+    },
+    "Water Temple Entrance": {
+        "Lake Hylia": false,
+        "Water Temple Gateway": false
+    },
+    "Water Temple Gateway": {
+        "Water Temple Entrance": false,
+        "Water Temple Lobby": false,
+        "Water Temple Lobby MQ": false
+    },
+    "Shadow Temple Entrance": {
+        "Graveyard Warp Pad Region": false,
+        "Shadow Temple Gateway": false
+    },
+    "Shadow Temple Gateway": {
+        "Shadow Temple Entrance": false,
+        "Shadow Temple Entryway": false,
+        "Shadow Temple Entryway MQ": false
+    },
+    "Spirit Temple Entrance": {
+        "Desert Colossus From Spirit Lobby": false,
+        "Spirit Temple Gateway": false
+    },
+    "Spirit Temple Gateway": {
+        "Spirit Temple Entrance": false,
+        "Spirit Temple Lobby": false,
+        "Spirit Temple Lobby MQ": false
+    },
+    "Ganons Castle Gateway": {
+        "Ganons Castle Grounds": false,
+        "Ganons Castle Lobby": false,
+        "Ganons Castle Lobby MQ": false
+    },
+    "HF Tektite Grotto Entrance": {
+        "HF Tektite Grotto": false,
+        "Hyrule Field": false
+    },
+    "HF Near Kak Grotto Entrance": {
+        "HF Near Kak Grotto": false,
+        "Hyrule Field": false
+    },
+    "HF Fairy Grotto Entrance": {
+        "HF Fairy Grotto": false,
+        "Hyrule Field": false
+    },
+    "HF Near Market Grotto Entrance": {
+        "HF Near Market Grotto": false,
+        "Hyrule Field": false
+    },
+    "HF Cow Grotto Entrance": {
+        "HF Cow Grotto": false,
+        "Hyrule Field": false
+    },
+    "HF Inside Fence Grotto Entrance": {
+        "HF Inside Fence Grotto": false,
+        "Hyrule Field": false
+    },
+    "HF Open Grotto Entrance": {
+        "HF Open Grotto": false,
+        "Hyrule Field": false
+    },
+    "HF Southeast Grotto Entrance": {
+        "HF Southeast Grotto": false,
+        "Hyrule Field": false
+    },
+    "KF Midos House Entrance": {
+        "KF Midos House": false,
+        "Kokiri Forest": false
+    },
+    "KF Sarias House Entrance": {
+        "KF Sarias House": false,
+        "Kokiri Forest": false
+    },
+    "KF House of Twins Entrance": {
+        "KF House of Twins": false,
+        "Kokiri Forest": false
+    },
+    "KF Know It All House Entrance": {
+        "KF Know It All House": false,
+        "Kokiri Forest": false
+    },
+    "KF Kokiri Shop Entrance": {
+        "KF Kokiri Shop": false,
+        "Kokiri Forest": false
+    },
+    "KF Links House Entrance": {
+        "KF Links House": false,
+        "Kokiri Forest": false
+    },
+    "KF Storms Grotto Entrance": {
+        "KF Storms Grotto": false,
+        "Kokiri Forest": false
+    },
+    "LW Near Shortcuts Grotto Entrance": {
+        "LW Near Shortcuts Grotto": false,
+        "Lost Woods": false
+    },
+    "LW Scrubs Grotto Entrance": {
+        "LW Scrubs Grotto": false,
+        "LW Beyond Mido": false
+    },
+    "Deku Theater Entrance": {
+        "Deku Theater": false,
+        "LW Beyond Mido": false
+    },
+    "SFM Wolfos Grotto Entrance": {
+        "SFM Wolfos Grotto": false,
+        "SFM Entryway": false
+    },
+    "SFM Storms Grotto Entrance": {
+        "SFM Storms Grotto": false,
+        "Sacred Forest Meadow": false
+    },
+    "SFM Fairy Grotto Entrance": {
+        "SFM Fairy Grotto": false,
+        "Sacred Forest Meadow": false
+    },
+    "Market Guard House Entrance": {
+        "Market Guard House": false,
+        "Market Entrance": false
+    },
+    "Market Mask Shop Entrance": {
+        "Market Mask Shop": false,
+        "Market": false
+    },
+    "Market Bombchu Bowling Entrance": {
+        "Market Bombchu Bowling": false,
+        "Market": false
+    },
+    "Market Potion Shop Entrance": {
+        "Market Potion Shop": false,
+        "Market": false
+    },
+    "Market Treasure Chest Game Entrance": {
+        "Market Treasure Chest Game": false,
+        "Market": false
+    },
+    "Market Bombchu Shop Entrance": {
+        "Market Bombchu Shop": false,
+        "Market Back Alley": false
+    },
+    "Market Man in Green House Entrance": {
+        "Market Man in Green House": false,
+        "Market Back Alley": false
+    },
+    "Market Bazaar Entrance": {
+        "Market Bazaar": false,
+        "Market": false
+    },
+    "Market Shooting Gallery Entrance": {
+        "Market Shooting Gallery": false,
+        "Market": false
+    },
+    "LLR Talons House Entrance": {
+        "LLR Talons House": false,
+        "Lon Lon Ranch": false
+    },
+    "LLR Stables Entrance": {
+        "LLR Stables": false,
+        "Lon Lon Ranch": false
+    },
+    "LLR Tower Entrance": {
+        "LLR Tower": false,
+        "Lon Lon Ranch": false
+    },
+    "LLR Grotto Entrance": {
+        "LLR Grotto": false,
+        "Lon Lon Ranch": false
+    },
+    "HC Storms Grotto Entrance": {
+        "HC Storms Grotto": false,
+        "Hyrule Castle Grounds": false
+    },
+    "HC Great Fairy Fountain Entrance": {
+        "Hyrule Castle Grounds": false,
+        "HC Great Fairy Fountain": false
+    },
+    "OGC Great Fairy Fountain Entrance": {
+        "Ganons Castle Grounds": false,
+        "OGC Great Fairy Fountain": false
+    },
+    "Kak Carpenter Boss House Entrance": {
+        "Kak Carpenter Boss House": false,
+        "Kakariko Village": false
+    },
+    "Kak House of Skulltula Entrance": {
+        "Kak House of Skulltula": false,
+        "Kakariko Village": false
+    },
+    "Kak Impas House Entrance": {
+        "Kak Impas House": false,
+        "Kakariko Village": false
+    },
+    "Kak Impas House Back Entrance": {
+        "Kak Impas House Back": false,
+        "Kak Impas Ledge": false
+    },
+    "Kak Odd Medicine Building Entrance": {
+        "Kak Odd Medicine Building": false,
+        "Kak Backyard": false
+    },
+    "Kak Bazaar Entrance": {
+        "Kak Bazaar": false,
+        "Kakariko Village": false
+    },
+    "Kak Shooting Gallery Entrance": {
+        "Kak Shooting Gallery": false,
+        "Kakariko Village": false
+    },
+    "Kak Windmill Entrance": {
+        "Kak Windmill": false,
+        "Kakariko Village": false
+    },
+    "Kak Potion Shop Front Entrance": {
+        "Kak Potion Shop Front": false,
+        "Kakariko Village": false
+    },
+    "Kak Potion Shop Back Entrance": {
+        "Kak Potion Shop Back": false,
+        "Kakariko Village": false
+    },
+    "Kak Open Grotto Entrance": {
+        "Kak Open Grotto": false,
+        "Kak Backyard": false
+    },
+    "Kak Redead Grotto Entrance": {
+        "Kak Redead Grotto": false,
+        "Kakariko Village": false
+    },
+    "Graveyard Dampes House Entrance": {
+        "Graveyard Dampes House": false,
+        "Graveyard": false
+    },
+    "Graveyard Shield Grave Entrance": {
+        "Graveyard Shield Grave": false,
+        "Graveyard": false
+    },
+    "Graveyard Heart Piece Grave Entrance": {
+        "Graveyard Heart Piece Grave": false,
+        "Graveyard": false
+    },
+    "Graveyard Composers Grave Entrance": {
+        "Graveyard Composers Grave": false,
+        "Graveyard": false
+    },
+    "Graveyard Dampes Grave Entrance": {
+        "Graveyard Dampes Grave": false,
+        "Graveyard": false
+    },
+    "DMT Great Fairy Fountain Entrance": {
+        "DMT Great Fairy Fountain": false,
+        "Death Mountain Summit": false
+    },
+    "DMT Storms Grotto Entrance": {
+        "DMT Storms Grotto": false,
+        "Death Mountain": false
+    },
+    "DMT Cow Grotto Entrance": {
+        "DMT Cow Grotto": false,
+        "Death Mountain Summit": false
+    },
+    "DMC Great Fairy Fountain Entrance": {
+        "DMC Great Fairy Fountain": false,
+        "DMC Lower Nearby": false
+    },
+    "DMC Hammer Grotto Entrance": {
+        "DMC Hammer Grotto": false,
+        "DMC Lower Nearby": false
+    },
+    "DMC Upper Grotto Entrance": {
+        "DMC Upper Grotto": false,
+        "DMC Upper Nearby": false
+    },
+    "GC Shop Entrance": {
+        "GC Shop": false,
+        "Goron City": false
+    },
+    "GC Grotto Entrance": {
+        "GC Grotto": false,
+        "GC Grotto Platform": false
+    },
+    "ZR Storms Grotto Entrance": {
+        "ZR Storms Grotto": false,
+        "Zora River": false
+    },
+    "ZR Fairy Grotto Entrance": {
+        "ZR Fairy Grotto": false,
+        "Zora River": false
+    },
+    "ZR Open Grotto Entrance": {
+        "ZR Open Grotto": false,
+        "Zora River": false
+    },
+    "ZD Shop Entrance": {
+        "ZD Shop": false,
+        "Zoras Domain": false
+    },
+    "ZD Storms Grotto Entrance": {
+        "ZD Storms Grotto": false,
+        "Zoras Domain": false
+    },
+    "ZF Great Fairy Fountain Entrance": {
+        "ZF Great Fairy Fountain": false,
+        "Zoras Fountain": false
+    },
+    "LH Lab Entrance": {
+        "LH Lab": false,
+        "Lake Hylia": false
+    },
+    "LH Fishing Hole Entrance": {
+        "LH Fishing Hole": false,
+        "LH Fishing Island": false
+    },
+    "LH Grotto Entrance": {
+        "LH Grotto": false,
+        "Lake Hylia": false
+    },
+    "GV Carpenter Tent Entrance": {
+        "GV Carpenter Tent": false,
+        "GV Fortess Side": false
+    },
+    "GV Storms Grotto Entrance": {
+        "GV Storms Grotto": false,
+        "GV Fortess Side": false
+    },
+    "GV Octorok Grotto Entrance": {
+        "GV Octorok Grotto": false,
+        "GV Grotto Ledge": false
+    },
+    "GF Storms Grotto Entrance": {
+        "GF Storms Grotto": false,
+        "Gerudo Fortess": false
+    },
+    "Colossus Great Fairy Fountain Entrance": {
+        "Colossus Great Fairy Fountain": false,
+        "Desert Colossus": false
+    },
+    "Colossus Grotto Entrance": {
+        "Colossus Grotto": false,
+        "Desert Colossus": false
+    },
+    "Kokiri Bridge Gateway": {
+        "Kokiri Forest": false,
+        "LW Bridge": false,
+        "LW Bridge From Forest": false
+    },
+    "Kokiri Woods Gateway": {
+        "Kokiri Forest": false,
+        "Lost Woods": false
+    },
+    "GC Woods Gateway": {
+        "GC Woods Warp": false,
+        "Lost Woods": false
+    },
+    "River Woods Gateway": {
+        "Zora River": false,
+        "Lost Woods": false
+    },
+    "Meadow Woods Gateway": {
+        "SFM Entryway": false,
+        "LW Beyond Mido": false
+    },
+    "Field Woods Gateway": {
+        "Hyrule Field": false,
+        "LW Bridge": false
+    },
+    "Lake Field Gateway": {
+        "Hyrule Field": false,
+        "Lake Hylia": false
+    },
+    "Valley Field Gateway": {
+        "Hyrule Field": false,
+        "Gerudo Valley": false
+    },
+    "MarketEntrance Field Gateway": {
+        "Hyrule Field": false,
+        "Market Entrance": false
+    },
+    "Kakariko Field Gateway": {
+        "Hyrule Field": false,
+        "Kakariko Village": false
+    },
+    "River Field Gateway": {
+        "Hyrule Field": false,
+        "ZR Front": false
+    },
+    "Ranch Field Gateway": {
+        "Hyrule Field": false,
+        "Lon Lon Ranch": false
+    },
+    "Domain Lake Gateway": {
+        "Lake Hylia": false,
+        "Zoras Domain": false
+    },
+    "Valley Fortress Gateway": {
+        "Gerudo Fortress": false,
+        "GV Fortress Side": false
+    },
+    "Wasteland Fortress Gateway": {
+        "GF Outside Gate": false,
+        "Wasteland Near Fortress": false
+    },
+    "Wasteland Colossus Gateway": {
+        "Desert Colossus": false,
+        "Wasteland Near Colossus": false
+    },
+    "MarketEntrance Market Gateway": {
+        "Market": false,
+        "Market Entrance": false
+    },
+    "Grounds Market Gateway": {
+        "Market": false,
+        "Castle Grounds": false
+    },
+    "ToT Market Gateway": {
+        "Market": false,
+        "ToT Entrance": false
+    },
+    "Graveyard Kakariko Gateway": {
+        "Kakariko Village": false,
+        "Graveyard": false
+    },
+    "Mountain Kakariko Gateway": {
+        "Kak Behind Gate": false,
+        "Death Mountain": false
+    },
+    "Mountain Goron Gateway": {
+        "Goron City": false,
+        "Death Mountain": false
+    },
+    "Crater Goron Gateway": {
+        "GC Darunias Chamber": false,
+        "DMC Lower Local": false
+    },
+    "Crater Mountain Gateway": {
+        "Death Mountain Summit": false,
+        "DMC Upper Local": false
+    },
+    "River Domain Gateway": {
+        "ZR Behind Waterfall": false,
+        "Zoras Domain": false
+    },
+    "Fountain Domain Gateway": {
+        "ZD Behind King Zora": false,
+        "Zoras Fountain": false
+    },
+    "Bottom of the Well": {
+        "Kakariko Village": true,
+        "Bottom of the Well Perimeter": false,
+        "Bottom of the Well Main Area": false
+    },
+    "Bottom of the Well Perimeter": {
+        "Bottom of the Well": false,
+        "Bottom of the Well Middle": false
+    },
+    "Bottom of the Well Middle": {
+        "Bottom of the Well Perimeter": false
+    },
+    "Bottom of the Well Main Area": {
+        "Bottom of the Well": false
+    },
+    "Deku Tree Lobby": {
+        "KF Outside Deku Tree": true,
+        "Deku Tree Compass Room": false,
+        "Deku Tree Basement Water Room Front": false,
+        "Deku Tree Basement Ledge": false,
+        "Deku Tree Slingshot Room": false,
+        "Deku Tree Basement Backroom": false,
+        "Deku Tree Boss Room": false
+    },
+    "Deku Tree Compass Room": {
+        "Deku Tree Lobby": false
+    },
+    "Deku Tree Basement Water Room Front": {
+        "Deku Tree Basement Water Room Back": false,
+        "Deku Tree Lobby": false
+    },
+    "Deku Tree Basement Water Room Back": {
+        "Deku Tree Basement Back Room": false,
+        "Deku Tree Basement Water Room Front": false
+    },
+    "Deku Tree Basement Back Room": {
+        "Deku Tree Basement Ledge": false,
+        "Deku Tree Basement Water Room Back": false
+    },
+    "Deku Tree Basement Ledge": {
+        "Deku Tree Basement Back Room": false,
+        "Deku Tree Lobby": false
+    },
+    "Deku Tree Slingshot Room": {
+        "Deku Tree Lobby": false
+    },
+    "Deku Tree Basement Backroom": {
+        "Deku Tree Lobby": false
+    },
+    "Deku Tree Boss Room": {
+        "Deku Tree Lobby": false
+    },
+    "Dodongos Cavern Beginning": {
+        "Death Mountain": true,
+        "Dodongos Cavern Lobby": false
+    },
+    "Dodongos Cavern Lobby": {
+        "Dodongos Cavern Lower Right Side": false,
+        "Dodongos Cavern Bomb Bag Area": false,
+        "Dodongos Cavern Boss Area": false,
+        "Dodongos Cavern Beginning": false,
+        "Dodongos Cavern Staircase Room": false,
+        "Dodongos Cavern Far Bridge": false
+    },
+    "Dodongos Cavern Lower Right Side": {
+        "Dodongos Cavern Bomb Bag Area": false
+    },
+    "Dodongos Cavern Bomb Bag Area": {
+        "Dodongos Cavern Lower Right Side": false
+    },
+    "Dodongos Cavern Staircase Room": {
+        "Dodongos Cavern Lobby": false,
+        "Dodongos Cavern Climb": false
+    },
+    "Dodongos Cavern Climb": {
+        "Dodongos Cavern Lobby": false,
+        "Dodongos Cavern Far Bridge": false
+    },
+    "Dodongos Cavern Far Bridge": {
+        "Dodongos Cavern Boss Area": false,
+        "Dodongos Cavern Lobby": false
+    },
+    "Dodongos Cavern Boss Area": {
+        "Dodongos Cavern Lobby": false
+    },
+    "Fire Temple Lower": {
+        "DMC Fire Temple Entrance": true,
+        "Fire Boss Room": false,
+        "Fire Lower Locked Door": false,
+        "Fire Big Lava Room": false,
+        "Fire Temple Big Lava Room": false
+    },
+    "Fire Big Lava Room": {
+        "Fire Lower Maze": false
+    },
+    "Fire Lower Maze": {
+        "Fire Upper Maze": false
+    },
+    "Fire Upper Maze": {
+        "Fire Temple Upper": false
+    },
+    "Fire Temple Big Lava Room": {
+        "Fire Temple Lower": false,
+        "Fire Temple Middle": false
+    },
+    "Fire Temple Middle": {
+        "Fire Temple Upper": false
+    },
+    "Forest Temple Lobby": {
+        "SFM Forest Temple Entrance Ledge": true,
+        "Forest Temple Central Area": false,
+        "Forest Temple NW Outdoors": false,
+        "Forest Temple NE Outdoors": false,
+        "Forest Temple Block Push Room": false,
+        "Forest Temple Boss Region": false
+    },
+    "Forest Temple Central Area": {
+        "Forest Temple NW Outdoors": false,
+        "Forest Temple NE Outdoors": false,
+        "Forest Temple After Block Puzzle": false,
+        "Forest Temple Outdoor Ledge": false,
+        "Forest Temple Boss Region": false
+    },
+    "Forest Temple After Block Puzzle": {
+        "Forest Temple Bow Region": false,
+        "Forest Temple Outdoor Ledge": false,
+        "Forest Temple NW Outdoors": false
+    },
+    "Forest Temple Outdoor Ledge": {
+        "Forest Temple NW Outdoors": false
+    },
+    "Forest Temple NW Outdoors": {
+        "Forest Temple NE Outdoors": false,
+        "Forest Temple Outdoors Top Ledges": false,
+        "Forest Temple Outdoors High Balconies": false
+    },
+    "Forest Temple NE Outdoors": {
+        "Forest Temple Outdoors Top Ledges": false,
+        "Forest Temple NE Outdoors Ledge": false,
+        "Forest Temple Outdoors High Balconies": false,
+        "Forest Temple NW Outdoors": false,
+        "Forest Temple Lobby": false
+    },
+    "Forest Temple Outdoors Top Ledges": {
+        "Forest Temple NE Outdoors": false,
+        "Forest Temple NE Outdoors Ledge": false
+    },
+    "Forest Temple NE Outdoors Ledge": {
+        "Forest Temple NE Outdoors": false,
+        "Forest Temple Falling Room": false
+    },
+    "Forest Temple Bow Region": {
+        "Forest Temple Falling Room": false
+    },
+    "Forest Temple Falling Room": {
+        "Forest Temple NE Outdoors Ledge": false,
+        "Forest Temple NE Outdoors": false
+    },
+    "Forest Temple Outdoors High Balconies": {
+        "Forest Temple NW Outdoors": false,
+        "Forest Temple NE Outdoors": false,
+        "Forest Temple Falling Room": false
+    },
+    "Forest Temple Block Push Room": {
+        "Forest Temple Outside Upper Ledge": false,
+        "Forest Temple Bow Region": false,
+        "Forest Temple Straightened Hall": false
+    },
+    "Forest Temple Straightened Hall": {
+        "Forest Temple Outside Upper Ledge": false
+    },
+    "Forest Temple Outside Upper Ledge": {
+        "Forest Temple NW Outdoors": false
+    },
+    "Ganons Castle Lobby": {
+        "Castle Grounds": true,
+        "Ganons Castle Forest Trial": false,
+        "Ganons Castle Fire Trial": false,
+        "Ganons Castle Water Trial": false,
+        "Ganons Castle Shadow Trial": false,
+        "Ganons Castle Spirit Trial": false,
+        "Ganons Castle Light Trial": false,
+        "Ganons Castle Tower": false,
+        "Ganons Castle Deku Scrubs": false
+    },
+    "Gerudo Training Grounds Lobby": {
+        "Gerudo Fortress": true,
+        "Gerudo Training Grounds Left Side": false,
+        "Gerudo Training Grounds Right Side": false,
+        "Gerudo Training Grounds Heavy Block Room": false,
+        "Gerudo Training Grounds Lava Room": false,
+        "Gerudo Training Grounds Central Maze": false
+    },
+    "Gerudo Training Grounds Right Side": {
+        "Gerudo Training Grounds Underwater": false
+    },
+    "Gerudo Training Grounds Left Side": {
+        "Gerudo Training Grounds Stalfos Room": false
+    },
+    "Gerudo Training Grounds Stalfos Room": {
+        "Gerudo Training Grounds Back Areas": false
+    },
+    "Gerudo Training Grounds Back Areas": {
+        "Gerudo Training Grounds Central Maze Right": false,
+        "Gerudo Training Grounds Right Side": false
+    },
+    "Gerudo Training Grounds Central Maze Right": {
+        "Gerudo Training Grounds Underwater": false,
+        "Gerudo Training Grounds Right Side": false,
+        "Gerudo Training Grounds Hammer Room": false,
+        "Gerudo Training Grounds Lava Room": false
+    },
+    "Gerudo Training Grounds Central Maze": {
+        "Gerudo Training Grounds Central Maze Right": false
+    },
+    "Gerudo Training Grounds Lava Room": {
+        "Gerudo Training Grounds Central Maze Right": false,
+        "Gerudo Training Grounds Hammer Room": false
+    },
+    "Gerudo Training Grounds Hammer Room": {
+        "Gerudo Training Grounds Eye Statue Lower": false,
+        "Gerudo Training Grounds Lava Room": false
+    },
+    "Gerudo Training Grounds Eye Statue Lower": {
+        "Gerudo Training Grounds Hammer Room": false
+    },
+    "Gerudo Training Grounds Eye Statue Upper": {
+        "Gerudo Training Grounds Eye Statue Lower": false
+    },
+    "Gerudo Training Grounds Heavy Block Room": {
+        "Gerudo Training Grounds Eye Statue Upper": false,
+        "Gerudo Training Grounds Like Like Room": false
+    },
+    "Ice Cavern Beginning": {
+        "ZF Ice Ledge": true,
+        "Ice Cavern Map Room": false,
+        "Ice Cavern Compass Room": false,
+        "Ice Cavern Iron Boots Region": false,
+        "Ice Cavern": false
+    },
+    "Jabu Jabus Belly Beginning": {
+        "Zoras Fountain": true,
+        "Jabu Jabus Belly Main": false
+    },
+    "Jabu Jabus Belly Main": {
+        "Jabu Jabus Belly Beginning": false,
+        "Jabu Jabus Belly Depths": false,
+        "Jabu Jabus Belly Boss Area": false
+    },
+    "Jabu Jabus Belly Depths": {
+        "Jabu Jabus Belly Main": false,
+        "Jabu Jabus Belly Boss Area": false
+    },
+    "Jabu Jabus Belly Boss Area": {
+        "Jabu Jabus Belly Main": false
+    },
+    "Root": {
+        "Root Exits": false,
+        "HC Garden Locations": false
+    },
+    "Root Exits": {
+        "Child Spawn": false,
+        "Adult Spawn": false,
+        "Prelude of Light Warp": false,
+        "Minuet of Forest Warp": false,
+        "Bolero of Fire Warp": false,
+        "Serenade of Water Warp": false,
+        "Nocturne of Shadow Warp": false,
+        "Requiem of Spirit Warp": false
+    },
+    "Child Spawn": {
+        "KF Links House": false
+    },
+    "Adult Spawn": {
+        "Temple of Time": false
+    },
+    "Prelude of Light Warp": {
+        "Temple of Time": false
+    },
+    "Minuet of Forest Warp": {
+        "Sacred Forest Meadow": false
+    },
+    "Bolero of Fire Warp": {
+        "DMC Central Local": false
+    },
+    "Serenade of Water Warp": {
+        "Lake Hylia": false
+    },
+    "Nocturne of Shadow Warp": {
+        "Graveyard Warp Pad Region": false
+    },
+    "Requiem of Spirit Warp": {
+        "Desert Colossus": false
+    },
+    "Kokiri Forest": {
+        "KF Links House": true,
+        "KF Midos House": true,
+        "KF Sarias House": true,
+        "KF House of Twins": true,
+        "KF Know It All House": true,
+        "KF Kokiri Shop": true,
+        "KF Outside Deku Tree": false,
+        "Lost Woods": true,
+        "LW Bridge From Forest": true,
+        "KF Storms Grotto": true
+    },
+    "KF Outside Deku Tree": {
+        "Deku Tree Lobby": true,
+        "Kokiri Forest": false
+    },
+    "KF Links House": {
+        "Kokiri Forest": true
+    },
+    "KF Midos House": {
+        "Kokiri Forest": true
+    },
+    "KF Sarias House": {
+        "Kokiri Forest": true
+    },
+    "KF House of Twins": {
+        "Kokiri Forest": true
+    },
+    "KF Know It All House": {
+        "Kokiri Forest": true
+    },
+    "KF Kokiri Shop": {
+        "Kokiri Forest": true
+    },
+    "LW Forest Exit": {
+        "Kokiri Forest": false
+    },
+    "Lost Woods": {
+        "LW Forest Exit": true,
+        "GC Woods Warp": true,
+        "LW Bridge": false,
+        "Zora River": true,
+        "LW Beyond Mido": false,
+        "LW Near Shortcuts Grotto": true
+    },
+    "LW Beyond Mido": {
+        "LW Forest Exit": false,
+        "Lost Woods": false,
+        "SFM Entryway": true,
+        "Deku Theater": true,
+        "LW Scrubs Grotto": true
+    },
+    "Lost Woods Mushroom Timeout": {
+        "Lost Woods": false
+    },
+    "SFM Entryway": {
+        "LW Beyond Mido": true,
+        "Sacred Forest Meadow": false,
+        "SFM Wolfos Grotto": true
+    },
+    "Sacred Forest Meadow": {
+        "SFM Entryway": false,
+        "SFM Forest Temple Entrance Ledge": false,
+        "SFM Fairy Grotto": true,
+        "SFM Storms Grotto": true
+    },
+    "SFM Forest Temple Entrance Ledge": {
+        "Sacred Forest Meadow": false,
+        "Forest Temple Lobby": true
+    },
+    "LW Bridge From Forest": {
+        "LW Bridge": true
+    },
+    "LW Bridge": {
+        "Kokiri Forest": true,
+        "Hyrule Field": true,
+        "Lost Woods": false
+    },
+    "Hyrule Field": {
+        "LW Bridge": true,
+        "Lake Hylia": true,
+        "Gerudo Valley": true,
+        "Market Entrance": true,
+        "Kakariko Village": true,
+        "ZR Front": true,
+        "Lon Lon Ranch": true,
+        "HF Southeast Grotto": true,
+        "HF Open Grotto": true,
+        "HF Inside Fence Grotto": true,
+        "HF Cow Grotto": true,
+        "HF Near Market Grotto": true,
+        "HF Fairy Grotto": true,
+        "HF Near Kak Grotto": true,
+        "HF Tektite Grotto": true
+    },
+    "Lake Hylia": {
+        "Hyrule Field": true,
+        "Zoras Domain": true,
+        "LH Owl Flight": false,
+        "LH Lab": true,
+        "LH Fishing Island": false,
+        "Water Temple Lobby": true,
+        "LH Grotto": true
+    },
+    "LH Fishing Island": {
+        "Lake Hylia": false,
+        "LH Fishing Hole": true
+    },
+    "LH Owl Flight": {
+        "Hyrule Field": false
+    },
+    "LH Lab": {
+        "Lake Hylia": true
+    },
+    "LH Fishing Hole": {
+        "LH Fishing Island": true
+    },
+    "Gerudo Valley": {
+        "Hyrule Field": true,
+        "GV Upper Stream": false,
+        "GV Crate Ledge": false,
+        "GV Grotto Ledge": false,
+        "GV Fortress Side": false
+    },
+    "GV Upper Stream": {
+        "GV Lower Stream": false
+    },
+    "GV Lower Stream": {
+        "Lake Hylia": false
+    },
+    "GV Grotto Ledge": {
+        "GV Lower Stream": false,
+        "GV Octorok Grotto": true,
+        "GV Crate Ledge": false
+    },
+    "GV Crate Ledge": {
+        "GV Lower Stream": false
+    },
+    "GV Fortress Side": {
+        "Gerudo Fortress": true,
+        "GV Upper Stream": false,
+        "GV Crate Ledge": false,
+        "Gerudo Valley": false,
+        "GV Carpenter Tent": true,
+        "GV Storms Grotto": true
+    },
+    "GV Carpenter Tent": {
+        "GV Fortress Side": true
+    },
+    "Gerudo Fortress": {
+        "GV Fortress Side": true,
+        "GF Outside Gate": false,
+        "Gerudo Training Grounds Lobby": true,
+        "GF Storms Grotto": true
+    },
+    "GF Outside Gate": {
+        "Gerudo Fortress": false,
+        "Wasteland Near Fortress": true
+    },
+    "Wasteland Near Fortress": {
+        "GF Outside Gate": true,
+        "Haunted Wasteland": false
+    },
+    "Haunted Wasteland": {
+        "Wasteland Near Colossus": false,
+        "Wasteland Near Fortress": false
+    },
+    "Wasteland Near Colossus": {
+        "Desert Colossus": true,
+        "Haunted Wasteland": false
+    },
+    "Desert Colossus": {
+        "Colossus Great Fairy Fountain": true,
+        "Spirit Temple Lobby": true,
+        "Wasteland Near Colossus": true,
+        "Colossus Grotto": true
+    },
+    "Desert Colossus From Spirit Lobby": {
+        "Desert Colossus": false
+    },
+    "Colossus Great Fairy Fountain": {
+        "Desert Colossus": true
+    },
+    "Market Entrance": {
+        "Hyrule Field": true,
+        "Market": true,
+        "Market Guard House": true
+    },
+    "Market": {
+        "Market Entrance": true,
+        "ToT Entrance": true,
+        "Castle Grounds": true,
+        "Market Bazaar": true,
+        "Market Mask Shop": true,
+        "Market Shooting Gallery": true,
+        "Market Bombchu Bowling": false,
+        "Market Potion Shop": true,
+        "Market Treasure Chest Game": true,
+        "Market Back Alley": false
+    },
+    "Market Back Alley": {
+        "Market": false,
+        "Market Bombchu Shop": true,
+        "Market Dog Lady House": false,
+        "Market Man in Green House": false
+    },
+    "ToT Entrance": {
+        "Market": true,
+        "Temple of Time": false
+    },
+    "Temple of Time": {
+        "ToT Entrance": false,
+        "Beyond Door of Time": false
+    },
+    "Beyond Door of Time": {
+        "Temple of Time": false
+    },
+    "Castle Grounds": {
+        "Market": true,
+        "Hyrule Castle Grounds": false,
+        "Ganons Castle Grounds": false
+    },
+    "Hyrule Castle Grounds": {
+        "Castle Grounds": false,
+        "HC Garden": false,
+        "HC Great Fairy Fountain": true,
+        "HC Storms Grotto": true
+    },
+    "HC Garden": {
+        "HC Garden Locations": false,
+        "Hyrule Castle Grounds": false
+    },
+    "HC Great Fairy Fountain": {
+        "Castle Grounds": true
+    },
+    "Ganons Castle Grounds": {
+        "Castle Grounds": false,
+        "OGC Great Fairy Fountain": true,
+        "Ganons Castle Lobby": true
+    },
+    "OGC Great Fairy Fountain": {
+        "Castle Grounds": true
+    },
+    "Market Guard House": {
+        "Market Entrance": true
+    },
+    "Market Bazaar": {
+        "Market": true
+    },
+    "Market Mask Shop": {
+        "Market": true
+    },
+    "Market Shooting Gallery": {
+        "Market": true
+    },
+    "Market Bombchu Bowling": {
+        "Market": true
+    },
+    "Market Potion Shop": {
+        "Market": true
+    },
+    "Market Treasure Chest Game": {
+        "Market": true
+    },
+    "Market Bombchu Shop": {
+        "Market Back Alley": true
+    },
+    "Market Dog Lady House": {
+        "Market Back Alley": false
+    },
+    "Market Man in Green House": {
+        "Market Back Alley": true
+    },
+    "Kakariko Village": {
+        "Hyrule Field": true,
+        "Kak Carpenter Boss House": true,
+        "Kak House of Skulltula": true,
+        "Kak Impas House": true,
+        "Kak Windmill": true,
+        "Kak Bazaar": true,
+        "Kak Shooting Gallery": true,
+        "Bottom of the Well": true,
+        "Kak Potion Shop Front": true,
+        "Kak Redead Grotto": true,
+        "Kak Impas Ledge": false,
+        "Kak Odd Medicine Rooftop": false,
+        "Kak Backyard": false,
+        "Graveyard": true,
+        "Kak Behind Gate": false
+    },
+    "Kak Impas Ledge": {
+        "Kak Impas House Back": true,
+        "Kakariko Village": false
+    },
+    "Kak Odd Medicine Rooftop": {
+        "Kakariko Village": false,
+        "Kak Backyard": false
+    },
+    "Kak Backyard": {
+        "Kakariko Village": false,
+        "Kak Open Grotto": true,
+        "Kak Odd Medicine Building": true,
+        "Kak Potion Shop Back": false
+    },
+    "Kak Carpenter Boss House": {
+        "Kakariko Village": true
+    },
+    "Kak House of Skulltula": {
+        "Kakariko Village": true
+    },
+    "Kak Impas House": {
+        "Kakariko Village": true,
+        "Kak Impas House Near Cow": false
+    },
+    "Kak Impas House Back": {
+        "Kak Impas Ledge": true,
+        "Kak Impas House Near Cow": false
+    },
+    "Kak Windmill": {
+        "Kakariko Village": true
+    },
+    "Kak Bazaar": {
+        "Kakariko Village": true
+    },
+    "Kak Shooting Gallery": {
+        "Kakariko Village": true
+    },
+    "Kak Potion Shop Front": {
+        "Kakariko Village": true,
+        "Kak Potion Shop Back": false
+    },
+    "Kak Potion Shop Back": {
+        "Kak Backyard": true,
+        "Kak Potion Shop Front": false
+    },
+    "Kak Odd Medicine Building": {
+        "Kak Backyard": true
+    },
+    "Graveyard": {
+        "Graveyard Shield Grave": true,
+        "Graveyard Composers Grave": true,
+        "Graveyard Heart Piece Grave": true,
+        "Graveyard Dampes Grave": true,
+        "Graveyard Dampes House": true,
+        "Kakariko Village": true
+    },
+    "Graveyard Shield Grave": {
+        "Graveyard": true
+    },
+    "Graveyard Heart Piece Grave": {
+        "Graveyard": true
+    },
+    "Graveyard Composers Grave": {
+        "Graveyard": true
+    },
+    "Graveyard Dampes Grave": {
+        "Graveyard": true,
+        "Kak Windmill": false
+    },
+    "Graveyard Dampes House": {
+        "Graveyard": true
+    },
+    "Graveyard Warp Pad Region": {
+        "Graveyard": false,
+        "Shadow Temple Entryway": true
+    },
+    "Kak Behind Gate": {
+        "Kakariko Village": false,
+        "Death Mountain": true
+    },
+    "Death Mountain": {
+        "Kak Behind Gate": true,
+        "Goron City": true,
+        "Death Mountain Summit": false,
+        "Dodongos Cavern Beginning": true,
+        "DMT Storms Grotto": true
+    },
+    "Death Mountain Summit": {
+        "Death Mountain": false,
+        "DMC Upper Local": true,
+        "DMT Owl Flight": false,
+        "DMT Cow Grotto": true,
+        "DMT Great Fairy Fountain": true
+    },
+    "DMT Owl Flight": {
+        "Kak Impas Ledge": false
+    },
+    "Goron City": {
+        "Death Mountain": true,
+        "GC Woods Warp": false,
+        "GC Shop": true,
+        "GC Darunias Chamber": false,
+        "GC Grotto Platform": false
+    },
+    "GC Woods Warp": {
+        "Goron City": false,
+        "Lost Woods": true
+    },
+    "GC Darunias Chamber": {
+        "Goron City": false,
+        "DMC Lower Local": true
+    },
+    "GC Grotto Platform": {
+        "GC Grotto": true,
+        "Goron City": false
+    },
+    "GC Shop": {
+        "Goron City": true
+    },
+    "DMC Upper Nearby": {
+        "DMC Upper Local": false,
+        "Death Mountain Summit": true,
+        "DMC Upper Grotto": true
+    },
+    "DMC Upper Local": {
+        "DMC Upper Nearby": false,
+        "DMC Ladder Area Nearby": true,
+        "DMC Central Nearby": false
+    },
+    "DMC Ladder Area Nearby": {
+        "DMC Upper Nearby": false,
+        "DMC Lower Nearby": false
+    },
+    "DMC Lower Nearby": {
+        "DMC Lower Local": false,
+        "GC Darunias Chamber": true,
+        "DMC Great Fairy Fountain": true,
+        "DMC Hammer Grotto": true
+    },
+    "DMC Lower Local": {
+        "DMC Lower Nearby": false,
+        "DMC Ladder Area Nearby": true,
+        "DMC Central Nearby": false,
+        "DMC Fire Temple Entrance": false
+    },
+    "DMC Central Nearby": {
+        "DMC Central Local": false
+    },
+    "DMC Central Local": {
+        "DMC Central Nearby": false,
+        "DMC Lower Nearby": false,
+        "DMC Upper Nearby": false,
+        "DMC Fire Temple Entrance": false
+    },
+    "DMC Fire Temple Entrance": {
+        "Fire Temple Lower": true,
+        "DMC Central Nearby": false
+    },
+    "DMC Great Fairy Fountain": {
+        "DMC Lower Local": true
+    },
+    "DMT Great Fairy Fountain": {
+        "Death Mountain Summit": true
+    },
+    "ZR Front": {
+        "Zora River": false,
+        "Hyrule Field": true
+    },
+    "Zora River": {
+        "ZR Front": false,
+        "ZR Open Grotto": true,
+        "ZR Fairy Grotto": true,
+        "Lost Woods": true,
+        "ZR Storms Grotto": true,
+        "ZR Behind Waterfall": false
+    },
+    "ZR Behind Waterfall": {
+        "Zora River": false,
+        "Zoras Domain": true
+    },
+    "ZR Top of Waterfall": {
+        "Zora River": false
+    },
+    "Zoras Domain": {
+        "ZR Behind Waterfall": true,
+        "Lake Hylia": true,
+        "ZD Behind King Zora": false,
+        "ZD Shop": true,
+        "ZD Storms Grotto": true
+    },
+    "ZD Behind King Zora": {
+        "Zoras Domain": false,
+        "Zoras Fountain": true
+    },
+    "ZD Eyeball Frog Timeout": {
+        "Zoras Domain": false
+    },
+    "Zoras Fountain": {
+        "ZD Behind King Zora": true,
+        "Jabu Jabus Belly Beginning": true,
+        "ZF Ice Ledge": false,
+        "ZF Great Fairy Fountain": true
+    },
+    "ZF Ice Ledge": {
+        "Zoras Fountain": false,
+        "Ice Cavern Beginning": true
+    },
+    "ZD Shop": {
+        "Zoras Domain": true
+    },
+    "ZF Great Fairy Fountain": {
+        "Zoras Fountain": true
+    },
+    "Lon Lon Ranch": {
+        "Hyrule Field": true,
+        "LLR Talons House": true,
+        "LLR Stables": true,
+        "LLR Tower": true,
+        "LLR Grotto": true
+    },
+    "LLR Talons House": {
+        "Lon Lon Ranch": true
+    },
+    "LLR Stables": {
+        "Lon Lon Ranch": true
+    },
+    "LLR Tower": {
+        "Lon Lon Ranch": true
+    },
+    "GF Storms Grotto": {
+        "Gerudo Fortress": true
+    },
+    "ZD Storms Grotto": {
+        "Zoras Domain": true
+    },
+    "KF Storms Grotto": {
+        "Kokiri Forest": true
+    },
+    "LW Near Shortcuts Grotto": {
+        "Lost Woods": true
+    },
+    "Deku Theater": {
+        "LW Beyond Mido": true
+    },
+    "LW Scrubs Grotto": {
+        "LW Beyond Mido": true
+    },
+    "SFM Fairy Grotto": {
+        "Sacred Forest Meadow": true
+    },
+    "SFM Storms Grotto": {
+        "Sacred Forest Meadow": true
+    },
+    "SFM Wolfos Grotto": {
+        "SFM Entryway": true
+    },
+    "LLR Grotto": {
+        "Lon Lon Ranch": true
+    },
+    "HF Southeast Grotto": {
+        "Hyrule Field": true
+    },
+    "HF Open Grotto": {
+        "Hyrule Field": true
+    },
+    "HF Inside Fence Grotto": {
+        "Hyrule Field": true
+    },
+    "HF Cow Grotto": {
+        "Hyrule Field": true
+    },
+    "HF Near Market Grotto": {
+        "Hyrule Field": true
+    },
+    "HF Fairy Grotto": {
+        "Hyrule Field": true
+    },
+    "HF Near Kak Grotto": {
+        "Hyrule Field": true
+    },
+    "HF Tektite Grotto": {
+        "Hyrule Field": true
+    },
+    "HC Storms Grotto": {
+        "Castle Grounds": false
+    },
+    "Kak Redead Grotto": {
+        "Kakariko Village": true
+    },
+    "Kak Open Grotto": {
+        "Kak Backyard": true
+    },
+    "DMT Cow Grotto": {
+        "Death Mountain Summit": true
+    },
+    "DMT Storms Grotto": {
+        "Death Mountain": true
+    },
+    "GC Grotto": {
+        "GC Grotto Platform": true
+    },
+    "DMC Upper Grotto": {
+        "DMC Upper Local": true
+    },
+    "DMC Hammer Grotto": {
+        "DMC Lower Local": true
+    },
+    "ZR Open Grotto": {
+        "Zora River": true
+    },
+    "ZR Fairy Grotto": {
+        "Zora River": true
+    },
+    "ZR Storms Grotto": {
+        "Zora River": true
+    },
+    "LH Grotto": {
+        "Lake Hylia": true
+    },
+    "Colossus Grotto": {
+        "Desert Colossus": true
+    },
+    "GV Octorok Grotto": {
+        "GV Grotto Ledge": true
+    },
+    "GV Storms Grotto": {
+        "GV Fortress Side": true
+    },
+    "Shadow Temple Entryway": {
+        "Graveyard Warp Pad Region": true,
+        "Shadow Temple Beginning": false
+    },
+    "Shadow Temple Beginning": {
+        "Shadow Temple Entryway": false,
+        "Shadow Temple First Beamos": false,
+        "Shadow Temple Dead Hand Area": false
+    },
+    "Shadow Temple First Beamos": {
+        "Shadow Temple Upper Huge Pit": false,
+        "Shadow Temple Huge Pit": false
+    },
+    "Shadow Temple Upper Huge Pit": {
+        "Shadow Temple Lower Huge Pit": false
+    },
+    "Shadow Temple Lower Huge Pit": {
+        "Shadow Temple Wind Tunnel": false
+    },
+    "Shadow Temple Wind Tunnel": {
+        "Shadow Temple Beyond Boat": false
+    },
+    "Shadow Temple Beyond Boat": {
+        "Shadow Temple Invisible Maze": false
+    },
+    "Shadow Temple Huge Pit": {
+        "Shadow Temple Wind Tunnel": false
+    },
+    "Spirit Temple Lobby": {
+        "Desert Colossus From Spirit Lobby": true,
+        "Child Spirit Temple": false,
+        "Adult Spirit Temple": false,
+        "Early Adult Spirit Temple": false
+    },
+    "Child Spirit Temple": {
+        "Spirit Temple Shared": false,
+        "Child Spirit Before Locked Door": false
+    },
+    "Adult Spirit Temple": {
+        "Lower Adult Spirit Temple": false,
+        "Spirit Temple Shared": false,
+        "Spirit Temple Boss Area": false,
+        "Mirror Shield Hand": false
+    },
+    "Spirit Temple Shared": {
+        "Silver Gauntlets Hand": false,
+        "Desert Colossus": false
+    },
+    "Child Spirit Before Locked Door": {
+        "Child Spirit Temple Climb": false
+    },
+    "Child Spirit Temple Climb": {
+        "Spirit Temple Central Chamber": false,
+        "Child Spirit Before Locked Door": false
+    },
+    "Early Adult Spirit Temple": {
+        "Spirit Temple Central Chamber": false
+    },
+    "Spirit Temple Central Chamber": {
+        "Spirit Temple Outdoor Hands": false,
+        "Spirit Temple Beyond Central Locked Door": false,
+        "Child Spirit Temple Climb": false
+    },
+    "Spirit Temple Outdoor Hands": {
+        "Desert Colossus": false
+    },
+    "Spirit Temple Beyond Central Locked Door": {
+        "Spirit Temple Beyond Final Locked Door": false
+    },
+    "Water Temple Lobby": {
+        "Lake Hylia": true,
+        "Water Temple Dive": false,
+        "Water Temple Dark Link Region": false,
+        "Water Temple Highest Water Level": false
+    },
+    "Water Temple Dive": {
+        "Water Temple Lowered Water Levels": false,
+        "Water Temple Cracked Wall": false,
+        "Water Temple Middle Water Level": false,
+        "Water Temple North Basement": false,
+        "Water Temple Dragon Statue": false
+    },
+    "Water Temple Dark Link Region": {
+        "Water Temple Basement Gated Areas": false,
+        "Water Temple Dragon Statue": false
+    },
+    "Water Temple Highest Water Level": {
+        "Water Temple Falling Platform Room": false
+    },
+    "Water Temple Middle Water Level": {
+        "Water Temple Cracked Wall": false
+    },
+    "Water Temple Falling Platform Room": {
+        "Water Temple Dark Link Region": false
+    }
+}

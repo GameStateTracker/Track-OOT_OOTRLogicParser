@@ -121,5 +121,19 @@
                 }
             ]
         }
+    },
+    "region.hyrule_field": {
+        "region.hf_southeast_grotto_entrance": {
+            "type": "mixin",
+            "el": "mixin.can_blast_or_smash"
+        },
+        "region.hf_near_market_grotto_entrance": {
+            "type": "mixin",
+            "el": "mixin.can_blast_or_smash"
+        },
+        "region.hf_fairy_grotto_entrance": {
+            "type": "mixin",
+            "el": "mixin.can_blast_or_smash"
+        }
     }
 }

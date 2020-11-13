@@ -18,10 +18,13 @@ const outputDir = path.join(__dirname, "/output/");
 
 const transRulesFile = path.join(__dirname, "/translation/predict_rules.json");
 
+let write = 0;
+if (process.argv.indexOf('--write') > 0) write = 1;
+
 if (!fs.existsSync(inLogicDir)) {
-    execSync('git clone --branch "5.2.84" "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "input"');
+    execSync('git clone --branch "5.2.119" "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "input"');
 } else {
-    execSync('cd input && git pull --rebase "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "5.2.84"');
+    execSync('cd input && git pull --rebase "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "5.2.119"');
 }
 if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, {
@@ -37,13 +40,14 @@ rules.forEach((v, k) => {
 
 // parser for normal logic
 function parseLogic() {
-    LogicParser.parse(fs.readFileSync(inGatewayFile).toString(), 0);
+    LogicParser.parse(fs.readFileSync(inGatewayFile).toString(), 0, write);
     fs.readdirSync(inLogicDir).forEach(function(file) {
         const iname = path.join(inLogicDir, file);
         let mq = 0;
         if(iname.endsWith("MQ.json")) mq = 1;
-        LogicParser.parse(fs.readFileSync(iname).toString(), mq);
+        LogicParser.parse(fs.readFileSync(iname).toString(), mq, write);
     });
+    LogicParser.write(write);
     const logic = LogicGenerator.generate();
     const logicData = JSON.stringify(logic, null, 4);
     fs.writeFileSync(`${outputDir}/logic.full.json`, logicData);
@@ -54,12 +58,12 @@ function parseLogic() {
 
 // parser for glitched logic
 function parseGlitchedLogic() {
-    LogicParser.parse(fs.readFileSync(inGatewayFile).toString(), 0);
+    LogicParser.parse(fs.readFileSync(inGatewayFile).toString(), 0, 2);
     fs.readdirSync(inGlitchedDir).forEach(function(file) {
         const iname = path.join(inGlitchedDir, file);
         let mq = 0;
         if(iname.endsWith("MQ.json")) mq = 1;
-        LogicParser.parse(fs.readFileSync(iname).toString(), mq);
+        LogicParser.parse(fs.readFileSync(iname).toString(), mq, 2);
     });
     const logic = LogicGenerator.generate();
     const logicData = JSON.stringify(logic, null, 4);
