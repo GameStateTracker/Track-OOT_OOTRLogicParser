@@ -10,7 +10,7 @@ const inExitSuccessFile  = path.join(__dirname, "/gateways/rename_success.json")
 const renameData = JSON.parse(fs.readFileSync(inExitRenameFile, 'utf8'));
 const rename_success = JSON.parse(fs.readFileSync(inExitSuccessFile, 'utf8'));
 let success = {};
-const exits = ["Kakariko Village", "KF Outside Deku Tree", "Death Mountain", "Zoras Fountain", "ZF Ice Ledge", "Gerudo Fortress", "SFM Forest Temple Entrance Ledge", "DMC Fire Temple Entrance", "Lake Hylia", "Graveyard Warp Pad Region", "Desert Colossus", "Castle Grounds"]
+const exits = ["Kakariko Village", "KF Outside Deku Tree", "Death Mountain", "Zoras Fountain", "ZF Ice Ledge", "Gerudo Fortress", "SFM Forest Temple Entrance Ledge", "DMC Fire Temple Entrance", "Lake Hylia", "Graveyard Warp Pad Region", "Desert Colossus", "Castle Grounds", "Ganons Castle Grounds"]
 
 class LogicParser {
 
