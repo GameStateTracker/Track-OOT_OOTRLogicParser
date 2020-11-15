@@ -214,6 +214,10 @@
         "type": "value",
         "el": "item.hammer"
     },
+    "Hammer": {
+        "type": "value",
+        "el": "item.hammer"
+    },
     "Sticks": {
         "type": "value",
         "el": "item.stick"
@@ -502,16 +506,42 @@
         "el": "item.tunic_fire"
     },
     "Buy_Goron_Tunic": {
-        "type": "value",
-        "el": "item.tunic_fire_1"
+        "type": "and",
+        "el": [
+            {
+                "type": "value",
+                "el": "option.consider_buyable"
+            },
+            {
+                "type": "min",
+                "el": {
+                    "type": "value",
+                    "el": "item.wallet"
+                },
+                "value": 2
+            }
+        ]
     },
     "Zora_Tunic": {
         "type": "value",
         "el": "item.tunic_water"
     },
     "Buy_Zora_Tunic": {
-        "type": "value",
-        "el": "item.tunic_water_1"
+        "type": "and",
+        "el": [
+            {
+                "type": "value",
+                "el": "option.consider_buyable"
+            },
+            {
+                "type": "min",
+                "el": {
+                    "type": "value",
+                    "el": "item.wallet"
+                },
+                "value": 3
+            }
+        ]
     },
     //"item.boots_normal",
     "Iron_Boots": {
@@ -748,8 +778,21 @@
         "el": "item.bottle"
     },
     "Buy_Blue_Fire": {
-        "type": "value",
-        "el": "item.blue_fire_1"
+        "type": "and",
+        "el": [
+            {
+                "type": "value",
+                "el": "option.consider_buyable"
+            },
+            {
+                "type": "min",
+                "el": {
+                    "type": "value",
+                    "el": "item.wallet"
+                },
+                "value": 3
+            }
+        ]
     },
     "Bugs": {
         "type": "value",
@@ -800,6 +843,10 @@
     },
 
     /* options */
+    "skip_child_zelda": {
+        "type": "value",
+        "el": "option.skip_child_zelda"
+    },
     "open_door_of_time": {
         "type": "value",
         "el": "option.doors_open_temple"
@@ -1598,7 +1645,6 @@
         "type": "value",
         "el": "skip.light_trial_mq"
     },
-    //unadded
     "logic_dc_vines_gs": {
         "type": "value",
         "el": "skip.dc_vines_gs"
@@ -1659,6 +1705,90 @@
         "type": "value",
         "el": "skip.water_falling_platform_gs_boomerang"
     },
-
+    //unadded
+    "logic_botw_mq_pits": {
+        "type": "value",
+        "el": "skip.botw_mq_pits"
+    },
+    "logic_deku_mq_compass_gs": {
+        "type": "value",
+        "el": "skip.deku_mq_compass_gs"
+    },
+    "logic_deku_mq_log": {
+        "type": "value",
+        "el": "skip.deku_mq_log"
+    },
+    "logic_dc_mq_eyes": {
+        "type": "value",
+        "el": "skip.dc_mq_eyes"
+    },
+    "logic_dc_mq_child_back": {
+        "type": "value",
+        "el": "skip.dc_mq_child_back"
+    },
+    "logic_fire_mq_blocked_chest": {
+        "type": "value",
+        "el": "skip.fire_mq_blocked_chest"
+    },
+    "logic_fire_mq_maze_hovers": {
+        "type": "value",
+        "el": "skip.fire_mq_maze_hovers"
+    },
+    "logic_fire_mq_maze_jump": {
+        "type": "value",
+        "el": "skip.fire_mq_maze_jump"
+    },
+    "logic_fire_mq_above_maze_gs": {
+        "type": "value",
+        "el": "skip.fire_mq_above_maze_gs"
+    },
+    "logic_forest_mq_hallway_switch_jumpslash": {
+        "type": "value",
+        "el": "skip.forest_mq_hallway_switch_jumpslash"
+    },
+    "logic_forest_mq_hallway_switch_hookshot": {
+        "type": "value",
+        "el": "skip.forest_mq_hallway_switch_hookshot"
+    },
+    "logic_forest_door_frame": {
+        "type": "value",
+        "el": "skip.forest_door_frame"
+    },
+    "logic_fire_trial_mq": {
+        "type": "value",
+        "el": "skip.fire_trial_mq"
+    },
+    "logic_ice_mq_red_ice_gs": {
+        "type": "value",
+        "el": "skip.ice_mq_red_ice_gs"
+    },
+    "logic_kakariko_rooftop_gs": {
+        "type": "value",
+        "el": "skip.kakariko_rooftop_gs"
+    },
+    "logic_trail_gs_lower_hovers": {
+        "type": "value",
+        "el": "skip.trail_gs_lower_hovers"
+    },
+    "logic_shadow_mq_invisible_blades": {
+        "type": "value",
+        "el": "skip.shadow_mq_invisible_blades"
+    },
+    "logic_spirit_mq_sun_block_sot": {
+        "type": "value",
+        "el": "skip.spirit_mq_sun_block_sot"
+    },
+    "logic_water_mq_central_pillar": {
+        "type": "value",
+        "el": "skip.water_mq_central_pillar"
+    },
+    "logic_water_mq_locked_gs": {
+        "type": "value",
+        "el": "skip.water_mq_locked_gs"
+    },
+    "logic_water_central_gs_fw": {
+        "type": "value",
+        "el": "skip.water_central_gs_fw"
+    },
     "": ""
 }

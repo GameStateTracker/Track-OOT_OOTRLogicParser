@@ -12,7 +12,8 @@
   "main": "parse.js",
   "type": "module",
   "scripts": {
-    "parse": "node src/parse.js"
+    "parse": "node src/parse.js",
+    "parse/write": "node src/parse.js --write"
   },
   "dependencies": {},
   "devDependencies": {}

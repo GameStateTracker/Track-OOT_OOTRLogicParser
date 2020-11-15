@@ -168,6 +168,16 @@
             "entrance_shuffle_simple": "entrance_shuffle_simple",
             "entrance_shuffle_all": "entrance_shuffle_all"
         }
+    },
+    "option.light_arrow_cutscene": {
+        "name": "option.light_arrow_cutscene",
+        "values": {
+            "light_arrow_cutscene_vanilla": "light_arrow_cutscene_vanilla",
+            "light_arrow_cutscene_stones": "light_arrow_cutscene_stones",
+            "light_arrow_cutscene_medallions": "light_arrow_cutscene_medallions",
+            "light_arrow_cutscene_dungeons": "light_arrow_cutscene_dungeons",
+            "light_arrow_cutscene_skulltulas": "light_arrow_cutscene_skulltulas"
+        }
     }
 
 

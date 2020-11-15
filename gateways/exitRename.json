@@ -93,7 +93,8 @@
         "Desert Colossus From Spirit Lobby": "Spirit Temple Gateway"
     },
     "Ganons Castle Lobby": {
-        "Ganons Castle Grounds": "Ganons Castle Gateway"
+        "Ganons Castle Grounds": "Ganons Castle Gateway",
+        "Castle Grounds": "Ganons Castle Gateway"
     },
     "Kokiri Forest": {
         "LW Bridge From Forest": "Kokiri Bridge Gateway",
@@ -416,7 +417,7 @@
         "Kakariko Village": "Kak Potion Shop Front Entrance"
     },
     "Kak Potion Shop Back": {
-        "Kakariko Village": "Kak Potion Shop Back Entrance"
+        "Kak Backyard": "Kak Potion Shop Back Entrance"
     },
     "Kak Open Grotto": {
         "Kak Backyard": "Kak Open Grotto Entrance"
