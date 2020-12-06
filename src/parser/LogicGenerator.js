@@ -322,38 +322,19 @@ function postCalcutate(input, age = "", region = "")  {
                 el: fnName
             };
         case "at":
-            return {
-                type: "or",
-                el: [
-                    {
-                        type: "at",
-                        node: `${translateRegionName(input.node)}[child]`,
-                        el: postCalcutate(input.el, "child", region)
-                    },
-                    {
-                        type: "at",
-                        node: `${translateRegionName(input.node)}[adult]`,
-                        el: postCalcutate(input.el, "adult", region)
-                    }
-                ]
-            };
-            return ;
+            return createOnRegionLogic(
+                `${translateRegionName(input.node)}[child]`,
+                postCalcutate(input.el, "child", region),
+                `${translateRegionName(input.node)}[adult]`,
+                postCalcutate(input.el, "adult", region)
+            );
         case "here":
-            return {
-                type: "or",
-                el: [
-                    {
-                        type: "at",
-                        node: `${translateRegionName(region)}[child]`,
-                        el: postCalcutate(input.el, "child", region)
-                    },
-                    {
-                        type: "at",
-                        node: `${translateRegionName(region)}[adult]`,
-                        el: postCalcutate(input.el, "adult", region)
-                    }
-                ]
-            };
+            return createOnRegionLogic(
+                `${translateRegionName(region)}[child]`,
+                postCalcutate(input.el, "child", region),
+                `${translateRegionName(region)}[adult]`,
+                postCalcutate(input.el, "adult", region)
+            );
         case "and":
         case "nand":
         case "or":
@@ -421,6 +402,74 @@ function translateMixinName(input) {
 function translateFunctionName(input) {
     if (input.startsWith("function.")) return input;
     return `function.${input.toLowerCase().replace(/ /g, "_")}`;
+}
+
+function createOnRegionLogic(nodeC, elC, nodeA, elA) {
+    return {
+        "type": "or",
+        "el": [
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "not",
+                        "el": {
+                            "type": "and",
+                            "el": [
+                                {
+                                    "type": "state",
+                                    "el": "filter.era_apply",
+                                    "value": "force",
+                                    "category": "filter"
+                                },
+                                {
+                                    "type": "state",
+                                    "el": "filter.era",
+                                    "value": "adult",
+                                    "category": "filter"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "at",
+                        "node": nodeC,
+                        "el": elC
+                    }
+                ]
+            },
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "not",
+                        "el": {
+                            "type": "and",
+                            "el": [
+                                {
+                                    "type": "state",
+                                    "el": "filter.era_apply",
+                                    "value": "force",
+                                    "category": "filter"
+                                },
+                                {
+                                    "type": "state",
+                                    "el": "filter.era",
+                                    "value": "child",
+                                    "category": "filter"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "at",
+                        "node": nodeA,
+                        "el": elA
+                    }
+                ]
+            }
+        ]
+    }
 }
 
 export default new LogicGenerator();
