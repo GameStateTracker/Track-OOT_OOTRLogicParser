@@ -847,6 +847,10 @@
         "type": "value",
         "el": "option.skip_child_zelda"
     },
+    "warp_songs": {
+        "type": "value",
+        "el": "option.shuffle_warps"
+    },
     "open_door_of_time": {
         "type": "value",
         "el": "option.doors_open_temple"

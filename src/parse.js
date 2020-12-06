@@ -22,9 +22,9 @@ let write = 0;
 if (process.argv.indexOf('--write') > 0) write = 1;
 
 if (!fs.existsSync(inLogicDir)) {
-    execSync('git clone --branch "5.2.119" "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "input"');
+    execSync('git clone --branch "6.0.1" "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "input"');
 } else {
-    execSync('cd input && git pull --rebase "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "5.2.119"');
+    execSync('cd input && git pull --rebase "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "6.0.1"');
 }
 if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, {
