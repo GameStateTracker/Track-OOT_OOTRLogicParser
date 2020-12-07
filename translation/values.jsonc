@@ -774,8 +774,8 @@
     //"item.heart_double",
     //"item.sold_out",
     "Blue_Fire": {
-        "type": "value",
-        "el": "item.bottle"
+        "type": "mixin",
+        "el": "mixin.blue_fire"
     },
     "Buy_Blue_Fire": {
         "type": "and",
