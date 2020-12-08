@@ -10,8 +10,8 @@
         "region_name": "Bottom of the Well Gateway",
         "exits": {
             "Bottom of the Well Entrance": "True",
-            "Bottom of the Well": "True",
-            "Bottom of the Well MQ": "True"
+            "Bottom of the Well": "area/well != 'mq'",
+            "Bottom of the Well MQ": "area/well != 'v'"
         }
     },
     {
@@ -25,8 +25,8 @@
         "region_name": "Deku Tree Gateway",
         "exits": {
             "Deku Tree Entrance": "True",
-            "Deku Tree Lobby": "True",
-            "Deku Tree Lobby MQ": "True"
+            "Deku Tree Lobby": "area/deku != 'mq'",
+            "Deku Tree Lobby MQ": "area/deku != 'v'"
         }
     },
     {
@@ -40,8 +40,8 @@
         "region_name": "Dodongos Cavern Gateway",
         "exits": {
             "Dodongos Cavern Entryway": "True",
-            "Dodongos Cavern Beginning": "True",
-            "Dodongos Cavern Beginning MQ": "True"
+            "Dodongos Cavern Beginning": "area/dodongo != 'mq'",
+            "Dodongos Cavern Beginning MQ": "area/dodongo != 'v'"
         }
     },
     {
@@ -54,9 +54,9 @@
     {
         "region_name": "Jabu Jabus Belly Gateway",
         "exits": {
-            "ZJabu Jabus Belly Entrance": "True",
-            "Jabu Jabus Belly Beginning": "True",
-            "Jabu Jabus Belly Beginning MQ": "True"
+            "Jabu Jabus Belly Entrance": "True",
+            "Jabu Jabus Belly Beginning": "area/jabujabu != 'mq'",
+            "Jabu Jabus Belly Beginning MQ": "area/jabujabu != 'v'"
         }
     },
     {
@@ -70,8 +70,8 @@
         "region_name": "Ice Cavern Gateway",
         "exits": {
             "Ice Cavern Entrance": "True",
-            "Ice Cavern Beginning": "True",
-            "Ice Cavern Beginning MQ": "True"
+            "Ice Cavern Beginning": "area/ice_cavern != 'mq'",
+            "Ice Cavern Beginning MQ": "area/ice_cavern != 'v'"
         }
     },
     {
@@ -85,8 +85,8 @@
         "region_name": "Gerudo Training Grounds Gateway",
         "exits": {
             "Gerudo Training Grounds Entrance": "True",
-            "Gerudo Training Grounds Lobby": "True",
-            "Gerudo Training Grounds Lobby MQ": "True"
+            "Gerudo Training Grounds Lobby": "area/training_grounds != 'mq'",
+            "Gerudo Training Grounds Lobby MQ": "area/training_grounds != 'v'"
         }
     },
     {
@@ -100,8 +100,8 @@
         "region_name": "Forest Temple Gateway",
         "exits": {
             "Forest Temple Entrance": "True",
-            "Forest Temple Lobby": "True",
-            "Forest Temple Lobby MQ": "True"
+            "Forest Temple Lobby": "area/temple_forest != 'mq'",
+            "Forest Temple Lobby MQ": "area/temple_forest != 'v'"
         }
     },
     {
@@ -115,8 +115,8 @@
         "region_name": "Fire Temple Gateway",
         "exits": {
             "Fire Temple Entrance": "True",
-            "Fire Temple Lower": "True",
-            "Fire Temple Lower MQ": "True"
+            "Fire Temple Lower": "area/temple_fire != 'mq'",
+            "Fire Temple Lower MQ": "area/temple_fire != 'v'"
         }
     },
     {
@@ -130,8 +130,8 @@
         "region_name": "Water Temple Gateway",
         "exits": {
             "Water Temple Entrance": "True",
-            "Water Temple Lobby": "True",
-            "Water Temple Lobby MQ": "True"
+            "Water Temple Lobby": "area/temple_water != 'mq'",
+            "Water Temple Lobby MQ": "area/temple_water != 'v'"
         }
     },
     {
@@ -145,8 +145,8 @@
         "region_name": "Shadow Temple Gateway",
         "exits": {
             "Shadow Temple Entrance": "True",
-            "Shadow Temple Entryway": "True",
-            "Shadow Temple Entryway MQ": "True"
+            "Shadow Temple Entryway": "area/temple_shadow != 'mq'",
+            "Shadow Temple Entryway MQ": "area/temple_shadow != 'v'"
         }
     },
     {
@@ -160,16 +160,16 @@
         "region_name": "Spirit Temple Gateway",
         "exits": {
             "Spirit Temple Entrance": "True",
-            "Spirit Temple Lobby": "True",
-            "Spirit Temple Lobby MQ": "True"
+            "Spirit Temple Lobby": "area/temple_spirit != 'mq'",
+            "Spirit Temple Lobby MQ": "area/temple_spirit != 'v'"
         }
     },
     {
         "region_name": "Ganons Castle Gateway",
         "exits": {
             "Ganons Castle Grounds": "True",
-            "Ganons Castle Lobby": "True",
-            "Ganons Castle Lobby MQ": "True"
+            "Ganons Castle Lobby": "area/castle_ganon != 'mq'",
+            "Ganons Castle Lobby MQ": "area/castle_ganon != 'v'"
         }
     },
 
