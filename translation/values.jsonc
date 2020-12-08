@@ -518,7 +518,7 @@
                     "type": "value",
                     "el": "item.wallet"
                 },
-                "value": 2
+                "value": 1
             }
         ]
     },
@@ -539,7 +539,7 @@
                     "type": "value",
                     "el": "item.wallet"
                 },
-                "value": 3
+                "value": 2
             }
         ]
     },
@@ -790,7 +790,7 @@
                     "type": "value",
                     "el": "item.wallet"
                 },
-                "value": 3
+                "value": 2
             }
         ]
     },

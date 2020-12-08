@@ -345,80 +345,75 @@
     },
 
     "mixin.blue_fire": {
-        "type": "or",
+        "type": "and",
         "el": [
             {
-                "type": "and",
+                "type": "value",
+                "el": "item.bottle"
+            },
+            {
+                "type": "or",
                 "el": [
                     {
-                        "type": "value",
-                        "el": "item.bottle"
+                        "type": "at",
+                        "node": "region.ganons_castle_water_trial_mq",
+                        "el": {
+                            "type": "true"
+                        }
                     },
                     {
-                        "type": "or",
+                        "type": "at",
+                        "node": "region.ganons_castle_water_trial",
+                        "el": {
+                            "type": "true"
+                        }
+                    },
+                    {
+                        "type": "at",
+                        "node": "region.gerudo_training_grounds_stalfos_room_mq",
+                        "el": {
+                            "type": "true"
+                        }
+                    },
+                    {
+                        "type": "at",
+                        "node": "region.ice_cavern_map_room_mq",
+                        "el": {
+                            "type": "true"
+                        }
+                    },
+                    {
+                        "type": "and",
                         "el": [
                             {
                                 "type": "at",
-                                "node": "region.ganons_castle_water_trial_mq",
+                                "node": "region.ice_cavern",
                                 "el": {
                                     "type": "true"
                                 }
                             },
                             {
-                                "type": "at",
-                                "node": "region.ganons_castle_water_trial",
-                                "el": {
-                                    "type": "true"
-                                }
-                            },
-                            {
-                                "type": "at",
-                                "node": "region.gerudo_training_grounds_stalfos_room_mq",
-                                "el": {
-                                    "type": "true"
-                                }
-                            },
-                            {
-                                "type": "at",
-                                "node": "region.ice_cavern_map_room_mq",
-                                "el": {
-                                    "type": "true"
-                                }
-                            },
-                            {
-                                "type": "and",
-                                "el": [
-                                    {
-                                        "type": "at",
-                                        "node": "region.ice_cavern",
-                                        "el": {
-                                            "type": "true"
-                                        }
-                                    },
-                                    {
-                                        "type": "mixin",
-                                        "el": "mixin.is_adult"
-                                    }
-                                ]
+                                "type": "mixin",
+                                "el": "mixin.is_adult"
                             }
                         ]
-                    }
-                ]
-            },
-            {
-                "type": "and",
-                "el": [
-                    {
-                        "type": "value",
-                        "el": "option.consider_buyable"
                     },
                     {
-                        "type": "min",
-                        "el": {
-                            "type": "value",
-                            "el": "item.wallet"
-                        },
-                        "value": 3
+                        "type": "and",
+                        "el": [
+                            {
+                                "type": "value",
+                                "el": "option.consider_buyable"
+                            },
+                            {
+                                "type": "min",
+                                "el": {
+                                    "type": "value",
+                                    "el": "item.wallet"
+                                },
+                                "value": 2
+                            }
+                        ]
                     }
                 ]
             }

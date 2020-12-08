@@ -485,8 +485,8 @@
         "type": "and",
         "el": [
             {
-                "type": "value",
-                "el": "item.tunic_fire"
+                "type": "mixin",
+                "el": "mixin.goron_tunic"
             },
             {
                 "type": "mixin",
@@ -498,8 +498,8 @@
         "type": "and",
         "el": [
             {
-                "type": "value",
-                "el": "item.tunic_water"
+                "type": "mixin",
+                "el": "mixin.zora_tunic"
             },
             {
                 "type": "mixin",

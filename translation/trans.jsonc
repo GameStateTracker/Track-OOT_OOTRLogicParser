@@ -24,8 +24,8 @@
     "Lone Fish": "location.fish_lone",
     "Wandering Bugs": "location.bugs_wandering",
     "Nut Crate": "location.crate_nut",
-    "Forest Temple Deku Baba Nuts": "location.sticks",
-    "Forest Temple Deku Baba Sticks": "location.nuts",
+    "Forest Temple Deku Baba Nuts": "location.nuts",
+    "Forest Temple Deku Baba Sticks": "location.sticks",
 
     // grottos
     "Dodongos Cavern Gossip Stone": "location.dodongo.g_gossip_dodongo",
