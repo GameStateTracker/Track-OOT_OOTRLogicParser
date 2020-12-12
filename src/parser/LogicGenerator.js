@@ -165,8 +165,13 @@ class LogicGenerator {
                     regC[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName), "adult");
                     regA[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName), "child");
                 } else {
-                    regC[name] = wrapNotEraFilter(postCalcutate(events.get(node), "child", regName), "adult");
-                    regA[name] = wrapNotEraFilter(postCalcutate(events.get(node), "adult", regName), "child");
+                    if(name === "event.showed_mido_sword_&_shield" || name === "event.deku_tree_clear") {
+                        regC[name] = postCalcutate(events.get(node), "child", regName);
+                        regA[name] = postCalcutate(events.get(node), "adult", regName);
+                    } else {
+                        regC[name] = wrapNotEraFilter(postCalcutate(events.get(node), "child", regName), "adult");
+                        regA[name] = wrapNotEraFilter(postCalcutate(events.get(node), "adult", regName), "child");
+                    }
                 }
             }
             res.edges[`${regName}[child]`] = regC;
