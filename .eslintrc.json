@@ -106,6 +106,7 @@
                 "switches": "never",
                 "classes": "always"
             }
-        ]
+        ],
+        "space-infix-ops": "error"
     }
 }

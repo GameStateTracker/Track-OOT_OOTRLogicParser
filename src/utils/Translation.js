@@ -99,19 +99,19 @@ function calculateLevDistance(src, tgt) {
         tempLength = srcLength; srcLength = tgtLength; tgtLength = tempLength;
     }
 
-    for (var c = 0; c < tgtLength+1; c++) {
+    for (var c = 0; c < tgtLength + 1; c++) {
         resultMatrix[0][c] = c;
     }
 
-    for (var i = 1; i < srcLength+1; i++) {
+    for (var i = 1; i < srcLength + 1; i++) {
         resultMatrix[i] = new Array();
         resultMatrix[i][0] = i;
-        for (var j = 1; j < tgtLength+1; j++) {
-            realCost = (src.charAt(i-1) == tgt.charAt(j-1))? 0: 1;
+        for (var j = 1; j < tgtLength + 1; j++) {
+            realCost = (src.charAt(i - 1) == tgt.charAt(j - 1)) ? 0 : 1;
             resultMatrix[i][j] = Math.min(
-                resultMatrix[i-1][j]+1,
-                resultMatrix[i][j-1]+1,
-                resultMatrix[i-1][j-1] + realCost // same logic as our previous example.
+                resultMatrix[i - 1][j] + 1,
+                resultMatrix[i][j - 1] + 1,
+                resultMatrix[i - 1][j - 1] + realCost // same logic as our previous example.
             );
         }
     }
