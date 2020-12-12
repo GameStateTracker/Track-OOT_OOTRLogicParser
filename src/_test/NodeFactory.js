@@ -14,7 +14,7 @@ class Node {
 
     append(node, condition) {
         if (node instanceof Node) {
-            let edges = EDGES.get(this);
+            const edges = EDGES.get(this);
             edges.set(node.getName(), new Edge(this, node, condition));
         } else {
             throw new TypeError("Expected type Node");
@@ -23,6 +23,7 @@ class Node {
 
     remove(node) {
         if (node instanceof Node) {
+            const edges = EDGES.get(this);
             edges.delete(node.getName());
         } else {
             throw new TypeError("Expected type Node");
@@ -30,19 +31,19 @@ class Node {
     }
 
     getTargets() {
-        let edges = EDGES.get(this);
+        const edges = EDGES.get(this);
         return edges.keys();
     }
 
     getEdge(name) {
-        let edges = EDGES.get(this);
+        const edges = EDGES.get(this);
         return edges.get(name);
     }
 
     toString() {
         return this.getName();
     }
-    
+
 }
 
 const SOURCE = new WeakMap();
@@ -89,22 +90,22 @@ export default class NodeFactory {
     }
 
     reset() {
-        let nodes = NODES.get(this);
+        const nodes = NODES.get(this);
         nodes.clear();
     }
 
     get(name) {
-        let nodes = NODES.get(this);
+        const nodes = NODES.get(this);
         if (nodes.has(name)) {
             return nodes.get(name);
         }
-        let node = new Node(name);
+        const node = new Node(name);
         nodes.set(name, node);
         return node;
     }
 
     getNames() {
-        let nodes = NODES.get(this);
+        const nodes = NODES.get(this);
         return nodes.keys();
     }
 

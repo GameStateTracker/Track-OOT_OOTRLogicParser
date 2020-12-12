@@ -8,7 +8,7 @@ export default class MathSub extends AbstractOperator {
 
     toJSON()  {
         return {
-            type: "add",
+            type: "sub",
             el: this.children.map(e => e.toJSON())
         };
     }

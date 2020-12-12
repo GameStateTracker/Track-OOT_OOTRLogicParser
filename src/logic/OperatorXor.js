@@ -15,7 +15,7 @@ export default class OperatorXor extends AbstractOperator {
     toJSON()  {
         return {
             type: "xor",
-            el: this.children.slice(0,2).map(e => e.toJSON())
+            el: this.children.slice(0, 2).map(e => e.toJSON())
         };
     }
 

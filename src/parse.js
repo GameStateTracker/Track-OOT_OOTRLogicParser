@@ -44,7 +44,7 @@ function parseLogic() {
     fs.readdirSync(inLogicDir).forEach(function(file) {
         const iname = path.join(inLogicDir, file);
         let mq = 0;
-        if(iname.endsWith("MQ.json")) mq = 1;
+        if (iname.endsWith("MQ.json")) mq = 1;
         LogicParser.parse(fs.readFileSync(iname).toString(), mq, write);
     });
     LogicParser.write(write);
@@ -54,7 +54,7 @@ function parseLogic() {
     const filtered = filterLogic(logic);
     const filteredData = JSON.stringify(filtered, null, 4);
     fs.writeFileSync(`${outputDir}/logic.json`, filteredData);
-};
+}
 
 // parser for glitched logic
 function parseGlitchedLogic() {
@@ -62,7 +62,7 @@ function parseGlitchedLogic() {
     fs.readdirSync(inGlitchedDir).forEach(function(file) {
         const iname = path.join(inGlitchedDir, file);
         let mq = 0;
-        if(iname.endsWith("MQ.json")) mq = 1;
+        if (iname.endsWith("MQ.json")) mq = 1;
         LogicParser.parse(fs.readFileSync(iname).toString(), mq, 2);
     });
     const logic = LogicGenerator.generate();
@@ -71,7 +71,7 @@ function parseGlitchedLogic() {
     const filtered = filterLogic(logic);
     const filteredData = JSON.stringify(filtered, null, 4);
     fs.writeFileSync(`${outputDir}/logic_glitched.json`, filteredData);
-};
+}
 
 // --------------------------
 

@@ -38,12 +38,12 @@ export function testLogic(logic) {
 }
 
 export function filterLogic(logic) {
-    const [success, failed] = testLogic(logic);
+    const [success] = testLogic(logic);
     const res = {edges: {}, logic: logic.logic};
-    for (let name in logic.edges) {
+    for (const name in logic.edges) {
         res.edges[name] = {};
-        let children = logic.edges[name];
-        for (let child in children) {
+        const children = logic.edges[name];
+        for (const child in children) {
             if (success.has(`${name} => ${child}`)) {
                 res.edges[name][child] = logic.edges[name][child];
             }

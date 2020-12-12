@@ -4,7 +4,7 @@ class JSONFile {
 
     read(filename, def) {
         if (fs.existsSync(filename)) {
-            let data = fs.readFileSync(filename).toString();
+            const data = fs.readFileSync(filename).toString();
             return JSON.parse(data);
         }
         return def;

@@ -14,7 +14,7 @@ const unpredict = JSONFile.read(unpredict_path, []);
 const values = JSONCFile.read(path.join(__dirname, "/translation/values.jsonc"), {});
 const states = JSONCFile.read(path.join(__dirname, "/translation/states.jsonc"), {});
 
-let rules = new Map();
+const rules = new Map();
 
 predict_values = predict_values.filter(el => !(new Set(Object.values(translation))).has(el));
 
@@ -34,7 +34,7 @@ class Translation {
     getValueName(value) {
         value = value.replace(/ /g, "_").replace(/^'|'$/g, "");
         if (values[value] != null) {
-            let res = values[value];
+            const res = values[value];
             return res;
         }
     }
@@ -42,7 +42,7 @@ class Translation {
     getStateConfig(value) {
         value = value.replace(/ /g, "_").replace(/^'|'$/g, "");
         if (states[value] != null) {
-            let res = states[value];
+            const res = states[value];
             return res;
         }
     }
@@ -50,7 +50,7 @@ class Translation {
 }
 
 function predictTranslation(value, expects) {
-    let results = {};
+    const results = {};
     if (expects == null) {
         rules.forEach((v, k) => {
             if (value.match(k)) {
@@ -58,7 +58,7 @@ function predictTranslation(value, expects) {
             }
         });
     }
-    for (let i of predict_values) {
+    for (const i of predict_values) {
         if (expects != null && !i.match(expects)) {
             continue;
         }
@@ -66,7 +66,7 @@ function predictTranslation(value, expects) {
     }
     let cost = Number.MAX_SAFE_INTEGER;
     let res = value;
-    for (let i in results) {
+    for (const i in results) {
         if (cost > results[i]) {
             cost = results[i];
             res = i;
@@ -84,25 +84,25 @@ function predictTranslation(value, expects) {
 
 function calculateLevDistance(src, tgt) {
     var realCost;
-    
+
     var srcLength = src.length,
         tgtLength = tgt.length,
         tempString, tempLength; // for swapping
-    
+
     var resultMatrix = new Array();
-        resultMatrix[0] = new Array(); // Multi dimensional
-    
+    resultMatrix[0] = new Array(); // Multi dimensional
+
     // To limit the space in minimum of source and target,
     // we make sure that srcLength is greater than tgtLength
     if (srcLength < tgtLength) {
         tempString = src; src = tgt; tgt = tempString;
         tempLength = srcLength; srcLength = tgtLength; tgtLength = tempLength;
     }
-    
+
     for (var c = 0; c < tgtLength+1; c++) {
         resultMatrix[0][c] = c;
     }
-    
+
     for (var i = 1; i < srcLength+1; i++) {
         resultMatrix[i] = new Array();
         resultMatrix[i][0] = i;
@@ -112,10 +112,10 @@ function calculateLevDistance(src, tgt) {
                 resultMatrix[i-1][j]+1,
                 resultMatrix[i][j-1]+1,
                 resultMatrix[i-1][j-1] + realCost // same logic as our previous example.
-            ); 
+            );
         }
     }
-    
+
     return resultMatrix[srcLength][tgtLength];
 }
 

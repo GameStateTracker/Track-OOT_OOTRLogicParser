@@ -57,7 +57,6 @@ export default class LogicGraph {
             const fn = Compiler.compile(value);
             mixins.set(name, fn);
         }
-        sortLogic(logic);
     }
 
     getEdges() {
@@ -112,31 +111,31 @@ export default class LogicGraph {
         const mem_i = MEM_I.get(this);
         const start = nodeFactory.get(startNode);
         if (start != null) {
-            function valueGetter(key) {
+            const valueGetter = key => {
                 if (allTargets.has(key)) {
                     return +reachableNodes.has(key);
                 } else if (mem_i.has(key)) {
                     return mem_i.get(key);
                 }
-            }
-            function execute(name) {
+            };
+            const execute = name => {
                 if (mixins.has(name)) {
                     const fn = mixins.get(name);
                     const res = fn(valueGetter, execute);
                     return res;
                 }
                 return 0;
-            }
+            };
             const queue = [];
             for (const ch of start.getTargets()) {
                 const edge = start.getEdge(ch);
                 queue.push(edge);
             }
             let changed = true;
-            while(!!queue.length && !!changed) {
+            while (!!queue.length && !!changed) {
                 changed = false;
                 let counts = queue.length;
-                while (!!counts--) {
+                while (counts--) {
                     const edge = queue.shift();
                     const condition = edge.getCondition();
                     const cRes = condition(valueGetter, execute);
@@ -145,7 +144,7 @@ export default class LogicGraph {
                         changed = true;
                         const n = edge.getTarget().getName();
                         const node = nodeFactory.get(n);
-                        if(!reachableNodes.has(n)) {
+                        if (!reachableNodes.has(n)) {
                             reachableNodes.add(n);
                             const targets = node.getTargets();
                             for (const ch of targets) {
@@ -170,7 +169,7 @@ export default class LogicGraph {
         const mixins = MIXINS.get(this);
         const mem_i = MEM_I.get(this);
         const queue = this.getEdgeInstances();
-        
+
         function valueGetter(key) {
             if (allTargets.has(key)) {
                 return +reachableNodes.has(key);
@@ -187,10 +186,10 @@ export default class LogicGraph {
             return 0;
         }
         let changed = true;
-        while(!!queue.length && !!changed) {
+        while (!!queue.length && !!changed) {
             changed = false;
             let counts = queue.length;
-            while (!!counts--) {
+            while (counts--) {
                 const edge = queue.shift();
                 const condition = edge.getCondition();
                 const cRes = condition(valueGetter, execute);
@@ -198,7 +197,7 @@ export default class LogicGraph {
                     traversible.add(edge.toString());
                     changed = true;
                     const n = edge.getTarget().getName();
-                    if(!reachableNodes.has(n)) {
+                    if (!reachableNodes.has(n)) {
                         reachableNodes.add(n);
                     }
                 } else {
@@ -206,7 +205,7 @@ export default class LogicGraph {
                 }
             }
         }
-            
+
         return traversible;
     }
 

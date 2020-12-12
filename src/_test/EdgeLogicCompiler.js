@@ -38,7 +38,7 @@ const TRANSPILERS = {
     "pow":      (logic) => mathTwoElementOperation(logic.el, "**"),
 
     /* special */
-    "at":       (logic) => !!logic.el ? `((val("${escape(logic.node)}")||0)&&${buildLogic(logic.el)})` : `(val("${escape(logic.node)}")||0)`,
+    "at":       (logic) => logic.el ? `((val("${escape(logic.node)}")||0)&&${buildLogic(logic.el)})` : `(val("${escape(logic.node)}")||0)`,
     "mixin":    (logic) => `execute("${escape(logic.el)}")`
 };
 
@@ -52,7 +52,7 @@ function escape(str, def = "") {
         }
         return def;
     }
-    let res = str.replace(/[\\"]/g, "\\$&");
+    const res = str.replace(/[\\"]/g, "\\$&");
     dependencies.add(res);
     return res;
 }
@@ -118,8 +118,8 @@ class Compiler {
 
     compile(logic) {
         dependencies = new Set();
-        let buf = buildLogic(logic);
-        let fn = new Function("val", "execute", `return ${buf}`);
+        const buf = buildLogic(logic);
+        const fn = new Function("val", "execute", `return ${buf}`);
         Object.defineProperty(fn, "requires", {value: dependencies});
         return fn;
     }

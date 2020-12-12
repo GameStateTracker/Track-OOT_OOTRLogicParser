@@ -9,41 +9,41 @@ const inExitRenameFile  = path.join(__dirname, "/gateways/exitRename.json");
 const inExitSuccessFile  = path.join(__dirname, "/gateways/rename_success.json");
 const renameData = JSON.parse(fs.readFileSync(inExitRenameFile, 'utf8'));
 const rename_success = JSON.parse(fs.readFileSync(inExitSuccessFile, 'utf8'));
-let success = {};
+const success = {};
 const exits = ["Kakariko Village", "KF Outside Deku Tree", "Death Mountain", "Zoras Fountain", "ZF Ice Ledge", "Gerudo Fortress", "SFM Forest Temple Entrance Ledge", "DMC Fire Temple Entrance", "Lake Hylia", "Graveyard Warp Pad Region", "Desert Colossus", "Castle Grounds", "Ganons Castle Grounds"]
 
 class LogicParser {
 
     parse(input, mq, write) {
-        let output = RandONC.parse(input);
+        const output = RandONC.parse(input);
         output.forEach((value) => {
-            if(mq === 1) value.region_name = value.region_name + " MQ"
-            for (let i in value.locations) {
-                let rule = value.locations[i];
+            if (mq === 1) value.region_name = value.region_name + " MQ"
+            for (const i in value.locations) {
+                const rule = value.locations[i];
                 LogicGenerator.addLocation(value.region_name, i, transpile(rule));
             }
             for (let i in value.exits) {
                 const exit = i;
-                let rule = value.exits[i];
-                if(mq === 1) {
-                    if(!exits.includes(i)) i = i + " MQ"
+                const rule = value.exits[i];
+                if (mq === 1) {
+                    if (!exits.includes(i)) i = i + " MQ"
                 }
                 let regionName = value.region_name
-                if(regionName.endsWith(" MQ")) regionName = regionName.replace(" MQ", "");
-                if(write === 1) {
-                    if (!success.hasOwnProperty(regionName)) success[regionName] = {};
+                if (regionName.endsWith(" MQ")) regionName = regionName.replace(" MQ", "");
+                if (write === 1) {
+                    if (success[regionName] == null) success[regionName] = {};
                     success[regionName][exit] = false;
                 }
-                if(renameData.hasOwnProperty(regionName)) {
+                if (renameData[regionName] != null) {
                     //console.log(regionName + ": " + i + "::: is no longer a valid region exit")
-                    if(write === 1) {
-                        if (!success.hasOwnProperty(regionName)) success[regionName] = {};
+                    if (write === 1) {
+                        if (success[regionName] == null) success[regionName] = {};
                         success[regionName][exit] = false;
                     }
-                    if(renameData[regionName][i] !== undefined) {
+                    if (renameData[regionName][i] !== undefined) {
                         i = renameData[regionName][i];
-                        if(write === 1) {
-                            if (!success.hasOwnProperty(regionName)) success[regionName] = {};
+                        if (write === 1) {
+                            if (success[regionName] == null) success[regionName] = {};
                             success[regionName][exit] = true;
                         }
                     } /*else if(rename_success[regionName][i] === undefined && !i.endsWith("MQ") && write === 0) {
@@ -52,39 +52,40 @@ class LogicParser {
                 }
                 LogicGenerator.addExit(value.region_name, i, transpile(rule));
             }
-            for (let i in value.events) {
-                let rule = value.events[i];
+            for (const i in value.events) {
+                const rule = value.events[i];
                 LogicGenerator.addEvent(value.region_name, i, transpile(rule));
             }
         })
     }
-    write(write){
-        if(write === 1) {
-            let data = JSON.stringify(success, null, 4);
-            let dataP = JSON.parse(data)
-            for(const run in dataP) {
-                if(!rename_success.hasOwnProperty(run)) {
+
+    write(write) {
+        if (write === 1) {
+            const data = JSON.stringify(success, null, 4);
+            const dataP = JSON.parse(data)
+            for (const run in dataP) {
+                if (rename_success[run] == null) {
                     console.log(run + "::: is a new region")
-                    for(const through in dataP[run]) {
+                    for (const through in dataP[run]) {
                         console.log(through + "::: is a new exit")
                     }
                 } else {
-                    for(const through in dataP[run]) {
-                        if(!rename_success[run].hasOwnProperty(through)) {
+                    for (const through in dataP[run]) {
+                        if (rename_success[run][through] == null) {
                             console.log(run + ": " + through + "::: is a new exit")
                         }
                     }
                 }
             }
-            for(const run in rename_success) {
-                if(!dataP.hasOwnProperty(run)) {
+            for (const run in rename_success) {
+                if (dataP[run] == null) {
                     console.log(run + "::: is a removed region")
-                    for(const through in dataP[run]) {
+                    for (const through in dataP[run]) {
                         console.log(through + "::: is a removed exit")
                     }
                 } else {
-                    for(const through in dataP[run]) {
-                        if(!dataP[run].hasOwnProperty(through)) {
+                    for (const through in dataP[run]) {
+                        if (dataP[run][through] == null) {
                             console.log(run + ": " + through + "::: is a removed exit")
                         }
                     }
@@ -93,6 +94,7 @@ class LogicParser {
             fs.writeFileSync(`${__dirname}/gateways/rename_success.json`, data);
         }
     }
+
 }
 
 function transpile(input) {

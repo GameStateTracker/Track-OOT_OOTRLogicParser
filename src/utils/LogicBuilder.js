@@ -2,16 +2,16 @@ import LiteralFalse from "../logic/LiteralFalse.js";
 import LiteralTrue from "../logic/LiteralTrue.js";
 import LiteralValue from "../logic/LiteralValue.js";
 import LiteralState from "../logic/LiteralState.js";
-import LiteralPointer from "../logic/LiteralPointer.js";
+// import LiteralPointer from "../logic/LiteralPointer.js";
 import OperatorAnd from "../logic/OperatorAnd.js";
-import OperatorNand from "../logic/OperatorNand.js";
+// import OperatorNand from "../logic/OperatorNand.js";
 import OperatorOr from "../logic/OperatorOr.js";
-import OperatorNor from "../logic/OperatorNor.js";
-import OperatorXor from "../logic/OperatorXor.js";
-import OperatorXnor from "../logic/OperatorXnor.js";
+// import OperatorNor from "../logic/OperatorNor.js";
+// import OperatorXor from "../logic/OperatorXor.js";
+// import OperatorXnor from "../logic/OperatorXnor.js";
 import OperatorNot from "../logic/OperatorNot.js";
 import OperatorMin from "../logic/OperatorMin.js";
-import OperatorMax from "../logic/OperatorMax.js";
+// import OperatorMax from "../logic/OperatorMax.js";
 import ReferrerAt from "../logic/ReferrerAt.js";
 import ReferrerHere from "../logic/ReferrerHere.js";
 import LogicFunction from "../logic/LogicFunction.js";
@@ -26,25 +26,25 @@ class LogicBuilder {
 
     resolveToken(current, token) {
         if (current.indexOf(" and ") >= 0) {
-            let children = current.split(" and ");
-            let el = new OperatorAnd();
-            for (let ch of children) {
+            const children = current.split(" and ");
+            const el = new OperatorAnd();
+            for (const ch of children) {
                 el.append(this.resolveToken(ch, token));
             }
             return el;
         }
         if (current.indexOf(" or ") >= 0) {
-            let children = current.split(" or ");
-            let el = new OperatorOr();
-            for (let ch of children) {
+            const children = current.split(" or ");
+            const el = new OperatorOr();
+            for (const ch of children) {
                 el.append(this.resolveToken(ch, token));
             }
             return el;
         }
-		if (current.indexOf("not ") >= 0) {
-            let [ref, value] = current.split("not ");
+        if (current.indexOf("not ") >= 0) {
+            let [, value] = current.split("not ");
             value = this.resolveToken(value, token);
-            let not = new OperatorNot();
+            const not = new OperatorNot();
             not.append(value);
             return not;
         }
@@ -52,52 +52,52 @@ class LogicBuilder {
             let [ref, value] = current.split(" == ");
             ref = token[parseInt(ref.slice(2, -2))];
             value = token[parseInt(value.slice(2, -2))];
-            let el = new LiteralState(ref, value);
+            const el = new LiteralState(ref, value);
             return el;
         }
         if (current.indexOf(" != ") >= 0) {
             let [ref, value] = current.split(" != ");
             ref = token[parseInt(ref.slice(2, -2))];
             value = token[parseInt(value.slice(2, -2))];
-            let not = new OperatorNot();
-            let el = new LiteralState(ref, value);
+            const not = new OperatorNot();
+            const el = new LiteralState(ref, value);
             not.append(el);
             return not;
         }
         if (current.startsWith("min(")) {
-            let [ch, value] = current.slice(4, -1).split(", ");
-            let el = new OperatorMin(parseInt(value) || 0);
+            const [ch, value] = current.slice(4, -1).split(", ");
+            const el = new OperatorMin(parseInt(value) || 0);
             el.append(this.resolveToken(ch, token));
             return el;
         }
         if (current.startsWith("at(")) {
-            let [value, ch] = current.slice(3, -1).split(", ");
-            value = token[parseInt(value.slice(2, -2))].replace(/^'(.*)'$/, "$1");
-            let el = new ReferrerAt(value);
+            const [value, ch] = current.slice(3, -1).split(", ");
+            const newValue = token[parseInt(value.slice(2, -2))].replace(/^'(.*)'$/, "$1");
+            const el = new ReferrerAt(newValue);
             el.append(this.resolveToken(ch, token));
             return el;
         }
         if (current.startsWith("here(")) {
-            let ch = current.slice(5, -1);
-            let el = new ReferrerHere();
+            const ch = current.slice(5, -1);
+            const el = new ReferrerHere();
             el.append(this.resolveToken(ch, token));
             return el;
         }
         if (current.indexOf("(") >= 0) {
-            let name = current.slice(0, current.indexOf("("));
-            let params = current.slice(current.indexOf("(") + 1, -1).split(", ");
-            let el = new LogicFunction(name);
-            for (let ch of params) {
+            const name = current.slice(0, current.indexOf("("));
+            const params = current.slice(current.indexOf("(") + 1, -1).split(", ");
+            const el = new LogicFunction(name);
+            for (const ch of params) {
                 el.append(this.resolveToken(ch, token));
             }
             return el;
         }
         if (current.startsWith("{{") && current.endsWith("}}")) {
-            let next = token[parseInt(current.slice(2, -2))];
+            const next = token[parseInt(current.slice(2, -2))];
             return this.resolveToken(next, token);
         }
-		if (current.startsWith(" {{") && current.endsWith("}}")) {
-            let next = token[parseInt(current.slice(3, -2))];
+        if (current.startsWith(" {{") && current.endsWith("}}")) {
+            const next = token[parseInt(current.slice(3, -2))];
             return this.resolveToken(next, token);
         }
         if (current == 'False') {

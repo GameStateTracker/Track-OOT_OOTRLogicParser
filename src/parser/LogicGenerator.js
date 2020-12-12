@@ -1,10 +1,15 @@
 
 import path from "path";
-import Translation from "../utils/Translation.js";
 import JSONCFile from "../utils/JSONCFile.js";
-
-const INDEX_DELIMITER = "--#";
-const INDEX_DELIMITER_REGEX = new RegExp(`${INDEX_DELIMITER}[0-9]*$`);
+import postCalculateMethod from "./postCaclulate/postCalculate.js";
+import {
+    INDEX_DELIMITER,
+    translateRegionName,
+    translateLocationName,
+    translateEventName,
+    translateMixinName,
+    translateFunctionName
+} from "../utils/TranslatorFunctions.js";
 
 const __dirname = path.resolve();
 
@@ -13,11 +18,11 @@ const mixin_overrides = JSONCFile.read(path.join(__dirname, "/translation/mixins
 const event_overrides = JSONCFile.read(path.join(__dirname, "/translation/events.jsonc"), {});
 const logic_overrides = JSONCFile.read(path.join(__dirname, "/translation/overrides.jsonc"), {});
 
-let mixins = new Map();
-let functions = new Map();
-let exits = new Map();
-let locations = new Map();
-let events = new Map();
+const mixins = new Map();
+const functions = new Map();
+const exits = new Map();
+const locations = new Map();
+const events = new Map();
 let structure = {};
 
 const unstate = {};
@@ -63,7 +68,7 @@ class LogicGenerator {
         }
         let idx = 0;
         let name = `${key}${INDEX_DELIMITER}${idx}`
-		while (exits.has(name)) {
+        while (exits.has(name)) {
             idx++;
             name = `${key}${INDEX_DELIMITER}${idx}`;
         }
@@ -81,7 +86,7 @@ class LogicGenerator {
         }
         let idx = 0;
         let name = `${key}${INDEX_DELIMITER}${idx}`
-		while (locations.has(name)) {
+        while (locations.has(name)) {
             idx++;
             name = `${key}${INDEX_DELIMITER}${idx}`;
         }
@@ -99,7 +104,7 @@ class LogicGenerator {
         }
         let idx = 0;
         let name = `${key}${INDEX_DELIMITER}${idx}`
-		while (events.has(name)) {
+        while (events.has(name)) {
             name = `${key}${INDEX_DELIMITER}${++idx}`;
         }
         //console.log(name);
@@ -107,75 +112,74 @@ class LogicGenerator {
         events.set(name, value);
     }
 
-    generate()  {
-
+    generate() {
         console.log("");
         console.log("-------------------------------------------");
         console.log("generate logic output");
         console.log("");
 
-        for (let key in function_overrides) {
+        for (const key in function_overrides) {
             if (key == "") continue;
             functions.set(key, function_overrides[key]);
             //console.log(`added function override: ${key}`);
         }
-        for (let key in mixin_overrides) {
+        for (const key in mixin_overrides) {
             if (key == "") continue;
             mixins.set(translateMixinName(key), mixin_overrides[key]);
             //console.log(`added mixin override: ${key}`);
         }
-        for (let key in event_overrides) {
+        for (const key in event_overrides) {
             if (key == "") continue;
             events.set(key, event_overrides[key]);
             //console.log(`added event override: ${key}`);
         }
 
-        let res = {
+        const res = {
             edges: {},
             logic: {}
         };
-        for (let region in structure) {
-            let data = structure[region];
-            let regC = {};
-            let regA = {};
-            let regName = translateRegionName(region);
-            for (let node of data.exits) {
-                let name = translateRegionName(node);
+        for (const region in structure) {
+            const data = structure[region];
+            const regC = {};
+            const regA = {};
+            const regName = translateRegionName(region);
+            for (const node of data.exits) {
+                const name = translateRegionName(node);
                 if (logic_overrides[regName] != null && logic_overrides[regName][name] != null) {
-                    regC[`${name}[child]`] = postCalcutate(logic_overrides[regName][name], "child", regName, 0);
-                    regA[`${name}[adult]`] = postCalcutate(logic_overrides[regName][name], "adult", regName, 0);
+                    regC[`${name}[child]`] = postCalcutate(logic_overrides[regName][name], "child", regName);
+                    regA[`${name}[adult]`] = postCalcutate(logic_overrides[regName][name], "adult", regName);
                 } else {
-                    if(name === 'region.deku_tree_boss_room' || name === 'region.deku_tree_basement_water_room_back_mq' || name === 'region.deku_tree_basement_water_room_front_mq') {
-                        regC[`${name}[child]`] = postCalcutate(exits.get(node), "child", regName, 1);
-                        regA[`${name}[adult]`] = postCalcutate(exits.get(node), "adult", regName, 0);
+                    if (name === 'region.deku_tree_boss_room' || name === 'region.deku_tree_basement_water_room_back_mq' || name === 'region.deku_tree_basement_water_room_front_mq') {
+                        regC[`${name}[child]`] = postCalcutate(exits.get(node), "child", regName, true);
+                        regA[`${name}[adult]`] = postCalcutate(exits.get(node), "adult", regName);
                     } else {
-                        regC[`${name}[child]`] = postCalcutate(exits.get(node), "child", regName, 0);
-                        regA[`${name}[adult]`] = postCalcutate(exits.get(node), "adult", regName, 0);
+                        regC[`${name}[child]`] = postCalcutate(exits.get(node), "child", regName);
+                        regA[`${name}[adult]`] = postCalcutate(exits.get(node), "adult", regName);
                     }
                 }
             }
-            for (let node of data.locations) {
-                let name = translateLocationName(node);
+            for (const node of data.locations) {
+                const name = translateLocationName(node);
                 if (logic_overrides[regName] != null && logic_overrides[regName][name] != null) {
-                    regC[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName, 0), "adult");
-                    regA[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName, 0), "child");
+                    regC[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName), "adult");
+                    regA[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName), "child");
                 } else {
-                    regC[name] = wrapNotEraFilter(postCalcutate(locations.get(node), "child", regName, 0), "adult");
-                    regA[name] = wrapNotEraFilter(postCalcutate(locations.get(node), "adult", regName, 0), "child");
+                    regC[name] = wrapNotEraFilter(postCalcutate(locations.get(node), "child", regName), "adult");
+                    regA[name] = wrapNotEraFilter(postCalcutate(locations.get(node), "adult", regName), "child");
                 }
             }
-            for (let node of data.events) {
-                let name = translateEventName(node);
+            for (const node of data.events) {
+                const name = translateEventName(node);
                 if (logic_overrides[regName] != null && logic_overrides[regName][name] != null) {
-                    regC[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName, 0), "adult");
-                    regA[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName, 0), "child");
+                    regC[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName), "adult");
+                    regA[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName), "child");
                 } else {
-                    if(name === "event.showed_mido_sword_&_shield" || name === "event.deku_tree_clear") {
-                        regC[name] = postCalcutate(events.get(node), "child", regName, 1);
-                        regA[name] = postCalcutate(events.get(node), "adult", regName, 0);
+                    if (name === "event.showed_mido_sword_&_shield" || name === "event.deku_tree_clear") {
+                        regC[name] = postCalcutate(events.get(node), "child", regName, true);
+                        regA[name] = postCalcutate(events.get(node), "adult", regName);
                     } else {
-                        regC[name] = wrapNotEraFilter(postCalcutate(events.get(node), "child", regName, 0), "adult");
-                        regA[name] = wrapNotEraFilter(postCalcutate(events.get(node), "adult", regName, 0), "child");
+                        regC[name] = wrapNotEraFilter(postCalcutate(events.get(node), "child", regName), "adult");
+                        regA[name] = wrapNotEraFilter(postCalcutate(events.get(node), "adult", regName), "child");
                     }
                 }
             }
@@ -183,12 +187,12 @@ class LogicGenerator {
             res.edges[`${regName}[adult]`] = regA;
         }
         // mixins
-        for (var [key, value] of mixins) {
+        for (const [key, value] of mixins) {
             res.logic[`${key}[child]`] = postCalcutate(value, "child");
             res.logic[`${key}[adult]`] = postCalcutate(value, "adult");
         }
         // functions
-        for (var [key, value] of functions) {
+        for (const [key, value] of functions) {
             res.logic[`${key}[child]`] = postCalcutate(value, "child");
             res.logic[`${key}[adult]`] = postCalcutate(value, "adult");
         }
@@ -214,7 +218,7 @@ class LogicGenerator {
         };
         // END overrides
 
-        
+
         console.log("");
         console.log("-------------------------------------------");
         console.log("states not converted");
@@ -226,278 +230,12 @@ class LogicGenerator {
 
 }
 
-function postCalcutate(input, age = "", region = "", basic = 0)  {
-    let els = [];
-    switch(input.type) {
-        case "mixin":
-            if (age != "") {
-                return {
-                    type: "mixin",
-                    el: `${input.el}[${age}]`
-                };
-            }
-            return input;
-        case "value":
-            if (input.el.indexOf(".") >= 0) {
-                if (input.el.startsWith("mixin.") || input.el.startsWith("function.") && age != "") {
-                    return {
-                        type: "mixin",
-                        el: `${input.el}[${age}]`
-                    };
-                }
-                /*if (input.el.startsWith("event.") || input.el.startsWith("logic.location.")) {
-                    return {
-                        type: "at",
-                        node: input.el,
-                        el: {
-                            type: "true"
-                        }
-                    };
-                }*/
-                return input;
-            }
-            let res = Translation.getValueName(input.el);
-            if (res != null) {
-                return postCalcutate(res, age, region, basic);
-            }
-            let mixname = translateMixinName(input.el);
-            if (mixins.has(mixname)) {
-                if (age != "") {
-                    return {
-                        type: "mixin",
-                        el: `${mixname}[${age}]`
-                    };
-                }
-                return {
-                    type: "mixin",
-                    el: mixname
-                };
-            }
-            if (input.el.indexOf(".") < 0) {
-                console.log(`no translation: ${input.el}`);
-            }
-            return input;
-        case "state":
-            if (input.el == "age" && age != "") {
-                if (input.value == age) {
-                    return {
-                        type: "true"
-                    };
-                } else {
-                    return {
-                        type: "false"
-                    };
-                }
-            }
-            let stapar = input.value.replace(/^'|'$/g, "");
-            let sta = Translation.getStateConfig(input.el);
-            if (sta == null) {
-                unstate[input.el] = unstate[input.el] || {
-                    name: "",
-                    values: {}
-                };
-                unstate[input.el].values[stapar] = "";
-                return {
-                    type: "state",
-                    el: input.el,
-                    value: stapar
-                };
-            } else {
-                return {
-                    type: "state",
-                    el: sta.name,
-                    value: sta.values[stapar]
-                };
-            }
-        case "function":
-            let fnName = translateFunctionName(input.value);
-            let param = input.el[0];
-            if (param != null) {
-                param = param.el
-                let paramBuff = Translation.getValueName(param);
-                if (paramBuff != null) {
-                    param = paramBuff.el;
-                } 
-                fnName = `${fnName}(${param})`;
-            }
-            if (age != "") {
-                return {
-                    type: "mixin",
-                    el: `${fnName}[${age}]`
-                };
-            }
-            return {
-                type: "mixin",
-                el: fnName
-            };
-        case "at":
-            return createOnRegionLogic(
-                `${translateRegionName(input.node)}[child]`,
-                postCalcutate(input.el, "child", region, basic),
-                `${translateRegionName(input.node)}[adult]`,
-                postCalcutate(input.el, "adult", region, basic),
-                basic
-            );
-        case "here":
-            return createOnRegionLogic(
-                `${translateRegionName(region)}[child]`,
-                postCalcutate(input.el, "child", region, basic),
-                `${translateRegionName(region)}[adult]`,
-                postCalcutate(input.el, "adult", region, basic),
-                basic
-            );
-        case "and":
-        case "nand":
-        case "or":
-        case "nor":
-        case "xor":
-        case "xnor":
-        case "add":
-        case "sub":
-        case "mul":
-        case "div":
-        case "mod":
-        case "pow":
-            for (let el of input.el) {
-                els.push(postCalcutate(el, age, region, basic));
-            }
-            return {
-                type: input.type,
-                el: els
-            };
-        case "min":
-        case "max":
-                let buffer = parseInt(input.value);
-                if (isNaN(buffer)) {
-                    return {
-                        type: input.type == "min" ? "lte" : "gte",
-                        el: postCalcutate(input.el, age, region, basic),
-                        value: input.value.replace(/^'|'$/g, "")
-                    };
-                }
-                return {
-                    type: input.type,
-                    el: postCalcutate(input.el, age, region, basic),
-                    value: buffer
-                };
-        case "not":
-            return {
-                type: "not",
-                el: postCalcutate(input.el, age, region, basic)
-            };
-        default:
-            return input;
-    }
-}
-
-function translateRegionName(input) {
-    if (input.startsWith("region.")) return input;
-    return `region.${input.toLowerCase().replace(/ /g, "_").replace(INDEX_DELIMITER_REGEX, "")}`;
-}
-
-function translateLocationName(input) {
-    if (input.startsWith("logic.")) return input;
-    return `logic.${Translation.translateName(input.replace(INDEX_DELIMITER_REGEX, ""))}`;
-}
-
-function translateEventName(input) {
-    if(input.startsWith("event.")) return input;
-    return `event.${input.toLowerCase().replace(/ /g, "_").replace(INDEX_DELIMITER_REGEX, "")}`;
-}
-
-function translateMixinName(input) {
-    if (input.startsWith("mixin.")) return input;
-    return `mixin.${input.toLowerCase().replace(/ /g, "_")}`;
-}
-
-function translateFunctionName(input) {
-    if (input.startsWith("function.")) return input;
-    return `function.${input.toLowerCase().replace(/ /g, "_")}`;
-}
-
-function createOnRegionLogic(nodeC, elC, nodeA, elA, basic) {
-    if(basic === 1)
-        return {
-            "type": "or",
-            "el": [
-                {
-                    "type": "at",
-                    "node": nodeC,
-                    "el": elC
-                },
-                {
-                    "type": "at",
-                    "node": nodeA,
-                    "el": elA
-                }
-            ]
-        }
-    else
-        return {
-        "type": "or",
-        "el": [
-            {
-                "type": "and",
-                "el": [
-                    {
-                        "type": "not",
-                        "el": {
-                            "type": "and",
-                            "el": [
-                                {
-                                    "type": "state",
-                                    "el": "filter.era_apply",
-                                    "value": "force",
-                                    "category": "filter"
-                                },
-                                {
-                                    "type": "state",
-                                    "el": "filter.era",
-                                    "value": "adult",
-                                    "category": "filter"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "type": "at",
-                        "node": nodeC,
-                        "el": elC
-                    }
-                ]
-            },
-            {
-                "type": "and",
-                "el": [
-                    {
-                        "type": "not",
-                        "el": {
-                            "type": "and",
-                            "el": [
-                                {
-                                    "type": "state",
-                                    "el": "filter.era_apply",
-                                    "value": "force",
-                                    "category": "filter"
-                                },
-                                {
-                                    "type": "state",
-                                    "el": "filter.era",
-                                    "value": "child",
-                                    "category": "filter"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "type": "at",
-                        "node": nodeA,
-                        "el": elA
-                    }
-                ]
-            }
-        ]
-    }
+function postCalcutate(input, age = "", region = "", basic = false) {
+    const scope = {
+        mixins,
+        unstate
+    };
+    return postCalculateMethod(scope, input, age, region, basic);
 }
 
 export default new LogicGenerator();

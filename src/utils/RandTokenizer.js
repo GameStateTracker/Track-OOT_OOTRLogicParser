@@ -21,32 +21,35 @@ class RandTokenizer {
 }
 
 function generate(term, token) {
-    let buf = null;
-    if(!!(buf = FUNCTIONS.exec(term))) {
+    let buf = FUNCTIONS.exec(term);
+    if (buf != null) {
         // parse function calls
-        let cnt = ++count;
+        const cnt = ++count;
         token[cnt] = `${buf[2]}(${params(buf[3].trim(), token)})`;
         return generate(`${buf[1]}{{${cnt}}}${buf[4]}`, token);
-    } else if(!!(buf = AMOUNT.exec(term))) {
+    }
+    buf = AMOUNT.exec(term);
+    if (buf != null) {
         // parse amount syntax (why ever you would write it that way...)
-        let cnt0 = ++count;
-        let cnt1 = ++count;
+        const cnt0 = ++count;
+        const cnt1 = ++count;
         token[cnt1] = buf[2];
         token[cnt0] = `min({{${cnt1}}}, ${buf[3]})`;
         return generate(`${buf[1]}{{${cnt0}}}${buf[4]}`, token);
-    } else if(!!(buf = BRACKETS.exec(term))) {
+    }
+    buf = BRACKETS.exec(term);
+    if (buf != null) {
         // parse normal brackets
-        let cnt = ++count;
+        const cnt = ++count;
         token[cnt] = convert(buf[2].trim(), token);
         return generate(`${buf[1]}{{${cnt}}}${buf[3]}`, token);
-    } else {
-        return convert(term, token);
     }
+    return convert(term, token);
 }
 
 function params(term, token) {
     return term.split(",").map(el => {
-        let cnt = ++count;
+        const cnt = ++count;
         token[cnt] = generate(el.trim(), token);
         return `{{${cnt}}}`;
     }).join(", ");
@@ -56,7 +59,7 @@ function convert(term, token) {
     if (term.indexOf(" or ") >= 0) {
         return term.split(" or ").map(t => {
             if (!t.match(LITERAL)) {
-                let cnt = ++count;
+                const cnt = ++count;
                 token[cnt] = convert(t, token);
                 return `{{${cnt}}}`;
             }
@@ -66,35 +69,36 @@ function convert(term, token) {
     if (term.indexOf(" and ") >= 0) {
         return term.split(" and ").map(t => {
             if (!t.match(LITERAL)) {
-                let cnt = ++count;
+                const cnt = ++count;
                 token[cnt] = convert(t, token);
                 return `{{${cnt}}}`;
             }
             return t;
         }).join(" and ");
     }
-    let buf = null;
-    if(!!(buf = NOT.exec(term))) {
-        let cnt0 = ++count;
+    let buf = NOT.exec(term);
+    if (buf != null) {
+        const cnt0 = ++count;
         if (buf[1] == "" && buf[3] == "") {
             token[cnt0] = convert(buf[2], token);
             return `not {{${cnt0}}}`;
         } else {
-            let cnt1 = ++count;
+            const cnt1 = ++count;
             token[cnt0] = `not {{${cnt1}}}`;
             token[cnt1] = convert(buf[2], token);
             return `${buf[1]}{{${cnt0}}}${buf[3]}`;
         }
     }
-    if(!!(buf = COMPARATOR.exec(term))) {
-        let cnt0 = ++count;
-        let cnt1 = ++count;
+    buf = COMPARATOR.exec(term)
+    if (buf != null) {
+        const cnt0 = ++count;
+        const cnt1 = ++count;
         if (buf[1] == "" && buf[5] == "") {
             token[cnt0] = convert(buf[2], token);
             token[cnt1] = convert(buf[4], token);
             return `{{${cnt0}}} ${buf[3]} {{${cnt1}}}`;
         } else {
-            let cnt2 = ++count;
+            const cnt2 = ++count;
             token[cnt0] = `{{${cnt1}}} ${buf[3]} {{${cnt2}}}`;
             token[cnt1] = convert(buf[2], token);
             token[cnt2] = convert(buf[4], token);
