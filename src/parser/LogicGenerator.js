@@ -142,31 +142,41 @@ class LogicGenerator {
             for (let node of data.exits) {
                 let name = translateRegionName(node);
                 if (logic_overrides[regName] != null && logic_overrides[regName][name] != null) {
-                    regC[`${name}[child]`] = postCalcutate(logic_overrides[regName][name], "child", regName);
-                    regA[`${name}[adult]`] = postCalcutate(logic_overrides[regName][name], "adult", regName);
+                    regC[`${name}[child]`] = postCalcutate(logic_overrides[regName][name], "child", regName, 0);
+                    regA[`${name}[adult]`] = postCalcutate(logic_overrides[regName][name], "adult", regName, 0);
                 } else {
-                    regC[`${name}[child]`] = postCalcutate(exits.get(node), "child", regName);
-                    regA[`${name}[adult]`] = postCalcutate(exits.get(node), "adult", regName);
+                    if(name === 'region.deku_tree_boss_room' || name === 'region.deku_tree_basement_water_room_back_mq' || name === 'region.deku_tree_basement_water_room_front_mq') {
+                        regC[`${name}[child]`] = postCalcutate(exits.get(node), "child", regName, 1);
+                        regA[`${name}[adult]`] = postCalcutate(exits.get(node), "adult", regName, 0);
+                    } else {
+                        regC[`${name}[child]`] = postCalcutate(exits.get(node), "child", regName, 0);
+                        regA[`${name}[adult]`] = postCalcutate(exits.get(node), "adult", regName, 0);
+                    }
                 }
             }
             for (let node of data.locations) {
                 let name = translateLocationName(node);
                 if (logic_overrides[regName] != null && logic_overrides[regName][name] != null) {
-                    regC[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName), "adult");
-                    regA[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName), "child");
+                    regC[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName, 0), "adult");
+                    regA[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName, 0), "child");
                 } else {
-                    regC[name] = wrapNotEraFilter(postCalcutate(locations.get(node), "child", regName), "adult");
-                    regA[name] = wrapNotEraFilter(postCalcutate(locations.get(node), "adult", regName), "child");
+                    regC[name] = wrapNotEraFilter(postCalcutate(locations.get(node), "child", regName, 0), "adult");
+                    regA[name] = wrapNotEraFilter(postCalcutate(locations.get(node), "adult", regName, 0), "child");
                 }
             }
             for (let node of data.events) {
                 let name = translateEventName(node);
                 if (logic_overrides[regName] != null && logic_overrides[regName][name] != null) {
-                    regC[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName), "adult");
-                    regA[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName), "child");
+                    regC[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName, 0), "adult");
+                    regA[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName, 0), "child");
                 } else {
-                    regC[name] = wrapNotEraFilter(postCalcutate(events.get(node), "child", regName), "adult");
-                    regA[name] = wrapNotEraFilter(postCalcutate(events.get(node), "adult", regName), "child");
+                    if(name === "event.showed_mido_sword_&_shield" || name === "event.deku_tree_clear") {
+                        regC[name] = postCalcutate(events.get(node), "child", regName, 1);
+                        regA[name] = postCalcutate(events.get(node), "adult", regName, 0);
+                    } else {
+                        regC[name] = wrapNotEraFilter(postCalcutate(events.get(node), "child", regName, 0), "adult");
+                        regA[name] = wrapNotEraFilter(postCalcutate(events.get(node), "adult", regName, 0), "child");
+                    }
                 }
             }
             res.edges[`${regName}[child]`] = regC;
@@ -216,9 +226,8 @@ class LogicGenerator {
 
 }
 
-function postCalcutate(input, age = "", region = "")  {
+function postCalcutate(input, age = "", region = "", basic = 0)  {
     let els = [];
-	//console.log(input);
     switch(input.type) {
         case "mixin":
             if (age != "") {
@@ -249,7 +258,7 @@ function postCalcutate(input, age = "", region = "")  {
             }
             let res = Translation.getValueName(input.el);
             if (res != null) {
-                return postCalcutate(res, age, region);
+                return postCalcutate(res, age, region, basic);
             }
             let mixname = translateMixinName(input.el);
             if (mixins.has(mixname)) {
@@ -324,16 +333,18 @@ function postCalcutate(input, age = "", region = "")  {
         case "at":
             return createOnRegionLogic(
                 `${translateRegionName(input.node)}[child]`,
-                postCalcutate(input.el, "child", region),
+                postCalcutate(input.el, "child", region, basic),
                 `${translateRegionName(input.node)}[adult]`,
-                postCalcutate(input.el, "adult", region)
+                postCalcutate(input.el, "adult", region, basic),
+                basic
             );
         case "here":
             return createOnRegionLogic(
                 `${translateRegionName(region)}[child]`,
-                postCalcutate(input.el, "child", region),
+                postCalcutate(input.el, "child", region, basic),
                 `${translateRegionName(region)}[adult]`,
-                postCalcutate(input.el, "adult", region)
+                postCalcutate(input.el, "adult", region, basic),
+                basic
             );
         case "and":
         case "nand":
@@ -348,7 +359,7 @@ function postCalcutate(input, age = "", region = "")  {
         case "mod":
         case "pow":
             for (let el of input.el) {
-                els.push(postCalcutate(el, age, region));
+                els.push(postCalcutate(el, age, region, basic));
             }
             return {
                 type: input.type,
@@ -360,19 +371,19 @@ function postCalcutate(input, age = "", region = "")  {
                 if (isNaN(buffer)) {
                     return {
                         type: input.type == "min" ? "lte" : "gte",
-                        el: postCalcutate(input.el, age, region),
+                        el: postCalcutate(input.el, age, region, basic),
                         value: input.value.replace(/^'|'$/g, "")
                     };
                 }
                 return {
                     type: input.type,
-                    el: postCalcutate(input.el, age, region),
+                    el: postCalcutate(input.el, age, region, basic),
                     value: buffer
                 };
         case "not":
             return {
                 type: "not",
-                el: postCalcutate(input.el, age, region)
+                el: postCalcutate(input.el, age, region, basic)
             };
         default:
             return input;
@@ -404,8 +415,25 @@ function translateFunctionName(input) {
     return `function.${input.toLowerCase().replace(/ /g, "_")}`;
 }
 
-function createOnRegionLogic(nodeC, elC, nodeA, elA) {
-    return {
+function createOnRegionLogic(nodeC, elC, nodeA, elA, basic) {
+    if(basic === 1)
+        return {
+            "type": "or",
+            "el": [
+                {
+                    "type": "at",
+                    "node": nodeC,
+                    "el": elC
+                },
+                {
+                    "type": "at",
+                    "node": nodeA,
+                    "el": elA
+                }
+            ]
+        }
+    else
+        return {
         "type": "or",
         "el": [
             {
