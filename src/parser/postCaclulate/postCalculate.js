@@ -8,31 +8,31 @@ import {
     translateRegionName
 } from "../../utils/TranslatorFunctions.js";
 
-export default function postCalculate(scope, input, age = "", region = "", basic = false) {
+function calc(scope, input, age = "", region = "", basic = false) {
     const els = [];
     switch (input.type) {
         case "mixin":
-            return postCalculateMixin({...scope, postCalculate}, input, age, region, basic);
+            return postCalculateMixin(scope, input, age, region, basic);
         case "value":
-            return postCalculateValue({...scope, postCalculate}, input, age = "", region = "", basic = false);
+            return postCalculateValue(scope, input, age, region, basic);
         case "state":
-            return postCalculateState({...scope, postCalculate}, input, age = "", region = "", basic = false);
+            return postCalculateState(scope, input, age, region, basic);
         case "function":
-            return postCalculateFunction({...scope, postCalculate}, input, age = "", region = "", basic = false);
+            return postCalculateFunction(scope, input, age, region, basic);
         case "at":
             return createOnRegionLogic(
                 `${translateRegionName(input.node)}[child]`,
-                postCalculate(input.el, "child", region, basic),
+                postCalculate(scope, input.el, "child", region, basic),
                 `${translateRegionName(input.node)}[adult]`,
-                postCalculate(input.el, "adult", region, basic),
+                postCalculate(scope, input.el, "adult", region, basic),
                 basic
             );
         case "here":
             return createOnRegionLogic(
                 `${translateRegionName(region)}[child]`,
-                postCalculate(input.el, "child", region, basic),
+                postCalculate(scope, input.el, "child", region, basic),
                 `${translateRegionName(region)}[adult]`,
-                postCalculate(input.el, "adult", region, basic),
+                postCalculate(scope, input.el, "adult", region, basic),
                 basic
             );
         case "and":
@@ -48,7 +48,7 @@ export default function postCalculate(scope, input, age = "", region = "", basic
         case "mod":
         case "pow":
             for (const el of input.el) {
-                els.push(postCalculate(el, age, region, basic));
+                els.push(postCalculate(scope, el, age, region, basic));
             }
             return {
                 type: input.type,
@@ -56,13 +56,17 @@ export default function postCalculate(scope, input, age = "", region = "", basic
             };
         case "min":
         case "max":
-            return postCalculateMinMax({...scope, postCalculate}, input, age = "", region = "", basic = false);
+            return postCalculateMinMax(scope, input, age, region, basic);
         case "not":
             return {
                 type: "not",
-                el: postCalculate(input.el, age, region, basic)
+                el: postCalculate(scope, input.el, age, region, basic)
             };
         default:
             return input;
     }
+}
+
+export default function postCalculate(scope, input, age, region, basic) {
+    return calc({...scope, calc}, input, age, region, basic);
 }

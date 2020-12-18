@@ -59,6 +59,15 @@ export default class LogicGraph {
         }
     }
 
+    getMixins() {
+        const mixins = MIXINS.get(this);
+        const res = [];
+        for (const [name] of mixins) {
+            res.push(name);
+        }
+        return res;
+    }
+
     getEdges() {
         const nodeFactory = NODES.get(this);
         const nodes = nodeFactory.getNames();
@@ -101,68 +110,41 @@ export default class LogicGraph {
         return res;
     }
 
-    /* broad search */
-    traverse(startNode) {
-        const nodeFactory = NODES.get(this);
-        const allTargets = this.getTargetNodes();
-        const reachableNodes = new Set();
-        const traversible = new Set();
+    /* all mixins */
+    executeMixins() {
         const mixins = MIXINS.get(this);
+        const allTargets = this.getTargetNodes();
+        const traversible = new Set();
         const mem_i = MEM_I.get(this);
-        const start = nodeFactory.get(startNode);
-        if (start != null) {
-            const valueGetter = key => {
-                if (allTargets.has(key)) {
-                    return +reachableNodes.has(key);
-                } else if (mem_i.has(key)) {
-                    return mem_i.get(key);
-                }
-            };
-            const execute = name => {
-                if (mixins.has(name)) {
-                    const fn = mixins.get(name);
-                    const res = fn(valueGetter, execute);
-                    return res;
-                }
-                return 0;
-            };
-            const queue = [];
-            for (const ch of start.getTargets()) {
-                const edge = start.getEdge(ch);
-                queue.push(edge);
-            }
-            let changed = true;
-            while (!!queue.length && !!changed) {
-                changed = false;
-                let counts = queue.length;
-                while (counts--) {
-                    const edge = queue.shift();
-                    const condition = edge.getCondition();
-                    const cRes = condition(valueGetter, execute);
-                    if (cRes) {
-                        traversible.add(edge.toString());
-                        changed = true;
-                        const n = edge.getTarget().getName();
-                        const node = nodeFactory.get(n);
-                        if (!reachableNodes.has(n)) {
-                            reachableNodes.add(n);
-                            const targets = node.getTargets();
-                            for (const ch of targets) {
-                                const edge = node.getEdge(ch);
-                                queue.push(edge);
-                            }
-                        }
-                    } else {
-                        queue.push(edge);
-                    }
-                }
+
+        function valueGetter(key) {
+            if (allTargets.has(key)) {
+                return true; // probably would be better if this never gets called
+            } else if (mem_i.has(key)) {
+                return mem_i.get(key);
             }
         }
+        function execute(name) {
+            if (mixins.has(name)) {
+                const fn = mixins.get(name);
+                const res = fn(valueGetter, execute);
+                return res;
+            }
+            return 0;
+        }
+
+        for (const [name, fn] of mixins) {
+            const res = fn(valueGetter, execute);
+            if (res) {
+                traversible.add(name);
+            }
+        }
+
         return traversible;
     }
 
     /* all edges */
-    execute() {
+    executeEdges() {
         const allTargets = this.getTargetNodes();
         const reachableNodes = new Set();
         const traversible = new Set();
@@ -185,6 +167,7 @@ export default class LogicGraph {
             }
             return 0;
         }
+
         let changed = true;
         while (!!queue.length && !!changed) {
             changed = false;

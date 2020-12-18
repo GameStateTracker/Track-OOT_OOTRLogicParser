@@ -1,5 +1,5 @@
 
-export default function postCalculate({calc}, input, age = "", region = "", basic = false) {
+export default function postCalculate(scope, input, age = "", region = "", basic = false) {
     if (age != "") {
         return {
             type: "mixin",

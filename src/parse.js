@@ -6,7 +6,7 @@ import Translation from "./utils/Translation.js";
 import HelperParser from "./parser/HelperParser.js";
 import LogicParser from "./parser/LogicParser.js";
 import LogicGenerator from "./parser/LogicGenerator.js";
-import { filterLogic } from "./_test/LogicTester.js";
+import { filterLogic, filterMixins } from "./_test/LogicTester.js";
 
 const __dirname = path.resolve();
 
@@ -51,7 +51,7 @@ function parseLogic() {
     const logic = LogicGenerator.generate();
     const logicData = JSON.stringify(logic, null, 4);
     fs.writeFileSync(`${outputDir}/logic.full.json`, logicData);
-    const filtered = filterLogic(logic);
+    const filtered = filterLogic(filterMixins(logic));
     const filteredData = JSON.stringify(filtered, null, 4);
     fs.writeFileSync(`${outputDir}/logic.json`, filteredData);
 }
@@ -68,7 +68,7 @@ function parseGlitchedLogic() {
     const logic = LogicGenerator.generate();
     const logicData = JSON.stringify(logic, null, 4);
     fs.writeFileSync(`${outputDir}/logic_glitched.full.json`, logicData);
-    const filtered = filterLogic(logic);
+    const filtered = filterLogic(filterMixins(logic));
     const filteredData = JSON.stringify(filtered, null, 4);
     fs.writeFileSync(`${outputDir}/logic_glitched.json`, filteredData);
 }
