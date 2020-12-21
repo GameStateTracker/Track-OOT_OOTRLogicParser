@@ -20,6 +20,44 @@ function testAdultLogic() {
     return LOGIC_PROCESSOR.executeEdges();
 }
 
+function removeEmpty(obj, topLevel, mixins, child, adult)  {
+    const newObj = {};
+
+    Object.keys(obj).forEach(key => {
+        if(mixins.has(obj[key]) || (child.has(obj[key]) && topLevel.endsWith("[child]")) || (adult.has(obj[key]) && topLevel.endsWith("[adult]"))) {
+            delete obj["type"];
+            delete obj[key];
+            delete obj["value"]
+        }
+        if (obj[key] && typeof obj[key] === "object") {
+            newObj[key] = removeEmpty(obj[key], topLevel, mixins, child, adult); // recurse
+        } else if (obj[key] != null) {
+            newObj[key] = obj[key]; // copy value
+        }
+    });
+
+    return newObj;
+}
+
+
+export function filterFailedMixins(data) {
+    let [logic, mixins] = data;
+    let res = logic;
+    let c = new Set(['item.hookshot', 'item.bow', 'item.hammer', 'item.cojiro', 'item.arrow_fire',
+        'item.arrow_ice', 'item.arrow_light', 'item.sword_biggoron', 'item.shield_mirror', 'item.tunic_fire',
+        'item.tunic_water', 'item.boots_iron', 'item.boots_hover']);
+    let a = new Set(['item.boomerang', 'item.stick', 'item.slingshot', 'item.sword_kokiri', 'item.shield_kokiri']);
+
+    for(const topLevel in res.edges) {
+        let layerOne = res.edges[topLevel]
+
+        removeEmpty(layerOne, topLevel, mixins, c, a);
+        res.edges[topLevel] = layerOne;
+    }
+
+    return res
+}
+
 export function testLogic(logic) {
     LOGIC_PROCESSOR.load(logic);
     LOGIC_PROCESSOR.setAll(savestate.data);
@@ -38,8 +76,9 @@ export function testLogic(logic) {
     return [success, failed];
 }
 
-export function filterLogic(logic) {
-    const [success] = testLogic(logic);
+export function filterLogic(data) {
+    const [logic, mixinF] = data;
+    const [success] = testLogic(filterFailedMixins(data));
     const res = {edges: {}, logic: logic.logic};
     for (const name in logic.edges) {
         const region = {};
@@ -86,12 +125,12 @@ export function testMixins(logic) {
 }
 
 export function filterMixins(logic) {
-    const [success] = testMixins(logic);
+    const [success, failed] = testMixins(logic);
     const res = {edges: logic.edges, logic: {}};
     for (const name in logic.logic) {
         if (success.has(name)) {
             res.logic[name] = logic.logic[name];
         }
     }
-    return res;
+    return [res, failed];
 }
