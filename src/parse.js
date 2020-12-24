@@ -6,7 +6,7 @@ import Translation from "./utils/Translation.js";
 import HelperParser from "./parser/HelperParser.js";
 import LogicParser from "./parser/LogicParser.js";
 import LogicGenerator from "./parser/LogicGenerator.js";
-import { filterLogic, filterMixins, filterFailedMixins } from "./_test/LogicTester.js";
+import { filterLogic, filterMixins} from "./_test/LogicTester.js";
 
 const __dirname = path.resolve();
 

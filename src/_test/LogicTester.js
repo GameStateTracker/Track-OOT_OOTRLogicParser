@@ -2,6 +2,7 @@ import path from "path";
 import JSONFile from "../utils/JSONFile.js";
 import LogicGraph from "./LogicGraph.js";
 import "./NodeFactory.js";
+import {filterFailedMixins} from "./BadLogic.js";
 
 const __dirname = path.resolve();
 const currentDir = path.join(__dirname, "src/_test/");
@@ -18,44 +19,6 @@ function testChildLogic() {
 function testAdultLogic() {
     LOGIC_PROCESSOR.set("option.starting_age", "adult");
     return LOGIC_PROCESSOR.executeEdges();
-}
-
-function removeEmpty(obj, topLevel, mixins, child, adult)  {
-    const newObj = {};
-
-    Object.keys(obj).forEach(key => {
-        if(mixins.has(obj[key]) || (child.has(obj[key]) && topLevel.endsWith("[child]")) || (adult.has(obj[key]) && topLevel.endsWith("[adult]"))) {
-            delete obj["type"];
-            delete obj[key];
-            delete obj["value"]
-        }
-        if (obj[key] && typeof obj[key] === "object") {
-            newObj[key] = removeEmpty(obj[key], topLevel, mixins, child, adult); // recurse
-        } else if (obj[key] != null) {
-            newObj[key] = obj[key]; // copy value
-        }
-    });
-
-    return newObj;
-}
-
-
-export function filterFailedMixins(data) {
-    let [logic, mixins] = data;
-    let res = logic;
-    let c = new Set(['item.hookshot', 'item.bow', 'item.hammer', 'item.cojiro', 'item.arrow_fire',
-        'item.arrow_ice', 'item.arrow_light', 'item.sword_biggoron', 'item.shield_mirror', 'item.tunic_fire',
-        'item.tunic_water', 'item.boots_iron', 'item.boots_hover']);
-    let a = new Set(['item.boomerang', 'item.stick', 'item.slingshot', 'item.sword_kokiri', 'item.shield_kokiri']);
-
-    for(const topLevel in res.edges) {
-        let layerOne = res.edges[topLevel]
-
-        removeEmpty(layerOne, topLevel, mixins, c, a);
-        res.edges[topLevel] = layerOne;
-    }
-
-    return res
 }
 
 export function testLogic(logic) {
@@ -77,8 +40,9 @@ export function testLogic(logic) {
 }
 
 export function filterLogic(data) {
-    const [logic, mixinF] = data;
-    const [success] = testLogic(filterFailedMixins(data));
+    let [logic, mixins] = data//filterFailedMixins(data)
+    const [success, failed] = testLogic(logic);
+    //console.log(failed)
     const res = {edges: {}, logic: logic.logic};
     for (const name in logic.edges) {
         const region = {};
@@ -92,7 +56,7 @@ export function filterLogic(data) {
             res.edges[name] = region;
         }
     }
-    return res;
+    return filterFailedMixins([res, mixins])//res;
 }
 
 /* MIXINS */
@@ -133,4 +97,9 @@ export function filterMixins(logic) {
         }
     }
     return [res, failed];
+}
+
+export function returnFailed(logic) {
+    const [success, failed] = testMixins(logic);
+    return failed;
 }

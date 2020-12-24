@@ -15,7 +15,7 @@ export default function postCalculate(scope, input, age = "", region = "", basic
     }
     const stapar = input.value.replace(/^'|'$/g, "");
     const sta = Translation.getStateConfig(input.el);
-    if (sta == null) {
+    if (sta == null || sta.values[stapar] == undefined) {
         unstate[input.el] = unstate[input.el] || {
             name: "",
             values: {}
