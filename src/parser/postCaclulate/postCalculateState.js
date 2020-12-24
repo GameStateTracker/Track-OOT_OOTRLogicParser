@@ -16,7 +16,7 @@ export default function postCalculate(scope, input, age = "", region = "", basic
     const stapar = input.value.replace(/^'|'$/g, "");
     const sta = Translation.getStateConfig(input.el);
     if (sta == null) {
-        unstate[input.el] = unstate[input.el] || {
+        unstate[input.el] = unstate[input.el] ?? {
             name: "",
             values: {}
         };
@@ -27,10 +27,24 @@ export default function postCalculate(scope, input, age = "", region = "", basic
             value: stapar
         };
     } else {
-        return {
-            type: "state",
-            el: sta.name,
-            value: sta.values[stapar]
-        };
+        const value = sta.values[stapar];
+        if (value == null) {
+            unstate[input.el] = unstate[input.el] ?? {
+                name: sta.name,
+                values: {}
+            };
+            unstate[input.el].values[stapar] = "";
+            return {
+                type: "state",
+                el: sta.name,
+                value: stapar
+            };
+        } else {
+            return {
+                type: "state",
+                el: sta.name,
+                value: value
+            };
+        }
     }
 }
