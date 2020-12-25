@@ -39,10 +39,8 @@ export function testLogic(logic) {
     return [success, failed];
 }
 
-export function filterLogic(data) {
-    let [logic, mixins] = data//filterFailedMixins(data)
+export function filterLogic(logic) {
     const [success, failed] = testLogic(logic);
-    //console.log(failed)
     const res = {edges: {}, logic: logic.logic};
     for (const name in logic.edges) {
         const region = {};
@@ -56,7 +54,7 @@ export function filterLogic(data) {
             res.edges[name] = region;
         }
     }
-    return [res, mixins];
+    return res;
 }
 
 /* MIXINS */
@@ -90,6 +88,7 @@ export function testMixins(logic) {
 
 export function filterMixins(logic) {
     const [success, failed] = testMixins(logic);
+    //TODO Look for why mixin.can_plant_bean[adult] is being deleted
     success.add('mixin.can_plant_bean[adult]')
     failed.delete('mixin.can_plant_bean[adult]')
     const res = {edges: logic.edges, logic: {}};

@@ -52,10 +52,11 @@ function parseLogic() {
     const logic = LogicGenerator.generate();
     const logicData = JSON.stringify(logic, null, 4);
     fs.writeFileSync(`${outputDir}/logic.full.json`, logicData);
-    const [filtered, mixins] = filterLogic(filterMixins(logic));
+    const [success, failed] = filterMixins(logic)
+    const filtered = filterLogic(success);
     const filteredData = JSON.stringify(filtered, null, 4);
     fs.writeFileSync(`${outputDir}/logic.filtered.json`, filteredData);
-    const filteredBad = filterFailedMixins([filtered, mixins]);
+    const filteredBad = filterFailedMixins([filtered, failed]);
     const filteredBadData = JSON.stringify(filteredBad, null, 4);
     fs.writeFileSync(`${outputDir}/logic.json`, filteredBadData);
 }
@@ -72,10 +73,11 @@ function parseGlitchedLogic() {
     const logic = LogicGenerator.generate();
     const logicData = JSON.stringify(logic, null, 4);
     fs.writeFileSync(`${outputDir}/logic_glitched.full.json`, logicData);
-    const [filtered, mixins] = filterLogic(filterMixins(logic));
+    const [success, failed] = filterMixins(logic)
+    const filtered = filterLogic(success);
     const filteredData = JSON.stringify(filtered, null, 4);
     fs.writeFileSync(`${outputDir}/logic_glitched.filtered.json`, filteredData);
-    const filteredBad = filterFailedMixins([filtered, mixins]);
+    const filteredBad = filterFailedMixins([filtered, failed]);
     const filteredBadData = JSON.stringify(filteredBad, null, 4);
     fs.writeFileSync(`${outputDir}/logic_glitched.json`, filteredBadData);
 }
