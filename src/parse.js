@@ -7,6 +7,7 @@ import HelperParser from "./parser/HelperParser.js";
 import LogicParser from "./parser/LogicParser.js";
 import LogicGenerator from "./parser/LogicGenerator.js";
 import { filterLogic, filterMixins} from "./_test/LogicTester.js";
+import {filterFailedMixins} from "./_test/BadLogic.js";
 
 const __dirname = path.resolve();
 
@@ -51,9 +52,12 @@ function parseLogic() {
     const logic = LogicGenerator.generate();
     const logicData = JSON.stringify(logic, null, 4);
     fs.writeFileSync(`${outputDir}/logic.full.json`, logicData);
-    const filtered = filterLogic(filterMixins(logic));
+    const [filtered, mixins] = filterLogic(filterMixins(logic));
     const filteredData = JSON.stringify(filtered, null, 4);
-    fs.writeFileSync(`${outputDir}/logic.json`, filteredData);
+    fs.writeFileSync(`${outputDir}/logic.filtered.json`, filteredData);
+    const filteredBad = filterFailedMixins([filtered, mixins]);
+    const filteredBadData = JSON.stringify(filteredBad, null, 4);
+    fs.writeFileSync(`${outputDir}/logic.json`, filteredBadData);
 }
 
 // parser for glitched logic
@@ -68,9 +72,12 @@ function parseGlitchedLogic() {
     const logic = LogicGenerator.generate();
     const logicData = JSON.stringify(logic, null, 4);
     fs.writeFileSync(`${outputDir}/logic_glitched.full.json`, logicData);
-    const filtered = filterLogic(filterMixins(logic));
+    const [filtered, mixins] = filterLogic(filterMixins(logic));
     const filteredData = JSON.stringify(filtered, null, 4);
-    fs.writeFileSync(`${outputDir}/logic_glitched.json`, filteredData);
+    fs.writeFileSync(`${outputDir}/logic_glitched.filtered.json`, filteredData);
+    const filteredBad = filterFailedMixins([filtered, mixins]);
+    const filteredBadData = JSON.stringify(filteredBad, null, 4);
+    fs.writeFileSync(`${outputDir}/logic_glitched.json`, filteredBadData);
 }
 
 // --------------------------

@@ -158,7 +158,7 @@
             }
         ]
     },
-    "mixin.can_build_rainbow_bridge[adult]": {
+    "mixin.can_build_rainbow_bridge": {
         "type": "or",
         "el": [
             {
@@ -198,7 +198,7 @@
                     },
                     {
                         "type": "mixin",
-                        "el": "function.has_stones(bridge_stones)[adult]"
+                        "el": "function.has_stones(bridge_stones)"
                     }
                 ]
             },
@@ -212,7 +212,7 @@
                     },
                     {
                         "type": "mixin",
-                        "el": "function.has_medallions(bridge_medallions)[adult]"
+                        "el": "function.has_medallions(bridge_medallions)"
                     }
                 ]
             },
@@ -226,7 +226,7 @@
                     },
                     {
                         "type": "mixin",
-                        "el": "function.has_dungeon_rewards(bridge_rewards)[adult]"
+                        "el": "function.has_dungeon_rewards(bridge_rewards)"
                     }
                 ]
             },

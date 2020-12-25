@@ -56,7 +56,7 @@ export function filterLogic(data) {
             res.edges[name] = region;
         }
     }
-    return filterFailedMixins([res, mixins])//res;
+    return [res, mixins];
 }
 
 /* MIXINS */
@@ -90,6 +90,8 @@ export function testMixins(logic) {
 
 export function filterMixins(logic) {
     const [success, failed] = testMixins(logic);
+    success.add('mixin.can_plant_bean[adult]')
+    failed.delete('mixin.can_plant_bean[adult]')
     const res = {edges: logic.edges, logic: {}};
     for (const name in logic.logic) {
         if (success.has(name)) {
@@ -99,7 +101,3 @@ export function filterMixins(logic) {
     return [res, failed];
 }
 
-export function returnFailed(logic) {
-    const [success, failed] = testMixins(logic);
-    return failed;
-}
