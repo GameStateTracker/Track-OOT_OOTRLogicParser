@@ -6,8 +6,8 @@ import Translation from "./utils/Translation.js";
 import HelperParser from "./parser/HelperParser.js";
 import LogicParser from "./parser/LogicParser.js";
 import LogicGenerator from "./parser/LogicGenerator.js";
-import { filterLogic, filterMixins} from "./_test/LogicTester.js";
-import {filterFailedMixins} from "./_test/BadLogic.js";
+import { filterLogic, filterMixins } from "./_test/LogicTester.js";
+import { filterFailedMixins } from "./_test/RemoveBadLogic.js";
 
 const __dirname = path.resolve();
 
@@ -63,12 +63,12 @@ function parseLogic() {
 
 // parser for glitched logic
 function parseGlitchedLogic() {
-    LogicParser.parse(fs.readFileSync(inGatewayFile).toString(), false, false);
+    LogicParser.parse(fs.readFileSync(inGatewayFile).toString());
     fs.readdirSync(inGlitchedDir).forEach(function(file) {
         const iname = path.join(inGlitchedDir, file);
         let mq = false;
         if (iname.endsWith("MQ.json")) mq = true;
-        LogicParser.parse(fs.readFileSync(iname).toString(), mq, false);
+        LogicParser.parse(fs.readFileSync(iname).toString(), mq);
     });
     const logic = LogicGenerator.generate();
     const logicData = JSON.stringify(logic, null, 4);

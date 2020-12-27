@@ -2,7 +2,6 @@ import path from "path";
 import JSONFile from "../utils/JSONFile.js";
 import LogicGraph from "./LogicGraph.js";
 import "./NodeFactory.js";
-import {filterFailedMixins} from "./BadLogic.js";
 
 const __dirname = path.resolve();
 const currentDir = path.join(__dirname, "src/_test/");
@@ -88,7 +87,7 @@ export function testMixins(logic) {
 
 export function filterMixins(logic) {
     const [success, failed] = testMixins(logic);
-    //TODO Look for why mixin.can_plant_bean[adult] is being deleted
+    //Possibly fixed this
     //success.add('mixin.can_plant_bean[adult]')
     //failed.delete('mixin.can_plant_bean[adult]')
     const res = {edges: logic.edges, logic: {}};
