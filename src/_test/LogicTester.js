@@ -89,8 +89,8 @@ export function testMixins(logic) {
 export function filterMixins(logic) {
     const [success, failed] = testMixins(logic);
     //TODO Look for why mixin.can_plant_bean[adult] is being deleted
-    success.add('mixin.can_plant_bean[adult]')
-    failed.delete('mixin.can_plant_bean[adult]')
+    //success.add('mixin.can_plant_bean[adult]')
+    //failed.delete('mixin.can_plant_bean[adult]')
     const res = {edges: logic.edges, logic: {}};
     for (const name in logic.logic) {
         if (success.has(name)) {

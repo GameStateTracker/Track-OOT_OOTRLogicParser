@@ -1,20 +1,10 @@
-function recursion(obj, mixins) {
-
+function deleteBadMixins(obj, mixins) {
     Object.keys(obj).forEach(key => {
         if(mixins.has(obj[key].el)){
-            delete obj[key]
+            delete obj[key];
         }
-
-        if(obj[key] && Array.isArray(obj[key].el)) {
-            obj[key].el = obj[key].el.filter(value => Object.keys(value).length > 0)
-        }
-
-        if(obj[key] && obj[key].type === 'or' && obj[key].el.length === 1) {
-            obj[key] = obj[key].el[0]
-        }
-
         if (obj[key] && typeof obj[key] === "object") {
-            obj[key] = recursion(obj[key], mixins);
+            obj[key] = deleteBadMixins(obj[key], mixins);
         } else if (obj[key] != null) {
             obj[key] = obj[key];
         }
@@ -23,14 +13,73 @@ function recursion(obj, mixins) {
     return obj;
 }
 
+function reduceArraySize(obj, and = false) {
+    Object.keys(obj).forEach(key => {
+        if(obj[key] && Array.isArray(obj[key].el)) {
+            let length = obj[key].el.length
+            obj[key].el = obj[key].el.filter(value => Object.keys(value).length > 0)
+            //if(obj[key].type === 'and') console.log(obj[key].el.length + ":::::" + length)
+            if(obj[key].type === 'and' && obj[key].el.length != length && and) {
+                delete obj[key]
+                //Use this if deleting the and statements causes issues
+                //obj[key] = {type: "false"};
+            }
+
+        }
+
+        if (obj[key] && typeof obj[key] === "object") {
+            obj[key] = reduceArraySize(obj[key], and);
+        } else if (obj[key] != null) {
+            obj[key] = obj[key];
+        }
+    })
+
+    return obj;
+}
+
+function orSimplifier(obj) {
+
+    Object.keys(obj).forEach(key => {
+        if(obj[key] && obj[key].type === 'or' && obj[key].el.length === 1) {
+            obj[key] = obj[key].el[0]
+        }
+        if (obj[key] && typeof obj[key] === "object") {
+            obj[key] = orSimplifier(obj[key]);
+        } else if (obj[key] != null) {
+            obj[key] = obj[key];
+        }
+    })
+
+    return obj;
+}
+
+function emptyAtLogic(obj) {
+    Object.keys(obj).forEach(key => {
+        if(obj[key].type === 'at' && (obj[key].el === null || obj[key].el === undefined)){
+            obj[key] = {type: "false"};
+            //delete obj[key];
+        }
+        if (obj[key] && typeof obj[key] === "object") {
+            obj[key] = emptyAtLogic(obj[key]);
+        } else if (obj[key] != null) {
+            obj[key] = obj[key];
+        }
+    })
+
+    return obj;
+}
 
 export function filterFailedMixins(data) {
     let [logic, mixins] = data;
     let res = logic;
 
-    res.edges = recursion(logic.edges, mixins)
-    res.edges = recursion(logic.edges, mixins)
-    res.edges = recursion(logic.edges, mixins)
+    res.edges = deleteBadMixins(logic.edges, mixins)
+    res.edges = reduceArraySize(logic.edges, true)
+    res.edges = emptyAtLogic(logic.edges)
+    res.edges = reduceArraySize(logic.edges)
+    res.edges = orSimplifier(logic.edges)
+    res.edges = reduceArraySize(logic.edges)
+    res.edges = emptyAtLogic(logic.edges)
 
     return res
 }
