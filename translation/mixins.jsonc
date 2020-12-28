@@ -419,5 +419,118 @@
             }
         ]
     },
+    "mixin.can_play_ocarina": {
+        "type": "or",
+        "el": [
+            {
+                "type": "value",
+                "el": "item.ocarina"
+            },
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "value",
+                        "el": "item.bottle"
+                    },
+                    {
+                        "type": "or",
+                        "el": [
+                            {
+                                "type": "value",
+                                "el": "skip.invisible_ocarina"
+                            },
+                            {
+                                "type": "and",
+                                "el": [
+                                    {
+                                        "type": "value",
+                                        "el": "skip.invisible_ocarina_midair"
+                                    },
+                                    {
+                                        "type": "or",
+                                        "el": [
+                                            {
+                                                "type": "value",
+                                                "el": "item.bombs"
+                                            },
+                                            {
+                                                "type": "value",
+                                                "el": "item.bombchu"
+                                            },
+                                            {
+                                                "type": "and",
+                                                "el": [
+                                                    {
+                                                        "type": "mixin",
+                                                        "el": "mixin.is_child"
+                                                    },
+                                                    {
+                                                        "type": "or",
+                                                        "el": [
+                                                            {
+                                                                "type": "value",
+                                                                "el": "item.stick"
+                                                            },
+                                                            {
+                                                                "type": "value",
+                                                                "el": "item.sword_kokiri"
+                                                            },
+                                                            {
+                                                                "type": "value",
+                                                                "el": "item.slingshot"
+                                                            },
+                                                            {
+                                                                "type": "value",
+                                                                "el": "item.boomerang"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "and",
+                                                "el": [
+                                                    {
+                                                        "type": "mixin",
+                                                        "el": "mixin.is_adult"
+                                                    },
+                                                    {
+                                                        "type": "or",
+                                                        "el": [
+                                                            {
+                                                                "type": "value",
+                                                                "el": "item.sword_master"
+                                                            },
+                                                            {
+                                                                "type": "value",
+                                                                "el": "item.sword_biggoron"
+                                                            },
+                                                            {
+                                                                "type": "value",
+                                                                "el": "item.bow"
+                                                            },
+                                                            {
+                                                                "type": "value",
+                                                                "el": "item.hookshot"
+                                                            },
+                                                            {
+                                                                "type": "value",
+                                                                "el": "item.hammer"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
     "": ""
 }

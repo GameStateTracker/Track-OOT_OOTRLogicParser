@@ -73,13 +73,13 @@ export function filterFailedMixins(data) {
     let [logic, mixins] = data;
     let res = logic;
 
-    res.edges = deleteBadMixins(logic.edges, mixins)
-    res.edges = reduceArraySize(logic.edges, true)
-    res.edges = emptyAtLogic(logic.edges)
-    res.edges = reduceArraySize(logic.edges)
-    res.edges = orSimplifier(logic.edges)
-    res.edges = reduceArraySize(logic.edges)
-    res.edges = emptyAtLogic(logic.edges)
+    res = deleteBadMixins(logic, mixins)
+    res = reduceArraySize(logic, true)
+    res = emptyAtLogic(logic)
+    res = reduceArraySize(logic)
+    res = orSimplifier(logic)
+    res = reduceArraySize(logic)
+    res = emptyAtLogic(logic)
 
     return res
 }
