@@ -335,8 +335,8 @@
         "el": "item.arrows"
     },
     "Ocarina": {
-        "type": "value",
-        "el": "item.ocarina"
+        "type": "mixin",
+        "el": "mixin.can_play_ocarina"
     },
     "has_bottle": {
         "type": "value",
