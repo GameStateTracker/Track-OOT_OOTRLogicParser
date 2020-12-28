@@ -39,7 +39,7 @@ export function testLogic(logic) {
 }
 
 export function filterLogic(logic) {
-    const [success, failed] = testLogic(logic);
+    const [success] = testLogic(logic);
     const res = {edges: {}, logic: logic.logic};
     for (const name in logic.edges) {
         const region = {};
