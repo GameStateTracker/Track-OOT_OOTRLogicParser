@@ -112,7 +112,7 @@ class LogicGenerator {
         events.set(name, value);
     }
 
-    generate() {
+    generate(glitched = false) {
         console.log("");
         console.log("-------------------------------------------");
         console.log("generate logic output");
@@ -216,6 +216,12 @@ class LogicGenerator {
         res.edges["region.beyond_door_of_time[adult]"]["region.root_exits[child]"] = {
             "type": "true"
         };
+        res.logic["mixin.is_glitched[child]"] = {
+            "type": `${glitched}`
+        }
+        res.logic["mixin.is_glitched[adult]"] = {
+            "type": `${glitched}`
+        }
         // END overrides
 
 

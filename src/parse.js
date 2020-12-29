@@ -70,7 +70,7 @@ function parseGlitchedLogic() {
         if (iname.endsWith("MQ.json")) mq = true;
         LogicParser.parse(fs.readFileSync(iname).toString(), mq);
     });
-    const logic = LogicGenerator.generate();
+    const logic = LogicGenerator.generate(true);
     const logicData = JSON.stringify(logic, null, 4);
     fs.writeFileSync(`${outputDir}/logic_glitched.full.json`, logicData);
     const [success, failed] = filterMixins(logic)
