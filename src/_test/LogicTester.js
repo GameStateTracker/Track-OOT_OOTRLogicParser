@@ -38,9 +38,8 @@ export function testLogic(logic) {
     return [success, failed];
 }
 
-export function filterLogic(data) {
-    const [logic, mixinF] = data;
-    const [success] = testLogic(filterFailedMixins(data));
+export function filterLogic(logic) {
+    const [success] = testLogic(logic);
     const res = {edges: {}, logic: logic.logic};
     for (const name in logic.edges) {
         const region = {};
@@ -94,5 +93,5 @@ export function filterMixins(logic) {
             res.logic[name] = logic.logic[name];
         }
     }
-    return [res, failed];
+    return res;
 }
