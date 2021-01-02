@@ -508,7 +508,7 @@
         "region_name": "Kak Potion Shop Back Entrance",
         "exits": {
             "Kak Potion Shop Back": "True",
-            "Kakariko Village": "True"
+            "Kak Backyard": "True"
         }
     },
     {
@@ -689,14 +689,14 @@
         "region_name": "GV Carpenter Tent Entrance",
         "exits": {
             "GV Carpenter Tent": "True",
-            "GV Fortess Side": "True"
+            "GV Fortress Side": "True"
         }
     },
     {
         "region_name": "GV Storms Grotto Entrance",
         "exits": {
             "GV Storms Grotto": "True",
-            "GV Fortess Side": "True"
+            "GV Fortress Side": "True"
         }
     },
     {
@@ -710,7 +710,7 @@
         "region_name": "GF Storms Grotto Entrance",
         "exits": {
             "GF Storms Grotto": "True",
-            "Gerudo Fortess": "True"
+            "Gerudo Fortress": "True"
         }
     },
 
