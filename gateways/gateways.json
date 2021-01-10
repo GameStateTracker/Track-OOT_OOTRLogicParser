@@ -734,9 +734,8 @@
     {
         "region_name": "Kokiri Bridge Gateway",
         "exits": {
-            "Kokiri Forest": "True",
-            "LW Bridge": "True",
-            "LW Bridge From Forest": "can_leave_forest"
+            "Kokiri To Bridge Entrance": "True",
+            "Bridge To Kokiri Entrance": "True"
         }
     },
     {
@@ -889,15 +888,15 @@
     {
         "region_name": "Crater Goron Gateway",
         "exits": {
-            "GC Darunias Chamber": "True",
-            "DMC Lower Local": "logic_fewer_tunic_requirements or can_use(Goron_Tunic)"
+            "Goron To Crater Entrance": "True",
+            "Crater To Goron Entrance": "True"
         }
     },
     {
         "region_name": "Crater Mountain Gateway",
         "exits": {
-            "Death Mountain Summit": "True",
-            "DMC Upper Local": "is_child or (logic_fewer_tunic_requirements or can_use(Goron_Tunic))"
+            "Mountain To Crater Entrance": "True",
+            "Crater To Mountain Entrance": "True"
         }
     },
     {
@@ -912,6 +911,49 @@
         "exits": {
             "ZD Behind King Zora": "True",
             "Zoras Fountain": "True"
+        }
+    },
+    {
+        "region_name": "Kokiri To Bridge Entrance",
+        "exits": {
+            "Kokiri Forest": "True",
+            "Kokiri Bridge Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Goron To Crater Entrance",
+        "exits": {
+            "GC Darunias Chamber": "True",
+            "Crater Goron Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Mountain To Crater Entrance",
+        "exits": {
+            "Death Mountain Summit": "True",
+            "Crater Mountain Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Bridge To Kokiri Entrance",
+        "exits": {
+            "Kokiri Bridge Gateway": "True",
+            "LW Bridge": "True",
+            "LW Bridge From Forest": "can_leave_forest"
+        }
+    },
+    {
+        "region_name": "Crater To Goron Entrance",
+        "exits": {
+            "Crater Goron Gateway": "True",
+            "DMC Lower Local": "is_child or (logic_fewer_tunic_requirements or can_use(Goron_Tunic))"
+        }
+    },
+    {
+        "region_name": "Crater To Mountain Entrance",
+        "exits": {
+            "Crater Mountain Gateway": "True",
+            "DMC Upper Local": "is_child or (logic_fewer_tunic_requirements or can_use(Goron_Tunic))"
         }
     }
 ]

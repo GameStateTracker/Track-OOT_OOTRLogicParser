@@ -97,7 +97,7 @@
         "Castle Grounds": "Ganons Castle Gateway"
     },
     "Kokiri Forest": {
-        "LW Bridge From Forest": "Kokiri Bridge Gateway",
+        "LW Bridge From Forest": "Kokiri To Bridge Entrance",
         "Lost Woods": "Kokiri Woods Gateway",
         "KF Midos House":"KF Midos House Entrance",
         "KF Sarias House":"KF Sarias House Entrance",
@@ -108,11 +108,11 @@
         "KF Storms Grotto":"KF Storms Grotto Entrance"
     },
     "LW Bridge": {
-        "Kokiri Forest": "Kokiri Bridge Gateway",
+        "Kokiri Forest": "Bridge To Kokiri Entrance",
         "Hyrule Field": "Field Woods Gateway"
     },
     "LW Bridge From Forest": {
-        "LW Bridge": "Kokiri Bridge Gateway"
+        "LW Bridge": "Bridge To Kokiri Entrance"
     },
     "Lost Woods": {
         "GC Woods Warp": "GC Woods Gateway",
@@ -132,7 +132,8 @@
     "LW Beyond Mido": {
         "SFM Entryway": "Meadow Woods Gateway",
         "LW Scrubs Grotto": "LW Scrubs Grotto Entrance",
-        "Deku Theater": "Deku Theater Entrance"
+        "Deku Theater": "Deku Theater Entrance",
+        "LW Forest_exit": "Kokiri Woods Gateway"
     },
     "SFM Entryway": {
         "LW Beyond Mido": "Meadow Woods Gateway",
@@ -239,10 +240,10 @@
         "GC Grotto": "GC Grotto Entrance"
     },
     "GC Darunias Chamber": {
-        "DMC Lower Local": "Crater Goron Gateway"
+        "DMC Lower Local": "Goron To Crater Entrance"
     },
     "DMC Lower Local": {
-        "DMC Ladder Area Nearby": "Crater Goron Gateway"
+        "DMC Ladder Area Nearby": "Crater To Goron Entrance"
     },
     "DMC Lower Nearby": {
         "GC Darunias Chamber": "DMC Ladder Area Nearby",
@@ -250,16 +251,20 @@
         "DMC Hammer Grotto": "DMC Hammer Grotto Entrance"
     },
     "Death Mountain Summit": {
-        "DMC Upper Local": "Crater Mountain Gateway",
+        "DMC Upper Local": "Mountain To Crater Entrance",
         "DMT Great Fairy Fountain": "DMT Great Fairy Fountain Entrance",
         "DMT Cow Grotto": "DMT Cow Grotto Entrance"
     },
     "DMC Upper Local": {
-        "DMC Ladder Area Nearby": "Crater Mountain Gateway"
+        "DMC Ladder Area Nearby": "Crater To Mountain Entrance"
     },
     "DMC Upper Nearby": {
         "Death Mountain Summit": "DMC Ladder Area Nearby",
         "DMC Upper Grotto": "DMC Upper Grotto Entrance"
+    },
+    "DMC Ladder Nearby": {
+        "DMC Upper Nearby": "DMC Upper Local",
+        "DMC Lower Nearby": "DMC Lower Local"
     },
     "ZR Behind Waterfall": {
         "Zoras Domain": "River Domain Gateway"
