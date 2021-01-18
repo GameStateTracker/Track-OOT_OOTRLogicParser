@@ -33,6 +33,12 @@ class LogicParser {
                         }
                     }
                 }
+                if(i.includes(' GS ')) {
+                    if(rule.includes('at_night')) {
+                        let split = rule.split('at_night');
+                        rule = split.join('at_night_gs');
+                    }
+                }
                 LogicGenerator.addLocation(value.region_name, i, transpile(rule));
             }
             for (let i in value.exits) {

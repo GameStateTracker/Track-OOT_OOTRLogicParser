@@ -734,208 +734,190 @@
     {
         "region_name": "Kokiri Bridge Gateway",
         "exits": {
-            "Kokiri To Bridge Entrance": "True",
-            "Bridge To Kokiri Entrance": "True"
+            "Kokiri Forest": "True",
+            "Bridge Kokiri Gateway": "True"
         }
     },
     {
         "region_name": "Kokiri Woods Gateway",
         "exits": {
             "Kokiri Forest": "True",
-            "Lost Woods": "True"
+            "Woods Kokiri Gateway": "True"
         }
     },
     {
         "region_name": "GC Woods Gateway",
         "exits": {
             "GC Woods Warp": "True",
-            "Lost Woods": "True"
+            "Woods GC Gateway": "True"
         }
     },
     {
         "region_name": "River Woods Gateway",
         "exits": {
             "Zora River": "True",
-            "Lost Woods": "True"
+            "Woods River Gateway": "True"
         }
     },
     {
         "region_name": "Meadow Woods Gateway",
         "exits": {
             "SFM Entryway": "True",
-            "LW Beyond Mido": "True"
+            "Woods Meadow Gateway": "True"
         }
     },
     {
         "region_name": "Field Woods Gateway",
         "exits": {
             "Hyrule Field": "True",
-            "LW Bridge": "True"
+            "Woods Field Gateway": "True"
         }
     },
     {
         "region_name": "Lake Field Gateway",
         "exits": {
-            "Hyrule Field": "True",
+            "Field Lake Gateway": "True",
             "Lake Hylia": "True"
         }
     },
     {
         "region_name": "Valley Field Gateway",
         "exits": {
-            "Hyrule Field": "True",
+            "Field Valley Gateway": "True",
             "Gerudo Valley": "True"
         }
     },
     {
         "region_name": "MarketEntrance Field Gateway",
         "exits": {
-            "Hyrule Field": "True",
+            "Field MarketEntrance Gateway": "True",
             "Market Entrance": "True"
         }
     },
     {
         "region_name": "Kakariko Field Gateway",
         "exits": {
-            "Hyrule Field": "True",
+            "Field Kakariko Gateway": "True",
             "Kakariko Village": "True"
         }
     },
     {
         "region_name": "River Field Gateway",
         "exits": {
-            "Hyrule Field": "True",
+            "Field River Gateway": "True",
             "ZR Front": "True"
         }
     },
     {
         "region_name": "Ranch Field Gateway",
         "exits": {
-            "Hyrule Field": "True",
+            "Field Ranch Gateway": "True",
             "Lon Lon Ranch": "True"
         }
     },
     {
         "region_name": "Domain Lake Gateway",
         "exits": {
-            "Lake Hylia": "True",
+            "Lake Domain Gateway": "True",
             "Zoras Domain": "True"
         }
     },
     {
         "region_name": "Valley Fortress Gateway",
         "exits": {
-            "Gerudo Fortress": "True",
+            "Fortress Valley Gateway": "True",
             "GV Fortress Side": "True"
         }
     },
     {
         "region_name": "Wasteland Fortress Gateway",
         "exits": {
-            "GF Outside Gate": "True",
+            "Fortress Wasteland Gateway": "True",
             "Wasteland Near Fortress": "True"
         }
     },
     {
         "region_name": "Wasteland Colossus Gateway",
         "exits": {
-            "Desert Colossus": "True",
+            "Colossus Wasteland Gateway": "True",
             "Wasteland Near Colossus": "True"
         }
     },
     {
         "region_name": "MarketEntrance Market Gateway",
         "exits": {
-            "Market": "True",
+            "Market MarketEntrance Gateway": "True",
             "Market Entrance": "True"
         }
     },
     {
         "region_name": "Grounds Market Gateway",
         "exits": {
-            "Market": "True",
+            "Market Grounds Gateway": "True",
             "Castle Grounds": "True"
         }
     },
     {
         "region_name": "ToT Market Gateway",
         "exits": {
-            "Market": "True",
+            "Market ToT Gateway": "True",
             "ToT Entrance": "True"
         }
     },
     {
         "region_name": "Graveyard Kakariko Gateway",
         "exits": {
-            "Kakariko Village": "True",
+            "Kakariko Graveyard Gateway": "True",
             "Graveyard": "True"
         }
     },
     {
         "region_name": "Mountain Kakariko Gateway",
         "exits": {
-            "Kak Behind Gate": "True",
+            "Kakariko Mountain Gateway": "True",
             "Death Mountain": "True"
         }
     },
     {
         "region_name": "Mountain Goron Gateway",
         "exits": {
-            "Goron City": "True",
+            "Goron Mountain Gateway": "True",
             "Death Mountain": "True"
         }
     },
     {
         "region_name": "Crater Goron Gateway",
         "exits": {
-            "Goron To Crater Entrance": "True",
-            "Crater To Goron Entrance": "True"
+            "Goron Crater Gateway": "True",
+            "DMC Lower Local": "is_child or (logic_fewer_tunic_requirements or can_use(Goron_Tunic))"
         }
     },
     {
         "region_name": "Crater Mountain Gateway",
         "exits": {
-            "Mountain To Crater Entrance": "True",
-            "Crater To Mountain Entrance": "True"
+            "Mountain Crater Gateway": "True",
+            "DMC Upper Local": "is_child or (logic_fewer_tunic_requirements or can_use(Goron_Tunic))"
         }
     },
     {
         "region_name": "River Domain Gateway",
         "exits": {
             "ZR Behind Waterfall": "True",
-            "Zoras Domain": "True"
+            "Domain River Gateway": "True"
         }
     },
     {
         "region_name": "Fountain Domain Gateway",
         "exits": {
-            "ZD Behind King Zora": "True",
+            "Domain Fountain Gateway": "True",
             "Zoras Fountain": "True"
         }
     },
+
+
+
     {
-        "region_name": "Kokiri To Bridge Entrance",
-        "exits": {
-            "Kokiri Forest": "True",
-            "Kokiri Bridge Gateway": "True"
-        }
-    },
-    {
-        "region_name": "Goron To Crater Entrance",
-        "exits": {
-            "GC Darunias Chamber": "True",
-            "Crater Goron Gateway": "True"
-        }
-    },
-    {
-        "region_name": "Mountain To Crater Entrance",
-        "exits": {
-            "Death Mountain Summit": "True",
-            "Crater Mountain Gateway": "True"
-        }
-    },
-    {
-        "region_name": "Bridge To Kokiri Entrance",
+        "region_name": "Bridge Kokiri Gateway",
         "exits": {
             "Kokiri Bridge Gateway": "True",
             "LW Bridge": "True",
@@ -943,17 +925,178 @@
         }
     },
     {
-        "region_name": "Crater To Goron Entrance",
+        "region_name": "Woods Kokiri Gateway",
         "exits": {
-            "Crater Goron Gateway": "True",
-            "DMC Lower Local": "is_child or (logic_fewer_tunic_requirements or can_use(Goron_Tunic))"
+            "Kokiri Woods Gateway": "True",
+            "Lost Woods": "True"
         }
     },
     {
-        "region_name": "Crater To Mountain Entrance",
+        "region_name": "Woods GC Gateway",
         "exits": {
-            "Crater Mountain Gateway": "True",
-            "DMC Upper Local": "is_child or (logic_fewer_tunic_requirements or can_use(Goron_Tunic))"
+            "GC Woods Gateway": "True",
+            "Lost Woods": "True"
+        }
+    },
+    {
+        "region_name": "Woods River Gateway",
+        "exits": {
+            "River Woods Gateway": "True",
+            "Lost Woods": "True"
+        }
+    },
+    {
+        "region_name": "Woods Meadow Gateway",
+        "exits": {
+            "Meadow Woods Gateway": "True",
+            "LW Beyond Mido": "True"
+        }
+    },
+    {
+        "region_name": "Woods Field Gateway",
+        "exits": {
+            "Field Woods Gateway": "True",
+            "LW Bridge": "True"
+        }
+    },
+    {
+        "region_name": "Field Lake Gateway",
+        "exits": {
+            "Hyrule Field": "True",
+            "Lake Field Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Field Valley Gateway",
+        "exits": {
+            "Hyrule Field": "True",
+            "Valley Field Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Field MarketEntrance Gateway",
+        "exits": {
+            "Hyrule Field": "True",
+            "MarketEntrance Field Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Field Kakariko Gateway",
+        "exits": {
+            "Hyrule Field": "True",
+            "Kakariko Field Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Field River Gateway",
+        "exits": {
+            "Hyrule Field": "True",
+            "River Field Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Field Ranch Gateway",
+        "exits": {
+            "Hyrule Field": "True",
+            "Ranch Field Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Lake Domain Gateway",
+        "exits": {
+            "Lake Hylia": "True",
+            "Domain Lake Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Fortress Valley Gateway",
+        "exits": {
+            "Gerudo Fortress": "True",
+            "Valley Fortress Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Fortress Wasteland Gateway",
+        "exits": {
+            "GF Outside Gate": "True",
+            "Wasteland Fortress Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Colossus Wasteland Gateway",
+        "exits": {
+            "Desert Colossus": "True",
+            "Wasteland Colossus Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Market MarketEntrance Gateway",
+        "exits": {
+            "Market": "True",
+            "MarketEntrance Market Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Market Grounds Gateway",
+        "exits": {
+            "Market": "True",
+            "Grounds Market Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Market ToT Gateway",
+        "exits": {
+            "Market": "True",
+            "ToT Market Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Kakariko Graveyard Gateway",
+        "exits": {
+            "Kakariko Village": "True",
+            "Graveyard Kakariko Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Kakariko Mountain Gateway",
+        "exits": {
+            "Kak Behind Gate": "True",
+            "Mountain Kakariko Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Goron Mountain Gateway",
+        "exits": {
+            "Goron City": "True",
+            "Mountain Goron Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Goron Crater Gateway",
+        "exits": {
+            "GC Darunias Chamber": "True",
+            "Crater Goron Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Mountain Crater Gateway",
+        "exits": {
+            "Death Mountain Summit": "True",
+            "Crater Mountain Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Domain River Gateway",
+        "exits": {
+            "River Domain Gateway": "True",
+            "Zoras Domain": "True"
+        }
+    },
+    {
+        "region_name": "Domain Fountain Gateway",
+        "exits": {
+            "ZD Behind King Zora": "True",
+            "Fountain Domain Gateway": "True"
         }
     }
 ]
