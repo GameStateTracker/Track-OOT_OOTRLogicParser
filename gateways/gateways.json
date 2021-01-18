@@ -845,19 +845,22 @@
     },
     {
         "region_name": "MarketEntrance Market Gateway",
-        "exits": {"Market MarketEntrance Gateway": "True",
+        "exits": {
+            "Market MarketEntrance Gateway": "True",
             "Market Entrance": "True"
         }
     },
     {
         "region_name": "Grounds Market Gateway",
-        "exits": {"Market Grounds Gateway": "True",
+        "exits": {
+            "Market Grounds Gateway": "True",
             "Castle Grounds": "True"
         }
     },
     {
         "region_name": "ToT Market Gateway",
-        "exits": {"Market ToT Gateway": "True",
+        "exits": {
+            "Market ToT Gateway": "True",
             "ToT Entrance": "True"
         }
     },
