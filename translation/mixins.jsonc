@@ -532,5 +532,39 @@
             }
         ]
     },
+    "mixin.is_night_gs": {
+        "type": "or",
+        "el": [
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "mixin",
+                        "el": "mixin.is_night"
+                    },
+                    {
+                        "type": "not",
+                        "el": {
+                            "type": "value",
+                            "el": "option.sun_song_skulltuta"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "value",
+                        "el": "option.sun_song_skulltuta"
+                    },
+                    {
+                        "type": "mixin",
+                        "el": "function.can_play(item.song_sun)"
+                    }
+                ]
+            }
+        ]
+    },
     "": ""
 }

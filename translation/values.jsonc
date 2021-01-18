@@ -23,6 +23,10 @@
         "type": "mixin",
         "el": "mixin.is_night"
     },
+    "at_night_gs": {
+        "type": "mixin",
+        "el": "mixin.is_night_gs"
+    },
     "at_day": {
         "type": "mixin",
         "el": "mixin.is_day"
