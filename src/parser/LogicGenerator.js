@@ -177,6 +177,9 @@ class LogicGenerator {
                     if (name === "event.showed_mido_sword_&_shield" || name === "event.deku_tree_clear") {
                         regC[name] = postCalcutate(events.get(node), "child", regName, true);
                         regA[name] = postCalcutate(events.get(node), "adult", regName);
+                    } else if(name === "event.drain_well") {
+                        regC[name] = postCalcutate(events.get(node), "child", regName, true);
+                        regA[name] = postCalcutate(events.get(node), "adult", regName, true);
                     } else {
                         regC[name] = wrapNotEraFilter(postCalcutate(events.get(node), "child", regName), "adult");
                         regA[name] = wrapNotEraFilter(postCalcutate(events.get(node), "adult", regName), "child");

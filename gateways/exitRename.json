@@ -10,7 +10,6 @@
         "Kak Shooting Gallery": "Kak Shooting Gallery Entrance",
         "Kak Windmill": "Kak Windmill Entrance",
         "Kak Potion Shop Front": "Kak Potion Shop Front Entrance",
-        "Kak Potion Shop Back": "Kak Potion Shop Back Entrance",
         "Kak Redead Grotto": "Kak Redead Grotto Entrance"
     },
     "KF Outside Deku Tree": {
@@ -176,7 +175,7 @@
     },
     "Zoras Domain": {
         "Lake Hylia": "Domain Lake Gateway",
-        "ZR Behind Waterfall": "River Domain Gateway",
+        "ZR Behind Waterfall": "Domain River Gateway",
         "ZD Shop": "ZD Shop Entrance",
         "ZD Storms Grotto": "ZD Storms Grotto Entrance"
     },
@@ -284,7 +283,8 @@
     },
     "Kak Backyard": {
         "Kak Odd Medicine Building": "Kak Odd Medicine Building Entrance",
-        "Kak Open Grotto": "Kak Open Grotto Entrance"
+        "Kak Open Grotto": "Kak Open Grotto Entrance",
+        "Kak Potion Shop Back": "Kak Potion Shop Back Entrance"
     },
     "Kak Impas Ledge": {
         "Kak Impas House Back": "Kak Impas House Back Entrance"
