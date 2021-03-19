@@ -145,19 +145,6 @@
             }
         ]
     },
-    "mixin.deliver_letter": {
-        "type": "and",
-        "el": [
-            {
-                "type": "mixin",
-                "el": "mixin.can_become_child"
-            },
-            {
-                "type": "value",
-                "el": "item.zora_letter"
-            }
-        ]
-    },
     "mixin.can_build_rainbow_bridge": {
         "type": "or",
         "el": [

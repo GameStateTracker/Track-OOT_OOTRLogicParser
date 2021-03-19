@@ -219,6 +219,12 @@ class LogicGenerator {
         res.edges["region.beyond_door_of_time[adult]"]["region.root_exits[child]"] = {
             "type": "true"
         };
+        res.edges["region.beyond_door_of_time[child]"]["region.beyond_door_of_time[adult]"] = {
+            "type": "true"
+        };
+        res.edges["region.beyond_door_of_time[adult]"]["region.beyond_door_of_time[child]"] = {
+            "type": "true"
+        };
         res.logic["mixin.is_glitched[child]"] = {
             "type": `${glitched}`
         }
