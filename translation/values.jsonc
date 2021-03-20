@@ -590,8 +590,8 @@
         "el": "item.zora_letter"
     },
     "Deliver_Letter": {
-        "type": "mixin",
-        "el": "mixin.deliver_letter"
+        "type": "value",
+        "el": "logic.location.deliver_letter"
     },
     "Gerudo_Membership_Card": {
         "type": "value",

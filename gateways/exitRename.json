@@ -200,13 +200,14 @@
         "Market Mask Shop": "Market Mask Shop Entrance",
         "Market Potion Shop": "Market Potion Shop Entrance",
         "Market Treasure Chest Game": "Market Treasure Chest Game Entrance",
-        "Market Man in Green House": "Market Man in Green House Entrance",
         "Market Bazaar": "Market Bazaar Entrance",
-        "Market Shooting Gallery": "Market Shooting Gallery Entrance"
+        "Market Shooting Gallery": "Market Shooting Gallery Entrance",
+        "Market Bombchu Bowling": "Market Bombchu Bowling Entrance"
     },
     "Market Back Alley": {
         "Market Bombchu Bowling": "Market Bombchu Bowling Entrance",
-        "Market Bombchu Shop": "Market Bombchu Shop Entrance"
+        "Market Bombchu Shop": "Market Bombchu Shop Entrance",
+        "Market Man in Green House": "Market Man in Green House Entrance"
     },
     "Castle Grounds": {
         "Market": "Grounds Market Gateway"
