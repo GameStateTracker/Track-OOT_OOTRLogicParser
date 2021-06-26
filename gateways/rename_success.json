@@ -31,7 +31,7 @@
         "Jabu Jabus Belly Gateway": false
     },
     "Jabu Jabus Belly Gateway": {
-        "ZJabu Jabus Belly Entrance": false,
+        "Jabu Jabus Belly Entrance": false,
         "Jabu Jabus Belly Beginning": false,
         "Jabu Jabus Belly Beginning MQ": false
     },
@@ -289,7 +289,7 @@
     },
     "Kak Potion Shop Back Entrance": {
         "Kak Potion Shop Back": false,
-        "Kakariko Village": false
+        "Kak Backyard": false
     },
     "Kak Open Grotto Entrance": {
         "Kak Open Grotto": false,
@@ -389,11 +389,11 @@
     },
     "GV Carpenter Tent Entrance": {
         "GV Carpenter Tent": false,
-        "GV Fortess Side": false
+        "GV Fortress Side": false
     },
     "GV Storms Grotto Entrance": {
         "GV Storms Grotto": false,
-        "GV Fortess Side": false
+        "GV Fortress Side": false
     },
     "GV Octorok Grotto Entrance": {
         "GV Octorok Grotto": false,
@@ -401,7 +401,7 @@
     },
     "GF Storms Grotto Entrance": {
         "GF Storms Grotto": false,
-        "Gerudo Fortess": false
+        "Gerudo Fortress": false
     },
     "Colossus Great Fairy Fountain Entrance": {
         "Colossus Great Fairy Fountain": false,
@@ -413,108 +413,212 @@
     },
     "Kokiri Bridge Gateway": {
         "Kokiri Forest": false,
-        "LW Bridge": false,
-        "LW Bridge From Forest": false
+        "Bridge Kokiri Gateway": false
     },
     "Kokiri Woods Gateway": {
         "Kokiri Forest": false,
-        "Lost Woods": false
+        "Woods Kokiri Gateway": false
     },
     "GC Woods Gateway": {
         "GC Woods Warp": false,
-        "Lost Woods": false
+        "Woods GC Gateway": false
     },
     "River Woods Gateway": {
         "Zora River": false,
-        "Lost Woods": false
+        "Woods River Gateway": false
     },
     "Meadow Woods Gateway": {
         "SFM Entryway": false,
-        "LW Beyond Mido": false
+        "Woods Meadow Gateway": false
     },
     "Field Woods Gateway": {
         "Hyrule Field": false,
-        "LW Bridge": false
+        "Woods Field Gateway": false
     },
     "Lake Field Gateway": {
-        "Hyrule Field": false,
+        "Field Lake Gateway": false,
         "Lake Hylia": false
     },
     "Valley Field Gateway": {
-        "Hyrule Field": false,
+        "Field Valley Gateway": false,
         "Gerudo Valley": false
     },
     "MarketEntrance Field Gateway": {
-        "Hyrule Field": false,
+        "Field MarketEntrance Gateway": false,
         "Market Entrance": false
     },
     "Kakariko Field Gateway": {
-        "Hyrule Field": false,
+        "Field Kakariko Gateway": false,
         "Kakariko Village": false
     },
     "River Field Gateway": {
-        "Hyrule Field": false,
+        "Field River Gateway": false,
         "ZR Front": false
     },
     "Ranch Field Gateway": {
-        "Hyrule Field": false,
+        "Field Ranch Gateway": false,
         "Lon Lon Ranch": false
     },
     "Domain Lake Gateway": {
-        "Lake Hylia": false,
+        "Lake Domain Gateway": false,
         "Zoras Domain": false
     },
     "Valley Fortress Gateway": {
-        "Gerudo Fortress": false,
+        "Fortress Valley Gateway": false,
         "GV Fortress Side": false
     },
     "Wasteland Fortress Gateway": {
-        "GF Outside Gate": false,
+        "Fortress Wasteland Gateway": false,
         "Wasteland Near Fortress": false
     },
     "Wasteland Colossus Gateway": {
-        "Desert Colossus": false,
+        "Colossus Wasteland Gateway": false,
         "Wasteland Near Colossus": false
     },
     "MarketEntrance Market Gateway": {
-        "Market": false,
+        "Market MarketEntrance Gateway": false,
         "Market Entrance": false
     },
     "Grounds Market Gateway": {
-        "Market": false,
+        "Market Grounds Gateway": false,
         "Castle Grounds": false
     },
     "ToT Market Gateway": {
-        "Market": false,
+        "Market ToT Gateway": false,
         "ToT Entrance": false
     },
     "Graveyard Kakariko Gateway": {
-        "Kakariko Village": false,
+        "Kakariko Graveyard Gateway": false,
         "Graveyard": false
     },
     "Mountain Kakariko Gateway": {
-        "Kak Behind Gate": false,
+        "Kakariko Mountain Gateway": false,
         "Death Mountain": false
     },
     "Mountain Goron Gateway": {
-        "Goron City": false,
+        "Goron Mountain Gateway": false,
         "Death Mountain": false
     },
     "Crater Goron Gateway": {
-        "GC Darunias Chamber": false,
+        "Goron Crater Gateway": false,
         "DMC Lower Local": false
     },
     "Crater Mountain Gateway": {
-        "Death Mountain Summit": false,
+        "Mountain Crater Gateway": false,
         "DMC Upper Local": false
     },
     "River Domain Gateway": {
         "ZR Behind Waterfall": false,
-        "Zoras Domain": false
+        "Domain River Gateway": false
     },
     "Fountain Domain Gateway": {
-        "ZD Behind King Zora": false,
+        "Domain Fountain Gateway": false,
         "Zoras Fountain": false
+    },
+    "Bridge Kokiri Gateway": {
+        "Kokiri Bridge Gateway": false,
+        "LW Bridge": false,
+        "LW Bridge From Forest": false
+    },
+    "Woods Kokiri Gateway": {
+        "Kokiri Woods Gateway": false,
+        "Lost Woods": false
+    },
+    "Woods GC Gateway": {
+        "GC Woods Gateway": false,
+        "Lost Woods": false
+    },
+    "Woods River Gateway": {
+        "River Woods Gateway": false,
+        "Lost Woods": false
+    },
+    "Woods Meadow Gateway": {
+        "Meadow Woods Gateway": false,
+        "LW Beyond Mido": false
+    },
+    "Woods Field Gateway": {
+        "Field Woods Gateway": false,
+        "LW Bridge": false
+    },
+    "Field Lake Gateway": {
+        "Hyrule Field": false,
+        "Lake Field Gateway": false
+    },
+    "Field Valley Gateway": {
+        "Hyrule Field": false,
+        "Valley Field Gateway": false
+    },
+    "Field MarketEntrance Gateway": {
+        "Hyrule Field": false,
+        "MarketEntrance Field Gateway": false
+    },
+    "Field Kakariko Gateway": {
+        "Hyrule Field": false,
+        "Kakariko Field Gateway": false
+    },
+    "Field River Gateway": {
+        "Hyrule Field": false,
+        "River Field Gateway": false
+    },
+    "Field Ranch Gateway": {
+        "Hyrule Field": false,
+        "Ranch Field Gateway": false
+    },
+    "Lake Domain Gateway": {
+        "Lake Hylia": false,
+        "Domain Lake Gateway": false
+    },
+    "Fortress Valley Gateway": {
+        "Gerudo Fortress": false,
+        "Valley Fortress Gateway": false
+    },
+    "Fortress Wasteland Gateway": {
+        "GF Outside Gate": false,
+        "Wasteland Fortress Gateway": false
+    },
+    "Colossus Wasteland Gateway": {
+        "Desert Colossus": false,
+        "Wasteland Colossus Gateway": false
+    },
+    "Market MarketEntrance Gateway": {
+        "Market": false,
+        "MarketEntrance Market Gateway": false
+    },
+    "Market Grounds Gateway": {
+        "Market": false,
+        "Grounds Market Gateway": false
+    },
+    "Market ToT Gateway": {
+        "Market": false,
+        "ToT Market Gateway": false
+    },
+    "Kakariko Graveyard Gateway": {
+        "Kakariko Village": false,
+        "Graveyard Kakariko Gateway": false
+    },
+    "Kakariko Mountain Gateway": {
+        "Kak Behind Gate": false,
+        "Mountain Kakariko Gateway": false
+    },
+    "Goron Mountain Gateway": {
+        "Goron City": false,
+        "Mountain Goron Gateway": false
+    },
+    "Goron Crater Gateway": {
+        "GC Darunias Chamber": false,
+        "Crater Goron Gateway": false
+    },
+    "Mountain Crater Gateway": {
+        "Death Mountain Summit": false,
+        "Crater Mountain Gateway": false
+    },
+    "Domain River Gateway": {
+        "River Domain Gateway": false,
+        "Zoras Domain": false
+    },
+    "Domain Fountain Gateway": {
+        "ZD Behind King Zora": false,
+        "Fountain Domain Gateway": false
     },
     "Bottom of the Well": {
         "Kakariko Village": true,
@@ -1005,7 +1109,7 @@
         "Market Bazaar": true,
         "Market Mask Shop": true,
         "Market Shooting Gallery": true,
-        "Market Bombchu Bowling": false,
+        "Market Bombchu Bowling": true,
         "Market Potion Shop": true,
         "Market Treasure Chest Game": true,
         "Market Back Alley": false
@@ -1014,7 +1118,7 @@
         "Market": false,
         "Market Bombchu Shop": true,
         "Market Dog Lady House": false,
-        "Market Man in Green House": false
+        "Market Man in Green House": true
     },
     "ToT Entrance": {
         "Market": true,
@@ -1095,6 +1199,7 @@
         "Kak Potion Shop Front": true,
         "Kak Redead Grotto": true,
         "Kak Impas Ledge": false,
+        "Kak Impas Rooftop": false,
         "Kak Odd Medicine Rooftop": false,
         "Kak Backyard": false,
         "Graveyard": true,
@@ -1102,6 +1207,10 @@
     },
     "Kak Impas Ledge": {
         "Kak Impas House Back": true,
+        "Kakariko Village": false
+    },
+    "Kak Impas Rooftop": {
+        "Kak Impas Ledge": false,
         "Kakariko Village": false
     },
     "Kak Odd Medicine Rooftop": {
@@ -1112,7 +1221,7 @@
         "Kakariko Village": false,
         "Kak Open Grotto": true,
         "Kak Odd Medicine Building": true,
-        "Kak Potion Shop Back": false
+        "Kak Potion Shop Back": true
     },
     "Kak Carpenter Boss House": {
         "Kakariko Village": true
@@ -1195,7 +1304,7 @@
         "DMT Great Fairy Fountain": true
     },
     "DMT Owl Flight": {
-        "Kak Impas Ledge": false
+        "Kak Impas Rooftop": false
     },
     "Goron City": {
         "Death Mountain": true,
