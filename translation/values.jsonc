@@ -23,6 +23,10 @@
         "type": "mixin",
         "el": "mixin.is_night"
     },
+    "at_night_gs": {
+        "type": "mixin",
+        "el": "mixin.is_night_gs"
+    },
     "at_day": {
         "type": "mixin",
         "el": "mixin.is_day"
@@ -335,8 +339,8 @@
         "el": "item.arrows"
     },
     "Ocarina": {
-        "type": "value",
-        "el": "item.ocarina"
+        "type": "mixin",
+        "el": "mixin.can_play_ocarina"
     },
     "has_bottle": {
         "type": "value",
@@ -400,7 +404,7 @@
             "type": "value",
             "el": "item.cojiro"
         },
-        "value": 1
+        "value": 2
     },
     "Cojiro": {
         "type": "min",
@@ -408,7 +412,7 @@
             "type": "value",
             "el": "item.cojiro"
         },
-        "value": 2
+        "value": 3
     },
     "Odd_Mushroom": {
         "type": "min",
@@ -416,7 +420,7 @@
             "type": "value",
             "el": "item.cojiro"
         },
-        "value": 3
+        "value": 4
     },
     "Odd_Potion": {
         "type": "min",
@@ -424,7 +428,7 @@
             "type": "value",
             "el": "item.cojiro"
         },
-        "value": 4
+        "value": 5
     },
     "Poachers_Saw": {
         "type": "min",
@@ -432,7 +436,7 @@
             "type": "value",
             "el": "item.cojiro"
         },
-        "value": 5
+        "value": 6
     },
     "Broken_Sword": {
         "type": "min",
@@ -440,7 +444,7 @@
             "type": "value",
             "el": "item.cojiro"
         },
-        "value": 6
+        "value": 7
     },
     "Prescription": {
         "type": "min",
@@ -448,7 +452,7 @@
             "type": "value",
             "el": "item.cojiro"
         },
-        "value": 7
+        "value": 8
     },
     "Eyeball_Frog": {
         "type": "min",
@@ -456,7 +460,7 @@
             "type": "value",
             "el": "item.cojiro"
         },
-        "value": 8
+        "value": 9
     },
     "Eyedrops": {
         "type": "min",
@@ -464,7 +468,7 @@
             "type": "value",
             "el": "item.cojiro"
         },
-        "value": 9
+        "value": 10
     },
     "Claim_Check": {
         "type": "min",
@@ -472,7 +476,7 @@
             "type": "value",
             "el": "item.cojiro"
         },
-        "value": 10
+        "value": 11
     },
     //"item.cojiro",
     "Kokiri_Sword": {
@@ -586,8 +590,8 @@
         "el": "item.zora_letter"
     },
     "Deliver_Letter": {
-        "type": "mixin",
-        "el": "mixin.deliver_letter"
+        "type": "value",
+        "el": "logic.location.deliver_letter"
     },
     "Gerudo_Membership_Card": {
         "type": "value",

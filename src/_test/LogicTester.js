@@ -86,12 +86,16 @@ export function testMixins(logic) {
 }
 
 export function filterMixins(logic) {
-    const [success] = testMixins(logic);
+    const [success, failed] = testMixins(logic);
+    //Possibly fixed this
+    //success.add('mixin.can_plant_bean[adult]')
+    //failed.delete('mixin.can_plant_bean[adult]')
     const res = {edges: logic.edges, logic: {}};
     for (const name in logic.logic) {
         if (success.has(name)) {
             res.logic[name] = logic.logic[name];
         }
     }
-    return res;
+    return [res, failed];
 }
+

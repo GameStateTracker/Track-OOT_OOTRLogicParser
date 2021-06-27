@@ -10,39 +10,58 @@ const inExitSuccessFile  = path.join(__dirname, "/gateways/rename_success.json")
 const renameData = JSON.parse(fs.readFileSync(inExitRenameFile, 'utf8'));
 const rename_success = JSON.parse(fs.readFileSync(inExitSuccessFile, 'utf8'));
 const success = {};
-const exits = ["Kakariko Village", "KF Outside Deku Tree", "Death Mountain", "Zoras Fountain", "ZF Ice Ledge", "Gerudo Fortress", "SFM Forest Temple Entrance Ledge", "DMC Fire Temple Entrance", "Lake Hylia", "Graveyard Warp Pad Region", "Desert Colossus", "Castle Grounds", "Ganons Castle Grounds"]
+const exits = ["Kakariko Village", "KF Outside Deku Tree", "Death Mountain", "Zoras Fountain", "ZF Ice Ledge", "Gerudo Fortress", "SFM Forest Temple Entrance Ledge", "DMC Fire Temple Entrance", "Lake Hylia", "Graveyard Warp Pad Region", "Desert Colossus", "Castle Grounds", "Ganons Castle Grounds", 'Ganons Castle Tower']
 
 class LogicParser {
 
-    parse(input, mq, write) {
+    parse(input, mq = false, write = false) {
         const output = RandONC.parse(input);
         output.forEach((value) => {
-            if (mq === 1) value.region_name = value.region_name + " MQ"
+            if (mq) value.region_name = value.region_name + " MQ"
             for (const i in value.locations) {
-                const rule = value.locations[i];
+                let rule = value.locations[i];
+                if(rule.includes('at')) {
+                    let split = rule.split('at(\'')
+                    if(split[1] != undefined) {
+                        let split2 = split[1].split('\'');
+                        if(mq) {
+                            split2[0] = split2[0] + " MQ";
+                            split2 = split2.join('\'');
+                            split[1] = split2;
+                            split = split.join('at(\'');
+                            rule = split;
+                        }
+                    }
+                }
+                if(i.includes(' GS ')) {
+                    if(rule.includes('at_night')) {
+                        let split = rule.split('at_night');
+                        rule = split.join('at_night_gs');
+                    }
+                }
                 LogicGenerator.addLocation(value.region_name, i, transpile(rule));
             }
             for (let i in value.exits) {
                 const exit = i;
                 const rule = value.exits[i];
-                if (mq === 1) {
+                if (mq) {
                     if (!exits.includes(i)) i = i + " MQ"
                 }
                 let regionName = value.region_name
                 if (regionName.endsWith(" MQ")) regionName = regionName.replace(" MQ", "");
-                if (write === 1) {
+                if (write) {
                     if (success[regionName] == null) success[regionName] = {};
                     success[regionName][exit] = false;
                 }
                 if (renameData[regionName] != null) {
                     //console.log(regionName + ": " + i + "::: is no longer a valid region exit")
-                    if (write === 1) {
+                    if (write) {
                         if (success[regionName] == null) success[regionName] = {};
                         success[regionName][exit] = false;
                     }
                     if (renameData[regionName][i] !== undefined) {
                         i = renameData[regionName][i];
-                        if (write === 1) {
+                        if (write) {
                             if (success[regionName] == null) success[regionName] = {};
                             success[regionName][exit] = true;
                         }
@@ -59,8 +78,8 @@ class LogicParser {
         })
     }
 
-    write(write) {
-        if (write === 1) {
+    write(write = false) {
+        if (write) {
             const data = JSON.stringify(success, null, 4);
             const dataP = JSON.parse(data)
             for (const run in dataP) {

@@ -145,20 +145,7 @@
             }
         ]
     },
-    "mixin.deliver_letter": {
-        "type": "and",
-        "el": [
-            {
-                "type": "mixin",
-                "el": "mixin.can_become_child"
-            },
-            {
-                "type": "value",
-                "el": "item.zora_letter"
-            }
-        ]
-    },
-    "mixin.can_build_rainbow_bridge[adult]": {
+    "mixin.can_build_rainbow_bridge": {
         "type": "or",
         "el": [
             {
@@ -198,7 +185,7 @@
                     },
                     {
                         "type": "mixin",
-                        "el": "function.has_stones(bridge_stones)[adult]"
+                        "el": "function.has_stones(bridge_stones)"
                     }
                 ]
             },
@@ -212,7 +199,7 @@
                     },
                     {
                         "type": "mixin",
-                        "el": "function.has_medallions(bridge_medallions)[adult]"
+                        "el": "function.has_medallions(bridge_medallions)"
                     }
                 ]
             },
@@ -226,7 +213,7 @@
                     },
                     {
                         "type": "mixin",
-                        "el": "function.has_dungeon_rewards(bridge_rewards)[adult]"
+                        "el": "function.has_dungeon_rewards(bridge_rewards)"
                     }
                 ]
             },
@@ -414,6 +401,153 @@
                                 "value": 2
                             }
                         ]
+                    }
+                ]
+            }
+        ]
+    },
+    "mixin.can_play_ocarina": {
+        "type": "or",
+        "el": [
+            {
+                "type": "value",
+                "el": "item.ocarina"
+            },
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "value",
+                        "el": "item.bottle"
+                    },
+                    {
+                        "type": "or",
+                        "el": [
+                            {
+                                "type": "value",
+                                "el": "skip.invisible_ocarina"
+                            },
+                            {
+                                "type": "and",
+                                "el": [
+                                    {
+                                        "type": "value",
+                                        "el": "skip.invisible_ocarina_midair"
+                                    },
+                                    {
+                                        "type": "or",
+                                        "el": [
+                                            {
+                                                "type": "value",
+                                                "el": "item.bombs"
+                                            },
+                                            {
+                                                "type": "value",
+                                                "el": "item.bombchu"
+                                            },
+                                            {
+                                                "type": "and",
+                                                "el": [
+                                                    {
+                                                        "type": "mixin",
+                                                        "el": "mixin.is_child"
+                                                    },
+                                                    {
+                                                        "type": "or",
+                                                        "el": [
+                                                            {
+                                                                "type": "value",
+                                                                "el": "item.stick"
+                                                            },
+                                                            {
+                                                                "type": "value",
+                                                                "el": "item.sword_kokiri"
+                                                            },
+                                                            {
+                                                                "type": "value",
+                                                                "el": "item.slingshot"
+                                                            },
+                                                            {
+                                                                "type": "value",
+                                                                "el": "item.boomerang"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "and",
+                                                "el": [
+                                                    {
+                                                        "type": "mixin",
+                                                        "el": "mixin.is_adult"
+                                                    },
+                                                    {
+                                                        "type": "or",
+                                                        "el": [
+                                                            {
+                                                                "type": "value",
+                                                                "el": "item.sword_master"
+                                                            },
+                                                            {
+                                                                "type": "value",
+                                                                "el": "item.sword_biggoron"
+                                                            },
+                                                            {
+                                                                "type": "value",
+                                                                "el": "item.bow"
+                                                            },
+                                                            {
+                                                                "type": "value",
+                                                                "el": "item.hookshot"
+                                                            },
+                                                            {
+                                                                "type": "value",
+                                                                "el": "item.hammer"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "mixin.is_night_gs": {
+        "type": "or",
+        "el": [
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "mixin",
+                        "el": "mixin.is_night"
+                    },
+                    {
+                        "type": "not",
+                        "el": {
+                            "type": "value",
+                            "el": "option.sun_song_skulltuta"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "value",
+                        "el": "option.sun_song_skulltuta"
+                    },
+                    {
+                        "type": "mixin",
+                        "el": "function.can_play(item.song_sun)"
                     }
                 ]
             }

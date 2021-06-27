@@ -7,6 +7,7 @@ import HelperParser from "./parser/HelperParser.js";
 import LogicParser from "./parser/LogicParser.js";
 import LogicGenerator from "./parser/LogicGenerator.js";
 import { filterLogic, filterMixins } from "./_test/LogicTester.js";
+import { filterFailedMixins } from "./_test/RemoveBadLogic.js";
 
 const __dirname = path.resolve();
 
@@ -18,13 +19,13 @@ const outputDir = path.join(__dirname, "/output/");
 
 const transRulesFile = path.join(__dirname, "/translation/predict_rules.json");
 
-let write = 0;
-if (process.argv.indexOf('--write') > 0) write = 1;
+let write = false;
+if (process.argv.indexOf('--write') > 0) write = true;
 
 if (!fs.existsSync(inLogicDir)) {
-    execSync('git clone --branch "6.0.1" "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "input"');
+    execSync('git clone --branch "6.0.57" "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "input"');
 } else {
-    execSync('cd input && git pull --rebase "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "6.0.1"');
+    execSync('cd input && git pull --rebase "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "6.0.57"');
 }
 if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, {
@@ -40,37 +41,45 @@ rules.forEach((v, k) => {
 
 // parser for normal logic
 function parseLogic() {
-    LogicParser.parse(fs.readFileSync(inGatewayFile).toString(), 0, write);
+    LogicParser.parse(fs.readFileSync(inGatewayFile).toString(), false, write);
     fs.readdirSync(inLogicDir).forEach(function(file) {
         const iname = path.join(inLogicDir, file);
-        let mq = 0;
-        if (iname.endsWith("MQ.json")) mq = 1;
+        let mq = false;
+        if (iname.endsWith("MQ.json")) mq = true;
         LogicParser.parse(fs.readFileSync(iname).toString(), mq, write);
     });
     LogicParser.write(write);
     const logic = LogicGenerator.generate();
     const logicData = JSON.stringify(logic, null, 4);
     fs.writeFileSync(`${outputDir}/logic.full.json`, logicData);
-    const filtered = filterLogic(filterMixins(logic));
+    const [success, failed] = filterMixins(logic)
+    const filtered = filterLogic(success);
     const filteredData = JSON.stringify(filtered, null, 4);
-    fs.writeFileSync(`${outputDir}/logic.json`, filteredData);
+    fs.writeFileSync(`${outputDir}/logic.filtered.json`, filteredData);
+    const filteredBad = filterFailedMixins([filtered, failed]);
+    const filteredBadData = JSON.stringify(filteredBad, null, 4);
+    fs.writeFileSync(`${outputDir}/logic.json`, filteredBadData);
 }
 
 // parser for glitched logic
 function parseGlitchedLogic() {
-    LogicParser.parse(fs.readFileSync(inGatewayFile).toString(), 0, 2);
+    LogicParser.parse(fs.readFileSync(inGatewayFile).toString());
     fs.readdirSync(inGlitchedDir).forEach(function(file) {
         const iname = path.join(inGlitchedDir, file);
-        let mq = 0;
-        if (iname.endsWith("MQ.json")) mq = 1;
-        LogicParser.parse(fs.readFileSync(iname).toString(), mq, 2);
+        let mq = false;
+        if (iname.endsWith("MQ.json")) mq = true;
+        LogicParser.parse(fs.readFileSync(iname).toString(), mq);
     });
-    const logic = LogicGenerator.generate();
+    const logic = LogicGenerator.generate(true);
     const logicData = JSON.stringify(logic, null, 4);
     fs.writeFileSync(`${outputDir}/logic_glitched.full.json`, logicData);
-    const filtered = filterLogic(filterMixins(logic));
+    const [success, failed] = filterMixins(logic)
+    const filtered = filterLogic(success);
     const filteredData = JSON.stringify(filtered, null, 4);
-    fs.writeFileSync(`${outputDir}/logic_glitched.json`, filteredData);
+    fs.writeFileSync(`${outputDir}/logic_glitched.filtered.json`, filteredData);
+    const filteredBad = filterFailedMixins([filtered, failed]);
+    const filteredBadData = JSON.stringify(filteredBad, null, 4);
+    fs.writeFileSync(`${outputDir}/logic_glitched.json`, filteredBadData);
 }
 
 // --------------------------

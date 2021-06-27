@@ -112,7 +112,7 @@ class LogicGenerator {
         events.set(name, value);
     }
 
-    generate() {
+    generate(glitched = false) {
         console.log("");
         console.log("-------------------------------------------");
         console.log("generate logic output");
@@ -177,6 +177,9 @@ class LogicGenerator {
                     if (name === "event.showed_mido_sword_&_shield" || name === "event.deku_tree_clear") {
                         regC[name] = postCalcutate(events.get(node), "child", regName, true);
                         regA[name] = postCalcutate(events.get(node), "adult", regName);
+                    } else if(name === "event.drain_well") {
+                        regC[name] = postCalcutate(events.get(node), "child", regName, true);
+                        regA[name] = postCalcutate(events.get(node), "adult", regName, true);
                     } else {
                         regC[name] = wrapNotEraFilter(postCalcutate(events.get(node), "child", regName), "adult");
                         regA[name] = wrapNotEraFilter(postCalcutate(events.get(node), "adult", regName), "child");
@@ -216,6 +219,18 @@ class LogicGenerator {
         res.edges["region.beyond_door_of_time[adult]"]["region.root_exits[child]"] = {
             "type": "true"
         };
+        res.edges["region.beyond_door_of_time[child]"]["region.beyond_door_of_time[adult]"] = {
+            "type": "true"
+        };
+        res.edges["region.beyond_door_of_time[adult]"]["region.beyond_door_of_time[child]"] = {
+            "type": "true"
+        };
+        res.logic["mixin.is_glitched[child]"] = {
+            "type": `${glitched}`
+        }
+        res.logic["mixin.is_glitched[adult]"] = {
+            "type": `${glitched}`
+        }
         // END overrides
 
 
