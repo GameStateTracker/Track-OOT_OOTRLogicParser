@@ -896,7 +896,7 @@
         "region_name": "Crater Mountain Gateway",
         "exits": {
             "Mountain Crater Gateway": "True",
-            "DMC Upper Local": "is_child or (logic_fewer_tunic_requirements or can_use(Goron_Tunic))"
+            "DMC Upper Local": "True"
         }
     },
     {
