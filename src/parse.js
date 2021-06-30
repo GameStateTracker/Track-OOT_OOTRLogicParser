@@ -20,12 +20,12 @@ const outputDir = path.join(__dirname, "/output/");
 const transRulesFile = path.join(__dirname, "/translation/predict_rules.json");
 
 let write = false;
-if (process.argv.indexOf('--write') > 0) write = true;
+if (process.argv.indexOf("--write") > 0) write = true;
 
 if (!fs.existsSync(inLogicDir)) {
-    execSync('git clone --branch "6.0.57" "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "input"');
+    execSync("git clone --branch \"6.0.57\" \"https://github.com/TestRunnerSRL/OoT-Randomizer.git\" \"input\"");
 } else {
-    execSync('cd input && git pull --rebase "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "6.0.57"');
+    execSync("cd input && git pull --rebase \"https://github.com/TestRunnerSRL/OoT-Randomizer.git\" \"6.0.57\"");
 }
 if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, {
@@ -41,6 +41,7 @@ rules.forEach((v, k) => {
 
 // parser for normal logic
 function parseLogic() {
+    LogicGenerator.reset();
     LogicParser.parse(fs.readFileSync(inGatewayFile).toString(), false, write);
     fs.readdirSync(inLogicDir).forEach(function(file) {
         const iname = path.join(inLogicDir, file);
@@ -63,6 +64,7 @@ function parseLogic() {
 
 // parser for glitched logic
 function parseGlitchedLogic() {
+    LogicGenerator.reset();
     LogicParser.parse(fs.readFileSync(inGatewayFile).toString());
     fs.readdirSync(inGlitchedDir).forEach(function(file) {
         const iname = path.join(inGlitchedDir, file);
@@ -88,7 +90,5 @@ function parseGlitchedLogic() {
 HelperParser.parse(fs.readFileSync(inHelperFile).toString());
 // parse logic
 parseLogic();
-// reset generator
-LogicGenerator.reset();
 // parse glitched logic
 parseGlitchedLogic();

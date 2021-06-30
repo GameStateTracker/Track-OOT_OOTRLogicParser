@@ -1,0 +1,54 @@
+{
+    "useBasicGeneration": {
+        "exits": {
+            "default": false,
+            "child": [
+                "region.deku_tree_boss_room",
+                "region.deku_tree_basement_water_room_back_mq",
+                "region.deku_tree_basement_water_room_front_mq"
+            ],
+            "adult": []
+        },
+        "locations": {
+            "default": false,
+            "child": [],
+            "adult": []
+        },
+        "events": {
+            "default": false,
+            "child": [
+                "event.showed_mido_sword_&_shield",
+                "event.deku_tree_clear",
+                "event.drain_well"
+            ],
+            "adult": [
+                "event.drain_well"
+            ]
+        }
+    },
+    "wrapNotEra": {
+        "exits": {
+            "default": false,
+            "child": [],
+            "adult": []
+        },
+        "locations": {
+            "default": true,
+            "child": [],
+            "adult": []
+        },
+        "events": {
+            "default": true,
+            "child": [
+                "event.showed_mido_sword_&_shield",
+                "event.deku_tree_clear",
+                "event.drain_well"
+            ],
+            "adult": [
+                "event.showed_mido_sword_&_shield",
+                "event.deku_tree_clear",
+                "event.drain_well"
+            ]
+        }
+    }
+}

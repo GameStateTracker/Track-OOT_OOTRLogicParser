@@ -25,7 +25,7 @@
     },
     "Gerudo Fortress": {
         "Gerudo Training Grounds Lobby": "Gerudo Training Grounds Entrance",
-        "GV Fortress Side": "Valley Fortress Gateway",
+        "GV Fortress Side": "Fortress Valley Gateway",
         "GF Storms Grotto": "GF Storms Grotto Entrance"
     },
     "Sacred Forest Meadow": {
@@ -132,7 +132,7 @@
         "SFM Entryway": "Woods Meadow Gateway",
         "LW Scrubs Grotto": "LW Scrubs Grotto Entrance",
         "Deku Theater": "Deku Theater Entrance",
-        "LW Forest_exit": "Woods Kokiri Gateway"
+        "LW Forest Exit": "Woods Kokiri Gateway"
     },
     "SFM Entryway": {
         "LW Beyond Mido": "Meadow Woods Gateway",

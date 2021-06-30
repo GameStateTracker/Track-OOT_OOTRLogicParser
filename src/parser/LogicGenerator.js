@@ -13,6 +13,7 @@ import {
 
 const __dirname = path.resolve();
 
+const generator_config = JSONCFile.read(path.join(__dirname, "/translation/generator_config.jsonc"), {});
 const function_overrides = JSONCFile.read(path.join(__dirname, "/translation/functions.jsonc"), {});
 const mixin_overrides = JSONCFile.read(path.join(__dirname, "/translation/mixins.jsonc"), {});
 const event_overrides = JSONCFile.read(path.join(__dirname, "/translation/events.jsonc"), {});
@@ -27,21 +28,36 @@ let structure = {};
 
 const unstate = {};
 
-function wrapNotEraFilter(rule, value) {
-    return {
-        "type": "and",
-        "el": [
-            {
-                "type": "not",
-                "el": {
-                    "type": "state",
-                    "el": "filter.era",
-                    "value": value
-                }
-            },
-            rule
-        ]
+function xor(a, b) {
+    return !a != !b;
+}
+
+function postCalcutate(input, age = "", region = "", basic = false) {
+    const scope = {
+        mixins,
+        unstate
     };
+    return postCalculateMethod(scope, input, age, region, basic);
+}
+
+function wrapNotEraFilter(rule, value) {
+    if (value) {
+        return {
+            "type": "and",
+            "el": [
+                {
+                    "type": "not",
+                    "el": {
+                        "type": "state",
+                        "el": "filter.era",
+                        "value": value
+                    }
+                },
+                rule
+            ]
+        };
+    }
+    return rule;
 }
 
 class LogicGenerator {
@@ -115,7 +131,7 @@ class LogicGenerator {
     generate(glitched = false) {
         console.log("");
         console.log("-------------------------------------------");
-        console.log("generate logic output");
+        console.log(`generate ${glitched ? "glitched" : ""} logic output`);
         console.log("");
 
         for (const key in function_overrides) {
@@ -145,45 +161,50 @@ class LogicGenerator {
             const regName = translateRegionName(region);
             for (const node of data.exits) {
                 const name = translateRegionName(node);
-                if (logic_overrides[regName] != null && logic_overrides[regName][name] != null) {
-                    regC[`${name}[child]`] = postCalcutate(logic_overrides[regName][name], "child", regName);
-                    regA[`${name}[adult]`] = postCalcutate(logic_overrides[regName][name], "adult", regName);
+                const basicGeneration = generator_config["useBasicGeneration"]?.["exits"];
+                const wrapNotEra = generator_config["wrapNotEra"]?.["exits"];
+                const basicGenerationChild = xor(basicGeneration["default"], (basicGeneration["child"] ?? []).includes(name));
+                const basicGenerationAdult = xor(basicGeneration["default"], (basicGeneration["adult"] ?? []).includes(name));
+                const wrapNotEraChild = xor(wrapNotEra["default"], (wrapNotEra["child"] ?? []).includes(name)) && "adult";
+                const wrapNotEraAdult = xor(wrapNotEra["default"], (wrapNotEra["adult"] ?? []).includes(name)) && "child";
+                if (logic_overrides[regName]?.[name] != null) {
+                    regC[`${name}[child]`] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName), wrapNotEraChild);
+                    regA[`${name}[adult]`] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName), wrapNotEraAdult);
                 } else {
-                    if (name === 'region.deku_tree_boss_room' || name === 'region.deku_tree_basement_water_room_back_mq' || name === 'region.deku_tree_basement_water_room_front_mq') {
-                        regC[`${name}[child]`] = postCalcutate(exits.get(node), "child", regName, true);
-                        regA[`${name}[adult]`] = postCalcutate(exits.get(node), "adult", regName);
-                    } else {
-                        regC[`${name}[child]`] = postCalcutate(exits.get(node), "child", regName);
-                        regA[`${name}[adult]`] = postCalcutate(exits.get(node), "adult", regName);
-                    }
+                    regC[`${name}[child]`] = wrapNotEraFilter(postCalcutate(exits.get(node), "child", regName, basicGenerationChild), wrapNotEraChild);
+                    regA[`${name}[adult]`] = wrapNotEraFilter(postCalcutate(exits.get(node), "adult", regName, basicGenerationAdult), wrapNotEraAdult);
                 }
             }
             for (const node of data.locations) {
                 const name = translateLocationName(node);
-                if (logic_overrides[regName] != null && logic_overrides[regName][name] != null) {
-                    regC[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName), "adult");
-                    regA[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName), "child");
+                const basicGeneration = generator_config["useBasicGeneration"]?.["locations"];
+                const wrapNotEra = generator_config["wrapNotEra"]?.["locations"];
+                const basicGenerationChild = xor(basicGeneration["default"], (basicGeneration["child"] ?? []).includes(name));
+                const basicGenerationAdult = xor(basicGeneration["default"], (basicGeneration["adult"] ?? []).includes(name));
+                const wrapNotEraChild = xor(wrapNotEra["default"], (wrapNotEra["child"] ?? []).includes(name)) && "adult";
+                const wrapNotEraAdult = xor(wrapNotEra["default"], (wrapNotEra["adult"] ?? []).includes(name)) && "child";
+                if (logic_overrides[regName]?.[name] != null) {
+                    regC[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName), wrapNotEraChild);
+                    regA[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName), wrapNotEraAdult);
                 } else {
-                    regC[name] = wrapNotEraFilter(postCalcutate(locations.get(node), "child", regName), "adult");
-                    regA[name] = wrapNotEraFilter(postCalcutate(locations.get(node), "adult", regName), "child");
+                    regC[name] = wrapNotEraFilter(postCalcutate(locations.get(node), "child", regName, basicGenerationChild), wrapNotEraChild);
+                    regA[name] = wrapNotEraFilter(postCalcutate(locations.get(node), "adult", regName, basicGenerationAdult), wrapNotEraAdult);
                 }
             }
             for (const node of data.events) {
                 const name = translateEventName(node);
-                if (logic_overrides[regName] != null && logic_overrides[regName][name] != null) {
-                    regC[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName), "adult");
-                    regA[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName), "child");
+                const basicGeneration = generator_config["useBasicGeneration"]?.["events"];
+                const wrapNotEra = generator_config["wrapNotEra"]?.["events"];
+                const basicGenerationChild = xor(basicGeneration["default"], (basicGeneration["child"] ?? []).includes(name));
+                const basicGenerationAdult = xor(basicGeneration["default"], (basicGeneration["adult"] ?? []).includes(name));
+                const wrapNotEraChild = xor(wrapNotEra["default"], (wrapNotEra["child"] ?? []).includes(name)) && "adult";
+                const wrapNotEraAdult = xor(wrapNotEra["default"], (wrapNotEra["adult"] ?? []).includes(name)) && "child";
+                if (logic_overrides[regName]?.[name] != null) {
+                    regC[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName), wrapNotEraChild);
+                    regA[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName), wrapNotEraAdult);
                 } else {
-                    if (name === "event.showed_mido_sword_&_shield" || name === "event.deku_tree_clear") {
-                        regC[name] = postCalcutate(events.get(node), "child", regName, true);
-                        regA[name] = postCalcutate(events.get(node), "adult", regName);
-                    } else if(name === "event.drain_well") {
-                        regC[name] = postCalcutate(events.get(node), "child", regName, true);
-                        regA[name] = postCalcutate(events.get(node), "adult", regName, true);
-                    } else {
-                        regC[name] = wrapNotEraFilter(postCalcutate(events.get(node), "child", regName), "adult");
-                        regA[name] = wrapNotEraFilter(postCalcutate(events.get(node), "adult", regName), "child");
-                    }
+                    regC[name] = wrapNotEraFilter(postCalcutate(events.get(node), "child", regName, basicGenerationChild), wrapNotEraChild);
+                    regA[name] = wrapNotEraFilter(postCalcutate(events.get(node), "adult", regName, basicGenerationAdult), wrapNotEraAdult);
                 }
             }
             res.edges[`${regName}[child]`] = regC;
@@ -243,14 +264,6 @@ class LogicGenerator {
         return res;
     }
 
-}
-
-function postCalcutate(input, age = "", region = "", basic = false) {
-    const scope = {
-        mixins,
-        unstate
-    };
-    return postCalculateMethod(scope, input, age, region, basic);
 }
 
 export default new LogicGenerator();
