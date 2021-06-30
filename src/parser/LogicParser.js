@@ -7,10 +7,10 @@ import LogicGenerator from "./LogicGenerator.js";
 const __dirname = path.resolve();
 const inExitRenameFile  = path.join(__dirname, "/gateways/exitRename.json");
 const inExitSuccessFile  = path.join(__dirname, "/gateways/rename_success.json");
-const renameData = JSON.parse(fs.readFileSync(inExitRenameFile, 'utf8'));
-const rename_success = JSON.parse(fs.readFileSync(inExitSuccessFile, 'utf8'));
+const renameData = JSON.parse(fs.readFileSync(inExitRenameFile, "utf8"));
+const rename_success = JSON.parse(fs.readFileSync(inExitSuccessFile, "utf8"));
 const success = {};
-const exits = ["Kakariko Village", "KF Outside Deku Tree", "Death Mountain", "Zoras Fountain", "ZF Ice Ledge", "Gerudo Fortress", "SFM Forest Temple Entrance Ledge", "DMC Fire Temple Entrance", "Lake Hylia", "Graveyard Warp Pad Region", "Desert Colossus", "Castle Grounds", "Ganons Castle Grounds", 'Ganons Castle Tower']
+const exits = ["Kakariko Village", "KF Outside Deku Tree", "Death Mountain", "Zoras Fountain", "ZF Ice Ledge", "Gerudo Fortress", "SFM Forest Temple Entrance Ledge", "DMC Fire Temple Entrance", "Lake Hylia", "Graveyard Warp Pad Region", "Desert Colossus", "Castle Grounds", "Ganons Castle Grounds", "Ganons Castle Tower"]
 
 class LogicParser {
 
@@ -20,23 +20,23 @@ class LogicParser {
             if (mq) value.region_name = value.region_name + " MQ"
             for (const i in value.locations) {
                 let rule = value.locations[i];
-                if(rule.includes('at')) {
-                    let split = rule.split('at(\'')
-                    if(split[1] != undefined) {
-                        let split2 = split[1].split('\'');
-                        if(mq) {
+                if (rule.includes("at")) {
+                    let split = rule.split("at('")
+                    if (split[1] != undefined) {
+                        let split2 = split[1].split("'");
+                        if (mq) {
                             split2[0] = split2[0] + " MQ";
-                            split2 = split2.join('\'');
+                            split2 = split2.join("'");
                             split[1] = split2;
-                            split = split.join('at(\'');
+                            split = split.join("at('");
                             rule = split;
                         }
                     }
                 }
-                if(i.includes(' GS ')) {
-                    if(rule.includes('at_night')) {
-                        let split = rule.split('at_night');
-                        rule = split.join('at_night_gs');
+                if (i.includes(" GS ")) {
+                    if (rule.includes("at_night")) {
+                        const split = rule.split("at_night");
+                        rule = split.join("at_night_gs");
                     }
                 }
                 LogicGenerator.addLocation(value.region_name, i, transpile(rule));
