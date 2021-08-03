@@ -128,6 +128,13 @@
             "open": "doors_open_forest_open"
         }
     },
+    "option.doors_open_forest": {
+        "name": "option.doors_open_forest",
+        "values": {
+            "doors_open_forest_closed": "doors_open_forest_closed",
+            "doors_open_forest_open": "doors_open_forest_open"
+        }
+    },
     "logic_rules": {
         "name": "option.logic_rules",
         "values": {

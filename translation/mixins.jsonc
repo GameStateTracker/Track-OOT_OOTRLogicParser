@@ -553,5 +553,38 @@
             }
         ]
     },
+    "mixin.can_leave_forest": {
+        "type": "or",
+        "el": [
+            {
+                "type": "not",
+                "el": {
+                    "type": "state",
+                    "el": "option.doors_open_forest",
+                    "value": "doors_open_forest_closed"
+                }
+            },
+            {
+                "type": "mixin",
+                "el": "mixin.is_adult"
+            },
+            {
+                "type": "value",
+                "el": "option.shuffle_overworld"
+            },
+            {
+                "type": "value",
+                "el": "option.shuffle_warps"
+            },
+            {
+                "type": "value",
+                "el": "option.shuffle_spawns"
+            },
+            {
+                "type": "value",
+                "el": "event.deku_tree_clear"
+            }
+        ]
+    },
     "": ""
 }
