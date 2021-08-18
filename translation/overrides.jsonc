@@ -11,29 +11,6 @@
             "el": "item.egg"
         }
     },
-    "region.market_guard_house": {
-        "logic.location.castle_town.c_poes": {
-            "type": "and",
-            "el": [
-                {
-                    "type": "mixin",
-                    "el": "mixin.is_adult"
-                },
-                {
-                    "type": "value",
-                    "el": "item.bottle"
-                },
-                {
-                    "type": "value",
-                    "el": "item.bow"
-                },
-                {
-                    "type": "value",
-                    "el": "event.epona"
-                }
-            ]
-        }
-    },
     "region.child_spirit_temple_mq": {
         "logic.location.temple_spirit_mq.c_child_center": {
             "type": "and",

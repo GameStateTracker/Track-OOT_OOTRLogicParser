@@ -1,6 +1,6 @@
 import AbstractOperator from "./AbstractOperator.js";
 
-export default class LogicFunction extends AbstractOperator {
+export default class Operator extends AbstractOperator {
 
     #ref;
 

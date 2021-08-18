@@ -2,16 +2,11 @@ import LiteralFalse from "../logic/LiteralFalse.js";
 import LiteralTrue from "../logic/LiteralTrue.js";
 import LiteralValue from "../logic/LiteralValue.js";
 import LiteralState from "../logic/LiteralState.js";
-// import LiteralPointer from "../logic/LiteralPointer.js";
 import OperatorAnd from "../logic/OperatorAnd.js";
-// import OperatorNand from "../logic/OperatorNand.js";
 import OperatorOr from "../logic/OperatorOr.js";
-// import OperatorNor from "../logic/OperatorNor.js";
-// import OperatorXor from "../logic/OperatorXor.js";
-// import OperatorXnor from "../logic/OperatorXnor.js";
 import OperatorNot from "../logic/OperatorNot.js";
 import OperatorMin from "../logic/OperatorMin.js";
-// import OperatorMax from "../logic/OperatorMax.js";
+import ComparatorGreaterThanEqual from "../logic/ComparatorGreaterThanEqual.js";
 import ReferrerAt from "../logic/ReferrerAt.js";
 import ReferrerHere from "../logic/ReferrerHere.js";
 import LogicFunction from "../logic/LogicFunction.js";
@@ -70,6 +65,13 @@ class LogicBuilder {
             el.append(this.resolveToken(ch, token));
             return el;
         }
+        if (current.startsWith("gte(")) {
+            const [ch, value] = current.slice(4, -1).split(", ");
+            const el = new ComparatorGreaterThanEqual();
+            el.append(this.resolveToken(ch, token));
+            el.append(this.resolveToken(value, token));
+            return el;
+        }
         if (current.startsWith("at(")) {
             const [value, ch] = current.slice(3, -1).split(", ");
             const newValue = token[parseInt(value.slice(2, -2))].replace(/^'(.*)'$/, "$1");
@@ -100,10 +102,10 @@ class LogicBuilder {
             const next = token[parseInt(current.slice(3, -2))];
             return this.resolveToken(next, token);
         }
-        if (current == 'False') {
+        if (current == "False") {
             return new LiteralFalse();
         }
-        if (current == 'True') {
+        if (current == "True") {
             return new LiteralTrue();
         }
         return new LiteralValue(current);

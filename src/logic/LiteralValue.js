@@ -1,6 +1,6 @@
 import AbstractLiteral from "./AbstractLiteral.js";
 
-export default class LiteralValue extends AbstractLiteral {
+export default class Literal extends AbstractLiteral {
 
     #ref;
     #category;

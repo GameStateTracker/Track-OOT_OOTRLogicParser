@@ -14,7 +14,6 @@
     "Bean Plant Fairy": "location.bean_fairy",
     "Bug Shrub": "location.bug_shrub",
     "Butterfly Fairy": "location.butterfly_fairy",
-    "Big Poe Kill": "location.big_poe",
     "Bug Rock": "location.bug_rock",
     "Fairy Pond": "location.woods.fairy_pond",
     "Master Sword Pedestal": "location.master_sword",
@@ -80,6 +79,7 @@
     "HF Near Market Grotto Chest": "location.hyrule_field.c_hyrule_north_grotto",
     "HF GS Near Kak Grotto": "location.hyrule_field.s_hyrule_north_east_grotto",
     "HF Tektite Grotto Freestanding PoH": "location.hyrule_field.c_diving_heart_piece_grotto",
+    "Big Poe Kill": "location.big_poe_kill",
 
     // kokiri
     "KF Kokiri Sword Chest": "location.kokiri.c_sword",

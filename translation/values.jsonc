@@ -88,6 +88,10 @@
         "type": "value",
         "el": "event.epona"
     },
+    "Big_Poe": {
+        "type": "value",
+        "el": "logic.location.big_poe_kill"
+    },
     "Bonooru": {
         "type": "value",
         "el": "event.bonooru"
@@ -824,10 +828,6 @@
     },
     //"item.milk",
     //"item.poe",
-    "Big_Poe": {
-        "type": "value",
-        "el": "item.poe_big"
-    },
     "Bottle_with_Big_Poe": {
         "type": "value",
         "el": "item.poe_big"
@@ -847,6 +847,10 @@
     },
 
     /* options */
+    "big_poe_count": {
+        "type": "value",
+        "el": "option.big_poe_count"
+    },
     "skip_child_zelda": {
         "type": "value",
         "el": "option.skip_child_zelda"

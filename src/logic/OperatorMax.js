@@ -1,6 +1,6 @@
 import AbstractOperator from "./AbstractOperator.js";
 
-export default class OperatorMax extends AbstractOperator {
+export default class Operator extends AbstractOperator {
 
     #value;
 
