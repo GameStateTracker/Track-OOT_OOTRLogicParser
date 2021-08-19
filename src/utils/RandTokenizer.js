@@ -34,7 +34,7 @@ function generate(term, token) {
         // parse min syntax (why ever you would write it that way...)
         const cnt0 = ++count;
         const cnt1 = ++count;
-        token[cnt0] = `min({{${cnt1}}}, buf[3])`;
+        token[cnt0] = `min({{${cnt1}}}, ${buf[3]})`;
         token[cnt1] = buf[2];
         return generate(`${buf[1]}{{${cnt0}}}${buf[4]}`, token);
     }
