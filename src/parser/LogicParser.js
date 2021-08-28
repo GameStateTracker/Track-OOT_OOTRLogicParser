@@ -33,7 +33,7 @@ class LogicParser {
                         }
                     }
                 }
-                if (i.includes(" GS ")) {
+                if (i.includes(" GS ") || i.endsWith(" GS")) {
                     if (rule.includes("at_night")) {
                         const split = rule.split("at_night");
                         rule = split.join("at_night_gs");

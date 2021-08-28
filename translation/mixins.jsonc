@@ -345,28 +345,32 @@
                         "type": "at",
                         "node": "region.ganons_castle_water_trial_mq",
                         "el": {
-                            "type": "true"
+                            "type": "value",
+                            "el": "item.bottle"
                         }
                     },
                     {
                         "type": "at",
                         "node": "region.ganons_castle_water_trial",
                         "el": {
-                            "type": "true"
+                            "type": "value",
+                            "el": "item.bottle"
                         }
                     },
                     {
                         "type": "at",
                         "node": "region.gerudo_training_grounds_stalfos_room_mq",
                         "el": {
-                            "type": "true"
+                            "type": "value",
+                            "el": "item.bottle"
                         }
                     },
                     {
                         "type": "at",
                         "node": "region.ice_cavern_map_room_mq",
                         "el": {
-                            "type": "true"
+                            "type": "value",
+                            "el": "item.bottle"
                         }
                     },
                     {
@@ -376,7 +380,25 @@
                                 "type": "at",
                                 "node": "region.ice_cavern",
                                 "el": {
-                                    "type": "true"
+                                    "type": "value",
+                                    "el": "item.bottle"
+                                }
+                            },
+                            {
+                                "type": "mixin",
+                                "el": "mixin.is_adult"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "and",
+                        "el": [
+                            {
+                                "type": "at",
+                                "node": "region.ice_cavern_mq",
+                                "el": {
+                                    "type": "value",
+                                    "el": "item.bottle"
                                 }
                             },
                             {
@@ -391,6 +413,10 @@
                             {
                                 "type": "value",
                                 "el": "option.consider_buyable"
+                            },
+                            {
+                                "type": "value",
+                                "el": "item.bottle"
                             },
                             {
                                 "type": "min",
