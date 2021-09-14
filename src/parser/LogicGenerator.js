@@ -40,18 +40,14 @@ function postCalcutate(input, age = "", region = "", basic = false) {
     return postCalculateMethod(scope, input, age, region, basic);
 }
 
-function wrapNotEraFilter(rule, value) {
+function wrapEraFilter(rule, value) {
     if (value) {
         return {
             "type": "and",
             "el": [
                 {
-                    "type": "not",
-                    "el": {
-                        "type": "state",
-                        "el": "filter.era",
-                        "value": value
-                    }
+                    "type": "mixin",
+                    "el": "mixin.filter_era[" + value + "]"
                 },
                 rule
             ]
@@ -165,14 +161,14 @@ class LogicGenerator {
                 const wrapNotEra = generator_config["wrapNotEra"]?.["exits"];
                 const basicGenerationChild = xor(basicGeneration["default"], (basicGeneration["child"] ?? []).includes(name));
                 const basicGenerationAdult = xor(basicGeneration["default"], (basicGeneration["adult"] ?? []).includes(name));
-                const wrapNotEraChild = xor(wrapNotEra["default"], (wrapNotEra["child"] ?? []).includes(name)) && "adult";
-                const wrapNotEraAdult = xor(wrapNotEra["default"], (wrapNotEra["adult"] ?? []).includes(name)) && "child";
+                const wrapNotEraChild = xor(wrapNotEra["default"], (wrapNotEra["child"] ?? []).includes(name)) && "child";
+                const wrapNotEraAdult = xor(wrapNotEra["default"], (wrapNotEra["adult"] ?? []).includes(name)) && "adult";
                 if (logic_overrides[regName]?.[name] != null) {
-                    regC[`${name}[child]`] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName), wrapNotEraChild);
-                    regA[`${name}[adult]`] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName), wrapNotEraAdult);
+                    regC[`${name}[child]`] = wrapEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName), wrapNotEraChild);
+                    regA[`${name}[adult]`] = wrapEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName), wrapNotEraAdult);
                 } else {
-                    regC[`${name}[child]`] = wrapNotEraFilter(postCalcutate(exits.get(node), "child", regName, basicGenerationChild), wrapNotEraChild);
-                    regA[`${name}[adult]`] = wrapNotEraFilter(postCalcutate(exits.get(node), "adult", regName, basicGenerationAdult), wrapNotEraAdult);
+                    regC[`${name}[child]`] = wrapEraFilter(postCalcutate(exits.get(node), "child", regName, basicGenerationChild), wrapNotEraChild);
+                    regA[`${name}[adult]`] = wrapEraFilter(postCalcutate(exits.get(node), "adult", regName, basicGenerationAdult), wrapNotEraAdult);
                 }
             }
             for (const node of data.locations) {
@@ -181,14 +177,14 @@ class LogicGenerator {
                 const wrapNotEra = generator_config["wrapNotEra"]?.["locations"];
                 const basicGenerationChild = xor(basicGeneration["default"], (basicGeneration["child"] ?? []).includes(name));
                 const basicGenerationAdult = xor(basicGeneration["default"], (basicGeneration["adult"] ?? []).includes(name));
-                const wrapNotEraChild = xor(wrapNotEra["default"], (wrapNotEra["child"] ?? []).includes(name)) && "adult";
-                const wrapNotEraAdult = xor(wrapNotEra["default"], (wrapNotEra["adult"] ?? []).includes(name)) && "child";
+                const wrapNotEraChild = xor(wrapNotEra["default"], (wrapNotEra["child"] ?? []).includes(name)) && "child";
+                const wrapNotEraAdult = xor(wrapNotEra["default"], (wrapNotEra["adult"] ?? []).includes(name)) && "adult";
                 if (logic_overrides[regName]?.[name] != null) {
-                    regC[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName), wrapNotEraChild);
-                    regA[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName), wrapNotEraAdult);
+                    regC[name] = wrapEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName), wrapNotEraChild);
+                    regA[name] = wrapEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName), wrapNotEraAdult);
                 } else {
-                    regC[name] = wrapNotEraFilter(postCalcutate(locations.get(node), "child", regName, basicGenerationChild), wrapNotEraChild);
-                    regA[name] = wrapNotEraFilter(postCalcutate(locations.get(node), "adult", regName, basicGenerationAdult), wrapNotEraAdult);
+                    regC[name] = wrapEraFilter(postCalcutate(locations.get(node), "child", regName, basicGenerationChild), wrapNotEraChild);
+                    regA[name] = wrapEraFilter(postCalcutate(locations.get(node), "adult", regName, basicGenerationAdult), wrapNotEraAdult);
                 }
             }
             for (const node of data.events) {
@@ -197,14 +193,14 @@ class LogicGenerator {
                 const wrapNotEra = generator_config["wrapNotEra"]?.["events"];
                 const basicGenerationChild = xor(basicGeneration["default"], (basicGeneration["child"] ?? []).includes(name));
                 const basicGenerationAdult = xor(basicGeneration["default"], (basicGeneration["adult"] ?? []).includes(name));
-                const wrapNotEraChild = xor(wrapNotEra["default"], (wrapNotEra["child"] ?? []).includes(name)) && "adult";
-                const wrapNotEraAdult = xor(wrapNotEra["default"], (wrapNotEra["adult"] ?? []).includes(name)) && "child";
+                const wrapNotEraChild = xor(wrapNotEra["default"], (wrapNotEra["child"] ?? []).includes(name)) && "child";
+                const wrapNotEraAdult = xor(wrapNotEra["default"], (wrapNotEra["adult"] ?? []).includes(name)) && "adult";
                 if (logic_overrides[regName]?.[name] != null) {
-                    regC[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName), wrapNotEraChild);
-                    regA[name] = wrapNotEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName), wrapNotEraAdult);
+                    regC[name] = wrapEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName), wrapNotEraChild);
+                    regA[name] = wrapEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName), wrapNotEraAdult);
                 } else {
-                    regC[name] = wrapNotEraFilter(postCalcutate(events.get(node), "child", regName, basicGenerationChild), wrapNotEraChild);
-                    regA[name] = wrapNotEraFilter(postCalcutate(events.get(node), "adult", regName, basicGenerationAdult), wrapNotEraAdult);
+                    regC[name] = wrapEraFilter(postCalcutate(events.get(node), "child", regName, basicGenerationChild), wrapNotEraChild);
+                    regA[name] = wrapEraFilter(postCalcutate(events.get(node), "adult", regName, basicGenerationAdult), wrapNotEraAdult);
                 }
             }
             res.edges[`${regName}[child]`] = regC;

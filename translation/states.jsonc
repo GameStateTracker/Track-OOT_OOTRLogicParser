@@ -55,8 +55,16 @@
     "filter.era": {
         "name": "filter.era",
         "values": {
-            "adult": "adult",
-            "child": "child"
+            "both": "both",
+            "child": "child",
+            "adult": "adult"
+        }
+    },
+    "filter.era_apply": {
+        "name": "filter.era_apply",
+        "values": {
+            "loose": "loose",
+            "force": "force"
         }
     },
     "option.starting_age": {

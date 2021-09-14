@@ -69,6 +69,52 @@
             }
         ]
     },
+    "mixin.filter_era": {
+        "type": "or",
+        "el": [
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "state",
+                        "el": "age",
+                        "value": "child"
+                    },
+                    {
+                        "type": "not",
+                        "el": {
+                            "type": "state",
+                            "el": "filter.era",
+                            "value": "adult"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "state",
+                        "el": "age",
+                        "value": "adult"
+                    },
+                    {
+                        "type": "not",
+                        "el": {
+                            "type": "state",
+                            "el": "filter.era",
+                            "value": "child"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "state",
+                "el": "filter.era_apply",
+                "value": "loose"
+            }
+        ]
+    },
     "mixin.is_child": {
         "type": "state",
         "el": "age",
