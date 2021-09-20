@@ -1,6 +1,6 @@
 import AbstractLiteral from "./AbstractLiteral.js";
 
-export default class LiteralState extends AbstractLiteral {
+export default class Literal extends AbstractLiteral {
 
     #ref;
     #value;

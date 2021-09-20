@@ -1,33 +1,3 @@
 {
-    "GF Gate Open": {
-        "type": "and",
-        "el": [
-            {
-                "type": "mixin",
-                "el": "mixin.is_adult"
-            },
-            {
-                "type": "value",
-                "el": "item.membership"
-            }
-        ]
-    },
-    "event.drain_well": {
-        "type": "at",
-        "node": "region.kak_windmill",
-        "el": {
-            "type": "and",
-            "el": [
-                {
-                    "type": "mixin",
-                    "el": "mixin.is_child"
-                },
-                {
-                    "type": "mixin",
-                    "el": "function.can_play(item.song_storm)"
-                }
-            ]
-        }
-    },
     "": ""
 }

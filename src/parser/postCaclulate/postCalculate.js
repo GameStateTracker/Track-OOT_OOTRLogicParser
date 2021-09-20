@@ -9,17 +9,20 @@ import {
 } from "../../utils/TranslatorFunctions.js";
 
 function calc(scope, input, age = "", region = "", basic = false) {
-    const els = [];
     switch (input.type) {
-        case "mixin":
+        case "mixin": {
             return postCalculateMixin(scope, input, age, region, basic);
-        case "value":
+        }
+        case "value": {
             return postCalculateValue(scope, input, age, region, basic);
-        case "state":
+        }
+        case "state": {
             return postCalculateState(scope, input, age, region, basic);
-        case "function":
+        }
+        case "function": {
             return postCalculateFunction(scope, input, age, region, basic);
-        case "at":
+        }
+        case "at": {
             return createOnRegionLogic(
                 `${translateRegionName(input.node)}[child]`,
                 postCalculate(scope, input.el, "child", region, basic),
@@ -27,7 +30,8 @@ function calc(scope, input, age = "", region = "", basic = false) {
                 postCalculate(scope, input.el, "adult", region, basic),
                 basic
             );
-        case "here":
+        }
+        case "here": {
             return createOnRegionLogic(
                 `${translateRegionName(region)}[child]`,
                 postCalculate(scope, input.el, "child", region, basic),
@@ -35,6 +39,7 @@ function calc(scope, input, age = "", region = "", basic = false) {
                 postCalculate(scope, input.el, "adult", region, basic),
                 basic
             );
+        }
         case "and":
         case "nand":
         case "or":
@@ -47,6 +52,13 @@ function calc(scope, input, age = "", region = "", basic = false) {
         case "div":
         case "mod":
         case "pow":
+        case "eq":
+        case "neq":
+        case "gt":
+        case "gte":
+        case "lt":
+        case "lte": {
+            const els = [];
             for (const el of input.el) {
                 els.push(postCalculate(scope, el, age, region, basic));
             }
@@ -54,16 +66,20 @@ function calc(scope, input, age = "", region = "", basic = false) {
                 type: input.type,
                 el: els
             };
+        }
         case "min":
-        case "max":
+        case "max": {
             return postCalculateMinMax(scope, input, age, region, basic);
-        case "not":
+        }
+        case "not": {
             return {
                 type: "not",
                 el: postCalculate(scope, input.el, age, region, basic)
             };
-        default:
+        }
+        default: {
             return input;
+        }
     }
 }
 

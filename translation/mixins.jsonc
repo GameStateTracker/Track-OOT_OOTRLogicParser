@@ -69,6 +69,52 @@
             }
         ]
     },
+    "mixin.filter_era": {
+        "type": "or",
+        "el": [
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "state",
+                        "el": "age",
+                        "value": "child"
+                    },
+                    {
+                        "type": "not",
+                        "el": {
+                            "type": "state",
+                            "el": "filter.era",
+                            "value": "adult"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "state",
+                        "el": "age",
+                        "value": "adult"
+                    },
+                    {
+                        "type": "not",
+                        "el": {
+                            "type": "state",
+                            "el": "filter.era",
+                            "value": "child"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "state",
+                "el": "filter.era_apply",
+                "value": "loose"
+            }
+        ]
+    },
     "mixin.is_child": {
         "type": "state",
         "el": "age",
@@ -345,28 +391,32 @@
                         "type": "at",
                         "node": "region.ganons_castle_water_trial_mq",
                         "el": {
-                            "type": "true"
+                            "type": "value",
+                            "el": "item.bottle"
                         }
                     },
                     {
                         "type": "at",
                         "node": "region.ganons_castle_water_trial",
                         "el": {
-                            "type": "true"
+                            "type": "value",
+                            "el": "item.bottle"
                         }
                     },
                     {
                         "type": "at",
                         "node": "region.gerudo_training_grounds_stalfos_room_mq",
                         "el": {
-                            "type": "true"
+                            "type": "value",
+                            "el": "item.bottle"
                         }
                     },
                     {
                         "type": "at",
                         "node": "region.ice_cavern_map_room_mq",
                         "el": {
-                            "type": "true"
+                            "type": "value",
+                            "el": "item.bottle"
                         }
                     },
                     {
@@ -376,7 +426,25 @@
                                 "type": "at",
                                 "node": "region.ice_cavern",
                                 "el": {
-                                    "type": "true"
+                                    "type": "value",
+                                    "el": "item.bottle"
+                                }
+                            },
+                            {
+                                "type": "mixin",
+                                "el": "mixin.is_adult"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "and",
+                        "el": [
+                            {
+                                "type": "at",
+                                "node": "region.ice_cavern_mq",
+                                "el": {
+                                    "type": "value",
+                                    "el": "item.bottle"
                                 }
                             },
                             {
@@ -391,6 +459,10 @@
                             {
                                 "type": "value",
                                 "el": "option.consider_buyable"
+                            },
+                            {
+                                "type": "value",
+                                "el": "item.bottle"
                             },
                             {
                                 "type": "min",
@@ -550,6 +622,39 @@
                         "el": "function.can_play(item.song_sun)"
                     }
                 ]
+            }
+        ]
+    },
+    "mixin.can_leave_forest": {
+        "type": "or",
+        "el": [
+            {
+                "type": "not",
+                "el": {
+                    "type": "state",
+                    "el": "option.doors_open_forest",
+                    "value": "doors_open_forest_closed"
+                }
+            },
+            {
+                "type": "mixin",
+                "el": "mixin.is_adult"
+            },
+            {
+                "type": "value",
+                "el": "option.shuffle_overworld"
+            },
+            {
+                "type": "value",
+                "el": "option.shuffle_warps"
+            },
+            {
+                "type": "value",
+                "el": "option.shuffle_spawns"
+            },
+            {
+                "type": "value",
+                "el": "event.deku_tree_clear"
             }
         ]
     },

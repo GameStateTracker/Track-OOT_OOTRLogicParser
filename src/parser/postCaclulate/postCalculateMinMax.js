@@ -3,11 +3,7 @@ export default function postCalculate(scope, input, age = "", region = "", basic
     const {calc} = scope;
     const buffer = parseInt(input.value);
     if (isNaN(buffer)) {
-        return {
-            type: input.type == "min" ? "lte" : "gte",
-            el: calc(scope, input.el, age, region, basic),
-            value: input.value.replace(/^'|'$/g, "")
-        };
+        throw new TypeError("expected integer but value was not a number");
     }
     return {
         type: input.type,

@@ -23,24 +23,8 @@ export default function createOnRegionLogic(nodeC, elC, nodeA, elA, basic = fals
                     "type": "and",
                     "el": [
                         {
-                            "type": "not",
-                            "el": {
-                                "type": "and",
-                                "el": [
-                                    {
-                                        "type": "state",
-                                        "el": "filter.era_apply",
-                                        "value": "force",
-                                        "category": "filter"
-                                    },
-                                    {
-                                        "type": "state",
-                                        "el": "filter.era",
-                                        "value": "adult",
-                                        "category": "filter"
-                                    }
-                                ]
-                            }
+                            "type": "mixin",
+                            "el": "mixin.filter_era[child]"
                         },
                         {
                             "type": "at",
@@ -53,24 +37,8 @@ export default function createOnRegionLogic(nodeC, elC, nodeA, elA, basic = fals
                     "type": "and",
                     "el": [
                         {
-                            "type": "not",
-                            "el": {
-                                "type": "and",
-                                "el": [
-                                    {
-                                        "type": "state",
-                                        "el": "filter.era_apply",
-                                        "value": "force",
-                                        "category": "filter"
-                                    },
-                                    {
-                                        "type": "state",
-                                        "el": "filter.era",
-                                        "value": "child",
-                                        "category": "filter"
-                                    }
-                                ]
-                            }
+                            "type": "mixin",
+                            "el": "mixin.filter_era[adult]"
                         },
                         {
                             "type": "at",

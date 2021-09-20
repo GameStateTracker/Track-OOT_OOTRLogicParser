@@ -1,5 +1,6 @@
 // structure
-const AMOUNT = /(.*?)(?:\()([^,()]+),\s*([^,()]+)(?:\))(.*)/;
+const GTE = /(.*?)(?:\()([^,()]+),\s*([^,()]+)(?:\))(.*)/;
+const MIN = /(.*?)(?:\()([^,()]+),\s*([0-9]+)(?:\))(.*)/;
 const FUNCTIONS = /(.*?)([^()\s]+)\(([^()]+)\)(.*)/;
 const BRACKETS = /(.*?)(?:\()([^,()]+)(?:\))(.*)/;
 // operators
@@ -28,13 +29,24 @@ function generate(term, token) {
         token[cnt] = `${buf[2]}(${params(buf[3].trim(), token)})`;
         return generate(`${buf[1]}{{${cnt}}}${buf[4]}`, token);
     }
-    buf = AMOUNT.exec(term);
+    buf = MIN.exec(term);
     if (buf != null) {
-        // parse amount syntax (why ever you would write it that way...)
+        // parse min syntax (why ever you would write it that way...)
         const cnt0 = ++count;
         const cnt1 = ++count;
-        token[cnt1] = buf[2];
         token[cnt0] = `min({{${cnt1}}}, ${buf[3]})`;
+        token[cnt1] = buf[2];
+        return generate(`${buf[1]}{{${cnt0}}}${buf[4]}`, token);
+    }
+    buf = GTE.exec(term);
+    if (buf != null) {
+        // parse gte syntax (why ever you would write it that way...)
+        const cnt0 = ++count;
+        const cnt1 = ++count;
+        const cnt2 = ++count;
+        token[cnt0] = `gte({{${cnt1}}}, {{${cnt2}}})`;
+        token[cnt1] = buf[2];
+        token[cnt2] = buf[3];
         return generate(`${buf[1]}{{${cnt0}}}${buf[4]}`, token);
     }
     buf = BRACKETS.exec(term);
