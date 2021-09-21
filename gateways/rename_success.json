@@ -960,7 +960,7 @@
         "LW Near Shortcuts Grotto": true
     },
     "LW Beyond Mido": {
-        "LW Forest Exit": false,
+        "LW Forest Exit": true,
         "Lost Woods": false,
         "SFM Entryway": true,
         "Deku Theater": true,
@@ -1493,7 +1493,7 @@
         "Hyrule Field": true
     },
     "HC Storms Grotto": {
-        "Castle Grounds": false
+        "Castle Grounds": true
     },
     "Kak Redead Grotto": {
         "Kakariko Village": true
