@@ -25,13 +25,11 @@ const RANDO_VERSION = "6.0.57";
 let write = false;
 if (process.argv.indexOf("--write") > 0) write = true;
 
-if (!fs.existsSync(inLogicDir)) {
-    execSync(`git clone --branch "${RANDO_VERSION}" "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "input"`);
-} else {
-    execSync("cd input");
-    execSync("git reset --hard HEAD");
-    execSync(`git pull "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "${RANDO_VERSION}"`);
+if (fs.existsSync("./input")) {
+    fs.rmSync("./input", { recursive: true });
 }
+execSync(`git clone --branch "${RANDO_VERSION}" "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "input"`);
+
 if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, {
         recursive: true
