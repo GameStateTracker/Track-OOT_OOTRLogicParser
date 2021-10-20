@@ -242,6 +242,7 @@
     "GC Darunias Chamber": {
         "DMC Lower Local": "Goron Crater Gateway"
     },
+
     "DMC Lower Local": {
         "DMC Ladder Area Nearby": "Crater Goron Gateway"
     },
@@ -255,17 +256,15 @@
         "DMT Great Fairy Fountain": "DMT Great Fairy Fountain Entrance",
         "DMT Cow Grotto": "DMT Cow Grotto Entrance"
     },
-    "DMC Upper Local": {
-        "DMC Ladder Area Nearby": "Crater Mountain Gateway"
-    },
     "DMC Upper Nearby": {
-        "Death Mountain Summit": "DMC Ladder Area Nearby",
+        "Death Mountain Summit": "Crater Mountain Gateway",
         "DMC Upper Grotto": "DMC Upper Grotto Entrance"
     },
     "DMC Ladder Nearby": {
         "DMC Upper Nearby": "DMC Upper Local",
         "DMC Lower Nearby": "DMC Lower Local"
     },
+    
     "ZR Behind Waterfall": {
         "Zoras Domain": "River Domain Gateway"
     },
