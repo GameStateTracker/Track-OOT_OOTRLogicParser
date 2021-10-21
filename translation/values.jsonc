@@ -745,11 +745,11 @@
         "type": "value",
         "el": "item.key_boss_ganon"
     },
-    "Small_Key_Gerudo_Fortress": {
+    "Small_Key_Thieves_Hideout": {
         "type": "value",
         "el": "item.key_small_gerudo"
     },
-    "Small_Key_Gerudo_Training_Grounds": {
+    "Small_Key_Gerudo_Training_Ground": {
         "type": "value",
         "el": "item.key_small_training"
     },
@@ -781,6 +781,14 @@
     //"item.heart_container",
     //"item.heart_double",
     //"item.sold_out",
+    "lacs_tokens": {
+        "type": "value",
+        "el": "option.lacs_skulltulas"
+    },
+    "ganon_bosskey_tokens": {
+        "type": "value",
+        "el": "option.gbk_skulltulas"
+    },
     "Blue_Fire": {
         "type": "mixin",
         "el": "mixin.blue_fire"
@@ -1801,6 +1809,10 @@
     "logic_water_central_gs_fw": {
         "type": "value",
         "el": "skip.water_central_gs_fw"
+    },
+    "logic_king_zora_skip": {
+        "type": "value",
+        "el": "skip.king_zora_skip"
     },
     "": ""
 }
