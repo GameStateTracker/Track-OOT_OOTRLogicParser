@@ -756,7 +756,7 @@
         "region_name": "River Woods Gateway",
         "exits": {
             "Zora River": "True",
-            "Woods River Gateway": "Progressive_Scale"
+            "Woods River Gateway": "can_dive"
         }
     },
     {
@@ -818,7 +818,7 @@
     {
         "region_name": "Domain Lake Gateway",
         "exits": {
-            "Lake Domain Gateway": "Progressive_Scale",
+            "Lake Domain Gateway": "is_child and can_dive",
             "Zoras Domain": "True"
         }
     },
@@ -941,7 +941,7 @@
     {
         "region_name": "Woods River Gateway",
         "exits": {
-            "River Woods Gateway": "Progressive_Scale",
+            "River Woods Gateway": "can_dive",
             "Lost Woods": "True"
         }
     },
@@ -1005,7 +1005,7 @@
         "region_name": "Lake Domain Gateway",
         "exits": {
             "Lake Hylia": "True",
-            "Domain Lake Gateway": "Progressive_Scale"
+            "Domain Lake Gateway": "is_child and can_dive"
         }
     },
     {
