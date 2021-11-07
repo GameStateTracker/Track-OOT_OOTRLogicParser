@@ -145,7 +145,7 @@
         "type": "min",
         "el": {
             "type": "value",
-            "el": "item.hookshot"
+            "el": "item[hookshot]"
         },
         "value": 2
     },
@@ -153,7 +153,7 @@
         "type": "min",
         "el": {
             "type": "value",
-            "el": "item.glove"
+            "el": "item[glove]"
         },
         "value": 2
     },
@@ -161,7 +161,7 @@
         "type": "min",
         "el": {
             "type": "value",
-            "el": "item.glove"
+            "el": "item[glove]"
         },
         "value": 3
     },
@@ -174,7 +174,7 @@
             },
             {
                 "type": "value",
-                "el": "item.hookshot"
+                "el": "item[hookshot]"
             }
         ]
     },
@@ -209,15 +209,15 @@
                     },
                     {
                         "type": "value",
-                        "el": "item.medallion_shadow"
+                        "el": "item[medallion_shadow]"
                     },
                     {
                         "type": "value",
-                        "el": "item.medallion_spirit"
+                        "el": "item[medallion_spirit]"
                     },
                     {
                         "type": "value",
-                        "el": "item.arrow_light"
+                        "el": "item[arrow_light]"
                     }
                 ]
             },
@@ -276,7 +276,7 @@
                         "el": [
                             {
                                 "type": "value",
-                                "el": "item.skulltula"
+                                "el": "item[skulltula]"
                             },
                             {
                                 "type": "value",
@@ -301,11 +301,11 @@
                     },
                     {
                         "type": "value",
-                        "el": "item.medallion_shadow"
+                        "el": "item[medallion_shadow]"
                     },
                     {
                         "type": "value",
-                        "el": "item.medallion_spirit"
+                        "el": "item[medallion_spirit]"
                     }
                 ]
             },
@@ -364,7 +364,7 @@
                         "el": [
                             {
                                 "type": "value",
-                                "el": "item.skulltula"
+                                "el": "item[skulltula]"
                             },
                             {
                                 "type": "value",
@@ -382,7 +382,7 @@
         "el": [
             {
                 "type": "value",
-                "el": "item.bottle"
+                "el": "item[bottle]"
             },
             {
                 "type": "or",
@@ -392,7 +392,7 @@
                         "node": "region.ganons_castle_water_trial_mq",
                         "el": {
                             "type": "value",
-                            "el": "item.bottle"
+                            "el": "item[bottle]"
                         }
                     },
                     {
@@ -400,7 +400,7 @@
                         "node": "region.ganons_castle_water_trial",
                         "el": {
                             "type": "value",
-                            "el": "item.bottle"
+                            "el": "item[bottle]"
                         }
                     },
                     {
@@ -408,7 +408,7 @@
                         "node": "region.gerudo_training_grounds_stalfos_room_mq",
                         "el": {
                             "type": "value",
-                            "el": "item.bottle"
+                            "el": "item[bottle]"
                         }
                     },
                     {
@@ -416,7 +416,7 @@
                         "node": "region.ice_cavern_map_room_mq",
                         "el": {
                             "type": "value",
-                            "el": "item.bottle"
+                            "el": "item[bottle]"
                         }
                     },
                     {
@@ -427,7 +427,7 @@
                                 "node": "region.ice_cavern",
                                 "el": {
                                     "type": "value",
-                                    "el": "item.bottle"
+                                    "el": "item[bottle]"
                                 }
                             },
                             {
@@ -444,7 +444,7 @@
                                 "node": "region.ice_cavern_mq",
                                 "el": {
                                     "type": "value",
-                                    "el": "item.bottle"
+                                    "el": "item[bottle]"
                                 }
                             },
                             {
@@ -462,13 +462,13 @@
                             },
                             {
                                 "type": "value",
-                                "el": "item.bottle"
+                                "el": "item[bottle]"
                             },
                             {
                                 "type": "min",
                                 "el": {
                                     "type": "value",
-                                    "el": "item.wallet"
+                                    "el": "item[wallet]"
                                 },
                                 "value": 2
                             }
@@ -483,14 +483,14 @@
         "el": [
             {
                 "type": "value",
-                "el": "item.ocarina"
+                "el": "item[ocarina]"
             },
             {
                 "type": "and",
                 "el": [
                     {
                         "type": "value",
-                        "el": "item.bottle"
+                        "el": "item[bottle]"
                     },
                     {
                         "type": "or",
@@ -511,11 +511,11 @@
                                         "el": [
                                             {
                                                 "type": "value",
-                                                "el": "item.bombs"
+                                                "el": "item[bombs]"
                                             },
                                             {
                                                 "type": "value",
-                                                "el": "item.bombchu"
+                                                "el": "item[bombchu]"
                                             },
                                             {
                                                 "type": "and",
@@ -529,19 +529,19 @@
                                                         "el": [
                                                             {
                                                                 "type": "value",
-                                                                "el": "item.stick"
+                                                                "el": "item[stick]"
                                                             },
                                                             {
                                                                 "type": "value",
-                                                                "el": "item.sword_kokiri"
+                                                                "el": "item[sword_kokiri]"
                                                             },
                                                             {
                                                                 "type": "value",
-                                                                "el": "item.slingshot"
+                                                                "el": "item[slingshot]"
                                                             },
                                                             {
                                                                 "type": "value",
-                                                                "el": "item.boomerang"
+                                                                "el": "item[boomerang]"
                                                             }
                                                         ]
                                                     }
@@ -559,23 +559,23 @@
                                                         "el": [
                                                             {
                                                                 "type": "value",
-                                                                "el": "item.sword_master"
+                                                                "el": "item[sword_master]"
                                                             },
                                                             {
                                                                 "type": "value",
-                                                                "el": "item.sword_biggoron"
+                                                                "el": "item[sword_biggoron]"
                                                             },
                                                             {
                                                                 "type": "value",
-                                                                "el": "item.bow"
+                                                                "el": "item[bow]"
                                                             },
                                                             {
                                                                 "type": "value",
-                                                                "el": "item.hookshot"
+                                                                "el": "item[hookshot]"
                                                             },
                                                             {
                                                                 "type": "value",
-                                                                "el": "item.hammer"
+                                                                "el": "item[hammer]"
                                                             }
                                                         ]
                                                     }

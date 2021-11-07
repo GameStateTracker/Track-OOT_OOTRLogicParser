@@ -8,7 +8,7 @@
     "region.hyrule_castle_grounds": {
         "region.hc_garden": {
             "type": "value",
-            "el": "item.egg"
+            "el": "item[egg]"
         }
     },
     "region.ganons_castle_lobby": {

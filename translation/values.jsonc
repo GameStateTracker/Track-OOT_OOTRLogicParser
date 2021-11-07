@@ -204,15 +204,15 @@
     /* items */
     "Bow": {
         "type": "value",
-        "el": "item.bow"
+        "el": "item[bow]"
     },
     "Progressive_Hookshot": {
         "type": "value",
-        "el": "item.hookshot"
+        "el": "item[hookshot]"
     },
     "Hookshot": {
         "type": "value",
-        "el": "item.hookshot"
+        "el": "item[hookshot]"
     },
     "Longshot": {
         "type": "value",
@@ -220,127 +220,127 @@
     },
     "Megaton_Hammer": {
         "type": "value",
-        "el": "item.hammer"
+        "el": "item[hammer]"
     },
     "Hammer": {
         "type": "value",
-        "el": "item.hammer"
+        "el": "item[hammer]"
     },
     "Sticks": {
         "type": "value",
-        "el": "item.stick"
+        "el": "item[stick]"
     },
     "Buy_Deku_Stick_1": {
         "type": "value",
-        "el": "item.stick_1"
+        "el": "item[stick_1]"
     },
     "Deku_Stick_Drop": {
         "type": "value",
-        "el": "item.stick"
+        "el": "item[stick]"
     },
     "Nuts": {
         "type": "value",
-        "el": "item.nut"
+        "el": "item[nut]"
     },
     "Buy_Deku_Nut_5": {
         "type": "value",
-        "el": "item.nut_5"
+        "el": "item[nut_5]"
     },
     "Buy_Deku_Nut_10": {
         "type": "value",
-        "el": "item.nut_10"
+        "el": "item[nut_10]"
     },
     "Deku_Nut_Drop": {
         "type": "value",
-        "el": "item.nut"
+        "el": "item[nut]"
     },
     "Slingshot": {
         "type": "value",
-        "el": "item.slingshot"
+        "el": "item[slingshot]"
     },
     "Boomerang": {
         "type": "value",
-        "el": "item.boomerang"
+        "el": "item[boomerang]"
     },
     "Bomb_Bag": {
         "type": "value",
-        "el": "item.bombs"
+        "el": "item[bombs]"
     },
     "Bombs": {
         "type": "value",
-        "el": "item.bombs"
+        "el": "item[bombs]"
     },
     "Bombchus": {
         "type": "value",
-        "el": "item.bombchu"
+        "el": "item[bombchu]"
     },
     "Bombchu_Drop": {
         "type": "value",
-        "el": "item.bombchu"
+        "el": "item[bombchu]"
     },
     "Bombchus_5": {
         "type": "value",
-        "el": "item.bombchu_5"
+        "el": "item[bombchu_5]"
     },
     "Bombchus_10": {
         "type": "value",
-        "el": "item.bombchu_10"
+        "el": "item[bombchu_10]"
     },
     "Bombchus_20": {
         "type": "value",
-        "el": "item.bombchu_20"
+        "el": "item[bombchu_20]"
     },
     "Buy_Bombchu_5": {
         "type": "value",
-        "el": "item.bombchu_5"
+        "el": "item[bombchu_5]"
     },
     "Buy_Bombchu_10": {
         "type": "value",
-        "el": "item.bombchu_10"
+        "el": "item[bombchu_10]"
     },
     "Buy_Bombchu_20": {
         "type": "value",
-        "el": "item.bombchu_20"
+        "el": "item[bombchu_20]"
     },
     "Lens_of_Truth": {
         "type": "value",
-        "el": "item.lens"
+        "el": "item[lens]"
     },
     "Dins_Fire": {
         "type": "value",
-        "el": "item.magic_din"
+        "el": "item[magic_din]"
     },
     "Farores_Wind": {
         "type": "value",
-        "el": "item.magic_farore"
+        "el": "item[magic_farore]"
     },
     "Nayrus_Love": {
         "type": "value",
-        "el": "item.magic_nayru"
+        "el": "item[magic_nayru]"
     },
     "Fire_Arrows": {
         "type": "value",
-        "el": "item.arrow_fire"
+        "el": "item[arrow_fire]"
     },
     "Ice_Arrows": {
         "type": "value",
-        "el": "item.arrow_ice"
+        "el": "item[arrow_ice]"
     },
     "Light_Arrows": {
         "type": "value",
-        "el": "item.arrow_light"
+        "el": "item[arrow_light]"
     },
     "Ice_Trap": {
         "type": "value",
-        "el": "item.ice_trap"
+        "el": "item[ice_trap]"
     },
     "Triforce_Piece": {
         "type": "value",
-        "el": "item.triforce_piece"
+        "el": "item[triforce_piece]"
     },
     "Arrows": {
         "type": "value",
-        "el": "item.arrows"
+        "el": "item[arrows]"
     },
     "Ocarina": {
         "type": "mixin",
@@ -348,33 +348,33 @@
     },
     "has_bottle": {
         "type": "value",
-        "el": "item.bottle"
+        "el": "item[bottle]"
     },
     "Progressive_Wallet": {
         "type": "value",
-        "el": "item.wallet"
+        "el": "item[wallet]"
     },
     "Magic_Bean": {
         "type": "value",
-        "el": "item.bean"
+        "el": "item[bean]"
     },
     "Magic_Bean_Pack": {
         "type": "value",
-        "el": "item.bean"
+        "el": "item[bean]"
     },
     "Gold_Skulltula_Token": {
         "type": "value",
-        "el": "item.skulltula"
+        "el": "item[skulltula]"
     },
     "Weird_Egg": {
         "type": "value",
-        "el": "item.egg"
+        "el": "item[egg]"
     },
     "Zeldas_Letter": {
         "type": "min",
         "el": {
             "type": "value",
-            "el": "item.egg"
+            "el": "item[egg]"
         },
         "value": 3
     },
@@ -382,7 +382,7 @@
         "type": "min",
         "el": {
             "type": "value",
-            "el": "item.egg"
+            "el": "item[egg]"
         },
         "value": 5
     },
@@ -390,7 +390,7 @@
         "type": "min",
         "el": {
             "type": "value",
-            "el": "item.egg"
+            "el": "item[egg]"
         },
         "value": 8
     },
@@ -398,7 +398,7 @@
         "type": "min",
         "el": {
             "type": "value",
-            "el": "item.cojiro"
+            "el": "item[cojiro]"
         },
         "value": 1
     },
@@ -406,7 +406,7 @@
         "type": "min",
         "el": {
             "type": "value",
-            "el": "item.cojiro"
+            "el": "item[cojiro]"
         },
         "value": 2
     },
@@ -414,7 +414,7 @@
         "type": "min",
         "el": {
             "type": "value",
-            "el": "item.cojiro"
+            "el": "item[cojiro]"
         },
         "value": 3
     },
@@ -422,7 +422,7 @@
         "type": "min",
         "el": {
             "type": "value",
-            "el": "item.cojiro"
+            "el": "item[cojiro]"
         },
         "value": 4
     },
@@ -430,7 +430,7 @@
         "type": "min",
         "el": {
             "type": "value",
-            "el": "item.cojiro"
+            "el": "item[cojiro]"
         },
         "value": 5
     },
@@ -438,7 +438,7 @@
         "type": "min",
         "el": {
             "type": "value",
-            "el": "item.cojiro"
+            "el": "item[cojiro]"
         },
         "value": 6
     },
@@ -446,7 +446,7 @@
         "type": "min",
         "el": {
             "type": "value",
-            "el": "item.cojiro"
+            "el": "item[cojiro]"
         },
         "value": 7
     },
@@ -454,7 +454,7 @@
         "type": "min",
         "el": {
             "type": "value",
-            "el": "item.cojiro"
+            "el": "item[cojiro]"
         },
         "value": 8
     },
@@ -462,7 +462,7 @@
         "type": "min",
         "el": {
             "type": "value",
-            "el": "item.cojiro"
+            "el": "item[cojiro]"
         },
         "value": 9
     },
@@ -470,7 +470,7 @@
         "type": "min",
         "el": {
             "type": "value",
-            "el": "item.cojiro"
+            "el": "item[cojiro]"
         },
         "value": 10
     },
@@ -478,40 +478,40 @@
         "type": "min",
         "el": {
             "type": "value",
-            "el": "item.cojiro"
+            "el": "item[cojiro]"
         },
         "value": 11
     },
-    //"item.cojiro",
+    //"item[cojiro]",
     "Kokiri_Sword": {
         "type": "value",
-        "el": "item.sword_kokiri"
+        "el": "item[sword_kokiri]"
     },
-    //"item.sword_master",
+    //"item[sword_master]",
     "Biggoron_Sword": {
         "type": "value",
-        "el": "item.sword_biggoron"
+        "el": "item[sword_biggoron]"
     },
     "Deku_Shield": {
         "type": "value",
-        "el": "item.shield_kokiri"
+        "el": "item[shield_kokiri]"
     },
     "Buy_Deku_Shield": {
         "type": "value",
-        "el": "item.shield_kokiri"
+        "el": "item[shield_kokiri]"
     },
     "Buy_Hylian_Shield": {
         "type": "value",
-        "el": "item.shield_hylia"
+        "el": "item[shield_hylia]"
     },
     "Mirror_Shield": {
         "type": "value",
-        "el": "item.shield_mirror"
+        "el": "item[shield_mirror]"
     },
-    //"item.tunic_forest",
+    //"item[tunic_forest]",
     "Goron_Tunic": {
         "type": "value",
-        "el": "item.tunic_fire"
+        "el": "item[tunic_fire]"
     },
     "Buy_Goron_Tunic": {
         "type": "and",
@@ -524,7 +524,7 @@
                 "type": "min",
                 "el": {
                     "type": "value",
-                    "el": "item.wallet"
+                    "el": "item[wallet]"
                 },
                 "value": 1
             }
@@ -532,7 +532,7 @@
     },
     "Zora_Tunic": {
         "type": "value",
-        "el": "item.tunic_water"
+        "el": "item[tunic_water]"
     },
     "Buy_Zora_Tunic": {
         "type": "and",
@@ -545,25 +545,25 @@
                 "type": "min",
                 "el": {
                     "type": "value",
-                    "el": "item.wallet"
+                    "el": "item[wallet]"
                 },
                 "value": 2
             }
         ]
     },
-    //"item.boots_normal",
+    //"item[boots_normal]",
     "Iron_Boots": {
         "type": "value",
-        "el": "item.boots_iron"
+        "el": "item[boots_iron]"
     },
     "Hover_Boots": {
         "type": "value",
-        "el": "item.boots_hover"
+        "el": "item[boots_hover]"
     },
-    //"item.boots",
+    //"item[boots]",
     "Progressive_Strength_Upgrade": {
         "type": "value",
-        "el": "item.glove"
+        "el": "item[glove]"
     },
     "Silver_Gauntlets": {
         "type": "mixin",
@@ -575,23 +575,23 @@
     },
     "Progressive_Scale": {
         "type": "value",
-        "el": "item.scale"
+        "el": "item[scale]"
     },
     "Stone_of_Agony": {
         "type": "value",
-        "el": "item.stone_of_agony"
+        "el": "item[stone_of_agony]"
     },
     "Magic_Meter": {
         "type": "value",
-        "el": "item.magic_power"
+        "el": "item[magic_power]"
     },
     "Bottle_with_Letter": {
         "type": "value",
-        "el": "item.zora_letter"
+        "el": "item[zora_letter]"
     },
     "Rutos_Letter": {
         "type": "value",
-        "el": "item.zora_letter"
+        "el": "item[zora_letter]"
     },
     "Deliver_Letter": {
         "type": "value",
@@ -599,59 +599,59 @@
     },
     "Gerudo_Membership_Card": {
         "type": "value",
-        "el": "item.membership"
+        "el": "item[membership]"
     },
     "Zeldas_Lullaby": {
         "type": "value",
-        "el": "item.song_zelda"
+        "el": "item[song_zelda]"
     },
     "Eponas_Song": {
         "type": "value",
-        "el": "item.song_epona"
+        "el": "item[song_epona]"
     },
     "Suns_Song": {
         "type": "value",
-        "el": "item.song_sun"
+        "el": "item[song_sun]"
     },
     "Sarias_Song": {
         "type": "value",
-        "el": "item.song_saria"
+        "el": "item[song_saria]"
     },
     "Song_of_Time": {
         "type": "value",
-        "el": "item.song_time"
+        "el": "item[song_time]"
     },
     "Song_of_Storms": {
         "type": "value",
-        "el": "item.song_storm"
+        "el": "item[song_storm]"
     },
     "Minuet_of_Forest": {
         "type": "value",
-        "el": "item.warp_forest"
+        "el": "item[warp_forest]"
     },
     "Bolero_of_Fire": {
         "type": "value",
-        "el": "item.warp_fire"
+        "el": "item[warp_fire]"
     },
     "Serenade_of_Water": {
         "type": "value",
-        "el": "item.warp_water"
+        "el": "item[warp_water]"
     },
     "Nocturne_of_Shadow": {
         "type": "value",
-        "el": "item.warp_shadow"
+        "el": "item[warp_shadow]"
     },
     "Requiem_of_Spirit": {
         "type": "value",
-        "el": "item.warp_spirit"
+        "el": "item[warp_spirit]"
     },
     "Prelude_of_Light": {
         "type": "value",
-        "el": "item.warp_light"
+        "el": "item[warp_light]"
     },
     "Scarecrow_Song": {
         "type": "value",
-        "el": "item.song_scarecrow"
+        "el": "item[song_scarecrow]"
     },
     "Scarecrow": {
         "type": "mixin",
@@ -663,124 +663,124 @@
     },
     "Kokiri_Emerald": {
         "type": "value",
-        "el": "item.stone_forest"
+        "el": "item[stone_forest]"
     },
     "Goron_Ruby": {
         "type": "value",
-        "el": "item.stone_fire"
+        "el": "item[stone_fire]"
     },
     "Zora_Sapphire": {
         "type": "value",
-        "el": "item.stone_water"
+        "el": "item[stone_water]"
     },
     "Forest_Medallion": {
         "type": "value",
-        "el": "item.medallion_forest"
+        "el": "item[medallion_forest]"
     },
     "Fire_Medallion": {
         "type": "value",
-        "el": "item.medallion_fire"
+        "el": "item[medallion_fire]"
     },
     "Water_Medallion": {
         "type": "value",
-        "el": "item.medallion_water"
+        "el": "item[medallion_water]"
     },
     "Spirit_Medallion": {
         "type": "value",
-        "el": "item.medallion_spirit"
+        "el": "item[medallion_spirit]"
     },
     "Shadow_Medallion": {
         "type": "value",
-        "el": "item.medallion_shadow"
+        "el": "item[medallion_shadow]"
     },
     "Light_Medallion": {
         "type": "value",
-        "el": "item.medallion_light"
+        "el": "item[medallion_light]"
     },
     "Small_Key_Forest_Temple": {
         "type": "value",
-        "el": "item.key_small_forest"
+        "el": "item[key_small_forest]"
     },
     "Boss_Key_Forest_Temple": {
         "type": "value",
-        "el": "item.key_boss_forest"
+        "el": "item[key_boss_forest]"
     },
     "Small_Key_Fire_Temple": {
         "type": "value",
-        "el": "item.key_small_fire"
+        "el": "item[key_small_fire]"
     },
     "Boss_Key_Fire_Temple": {
         "type": "value",
-        "el": "item.key_boss_fire"
+        "el": "item[key_boss_fire]"
     },
     "Small_Key_Water_Temple": {
         "type": "value",
-        "el": "item.key_small_water"
+        "el": "item[key_small_water]"
     },
     "Boss_Key_Water_Temple": {
         "type": "value",
-        "el": "item.key_boss_water"
+        "el": "item[key_boss_water]"
     },
     "Small_Key_Shadow_Temple": {
         "type": "value",
-        "el": "item.key_small_shadow"
+        "el": "item[key_small_shadow]"
     },
     "Boss_Key_Shadow_Temple": {
         "type": "value",
-        "el": "item.key_boss_shadow"
+        "el": "item[key_boss_shadow]"
     },
     "Small_Key_Spirit_Temple": {
         "type": "value",
-        "el": "item.key_small_spirit"
+        "el": "item[key_small_spirit]"
     },
     "Boss_Key_Spirit_Temple": {
         "type": "value",
-        "el": "item.key_boss_spirit"
+        "el": "item[key_boss_spirit]"
     },
     "Small_Key_Ganons_Castle": {
         "type": "value",
-        "el": "item.key_small_ganon"
+        "el": "item[key_small_ganon]"
     },
     "Boss_Key_Ganons_Castle": {
         "type": "value",
-        "el": "item.key_boss_ganon"
+        "el": "item[key_boss_ganon]"
     },
     "Small_Key_Gerudo_Fortress": {
         "type": "value",
-        "el": "item.key_small_gerudo"
+        "el": "item[key_small_gerudo]"
     },
     "Small_Key_Gerudo_Training_Grounds": {
         "type": "value",
-        "el": "item.key_small_training"
+        "el": "item[key_small_training]"
     },
     "Small_Key_Bottom_of_the_Well": {
         "type": "value",
-        "el": "item.key_small_well"
+        "el": "item[key_small_well]"
     },
-    //"item.compass_deku",
-    //"item.dungeon_map_deku",
-    //"item.compass_dodongo",
-    //"item.dungeon_map_dodongo",
-    //"item.compass_jabujabu",
-    //"item.dungeon_map_jabujabu",
-    //"item.compass_temple_forest",
-    //"item.dungeon_map_temple_forest",
-    //"item.compass_temple_fire",
-    //"item.dungeon_map_temple_fire",
-    //"item.compass_temple_water",
-    //"item.dungeon_map_temple_water",
-    //"item.compass_temple_shadow",
-    //"item.dungeon_map_temple_shadow",
-    //"item.compass_temple_spirit",
-    //"item.dungeon_map_temple_spirit",
-    //"item.compass_well",
-    //"item.dungeon_map_well",
-    //"item.compass_ice",
-    //"item.dungeon_map_ice",
-    //"item.heart_piece",
-    //"item.heart_container",
-    //"item.heart_double",
-    //"item.sold_out",
+    //"item[compass_deku]",
+    //"item[dungeon_map_deku]",
+    //"item[compass_dodongo]",
+    //"item[dungeon_map_dodongo]",
+    //"item[compass_jabujabu]",
+    //"item[dungeon_map_jabujabu]",
+    //"item[compass_temple_forest]",
+    //"item[dungeon_map_temple_forest]",
+    //"item[compass_temple_fire]",
+    //"item[dungeon_map_temple_fire]",
+    //"item[compass_temple_water]",
+    //"item[dungeon_map_temple_water]",
+    //"item[compass_temple_shadow]",
+    //"item[dungeon_map_temple_shadow]",
+    //"item[compass_temple_spirit]",
+    //"item[dungeon_map_temple_spirit]",
+    //"item[compass_well]",
+    //"item[dungeon_map_well]",
+    //"item[compass_ice]",
+    //"item[dungeon_map_ice]",
+    //"item[heart_piece]",
+    //"item[heart_container]",
+    //"item[heart_double]",
+    //"item[sold_out]",
     "Blue_Fire": {
         "type": "mixin",
         "el": "mixin.blue_fire"
@@ -796,7 +796,7 @@
                 "type": "min",
                 "el": {
                     "type": "value",
-                    "el": "item.wallet"
+                    "el": "item[wallet]"
                 },
                 "value": 2
             }
@@ -804,46 +804,46 @@
     },
     "Bugs": {
         "type": "value",
-        "el": "item.bottle"
+        "el": "item[bottle]"
     },
     "Buy_Bottle_Bug": {
         "type": "value",
-        "el": "item.bugs_1"
+        "el": "item[bugs_1]"
     },
     "Fairy": {
         "type": "value",
-        "el": "item.fairy"
+        "el": "item[fairy]"
     },
     "Buy_Fairys_Spirit": {
         "type": "value",
-        "el": "item.fairy_1"
+        "el": "item[fairy_1]"
     },
     "Fish": {
         "type": "value",
-        "el": "item.bottle"
+        "el": "item[bottle]"
     },
     "Buy_Fish": {
         "type": "value",
-        "el": "item.fish_1"
+        "el": "item[fish_1]"
     },
-    //"item.milk",
-    //"item.poe",
+    //"item[milk]",
+    //"item[poe]",
     "Bottle_with_Big_Poe": {
         "type": "value",
-        "el": "item.poe_big"
+        "el": "item[poe_big]"
     },
-    //"item.potion_red",
-    //"item.potion_green",
-    //"Blue_Potion": "item.potion_blue",
+    //"item[potion_red]",
+    //"item[potion_green]",
+    //"Blue_Potion": "item[potion_blue]",
 
     /* dummy items */
     "item": {
         "type": "value",
-        "el": "item.dummy"
+        "el": "item[dummy]"
     },
     "song": {
         "type": "value",
-        "el": "item.song_dummy"
+        "el": "item[song_dummy]"
     },
 
     /* options */

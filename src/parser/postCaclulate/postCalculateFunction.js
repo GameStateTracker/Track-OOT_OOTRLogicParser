@@ -17,7 +17,7 @@ export default function postCalculate(scope, input, age = "", region = "", basic
     if (age != "") {
         return {
             type: "mixin",
-            el: `${fnName}[${age}]`
+            el: `${fnName}{${age}}`
         };
     }
     return {
