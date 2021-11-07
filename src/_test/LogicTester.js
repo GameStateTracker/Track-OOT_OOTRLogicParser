@@ -1,3 +1,4 @@
+import fs from "fs";
 import path from "path";
 import JSONFile from "../utils/JSONFile.js";
 import LogicGraph from "./LogicGraph.js";
@@ -35,6 +36,15 @@ export function testLogic(logic) {
             failed.add(edge);
         }
     }
+    // ----
+    // const failedObj = {};
+    // for (const edge of failed) {
+    //     const [region, location] = edge.split(" => ");
+    //     failedObj[edge] = logic.edges[region]?.[location] ?? "unknown";
+    // }
+    // const failedData = JSON.stringify(failedObj, null, 4);
+    // fs.writeFileSync(`${currentDir}/failed.json`, failedData);
+    // ----
     return [success, failed];
 }
 

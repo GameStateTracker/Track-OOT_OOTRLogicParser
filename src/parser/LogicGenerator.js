@@ -47,7 +47,7 @@ function wrapEraFilter(rule, value) {
             "el": [
                 {
                     "type": "mixin",
-                    "el": "mixin.filter_era[" + value + "]"
+                    "el": "mixin.filter_era{" + value + "}"
                 },
                 rule
             ]
