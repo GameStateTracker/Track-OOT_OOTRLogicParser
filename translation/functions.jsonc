@@ -836,5 +836,119 @@
             }
         ]
     },
+    "function.has_stones(ganon_bosskey_stones)": {
+        "type": "gte",
+        "el": [
+            {
+                "type": "add",
+                "el": [
+                    {
+                        "type": "value",
+                        "el": "item.stone_forest"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.stone_fire"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.stone_water"
+                    }
+                ]
+            },
+            {
+                "type": "value",
+                "el": "option.stone_count_bridge"
+            }
+        ]
+    },
+    "function.has_medallions(ganon_bosskey_medallions)": {
+        "type": "gte",
+        "el": [
+            {
+                "type": "add",
+                "el": [
+                    {
+                        "type": "value",
+                        "el": "item.medallion_forest"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_fire"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_water"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_spirit"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_shadow"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_light"
+                    }
+                ]
+            },
+            {
+                "type": "value",
+                "el": "option.medallion_count_bridge"
+            }
+        ]
+    },
+    "function.has_dungeon_rewards(ganon_bosskey_rewards)": {
+        "type": "gte",
+        "el": [
+            {
+                "type": "add",
+                "el": [
+                    {
+                        "type": "value",
+                        "el": "item.medallion_forest"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_fire"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_water"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_spirit"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_shadow"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.medallion_light"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.stone_forest"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.stone_fire"
+                    },
+                    {
+                        "type": "value",
+                        "el": "item.stone_water"
+                    }
+                ]
+            },
+            {
+                "type": "value",
+                "el": "option.dungeon_count_bridge"
+            }
+        ]
+    },
     "": ""
 }
