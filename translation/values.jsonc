@@ -1179,7 +1179,7 @@
     },
     "logic_zora_with_hovers": {
         "type": "value",
-        "el": "skip.zora_with_hover"
+        "el": "skip.zora_with_hovers"
     },
     "logic_zora_with_cucco": {
         "type": "value",
