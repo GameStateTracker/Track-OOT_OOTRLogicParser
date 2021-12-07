@@ -20,10 +20,7 @@ const outputDir = path.join(__dirname, "/output/");
 
 const transRulesFile = path.join(__dirname, "/translation/predict_rules.json");
 
-const RANDO_VERSION = "6.0.57";
-
-let write = false;
-if (process.argv.indexOf("--write") > 0) write = true;
+const RANDO_VERSION = "6.2.1";
 
 if (fs.existsSync("./input")) {
     fs.rmSync("./input", { recursive: true });
@@ -45,14 +42,14 @@ rules.forEach((v, k) => {
 // parser for normal logic
 function parseLogic() {
     LogicGenerator.reset();
-    LogicParser.parse(fs.readFileSync(inGatewayFile).toString(), false, write);
+    LogicParser.parse(fs.readFileSync(inGatewayFile).toString(), false);
     fs.readdirSync(inLogicDir).forEach(function(file) {
         const iname = path.join(inLogicDir, file);
         let mq = false;
         if (iname.endsWith("MQ.json")) mq = true;
-        LogicParser.parse(fs.readFileSync(iname).toString(), mq, write);
+        LogicParser.parse(fs.readFileSync(iname).toString(), mq);
     });
-    LogicParser.write(write);
+    LogicParser.regionCheckCall();
     const logic = LogicGenerator.generate();
     // const logicData = JSON.stringify(logic, null, 4);
     // fs.writeFileSync(`${outputDir}/vanilla.full.json`, logicData);

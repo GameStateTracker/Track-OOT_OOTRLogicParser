@@ -24,7 +24,7 @@
         "ZF Great Fairy Fountain": "ZF Great Fairy Fountain Entrance"
     },
     "Gerudo Fortress": {
-        "Gerudo Training Grounds Lobby": "Gerudo Training Grounds Entrance",
+        "Gerudo Training Ground Lobby": "Gerudo Training Grounds Entrance",
         "GV Fortress Side": "Fortress Valley Gateway",
         "GF Storms Grotto": "GF Storms Grotto Entrance"
     },
@@ -73,7 +73,7 @@
     "Ice Cavern Beginning": {
         "ZF Ice Ledge": "Ice Cavern Gateway"
     },
-    "Gerudo Training Grounds Lobby": {
+    "Gerudo Training Ground Lobby": {
         "Gerudo Fortress": "Gerudo Training Grounds Gateway"
     },
     "Forest Temple Lobby": {
@@ -220,7 +220,7 @@
         "Graveyard Dampes House": "Graveyard Dampes House Entrance",
         "Graveyard Shield Grave": "Graveyard Shield Grave Entrance",
         "Graveyard Heart Piece Grave": "Graveyard Heart Piece Grave Entrance",
-        "Graveyard Composers Grave": "Graveyard Composers Grave Entrance",
+        "Graveyard Royal Familys Tomb": "Graveyard Composers Grave Entrance",
         "Graveyard Dampes Grave": "Graveyard Dampes Grave Entrance"
     },
     "Kak Behind Gate": {
@@ -439,7 +439,7 @@
     "Graveyard Heart Piece Grave": {
         "Graveyard": "Graveyard Heart Piece Grave Entrance"
     },
-    "Graveyard Composers Grave": {
+    "Graveyard Royal Familys Tomb": {
         "Graveyard": "Graveyard Composers Grave Entrance"
     },
     "Graveyard Dampes Grave": {

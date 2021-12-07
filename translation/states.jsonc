@@ -34,7 +34,8 @@
             "Sticks": "item[stick]",
             "Deku_Shield": "item[deku_shield]",
             "Fire_Arrows": "item[arrow_fire]",
-            "Light_Arrows": "item[arrow_light]"
+            "Light_Arrows": "item[arrow_light]",
+            "Mirror_Shield": "item[mirror_shield]"
         }
     },
     "skip.lens_required": {
@@ -87,7 +88,17 @@
             "vanilla": "light_arrow_cutscene_vanilla",
             "stones": "light_arrow_cutscene_stones",
             "medallions": "light_arrow_cutscene_medallions",
-            "dungeons": "light_arrow_cutscene_dungeons"
+            "dungeons": "light_arrow_cutscene_dungeons",
+            "tokens": "light_arrow_cutscene_tokens"
+        }
+    },
+    "shuffle_ganon_bosskey": {
+        "name": "option.shuffle_ganon_bosskey",
+        "values": {
+            "stones": "gbk_stones",
+            "medallions": "gbk_medallions",
+            "dungeons": "gbk_dungeons",
+            "tokens": "gbk_tokens"
         }
     },
     "damage_multiplier": {
