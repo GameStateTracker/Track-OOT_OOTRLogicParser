@@ -4,13 +4,9 @@ export default function postCalculate(scope, input, age = "", region = "", basic
     const {unstate} = scope;
     if (input.el == "age" && age != "") {
         if (input.value == age) {
-            return {
-                type: "true"
-            };
+            return {type: "true"};
         } else {
-            return {
-                type: "false"
-            };
+            return {type: "false"};
         }
     }
     const stapar = input.value.replace(/^'|'$/g, "");

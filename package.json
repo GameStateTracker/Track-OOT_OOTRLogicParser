@@ -11,9 +11,16 @@
   "homepage": "https://bitbucket.org/zidargs/logicparser/src",
   "main": "parse.js",
   "type": "module",
-  "scripts": {
-    "parse": "node src/parse.js"
-  },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "@babel/core": "^7.16.10",
+    "@babel/eslint-parser": "^7.16.5",
+    "@babel/plugin-syntax-top-level-await": "^7.14.5",
+    "eslint": "^8.0.0"
+  },
+  "scripts": {
+    "lint": "yarn eslint .",
+    "lintfix": "yarn eslint --fix .",
+    "parse": "node src/parse.js"
+  }
 }

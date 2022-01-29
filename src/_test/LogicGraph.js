@@ -124,6 +124,7 @@ export default class LogicGraph {
                 return mem_i.get(key);
             }
         }
+
         function execute(name) {
             if (mixins.has(name)) {
                 const fn = mixins.get(name);
@@ -159,6 +160,7 @@ export default class LogicGraph {
                 return mem_i.get(key);
             }
         }
+
         function execute(name) {
             if (mixins.has(name)) {
                 const fn = mixins.get(name);

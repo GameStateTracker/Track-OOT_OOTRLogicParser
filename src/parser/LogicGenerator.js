@@ -131,17 +131,23 @@ class LogicGenerator {
         console.log("");
 
         for (const key in function_overrides) {
-            if (key == "") continue;
+            if (key == "") {
+                continue;
+            }
             functions.set(key, function_overrides[key]);
             //console.log(`added function override: ${key}`);
         }
         for (const key in mixin_overrides) {
-            if (key == "") continue;
+            if (key == "") {
+                continue;
+            }
             mixins.set(translateMixinName(key), mixin_overrides[key]);
             //console.log(`added mixin override: ${key}`);
         }
         for (const key in event_overrides) {
-            if (key == "") continue;
+            if (key == "") {
+                continue;
+            }
             events.set(key, event_overrides[key]);
             //console.log(`added event override: ${key}`);
         }
@@ -230,24 +236,12 @@ class LogicGenerator {
                 "value": "adult"
             }
         };
-        res.edges["region.beyond_door_of_time[child]"]["region.root_exits[adult]"] = {
-            "type": "true"
-        };
-        res.edges["region.beyond_door_of_time[adult]"]["region.root_exits[child]"] = {
-            "type": "true"
-        };
-        res.edges["region.beyond_door_of_time[child]"]["region.beyond_door_of_time[adult]"] = {
-            "type": "true"
-        };
-        res.edges["region.beyond_door_of_time[adult]"]["region.beyond_door_of_time[child]"] = {
-            "type": "true"
-        };
-        res.logic["mixin.is_glitched[child]"] = {
-            "type": `${glitched}`
-        }
-        res.logic["mixin.is_glitched[adult]"] = {
-            "type": `${glitched}`
-        }
+        res.edges["region.beyond_door_of_time[child]"]["region.root_exits[adult]"] = {"type": "true"};
+        res.edges["region.beyond_door_of_time[adult]"]["region.root_exits[child]"] = {"type": "true"};
+        res.edges["region.beyond_door_of_time[child]"]["region.beyond_door_of_time[adult]"] = {"type": "true"};
+        res.edges["region.beyond_door_of_time[adult]"]["region.beyond_door_of_time[child]"] = {"type": "true"};
+        res.logic["mixin.is_glitched[child]"] = {"type": `${glitched}`}
+        res.logic["mixin.is_glitched[adult]"] = {"type": `${glitched}`}
         // END overrides
 
 

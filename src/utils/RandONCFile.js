@@ -7,7 +7,7 @@ class RandONCFile {
         const buffer = input.replace(SPLIT, " ");
         try {
             return JSON.parse(buffer);
-        } catch(e) {
+        } catch (e) {
             let pos = parseInt(e.message.slice(e.message.lastIndexOf(" ") + 1));
             const lines = input.split(LNBR_SEQ);
             for (let i = 0; i < lines.length; ++i) {

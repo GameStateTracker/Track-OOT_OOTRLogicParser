@@ -16,4 +16,5 @@ export default class Operator extends AbstractOperator {
             el: this.children.map(e => e.toJSON())
         };
     }
+
 }

@@ -3,7 +3,9 @@ import AbstractLiteral from "./AbstractLiteral.js";
 export default class Literal extends AbstractLiteral {
 
     #ref;
+
     #value;
+
     #category;
 
     constructor(ref, value, category) {
@@ -29,4 +31,5 @@ export default class Literal extends AbstractLiteral {
             };
         }
     }
+
 }

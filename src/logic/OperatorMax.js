@@ -22,4 +22,5 @@ export default class Operator extends AbstractOperator {
             value: this.#value
         };
     }
+
 }
