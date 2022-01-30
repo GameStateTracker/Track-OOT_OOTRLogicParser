@@ -6,3 +6,6 @@ out
 dist
 .idea
 .vscode
+
+output
+input
