@@ -152,6 +152,10 @@
         "Mountain Crater Gateway": false,
         "Domain River Gateway": false,
         "Domain Fountain Gateway": false,
+        "Gerudo Valley Lake Gateway": false,
+        "Lake Gerudo Valley Gateway": false,
+        "Market Marketback Gateway": false,
+        "Marketback Market Gateway": false,
         "Bottom of the Well MQ": false,
         "Bottom of the Well Perimeter MQ": false,
         "Bottom of the Well Middle MQ": false,
@@ -1044,6 +1048,20 @@
             "ZD Behind King Zora": false,
             "Fountain Domain Gateway": false
         },
+        "Gerudo Valley Lake Gateway": {
+            "Lake Gerudo Valley Gateway": false
+        },
+        "Lake Gerudo Valley Gateway": {
+            "Lake Hylia": false
+        },
+        "Market Marketback Gateway": {
+            "Market": false,
+            "Marketback Market Gateway": false
+        },
+        "Marketback Market Gateway": {
+            "Market Back Alley": false,
+            "Market Marketback Gateway": false
+        },
         "Bottom of the Well MQ": {
             "Bottom of the Well Gateway": false,
             "Bottom of the Well Perimeter MQ": false
@@ -1528,7 +1546,7 @@
             "GV Lower Stream": false
         },
         "GV Lower Stream": {
-            "Lake Hylia": false
+            "Gerudo Valley Lake Gateway": true
         },
         "GV Grotto Ledge": {
             "GV Lower Stream": false,
@@ -1598,10 +1616,10 @@
             "Market Bombchu Bowling Entrance": false,
             "Market Potion Shop Entrance": false,
             "Market Treasure Chest Game Entrance": false,
-            "Market Back Alley": false
+            "Market Marketback Gateway": false
         },
         "Market Back Alley": {
-            "Market": false,
+            "Marketback Market Gateway": false,
             "Market Bombchu Shop Entrance": false,
             "Market Dog Lady House": false,
             "Market Man in Green House Entrance": false

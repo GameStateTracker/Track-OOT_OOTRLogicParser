@@ -184,6 +184,9 @@
         "GV Carpenter Tent": "GV Carpenter Tent Entrance",
         "GV Storms Grotto": "GV Storms Grotto Entrance"
     },
+    "GV Lower Stream": {
+        "Lake Hylia": "Gerudo Valley Lake Gateway"
+    },
     "GF Outside Gate": {
         "Wasteland Near Fortress": "Fortress Wasteland Gateway"
     },
@@ -202,12 +205,14 @@
         "Market Treasure Chest Game": "Market Treasure Chest Game Entrance",
         "Market Bazaar": "Market Bazaar Entrance",
         "Market Shooting Gallery": "Market Shooting Gallery Entrance",
-        "Market Bombchu Bowling": "Market Bombchu Bowling Entrance"
+        "Market Bombchu Bowling": "Market Bombchu Bowling Entrance",
+        "Market Back Alley": "Market Marketback Gateway"
     },
     "Market Back Alley": {
         "Market Bombchu Bowling": "Market Bombchu Bowling Entrance",
         "Market Bombchu Shop": "Market Bombchu Shop Entrance",
-        "Market Man in Green House": "Market Man in Green House Entrance"
+        "Market Man in Green House": "Market Man in Green House Entrance",
+        "Market": "Marketback Market Gateway"
     },
     "Castle Grounds": {
         "Market": "Grounds Market Gateway"
