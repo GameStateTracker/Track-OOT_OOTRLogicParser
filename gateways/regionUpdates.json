@@ -1546,7 +1546,7 @@
             "GV Lower Stream": false
         },
         "GV Lower Stream": {
-            "Gerudo Valley Lake Gateway": true
+            "Gerudo Valley Lake Gateway": false
         },
         "GV Grotto Ledge": {
             "GV Lower Stream": false,

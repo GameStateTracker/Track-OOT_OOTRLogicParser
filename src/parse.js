@@ -51,15 +51,15 @@ function parseLogic() {
     });
     LogicParser.regionCheckCall();
     const logic = LogicGenerator.generate();
-    // const logicData = JSON.stringify(logic, null, 4);
-    // fs.writeFileSync(`${outputDir}/vanilla.full.json`, logicData);
+    const logicData = JSON.stringify(logic, null, 4);
+    fs.writeFileSync(`${outputDir}/vanilla.full.json`, logicData);
 
     /* filter */
     const [success, failed] = filterMixins(logic);
     const filteredLogic = filterLogic(success);
     const filtered = filterFailedMixins([filteredLogic, failed]);
-    // const filteredData = JSON.stringify(filtered, null, 4);
-    // fs.writeFileSync(`${outputDir}/vanilla.filtered.json`, filteredData);
+    const filteredData = JSON.stringify(filtered, null, 4);
+    fs.writeFileSync(`${outputDir}/vanilla.filtered.json`, filteredData);
 
     /* reduce */
     const reducedLogic = reduceLogic(filtered);
@@ -82,15 +82,15 @@ function parseGlitchedLogic() {
         LogicParser.parse(fs.readFileSync(iname).toString(), mq);
     });
     const logic = LogicGenerator.generate(true);
-    // const logicData = JSON.stringify(logic, null, 4);
-    // fs.writeFileSync(`${outputDir}/glitched.full.json`, logicData);
+    const logicData = JSON.stringify(logic, null, 4);
+    fs.writeFileSync(`${outputDir}/glitched.full.json`, logicData);
 
     /* filter */
     const [success, failed] = filterMixins(logic);
     const filteredLogic = filterLogic(success);
     const filtered = filterFailedMixins([filteredLogic, failed]);
-    // const filteredData = JSON.stringify(filtered, null, 4);
-    // fs.writeFileSync(`${outputDir}/glitched.filtered.json`, filteredData);
+    const filteredData = JSON.stringify(filtered, null, 4);
+    fs.writeFileSync(`${outputDir}/glitched.filtered.json`, filteredData);
 
     /* reduce */
     const reducedLogic = reduceLogic(filtered);
