@@ -47,7 +47,7 @@ function wrapEraFilter(rule, value) {
             "el": [
                 {
                     "type": "mixin",
-                    "el": "mixin.filter_era{" + value + "}"
+                    "el": "mixin[filter_era]{" + value + "}"
                 },
                 rule
             ]
@@ -218,28 +218,28 @@ class LogicGenerator {
         }
 
         // BEGIN overrides
-        res.edges["region.root"] = {
-            "region.root{child}": {
+        res.edges["region[root]"] = {
+            "region[root]{child}": {
                 "type": "state",
-                "el": "option.starting_age",
+                "el": "option[starting_age]",
                 "value": "child"
             },
-            "region.root{adult}": {
+            "region[root]{adult}": {
                 "type": "state",
-                "el": "option.starting_age",
+                "el": "option[starting_age]",
                 "value": "adult"
             }
         };
-        res.edges["region.beyond_door_of_time{child}"]["region.root_exits{adult}"] = {
+        res.edges["region[beyond_door_of_time]{child}"]["region[root_exits]{adult}"] = {
             "type": "true"
         };
-        res.edges["region.beyond_door_of_time{adult}"]["region.root_exits{child}"] = {
+        res.edges["region[beyond_door_of_time]{adult}"]["region[root_exits]{child}"] = {
             "type": "true"
         };
-        res.edges["region.beyond_door_of_time{child}"]["region.beyond_door_of_time{adult}"] = {
+        res.edges["region[beyond_door_of_time]{child}"]["region[beyond_door_of_time]{adult}"] = {
             "type": "true"
         };
-        res.edges["region.beyond_door_of_time{adult}"]["region.beyond_door_of_time{child}"] = {
+        res.edges["region[beyond_door_of_time]{adult}"]["region[beyond_door_of_time]{child}"] = {
             "type": "true"
         };
         res.logic["mixin.is_glitched{child}"] = {

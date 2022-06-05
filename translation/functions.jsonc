@@ -174,7 +174,7 @@
                     },
                     {
                         "type": "value",
-                        "el": "option.free_scarecrow"
+                        "el": "option[free_scarecrow]"
                     }
                 ]
             }
@@ -630,7 +630,7 @@
             },
             {
                 "type": "value",
-                "el": "option.stone_count_lacs"
+                "el": "option[stone_count_lacs]"
             }
         ]
     },
@@ -668,7 +668,7 @@
             },
             {
                 "type": "value",
-                "el": "option.medallion_count_lacs"
+                "el": "option[medallion_count_lacs]"
             }
         ]
     },
@@ -718,7 +718,7 @@
             },
             {
                 "type": "value",
-                "el": "option.dungeon_count_lacs"
+                "el": "option[dungeon_count_lacs]"
             }
         ]
     },
@@ -744,7 +744,7 @@
             },
             {
                 "type": "value",
-                "el": "option.stone_count_bridge"
+                "el": "option[stone_count_bridge]"
             }
         ]
     },
@@ -782,7 +782,7 @@
             },
             {
                 "type": "value",
-                "el": "option.medallion_count_bridge"
+                "el": "option[medallion_count_bridge]"
             }
         ]
     },
@@ -832,7 +832,7 @@
             },
             {
                 "type": "value",
-                "el": "option.dungeon_count_bridge"
+                "el": "option[dungeon_count_bridge]"
             }
         ]
     },
@@ -844,21 +844,21 @@
                 "el": [
                     {
                         "type": "value",
-                        "el": "item.stone_forest"
+                        "el": "item[stone_forest]"
                     },
                     {
                         "type": "value",
-                        "el": "item.stone_fire"
+                        "el": "item[stone_fire]"
                     },
                     {
                         "type": "value",
-                        "el": "item.stone_water"
+                        "el": "item[stone_water]"
                     }
                 ]
             },
             {
                 "type": "value",
-                "el": "option.stone_count_bridge"
+                "el": "option[stone_count_bridge]"
             }
         ]
     },
@@ -870,33 +870,33 @@
                 "el": [
                     {
                         "type": "value",
-                        "el": "item.medallion_forest"
+                        "el": "item[medallion_forest]"
                     },
                     {
                         "type": "value",
-                        "el": "item.medallion_fire"
+                        "el": "item[medallion_fire]"
                     },
                     {
                         "type": "value",
-                        "el": "item.medallion_water"
+                        "el": "item[medallion_water]"
                     },
                     {
                         "type": "value",
-                        "el": "item.medallion_spirit"
+                        "el": "item[medallion_spirit]"
                     },
                     {
                         "type": "value",
-                        "el": "item.medallion_shadow"
+                        "el": "item[medallion_shadow]"
                     },
                     {
                         "type": "value",
-                        "el": "item.medallion_light"
+                        "el": "item[medallion_light]"
                     }
                 ]
             },
             {
                 "type": "value",
-                "el": "option.medallion_count_bridge"
+                "el": "option[medallion_count_bridge]"
             }
         ]
     },
@@ -908,45 +908,45 @@
                 "el": [
                     {
                         "type": "value",
-                        "el": "item.medallion_forest"
+                        "el": "item[medallion_forest]"
                     },
                     {
                         "type": "value",
-                        "el": "item.medallion_fire"
+                        "el": "item[medallion_fire]"
                     },
                     {
                         "type": "value",
-                        "el": "item.medallion_water"
+                        "el": "item[medallion_water]"
                     },
                     {
                         "type": "value",
-                        "el": "item.medallion_spirit"
+                        "el": "item[medallion_spirit]"
                     },
                     {
                         "type": "value",
-                        "el": "item.medallion_shadow"
+                        "el": "item[medallion_shadow]"
                     },
                     {
                         "type": "value",
-                        "el": "item.medallion_light"
+                        "el": "item[medallion_light]"
                     },
                     {
                         "type": "value",
-                        "el": "item.stone_forest"
+                        "el": "item[stone_forest]"
                     },
                     {
                         "type": "value",
-                        "el": "item.stone_fire"
+                        "el": "item[stone_fire]"
                     },
                     {
                         "type": "value",
-                        "el": "item.stone_water"
+                        "el": "item[stone_water]"
                     }
                 ]
             },
             {
                 "type": "value",
-                "el": "option.dungeon_count_bridge"
+                "el": "option[dungeon_count_bridge]"
             }
         ]
     },

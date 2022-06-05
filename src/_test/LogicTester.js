@@ -1,4 +1,4 @@
-import fs from "fs";
+// import fs from "fs";
 import path from "path";
 import JSONFile from "../utils/JSONFile.js";
 import LogicGraph from "./LogicGraph.js";
@@ -12,12 +12,12 @@ const savestate = JSONFile.read(`${currentDir}/savestate.json`);
 
 /* LOGIC */
 function testChildLogic() {
-    LOGIC_PROCESSOR.set("option.starting_age", "child");
+    LOGIC_PROCESSOR.set("option[starting_age]", "child");
     return LOGIC_PROCESSOR.executeEdges();
 }
 
 function testAdultLogic() {
-    LOGIC_PROCESSOR.set("option.starting_age", "adult");
+    LOGIC_PROCESSOR.set("option[starting_age]", "adult");
     return LOGIC_PROCESSOR.executeEdges();
 }
 
@@ -68,12 +68,12 @@ export function filterLogic(logic) {
 
 /* MIXINS */
 function testChildMixins() {
-    LOGIC_PROCESSOR.set("option.starting_age", "child");
+    LOGIC_PROCESSOR.set("option[starting_age]", "child");
     return LOGIC_PROCESSOR.executeMixins();
 }
 
 function testAdultMixins() {
-    LOGIC_PROCESSOR.set("option.starting_age", "adult");
+    LOGIC_PROCESSOR.set("option[starting_age]", "adult");
     return LOGIC_PROCESSOR.executeMixins();
 }
 

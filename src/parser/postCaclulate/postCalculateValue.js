@@ -7,8 +7,8 @@ const EXPECTED_REG = /item\[.*?\]/;
 
 export default function postCalculate(scope, input, age = "", region = "", basic = false) {
     const {calc, mixins} = scope;
-    if (input.el.indexOf(".") >= 0) {
-        if (input.el.startsWith("mixin.") || input.el.startsWith("function.") && age != "") {
+    if (input.el.indexOf("[") >= 0 && input.el.endsWith("]")) {
+        if (input.el.startsWith("mixin[") || input.el.startsWith("function[") && age != "") {
             return {
                 type: "mixin",
                 el: `${input.el}{${age}}`

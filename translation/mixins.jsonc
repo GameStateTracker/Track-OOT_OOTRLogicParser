@@ -13,7 +13,7 @@
                     },
                     {
                         "type": "state",
-                        "el": "option.starting_age",
+                        "el": "option[starting_age]",
                         "value": "child"
                     }
                 ]
@@ -28,7 +28,7 @@
                     },
                     {
                         "type": "state",
-                        "el": "option.starting_age",
+                        "el": "option[starting_age]",
                         "value": "adult"
                     }
                 ]
@@ -40,12 +40,12 @@
         "el": [
             {
                 "type": "state",
-                "el": "option.starting_age",
+                "el": "option[starting_age]",
                 "value": "adult"
             },
             {
                 "type": "at",
-                "node": "region.beyond_door_of_time",
+                "node": "region[beyond_door_of_time]",
                 "el": {
                     "type": "true"
                 }
@@ -57,12 +57,12 @@
         "el": [
             {
                 "type": "state",
-                "el": "option.starting_age",
+                "el": "option[starting_age]",
                 "value": "child"
             },
             {
                 "type": "at",
-                "node": "region.beyond_door_of_time",
+                "node": "region[beyond_door_of_time]",
                 "el": {
                     "type": "true"
                 }
@@ -84,7 +84,7 @@
                         "type": "not",
                         "el": {
                             "type": "state",
-                            "el": "filter.era",
+                            "el": "filter[era]",
                             "value": "adult"
                         }
                     }
@@ -102,7 +102,7 @@
                         "type": "not",
                         "el": {
                             "type": "state",
-                            "el": "filter.era",
+                            "el": "filter[era]",
                             "value": "child"
                         }
                     }
@@ -110,7 +110,7 @@
             },
             {
                 "type": "state",
-                "el": "filter.era_apply",
+                "el": "filter[era_apply]",
                 "value": "loose"
             }
         ]
@@ -129,7 +129,7 @@
         "type": "not",
         "el": {
             "type": "state",
-            "el": "filter.time",
+            "el": "filter[time]",
             "value": "day"
         }
     },
@@ -137,7 +137,7 @@
         "type": "not",
         "el": {
             "type": "state",
-            "el": "filter.time",
+            "el": "filter[time]",
             "value": "night"
         }
     },
@@ -196,7 +196,7 @@
         "el": [
             {
                 "type": "state",
-                "el": "option.ganon_castle_open",
+                "el": "option[ganon_castle_open]",
                 "value": "ganon_castle_open_open"
             },
             {
@@ -204,7 +204,7 @@
                 "el": [
                     {
                         "type": "state",
-                        "el": "option.ganon_castle_open",
+                        "el": "option[ganon_castle_open]",
                         "value": "ganon_castle_open_default"
                     },
                     {
@@ -226,7 +226,7 @@
                 "el": [
                     {
                         "type": "state",
-                        "el": "option.ganon_castle_open",
+                        "el": "option[ganon_castle_open]",
                         "value": "ganon_castle_open_stones"
                     },
                     {
@@ -240,7 +240,7 @@
                 "el": [
                     {
                         "type": "state",
-                        "el": "option.ganon_castle_open",
+                        "el": "option[ganon_castle_open]",
                         "value": "ganon_castle_open_medallion"
                     },
                     {
@@ -254,7 +254,7 @@
                 "el": [
                     {
                         "type": "state",
-                        "el": "option.ganon_castle_open",
+                        "el": "option[ganon_castle_open]",
                         "value": "ganon_castle_open_dungeon"
                     },
                     {
@@ -268,7 +268,7 @@
                 "el": [
                     {
                         "type": "state",
-                        "el": "option.ganon_castle_open",
+                        "el": "option[ganon_castle_open]",
                         "value": "ganon_castle_open_skulltulas"
                     },
                     {
@@ -280,7 +280,7 @@
                             },
                             {
                                 "type": "value",
-                                "el": "option.ganon_castle_skulltulas"
+                                "el": "option[ganon_castle_skulltulas]"
                             }
                         ]
                     }
@@ -300,7 +300,7 @@
                 "el": [
                     {
                         "type": "at",
-                        "node": "region.ganons_castle_water_trial_mq",
+                        "node": "region[ganons_castle_water_trial_mq]",
                         "el": {
                             "type": "value",
                             "el": "item[bottle]"
@@ -308,7 +308,7 @@
                     },
                     {
                         "type": "at",
-                        "node": "region.ganons_castle_water_trial",
+                        "node": "region[ganons_castle_water_trial]",
                         "el": {
                             "type": "value",
                             "el": "item[bottle]"
@@ -316,7 +316,7 @@
                     },
                     {
                         "type": "at",
-                        "node": "region.gerudo_training_grounds_stalfos_room_mq",
+                        "node": "region[gerudo_training_grounds_stalfos_room_mq]",
                         "el": {
                             "type": "value",
                             "el": "item[bottle]"
@@ -324,7 +324,7 @@
                     },
                     {
                         "type": "at",
-                        "node": "region.ice_cavern_map_room_mq",
+                        "node": "region[ice_cavern_map_room_mq]",
                         "el": {
                             "type": "value",
                             "el": "item[bottle]"
@@ -335,7 +335,7 @@
                         "el": [
                             {
                                 "type": "at",
-                                "node": "region.ice_cavern",
+                                "node": "region[ice_cavern]",
                                 "el": {
                                     "type": "value",
                                     "el": "item[bottle]"
@@ -352,7 +352,7 @@
                         "el": [
                             {
                                 "type": "at",
-                                "node": "region.ice_cavern_mq",
+                                "node": "region[ice_cavern_mq]",
                                 "el": {
                                     "type": "value",
                                     "el": "item[bottle]"
@@ -369,7 +369,7 @@
                         "el": [
                             {
                                 "type": "value",
-                                "el": "option.consider_buyable"
+                                "el": "option[consider_buyable]"
                             },
                             {
                                 "type": "value",
@@ -408,14 +408,14 @@
                         "el": [
                             {
                                 "type": "value",
-                                "el": "skip.invisible_ocarina"
+                                "el": "option[skip.invisible_ocarina]"
                             },
                             {
                                 "type": "and",
                                 "el": [
                                     {
                                         "type": "value",
-                                        "el": "skip.invisible_ocarina_midair"
+                                        "el": "option[skip.invisible_ocarina_midair]"
                                     },
                                     {
                                         "type": "or",
@@ -516,7 +516,7 @@
                         "type": "not",
                         "el": {
                             "type": "value",
-                            "el": "option.sun_song_skulltuta"
+                            "el": "option[sun_song_skulltuta]"
                         }
                     }
                 ]
@@ -526,7 +526,7 @@
                 "el": [
                     {
                         "type": "value",
-                        "el": "option.sun_song_skulltuta"
+                        "el": "option[sun_song_skulltuta]"
                     },
                     {
                         "type": "mixin",
@@ -543,7 +543,7 @@
                 "type": "not",
                 "el": {
                     "type": "state",
-                    "el": "option.doors_open_forest",
+                    "el": "option[doors_open_forest]",
                     "value": "doors_open_forest_closed"
                 }
             },
@@ -553,19 +553,19 @@
             },
             {
                 "type": "value",
-                "el": "option.shuffle_overworld"
+                "el": "option[shuffle_overworld]"
             },
             {
                 "type": "value",
-                "el": "option.shuffle_warps"
+                "el": "option[shuffle_warps]"
             },
             {
                 "type": "value",
-                "el": "option.shuffle_spawns"
+                "el": "option[shuffle_spawns]"
             },
             {
                 "type": "value",
-                "el": "event.deku_tree_clear"
+                "el": "event[skip.deku_tree_clear]"
             }
         ]
     },
