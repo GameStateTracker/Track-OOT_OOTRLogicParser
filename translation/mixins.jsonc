@@ -565,7 +565,7 @@
             },
             {
                 "type": "value",
-                "el": "event[skip.deku_tree_clear]"
+                "el": "event[deku_tree_clear]"
             }
         ]
     },

@@ -33,11 +33,11 @@
     },
     "Forest_Temple_Jo_and_Beth": {
         "type": "value",
-        "el": "event[skip.forest_temple_jo_and_beth]"
+        "el": "event[forest_temple_jo_and_beth]"
     },
     "Forest_Temple_Amy_and_Meg": {
         "type": "value",
-        "el": "event[skip.forest_temple_amy_and_meg]"
+        "el": "event[forest_temple_amy_and_meg]"
     },
     "at_dampe_time": {
         "type": "mixin",
@@ -46,35 +46,35 @@
     /* specials */
     "Showed_Mido_Sword_&_Shield": {
         "type": "value",
-        "el": "event[skip.showed_mido_sword_&_shield]"
+        "el": "event[showed_mido_sword_&_shield]"
     },
     "Drain_Well": {
         "type": "value",
-        "el": "event[skip.drain_well]"
+        "el": "event[drain_well]"
     },
     "Kakariko_Village_Gate_Open": {
         "type": "value",
-        "el": "event[skip.kakariko_village_gate_open]"
+        "el": "event[kakariko_village_gate_open]"
     },
     "Wake_Up_Adult_Talon": {
         "type": "value",
-        "el": "event[skip.wake_up_adult_talon]"
+        "el": "event[wake_up_adult_talon]"
     },
     "GC_Woods_Warp_Open": {
         "type": "value",
-        "el": "event[skip.gc_woods_warp_open]"
+        "el": "event[gc_woods_warp_open]"
     },
     "Goron_City_Child_Fire": {
         "type": "value",
-        "el": "event[skip.goron_city_child_fire]"
+        "el": "event[goron_city_child_fire]"
     },
     "Stop_GC_Rolling_Goron_as_Adult": {
         "type": "value",
-        "el": "event[skip.stop_gc_rolling_goron_as_adult]"
+        "el": "event[stop_gc_rolling_goron_as_adult]"
     },
     "Child_Water_Temple": {
         "type": "value",
-        "el": "event[skip.child_water_temple]"
+        "el": "event[child_water_temple]"
     },
     "had_night_start": {
         "type": "value",
@@ -82,11 +82,11 @@
     },
     "Links_Cow": {
         "type": "value",
-        "el": "event[skip.links_cow]"
+        "el": "event[links_cow]"
     },
     "Epona": {
         "type": "value",
-        "el": "event[skip.epona]"
+        "el": "event[epona]"
     },
     "Big_Poe": {
         "type": "value",
@@ -94,43 +94,43 @@
     },
     "Bonooru": {
         "type": "value",
-        "el": "event[skip.bonooru]"
+        "el": "event[bonooru]"
     },
     "Dampes_Windmill_Access": {
         "type": "value",
-        "el": "event[skip.dampes_windmill_access]"
+        "el": "event[dampes_windmill_access]"
     },
     "Cojiro_Access": {
         "type": "value",
-        "el": "event[skip.cojiro_access]"
+        "el": "event[cojiro_access]"
     },
     "Odd_Potion_Access": {
         "type": "value",
-        "el": "event[skip.odd_potion_access]"
+        "el": "event[odd_potion_access]"
     },
     "Eyeball_Frog_Access": {
         "type": "value",
-        "el": "event[skip.eyeball_frog_access]"
+        "el": "event[eyeball_frog_access]"
     },
     "Poachers_Saw_Access": {
         "type": "value",
-        "el": "event[skip.poachers_saw_access]"
+        "el": "event[poachers_saw_access]"
     },
     "Odd_Mushroom_Access": {
         "type": "value",
-        "el": "event[skip.odd_mushroom_access]"
+        "el": "event[odd_mushroom_access]"
     },
     "Broken_Sword_Access": {
         "type": "value",
-        "el": "event[skip.broken_sword_access]"
+        "el": "event[broken_sword_access]"
     },
     "Prescription_Access": {
         "type": "value",
-        "el": "event[skip.prescription_access]"
+        "el": "event[prescription_access]"
     },
     "Eyedrops_Access": {
         "type": "value",
-        "el": "event[skip.eyedrops_access]"
+        "el": "event[eyedrops_access]"
     },
     "disable_trade_revert": {
         "type": "and",
@@ -155,51 +155,51 @@
     },
     "Carpenter_Rescue": {
         "type": "value",
-        "el": "event[skip.carpenter_rescue]"
+        "el": "event[carpenter_rescue]"
     },
     "GF_Gate_Open": {
         "type": "value",
-        "el": "event[skip.gf_gate_open]"
+        "el": "event[gf_gate_open]"
     },
     "King_Zora_Thawed": {
         "type": "value",
-        "el": "event[skip.king_zora_thawed]"
+        "el": "event[king_zora_thawed]"
     },
     "Deku_Tree_Clear": {
         "type": "value",
-        "el": "event[skip.deku_tree_clear]"
+        "el": "event[deku_tree_clear]"
     },
     "Water_Temple_Clear": {
         "type": "value",
-        "el": "event[skip.water_temple_clear]"
+        "el": "event[water_temple_clear]"
     },
     "Forest_Trial_Clear": {
         "type": "value",
-        "el": "event[skip.forest_trial_clear]"
+        "el": "event[forest_trial_clear]"
     },
     "Fire_Trial_Clear": {
         "type": "value",
-        "el": "event[skip.fire_trial_clear]"
+        "el": "event[fire_trial_clear]"
     },
     "Water_Trial_Clear": {
         "type": "value",
-        "el": "event[skip.water_trial_clear]"
+        "el": "event[water_trial_clear]"
     },
     "Shadow_Trial_Clear": {
         "type": "value",
-        "el": "event[skip.shadow_trial_clear]"
+        "el": "event[shadow_trial_clear]"
     },
     "Spirit_Trial_Clear": {
         "type": "value",
-        "el": "event[skip.spirit_trial_clear]"
+        "el": "event[spirit_trial_clear]"
     },
     "Light_Trial_Clear": {
         "type": "value",
-        "el": "event[skip.light_trial_clear]"
+        "el": "event[light_trial_clear]"
     },
     "Raise_Water_Level": {
         "type": "value",
-        "el": "event[skip.raise_water_level]"
+        "el": "event[raise_water_level]"
     },
     /* items */
     "Bow": {

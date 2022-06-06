@@ -17,12 +17,12 @@
         "events": {
             "default": false,
             "child": [
-                "event[skip.showed_mido_sword_&_shield]",
-                "event[skip.deku_tree_clear]",
-                "event[skip.drain_well]"
+                "event[showed_mido_sword_&_shield]",
+                "event[deku_tree_clear]",
+                "event[drain_well]"
             ],
             "adult": [
-                "event[skip.drain_well]"
+                "event[drain_well]"
             ]
         }
     },
@@ -40,14 +40,14 @@
         "events": {
             "default": true,
             "child": [
-                "event[skip.showed_mido_sword_&_shield]",
-                "event[skip.deku_tree_clear]",
-                "event[skip.drain_well]"
+                "event[showed_mido_sword_&_shield]",
+                "event[deku_tree_clear]",
+                "event[drain_well]"
             ],
             "adult": [
-                "event[skip.showed_mido_sword_&_shield]",
-                "event[skip.deku_tree_clear]",
-                "event[skip.drain_well]"
+                "event[showed_mido_sword_&_shield]",
+                "event[deku_tree_clear]",
+                "event[drain_well]"
             ]
         }
     }
