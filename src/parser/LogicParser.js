@@ -53,7 +53,7 @@ class LogicParser {
                 if (renameData[regionName] != null) {
                     if (renameData[regionName][i] !== undefined) i = renameData[regionName][i];
                 }
-                if(success.subRegions[value.region_name] == null) success.subRegions[value.region_name] = {};
+                if (success.subRegions[value.region_name] == null) success.subRegions[value.region_name] = {};
                 success.mainRegions[value.region_name] = false;
                 success.subRegions[value.region_name][i] = false;
                 LogicGenerator.addExit(value.region_name, i, transpile(rule));

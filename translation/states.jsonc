@@ -206,85 +206,85 @@
             "light_arrow_cutscene_skulltulas": "light_arrow_cutscene_skulltulas"
         }
     },
-    "dungeontype.area/well": {
-        "name": "dungeontype.area/well",
+    "dungeontype[area/well]": {
+        "name": "dungeontype[area/well]",
         "values": {
             "mq": "mq",
             "v": "v"
         }
     },
-    "dungeontype.area/deku": {
-        "name": "dungeontype.area/deku",
+    "dungeontype[area/deku]": {
+        "name": "dungeontype[area/deku]",
         "values": {
             "mq": "mq",
             "v": "v"
         }
     },
-    "dungeontype.area/dodongo": {
-        "name": "dungeontype.area/dodongo",
+    "dungeontype[area/dodongo]": {
+        "name": "dungeontype[area/dodongo]",
         "values": {
             "mq": "mq",
             "v": "v"
         }
     },
-    "dungeontype.area/jabujabu": {
-        "name": "dungeontype.area/jabujabu",
+    "dungeontype[area/jabujabu]": {
+        "name": "dungeontype[area/jabujabu]",
         "values": {
             "mq": "mq",
             "v": "v"
         }
     },
-    "dungeontype.area/ice_cavern": {
-        "name": "dungeontype.area/ice_cavern",
+    "dungeontype[area/ice_cavern]": {
+        "name": "dungeontype[area/ice_cavern]",
         "values": {
             "mq": "mq",
             "v": "v"
         }
     },
-    "dungeontype.area/training_grounds": {
-        "name": "dungeontype.area/training_grounds",
+    "dungeontype[area/training_grounds]": {
+        "name": "dungeontype[area/training_grounds]",
         "values": {
             "mq": "mq",
             "v": "v"
         }
     },
-    "dungeontype.area/temple_forest": {
-        "name": "dungeontype.area/temple_forest",
+    "dungeontype[area/temple_forest]": {
+        "name": "dungeontype[area/temple_forest]",
         "values": {
             "mq": "mq",
             "v": "v"
         }
     },
-    "dungeontype.area/temple_fire": {
-        "name": "dungeontype.area/temple_fire",
+    "dungeontype[area/temple_fire]": {
+        "name": "dungeontype[area/temple_fire]",
         "values": {
             "mq": "mq",
             "v": "v"
         }
     },
-    "dungeontype.area/temple_water": {
-        "name": "dungeontype.area/temple_water",
+    "dungeontype[area/temple_water]": {
+        "name": "dungeontype[area/temple_water]",
         "values": {
             "mq": "mq",
             "v": "v"
         }
     },
-    "dungeontype.area/temple_shadow": {
-        "name": "dungeontype.area/temple_shadow",
+    "dungeontype[area/temple_shadow]": {
+        "name": "dungeontype[area/temple_shadow]",
         "values": {
             "mq": "mq",
             "v": "v"
         }
     },
-    "dungeontype.area/temple_spirit": {
-        "name": "dungeontype.area/temple_spirit",
+    "dungeontype[area/temple_spirit]": {
+        "name": "dungeontype[area/temple_spirit]",
         "values": {
             "mq": "mq",
             "v": "v"
         }
     },
-    "dungeontype.area/castle_ganon": {
-        "name": "dungeontype.area/castle_ganon",
+    "dungeontype[area/castle_ganon]": {
+        "name": "dungeontype[area/castle_ganon]",
         "values": {
             "mq": "mq",
             "v": "v"

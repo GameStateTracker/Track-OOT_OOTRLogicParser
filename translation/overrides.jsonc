@@ -2,7 +2,7 @@
     "region[root]": {
         "region[root_exits]": {
             "type": "mixin",
-            "el": "mixin.is_starting_age"
+            "el": "mixin[is_starting_age]"
         }
     },
     "region[hyrule_castle_grounds]": {

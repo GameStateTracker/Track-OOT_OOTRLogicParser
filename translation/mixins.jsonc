@@ -1,6 +1,6 @@
 {
     /* time travel */
-    "mixin.is_starting_age": { 
+    "mixin[is_starting_age]": { 
         "type": "or",
         "el": [
             {
@@ -35,7 +35,7 @@
             }
         ]
     },
-    "mixin.can_become_adult": {
+    "mixin[can_become_adult]": {
         "type": "or",
         "el": [
             {
@@ -52,7 +52,7 @@
             }
         ]
     },
-    "mixin.can_become_child": {
+    "mixin[can_become_child]": {
         "type": "or",
         "el": [
             {
@@ -69,7 +69,7 @@
             }
         ]
     },
-    "mixin.filter_era": {
+    "mixin[filter_era]": {
         "type": "or",
         "el": [
             {
@@ -115,17 +115,17 @@
             }
         ]
     },
-    "mixin.is_child": {
+    "mixin[is_child]": {
         "type": "state",
         "el": "age",
         "value": "child"
     },
-    "mixin.is_adult": {
+    "mixin[is_adult]": {
         "type": "state",
         "el": "age",
         "value": "adult"
     },
-    "mixin.is_night": {
+    "mixin[is_night]": {
         "type": "not",
         "el": {
             "type": "state",
@@ -133,7 +133,7 @@
             "value": "day"
         }
     },
-    "mixin.is_day": {
+    "mixin[is_day]": {
         "type": "not",
         "el": {
             "type": "state",
@@ -141,7 +141,7 @@
             "value": "night"
         }
     },
-    "mixin.longshot": {
+    "mixin[longshot]": {
         "type": "min",
         "el": {
             "type": "value",
@@ -149,7 +149,7 @@
         },
         "value": 2
     },
-    "mixin.silver_gauntlets": {
+    "mixin[silver_gauntlets]": {
         "type": "min",
         "el": {
             "type": "value",
@@ -157,7 +157,7 @@
         },
         "value": 2
     },
-    "mixin.golden_gauntlets": {
+    "mixin[golden_gauntlets]": {
         "type": "min",
         "el": {
             "type": "value",
@@ -165,12 +165,12 @@
         },
         "value": 3
     },
-    "mixin.scarecrow": {
+    "mixin[scarecrow]": {
         "type": "and",
         "el": [
             {
                 "type": "mixin",
-                "el": "function.can_play(item[song_scarecrow])"
+                "el": "function[can_play(item[song_scarecrow])]"
             },
             {
                 "type": "value",
@@ -178,20 +178,20 @@
             }
         ]
     },
-    "mixin.distant_scarecrow": {
+    "mixin[distant_scarecrow]": {
         "type": "and",
         "el": [
             {
                 "type": "mixin",
-                "el": "function.can_play(item[song_scarecrow])"
+                "el": "function[can_play(item[song_scarecrow])]"
             },
             {
                 "type": "mixin",
-                "el": "mixin.longshot"
+                "el": "mixin[longshot]"
             }
         ]
     },
-    "mixin.can_build_rainbow_bridge": {
+    "mixin[can_build_rainbow_bridge]": {
         "type": "or",
         "el": [
             {
@@ -231,7 +231,7 @@
                     },
                     {
                         "type": "mixin",
-                        "el": "function.has_stones(bridge_stones)"
+                        "el": "function[has_stones(bridge_stones)]"
                     }
                 ]
             },
@@ -245,7 +245,7 @@
                     },
                     {
                         "type": "mixin",
-                        "el": "function.has_medallions(bridge_medallions)"
+                        "el": "function[has_medallions(bridge_medallions)]"
                     }
                 ]
             },
@@ -259,7 +259,7 @@
                     },
                     {
                         "type": "mixin",
-                        "el": "function.has_dungeon_rewards(bridge_rewards)"
+                        "el": "function[has_dungeon_rewards(bridge_rewards)]"
                     }
                 ]
             },
@@ -288,7 +288,7 @@
             }
         ]
     },
-    "mixin.blue_fire": {
+    "mixin[blue_fire]": {
         "type": "and",
         "el": [
             {
@@ -343,7 +343,7 @@
                             },
                             {
                                 "type": "mixin",
-                                "el": "mixin.is_adult"
+                                "el": "mixin[is_adult]"
                             }
                         ]
                     },
@@ -360,7 +360,7 @@
                             },
                             {
                                 "type": "mixin",
-                                "el": "mixin.is_adult"
+                                "el": "mixin[is_adult]"
                             }
                         ]
                     },
@@ -389,7 +389,7 @@
             }
         ]
     },
-    "mixin.can_play_ocarina": {
+    "mixin[can_play_ocarina]": {
         "type": "or",
         "el": [
             {
@@ -433,7 +433,7 @@
                                                 "el": [
                                                     {
                                                         "type": "mixin",
-                                                        "el": "mixin.is_child"
+                                                        "el": "mixin[is_child]"
                                                     },
                                                     {
                                                         "type": "or",
@@ -463,7 +463,7 @@
                                                 "el": [
                                                     {
                                                         "type": "mixin",
-                                                        "el": "mixin.is_adult"
+                                                        "el": "mixin[is_adult]"
                                                     },
                                                     {
                                                         "type": "or",
@@ -502,7 +502,7 @@
             }
         ]
     },
-    "mixin.is_night_gs": {
+    "mixin[is_night_gs]": {
         "type": "or",
         "el": [
             {
@@ -510,7 +510,7 @@
                 "el": [
                     {
                         "type": "mixin",
-                        "el": "mixin.is_night"
+                        "el": "mixin[is_night]"
                     },
                     {
                         "type": "not",
@@ -530,13 +530,13 @@
                     },
                     {
                         "type": "mixin",
-                        "el": "function.can_play(item[song_sun])"
+                        "el": "function[can_play(item[song_sun])]"
                     }
                 ]
             }
         ]
     },
-    "mixin.can_leave_forest": {
+    "mixin[can_leave_forest]": {
         "type": "or",
         "el": [
             {
@@ -549,7 +549,7 @@
             },
             {
                 "type": "mixin",
-                "el": "mixin.is_adult"
+                "el": "mixin[is_adult]"
             },
             {
                 "type": "value",

@@ -13,23 +13,23 @@
     /* mixins */
     "is_child": {
         "type": "mixin",
-        "el": "mixin.is_child"
+        "el": "mixin[is_child]"
     },
     "is_adult": {
         "type": "mixin",
-        "el": "mixin.is_adult"
+        "el": "mixin[is_adult]"
     },
     "at_night": {
         "type": "mixin",
-        "el": "mixin.is_night"
+        "el": "mixin[is_night]"
     },
     "at_night_gs": {
         "type": "mixin",
-        "el": "mixin.is_night_gs"
+        "el": "mixin[is_night_gs]"
     },
     "at_day": {
         "type": "mixin",
-        "el": "mixin.is_day"
+        "el": "mixin[is_day]"
     },
     "Forest_Temple_Jo_and_Beth": {
         "type": "value",
@@ -41,7 +41,7 @@
     },
     "at_dampe_time": {
         "type": "mixin",
-        "el": "mixin.is_night"
+        "el": "mixin[is_night]"
     },
     /* specials */
     "Showed_Mido_Sword_&_Shield": {
@@ -216,7 +216,7 @@
     },
     "Longshot": {
         "type": "value",
-        "el": "mixin.longshot"
+        "el": "mixin[longshot]"
     },
     "Megaton_Hammer": {
         "type": "value",
@@ -344,7 +344,7 @@
     },
     "Ocarina": {
         "type": "mixin",
-        "el": "mixin.can_play_ocarina"
+        "el": "mixin[can_play_ocarina]"
     },
     "has_bottle": {
         "type": "value",
@@ -567,11 +567,11 @@
     },
     "Silver_Gauntlets": {
         "type": "mixin",
-        "el": "mixin.silver_gauntlets"
+        "el": "mixin[silver_gauntlets]"
     },
     "Golden_Gauntlets": {
         "type": "mixin",
-        "el": "mixin.golden_gauntlets"
+        "el": "mixin[golden_gauntlets]"
     },
     "Progressive_Scale": {
         "type": "value",
@@ -655,11 +655,11 @@
     },
     "Scarecrow": {
         "type": "mixin",
-        "el": "mixin.scarecrow"
+        "el": "mixin[scarecrow]"
     },
     "Distant_Scarecrow": {
         "type": "mixin",
-        "el": "mixin.distant_scarecrow"
+        "el": "mixin[distant_scarecrow]"
     },
     "Kokiri_Emerald": {
         "type": "value",
@@ -791,7 +791,7 @@
     },
     "Blue_Fire": {
         "type": "mixin",
-        "el": "mixin.blue_fire"
+        "el": "mixin[blue_fire]"
     },
     "Buy_Blue_Fire": {
         "type": "and",

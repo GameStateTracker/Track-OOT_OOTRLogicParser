@@ -1,11 +1,11 @@
 {
     /* normal songs */
-    "function.can_play(item[song_zelda])": {
+    "function[can_play(item[song_zelda])]": {
         "type": "and",
         "el": [
             {
                 "type": "mixin",
-                "el": "mixin.can_play_ocarina"
+                "el": "mixin[can_play_ocarina]"
             },
             {
                 "type": "value",
@@ -13,12 +13,12 @@
             }
         ]
     },
-    "function.can_play(item[song_epona])": {
+    "function[can_play(item[song_epona])]": {
         "type": "and",
         "el": [
             {
                 "type": "mixin",
-                "el": "mixin.can_play_ocarina"
+                "el": "mixin[can_play_ocarina]"
             },
             {
                 "type": "value",
@@ -26,12 +26,12 @@
             }
         ]
     },
-    "function.can_play(item[song_saria])": {
+    "function[can_play(item[song_saria])]": {
         "type": "and",
         "el": [
             {
                 "type": "mixin",
-                "el": "mixin.can_play_ocarina"
+                "el": "mixin[can_play_ocarina]"
             },
             {
                 "type": "value",
@@ -39,12 +39,12 @@
             }
         ]
     },
-    "function.can_play(item[song_sun])": {
+    "function[can_play(item[song_sun])]": {
         "type": "and",
         "el": [
             {
                 "type": "mixin",
-                "el": "mixin.can_play_ocarina"
+                "el": "mixin[can_play_ocarina]"
             },
             {
                 "type": "value",
@@ -52,12 +52,12 @@
             }
         ]
     },
-    "function.can_play(item[song_time])": {
+    "function[can_play(item[song_time])]": {
         "type": "and",
         "el": [
             {
                 "type": "mixin",
-                "el": "mixin.can_play_ocarina"
+                "el": "mixin[can_play_ocarina]"
             },
             {
                 "type": "value",
@@ -65,12 +65,12 @@
             }
         ]
     },
-    "function.can_play(item[song_storm])": {
+    "function[can_play(item[song_storm])]": {
         "type": "and",
         "el": [
             {
                 "type": "mixin",
-                "el": "mixin.can_play_ocarina"
+                "el": "mixin[can_play_ocarina]"
             },
             {
                 "type": "value",
@@ -79,12 +79,12 @@
         ]
     },
     /* warp songs */
-    "function.can_play(item[warp_forest])": {
+    "function[can_play(item[warp_forest])]": {
         "type": "and",
         "el": [
             {
                 "type": "mixin",
-                "el": "mixin.can_play_ocarina"
+                "el": "mixin[can_play_ocarina]"
             },
             {
                 "type": "value",
@@ -92,12 +92,12 @@
             }
         ]
     },
-    "function.can_play(item[warp_fire])": {
+    "function[can_play(item[warp_fire])]": {
         "type": "and",
         "el": [
             {
                 "type": "mixin",
-                "el": "mixin.can_play_ocarina"
+                "el": "mixin[can_play_ocarina]"
             },
             {
                 "type": "value",
@@ -105,12 +105,12 @@
             }
         ]
     },
-    "function.can_play(item[warp_water])": {
+    "function[can_play(item[warp_water])]": {
         "type": "and",
         "el": [
             {
                 "type": "mixin",
-                "el": "mixin.can_play_ocarina"
+                "el": "mixin[can_play_ocarina]"
             },
             {
                 "type": "value",
@@ -118,12 +118,12 @@
             }
         ]
     },
-    "function.can_play(item[warp_shadow])": {
+    "function[can_play(item[warp_shadow])]": {
         "type": "and",
         "el": [
             {
                 "type": "mixin",
-                "el": "mixin.can_play_ocarina"
+                "el": "mixin[can_play_ocarina]"
             },
             {
                 "type": "value",
@@ -131,12 +131,12 @@
             }
         ]
     },
-    "function.can_play(item[warp_spirit])": {
+    "function[can_play(item[warp_spirit])]": {
         "type": "and",
         "el": [
             {
                 "type": "mixin",
-                "el": "mixin.can_play_ocarina"
+                "el": "mixin[can_play_ocarina]"
             },
             {
                 "type": "value",
@@ -144,12 +144,12 @@
             }
         ]
     },
-    "function.can_play(item[warp_light])": {
+    "function[can_play(item[warp_light])]": {
         "type": "and",
         "el": [
             {
                 "type": "mixin",
-                "el": "mixin.can_play_ocarina"
+                "el": "mixin[can_play_ocarina]"
             },
             {
                 "type": "value",
@@ -158,12 +158,12 @@
         ]
     },
     /* extra songs */
-    "function.can_play(item[song_scarecrow])": {
+    "function[can_play(item[song_scarecrow])]": {
         "type": "and",
         "el": [
             {
                 "type": "mixin",
-                "el": "mixin.can_play_ocarina"
+                "el": "mixin[can_play_ocarina]"
             },
             {
                 "type": "or",
@@ -181,12 +181,12 @@
         ]
     },
     /* projectile check */
-    "function.has_projectile(child)": {
+    "function[has_projectile(child)]": {
         "type": "or",
         "el": [
             {
                 "type": "mixin",
-                "el": "mixin.has_explosives"
+                "el": "mixin[has_explosives]"
             },
             {
                 "type": "value",
@@ -198,12 +198,12 @@
             }
         ]
     },
-    "function.has_projectile(adult)": {
+    "function[has_projectile(adult)]": {
         "type": "or",
         "el": [
             {
                 "type": "mixin",
-                "el": "mixin.has_explosives"
+                "el": "mixin[has_explosives]"
             },
             {
                 "type": "value",
@@ -215,12 +215,12 @@
             }
         ]
     },
-    "function.has_projectile(both)": {
+    "function[has_projectile(both)]": {
         "type": "or",
         "el": [
             {
                 "type": "mixin",
-                "el": "mixin.has_explosives"
+                "el": "mixin[has_explosives]"
             },
             {
                 "type": "and",
@@ -255,12 +255,12 @@
             }
         ]
     },
-    "function.has_projectile(either)": {
+    "function[has_projectile(either)]": {
         "type": "or",
         "el": [
             {
                 "type": "mixin",
-                "el": "mixin.has_explosives"
+                "el": "mixin[has_explosives]"
             },
             {
                 "type": "value",
@@ -281,7 +281,7 @@
         ]
     },
     /* can use magic arrows */
-    "function.can_use(item[arrow_fire])": {
+    "function[can_use(item[arrow_fire])]": {
         "type": "and",
         "el": [
             {
@@ -298,11 +298,11 @@
             },
             {
                 "type": "mixin",
-                "el": "mixin.is_adult"
+                "el": "mixin[is_adult]"
             }
         ]
     },
-    "function.can_use(item[arrow_light])": {
+    "function[can_use(item[arrow_light])]": {
         "type": "and",
         "el": [
             {
@@ -319,12 +319,12 @@
             },
             {
                 "type": "mixin",
-                "el": "mixin.is_adult"
+                "el": "mixin[is_adult]"
             }
         ]
     },
     /* can use magic item */
-    "function.can_use(item[lens])": {
+    "function[can_use(item[lens])]": {
         "type": "and",
         "el": [
             {
@@ -337,7 +337,7 @@
             }
         ]
     },
-    "function.can_use(item[magic_din])": {
+    "function[can_use(item[magic_din])]": {
         "type": "and",
         "el": [
             {
@@ -350,7 +350,7 @@
             }
         ]
     },
-    "function.can_use(item[magic_farore])": {
+    "function[can_use(item[magic_farore])]": {
         "type": "and",
         "el": [
             {
@@ -363,7 +363,7 @@
             }
         ]
     },
-    "function.can_use(item[magic_nayru])": {
+    "function[can_use(item[magic_nayru])]": {
         "type": "and",
         "el": [
             {
@@ -377,7 +377,7 @@
         ]
     },
     /* can use adult items */
-    "function.can_use(item[bow])": {
+    "function[can_use(item[bow])]": {
         "type": "and",
         "el": [
             {
@@ -386,11 +386,11 @@
             },
             {
                 "type": "mixin",
-                "el": "mixin.is_adult"
+                "el": "mixin[is_adult]"
             }
         ]
     },
-    "function.can_use(item[hammer])": {
+    "function[can_use(item[hammer])]": {
         "type": "and",
         "el": [
             {
@@ -399,11 +399,11 @@
             },
             {
                 "type": "mixin",
-                "el": "mixin.is_adult"
+                "el": "mixin[is_adult]"
             }
         ]
     },
-    "function.can_use(item[boots_iron])": {
+    "function[can_use(item[boots_iron])]": {
         "type": "and",
         "el": [
             {
@@ -412,11 +412,11 @@
             },
             {
                 "type": "mixin",
-                "el": "mixin.is_adult"
+                "el": "mixin[is_adult]"
             }
         ]
     },
-    "function.can_use(item[boots_hover])": {
+    "function[can_use(item[boots_hover])]": {
         "type": "and",
         "el": [
             {
@@ -425,11 +425,11 @@
             },
             {
                 "type": "mixin",
-                "el": "mixin.is_adult"
+                "el": "mixin[is_adult]"
             }
         ]
     },
-    "function.can_use(item[hookshot])": {
+    "function[can_use(item[hookshot])]": {
         "type": "and",
         "el": [
             {
@@ -438,116 +438,116 @@
             },
             {
                 "type": "mixin",
-                "el": "mixin.is_adult"
+                "el": "mixin[is_adult]"
             }
         ]
     },
-    "function.can_use(mixin.longshot)": {
+    "function[can_use(mixin[longshot)]]": {
         "type": "and",
         "el": [
             {
                 "type": "mixin",
-                "el": "mixin.longshot"
+                "el": "mixin[longshot]"
             },
             {
                 "type": "mixin",
-                "el": "mixin.is_adult"
+                "el": "mixin[is_adult]"
             }
         ]
     },
-    "function.can_use(mixin.silver_gauntlets)": {
+    "function[can_use(mixin[silver_gauntlets)]]": {
         "type": "and",
         "el": [
             {
                 "type": "mixin",
-                "el": "mixin.silver_gauntlets"
+                "el": "mixin[silver_gauntlets]"
             },
             {
                 "type": "mixin",
-                "el": "mixin.is_adult"
+                "el": "mixin[is_adult]"
             }
         ]
     },
-    "function.can_use(mixin.golden_gauntlets)": {
+    "function[can_use(mixin[golden_gauntlets)]]": {
         "type": "and",
         "el": [
             {
                 "type": "mixin",
-                "el": "mixin.golden_gauntlets"
+                "el": "mixin[golden_gauntlets]"
             },
             {
                 "type": "mixin",
-                "el": "mixin.is_adult"
+                "el": "mixin[is_adult]"
             }
         ]
     },
-    "function.can_use(item[tunic_fire])": {
+    "function[can_use(item[tunic_fire])]": {
         "type": "and",
         "el": [
             {
                 "type": "mixin",
-                "el": "mixin.goron_tunic"
+                "el": "mixin[goron_tunic]"
             },
             {
                 "type": "mixin",
-                "el": "mixin.is_adult"
+                "el": "mixin[is_adult]"
             }
         ]
     },
-    "function.can_use(item[tunic_water])": {
+    "function[can_use(item[tunic_water])]": {
         "type": "and",
         "el": [
             {
                 "type": "mixin",
-                "el": "mixin.zora_tunic"
+                "el": "mixin[zora_tunic]"
             },
             {
                 "type": "mixin",
-                "el": "mixin.is_adult"
+                "el": "mixin[is_adult]"
             }
         ]
     },
-    "function.can_use(mixin.scarecrow)": {
+    "function[can_use(mixin[scarecrow)]]": {
         "type": "and",
         "el": [
             {
                 "type": "mixin",
-                "el": "mixin.is_adult"
+                "el": "mixin[is_adult]"
             },
             {
                 "type": "mixin",
-                "el": "mixin.hookshot"
+                "el": "mixin[hookshot]"
             },
             {
                 "type": "mixin",
-                "el": "function.can_play(item[song_scarecrow])"
+                "el": "function[can_play(item[song_scarecrow])]"
             }
         ]
     },
-    "function.can_use(mixin.distant_scarecrow)": {
+    "function[can_use(mixin[distant_scarecrow)]]": {
         "type": "and",
         "el": [
             {
                 "type": "mixin",
-                "el": "mixin.is_adult"
+                "el": "mixin[is_adult]"
             },
             {
                 "type": "mixin",
-                "el": "mixin.longshot"
+                "el": "mixin[longshot]"
             },
             {
                 "type": "mixin",
-                "el": "function.can_play(item[song_scarecrow])"
+                "el": "function[can_play(item[song_scarecrow])]"
             }
         ]
     },
     /* can use child items */
-    "function.can_use(item[slingshot])": {
+    "function[can_use(item[slingshot])]": {
         "type": "and",
         "el": [
             {
                 "type": "mixin",
-                "el": "mixin.is_child"
+                "el": "mixin[is_child]"
             },
             {
                 "type": "value",
@@ -555,7 +555,7 @@
             }
         ]
     },
-    "function.can_use(item[boomerang])": {
+    "function[can_use(item[boomerang])]": {
         "type": "and",
         "el": [
             {
@@ -564,11 +564,11 @@
             },
             {
                 "type": "mixin",
-                "el": "mixin.is_child"
+                "el": "mixin[is_child]"
             }
         ]
     },
-    "function.can_use(item[sword_kokiri])": {
+    "function[can_use(item[sword_kokiri])]": {
         "type": "and",
         "el": [
             {
@@ -577,11 +577,11 @@
             },
             {
                 "type": "mixin",
-                "el": "mixin.is_child"
+                "el": "mixin[is_child]"
             }
         ]
     },
-    "function.can_use(item[shield_kokiri])": {
+    "function[can_use(item[shield_kokiri])]": {
         "type": "and",
         "el": [
             {
@@ -590,11 +590,11 @@
             },
             {
                 "type": "mixin",
-                "el": "mixin.is_child"
+                "el": "mixin[is_child]"
             }
         ]
     },
-    "function.can_use(item[stick])": {
+    "function[can_use(item[stick])]": {
         "type": "and",
         "el": [
             {
@@ -603,12 +603,12 @@
             },
             {
                 "type": "mixin",
-                "el": "mixin.is_child"
+                "el": "mixin[is_child]"
             }
         ]
     },
     /* Specials */
-    "function.has_stones(lacs_stones)": {
+    "function[has_stones(lacs_stones)]": {
         "type": "gte",
         "el": [
             {
@@ -634,7 +634,7 @@
             }
         ]
     },
-    "function.has_medallions(lacs_medallions)": {
+    "function[has_medallions(lacs_medallions)]": {
         "type": "gte",
         "el": [
             {
@@ -672,7 +672,7 @@
             }
         ]
     },
-    "function.has_dungeon_rewards(lacs_rewards)": {
+    "function[has_dungeon_rewards(lacs_rewards)]": {
         "type": "gte",
         "el": [
             {
@@ -722,7 +722,7 @@
             }
         ]
     },
-    "function.has_stones(bridge_stones)": {
+    "function[has_stones(bridge_stones)]": {
         "type": "gte",
         "el": [
             {
@@ -748,7 +748,7 @@
             }
         ]
     },
-    "function.has_medallions(bridge_medallions)": {
+    "function[has_medallions(bridge_medallions)]": {
         "type": "gte",
         "el": [
             {
@@ -786,7 +786,7 @@
             }
         ]
     },
-    "function.has_dungeon_rewards(bridge_rewards)": {
+    "function[has_dungeon_rewards(bridge_rewards)]": {
         "type": "gte",
         "el": [
             {
@@ -836,7 +836,7 @@
             }
         ]
     },
-    "function.has_stones(ganon_bosskey_stones)": {
+    "function[has_stones(ganon_bosskey_stones)]": {
         "type": "gte",
         "el": [
             {
@@ -862,7 +862,7 @@
             }
         ]
     },
-    "function.has_medallions(ganon_bosskey_medallions)": {
+    "function[has_medallions(ganon_bosskey_medallions)]": {
         "type": "gte",
         "el": [
             {
@@ -900,7 +900,7 @@
             }
         ]
     },
-    "function.has_dungeon_rewards(ganon_bosskey_rewards)": {
+    "function[has_dungeon_rewards(ganon_bosskey_rewards)]": {
         "type": "gte",
         "el": [
             {
