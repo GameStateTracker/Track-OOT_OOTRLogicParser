@@ -1,14 +1,22 @@
 import fs from "fs";
 import path from "path";
-import { execSync } from "child_process";
+import {
+    execSync
+} from "child_process";
 import JSONFile from "./utils/JSONFile.js";
 import Translation from "./utils/Translation.js";
 import HelperParser from "./parser/HelperParser.js";
 import LogicParser from "./parser/LogicParser.js";
 import LogicGenerator from "./parser/LogicGenerator.js";
-import { filterLogic, filterMixins } from "./_test/LogicTester.js";
-import { filterFailedMixins } from "./_test/RemoveBadLogic.js";
-import { reduceLogic } from "./_test/LogicReducer.js";
+import {
+    filterLogic, filterMixins
+} from "./_test/LogicTester.js";
+import {
+    filterFailedMixins
+} from "./_test/RemoveBadLogic.js";
+import {
+    reduceLogic
+} from "./_test/LogicReducer.js";
 
 const __dirname = path.resolve();
 
@@ -23,7 +31,7 @@ const transRulesFile = path.join(__dirname, "/translation/predict_rules.json");
 const RANDO_VERSION = "6.2.1";
 
 if (fs.existsSync("./input")) {
-    fs.rmSync("./input", { recursive: true });
+    fs.rmSync("./input", {recursive: true});
 }
 execSync(`git clone --branch "${RANDO_VERSION}" "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "input"`);
 
@@ -46,7 +54,9 @@ function parseLogic() {
     fs.readdirSync(inLogicDir).forEach(function(file) {
         const iname = path.join(inLogicDir, file);
         let mq = false;
-        if (iname.endsWith("MQ.json")) mq = true;
+        if (iname.endsWith("MQ.json")) {
+            mq = true;
+        }
         LogicParser.parse(fs.readFileSync(iname).toString(), mq);
     });
     LogicParser.regionCheckCall();
@@ -78,7 +88,9 @@ function parseGlitchedLogic() {
     fs.readdirSync(inGlitchedDir).forEach(function(file) {
         const iname = path.join(inGlitchedDir, file);
         let mq = false;
-        if (iname.endsWith("MQ.json")) mq = true;
+        if (iname.endsWith("MQ.json")) {
+            mq = true;
+        }
         LogicParser.parse(fs.readFileSync(iname).toString(), mq);
     });
     const logic = LogicGenerator.generate(true);

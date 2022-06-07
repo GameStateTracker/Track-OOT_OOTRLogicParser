@@ -13,7 +13,8 @@ export default class Operator extends AbstractOperator {
         return {
             type: "function",
             value: this.#ref,
-            el: this.children.map(e => e.toJSON())
+            el: this.children.map((e) => e.toJSON())
         };
     }
+
 }

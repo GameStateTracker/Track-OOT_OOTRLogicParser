@@ -30,7 +30,7 @@ class HelperParser {
 
 }
 
-function transpileFunction(input, params) {
+function transpileFunction(input/* , params */) {
     const token = RandTokenizer.tokenize(input);
     const logic = LogicBuilder.build(token);
     return logic;

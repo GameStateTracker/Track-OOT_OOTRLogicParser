@@ -5,6 +5,7 @@ import RandTokenizer from "../utils/RandTokenizer.js";
 import LogicBuilder from "../utils/LogicBuilder.js";
 import LogicGenerator from "./LogicGenerator.js";
 import RegionCheck from "../utils/RegionCheck.js";
+
 const __dirname = path.resolve();
 const inExitRenameFile  = path.join(__dirname, "/gateways/exitRename.json");
 const renameData = JSON.parse(fs.readFileSync(inExitRenameFile, "utf8"));
@@ -19,7 +20,9 @@ class LogicParser {
     parse(input, mq = false) {
         const output = RandONC.parse(input);
         output.forEach((value) => {
-            if (mq) value.region_name = value.region_name + " MQ"
+            if (mq) {
+                value.region_name = value.region_name + " MQ"
+            }
             for (const i in value.locations) {
                 let rule = value.locations[i];
                 if (rule.includes("at")) {
@@ -46,14 +49,22 @@ class LogicParser {
             for (let i in value.exits) {
                 const rule = value.exits[i];
                 if (mq) {
-                    if (!exits.includes(i)) i = i + " MQ"
+                    if (!exits.includes(i)) {
+                        i = i + " MQ"
+                    }
                 }
                 let regionName = value.region_name
-                if (regionName.endsWith(" MQ")) regionName = regionName.replace(" MQ", "");
-                if (renameData[regionName] != null) {
-                    if (renameData[regionName][i] !== undefined) i = renameData[regionName][i];
+                if (regionName.endsWith(" MQ")) {
+                    regionName = regionName.replace(" MQ", "");
                 }
-                if (success.subRegions[value.region_name] == null) success.subRegions[value.region_name] = {};
+                if (renameData[regionName] != null) {
+                    if (renameData[regionName][i] !== undefined) {
+                        i = renameData[regionName][i];
+                    }
+                }
+                if (success.subRegions[value.region_name] == null) {
+                    success.subRegions[value.region_name] = {};
+                }
                 success.mainRegions[value.region_name] = false;
                 success.subRegions[value.region_name][i] = false;
                 LogicGenerator.addExit(value.region_name, i, transpile(rule));

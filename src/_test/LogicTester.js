@@ -24,7 +24,7 @@ function testAdultLogic() {
 export function testLogic(logic) {
     LOGIC_PROCESSOR.load(logic);
     LOGIC_PROCESSOR.setAll(savestate.data);
-    const edges = LOGIC_PROCESSOR.getEdges().map(e => e.join(" => "));
+    const edges = LOGIC_PROCESSOR.getEdges().map((e) => e.join(" => "));
     const failed = new Set();
     const success = new Set();
     const successC = testChildLogic();

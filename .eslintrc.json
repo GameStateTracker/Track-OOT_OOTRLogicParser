@@ -1,7 +1,8 @@
 {
     "extends": "eslint:recommended",
+    "parser": "@babel/eslint-parser",
     "parserOptions": {
-        "ecmaVersion": 2020,
+        "ecmaVersion": 2021,
         "sourceType": "module",
         "ecmaFeatures": {
             "jsx": false,
@@ -10,10 +11,13 @@
     },
     "env": {
         "es2020": true,
-        "browser": false,
+        "browser": true,
         "node": true
     },
     "rules": {
+        "no-unused-expressions": "error",
+        "no-unused-private-class-members": "error",
+        "no-var": "error",
         "indent": [
             "error",
             4,
@@ -21,28 +25,37 @@
                 "SwitchCase": 1
             }
         ],
+        "curly": "error",
+        "no-case-declarations": "error",
+        "default-case-last": "error",
         "no-trailing-spaces": [
-            "error",
-            {
-                "skipBlankLines": true
-            }
+            "error"
         ],
         "eol-last": [
             "error",
             "always"
         ],
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1,
+                "maxEOF": 1,
+                "maxBOF": 1
+            }
+        ],
+        "no-unneeded-ternary": "error",
         "brace-style": [
             "error",
             "1tbs",
             {
-                "allowSingleLine": true
+                "allowSingleLine": false
             }
         ],
         "no-unused-vars": [
             "error",
             {
                 "vars": "local",
-                "args": "none",
+                "args": "after-used",
                 "caughtErrors": "all"
             }
         ],
@@ -50,13 +63,12 @@
             "error",
             {
                 "before": true,
-                "after": true,
-                "overrides": {
-                    "catch": {
-                        "after": false
-                    }
-                }
+                "after": true
             }
+        ],
+        "function-call-argument-newline": [
+            "error",
+            "consistent"
         ],
         "space-before-function-paren": [
             "error",
@@ -71,6 +83,22 @@
             "always"
         ],
         "space-in-parens": [
+            "error",
+            "never"
+        ],
+        "arrow-parens": [
+            "error",
+            "always"
+        ],
+        "object-curly-spacing": [
+            "error",
+            "never"
+        ],
+        "array-bracket-spacing": [
+            "error",
+            "never"
+        ],
+        "computed-property-spacing": [
             "error",
             "never"
         ],
@@ -99,6 +127,19 @@
             "error",
             "beside"
         ],
+        "object-curly-newline": [
+            "error",
+            {
+                "ObjectExpression": {
+                    "consistent": true
+                },
+                "ObjectPattern": {
+                    "consistent": true
+                },
+                "ImportDeclaration": "always",
+                "ExportDeclaration": "always"
+            }
+        ],
         "lines-between-class-members": [
             "error",
             "always"
@@ -117,6 +158,74 @@
             "double",
             {
                 "allowTemplateLiterals": true
+            }
+        ],
+        "no-dupe-else-if": "error",
+        "no-duplicate-case": "error",
+        "no-lonely-if": "error",
+        "no-extra-parens": [
+            "error",
+            "all",
+            {
+                "returnAssign": false,
+                "nestedBinaryExpressions": false,
+                "enforceForArrowConditionals": false,
+                "enforceForSequenceExpressions": false,
+                "enforceForNewInMemberExpressions": false
+            }
+        ],
+        "no-fallthrough": "off",
+        "padding-line-between-statements": [
+            "error",
+            {
+                "blankLine": "always",
+                "prev": "import",
+                "next": "*"
+            },
+            {
+                "blankLine": "any",
+                "prev": "import",
+                "next": "import"
+            },
+            {
+                "blankLine": "always",
+                "prev": "export",
+                "next": "*"
+            },
+            {
+                "blankLine": "always",
+                "prev": "*",
+                "next": "export"
+            },
+            {
+                "blankLine": "always",
+                "prev": "class",
+                "next": "*"
+            },
+            {
+                "blankLine": "always",
+                "prev": "*",
+                "next": "class"
+            },
+            {
+                "blankLine": "always",
+                "prev": "function",
+                "next": "*"
+            },
+            {
+                "blankLine": "always",
+                "prev": "*",
+                "next": "function"
+            },
+            {
+                "blankLine": "always",
+                "prev": "iife",
+                "next": "*"
+            },
+            {
+                "blankLine": "always",
+                "prev": "*",
+                "next": "iife"
             }
         ]
     }

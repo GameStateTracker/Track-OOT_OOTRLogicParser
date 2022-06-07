@@ -1,6 +1,6 @@
 {
     /* normal songs */
-    "function[can_play(item[song_zelda])]": {
+    "function[can_play](item[song_zelda])": {
         "type": "and",
         "el": [
             {
@@ -13,7 +13,7 @@
             }
         ]
     },
-    "function[can_play(item[song_epona])]": {
+    "function[can_play](item[song_epona])": {
         "type": "and",
         "el": [
             {
@@ -26,7 +26,7 @@
             }
         ]
     },
-    "function[can_play(item[song_saria])]": {
+    "function[can_play](item[song_saria])": {
         "type": "and",
         "el": [
             {
@@ -39,7 +39,7 @@
             }
         ]
     },
-    "function[can_play(item[song_sun])]": {
+    "function[can_play](item[song_sun])": {
         "type": "and",
         "el": [
             {
@@ -52,7 +52,7 @@
             }
         ]
     },
-    "function[can_play(item[song_time])]": {
+    "function[can_play](item[song_time])": {
         "type": "and",
         "el": [
             {
@@ -65,7 +65,7 @@
             }
         ]
     },
-    "function[can_play(item[song_storm])]": {
+    "function[can_play](item[song_storm])": {
         "type": "and",
         "el": [
             {
@@ -79,7 +79,7 @@
         ]
     },
     /* warp songs */
-    "function[can_play(item[warp_forest])]": {
+    "function[can_play](item[warp_forest])": {
         "type": "and",
         "el": [
             {
@@ -92,7 +92,7 @@
             }
         ]
     },
-    "function[can_play(item[warp_fire])]": {
+    "function[can_play](item[warp_fire])": {
         "type": "and",
         "el": [
             {
@@ -105,7 +105,7 @@
             }
         ]
     },
-    "function[can_play(item[warp_water])]": {
+    "function[can_play](item[warp_water])": {
         "type": "and",
         "el": [
             {
@@ -118,7 +118,7 @@
             }
         ]
     },
-    "function[can_play(item[warp_shadow])]": {
+    "function[can_play](item[warp_shadow])": {
         "type": "and",
         "el": [
             {
@@ -131,7 +131,7 @@
             }
         ]
     },
-    "function[can_play(item[warp_spirit])]": {
+    "function[can_play](item[warp_spirit])": {
         "type": "and",
         "el": [
             {
@@ -144,7 +144,7 @@
             }
         ]
     },
-    "function[can_play(item[warp_light])]": {
+    "function[can_play](item[warp_light])": {
         "type": "and",
         "el": [
             {
@@ -158,7 +158,7 @@
         ]
     },
     /* extra songs */
-    "function[can_play(item[song_scarecrow])]": {
+    "function[can_play](item[song_scarecrow])": {
         "type": "and",
         "el": [
             {
@@ -181,7 +181,7 @@
         ]
     },
     /* projectile check */
-    "function[has_projectile(child)]": {
+    "function[has_projectile](child)": {
         "type": "or",
         "el": [
             {
@@ -198,7 +198,7 @@
             }
         ]
     },
-    "function[has_projectile(adult)]": {
+    "function[has_projectile](adult)": {
         "type": "or",
         "el": [
             {
@@ -215,7 +215,7 @@
             }
         ]
     },
-    "function[has_projectile(both)]": {
+    "function[has_projectile](both)": {
         "type": "or",
         "el": [
             {
@@ -255,7 +255,7 @@
             }
         ]
     },
-    "function[has_projectile(either)]": {
+    "function[has_projectile](either)": {
         "type": "or",
         "el": [
             {
@@ -281,7 +281,7 @@
         ]
     },
     /* can use magic arrows */
-    "function[can_use(item[arrow_fire])]": {
+    "function[can_use](item[arrow_fire])": {
         "type": "and",
         "el": [
             {
@@ -302,7 +302,7 @@
             }
         ]
     },
-    "function[can_use(item[arrow_light])]": {
+    "function[can_use](item[arrow_light])": {
         "type": "and",
         "el": [
             {
@@ -324,7 +324,7 @@
         ]
     },
     /* can use magic item */
-    "function[can_use(item[lens])]": {
+    "function[can_use](item[lens])": {
         "type": "and",
         "el": [
             {
@@ -337,7 +337,7 @@
             }
         ]
     },
-    "function[can_use(item[magic_din])]": {
+    "function[can_use](item[magic_din])": {
         "type": "and",
         "el": [
             {
@@ -350,7 +350,7 @@
             }
         ]
     },
-    "function[can_use(item[magic_farore])]": {
+    "function[can_use](item[magic_farore])": {
         "type": "and",
         "el": [
             {
@@ -363,7 +363,7 @@
             }
         ]
     },
-    "function[can_use(item[magic_nayru])]": {
+    "function[can_use](item[magic_nayru])": {
         "type": "and",
         "el": [
             {
@@ -377,7 +377,7 @@
         ]
     },
     /* can use adult items */
-    "function[can_use(item[bow])]": {
+    "function[can_use](item[bow])": {
         "type": "and",
         "el": [
             {
@@ -390,7 +390,7 @@
             }
         ]
     },
-    "function[can_use(item[hammer])]": {
+    "function[can_use](item[hammer])": {
         "type": "and",
         "el": [
             {
@@ -403,7 +403,7 @@
             }
         ]
     },
-    "function[can_use(item[boots_iron])]": {
+    "function[can_use](item[boots_iron])": {
         "type": "and",
         "el": [
             {
@@ -416,7 +416,7 @@
             }
         ]
     },
-    "function[can_use(item[boots_hover])]": {
+    "function[can_use](item[boots_hover])": {
         "type": "and",
         "el": [
             {
@@ -429,7 +429,7 @@
             }
         ]
     },
-    "function[can_use(item[hookshot])]": {
+    "function[can_use](item[hookshot])": {
         "type": "and",
         "el": [
             {
@@ -481,7 +481,7 @@
             }
         ]
     },
-    "function[can_use(item[tunic_fire])]": {
+    "function[can_use](item[tunic_fire])": {
         "type": "and",
         "el": [
             {
@@ -494,7 +494,7 @@
             }
         ]
     },
-    "function[can_use(item[tunic_water])]": {
+    "function[can_use](item[tunic_water])": {
         "type": "and",
         "el": [
             {
@@ -520,7 +520,7 @@
             },
             {
                 "type": "mixin",
-                "el": "function[can_play(item[song_scarecrow])]"
+                "el": "function[can_play](item[song_scarecrow])"
             }
         ]
     },
@@ -537,12 +537,12 @@
             },
             {
                 "type": "mixin",
-                "el": "function[can_play(item[song_scarecrow])]"
+                "el": "function[can_play](item[song_scarecrow])"
             }
         ]
     },
     /* can use child items */
-    "function[can_use(item[slingshot])]": {
+    "function[can_use](item[slingshot])": {
         "type": "and",
         "el": [
             {
@@ -555,7 +555,7 @@
             }
         ]
     },
-    "function[can_use(item[boomerang])]": {
+    "function[can_use](item[boomerang])": {
         "type": "and",
         "el": [
             {
@@ -568,7 +568,7 @@
             }
         ]
     },
-    "function[can_use(item[sword_kokiri])]": {
+    "function[can_use](item[sword_kokiri])": {
         "type": "and",
         "el": [
             {
@@ -581,7 +581,7 @@
             }
         ]
     },
-    "function[can_use(item[shield_kokiri])]": {
+    "function[can_use](item[shield_kokiri])": {
         "type": "and",
         "el": [
             {
@@ -594,7 +594,7 @@
             }
         ]
     },
-    "function[can_use(item[stick])]": {
+    "function[can_use](item[stick])": {
         "type": "and",
         "el": [
             {
@@ -608,7 +608,7 @@
         ]
     },
     /* Specials */
-    "function[has_stones(lacs_stones)]": {
+    "function[has_stones](lacs_stones)": {
         "type": "gte",
         "el": [
             {
@@ -634,7 +634,7 @@
             }
         ]
     },
-    "function[has_medallions(lacs_medallions)]": {
+    "function[has_medallions](lacs_medallions)": {
         "type": "gte",
         "el": [
             {
@@ -672,7 +672,7 @@
             }
         ]
     },
-    "function[has_dungeon_rewards(lacs_rewards)]": {
+    "function[has_dungeon_rewards](lacs_rewards)": {
         "type": "gte",
         "el": [
             {
@@ -722,7 +722,7 @@
             }
         ]
     },
-    "function[has_stones(bridge_stones)]": {
+    "function[has_stones](bridge_stones)": {
         "type": "gte",
         "el": [
             {
@@ -748,7 +748,7 @@
             }
         ]
     },
-    "function[has_medallions(bridge_medallions)]": {
+    "function[has_medallions](bridge_medallions)": {
         "type": "gte",
         "el": [
             {
@@ -786,7 +786,7 @@
             }
         ]
     },
-    "function[has_dungeon_rewards(bridge_rewards)]": {
+    "function[has_dungeon_rewards](bridge_rewards)": {
         "type": "gte",
         "el": [
             {
@@ -836,7 +836,7 @@
             }
         ]
     },
-    "function[has_stones(ganon_bosskey_stones)]": {
+    "function[has_stones](ganon_bosskey_stones)": {
         "type": "gte",
         "el": [
             {
@@ -862,7 +862,7 @@
             }
         ]
     },
-    "function[has_medallions(ganon_bosskey_medallions)]": {
+    "function[has_medallions](ganon_bosskey_medallions)": {
         "type": "gte",
         "el": [
             {
@@ -900,7 +900,7 @@
             }
         ]
     },
-    "function[has_dungeon_rewards(ganon_bosskey_rewards)]": {
+    "function[has_dungeon_rewards](ganon_bosskey_rewards)": {
         "type": "gte",
         "el": [
             {

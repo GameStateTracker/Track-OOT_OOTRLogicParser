@@ -1,6 +1,6 @@
 import Translation from "../../utils/Translation.js";
 
-export default function postCalculate(scope, input, age = "", region = "", basic = false) {
+export default function postCalculate(scope, input, age = ""/* , region = "", basic = false */) {
     const {unstate} = scope;
     if (input.el == "age" && age != "") {
         if (input.value == age) {

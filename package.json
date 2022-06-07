@@ -12,6 +12,8 @@
   "main": "parse.js",
   "type": "module",
   "scripts": {
+    "lint": "yarn eslint .",
+    "lintfix": "yarn eslint --fix .",
     "parse": "node src/parse.js"
   },
   "dependencies": {},

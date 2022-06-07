@@ -60,7 +60,7 @@ function generate(term, token) {
 }
 
 function params(term, token) {
-    return term.split(",").map(el => {
+    return term.split(",").map((el) => {
         const cnt = ++count;
         token[cnt] = generate(el.trim(), token);
         return `{{${cnt}}}`;
@@ -69,7 +69,7 @@ function params(term, token) {
 
 function convert(term, token) {
     if (term.indexOf(" or ") >= 0) {
-        return term.split(" or ").map(t => {
+        return term.split(" or ").map((t) => {
             if (!t.match(LITERAL)) {
                 const cnt = ++count;
                 token[cnt] = convert(t, token);
@@ -79,7 +79,7 @@ function convert(term, token) {
         }).join(" or ");
     }
     if (term.indexOf(" and ") >= 0) {
-        return term.split(" and ").map(t => {
+        return term.split(" and ").map((t) => {
             if (!t.match(LITERAL)) {
                 const cnt = ++count;
                 token[cnt] = convert(t, token);

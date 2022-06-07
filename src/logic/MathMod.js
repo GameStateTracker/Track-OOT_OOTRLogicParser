@@ -9,7 +9,7 @@ export default class Operator extends AbstractOperator {
     toJSON()  {
         return {
             type: "mod",
-            el: this.children.map(e => e.toJSON())
+            el: this.children.map((e) => e.toJSON())
         };
     }
 

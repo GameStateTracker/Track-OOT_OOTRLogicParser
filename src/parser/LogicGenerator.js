@@ -131,17 +131,23 @@ class LogicGenerator {
         console.log("");
 
         for (const key in function_overrides) {
-            if (key == "") continue;
+            if (key == "") {
+                continue;
+            }
             functions.set(key, function_overrides[key]);
             //console.log(`added function override: ${key}`);
         }
         for (const key in mixin_overrides) {
-            if (key == "") continue;
+            if (key == "") {
+                continue;
+            }
             mixins.set(translateMixinName(key), mixin_overrides[key]);
             //console.log(`added mixin override: ${key}`);
         }
         for (const key in event_overrides) {
-            if (key == "") continue;
+            if (key == "") {
+                continue;
+            }
             events.set(key, event_overrides[key]);
             //console.log(`added event override: ${key}`);
         }
@@ -249,7 +255,6 @@ class LogicGenerator {
             "type": `${glitched}`
         }
         // END overrides
-
 
         console.log("");
         console.log("-------------------------------------------");
