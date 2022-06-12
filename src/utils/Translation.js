@@ -16,7 +16,7 @@ const states = JSONCFile.read(path.join(__dirname, "/translation/states.jsonc"),
 
 const rules = new Map();
 
-predict_values = predict_values.filter(el => !(new Set(Object.values(translation))).has(el));
+predict_values = predict_values.filter((el) => !(new Set(Object.values(translation))).has(el));
 
 class Translation {
 

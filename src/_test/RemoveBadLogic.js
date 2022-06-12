@@ -1,10 +1,12 @@
 function deleteBadMixins(obj, mixins) {
-    Object.keys(obj).forEach(key => {
+    Object.keys(obj).forEach((key) => {
         if (mixins.has(obj[key].el)) {
             delete obj[key];
         }
         if (obj[key] && typeof obj[key] === "object") {
             obj[key] = deleteBadMixins(obj[key], mixins);
+        } else if (obj[key] != null) {
+            // obj[key] = obj[key];
         }
     })
 
@@ -12,20 +14,22 @@ function deleteBadMixins(obj, mixins) {
 }
 
 function reduceArraySize(obj, and = false) {
-    Object.keys(obj).forEach(key => {
+    Object.keys(obj).forEach((key) => {
         if (obj[key] && Array.isArray(obj[key].el)) {
             const length = obj[key].el.length
-            obj[key].el = obj[key].el.filter(value => Object.keys(value).length > 0)
-            //if(obj[key].type === 'and') console.log(obj[key].el.length + ":::::" + length)
+            obj[key].el = obj[key].el.filter((value) => Object.keys(value).length > 0)
+            // if(obj[key].type === 'and') console.log(obj[key].el.length + ":::::" + length)
             if (obj[key].type === "and" && obj[key].el.length != length && and) {
                 delete obj[key]
                 //Use this if deleting the and statements causes issues
-                //obj[key] = {type: "false"};
+                // obj[key] = {type: "false"};
             }
         }
 
         if (obj[key] && typeof obj[key] === "object") {
             obj[key] = reduceArraySize(obj[key], and);
+        } else if (obj[key] != null) {
+            // obj[key] = obj[key];
         }
     })
 
@@ -33,12 +37,14 @@ function reduceArraySize(obj, and = false) {
 }
 
 function orSimplifier(obj) {
-    Object.keys(obj).forEach(key => {
+    Object.keys(obj).forEach((key) => {
         if (obj[key] && obj[key].type === "or" && obj[key].el.length === 1) {
             obj[key] = obj[key].el[0]
         }
         if (obj[key] && typeof obj[key] === "object") {
             obj[key] = orSimplifier(obj[key]);
+        } else if (obj[key] != null) {
+            // obj[key] = obj[key];
         }
     })
 
@@ -46,13 +52,15 @@ function orSimplifier(obj) {
 }
 
 function emptyAtLogic(obj) {
-    Object.keys(obj).forEach(key => {
+    Object.keys(obj).forEach((key) => {
         if (obj[key].type === "at" && (obj[key].el === null || obj[key].el === undefined)) {
             obj[key] = {type: "false"};
             //delete obj[key];
         }
         if (obj[key] && typeof obj[key] === "object") {
             obj[key] = emptyAtLogic(obj[key]);
+        } else if (obj[key] != null) {
+            // obj[key] = obj[key];
         }
     })
 

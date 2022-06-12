@@ -19,7 +19,7 @@ export default class Operator extends AbstractOperator {
         return {
             type: "at",
             node: this.#node,
-            el: this.children.slice(0, 1).map(e => e.toJSON())[0]
+            el: this.children.slice(0, 1).map((e) => e.toJSON())[0]
         };
     }
 

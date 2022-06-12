@@ -1,6 +1,6 @@
 {
     /* time travel */
-    "mixin.is_starting_age": { 
+    "mixin[is_starting_age]": { 
         "type": "or",
         "el": [
             {
@@ -13,7 +13,7 @@
                     },
                     {
                         "type": "state",
-                        "el": "option.starting_age",
+                        "el": "option[starting_age]",
                         "value": "child"
                     }
                 ]
@@ -28,48 +28,48 @@
                     },
                     {
                         "type": "state",
-                        "el": "option.starting_age",
+                        "el": "option[starting_age]",
                         "value": "adult"
                     }
                 ]
             }
         ]
     },
-    "mixin.can_become_adult": {
+    "mixin[can_become_adult]": {
         "type": "or",
         "el": [
             {
                 "type": "state",
-                "el": "option.starting_age",
+                "el": "option[starting_age]",
                 "value": "adult"
             },
             {
                 "type": "at",
-                "node": "region.beyond_door_of_time",
+                "node": "region[beyond_door_of_time]",
                 "el": {
                     "type": "true"
                 }
             }
         ]
     },
-    "mixin.can_become_child": {
+    "mixin[can_become_child]": {
         "type": "or",
         "el": [
             {
                 "type": "state",
-                "el": "option.starting_age",
+                "el": "option[starting_age]",
                 "value": "child"
             },
             {
                 "type": "at",
-                "node": "region.beyond_door_of_time",
+                "node": "region[beyond_door_of_time]",
                 "el": {
                     "type": "true"
                 }
             }
         ]
     },
-    "mixin.filter_era": {
+    "mixin[filter_era]": {
         "type": "or",
         "el": [
             {
@@ -84,7 +84,7 @@
                         "type": "not",
                         "el": {
                             "type": "state",
-                            "el": "filter.era",
+                            "el": "filter[era]",
                             "value": "adult"
                         }
                     }
@@ -102,7 +102,7 @@
                         "type": "not",
                         "el": {
                             "type": "state",
-                            "el": "filter.era",
+                            "el": "filter[era]",
                             "value": "child"
                         }
                     }
@@ -110,93 +110,93 @@
             },
             {
                 "type": "state",
-                "el": "filter.era_apply",
+                "el": "filter[era_apply]",
                 "value": "loose"
             }
         ]
     },
-    "mixin.is_child": {
+    "mixin[is_child]": {
         "type": "state",
         "el": "age",
         "value": "child"
     },
-    "mixin.is_adult": {
+    "mixin[is_adult]": {
         "type": "state",
         "el": "age",
         "value": "adult"
     },
-    "mixin.is_night": {
+    "mixin[is_night]": {
         "type": "not",
         "el": {
             "type": "state",
-            "el": "filter.time",
+            "el": "filter[time]",
             "value": "day"
         }
     },
-    "mixin.is_day": {
+    "mixin[is_day]": {
         "type": "not",
         "el": {
             "type": "state",
-            "el": "filter.time",
+            "el": "filter[time]",
             "value": "night"
         }
     },
-    "mixin.longshot": {
+    "mixin[longshot]": {
         "type": "min",
         "el": {
             "type": "value",
-            "el": "item.hookshot"
+            "el": "item[hookshot]"
         },
         "value": 2
     },
-    "mixin.silver_gauntlets": {
+    "mixin[silver_gauntlets]": {
         "type": "min",
         "el": {
             "type": "value",
-            "el": "item.glove"
+            "el": "item[glove]"
         },
         "value": 2
     },
-    "mixin.golden_gauntlets": {
+    "mixin[golden_gauntlets]": {
         "type": "min",
         "el": {
             "type": "value",
-            "el": "item.glove"
+            "el": "item[glove]"
         },
         "value": 3
     },
-    "mixin.scarecrow": {
+    "mixin[scarecrow]": {
         "type": "and",
         "el": [
             {
                 "type": "mixin",
-                "el": "function.can_play(item.song_scarecrow)"
+                "el": "function[can_play](item[song_scarecrow])"
             },
             {
                 "type": "value",
-                "el": "item.hookshot"
+                "el": "item[hookshot]"
             }
         ]
     },
-    "mixin.distant_scarecrow": {
+    "mixin[distant_scarecrow]": {
         "type": "and",
         "el": [
             {
                 "type": "mixin",
-                "el": "function.can_play(item.song_scarecrow)"
+                "el": "function[can_play](item[song_scarecrow])"
             },
             {
                 "type": "mixin",
-                "el": "mixin.longshot"
+                "el": "mixin[longshot]"
             }
         ]
     },
-    "mixin.can_build_rainbow_bridge": {
+    "mixin[can_build_rainbow_bridge]": {
         "type": "or",
         "el": [
             {
                 "type": "state",
-                "el": "option.ganon_castle_open",
+                "el": "option[ganon_castle_open]",
                 "value": "ganon_castle_open_open"
             },
             {
@@ -204,20 +204,20 @@
                 "el": [
                     {
                         "type": "state",
-                        "el": "option.ganon_castle_open",
+                        "el": "option[ganon_castle_open]",
                         "value": "ganon_castle_open_default"
                     },
                     {
                         "type": "value",
-                        "el": "item.medallion_shadow"
+                        "el": "item[medallion_shadow]"
                     },
                     {
                         "type": "value",
-                        "el": "item.medallion_spirit"
+                        "el": "item[medallion_spirit]"
                     },
                     {
                         "type": "value",
-                        "el": "item.arrow_light"
+                        "el": "item[arrow_light]"
                     }
                 ]
             },
@@ -226,12 +226,12 @@
                 "el": [
                     {
                         "type": "state",
-                        "el": "option.ganon_castle_open",
+                        "el": "option[ganon_castle_open]",
                         "value": "ganon_castle_open_stones"
                     },
                     {
                         "type": "mixin",
-                        "el": "function.has_stones(bridge_stones)"
+                        "el": "function[has_stones](bridge_stones)"
                     }
                 ]
             },
@@ -240,12 +240,12 @@
                 "el": [
                     {
                         "type": "state",
-                        "el": "option.ganon_castle_open",
+                        "el": "option[ganon_castle_open]",
                         "value": "ganon_castle_open_medallion"
                     },
                     {
                         "type": "mixin",
-                        "el": "function.has_medallions(bridge_medallions)"
+                        "el": "function[has_medallions](bridge_medallions)"
                     }
                 ]
             },
@@ -254,12 +254,12 @@
                 "el": [
                     {
                         "type": "state",
-                        "el": "option.ganon_castle_open",
+                        "el": "option[ganon_castle_open]",
                         "value": "ganon_castle_open_dungeon"
                     },
                     {
                         "type": "mixin",
-                        "el": "function.has_dungeon_rewards(bridge_rewards)"
+                        "el": "function[has_dungeon_rewards](bridge_rewards)"
                     }
                 ]
             },
@@ -268,7 +268,7 @@
                 "el": [
                     {
                         "type": "state",
-                        "el": "option.ganon_castle_open",
+                        "el": "option[ganon_castle_open]",
                         "value": "ganon_castle_open_skulltulas"
                     },
                     {
@@ -276,11 +276,11 @@
                         "el": [
                             {
                                 "type": "value",
-                                "el": "item.skulltula"
+                                "el": "item[skulltula]"
                             },
                             {
                                 "type": "value",
-                                "el": "option.ganon_castle_skulltulas"
+                                "el": "option[ganon_castle_skulltulas]"
                             }
                         ]
                     }
@@ -288,46 +288,46 @@
             }
         ]
     },
-    "mixin.blue_fire": {
+    "mixin[blue_fire]": {
         "type": "and",
         "el": [
             {
                 "type": "value",
-                "el": "item.bottle"
+                "el": "item[bottle]"
             },
             {
                 "type": "or",
                 "el": [
                     {
                         "type": "at",
-                        "node": "region.ganons_castle_water_trial_mq",
+                        "node": "region[ganons_castle_water_trial_mq]",
                         "el": {
                             "type": "value",
-                            "el": "item.bottle"
+                            "el": "item[bottle]"
                         }
                     },
                     {
                         "type": "at",
-                        "node": "region.ganons_castle_water_trial",
+                        "node": "region[ganons_castle_water_trial]",
                         "el": {
                             "type": "value",
-                            "el": "item.bottle"
+                            "el": "item[bottle]"
                         }
                     },
                     {
                         "type": "at",
-                        "node": "region.gerudo_training_grounds_stalfos_room_mq",
+                        "node": "region[gerudo_training_grounds_stalfos_room_mq]",
                         "el": {
                             "type": "value",
-                            "el": "item.bottle"
+                            "el": "item[bottle]"
                         }
                     },
                     {
                         "type": "at",
-                        "node": "region.ice_cavern_map_room_mq",
+                        "node": "region[ice_cavern_map_room_mq]",
                         "el": {
                             "type": "value",
-                            "el": "item.bottle"
+                            "el": "item[bottle]"
                         }
                     },
                     {
@@ -335,15 +335,15 @@
                         "el": [
                             {
                                 "type": "at",
-                                "node": "region.ice_cavern",
+                                "node": "region[ice_cavern]",
                                 "el": {
                                     "type": "value",
-                                    "el": "item.bottle"
+                                    "el": "item[bottle]"
                                 }
                             },
                             {
                                 "type": "mixin",
-                                "el": "mixin.is_adult"
+                                "el": "mixin[is_adult]"
                             }
                         ]
                     },
@@ -352,15 +352,15 @@
                         "el": [
                             {
                                 "type": "at",
-                                "node": "region.ice_cavern_mq",
+                                "node": "region[ice_cavern_mq]",
                                 "el": {
                                     "type": "value",
-                                    "el": "item.bottle"
+                                    "el": "item[bottle]"
                                 }
                             },
                             {
                                 "type": "mixin",
-                                "el": "mixin.is_adult"
+                                "el": "mixin[is_adult]"
                             }
                         ]
                     },
@@ -369,17 +369,17 @@
                         "el": [
                             {
                                 "type": "value",
-                                "el": "option.consider_buyable"
+                                "el": "option[consider_buyable]"
                             },
                             {
                                 "type": "value",
-                                "el": "item.bottle"
+                                "el": "item[bottle]"
                             },
                             {
                                 "type": "min",
                                 "el": {
                                     "type": "value",
-                                    "el": "item.wallet"
+                                    "el": "item[wallet]"
                                 },
                                 "value": 2
                             }
@@ -389,70 +389,70 @@
             }
         ]
     },
-    "mixin.can_play_ocarina": {
+    "mixin[can_play_ocarina]": {
         "type": "or",
         "el": [
             {
                 "type": "value",
-                "el": "item.ocarina"
+                "el": "item[ocarina]"
             },
             {
                 "type": "and",
                 "el": [
                     {
                         "type": "value",
-                        "el": "item.bottle"
+                        "el": "item[bottle]"
                     },
                     {
                         "type": "or",
                         "el": [
                             {
                                 "type": "value",
-                                "el": "skip.invisible_ocarina"
+                                "el": "option[skip.invisible_ocarina]"
                             },
                             {
                                 "type": "and",
                                 "el": [
                                     {
                                         "type": "value",
-                                        "el": "skip.invisible_ocarina_midair"
+                                        "el": "option[skip.invisible_ocarina_midair]"
                                     },
                                     {
                                         "type": "or",
                                         "el": [
                                             {
                                                 "type": "value",
-                                                "el": "item.bombs"
+                                                "el": "item[bombs]"
                                             },
                                             {
                                                 "type": "value",
-                                                "el": "item.bombchu"
+                                                "el": "item[bombchu]"
                                             },
                                             {
                                                 "type": "and",
                                                 "el": [
                                                     {
                                                         "type": "mixin",
-                                                        "el": "mixin.is_child"
+                                                        "el": "mixin[is_child]"
                                                     },
                                                     {
                                                         "type": "or",
                                                         "el": [
                                                             {
                                                                 "type": "value",
-                                                                "el": "item.stick"
+                                                                "el": "item[stick]"
                                                             },
                                                             {
                                                                 "type": "value",
-                                                                "el": "item.sword_kokiri"
+                                                                "el": "item[sword_kokiri]"
                                                             },
                                                             {
                                                                 "type": "value",
-                                                                "el": "item.slingshot"
+                                                                "el": "item[slingshot]"
                                                             },
                                                             {
                                                                 "type": "value",
-                                                                "el": "item.boomerang"
+                                                                "el": "item[boomerang]"
                                                             }
                                                         ]
                                                     }
@@ -463,30 +463,30 @@
                                                 "el": [
                                                     {
                                                         "type": "mixin",
-                                                        "el": "mixin.is_adult"
+                                                        "el": "mixin[is_adult]"
                                                     },
                                                     {
                                                         "type": "or",
                                                         "el": [
                                                             {
                                                                 "type": "value",
-                                                                "el": "item.sword_master"
+                                                                "el": "item[sword_master]"
                                                             },
                                                             {
                                                                 "type": "value",
-                                                                "el": "item.sword_biggoron"
+                                                                "el": "item[sword_biggoron]"
                                                             },
                                                             {
                                                                 "type": "value",
-                                                                "el": "item.bow"
+                                                                "el": "item[bow]"
                                                             },
                                                             {
                                                                 "type": "value",
-                                                                "el": "item.hookshot"
+                                                                "el": "item[hookshot]"
                                                             },
                                                             {
                                                                 "type": "value",
-                                                                "el": "item.hammer"
+                                                                "el": "item[hammer]"
                                                             }
                                                         ]
                                                     }
@@ -502,7 +502,7 @@
             }
         ]
     },
-    "mixin.is_night_gs": {
+    "mixin[is_night_gs]": {
         "type": "or",
         "el": [
             {
@@ -510,13 +510,13 @@
                 "el": [
                     {
                         "type": "mixin",
-                        "el": "mixin.is_night"
+                        "el": "mixin[is_night]"
                     },
                     {
                         "type": "not",
                         "el": {
                             "type": "value",
-                            "el": "option.sun_song_skulltuta"
+                            "el": "option[sun_song_skulltuta]"
                         }
                     }
                 ]
@@ -526,46 +526,46 @@
                 "el": [
                     {
                         "type": "value",
-                        "el": "option.sun_song_skulltuta"
+                        "el": "option[sun_song_skulltuta]"
                     },
                     {
                         "type": "mixin",
-                        "el": "function.can_play(item.song_sun)"
+                        "el": "function[can_play](item[song_sun])"
                     }
                 ]
             }
         ]
     },
-    "mixin.can_leave_forest": {
+    "mixin[can_leave_forest]": {
         "type": "or",
         "el": [
             {
                 "type": "not",
                 "el": {
                     "type": "state",
-                    "el": "option.doors_open_forest",
+                    "el": "option[doors_open_forest]",
                     "value": "doors_open_forest_closed"
                 }
             },
             {
                 "type": "mixin",
-                "el": "mixin.is_adult"
+                "el": "mixin[is_adult]"
             },
             {
                 "type": "value",
-                "el": "option.shuffle_overworld"
+                "el": "option[shuffle_overworld]"
             },
             {
                 "type": "value",
-                "el": "option.shuffle_warps"
+                "el": "option[shuffle_warps]"
             },
             {
                 "type": "value",
-                "el": "option.shuffle_spawns"
+                "el": "option[shuffle_spawns]"
             },
             {
                 "type": "value",
-                "el": "event.deku_tree_clear"
+                "el": "event[deku_tree_clear]"
             }
         ]
     },

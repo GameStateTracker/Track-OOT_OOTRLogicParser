@@ -24,7 +24,7 @@ export default function createOnRegionLogic(nodeC, elC, nodeA, elA, basic = fals
                     "el": [
                         {
                             "type": "mixin",
-                            "el": "mixin.filter_era[child]"
+                            "el": "mixin[filter_era]{child}"
                         },
                         {
                             "type": "at",
@@ -38,7 +38,7 @@ export default function createOnRegionLogic(nodeC, elC, nodeA, elA, basic = fals
                     "el": [
                         {
                             "type": "mixin",
-                            "el": "mixin.filter_era[adult]"
+                            "el": "mixin[filter_era]{adult}"
                         },
                         {
                             "type": "at",

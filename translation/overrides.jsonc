@@ -1,18 +1,18 @@
 {
-    "region.root": {
-        "region.root_exits": {
+    "region[root]": {
+        "region[root_exits]": {
             "type": "mixin",
-            "el": "mixin.is_starting_age"
+            "el": "mixin[is_starting_age]"
         }
     },
-    "region.hyrule_castle_grounds": {
-        "region.hc_garden": {
+    "region[hyrule_castle_grounds]": {
+        "region[hc_garden]": {
             "type": "value",
-            "el": "item.egg"
+            "el": "item[egg]"
         }
     },
-    "region.ganons_castle_lobby": {
-        "region.ganons_castle_tower": {
+    "region[ganons_castle_lobby]": {
+        "region[ganons_castle_tower]": {
             "type": "gte",
             "el": [
                 {
@@ -25,12 +25,12 @@
                                     "type": "not",
                                     "el": {
                                         "type": "value",
-                                        "el": "option.forest_trial"
+                                        "el": "option[forest_trial]"
                                     }
                                 },
                                 {
                                     "type": "value",
-                                    "el": "event.forest_trial_clear"
+                                    "el": "event[forest_trial_clear]"
                                 }
                             ]
                         },
@@ -41,12 +41,12 @@
                                     "type": "not",
                                     "el": {
                                         "type": "value",
-                                        "el": "option.fire_trial"
+                                        "el": "option[fire_trial]"
                                     }
                                 },
                                 {
                                     "type": "value",
-                                    "el": "event.fire_trial_clear"
+                                    "el": "event[fire_trial_clear]"
                                 }
                             ]
                         },
@@ -57,12 +57,12 @@
                                     "type": "not",
                                     "el": {
                                         "type": "value",
-                                        "el": "option.water_trial"
+                                        "el": "option[water_trial]"
                                     }
                                 },
                                 {
                                     "type": "value",
-                                    "el": "event.water_trial_clear"
+                                    "el": "event[water_trial_clear]"
                                 }
                             ]
                         },
@@ -73,12 +73,12 @@
                                     "type": "not",
                                     "el": {
                                         "type": "value",
-                                        "el": "option.shadow_trial"
+                                        "el": "option[shadow_trial]"
                                     }
                                 },
                                 {
                                     "type": "value",
-                                    "el": "event.shadow_trial_clear"
+                                    "el": "event[shadow_trial_clear]"
                                 }
                             ]
                         },
@@ -89,12 +89,12 @@
                                     "type": "not",
                                     "el": {
                                         "type": "value",
-                                        "el": "option.spirit_trial"
+                                        "el": "option[spirit_trial]"
                                     }
                                 },
                                 {
                                     "type": "value",
-                                    "el": "event.spirit_trial_clear"
+                                    "el": "event[spirit_trial_clear]"
                                 }
                             ]
                         },
@@ -105,12 +105,12 @@
                                     "type": "not",
                                     "el": {
                                         "type": "value",
-                                        "el": "option.light_trial"
+                                        "el": "option[light_trial]"
                                     }
                                 },
                                 {
                                     "type": "value",
-                                    "el": "event.light_trial_clear"
+                                    "el": "event[light_trial_clear]"
                                 }
                             ]
                         }
@@ -118,13 +118,13 @@
                 },
                 {
                     "type": "value",
-                    "el": "option.number_trials"
+                    "el": "option[number_trials]"
                 }
             ]
         }
     },
-    "region.ganons_castle_lobby_mq": {
-        "region.ganons_castle_tower": {
+    "region[ganons_castle_lobby_mq]": {
+        "region[ganons_castle_tower]": {
             "type": "gte",
             "el": [
                 {
@@ -137,12 +137,12 @@
                                     "type": "not",
                                     "el": {
                                         "type": "value",
-                                        "el": "option.forest_trial"
+                                        "el": "option[forest_trial]"
                                     }
                                 },
                                 {
                                     "type": "value",
-                                    "el": "event.forest_trial_clear"
+                                    "el": "event[forest_trial_clear]"
                                 }
                             ]
                         },
@@ -153,12 +153,12 @@
                                     "type": "not",
                                     "el": {
                                         "type": "value",
-                                        "el": "option.fire_trial"
+                                        "el": "option[fire_trial]"
                                     }
                                 },
                                 {
                                     "type": "value",
-                                    "el": "event.fire_trial_clear"
+                                    "el": "event[fire_trial_clear]"
                                 }
                             ]
                         },
@@ -169,12 +169,12 @@
                                     "type": "not",
                                     "el": {
                                         "type": "value",
-                                        "el": "option.water_trial"
+                                        "el": "option[water_trial]"
                                     }
                                 },
                                 {
                                     "type": "value",
-                                    "el": "event.water_trial_clear"
+                                    "el": "event[water_trial_clear]"
                                 }
                             ]
                         },
@@ -185,12 +185,12 @@
                                     "type": "not",
                                     "el": {
                                         "type": "value",
-                                        "el": "option.shadow_trial"
+                                        "el": "option[shadow_trial]"
                                     }
                                 },
                                 {
                                     "type": "value",
-                                    "el": "event.shadow_trial_clear"
+                                    "el": "event[shadow_trial_clear]"
                                 }
                             ]
                         },
@@ -201,12 +201,12 @@
                                     "type": "not",
                                     "el": {
                                         "type": "value",
-                                        "el": "option.spirit_trial"
+                                        "el": "option[spirit_trial]"
                                     }
                                 },
                                 {
                                     "type": "value",
-                                    "el": "event.spirit_trial_clear"
+                                    "el": "event[spirit_trial_clear]"
                                 }
                             ]
                         },
@@ -217,12 +217,12 @@
                                     "type": "not",
                                     "el": {
                                         "type": "value",
-                                        "el": "option.light_trial"
+                                        "el": "option[light_trial]"
                                     }
                                 },
                                 {
                                     "type": "value",
-                                    "el": "event.light_trial_clear"
+                                    "el": "event[light_trial_clear]"
                                 }
                             ]
                         }
@@ -230,7 +230,7 @@
                 },
                 {
                     "type": "value",
-                    "el": "option.number_trials"
+                    "el": "option[number_trials]"
                 }
             ]
         }

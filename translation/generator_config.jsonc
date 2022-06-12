@@ -3,9 +3,9 @@
         "exits": {
             "default": false,
             "child": [
-                "region.deku_tree_boss_room",
-                "region.deku_tree_basement_water_room_back_mq",
-                "region.deku_tree_basement_water_room_front_mq"
+                "region[deku_tree_boss_room]",
+                "region[deku_tree_basement_water_room_back_mq]",
+                "region[deku_tree_basement_water_room_front_mq]"
             ],
             "adult": []
         },
@@ -17,12 +17,12 @@
         "events": {
             "default": false,
             "child": [
-                "event.showed_mido_sword_&_shield",
-                "event.deku_tree_clear",
-                "event.drain_well"
+                "event[showed_mido_sword_&_shield]",
+                "event[deku_tree_clear]",
+                "event[drain_well]"
             ],
             "adult": [
-                "event.drain_well"
+                "event[drain_well]"
             ]
         }
     },
@@ -40,14 +40,14 @@
         "events": {
             "default": true,
             "child": [
-                "event.showed_mido_sword_&_shield",
-                "event.deku_tree_clear",
-                "event.drain_well"
+                "event[showed_mido_sword_&_shield]",
+                "event[deku_tree_clear]",
+                "event[drain_well]"
             ],
             "adult": [
-                "event.showed_mido_sword_&_shield",
-                "event.deku_tree_clear",
-                "event.drain_well"
+                "event[showed_mido_sword_&_shield]",
+                "event[deku_tree_clear]",
+                "event[drain_well]"
             ]
         }
     }

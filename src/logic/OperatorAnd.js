@@ -9,7 +9,7 @@ export default class Operator extends AbstractOperator {
     toJSON()  {
         return {
             type: "and",
-            el: this.children.map(e => e.toJSON())
+            el: this.children.map((e) => e.toJSON())
         };
     }
 

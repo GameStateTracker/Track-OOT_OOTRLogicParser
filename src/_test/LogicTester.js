@@ -1,3 +1,4 @@
+// import fs from "fs";
 import path from "path";
 import JSONFile from "../utils/JSONFile.js";
 import LogicGraph from "./LogicGraph.js";
@@ -11,19 +12,19 @@ const savestate = JSONFile.read(`${currentDir}/savestate.json`);
 
 /* LOGIC */
 function testChildLogic() {
-    LOGIC_PROCESSOR.set("option.starting_age", "child");
+    LOGIC_PROCESSOR.set("option[starting_age]", "child");
     return LOGIC_PROCESSOR.executeEdges();
 }
 
 function testAdultLogic() {
-    LOGIC_PROCESSOR.set("option.starting_age", "adult");
+    LOGIC_PROCESSOR.set("option[starting_age]", "adult");
     return LOGIC_PROCESSOR.executeEdges();
 }
 
 export function testLogic(logic) {
     LOGIC_PROCESSOR.load(logic);
     LOGIC_PROCESSOR.setAll(savestate.data);
-    const edges = LOGIC_PROCESSOR.getEdges().map(e => e.join(" => "));
+    const edges = LOGIC_PROCESSOR.getEdges().map((e) => e.join(" => "));
     const failed = new Set();
     const success = new Set();
     const successC = testChildLogic();
@@ -35,6 +36,15 @@ export function testLogic(logic) {
             failed.add(edge);
         }
     }
+    // ----
+    // const failedObj = {};
+    // for (const edge of failed) {
+    //     const [region, location] = edge.split(" => ");
+    //     failedObj[edge] = logic.edges[region]?.[location] ?? "unknown";
+    // }
+    // const failedData = JSON.stringify(failedObj, null, 4);
+    // fs.writeFileSync(`${currentDir}/failed.json`, failedData);
+    // ----
     return [success, failed];
 }
 
@@ -58,12 +68,12 @@ export function filterLogic(logic) {
 
 /* MIXINS */
 function testChildMixins() {
-    LOGIC_PROCESSOR.set("option.starting_age", "child");
+    LOGIC_PROCESSOR.set("option[starting_age]", "child");
     return LOGIC_PROCESSOR.executeMixins();
 }
 
 function testAdultMixins() {
-    LOGIC_PROCESSOR.set("option.starting_age", "adult");
+    LOGIC_PROCESSOR.set("option[starting_age]", "adult");
     return LOGIC_PROCESSOR.executeMixins();
 }
 
