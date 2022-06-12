@@ -442,7 +442,7 @@
             }
         ]
     },
-    "function[can_use(mixin[longshot)]]": {
+    "function[can_use](mixin[longshot])": {
         "type": "and",
         "el": [
             {
@@ -455,7 +455,7 @@
             }
         ]
     },
-    "function[can_use(mixin[silver_gauntlets)]]": {
+    "function[can_use](mixin[silver_gauntlets])": {
         "type": "and",
         "el": [
             {
@@ -468,7 +468,7 @@
             }
         ]
     },
-    "function[can_use(mixin[golden_gauntlets)]]": {
+    "function[can_use](mixin[golden_gauntlets])": {
         "type": "and",
         "el": [
             {
@@ -507,7 +507,7 @@
             }
         ]
     },
-    "function[can_use(mixin[scarecrow)]]": {
+    "function[can_use](mixin[scarecrow])": {
         "type": "and",
         "el": [
             {
@@ -524,7 +524,7 @@
             }
         ]
     },
-    "function[can_use(mixin[distant_scarecrow)]]": {
+    "function[can_use](mixin[distant_scarecrow])": {
         "type": "and",
         "el": [
             {

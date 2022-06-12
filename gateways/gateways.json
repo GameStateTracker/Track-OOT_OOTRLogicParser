@@ -10,8 +10,8 @@
         "region_name": "Bottom of the Well Gateway",
         "exits": {
             "Bottom of the Well Entrance": "True",
-            "Bottom of the Well": "dungeontype[area/well] != 'mq'",
-            "Bottom of the Well MQ": "dungeontype[area/well] != 'v'"
+            "Bottom of the Well": "dungeontype[well] != 'mq'",
+            "Bottom of the Well MQ": "dungeontype[well] != 'v'"
         }
     },
     {
@@ -25,8 +25,8 @@
         "region_name": "Deku Tree Gateway",
         "exits": {
             "Deku Tree Entrance": "True",
-            "Deku Tree Lobby": "dungeontype[area/deku] != 'mq'",
-            "Deku Tree Lobby MQ": "dungeontype[area/deku] != 'v'"
+            "Deku Tree Lobby": "dungeontype[deku] != 'mq'",
+            "Deku Tree Lobby MQ": "dungeontype[deku] != 'v'"
         }
     },
     {
@@ -40,8 +40,8 @@
         "region_name": "Dodongos Cavern Gateway",
         "exits": {
             "Dodongos Cavern Entryway": "True",
-            "Dodongos Cavern Beginning": "dungeontype[area/dodongo] != 'mq'",
-            "Dodongos Cavern Beginning MQ": "dungeontype[area/dodongo] != 'v'"
+            "Dodongos Cavern Beginning": "dungeontype[dodongo] != 'mq'",
+            "Dodongos Cavern Beginning MQ": "dungeontype[dodongo] != 'v'"
         }
     },
     {
@@ -55,8 +55,8 @@
         "region_name": "Jabu Jabus Belly Gateway",
         "exits": {
             "Jabu Jabus Belly Entrance": "True",
-            "Jabu Jabus Belly Beginning": "dungeontype[area/jabujabu] != 'mq'",
-            "Jabu Jabus Belly Beginning MQ": "dungeontype[area/jabujabu] != 'v'"
+            "Jabu Jabus Belly Beginning": "dungeontype[jabujabu] != 'mq'",
+            "Jabu Jabus Belly Beginning MQ": "dungeontype[jabujabu] != 'v'"
         }
     },
     {
@@ -70,8 +70,8 @@
         "region_name": "Ice Cavern Gateway",
         "exits": {
             "Ice Cavern Entrance": "True",
-            "Ice Cavern Beginning": "dungeontype[area/ice_cavern] != 'mq'",
-            "Ice Cavern Beginning MQ": "dungeontype[area/ice_cavern] != 'v'"
+            "Ice Cavern Beginning": "dungeontype[ice_cavern] != 'mq'",
+            "Ice Cavern Beginning MQ": "dungeontype[ice_cavern] != 'v'"
         }
     },
     {
@@ -85,8 +85,8 @@
         "region_name": "Gerudo Training Grounds Gateway",
         "exits": {
             "Gerudo Training Grounds Entrance": "True",
-            "Gerudo Training Grounds Lobby": "dungeontype[area/training_grounds] != 'mq'",
-            "Gerudo Training Grounds Lobby MQ": "dungeontype[area/training_grounds] != 'v'"
+            "Gerudo Training Grounds Lobby": "dungeontype[training_grounds] != 'mq'",
+            "Gerudo Training Grounds Lobby MQ": "dungeontype[training_grounds] != 'v'"
         }
     },
     {
@@ -100,8 +100,8 @@
         "region_name": "Forest Temple Gateway",
         "exits": {
             "Forest Temple Entrance": "True",
-            "Forest Temple Lobby": "dungeontype[area/temple_forest] != 'mq'",
-            "Forest Temple Lobby MQ": "dungeontype[area/temple_forest] != 'v'"
+            "Forest Temple Lobby": "dungeontype[temple_forest] != 'mq'",
+            "Forest Temple Lobby MQ": "dungeontype[temple_forest] != 'v'"
         }
     },
     {
@@ -115,8 +115,8 @@
         "region_name": "Fire Temple Gateway",
         "exits": {
             "Fire Temple Entrance": "True",
-            "Fire Temple Lower": "dungeontype[area/temple_fire] != 'mq'",
-            "Fire Temple Lower MQ": "dungeontype[area/temple_fire] != 'v'"
+            "Fire Temple Lower": "dungeontype[temple_fire] != 'mq'",
+            "Fire Temple Lower MQ": "dungeontype[temple_fire] != 'v'"
         }
     },
     {
@@ -130,8 +130,8 @@
         "region_name": "Water Temple Gateway",
         "exits": {
             "Water Temple Entrance": "True",
-            "Water Temple Lobby": "dungeontype[area/temple_water] != 'mq'",
-            "Water Temple Lobby MQ": "dungeontype[area/temple_water] != 'v'"
+            "Water Temple Lobby": "dungeontype[temple_water] != 'mq'",
+            "Water Temple Lobby MQ": "dungeontype[temple_water] != 'v'"
         }
     },
     {
@@ -145,8 +145,8 @@
         "region_name": "Shadow Temple Gateway",
         "exits": {
             "Shadow Temple Entrance": "True",
-            "Shadow Temple Entryway": "dungeontype[area/temple_shadow] != 'mq'",
-            "Shadow Temple Entryway MQ": "dungeontype[area/temple_shadow] != 'v'"
+            "Shadow Temple Entryway": "dungeontype[temple_shadow] != 'mq'",
+            "Shadow Temple Entryway MQ": "dungeontype[temple_shadow] != 'v'"
         }
     },
     {
@@ -160,21 +160,18 @@
         "region_name": "Spirit Temple Gateway",
         "exits": {
             "Spirit Temple Entrance": "True",
-            "Spirit Temple Lobby": "dungeontype[area/temple_spirit] != 'mq'",
-            "Spirit Temple Lobby MQ": "dungeontype[area/temple_spirit] != 'v'"
+            "Spirit Temple Lobby": "dungeontype[temple_spirit] != 'mq'",
+            "Spirit Temple Lobby MQ": "dungeontype[temple_spirit] != 'v'"
         }
     },
     {
         "region_name": "Ganons Castle Gateway",
         "exits": {
             "Ganons Castle Grounds": "True",
-            "Ganons Castle Lobby": "dungeontype[area/castle_ganon] != 'mq'",
-            "Ganons Castle Lobby MQ": "dungeontype[area/castle_ganon] != 'v'"
+            "Ganons Castle Lobby": "dungeontype[castle_ganon] != 'mq'",
+            "Ganons Castle Lobby MQ": "dungeontype[castle_ganon] != 'v'"
         }
     },
-
-
-
     {
         "region_name": "HF Tektite Grotto Entrance",
         "exits": {
@@ -231,7 +228,6 @@
             "Hyrule Field": "True"
         }
     },
-
     {
         "region_name": "KF Midos House Entrance",
         "exits": {
@@ -281,7 +277,6 @@
             "Kokiri Forest": "True"
         }
     },
-
     {
         "region_name": "LW Near Shortcuts Grotto Entrance",
         "exits": {
@@ -303,7 +298,6 @@
             "LW Beyond Mido": "True"
         }
     },
-
     {
         "region_name": "SFM Wolfos Grotto Entrance",
         "exits": {
@@ -325,7 +319,6 @@
             "Sacred Forest Meadow": "True"
         }
     },
-
     {
         "region_name": "Market Guard House Entrance",
         "exits": {
@@ -389,7 +382,6 @@
             "Market": "True"
         }
     },
-
     {
         "region_name": "LLR Talons House Entrance",
         "exits": {
@@ -418,7 +410,6 @@
             "Lon Lon Ranch": "True"
         }
     },
-
     {
         "region_name": "HC Storms Grotto Entrance",
         "exits": {
@@ -440,7 +431,6 @@
             "OGC Great Fairy Fountain": "True"
         }
     },
-
     {
         "region_name": "Kak Carpenter Boss House Entrance",
         "exits": {
@@ -525,7 +515,6 @@
             "Kakariko Village": "True"
         }
     },
-
     {
         "region_name": "Graveyard Dampes House Entrance",
         "exits": {
@@ -550,7 +539,7 @@
     {
         "region_name": "Graveyard Composers Grave Entrance",
         "exits": {
-            "Graveyard Composers Grave": "True",
+            "Graveyard Royal Familys Tomb": "True",
             "Graveyard": "True"
         }
     },
@@ -561,7 +550,6 @@
             "Graveyard": "True"
         }
     },
-
     {
         "region_name": "DMT Great Fairy Fountain Entrance",
         "exits": {
@@ -604,7 +592,6 @@
             "DMC Upper Nearby": "True"
         }
     },
-
     {
         "region_name": "GC Shop Entrance",
         "exits": {
@@ -619,7 +606,6 @@
             "GC Grotto Platform": "True"
         }
     },
-
     {
         "region_name": "ZR Storms Grotto Entrance",
         "exits": {
@@ -662,7 +648,6 @@
             "Zoras Fountain": "True"
         }
     },
-
     {
         "region_name": "LH Lab Entrance",
         "exits": {
@@ -684,7 +669,6 @@
             "Lake Hylia": "True"
         }
     },
-
     {
         "region_name": "GV Carpenter Tent Entrance",
         "exits": {
@@ -713,7 +697,6 @@
             "Gerudo Fortress": "True"
         }
     },
-
     {
         "region_name": "Colossus Great Fairy Fountain Entrance",
         "exits": {
@@ -728,9 +711,6 @@
             "Desert Colossus": "True"
         }
     },
-
-
-
     {
         "region_name": "Kokiri Bridge Gateway",
         "exits": {
@@ -913,9 +893,6 @@
             "Zoras Fountain": "True"
         }
     },
-
-
-
     {
         "region_name": "Bridge Kokiri Gateway",
         "exits": {
