@@ -85,8 +85,8 @@
         "region_name": "Gerudo Training Grounds Gateway",
         "exits": {
             "Gerudo Training Grounds Entrance": "True",
-            "Gerudo Training Grounds Lobby": "dungeontype[training_grounds] != 'mq'",
-            "Gerudo Training Grounds Lobby MQ": "dungeontype[training_grounds] != 'v'"
+            "Gerudo Training Ground Lobby": "dungeontype[training_grounds] != 'mq'",
+            "Gerudo Training Ground Lobby MQ": "dungeontype[training_grounds] != 'v'"
         }
     },
     {
