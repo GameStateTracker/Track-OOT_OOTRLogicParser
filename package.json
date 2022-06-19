@@ -1,14 +1,14 @@
 {
-  "name": "logicparser",
+  "name": "ootrlogicparser",
   "version": "0.0.0",
   "description": "Logic Parser",
   "author": "Denis Peters (ZidArgs)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/zidargs/logicparser.git"
+    "url": "git+ssh://git@bitbucket.org/zidargs/ootrlogicparser.git"
   },
-  "homepage": "https://bitbucket.org/zidargs/logicparser/src",
+  "homepage": "https://bitbucket.org/zidargs/ootrlogicparser/src",
   "main": "parse.js",
   "type": "module",
   "dependencies": {},
