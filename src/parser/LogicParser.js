@@ -9,6 +9,8 @@ import RegionCheck from "../utils/RegionCheck.js";
 const __dirname = path.resolve();
 const inExitRenameFile  = path.join(__dirname, "/gateways/exitRename.json");
 const renameData = JSON.parse(fs.readFileSync(inExitRenameFile, "utf8"));
+const customLogic  = path.join(__dirname, "/config/customLogic.json");
+const customLogicData = JSON.parse(fs.readFileSync(customLogic, "utf8"));
 const success = {
     mainRegions: {},
     subRegions: {}
@@ -74,6 +76,18 @@ class LogicParser {
                 LogicGenerator.addEvent(value.region_name, i, transpile(rule));
             }
         })
+    }
+
+    addCustomLogic() {
+        for (const region of customLogicData) {
+            const regionName = region.region_name;
+            if (region.locations != null) {
+                for (const locationName in region.locations) {
+                    const rule = region.locations[locationName];
+                    LogicGenerator.addLocation(regionName, locationName, transpile(rule));
+                }
+            }
+        }
     }
 
     regionCheckCall() {

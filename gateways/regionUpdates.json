@@ -478,8 +478,8 @@
         },
         "Gerudo Training Grounds Gateway": {
             "Gerudo Training Grounds Entrance": false,
-            "Gerudo Training Ground Lobby": true,
-            "Gerudo Training Ground Lobby MQ": true
+            "Gerudo Training Ground Lobby": false,
+            "Gerudo Training Ground Lobby MQ": false
         },
         "Forest Temple Entrance": {
             "SFM Forest Temple Entrance Ledge": false,

@@ -57,6 +57,7 @@ function parseLogic() {
         }
         LogicParser.parse(fs.readFileSync(iname).toString(), mq);
     });
+    LogicParser.addCustomLogic();
     LogicParser.regionCheckCall();
     const logic = LogicGenerator.generate();
     const logicData = JSON.stringify(logic, null, 4);
@@ -91,6 +92,8 @@ function parseGlitchedLogic() {
         }
         LogicParser.parse(fs.readFileSync(iname).toString(), mq);
     });
+    LogicParser.addCustomLogic();
+    // LogicParser.regionCheckCall();
     const logic = LogicGenerator.generate(true);
     const logicData = JSON.stringify(logic, null, 4);
     fs.writeFileSync(`${outputDir}/glitched.full.json`, logicData);
