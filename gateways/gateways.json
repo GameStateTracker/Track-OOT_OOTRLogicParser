@@ -869,7 +869,7 @@
         "region_name": "Crater Goron Gateway",
         "exits": {
             "Goron Crater Gateway": "True",
-            "DMC Lower Local": "is_child or (logic_fewer_tunic_requirements or can_use(Goron_Tunic))"
+            "DMC Lower Local": "True"
         }
     },
     {
@@ -897,8 +897,7 @@
         "region_name": "Bridge Kokiri Gateway",
         "exits": {
             "Kokiri Bridge Gateway": "True",
-            "LW Bridge": "True",
-            "LW Bridge From Forest": "can_leave_forest"
+            "LW Bridge From Forest": "True"
         }
     },
     {
