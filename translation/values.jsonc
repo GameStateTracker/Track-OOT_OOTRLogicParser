@@ -843,7 +843,6 @@
     //"item[potion_red]",
     //"item[potion_green]",
     //"Blue_Potion": "item[potion_blue]",
-
     /* dummy items */
     "item": {
         "type": "value",
@@ -853,7 +852,6 @@
         "type": "value",
         "el": "item[song_dummy]"
     },
-
     /* options */
     "big_poe_count": {
         "type": "value",
@@ -965,8 +963,9 @@
         "el": "option[shuffle_overworld]"
     },
     "keysanity": {
-        "type": "value",
-        "el": "option[keysanity_small]"
+        "type": "state",
+        "el": "option[small_key_logic]",
+        "value": "keylogic_keysanity"
     },
     "bombchus_in_logic": {
         "type": "value",
