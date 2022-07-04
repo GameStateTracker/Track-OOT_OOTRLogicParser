@@ -206,6 +206,12 @@
             "light_arrow_cutscene_skulltulas": "light_arrow_cutscene_skulltulas"
         }
     },
+    "option[small_key_logic]": {
+        "name": "option[small_key_logic]",
+        "values": {
+            "keylogic_keysanity": "keylogic_keysanity"
+        }
+    },
     "dungeontype[well]": {
         "name": "dungeontype[well]",
         "values": {

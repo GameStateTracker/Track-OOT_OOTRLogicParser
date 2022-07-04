@@ -1076,13 +1076,13 @@
         }
     },
     {
-        "region_name": "Gerudo Valley Lake Gateway",
+        "region_name": "Valley Lake Gateway",
         "exits": {
-            "Lake Gerudo Valley Gateway": "True"
+            "Lake Valley Gateway": "True"
         }
     },
     {
-        "region_name": "Lake Gerudo Valley Gateway",
+        "region_name": "Lake Valley Gateway",
         "exits": {
             "Lake Hylia": "True"
         }

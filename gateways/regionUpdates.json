@@ -152,8 +152,8 @@
         "Mountain Crater Gateway": false,
         "Domain River Gateway": false,
         "Domain Fountain Gateway": false,
-        "Gerudo Valley Lake Gateway": false,
-        "Lake Gerudo Valley Gateway": false,
+        "Valley Lake Gateway": false,
+        "Lake Valley Gateway": false,
         "Market Marketback Gateway": false,
         "Marketback Market Gateway": false,
         "Bottom of the Well MQ": false,
@@ -1047,10 +1047,10 @@
             "ZD Behind King Zora": false,
             "Fountain Domain Gateway": false
         },
-        "Gerudo Valley Lake Gateway": {
-            "Lake Gerudo Valley Gateway": false
+        "Valley Lake Gateway": {
+            "Lake Valley Gateway": false
         },
-        "Lake Gerudo Valley Gateway": {
+        "Lake Valley Gateway": {
             "Lake Hylia": false
         },
         "Market Marketback Gateway": {
@@ -1545,7 +1545,7 @@
             "GV Lower Stream": false
         },
         "GV Lower Stream": {
-            "Gerudo Valley Lake Gateway": false
+            "Valley Lake Gateway": false
         },
         "GV Grotto Ledge": {
             "GV Lower Stream": false,

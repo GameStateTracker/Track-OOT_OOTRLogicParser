@@ -98,13 +98,13 @@
     "Kokiri Forest": {
         "LW Bridge From Forest": "Kokiri Bridge Gateway",
         "Lost Woods": "Kokiri Woods Gateway",
-        "KF Midos House":"KF Midos House Entrance",
-        "KF Sarias House":"KF Sarias House Entrance",
-        "KF House of Twins":"KF House of Twins Entrance",
-        "KF Know It All House":"KF Know It All House Entrance",
-        "KF Kokiri Shop":"KF Kokiri Shop Entrance",
-        "KF Links House":"KF Links House Entrance",
-        "KF Storms Grotto":"KF Storms Grotto Entrance"
+        "KF Midos House": "KF Midos House Entrance",
+        "KF Sarias House": "KF Sarias House Entrance",
+        "KF House of Twins": "KF House of Twins Entrance",
+        "KF Know It All House": "KF Know It All House Entrance",
+        "KF Kokiri Shop": "KF Kokiri Shop Entrance",
+        "KF Links House": "KF Links House Entrance",
+        "KF Storms Grotto": "KF Storms Grotto Entrance"
     },
     "LW Bridge": {
         "Kokiri Forest": "Bridge Kokiri Gateway",
@@ -182,7 +182,7 @@
         "GV Storms Grotto": "GV Storms Grotto Entrance"
     },
     "GV Lower Stream": {
-        "Lake Hylia": "Gerudo Valley Lake Gateway"
+        "Lake Hylia": "Valley Lake Gateway"
     },
     "GF Outside Gate": {
         "Wasteland Near Fortress": "Fortress Wasteland Gateway"
@@ -193,7 +193,7 @@
     "Wasteland Near Colossus": {
         "Desert Colossus": "Wasteland Colossus Gateway"
     },
-    "Market":{
+    "Market": {
         "Market Entrance": "Market MarketEntrance Gateway",
         "Castle Grounds": "Market Grounds Gateway",
         "ToT Entrance": "Market ToT Gateway",
@@ -244,7 +244,6 @@
     "GC Darunias Chamber": {
         "DMC Lower Local": "Goron Crater Gateway"
     },
-
     "DMC Lower Local": {
         "DMC Ladder Area Nearby": "Crater Goron Gateway"
     },
@@ -266,7 +265,6 @@
         "DMC Upper Nearby": "DMC Upper Local",
         "DMC Lower Nearby": "DMC Lower Local"
     },
-    
     "ZR Behind Waterfall": {
         "Zoras Domain": "River Domain Gateway"
     },
