@@ -7,7 +7,7 @@ import LogicGenerator from "./LogicGenerator.js";
 import RegionCheck from "../utils/RegionCheck.js";
 
 const __dirname = path.resolve();
-const inExitRenameFile  = path.join(__dirname, "/gateways/exitRename.json");
+const inExitRenameFile  = path.join(__dirname, "/config/gateways/_rebind.json");
 const renameData = JSON.parse(fs.readFileSync(inExitRenameFile, "utf8"));
 const customLogic  = path.join(__dirname, "/config/customLogic.json");
 const customLogicData = JSON.parse(fs.readFileSync(customLogic, "utf8"));
@@ -20,7 +20,7 @@ const exits = ["Kakariko Village", "KF Outside Deku Tree", "Death Mountain", "Zo
 class LogicParser {
 
     parse(input, mq = false) {
-        const output = RandONC.parse(input);
+        const output = this.#parseInput(input);
         output.forEach((value) => {
             if (mq) {
                 value.region_name = value.region_name + " MQ"
@@ -62,6 +62,9 @@ class LogicParser {
                 if (renameData[regionName] != null) {
                     if (renameData[regionName][i] !== undefined) {
                         i = renameData[regionName][i];
+                        if (i.endsWith(" Gateway")) {
+                            i += ":In"
+                        }
                     }
                 }
                 if (success.subRegions[value.region_name] == null) {
@@ -76,6 +79,14 @@ class LogicParser {
                 LogicGenerator.addEvent(value.region_name, i, transpile(rule));
             }
         })
+    }
+
+    #parseInput(input) {
+        if (typeof input === "string") {
+            return RandONC.parse(input);
+        } else {
+            return input;
+        }
     }
 
     addCustomLogic() {

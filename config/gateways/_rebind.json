@@ -1,0 +1,522 @@
+{
+    "Kakariko Village": {
+        "Bottom of the Well": "Kakariko Well Gateway",
+        "Hyrule Field": "Kakariko Field Gateway",
+        "Graveyard": "Kakariko Graveyard Gateway",
+        "Kak Carpenter Boss House": "Kakariko Carpenter House Gateway",
+        "Kak House of Skulltula": "Kakariko Skulltula House Gateway",
+        "Kak Impas House": "Kakariko Impas House Gateway",
+        "Kak Bazaar": "Kakariko Bazaar Gateway",
+        "Kak Shooting Gallery": "Kakariko Shooting Gallery Gateway",
+        "Kak Windmill": "Kakariko Windmill Gateway",
+        "Kak Potion Shop Front": "Kakariko Potion Shop Gateway",
+        "Kak Redead Grotto": "Kakariko Redead Grotto Gateway"
+    },
+    "KF Outside Deku Tree": {
+        "Deku Tree Lobby": "Kokiri Deku Gateway"
+    },
+    "ZF Ice Ledge": {
+        "Ice Cavern Beginning": "Fountain Ice Cavern Gateway"
+    },
+    "Zoras Fountain": {
+        "Jabu Jabus Belly Beginning": "Fountain Jabu Gateway",
+        "ZD Behind King Zora": "Fountain Domain Gateway",
+        "ZF Great Fairy Fountain": "Fountain Great Fairy Gateway"
+    },
+    "Gerudo Fortress": {
+        "Gerudo Training Ground Lobby": "Fortress Training Grounds Gateway",
+        "GV Fortress Side": "Fortress Valley Gateway",
+        "GF Storms Grotto": "Fortress Storms Grotto Gateway"
+    },
+    "Sacred Forest Meadow": {
+        "SFM Storms Grotto": "Meadow Storms Grotto Gateway",
+        "SFM Fairy Grotto": "Meadow Fairy Grotto Gateway"
+    },
+    "SFM Forest Temple Entrance Ledge": {
+        "Forest Temple Lobby": "Meadow Forest Temple Gateway"
+    },
+    "DMC Fire Temple Entrance": {
+        "Fire Temple Lower": "Crater Fire Temple Gateway"
+    },
+    "Lake Hylia": {
+        "Water Temple Lobby": "Lake Water Temple Gateway",
+        "Hyrule Field": "Lake Field Gateway",
+        "Zoras Domain": "Lake Domain Gateway",
+        "LH Lab": "Lake Lab Gateway",
+        "LH Grotto": "Lake Grotto Gateway"
+    },
+    "Graveyard Warp Pad Region": {
+        "Shadow Temple Entryway": "Graveyard Shadow Temple Gateway"
+    },
+    "Desert Colossus": {
+        "Spirit Temple Lobby": "Colossus Spirit Temple Gateway",
+        "Wasteland Near Colossus": "Colossus Wasteland Gateway",
+        "Colossus Great Fairy Fountain": "Colossus Great Fairy Gateway",
+        "Colossus Grotto": "Colossus Grotto Gateway"
+    },
+    "Ganons Castle Grounds": {
+        "Ganons Castle Lobby": "Castle Grounds Ganons Castle Gateway",
+        "OGC Great Fairy Fountain": "Ganon Grounds Great Fairy Gateway"
+    },
+    "Bottom of the Well": {
+        "Kakariko Village": "Well Kakriko Gateway"
+    },
+    "Deku Tree Lobby": {
+        "KF Outside Deku Tree": "Deku Kokiri Gateway"
+    },
+    "Dodongos Cavern Beginning": {
+        "Death Mountain": "Dodongo Mountain Gateway"
+    },
+    "Jabu Jabus Belly Beginning": {
+        "Zoras Fountain": "Jabu Fountain Gateway"
+    },
+    "Ice Cavern Beginning": {
+        "ZF Ice Ledge": "Ice Cavern Fountain Gateway"
+    },
+    "Gerudo Training Ground Lobby": {
+        "Gerudo Fortress": "Training Grounds Fortress Gateway"
+    },
+    "Forest Temple Lobby": {
+        "SFM Forest Temple Entrance Ledge": "Forest Temple Meadow Gateway"
+    },
+    "Fire Temple Lower": {
+        "DMC Fire Temple Entrance": "Fire Temple Crater Gateway"
+    },
+    "Water Temple Lobby": {
+        "Lake Hylia": "Water Temple Lake Gateway"
+    },
+    "Shadow Temple Entryway": {
+        "Graveyard Warp Pad Region": "Shadow Temple Graveyard Gateway"
+    },
+    "Spirit Temple Lobby": {
+        "Desert Colossus From Spirit Lobby": "Spirit Temple Colossus Gateway"
+    },
+    "Ganons Castle Lobby": {
+        "Ganons Castle Grounds": "Ganons Castle Castle Grounds Gateway",
+        "Castle Grounds": "Ganons Castle Castle Grounds Gateway"
+    },
+    "Kokiri Forest": {
+        "LW Bridge From Forest": "Kokiri Bridge Gateway",
+        "Lost Woods": "Kokiri Woods Gateway",
+        "KF Midos House": "Kokiri Midos House Gateway",
+        "KF Sarias House": "Kokiri Sarias House Gateway",
+        "KF House of Twins": "Kokiri House of Twins Gateway",
+        "KF Know It All House": "Kokiri Know It All House Gateway",
+        "KF Kokiri Shop": "Kokiri Kokiri Shop Gateway",
+        "KF Links House": "Kokiri Links House Gateway",
+        "KF Storms Grotto": "Kokiri Storms Grotto Gateway"
+    },
+    "LW Bridge": {
+        "Kokiri Forest": "Bridge Kokiri Gateway",
+        "Hyrule Field": "Woods Field Gateway"
+    },
+    "Lost Woods": {
+        "GC Woods Warp": "Woods GC Gateway",
+        "LW Forest Exit": "Woods Kokiri Gateway",
+        "Zora River": "Woods River Gateway",
+        "LW Near Shortcuts Grotto": "Woods Near Shortcuts Grotto Gateway"
+    },
+    "GC Woods Warp": {
+        "Lost Woods": "GC Woods Gateway"
+    },
+    "Zora River": {
+        "Lost Woods": "River Woods Gateway",
+        "ZR Storms Grotto": "River Storms Grotto Gateway",
+        "ZR Fairy Grotto": "River Fairy Grotto Gateway",
+        "ZR Open Grotto": "River Open Grotto Gateway"
+    },
+    "LW Beyond Mido": {
+        "SFM Entryway": "Woods Meadow Gateway",
+        "LW Scrubs Grotto": "Woods Scrubs Grotto Gateway",
+        "Deku Theater": "Woods Deku Theater Gateway",
+        "LW Forest Exit": "Woods Kokiri Gateway"
+    },
+    "SFM Entryway": {
+        "LW Beyond Mido": "Meadow Woods Gateway",
+        "SFM Wolfos Grotto": "Meadow Wolfos Grotto Gateway"
+    },
+    "Hyrule Field": {
+        "LW Bridge": "Field Woods Gateway",
+        "Lake Hylia": "Field Lake Gateway",
+        "Gerudo Valley": "Field Valley Gateway",
+        "Market Entrance": "Field MarketEntrance Gateway",
+        "Kakariko Village": "Field Kakariko Gateway",
+        "ZR Front": "Field River Gateway",
+        "Lon Lon Ranch": "Field Ranch Gateway",
+        "HF Tektite Grotto": "Field Tektite Grotto Gateway",
+        "HF Near Kak Grotto": "Field Near Kak Grotto Gateway",
+        "HF Fairy Grotto": "Field Fairy Grotto Gateway",
+        "HF Near Market Grotto": "Field Near Market Grotto Gateway",
+        "HF Cow Grotto": "Field Cow Grotto Gateway",
+        "HF Inside Fence Grotto": "Field Inside Fence Grotto Gateway",
+        "HF Open Grotto": "Field Open Grotto Gateway",
+        "HF Southeast Grotto": "Field Southeast Grotto Gateway"
+    },
+    "Gerudo Valley": {
+        "Hyrule Field": "Valley Field Gateway"
+    },
+    "Market Entrance": {
+        "Hyrule Field": "MarketEntrance Field Gateway",
+        "Market": "MarketEntrance Market Gateway",
+        "Market Guard House": "Guard House Market Gateway"
+    },
+    "ZR Front": {
+        "Hyrule Field": "River Field Gateway"
+    },
+    "Lon Lon Ranch": {
+        "Hyrule Field": "Ranch Field Gateway",
+        "LLR Talons House": "Ranch Talons House Gateway",
+        "LLR Stables": "Ranch Stables Gateway",
+        "LLR Tower": "Ranch Tower Gateway",
+        "LLR Grotto": "Ranch Grotto Gateway"
+    },
+    "Zoras Domain": {
+        "Lake Hylia": "Domain Lake Gateway",
+        "ZR Behind Waterfall": "Domain River Gateway",
+        "ZD Shop": "Zora Shop Gateway",
+        "ZD Storms Grotto": "Domain Storms Grotto Gateway"
+    },
+    "GV Fortress Side": {
+        "Gerudo Fortress": "Valley Fortress Gateway",
+        "GV Carpenter Tent": "Valley Carpenter Tent Gateway",
+        "GV Storms Grotto": "Valley Storms Grotto Gateway"
+    },
+    "GV Lower Stream": {
+        "Lake Hylia": "Valley Lake Gateway"
+    },
+    "GF Outside Gate": {
+        "Wasteland Near Fortress": "Fortress Wasteland Gateway"
+    },
+    "Wasteland Near Fortress": {
+        "GF Outside Gate": "Wasteland Fortress Gateway"
+    },
+    "Wasteland Near Colossus": {
+        "Desert Colossus": "Wasteland Colossus Gateway"
+    },
+    "Market": {
+        "Market Entrance": "Market MarketEntrance Gateway",
+        "Castle Grounds": "Market Grounds Gateway",
+        "ToT Entrance": "Market ToT Gateway",
+        "Market Mask Shop": "Market Mask Shop Gateway",
+        "Market Potion Shop": "Market Potion Shop Gateway",
+        "Market Treasure Chest Game": "Market Treasure Chest Game Gateway",
+        "Market Bazaar": "Market Bazaar Gateway",
+        "Market Shooting Gallery": "Market Shooting Gallery Gateway",
+        "Market Bombchu Bowling": "Market Bombchu Bowling Gateway",
+        "Market Back Alley": "Market Marketback Gateway"
+    },
+    "Market Back Alley": {
+        "Market Bombchu Shop": "Market Bombchu Shop Gateway",
+        "Market Man in Green House": "Market Back House Gateway",
+        "Market": "Marketback Market Gateway"
+    },
+    "Castle Grounds": {
+        "Market": "Grounds Market Gateway"
+    },
+    "ToT Entrance": {
+        "Market": "ToT Market Gateway"
+    },
+    "Graveyard": {
+        "Kakariko Village": "Graveyard Kakariko Gateway",
+        "Graveyard Dampes House": "Graveyard Dampes House Gateway",
+        "Graveyard Shield Grave": "Graveyard Shield Grave Gateway",
+        "Graveyard Heart Piece Grave": "Graveyard Redead Grave Gateway",
+        "Graveyard Royal Familys Tomb": "Graveyard Composers Grave Gateway",
+        "Graveyard Dampes Grave": "Graveyard Dampes Grave Gateway"
+    },
+    "Kak Behind Gate": {
+        "Death Mountain": "Kakariko Mountain Gateway"
+    },
+    "Death Mountain": {
+        "Kak Behind Gate": "Mountain Kakariko Gateway",
+        "Goron City": "Mountain Goron Gateway",
+        "DMT Storms Grotto": "Mountain Storms Grotto Gateway",
+        "Dodongos Cavern Beginning": "Mountain Dodongo Gateway"
+    },
+    "Goron City": {
+        "Death Mountain": "Goron Mountain Gateway",
+        "GC Shop": "Goron Shop Gateway"
+    },
+    "GC Grotto Platform": {
+        "GC Grotto": "Goron Grotto Gateway"
+    },
+    "GC Darunias Chamber": {
+        "DMC Lower Local": "Goron Crater Gateway"
+    },
+    "DMC Lower Local": {
+        "DMC Ladder Area Nearby": "Crater Goron Gateway"
+    },
+    "DMC Lower Nearby": {
+        "GC Darunias Chamber": "DMC Ladder Area Nearby",
+        "DMC Great Fairy Fountain": "Crater Great Fairy Gateway",
+        "DMC Hammer Grotto": "Crater Hammer Grotto Gateway"
+    },
+    "Death Mountain Summit": {
+        "DMC Upper Local": "Mountain Crater Gateway",
+        "DMT Great Fairy Fountain": "Mountain Great Fairy Gateway",
+        "DMT Cow Grotto": "Mountain Cow Grotto Gateway"
+    },
+    "DMC Upper Nearby": {
+        "Death Mountain Summit": "Crater Mountain Gateway",
+        "DMC Upper Grotto": "Crater Upper Grotto Gateway"
+    },
+    "DMC Ladder Nearby": {
+        "DMC Upper Nearby": "DMC Upper Local",
+        "DMC Lower Nearby": "DMC Lower Local"
+    },
+    "ZR Behind Waterfall": {
+        "Zoras Domain": "River Domain Gateway"
+    },
+    "ZD Behind King Zora": {
+        "Zoras Fountain": "Domain Fountain Gateway"
+    },
+    "OGC Great Fairy Fountain": {
+        "Castle Grounds": "Great Fairy Ganon Grounds Gateway"
+    },
+    "Hyrule Castle Grounds": {
+        "HC Storms Grotto": "Grounds Storms Grotto Gateway",
+        "HC Great Fairy Fountain": "Grounds Great Fairy Gateway"
+    },
+    "HC Great Fairy Fountain": {
+        "Castle Grounds": "Great Fairy Grounds Gateway"
+    },
+    "Kak Backyard": {
+        "Kak Odd Medicine Building": "Kakariko Medicine Building Gateway",
+        "Kak Open Grotto": "Kakariko Open Grotto Gateway",
+        "Kak Potion Shop Back": "Kakariko Potion Back Gateway"
+    },
+    "Kak Impas Ledge": {
+        "Kak Impas House Back": "Kakariko Impas Back Gateway"
+    },
+    "HF Tektite Grotto": {
+        "Hyrule Field": "Tektite Grotto Field Gateway"
+    },
+    "HF Near Kak Grotto": {
+        "Hyrule Field": "Near Kak Grotto Field Gateway"
+    },
+    "HF Fairy Grotto": {
+        "Hyrule Field": "Fairy Grotto Field Gateway"
+    },
+    "HF Near Market Grotto": {
+        "Hyrule Field": "Near Market Grotto Field Gateway"
+    },
+    "HF Cow Grotto": {
+        "Hyrule Field": "Cow Grotto Field Gateway"
+    },
+    "HF Inside Fence Grotto": {
+        "Hyrule Field": "Inside Fence Grotto Field Gateway"
+    },
+    "HF Open Grotto": {
+        "Hyrule Field": "Open Grotto Field Gateway"
+    },
+    "HF Southeast Grotto": {
+        "Hyrule Field": "Southeast Grotto Field Gateway"
+    },
+    "KF Midos House": {
+        "Kokiri Forest": "Midos House Kokiri Gateway"
+    },
+    "KF Sarias House": {
+        "Kokiri Forest": "Sarias House Kokiri Gateway"
+    },
+    "KF House of Twins": {
+        "Kokiri Forest": "House of Twins Kokiri Gateway"
+    },
+    "KF Know It All House": {
+        "Kokiri Forest": "Know It All House Kokiri Gateway"
+    },
+    "KF Kokiri Shop": {
+        "Kokiri Forest": "Kokiri Shop Kokiri Gateway"
+    },
+    "KF Links House": {
+        "Kokiri Forest": "Links House Kokiri Gateway"
+    },
+    "KF Storms Grotto": {
+        "Kokiri Forest": "Storms Grotto Kokiri Gateway"
+    },
+    "LW Near Shortcuts Grotto": {
+        "Lost Woods": "Near Shortcuts Grotto Woods Gateway"
+    },
+    "LW Scrubs Grotto": {
+        "LW Beyond Mido": "Scrubs Grotto Woods Gateway"
+    },
+    "Deku Theater": {
+        "LW Beyond Mido": "Deku Theater Woods Gateway"
+    },
+    "SFM Wolfos Grotto": {
+        "SFM Entryway": "Wolfos Grotto Meadow Gateway"
+    },
+    "SFM Storms Grotto": {
+        "Sacred Forest Meadow": "Storms Grotto Meadow Gateway"
+    },
+    "SFM Fairy Grotto": {
+        "Sacred Forest Meadow": "Fairy Grotto Meadow Gateway"
+    },
+    "Market Guard House": {
+        "Market Entrance": "Guard House Market Gateway"
+    },
+    "Market Mask Shop": {
+        "Market": "Mask Shop Market Gateway"
+    },
+    "Market Bombchu Bowling": {
+        "Market": "Bombchu Bowling Market Gateway"
+    },
+    "Market Potion Shop": {
+        "Market": "Potion Shop Market Gateway"
+    },
+    "Market Treasure Chest Game": {
+        "Market": "Treasure Chest Game Market Gateway"
+    },
+    "Market Bombchu Shop": {
+        "Market Back Alley": "Bombchu Shop Market Gateway"
+    },
+    "Market Man in Green House": {
+        "Market Back Alley": "Back House Market Gateway"
+    },
+    "Market Bazaar": {
+        "Market": "Bazaar Market Gateway"
+    },
+    "Market Shooting Gallery": {
+        "Market": "Shooting Gallery Market Gateway"
+    },
+    "LLR Talons House": {
+        "Lon Lon Ranch": "Talons House Ranch Gateway"
+    },
+    "LLR Stables": {
+        "Lon Lon Ranch": "Stables Ranch Gateway"
+    },
+    "LLR Tower": {
+        "Lon Lon Ranch": "Tower Ranch Gateway"
+    },
+    "LLR Grotto": {
+        "Lon Lon Ranch": "Grotto Ranch Gateway"
+    },
+    "HC Storms Grotto": {
+        "Castle Grounds": "Storms Grotto Grounds Gateway"
+    },
+    "Kak Carpenter Boss House": {
+        "Kakariko Village": "Carpenter House Kakariko Gateway"
+    },
+    "Kak House of Skulltula": {
+        "Kakariko Village": "Skulltula House Kakariko Gateway"
+    },
+    "Kak Impas House": {
+        "Kakariko Village": "Impas House Kakariko Gateway"
+    },
+    "Kak Impas House Back": {
+        "Kak Impas Ledge": "Impas Back Kakariko Gateway"
+    },
+    "Kak Odd Medicine Building": {
+        "Kak Backyard": "Medicine Building Kakariko Gateway"
+    },
+    "Kak Bazaar": {
+        "Kakariko Village": "Bazaar Kakariko Gateway"
+    },
+    "Kak Shooting Gallery": {
+        "Kakariko Village": "Shooting Gallery Kakariko Gateway"
+    },
+    "Kak Windmill": {
+        "Kakariko Village": "Windmill Kakariko Gateway"
+    },
+    "Kak Potion Shop Front": {
+        "Kakariko Village": "Potion Shop Kakariko Gateway"
+    },
+    "Kak Potion Shop Back": {
+        "Kak Backyard": "Potion Back Kakariko Gateway"
+    },
+    "Kak Open Grotto": {
+        "Kak Backyard": "Open Grotto Kakariko Gateway"
+    },
+    "Kak Redead Grotto": {
+        "Kakariko Village": "Kakariko Redead Grotto Gateway"
+    },
+    "Graveyard Dampes House": {
+        "Graveyard": "Dampes House Graveyard Gateway"
+    },
+    "Graveyard Shield Grave": {
+        "Graveyard": "Shield Grave Graveyard Gateway"
+    },
+    "Graveyard Heart Piece Grave": {
+        "Graveyard": "Redead Grave Graveyard Gateway"
+    },
+    "Graveyard Royal Familys Tomb": {
+        "Graveyard": "Composers Grave Graveyard Gateway"
+    },
+    "Graveyard Dampes Grave": {
+        "Graveyard": "Dampes Grave Graveyard Gateway"
+    },
+    "DMT Great Fairy Fountain": {
+        "Death Mountain Summit": "Great Fairy Mountain Gateway"
+    },
+    "DMT Storms Grotto": {
+        "Death Mountain": "Storms Grotto Mountain Gateway"
+    },
+    "DMT Cow Grotto": {
+        "Death Mountain Summit": "Cow Grotto Mountain Gateway"
+    },
+    "DMC Great Fairy Fountain": {
+        "DMC Lower Local": "Great Fairy Crater Gateway"
+    },
+    "DMC Hammer Grotto": {
+        "DMC Lower Local": "Hammer Grotto Crater Gateway"
+    },
+    "DMC Upper Grotto": {
+        "DMC Upper Local": "Upper Grotto Crater Gateway"
+    },
+    "GC Shop": {
+        "Goron City": "Shop Goron Gateway"
+    },
+    "GC Grotto": {
+        "GC Grotto Platform": "Grotto Goron Gateway"
+    },
+    "ZR Storms Grotto": {
+        "Zora River": "Storms Grotto River Gateway"
+    },
+    "ZR Fairy Grotto": {
+        "Zora River": "Fairy Grotto River Gateway"
+    },
+    "ZR Open Grotto": {
+        "Zora River": "Open Grotto River Gateway"
+    },
+    "ZD Shop": {
+        "Zoras Domain": "Shop Zora Gateway"
+    },
+    "ZD Storms Grotto": {
+        "Zoras Domain": "Storms Grotto Domain Gateway"
+    },
+    "ZF Great Fairy Fountain": {
+        "Zoras Fountain": "Great Fairy Fountain Gateway"
+    },
+    "LH Lab": {
+        "Lake Hylia": "Lab Lake Gateway"
+    },
+    "LH Fishing Hole": {
+        "LH Fishing Island": "Fishing Hole Lake Gateway"
+    },
+    "LH Fishing Island": {
+        "LH Fishing Hole": "Lake Fishing Hole Gateway"
+    },
+    "LH Grotto": {
+        "Lake Hylia": "Grotto Lake Gateway"
+    },
+    "GV Carpenter Tent": {
+        "GV Fortress Side": "Carpenter Tent Valley Gateway"
+    },
+    "GV Storms Grotto": {
+        "GV Fortress Side": "Storms Grotto Valley Gateway"
+    },
+    "GV Octorok Grotto": {
+        "GV Grotto Ledge": "Octorok Grotto Valley Gateway"
+    },
+    "GV Grotto Ledge": {
+        "GV Octorok Grotto": "Valley Octorok Grotto Gateway"
+    },
+    "GF Storms Grotto": {
+        "Gerudo Fortress": "Fortress Storms Grotto Gateway"
+    },
+    "Colossus Great Fairy Fountain": {
+        "Desert Colossus": "Great Fairy Colossus Gateway"
+    },
+    "Colossus Grotto": {
+        "Desert Colossus": "Grotto Colossus Gateway"
+    }
+}

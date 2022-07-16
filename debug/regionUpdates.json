@@ -1,0 +1,3239 @@
+{
+    "mainRegions": {
+        "Kokiri Bridge Gateway:In": false,
+        "Kokiri Bridge Gateway:Out": false,
+        "Kokiri Woods Gateway:In": false,
+        "Kokiri Woods Gateway:Out": false,
+        "GC Woods Gateway:In": false,
+        "GC Woods Gateway:Out": false,
+        "River Woods Gateway:In": false,
+        "River Woods Gateway:Out": false,
+        "Meadow Woods Gateway:In": false,
+        "Meadow Woods Gateway:Out": false,
+        "Field Woods Gateway:In": false,
+        "Field Woods Gateway:Out": false,
+        "Lake Field Gateway:In": false,
+        "Lake Field Gateway:Out": false,
+        "Valley Field Gateway:In": false,
+        "Valley Field Gateway:Out": false,
+        "MarketEntrance Field Gateway:In": false,
+        "MarketEntrance Field Gateway:Out": false,
+        "Kakariko Field Gateway:In": false,
+        "Kakariko Field Gateway:Out": false,
+        "River Field Gateway:In": false,
+        "River Field Gateway:Out": false,
+        "Ranch Field Gateway:In": false,
+        "Ranch Field Gateway:Out": false,
+        "Domain Lake Gateway:In": false,
+        "Domain Lake Gateway:Out": false,
+        "Valley Fortress Gateway:In": false,
+        "Valley Fortress Gateway:Out": false,
+        "Wasteland Fortress Gateway:In": false,
+        "Wasteland Fortress Gateway:Out": false,
+        "Wasteland Colossus Gateway:In": false,
+        "Wasteland Colossus Gateway:Out": false,
+        "MarketEntrance Market Gateway:In": false,
+        "MarketEntrance Market Gateway:Out": false,
+        "Grounds Market Gateway:In": false,
+        "Grounds Market Gateway:Out": false,
+        "ToT Market Gateway:In": false,
+        "ToT Market Gateway:Out": false,
+        "Graveyard Kakariko Gateway:In": false,
+        "Graveyard Kakariko Gateway:Out": false,
+        "Mountain Kakariko Gateway:In": false,
+        "Mountain Kakariko Gateway:Out": false,
+        "Mountain Goron Gateway:In": false,
+        "Mountain Goron Gateway:Out": false,
+        "Crater Goron Gateway:In": false,
+        "Crater Goron Gateway:Out": false,
+        "Crater Mountain Gateway:In": false,
+        "Crater Mountain Gateway:Out": false,
+        "River Domain Gateway:In": false,
+        "River Domain Gateway:Out": false,
+        "Fountain Domain Gateway:In": false,
+        "Fountain Domain Gateway:Out": false,
+        "Bridge Kokiri Gateway:In": false,
+        "Bridge Kokiri Gateway:Out": false,
+        "Woods Kokiri Gateway:In": false,
+        "Woods Kokiri Gateway:Out": false,
+        "Woods GC Gateway:In": false,
+        "Woods GC Gateway:Out": false,
+        "Woods River Gateway:In": false,
+        "Woods River Gateway:Out": false,
+        "Woods Meadow Gateway:In": false,
+        "Woods Meadow Gateway:Out": false,
+        "Woods Field Gateway:In": false,
+        "Woods Field Gateway:Out": false,
+        "Field Lake Gateway:In": false,
+        "Field Lake Gateway:Out": false,
+        "Field Valley Gateway:In": false,
+        "Field Valley Gateway:Out": false,
+        "Field MarketEntrance Gateway:In": false,
+        "Field MarketEntrance Gateway:Out": false,
+        "Field Kakariko Gateway:In": false,
+        "Field Kakariko Gateway:Out": false,
+        "Field River Gateway:In": false,
+        "Field River Gateway:Out": false,
+        "Field Ranch Gateway:In": false,
+        "Field Ranch Gateway:Out": false,
+        "Lake Domain Gateway:In": false,
+        "Lake Domain Gateway:Out": false,
+        "Fortress Valley Gateway:In": false,
+        "Fortress Valley Gateway:Out": false,
+        "Fortress Wasteland Gateway:In": false,
+        "Fortress Wasteland Gateway:Out": false,
+        "Colossus Wasteland Gateway:In": false,
+        "Colossus Wasteland Gateway:Out": false,
+        "Market MarketEntrance Gateway:In": false,
+        "Market MarketEntrance Gateway:Out": false,
+        "Market Grounds Gateway:In": false,
+        "Market Grounds Gateway:Out": false,
+        "Market ToT Gateway:In": false,
+        "Market ToT Gateway:Out": false,
+        "Kakariko Graveyard Gateway:In": false,
+        "Kakariko Graveyard Gateway:Out": false,
+        "Kakariko Mountain Gateway:In": false,
+        "Kakariko Mountain Gateway:Out": false,
+        "Goron Mountain Gateway:In": false,
+        "Goron Mountain Gateway:Out": false,
+        "Goron Crater Gateway:In": false,
+        "Goron Crater Gateway:Out": false,
+        "Mountain Crater Gateway:In": false,
+        "Mountain Crater Gateway:Out": false,
+        "Domain River Gateway:In": false,
+        "Domain River Gateway:Out": false,
+        "Domain Fountain Gateway:In": false,
+        "Domain Fountain Gateway:Out": false,
+        "Valley Lake Gateway:In": false,
+        "Lake Valley Gateway:Out": false,
+        "Market Marketback Gateway:In": false,
+        "Market Marketback Gateway:Out": false,
+        "Marketback Market Gateway:In": false,
+        "Marketback Market Gateway:Out": false,
+        "Kakariko Well Gateway:In": false,
+        "Kakariko Well Gateway:Out": false,
+        "Well Kakriko Gateway:In": false,
+        "Well Kakriko Gateway:Out": false,
+        "Kokiri Deku Gateway:In": false,
+        "Kokiri Deku Gateway:Out": false,
+        "Deku Kokiri Gateway:In": false,
+        "Deku Kokiri Gateway:Out": false,
+        "Mountain Dodongo Gateway:In": false,
+        "Mountain Dodongo Gateway:Out": false,
+        "Dodongo Mountain Gateway:In": false,
+        "Dodongo Mountain Gateway:Out": false,
+        "Fountain Jabu Gateway:In": false,
+        "Fountain Jabu Gateway:Out": false,
+        "Jabu Fountain Gateway:In": false,
+        "Jabu Fountain Gateway:Out": false,
+        "Fountain Ice Cavern Gateway:In": false,
+        "Fountain Ice Cavern Gateway:Out": false,
+        "Ice Cavern Fountain Gateway:In": false,
+        "Ice Cavern Fountain Gateway:Out": false,
+        "Fortress Training Grounds Gateway:In": false,
+        "Fortress Training Grounds Gateway:Out": false,
+        "Training Grounds Fortress Gateway:In": false,
+        "Training Grounds Fortress Gateway:Out": false,
+        "Meadow Forest Temple Gateway:In": false,
+        "Meadow Forest Temple Gateway:Out": false,
+        "Forest Temple Meadow Gateway:In": false,
+        "Forest Temple Meadow Gateway:Out": false,
+        "Crater Fire Temple Gateway:In": false,
+        "Crater Fire Temple Gateway:Out": false,
+        "Fire Temple Crater Gateway:In": false,
+        "Fire Temple Crater Gateway:Out": false,
+        "Lake Water Temple Gateway:In": false,
+        "Lake Water Temple Gateway:Out": false,
+        "Water Temple Lake Gateway:In": false,
+        "Water Temple Lake Gateway:Out": false,
+        "Graveyard Shadow Temple Gateway:In": false,
+        "Graveyard Shadow Temple Gateway:Out": false,
+        "Shadow Temple Graveyard Gateway:In": false,
+        "Shadow Temple Graveyard Gateway:Out": false,
+        "Colossus Spirit Temple Gateway:In": false,
+        "Colossus Spirit Temple Gateway:Out": false,
+        "Spirit Temple Colossus Gateway:In": false,
+        "Spirit Temple Colossus Gateway:Out": false,
+        "Castle Grounds Ganons Castle Gateway:In": false,
+        "Castle Grounds Ganons Castle Gateway:Out": false,
+        "Ganons Castle Castle Grounds Gateway:In": false,
+        "Ganons Castle Castle Grounds Gateway:Out": false,
+        "Field Tektite Grotto Gateway:In": false,
+        "Field Tektite Grotto Gateway:Out": false,
+        "Tektite Grotto Field Gateway:In": false,
+        "Tektite Grotto Field Gateway:Out": false,
+        "Field Near Kak Grotto Gateway:In": false,
+        "Field Near Kak Grotto Gateway:Out": false,
+        "Near Kak Grotto Field Gateway:In": false,
+        "Near Kak Grotto Field Gateway:Out": false,
+        "Field Fairy Grotto Gateway:In": false,
+        "Field Fairy Grotto Gateway:Out": false,
+        "Fairy Grotto Field Gateway:In": false,
+        "Fairy Grotto Field Gateway:Out": false,
+        "Field Near Market Grotto Gateway:In": false,
+        "Field Near Market Grotto Gateway:Out": false,
+        "Near Market Grotto Field Gateway:In": false,
+        "Near Market Grotto Field Gateway:Out": false,
+        "Field Cow Grotto Gateway:In": false,
+        "Field Cow Grotto Gateway:Out": false,
+        "Cow Grotto Field Gateway:In": false,
+        "Cow Grotto Field Gateway:Out": false,
+        "Field Inside Fence Grotto Gateway:In": false,
+        "Field Inside Fence Grotto Gateway:Out": false,
+        "Inside Fence Grotto Field Gateway:In": false,
+        "Inside Fence Grotto Field Gateway:Out": false,
+        "Field Open Grotto Gateway:In": false,
+        "Field Open Grotto Gateway:Out": false,
+        "Open Grotto Field Gateway:In": false,
+        "Open Grotto Field Gateway:Out": false,
+        "Field Southeast Grotto Gateway:In": false,
+        "Field Southeast Grotto Gateway:Out": false,
+        "Southeast Grotto Field Gateway:In": false,
+        "Southeast Grotto Field Gateway:Out": false,
+        "Kokiri Storms Grotto Gateway:In": false,
+        "Kokiri Storms Grotto Gateway:Out": false,
+        "Storms Grotto Kokiri Gateway:In": false,
+        "Storms Grotto Kokiri Gateway:Out": false,
+        "Woods Near Shortcuts Grotto Gateway:In": false,
+        "Woods Near Shortcuts Grotto Gateway:Out": false,
+        "Near Shortcuts Grotto Woods Gateway:In": false,
+        "Near Shortcuts Grotto Woods Gateway:Out": false,
+        "Woods Scrubs Grotto Gateway:In": false,
+        "Woods Scrubs Grotto Gateway:Out": false,
+        "Scrubs Grotto Woods Gateway:In": false,
+        "Scrubs Grotto Woods Gateway:Out": false,
+        "Woods Deku Theater Gateway:In": false,
+        "Woods Deku Theater Gateway:Out": false,
+        "Deku Theater Woods Gateway:In": false,
+        "Deku Theater Woods Gateway:Out": false,
+        "Meadow Wolfos Grotto Gateway:In": false,
+        "Meadow Wolfos Grotto Gateway:Out": false,
+        "Wolfos Grotto Meadow Gateway:In": false,
+        "Wolfos Grotto Meadow Gateway:Out": false,
+        "Meadow Storms Grotto Gateway:In": false,
+        "Meadow Storms Grotto Gateway:Out": false,
+        "Storms Grotto Meadow Gateway:In": false,
+        "Storms Grotto Meadow Gateway:Out": false,
+        "Meadow Fairy Grotto Gateway:In": false,
+        "Meadow Fairy Grotto Gateway:Out": false,
+        "Fairy Grotto Meadow Gateway:In": false,
+        "Fairy Grotto Meadow Gateway:Out": false,
+        "Ranch Grotto Gateway:In": false,
+        "Ranch Grotto Gateway:Out": false,
+        "Grotto Ranch Gateway:In": false,
+        "Grotto Ranch Gateway:Out": false,
+        "Grounds Storms Grotto Gateway:In": false,
+        "Grounds Storms Grotto Gateway:Out": false,
+        "Storms Grotto Grounds Gateway:In": false,
+        "Storms Grotto Grounds Gateway:Out": false,
+        "Kakariko Open Grotto Gateway:In": false,
+        "Kakariko Open Grotto Gateway:Out": false,
+        "Open Grotto Kakariko Gateway:In": false,
+        "Open Grotto Kakariko Gateway:Out": false,
+        "Kakariko Redead Grotto Gateway:In": false,
+        "Kakariko Redead Grotto Gateway:Out": false,
+        "Graveyard Shield Grave Gateway:In": false,
+        "Graveyard Shield Grave Gateway:Out": false,
+        "Shield Grave Graveyard Gateway:In": false,
+        "Shield Grave Graveyard Gateway:Out": false,
+        "Graveyard Redead Grave Gateway:In": false,
+        "Graveyard Redead Grave Gateway:Out": false,
+        "Redead Grave Graveyard Gateway:In": false,
+        "Redead Grave Graveyard Gateway:Out": false,
+        "Graveyard Composers Grave Gateway:In": false,
+        "Graveyard Composers Grave Gateway:Out": false,
+        "Composers Grave Graveyard Gateway:In": false,
+        "Composers Grave Graveyard Gateway:Out": false,
+        "Graveyard Dampes Grave Gateway:In": false,
+        "Graveyard Dampes Grave Gateway:Out": false,
+        "Dampes Grave Graveyard Gateway:In": false,
+        "Dampes Grave Graveyard Gateway:Out": false,
+        "Mountain Storms Grotto Gateway:In": false,
+        "Mountain Storms Grotto Gateway:Out": false,
+        "Storms Grotto Mountain Gateway:In": false,
+        "Storms Grotto Mountain Gateway:Out": false,
+        "Mountain Cow Grotto Gateway:In": false,
+        "Mountain Cow Grotto Gateway:Out": false,
+        "Cow Grotto Mountain Gateway:In": false,
+        "Cow Grotto Mountain Gateway:Out": false,
+        "Crater Hammer Grotto Gateway:In": false,
+        "Crater Hammer Grotto Gateway:Out": false,
+        "Hammer Grotto Crater Gateway:In": false,
+        "Hammer Grotto Crater Gateway:Out": false,
+        "Crater Upper Grotto Gateway:In": false,
+        "Crater Upper Grotto Gateway:Out": false,
+        "Upper Grotto Crater Gateway:In": false,
+        "Upper Grotto Crater Gateway:Out": false,
+        "Goron Grotto Gateway:In": false,
+        "Goron Grotto Gateway:Out": false,
+        "Grotto Goron Gateway:In": false,
+        "Grotto Goron Gateway:Out": false,
+        "River Storms Grotto Gateway:In": false,
+        "River Storms Grotto Gateway:Out": false,
+        "Storms Grotto River Gateway:In": false,
+        "Storms Grotto River Gateway:Out": false,
+        "River Fairy Grotto Gateway:In": false,
+        "River Fairy Grotto Gateway:Out": false,
+        "Fairy Grotto River Gateway:In": false,
+        "Fairy Grotto River Gateway:Out": false,
+        "River Open Grotto Gateway:In": false,
+        "River Open Grotto Gateway:Out": false,
+        "Open Grotto River Gateway:In": false,
+        "Open Grotto River Gateway:Out": false,
+        "Domain Storms Grotto Gateway:In": false,
+        "Domain Storms Grotto Gateway:Out": false,
+        "Storms Grotto Domain Gateway:In": false,
+        "Storms Grotto Domain Gateway:Out": false,
+        "Lake Grotto Gateway:In": false,
+        "Lake Grotto Gateway:Out": false,
+        "Grotto Lake Gateway:In": false,
+        "Grotto Lake Gateway:Out": false,
+        "Valley Storms Grotto Gateway:In": false,
+        "Valley Storms Grotto Gateway:Out": false,
+        "Storms Grotto Valley Gateway:In": false,
+        "Storms Grotto Valley Gateway:Out": false,
+        "Valley Octorok Grotto Gateway:In": false,
+        "Valley Octorok Grotto Gateway:Out": false,
+        "Octorok Grotto Valley Gateway:In": false,
+        "Octorok Grotto Valley Gateway:Out": false,
+        "Fortress Storms Grotto Gateway:In": false,
+        "Fortress Storms Grotto Gateway:Out": false,
+        "Colossus Grotto Gateway:In": false,
+        "Colossus Grotto Gateway:Out": false,
+        "Grotto Colossus Gateway:In": false,
+        "Grotto Colossus Gateway:Out": false,
+        "Kokiri Midos House Gateway:In": false,
+        "Kokiri Midos House Gateway:Out": false,
+        "Midos House Kokiri Gateway:In": false,
+        "Midos House Kokiri Gateway:Out": false,
+        "Kokiri Sarias House Gateway:In": false,
+        "Kokiri Sarias House Gateway:Out": false,
+        "Sarias House Kokiri Gateway:In": false,
+        "Sarias House Kokiri Gateway:Out": false,
+        "Kokiri House of Twins Gateway:In": false,
+        "Kokiri House of Twins Gateway:Out": false,
+        "House of Twins Kokiri Gateway:In": false,
+        "House of Twins Kokiri Gateway:Out": false,
+        "Kokiri Know It All House Gateway:In": false,
+        "Kokiri Know It All House Gateway:Out": false,
+        "Know It All House Kokiri Gateway:In": false,
+        "Know It All House Kokiri Gateway:Out": false,
+        "Kokiri Kokiri Shop Gateway:In": false,
+        "Kokiri Kokiri Shop Gateway:Out": false,
+        "Kokiri Shop Kokiri Gateway:In": false,
+        "Kokiri Shop Kokiri Gateway:Out": false,
+        "Kokiri Links House Gateway:In": false,
+        "Kokiri Links House Gateway:Out": false,
+        "Links House Kokiri Gateway:In": false,
+        "Links House Kokiri Gateway:Out": false,
+        "Market Guard House Gateway:In": false,
+        "Market Guard House Gateway:Out": false,
+        "Guard House Market Gateway:In": false,
+        "Guard House Market Gateway:Out": false,
+        "Market Mask Shop Gateway:In": false,
+        "Market Mask Shop Gateway:Out": false,
+        "Mask Shop Market Gateway:In": false,
+        "Mask Shop Market Gateway:Out": false,
+        "Market Bombchu Bowling Gateway:In": false,
+        "Market Bombchu Bowling Gateway:Out": false,
+        "Bombchu Bowling Market Gateway:In": false,
+        "Bombchu Bowling Market Gateway:Out": false,
+        "Market Potion Shop Gateway:In": false,
+        "Market Potion Shop Gateway:Out": false,
+        "Potion Shop Market Gateway:In": false,
+        "Potion Shop Market Gateway:Out": false,
+        "Market Treasure Chest Game Gateway:In": false,
+        "Market Treasure Chest Game Gateway:Out": false,
+        "Treasure Chest Game Market Gateway:In": false,
+        "Treasure Chest Game Market Gateway:Out": false,
+        "Market Bombchu Shop Gateway:In": false,
+        "Market Bombchu Shop Gateway:Out": false,
+        "Bombchu Shop Market Gateway:In": false,
+        "Bombchu Shop Market Gateway:Out": false,
+        "Market Back House Gateway:In": false,
+        "Market Back House Gateway:Out": false,
+        "Back House Market Gateway:In": false,
+        "Back House Market Gateway:Out": false,
+        "Market Bazaar Gateway:In": false,
+        "Market Bazaar Gateway:Out": false,
+        "Bazaar Market Gateway:In": false,
+        "Bazaar Market Gateway:Out": false,
+        "Market Shooting Gallery Gateway:In": false,
+        "Market Shooting Gallery Gateway:Out": false,
+        "Shooting Gallery Market Gateway:In": false,
+        "Shooting Gallery Market Gateway:Out": false,
+        "Ranch Talons House Gateway:In": false,
+        "Ranch Talons House Gateway:Out": false,
+        "Talons House Ranch Gateway:In": false,
+        "Talons House Ranch Gateway:Out": false,
+        "Ranch Stables Gateway:In": false,
+        "Ranch Stables Gateway:Out": false,
+        "Stables Ranch Gateway:In": false,
+        "Stables Ranch Gateway:Out": false,
+        "Ranch Tower Gateway:In": false,
+        "Ranch Tower Gateway:Out": false,
+        "Tower Ranch Gateway:In": false,
+        "Tower Ranch Gateway:Out": false,
+        "Grounds Great Fairy Gateway:In": false,
+        "Grounds Great Fairy Gateway:Out": false,
+        "Great Fairy Grounds Gateway:In": false,
+        "Great Fairy Grounds Gateway:Out": false,
+        "Ganon Grounds Great Fairy Gateway:In": false,
+        "Ganon Grounds Great Fairy Gateway:Out": false,
+        "Great Fairy Ganon Grounds Gateway:In": false,
+        "Great Fairy Ganon Grounds Gateway:Out": false,
+        "Kakariko Carpenter House Gateway:In": false,
+        "Kakariko Carpenter House Gateway:Out": false,
+        "Carpenter House Kakariko Gateway:In": false,
+        "Carpenter House Kakariko Gateway:Out": false,
+        "Kakariko Skulltula House Gateway:In": false,
+        "Kakariko Skulltula House Gateway:Out": false,
+        "Skulltula House Kakariko Gateway:In": false,
+        "Skulltula House Kakariko Gateway:Out": false,
+        "Kakariko Impas House Gateway:In": false,
+        "Kakariko Impas House Gateway:Out": false,
+        "Impas House Kakariko Gateway:In": false,
+        "Impas House Kakariko Gateway:Out": false,
+        "Kakariko Impas Back Gateway:In": false,
+        "Kakariko Impas Back Gateway:Out": false,
+        "Impas Back Kakariko Gateway:In": false,
+        "Impas Back Kakariko Gateway:Out": false,
+        "Kakariko Medicine Building Gateway:In": false,
+        "Kakariko Medicine Building Gateway:Out": false,
+        "Medicine Building Kakariko Gateway:In": false,
+        "Medicine Building Kakariko Gateway:Out": false,
+        "Kakariko Bazaar Gateway:In": false,
+        "Kakariko Bazaar Gateway:Out": false,
+        "Bazaar Kakariko Gateway:In": false,
+        "Bazaar Kakariko Gateway:Out": false,
+        "Kakariko Shooting Gallery Gateway:In": false,
+        "Kakariko Shooting Gallery Gateway:Out": false,
+        "Shooting Gallery Kakariko Gateway:In": false,
+        "Shooting Gallery Kakariko Gateway:Out": false,
+        "Kakariko Windmill Gateway:In": false,
+        "Kakariko Windmill Gateway:Out": false,
+        "Windmill Kakariko Gateway:In": false,
+        "Windmill Kakariko Gateway:Out": false,
+        "Kakariko Potion Shop Gateway:In": false,
+        "Kakariko Potion Shop Gateway:Out": false,
+        "Potion Shop Kakariko Gateway:In": false,
+        "Potion Shop Kakariko Gateway:Out": false,
+        "Kakariko Potion Back Gateway:In": false,
+        "Kakariko Potion Back Gateway:Out": false,
+        "Potion Back Kakariko Gateway:In": false,
+        "Potion Back Kakariko Gateway:Out": false,
+        "Graveyard Dampes House Gateway:In": false,
+        "Graveyard Dampes House Gateway:Out": false,
+        "Dampes House Graveyard Gateway:In": false,
+        "Dampes House Graveyard Gateway:Out": false,
+        "Mountain Great Fairy Gateway:In": false,
+        "Mountain Great Fairy Gateway:Out": false,
+        "Great Fairy Mountain Gateway:In": false,
+        "Great Fairy Mountain Gateway:Out": false,
+        "Crater Great Fairy Gateway:In": false,
+        "Crater Great Fairy Gateway:Out": false,
+        "Great Fairy Crater Gateway:In": false,
+        "Great Fairy Crater Gateway:Out": false,
+        "Goron Shop Gateway:In": false,
+        "Goron Shop Gateway:Out": false,
+        "Shop Goron Gateway:In": false,
+        "Shop Goron Gateway:Out": false,
+        "Zora Shop Gateway:In": false,
+        "Zora Shop Gateway:Out": false,
+        "Shop Zora Gateway:In": false,
+        "Shop Zora Gateway:Out": false,
+        "Fountain Great Fairy Gateway:In": false,
+        "Fountain Great Fairy Gateway:Out": false,
+        "Great Fairy Fountain Gateway:In": false,
+        "Great Fairy Fountain Gateway:Out": false,
+        "Lake Lab Gateway:In": false,
+        "Lake Lab Gateway:Out": false,
+        "Lab Lake Gateway:In": false,
+        "Lab Lake Gateway:Out": false,
+        "Lake Fishing Hole Gateway:In": false,
+        "Lake Fishing Hole Gateway:Out": false,
+        "Fishing Hole Lake Gateway:In": false,
+        "Fishing Hole Lake Gateway:Out": false,
+        "Valley Carpenter Tent Gateway:In": false,
+        "Valley Carpenter Tent Gateway:Out": false,
+        "Carpenter Tent Valley Gateway:In": false,
+        "Carpenter Tent Valley Gateway:Out": false,
+        "Colossus Great Fairy Gateway:In": false,
+        "Colossus Great Fairy Gateway:Out": false,
+        "Great Fairy Colossus Gateway:In": false,
+        "Great Fairy Colossus Gateway:Out": false,
+        "Bottom of the Well MQ": false,
+        "Bottom of the Well Perimeter MQ": false,
+        "Bottom of the Well Middle MQ": false,
+        "Bottom of the Well": false,
+        "Bottom of the Well Main Area": false,
+        "Deku Tree Lobby MQ": false,
+        "Deku Tree Compass Room MQ": false,
+        "Deku Tree Basement Water Room Front MQ": false,
+        "Deku Tree Basement Water Room Back MQ": false,
+        "Deku Tree Basement Back Room MQ": false,
+        "Deku Tree Basement Ledge MQ": false,
+        "Deku Tree Lobby": false,
+        "Deku Tree Slingshot Room": false,
+        "Deku Tree Basement Backroom": false,
+        "Deku Tree Boss Room": false,
+        "Dodongos Cavern Beginning MQ": false,
+        "Dodongos Cavern Lobby MQ": false,
+        "Dodongos Cavern Lower Right Side MQ": false,
+        "Dodongos Cavern Bomb Bag Area MQ": false,
+        "Dodongos Cavern Beginning": false,
+        "Dodongos Cavern Lobby": false,
+        "Dodongos Cavern Staircase Room": false,
+        "Dodongos Cavern Climb": false,
+        "Dodongos Cavern Far Bridge": false,
+        "Dodongos Cavern Boss Area": false,
+        "Fire Temple Lower MQ": false,
+        "Fire Big Lava Room MQ": false,
+        "Fire Lower Maze MQ": false,
+        "Fire Upper Maze MQ": false,
+        "Fire Temple Lower": false,
+        "Fire Temple Big Lava Room": false,
+        "Fire Temple Middle": false,
+        "Forest Temple Lobby MQ": false,
+        "Forest Temple Central Area MQ": false,
+        "Forest Temple After Block Puzzle MQ": false,
+        "Forest Temple Outdoor Ledge MQ": false,
+        "Forest Temple NW Outdoors MQ": false,
+        "Forest Temple NE Outdoors MQ": false,
+        "Forest Temple Outdoors Top Ledges MQ": false,
+        "Forest Temple NE Outdoors Ledge MQ": false,
+        "Forest Temple Bow Region MQ": false,
+        "Forest Temple Falling Room MQ": false,
+        "Forest Temple Lobby": false,
+        "Forest Temple NW Outdoors": false,
+        "Forest Temple NE Outdoors": false,
+        "Forest Temple Outdoors High Balconies": false,
+        "Forest Temple Falling Room": false,
+        "Forest Temple Block Push Room": false,
+        "Forest Temple Straightened Hall": false,
+        "Forest Temple Outside Upper Ledge": false,
+        "Forest Temple Bow Region": false,
+        "Ganons Castle Lobby MQ": false,
+        "Ganons Castle Lobby": false,
+        "Gerudo Training Ground Lobby MQ": false,
+        "Gerudo Training Ground Right Side MQ": false,
+        "Gerudo Training Ground Left Side MQ": false,
+        "Gerudo Training Ground Stalfos Room MQ": false,
+        "Gerudo Training Ground Back Areas MQ": false,
+        "Gerudo Training Ground Central Maze Right MQ": false,
+        "Gerudo Training Ground Lobby": false,
+        "Gerudo Training Ground Central Maze": false,
+        "Gerudo Training Ground Central Maze Right": false,
+        "Gerudo Training Ground Lava Room": false,
+        "Gerudo Training Ground Hammer Room": false,
+        "Gerudo Training Ground Eye Statue Lower": false,
+        "Gerudo Training Ground Eye Statue Upper": false,
+        "Gerudo Training Ground Heavy Block Room": false,
+        "Ice Cavern Beginning MQ": false,
+        "Ice Cavern Beginning": false,
+        "Jabu Jabus Belly Beginning MQ": false,
+        "Jabu Jabus Belly Main MQ": false,
+        "Jabu Jabus Belly Depths MQ": false,
+        "Jabu Jabus Belly Boss Area MQ": false,
+        "Jabu Jabus Belly Beginning": false,
+        "Jabu Jabus Belly Main": false,
+        "Jabu Jabus Belly Depths": false,
+        "Jabu Jabus Belly Boss Area": false,
+        "Root": false,
+        "Root Exits": false,
+        "Child Spawn": false,
+        "Adult Spawn": false,
+        "Prelude of Light Warp": false,
+        "Minuet of Forest Warp": false,
+        "Bolero of Fire Warp": false,
+        "Serenade of Water Warp": false,
+        "Nocturne of Shadow Warp": false,
+        "Requiem of Spirit Warp": false,
+        "Kokiri Forest": false,
+        "KF Outside Deku Tree": false,
+        "KF Links House": false,
+        "KF Midos House": false,
+        "KF Sarias House": false,
+        "KF House of Twins": false,
+        "KF Know It All House": false,
+        "KF Kokiri Shop": false,
+        "LW Forest Exit": false,
+        "Lost Woods": false,
+        "LW Beyond Mido": false,
+        "Lost Woods Mushroom Timeout": false,
+        "SFM Entryway": false,
+        "Sacred Forest Meadow": false,
+        "SFM Forest Temple Entrance Ledge": false,
+        "LW Bridge From Forest": false,
+        "LW Bridge": false,
+        "Hyrule Field": false,
+        "Lake Hylia": false,
+        "LH Fishing Island": false,
+        "LH Owl Flight": false,
+        "LH Lab": false,
+        "LH Fishing Hole": false,
+        "Gerudo Valley": false,
+        "GV Upper Stream": false,
+        "GV Lower Stream": false,
+        "GV Grotto Ledge": false,
+        "GV Crate Ledge": false,
+        "GV Fortress Side": false,
+        "GV Carpenter Tent": false,
+        "Gerudo Fortress": false,
+        "GF Outside Gate": false,
+        "Wasteland Near Fortress": false,
+        "Haunted Wasteland": false,
+        "Wasteland Near Colossus": false,
+        "Desert Colossus": false,
+        "Desert Colossus From Spirit Lobby": false,
+        "Colossus Great Fairy Fountain": false,
+        "Market Entrance": false,
+        "Market": false,
+        "Market Back Alley": false,
+        "ToT Entrance": false,
+        "Temple of Time": false,
+        "Beyond Door of Time": false,
+        "Castle Grounds": false,
+        "Hyrule Castle Grounds": false,
+        "HC Garden": false,
+        "HC Great Fairy Fountain": false,
+        "Ganons Castle Grounds": false,
+        "OGC Great Fairy Fountain": false,
+        "Market Guard House": false,
+        "Market Bazaar": false,
+        "Market Mask Shop": false,
+        "Market Shooting Gallery": false,
+        "Market Bombchu Bowling": false,
+        "Market Potion Shop": false,
+        "Market Treasure Chest Game": false,
+        "Market Bombchu Shop": false,
+        "Market Dog Lady House": false,
+        "Market Man in Green House": false,
+        "Kakariko Village": false,
+        "Kak Impas Ledge": false,
+        "Kak Impas Rooftop": false,
+        "Kak Odd Medicine Rooftop": false,
+        "Kak Backyard": false,
+        "Kak Carpenter Boss House": false,
+        "Kak House of Skulltula": false,
+        "Kak Impas House": false,
+        "Kak Impas House Back": false,
+        "Kak Windmill": false,
+        "Kak Bazaar": false,
+        "Kak Shooting Gallery": false,
+        "Kak Potion Shop Front": false,
+        "Kak Potion Shop Back": false,
+        "Kak Odd Medicine Building": false,
+        "Graveyard": false,
+        "Graveyard Shield Grave": false,
+        "Graveyard Heart Piece Grave": false,
+        "Graveyard Royal Familys Tomb": false,
+        "Graveyard Dampes Grave": false,
+        "Graveyard Dampes House": false,
+        "Graveyard Warp Pad Region": false,
+        "Kak Behind Gate": false,
+        "Death Mountain": false,
+        "Death Mountain Summit": false,
+        "DMT Owl Flight": false,
+        "Goron City": false,
+        "GC Woods Warp": false,
+        "GC Darunias Chamber": false,
+        "GC Grotto Platform": false,
+        "GC Shop": false,
+        "DMC Upper Nearby": false,
+        "DMC Upper Local": false,
+        "DMC Ladder Area Nearby": false,
+        "DMC Lower Nearby": false,
+        "DMC Lower Local": false,
+        "DMC Central Nearby": false,
+        "DMC Central Local": false,
+        "DMC Fire Temple Entrance": false,
+        "DMC Great Fairy Fountain": false,
+        "DMT Great Fairy Fountain": false,
+        "ZR Front": false,
+        "Zora River": false,
+        "ZR Behind Waterfall": false,
+        "ZR Top of Waterfall": false,
+        "Zoras Domain": false,
+        "ZD Behind King Zora": false,
+        "ZD Eyeball Frog Timeout": false,
+        "Zoras Fountain": false,
+        "ZF Ice Ledge": false,
+        "ZD Shop": false,
+        "ZF Great Fairy Fountain": false,
+        "Lon Lon Ranch": false,
+        "LLR Talons House": false,
+        "LLR Stables": false,
+        "LLR Tower": false,
+        "GF Storms Grotto": false,
+        "ZD Storms Grotto": false,
+        "KF Storms Grotto": false,
+        "LW Near Shortcuts Grotto": false,
+        "Deku Theater": false,
+        "LW Scrubs Grotto": false,
+        "SFM Fairy Grotto": false,
+        "SFM Storms Grotto": false,
+        "SFM Wolfos Grotto": false,
+        "LLR Grotto": false,
+        "HF Southeast Grotto": false,
+        "HF Open Grotto": false,
+        "HF Inside Fence Grotto": false,
+        "HF Cow Grotto": false,
+        "HF Near Market Grotto": false,
+        "HF Fairy Grotto": false,
+        "HF Near Kak Grotto": false,
+        "HF Tektite Grotto": false,
+        "HC Storms Grotto": false,
+        "Kak Redead Grotto": false,
+        "Kak Open Grotto": false,
+        "DMT Cow Grotto": false,
+        "DMT Storms Grotto": false,
+        "GC Grotto": false,
+        "DMC Upper Grotto": false,
+        "DMC Hammer Grotto": false,
+        "ZR Open Grotto": false,
+        "ZR Fairy Grotto": false,
+        "ZR Storms Grotto": false,
+        "LH Grotto": false,
+        "Colossus Grotto": false,
+        "GV Octorok Grotto": false,
+        "GV Storms Grotto": false,
+        "Shadow Temple Entryway MQ": false,
+        "Shadow Temple Beginning MQ": false,
+        "Shadow Temple First Beamos MQ": false,
+        "Shadow Temple Upper Huge Pit MQ": false,
+        "Shadow Temple Lower Huge Pit MQ": false,
+        "Shadow Temple Wind Tunnel MQ": false,
+        "Shadow Temple Beyond Boat MQ": false,
+        "Shadow Temple Entryway": false,
+        "Shadow Temple Beginning": false,
+        "Shadow Temple First Beamos": false,
+        "Shadow Temple Huge Pit": false,
+        "Shadow Temple Wind Tunnel": false,
+        "Spirit Temple Lobby MQ": false,
+        "Child Spirit Temple MQ": false,
+        "Adult Spirit Temple MQ": false,
+        "Spirit Temple Shared MQ": false,
+        "Spirit Temple Lobby": false,
+        "Child Spirit Temple": false,
+        "Child Spirit Before Locked Door": false,
+        "Child Spirit Temple Climb": false,
+        "Early Adult Spirit Temple": false,
+        "Spirit Temple Central Chamber": false,
+        "Spirit Temple Outdoor Hands": false,
+        "Spirit Temple Beyond Central Locked Door": false,
+        "Water Temple Lobby MQ": false,
+        "Water Temple Dive MQ": false,
+        "Water Temple Dark Link Region MQ": false,
+        "Water Temple Lobby": false,
+        "Water Temple Highest Water Level": false,
+        "Water Temple Dive": false,
+        "Water Temple Middle Water Level": false,
+        "Water Temple Falling Platform Room": false,
+        "Water Temple Dark Link Region": false
+    },
+    "subRegions": {
+        "Kokiri Bridge Gateway:In": {
+            "Bridge Kokiri Gateway:Out": false
+        },
+        "Kokiri Bridge Gateway:Out": {
+            "Kokiri Forest": false
+        },
+        "Kokiri Woods Gateway:In": {
+            "Woods Kokiri Gateway:Out": false
+        },
+        "Kokiri Woods Gateway:Out": {
+            "Kokiri Forest": false
+        },
+        "GC Woods Gateway:In": {
+            "Woods GC Gateway:Out": false
+        },
+        "GC Woods Gateway:Out": {
+            "GC Woods Warp": false
+        },
+        "River Woods Gateway:In": {
+            "Woods River Gateway:Out": false
+        },
+        "River Woods Gateway:Out": {
+            "Zora River": false
+        },
+        "Meadow Woods Gateway:In": {
+            "Woods Meadow Gateway:Out": false
+        },
+        "Meadow Woods Gateway:Out": {
+            "SFM Entryway": false
+        },
+        "Field Woods Gateway:In": {
+            "Woods Field Gateway:Out": false
+        },
+        "Field Woods Gateway:Out": {
+            "Hyrule Field": false
+        },
+        "Lake Field Gateway:In": {
+            "Field Lake Gateway:Out": false
+        },
+        "Lake Field Gateway:Out": {
+            "Lake Hylia": false
+        },
+        "Valley Field Gateway:In": {
+            "Field Valley Gateway:Out": false
+        },
+        "Valley Field Gateway:Out": {
+            "Gerudo Valley": false
+        },
+        "MarketEntrance Field Gateway:In": {
+            "Field MarketEntrance Gateway:Out": false
+        },
+        "MarketEntrance Field Gateway:Out": {
+            "Market Entrance": false
+        },
+        "Kakariko Field Gateway:In": {
+            "Field Kakariko Gateway:Out": false
+        },
+        "Kakariko Field Gateway:Out": {
+            "Kakariko Village": false
+        },
+        "River Field Gateway:In": {
+            "Field River Gateway:Out": false
+        },
+        "River Field Gateway:Out": {
+            "ZR Front": false
+        },
+        "Ranch Field Gateway:In": {
+            "Field Ranch Gateway:Out": false
+        },
+        "Ranch Field Gateway:Out": {
+            "Lon Lon Ranch": false
+        },
+        "Domain Lake Gateway:In": {
+            "Lake Domain Gateway:Out": false
+        },
+        "Domain Lake Gateway:Out": {
+            "Zoras Domain": false
+        },
+        "Valley Fortress Gateway:In": {
+            "Fortress Valley Gateway:Out": false
+        },
+        "Valley Fortress Gateway:Out": {
+            "GV Fortress Side": false
+        },
+        "Wasteland Fortress Gateway:In": {
+            "Fortress Wasteland Gateway:Out": false
+        },
+        "Wasteland Fortress Gateway:Out": {
+            "Wasteland Near Fortress": false
+        },
+        "Wasteland Colossus Gateway:In": {
+            "Colossus Wasteland Gateway:Out": false
+        },
+        "Wasteland Colossus Gateway:Out": {
+            "Wasteland Near Colossus": false
+        },
+        "MarketEntrance Market Gateway:In": {
+            "Market MarketEntrance Gateway:Out": false
+        },
+        "MarketEntrance Market Gateway:Out": {
+            "Market Entrance": false
+        },
+        "Grounds Market Gateway:In": {
+            "Market Grounds Gateway:Out": false
+        },
+        "Grounds Market Gateway:Out": {
+            "Castle Grounds": false
+        },
+        "ToT Market Gateway:In": {
+            "Market ToT Gateway:Out": false
+        },
+        "ToT Market Gateway:Out": {
+            "ToT Entrance": false
+        },
+        "Graveyard Kakariko Gateway:In": {
+            "Kakariko Graveyard Gateway:Out": false
+        },
+        "Graveyard Kakariko Gateway:Out": {
+            "Graveyard": false
+        },
+        "Mountain Kakariko Gateway:In": {
+            "Kakariko Mountain Gateway:Out": false
+        },
+        "Mountain Kakariko Gateway:Out": {
+            "Death Mountain": false
+        },
+        "Mountain Goron Gateway:In": {
+            "Goron Mountain Gateway:Out": false
+        },
+        "Mountain Goron Gateway:Out": {
+            "Death Mountain": false
+        },
+        "Crater Goron Gateway:In": {
+            "Goron Crater Gateway:Out": false
+        },
+        "Crater Goron Gateway:Out": {
+            "DMC Lower Local": false
+        },
+        "Crater Mountain Gateway:In": {
+            "Mountain Crater Gateway:Out": false
+        },
+        "Crater Mountain Gateway:Out": {
+            "DMC Upper Local": false
+        },
+        "River Domain Gateway:In": {
+            "Domain River Gateway:Out": false
+        },
+        "River Domain Gateway:Out": {
+            "ZR Behind Waterfall": false
+        },
+        "Fountain Domain Gateway:In": {
+            "Domain Fountain Gateway:Out": false
+        },
+        "Fountain Domain Gateway:Out": {
+            "Zoras Fountain": false
+        },
+        "Bridge Kokiri Gateway:In": {
+            "Kokiri Bridge Gateway:Out": false
+        },
+        "Bridge Kokiri Gateway:Out": {
+            "LW Bridge From Forest": false
+        },
+        "Woods Kokiri Gateway:In": {
+            "Kokiri Woods Gateway:Out": false
+        },
+        "Woods Kokiri Gateway:Out": {
+            "Lost Woods": false
+        },
+        "Woods GC Gateway:In": {
+            "GC Woods Gateway:Out": false
+        },
+        "Woods GC Gateway:Out": {
+            "Lost Woods": false
+        },
+        "Woods River Gateway:In": {
+            "River Woods Gateway:Out": false
+        },
+        "Woods River Gateway:Out": {
+            "Lost Woods": false
+        },
+        "Woods Meadow Gateway:In": {
+            "Meadow Woods Gateway:Out": false
+        },
+        "Woods Meadow Gateway:Out": {
+            "LW Beyond Mido": false
+        },
+        "Woods Field Gateway:In": {
+            "Field Woods Gateway:Out": false
+        },
+        "Woods Field Gateway:Out": {
+            "LW Bridge": false
+        },
+        "Field Lake Gateway:In": {
+            "Lake Field Gateway:Out": false
+        },
+        "Field Lake Gateway:Out": {
+            "Hyrule Field": false
+        },
+        "Field Valley Gateway:In": {
+            "Valley Field Gateway:Out": false
+        },
+        "Field Valley Gateway:Out": {
+            "Hyrule Field": false
+        },
+        "Field MarketEntrance Gateway:In": {
+            "MarketEntrance Field Gateway:Out": false
+        },
+        "Field MarketEntrance Gateway:Out": {
+            "Hyrule Field": false
+        },
+        "Field Kakariko Gateway:In": {
+            "Kakariko Field Gateway:Out": false
+        },
+        "Field Kakariko Gateway:Out": {
+            "Hyrule Field": false
+        },
+        "Field River Gateway:In": {
+            "River Field Gateway:Out": false
+        },
+        "Field River Gateway:Out": {
+            "Hyrule Field": false
+        },
+        "Field Ranch Gateway:In": {
+            "Ranch Field Gateway:Out": false
+        },
+        "Field Ranch Gateway:Out": {
+            "Hyrule Field": false
+        },
+        "Lake Domain Gateway:In": {
+            "Domain Lake Gateway:Out": false
+        },
+        "Lake Domain Gateway:Out": {
+            "Lake Hylia": false
+        },
+        "Fortress Valley Gateway:In": {
+            "Valley Fortress Gateway:Out": false
+        },
+        "Fortress Valley Gateway:Out": {
+            "Gerudo Fortress": false
+        },
+        "Fortress Wasteland Gateway:In": {
+            "Wasteland Fortress Gateway:Out": false
+        },
+        "Fortress Wasteland Gateway:Out": {
+            "GF Outside Gate": false
+        },
+        "Colossus Wasteland Gateway:In": {
+            "Wasteland Colossus Gateway:Out": false
+        },
+        "Colossus Wasteland Gateway:Out": {
+            "Desert Colossus": false
+        },
+        "Market MarketEntrance Gateway:In": {
+            "MarketEntrance Market Gateway:Out": false
+        },
+        "Market MarketEntrance Gateway:Out": {
+            "Market": false
+        },
+        "Market Grounds Gateway:In": {
+            "Grounds Market Gateway:Out": false
+        },
+        "Market Grounds Gateway:Out": {
+            "Market": false
+        },
+        "Market ToT Gateway:In": {
+            "ToT Market Gateway:Out": false
+        },
+        "Market ToT Gateway:Out": {
+            "Market": false
+        },
+        "Kakariko Graveyard Gateway:In": {
+            "Graveyard Kakariko Gateway:Out": false
+        },
+        "Kakariko Graveyard Gateway:Out": {
+            "Kakariko Village": false
+        },
+        "Kakariko Mountain Gateway:In": {
+            "Mountain Kakariko Gateway:Out": false
+        },
+        "Kakariko Mountain Gateway:Out": {
+            "Kak Behind Gate": false
+        },
+        "Goron Mountain Gateway:In": {
+            "Mountain Goron Gateway:Out": false
+        },
+        "Goron Mountain Gateway:Out": {
+            "Goron City": false
+        },
+        "Goron Crater Gateway:In": {
+            "Crater Goron Gateway:Out": false
+        },
+        "Goron Crater Gateway:Out": {
+            "GC Darunias Chamber": false
+        },
+        "Mountain Crater Gateway:In": {
+            "Crater Mountain Gateway:Out": false
+        },
+        "Mountain Crater Gateway:Out": {
+            "Death Mountain Summit": false
+        },
+        "Domain River Gateway:In": {
+            "River Domain Gateway:Out": false
+        },
+        "Domain River Gateway:Out": {
+            "Zoras Domain": false
+        },
+        "Domain Fountain Gateway:In": {
+            "Fountain Domain Gateway:Out": false
+        },
+        "Domain Fountain Gateway:Out": {
+            "ZD Behind King Zora": false
+        },
+        "Valley Lake Gateway:In": {
+            "Lake Valley Gateway:Out": false
+        },
+        "Lake Valley Gateway:Out": {
+            "Lake Hylia": false
+        },
+        "Market Marketback Gateway:In": {
+            "Marketback Market Gateway:Out": false
+        },
+        "Market Marketback Gateway:Out": {
+            "Market": false
+        },
+        "Marketback Market Gateway:In": {
+            "Market Marketback Gateway:Out": false
+        },
+        "Marketback Market Gateway:Out": {
+            "Market Back Alley": false
+        },
+        "Kakariko Well Gateway:In": {
+            "Well Kakriko Gateway:Out": false
+        },
+        "Kakariko Well Gateway:Out": {
+            "Kakariko Village": false
+        },
+        "Well Kakriko Gateway:In": {
+            "Kakariko Well Gateway:Out": false
+        },
+        "Well Kakriko Gateway:Out": {
+            "Bottom of the Well": false,
+            "Bottom of the Well MQ": false
+        },
+        "Kokiri Deku Gateway:In": {
+            "Deku Kokiri Gateway:Out": false
+        },
+        "Kokiri Deku Gateway:Out": {
+            "KF Outside Deku Tree": false
+        },
+        "Deku Kokiri Gateway:In": {
+            "Kokiri Deku Gateway:Out": false
+        },
+        "Deku Kokiri Gateway:Out": {
+            "Deku Tree Lobby": false,
+            "Deku Tree Lobby MQ": false
+        },
+        "Mountain Dodongo Gateway:In": {
+            "Dodongo Mountain Gateway:Out": false
+        },
+        "Mountain Dodongo Gateway:Out": {
+            "Death Mountain": false
+        },
+        "Dodongo Mountain Gateway:In": {
+            "Mountain Dodongo Gateway:Out": false
+        },
+        "Dodongo Mountain Gateway:Out": {
+            "Dodongos Cavern Beginning": false,
+            "Dodongos Cavern Beginning MQ": false
+        },
+        "Fountain Jabu Gateway:In": {
+            "Jabu Fountain Gateway:Out": false
+        },
+        "Fountain Jabu Gateway:Out": {
+            "Zoras Fountain": false
+        },
+        "Jabu Fountain Gateway:In": {
+            "Fountain Jabu Gateway:Out": false
+        },
+        "Jabu Fountain Gateway:Out": {
+            "Jabu Jabus Belly Beginning": false,
+            "Jabu Jabus Belly Beginning MQ": false
+        },
+        "Fountain Ice Cavern Gateway:In": {
+            "Ice Cavern Fountain Gateway:Out": false
+        },
+        "Fountain Ice Cavern Gateway:Out": {
+            "ZF Ice Ledge": false
+        },
+        "Ice Cavern Fountain Gateway:In": {
+            "Fountain Ice Cavern Gateway:Out": false
+        },
+        "Ice Cavern Fountain Gateway:Out": {
+            "Ice Cavern Beginning": false,
+            "Ice Cavern Beginning MQ": false
+        },
+        "Fortress Training Grounds Gateway:In": {
+            "Training Grounds Fortress Gateway:Out": false
+        },
+        "Fortress Training Grounds Gateway:Out": {
+            "Gerudo Fortress": false
+        },
+        "Training Grounds Fortress Gateway:In": {
+            "Fortress Training Grounds Gateway:Out": false
+        },
+        "Training Grounds Fortress Gateway:Out": {
+            "Gerudo Training Ground Lobby": false,
+            "Gerudo Training Ground Lobby MQ": false
+        },
+        "Meadow Forest Temple Gateway:In": {
+            "Forest Temple Meadow Gateway:Out": false
+        },
+        "Meadow Forest Temple Gateway:Out": {
+            "SFM Forest Temple Entrance Ledge": false
+        },
+        "Forest Temple Meadow Gateway:In": {
+            "Meadow Forest Temple Gateway:Out": false
+        },
+        "Forest Temple Meadow Gateway:Out": {
+            "Forest Temple Lobby": false,
+            "Forest Temple Lobby MQ": false
+        },
+        "Crater Fire Temple Gateway:In": {
+            "Fire Temple Crater Gateway:Out": false
+        },
+        "Crater Fire Temple Gateway:Out": {
+            "DMC Fire Temple Entrance": false
+        },
+        "Fire Temple Crater Gateway:In": {
+            "Crater Fire Temple Gateway:Out": false
+        },
+        "Fire Temple Crater Gateway:Out": {
+            "Fire Temple Lower": false,
+            "Fire Temple Lower MQ": false
+        },
+        "Lake Water Temple Gateway:In": {
+            "Water Temple Lake Gateway:Out": false
+        },
+        "Lake Water Temple Gateway:Out": {
+            "Lake Hylia": false
+        },
+        "Water Temple Lake Gateway:In": {
+            "Lake Water Temple Gateway:Out": false
+        },
+        "Water Temple Lake Gateway:Out": {
+            "Water Temple Lobby": false,
+            "Water Temple Lobby MQ": false
+        },
+        "Graveyard Shadow Temple Gateway:In": {
+            "Shadow Temple Graveyard Gateway:Out": false
+        },
+        "Graveyard Shadow Temple Gateway:Out": {
+            "Graveyard Warp Pad Region": false
+        },
+        "Shadow Temple Graveyard Gateway:In": {
+            "Graveyard Shadow Temple Gateway:Out": false
+        },
+        "Shadow Temple Graveyard Gateway:Out": {
+            "Shadow Temple Entryway": false,
+            "Shadow Temple Entryway MQ": false
+        },
+        "Colossus Spirit Temple Gateway:In": {
+            "Spirit Temple Colossus Gateway:Out": false
+        },
+        "Colossus Spirit Temple Gateway:Out": {
+            "Desert Colossus From Spirit Lobby": false
+        },
+        "Spirit Temple Colossus Gateway:In": {
+            "Colossus Spirit Temple Gateway:Out": false
+        },
+        "Spirit Temple Colossus Gateway:Out": {
+            "Spirit Temple Lobby": false,
+            "Spirit Temple Lobby MQ": false
+        },
+        "Castle Grounds Ganons Castle Gateway:In": {
+            "Ganons Castle Castle Grounds Gateway:Out": false
+        },
+        "Castle Grounds Ganons Castle Gateway:Out": {
+            "Ganons Castle Grounds": false
+        },
+        "Ganons Castle Castle Grounds Gateway:In": {
+            "Castle Grounds Ganons Castle Gateway:Out": false
+        },
+        "Ganons Castle Castle Grounds Gateway:Out": {
+            "Ganons Castle Lobby": false,
+            "Ganons Castle Lobby MQ": false
+        },
+        "Field Tektite Grotto Gateway:In": {
+            "Tektite Grotto Field Gateway:Out": false
+        },
+        "Field Tektite Grotto Gateway:Out": {
+            "Hyrule Field": false
+        },
+        "Tektite Grotto Field Gateway:In": {
+            "Field Tektite Grotto Gateway:Out": false
+        },
+        "Tektite Grotto Field Gateway:Out": {
+            "HF Tektite Grotto": false
+        },
+        "Field Near Kak Grotto Gateway:In": {
+            "Near Kak Grotto Field Gateway:Out": false
+        },
+        "Field Near Kak Grotto Gateway:Out": {
+            "Hyrule Field": false
+        },
+        "Near Kak Grotto Field Gateway:In": {
+            "Field Near Kak Grotto Gateway:Out": false
+        },
+        "Near Kak Grotto Field Gateway:Out": {
+            "HF Near Kak Grotto": false
+        },
+        "Field Fairy Grotto Gateway:In": {
+            "Fairy Grotto Field Gateway:Out": false
+        },
+        "Field Fairy Grotto Gateway:Out": {
+            "Hyrule Field": false
+        },
+        "Fairy Grotto Field Gateway:In": {
+            "Grotto Field Fairy Gateway:Out": false
+        },
+        "Fairy Grotto Field Gateway:Out": {
+            "HF Fairy Grotto": false
+        },
+        "Field Near Market Grotto Gateway:In": {
+            "Near Market Grotto Field Gateway:Out": false
+        },
+        "Field Near Market Grotto Gateway:Out": {
+            "Hyrule Field": false
+        },
+        "Near Market Grotto Field Gateway:In": {
+            "Field Near Market Grotto Gateway:Out": false
+        },
+        "Near Market Grotto Field Gateway:Out": {
+            "HF Near Market Grotto": false
+        },
+        "Field Cow Grotto Gateway:In": {
+            "Cow Grotto Field Gateway:Out": false
+        },
+        "Field Cow Grotto Gateway:Out": {
+            "Hyrule Field": false
+        },
+        "Cow Grotto Field Gateway:In": {
+            "Field Cow Grotto Gateway:Out": false
+        },
+        "Cow Grotto Field Gateway:Out": {
+            "HF Cow Grotto": false
+        },
+        "Field Inside Fence Grotto Gateway:In": {
+            "Inside Fence Grotto Field Gateway:Out": false
+        },
+        "Field Inside Fence Grotto Gateway:Out": {
+            "Hyrule Field": false
+        },
+        "Inside Fence Grotto Field Gateway:In": {
+            "Field Inside Fence Grotto Gateway:Out": false
+        },
+        "Inside Fence Grotto Field Gateway:Out": {
+            "HF Inside Fence Grotto": false
+        },
+        "Field Open Grotto Gateway:In": {
+            "Open Grotto Field Gateway:Out": false
+        },
+        "Field Open Grotto Gateway:Out": {
+            "Hyrule Field": false
+        },
+        "Open Grotto Field Gateway:In": {
+            "Field Open Grotto Gateway:Out": false
+        },
+        "Open Grotto Field Gateway:Out": {
+            "HF Open Grotto": false
+        },
+        "Field Southeast Grotto Gateway:In": {
+            "Southeast Grotto Field Gateway:Out": false
+        },
+        "Field Southeast Grotto Gateway:Out": {
+            "Hyrule Field": false
+        },
+        "Southeast Grotto Field Gateway:In": {
+            "Field Southeast Grotto Gateway:Out": false
+        },
+        "Southeast Grotto Field Gateway:Out": {
+            "HF Southeast Grotto": false
+        },
+        "Kokiri Storms Grotto Gateway:In": {
+            "Storms Grotto Kokiri Gateway:Out": false
+        },
+        "Kokiri Storms Grotto Gateway:Out": {
+            "Kokiri Forest": false
+        },
+        "Storms Grotto Kokiri Gateway:In": {
+            "Kokiri Storms Grotto Gateway:Out": false
+        },
+        "Storms Grotto Kokiri Gateway:Out": {
+            "KF Storms Grotto": false
+        },
+        "Woods Near Shortcuts Grotto Gateway:In": {
+            "Near Shortcuts Grotto Woods Gateway:Out": false
+        },
+        "Woods Near Shortcuts Grotto Gateway:Out": {
+            "Lost Woods": false
+        },
+        "Near Shortcuts Grotto Woods Gateway:In": {
+            "Woods Near Shortcuts Grotto Gateway:Out": false
+        },
+        "Near Shortcuts Grotto Woods Gateway:Out": {
+            "LW Near Shortcuts Grotto": false
+        },
+        "Woods Scrubs Grotto Gateway:In": {
+            "Scrubs Grotto Woods Gateway:Out": false
+        },
+        "Woods Scrubs Grotto Gateway:Out": {
+            "LW Beyond Mido": false
+        },
+        "Scrubs Grotto Woods Gateway:In": {
+            "Woods Scrubs Grotto Gateway:Out": false
+        },
+        "Scrubs Grotto Woods Gateway:Out": {
+            "LW Scrubs Grotto": false
+        },
+        "Woods Deku Theater Gateway:In": {
+            "Deku Theater Woods Gateway:Out": false
+        },
+        "Woods Deku Theater Gateway:Out": {
+            "LW Beyond Mido": false
+        },
+        "Deku Theater Woods Gateway:In": {
+            "Woods Deku Theater Gateway:Out": false
+        },
+        "Deku Theater Woods Gateway:Out": {
+            "Deku Theater": false
+        },
+        "Meadow Wolfos Grotto Gateway:In": {
+            "Wolfos Grotto Meadow Gateway:Out": false
+        },
+        "Meadow Wolfos Grotto Gateway:Out": {
+            "SFM Entryway": false
+        },
+        "Wolfos Grotto Meadow Gateway:In": {
+            "Meadow Wolfos Grotto Gateway:Out": false
+        },
+        "Wolfos Grotto Meadow Gateway:Out": {
+            "SFM Wolfos Grotto": false
+        },
+        "Meadow Storms Grotto Gateway:In": {
+            "Storms Grotto Meadow Gateway:Out": false
+        },
+        "Meadow Storms Grotto Gateway:Out": {
+            "Sacred Forest Meadow": false
+        },
+        "Storms Grotto Meadow Gateway:In": {
+            "Meadow Storms Grotto Gateway:Out": false
+        },
+        "Storms Grotto Meadow Gateway:Out": {
+            "SFM Storms Grotto": false
+        },
+        "Meadow Fairy Grotto Gateway:In": {
+            "Fairy Grotto Meadow Gateway:Out": false
+        },
+        "Meadow Fairy Grotto Gateway:Out": {
+            "Sacred Forest Meadow": false
+        },
+        "Fairy Grotto Meadow Gateway:In": {
+            "Meadow Fairy Grotto Gateway:Out": false
+        },
+        "Fairy Grotto Meadow Gateway:Out": {
+            "SFM Fairy Grotto": false
+        },
+        "Ranch Grotto Gateway:In": {
+            "Grotto Ranch Gateway:Out": false
+        },
+        "Ranch Grotto Gateway:Out": {
+            "Lon Lon Ranch": false
+        },
+        "Grotto Ranch Gateway:In": {
+            "Ranch Grotto Gateway:Out": false
+        },
+        "Grotto Ranch Gateway:Out": {
+            "LLR Grotto": false
+        },
+        "Grounds Storms Grotto Gateway:In": {
+            "Storms Grotto Grounds Gateway:Out": false
+        },
+        "Grounds Storms Grotto Gateway:Out": {
+            "Hyrule Castle Grounds": false
+        },
+        "Storms Grotto Grounds Gateway:In": {
+            "Grounds Storms Grotto Gateway:Out": false
+        },
+        "Storms Grotto Grounds Gateway:Out": {
+            "HC Storms Grotto": false
+        },
+        "Kakariko Open Grotto Gateway:In": {
+            "Open Grotto Kakariko Gateway:Out": false
+        },
+        "Kakariko Open Grotto Gateway:Out": {
+            "Kak Backyard": false
+        },
+        "Open Grotto Kakariko Gateway:In": {
+            "Kakariko Open Grotto Gateway:Out": false
+        },
+        "Open Grotto Kakariko Gateway:Out": {
+            "Kak Open Grotto": false
+        },
+        "Kakariko Redead Grotto Gateway:In": {
+            "Redead Grotto Kakariko Gateway:Out": false,
+            "Kakariko Redead Grotto Gateway:Out": false
+        },
+        "Kakariko Redead Grotto Gateway:Out": {
+            "Kakariko Village": false,
+            "Kak Redead Grotto": false
+        },
+        "Graveyard Shield Grave Gateway:In": {
+            "Shield Grave Graveyard Gateway:Out": false
+        },
+        "Graveyard Shield Grave Gateway:Out": {
+            "Graveyard": false
+        },
+        "Shield Grave Graveyard Gateway:In": {
+            "Graveyard Shield Grave Gateway:Out": false
+        },
+        "Shield Grave Graveyard Gateway:Out": {
+            "Graveyard Shield Grave": false
+        },
+        "Graveyard Redead Grave Gateway:In": {
+            "Redead Grave Graveyard Gateway:Out": false
+        },
+        "Graveyard Redead Grave Gateway:Out": {
+            "Graveyard": false
+        },
+        "Redead Grave Graveyard Gateway:In": {
+            "Graveyard Redead Grave Gateway:Out": false
+        },
+        "Redead Grave Graveyard Gateway:Out": {
+            "Graveyard Heart Piece Grave": false
+        },
+        "Graveyard Composers Grave Gateway:In": {
+            "Composers Grave Graveyard Gateway:Out": false
+        },
+        "Graveyard Composers Grave Gateway:Out": {
+            "Graveyard": false
+        },
+        "Composers Grave Graveyard Gateway:In": {
+            "Graveyard Composers Grave Gateway:Out": false
+        },
+        "Composers Grave Graveyard Gateway:Out": {
+            "Graveyard Royal Familys Tomb": false
+        },
+        "Graveyard Dampes Grave Gateway:In": {
+            "Dampes Grave Graveyard Gateway:Out": false
+        },
+        "Graveyard Dampes Grave Gateway:Out": {
+            "Graveyard": false
+        },
+        "Dampes Grave Graveyard Gateway:In": {
+            "Graveyard Dampes Grave Gateway:Out": false
+        },
+        "Dampes Grave Graveyard Gateway:Out": {
+            "Graveyard Dampes Grave": false
+        },
+        "Mountain Storms Grotto Gateway:In": {
+            "Storms Grotto Mountain Gateway:Out": false
+        },
+        "Mountain Storms Grotto Gateway:Out": {
+            "Death Mountain": false
+        },
+        "Storms Grotto Mountain Gateway:In": {
+            "Mountain Storms Grotto Gateway:Out": false
+        },
+        "Storms Grotto Mountain Gateway:Out": {
+            "DMT Storms Grotto": false
+        },
+        "Mountain Cow Grotto Gateway:In": {
+            "Cow Grotto Mountain Gateway:Out": false
+        },
+        "Mountain Cow Grotto Gateway:Out": {
+            "Death Mountain Summit": false
+        },
+        "Cow Grotto Mountain Gateway:In": {
+            "Mountain Cow Grotto Gateway:Out": false
+        },
+        "Cow Grotto Mountain Gateway:Out": {
+            "DMT Cow Grotto": false
+        },
+        "Crater Hammer Grotto Gateway:In": {
+            "Hammer Grotto Crater Gateway:Out": false
+        },
+        "Crater Hammer Grotto Gateway:Out": {
+            "DMC Lower Nearby": false
+        },
+        "Hammer Grotto Crater Gateway:In": {
+            "Crater Hammer Grotto Gateway:Out": false
+        },
+        "Hammer Grotto Crater Gateway:Out": {
+            "DMC Hammer Grotto": false
+        },
+        "Crater Upper Grotto Gateway:In": {
+            "Upper Grotto Crater Gateway:Out": false
+        },
+        "Crater Upper Grotto Gateway:Out": {
+            "DMC Upper Nearby": false
+        },
+        "Upper Grotto Crater Gateway:In": {
+            "Crater Upper Grotto Gateway:Out": false
+        },
+        "Upper Grotto Crater Gateway:Out": {
+            "DMC Upper Grotto": false
+        },
+        "Goron Grotto Gateway:In": {
+            "Grotto Goron Gateway:Out": false
+        },
+        "Goron Grotto Gateway:Out": {
+            "GC Grotto Platform": false
+        },
+        "Grotto Goron Gateway:In": {
+            "Goron Grotto Gateway:Out": false
+        },
+        "Grotto Goron Gateway:Out": {
+            "GC Grotto": false
+        },
+        "River Storms Grotto Gateway:In": {
+            "Storms Grotto River Gateway:Out": false
+        },
+        "River Storms Grotto Gateway:Out": {
+            "Zora River": false
+        },
+        "Storms Grotto River Gateway:In": {
+            "River Storms Grotto Gateway:Out": false
+        },
+        "Storms Grotto River Gateway:Out": {
+            "ZR Storms Grotto": false
+        },
+        "River Fairy Grotto Gateway:In": {
+            "Fairy Grotto River Gateway:Out": false
+        },
+        "River Fairy Grotto Gateway:Out": {
+            "Zora River": false
+        },
+        "Fairy Grotto River Gateway:In": {
+            "River Fairy Grotto Gateway:Out": false
+        },
+        "Fairy Grotto River Gateway:Out": {
+            "ZR Fairy Grotto": false
+        },
+        "River Open Grotto Gateway:In": {
+            "Open Grotto River Gateway:Out": false
+        },
+        "River Open Grotto Gateway:Out": {
+            "Zora River": false
+        },
+        "Open Grotto River Gateway:In": {
+            "River Open Grotto Gateway:Out": false
+        },
+        "Open Grotto River Gateway:Out": {
+            "ZR Open Grotto": false
+        },
+        "Domain Storms Grotto Gateway:In": {
+            "Storms Grotto Domain Gateway:Out": false
+        },
+        "Domain Storms Grotto Gateway:Out": {
+            "Zoras Domain": false
+        },
+        "Storms Grotto Domain Gateway:In": {
+            "Domain Storms Grotto Gateway:Out": false
+        },
+        "Storms Grotto Domain Gateway:Out": {
+            "ZD Storms Grotto": false
+        },
+        "Lake Grotto Gateway:In": {
+            "Grotto Lake Gateway:Out": false
+        },
+        "Lake Grotto Gateway:Out": {
+            "Lake Hylia": false
+        },
+        "Grotto Lake Gateway:In": {
+            "Lake Grotto Gateway:Out": false
+        },
+        "Grotto Lake Gateway:Out": {
+            "LH Grotto": false
+        },
+        "Valley Storms Grotto Gateway:In": {
+            "Storms Grotto Valley Gateway:Out": false
+        },
+        "Valley Storms Grotto Gateway:Out": {
+            "GV Fortress Side": false
+        },
+        "Storms Grotto Valley Gateway:In": {
+            "Valley Storms Grotto Gateway:Out": false
+        },
+        "Storms Grotto Valley Gateway:Out": {
+            "GV Storms Grotto": false
+        },
+        "Valley Octorok Grotto Gateway:In": {
+            "Octorok Grotto Valley Gateway:Out": false
+        },
+        "Valley Octorok Grotto Gateway:Out": {
+            "GV Grotto Ledge": false
+        },
+        "Octorok Grotto Valley Gateway:In": {
+            "Valley Octorok Grotto Gateway:Out": false
+        },
+        "Octorok Grotto Valley Gateway:Out": {
+            "GV Octorok Grotto": false
+        },
+        "Fortress Storms Grotto Gateway:In": {
+            "Fortress Storms Grotto Gateway:Out": false
+        },
+        "Fortress Storms Grotto Gateway:Out": {
+            "Gerudo Fortress": false,
+            "GF Storms Grotto": false
+        },
+        "Colossus Grotto Gateway:In": {
+            "Grotto Colossus Gateway:Out": false
+        },
+        "Colossus Grotto Gateway:Out": {
+            "Desert Colossus": false
+        },
+        "Grotto Colossus Gateway:In": {
+            "Colossus Grotto Gateway:Out": false
+        },
+        "Grotto Colossus Gateway:Out": {
+            "Colossus Grotto": false
+        },
+        "Kokiri Midos House Gateway:In": {
+            "Midos Kokiri House Gateway:Out": false
+        },
+        "Kokiri Midos House Gateway:Out": {
+            "Kokiri Forest": false
+        },
+        "Midos House Kokiri Gateway:In": {
+            "Kokiri Midos House Gateway:Out": false
+        },
+        "Midos House Kokiri Gateway:Out": {
+            "KF Midos House": false
+        },
+        "Kokiri Sarias House Gateway:In": {
+            "Sarias House Kokiri Gateway:Out": false
+        },
+        "Kokiri Sarias House Gateway:Out": {
+            "Kokiri Forest": false
+        },
+        "Sarias House Kokiri Gateway:In": {
+            "Kokiri Sarias House Gateway:Out": false
+        },
+        "Sarias House Kokiri Gateway:Out": {
+            "KF Sarias House": false
+        },
+        "Kokiri House of Twins Gateway:In": {
+            "House of Twins Kokiri Gateway:Out": false
+        },
+        "Kokiri House of Twins Gateway:Out": {
+            "Kokiri Forest": false
+        },
+        "House of Twins Kokiri Gateway:In": {
+            "Kokiri House of Twins Gateway:Out": false
+        },
+        "House of Twins Kokiri Gateway:Out": {
+            "KF House of Twins": false
+        },
+        "Kokiri Know It All House Gateway:In": {
+            "Know It All House Kokiri Gateway:Out": false
+        },
+        "Kokiri Know It All House Gateway:Out": {
+            "Kokiri Forest": false
+        },
+        "Know It All House Kokiri Gateway:In": {
+            "Kokiri Know It All House Gateway:Out": false
+        },
+        "Know It All House Kokiri Gateway:Out": {
+            "KF Know It All House": false
+        },
+        "Kokiri Kokiri Shop Gateway:In": {
+            "Kokiri Shop Kokiri Gateway:Out": false
+        },
+        "Kokiri Kokiri Shop Gateway:Out": {
+            "Kokiri Forest": false
+        },
+        "Kokiri Shop Kokiri Gateway:In": {
+            "Kokiri Kokiri Shop Gateway:Out": false
+        },
+        "Kokiri Shop Kokiri Gateway:Out": {
+            "KF Kokiri Shop": false
+        },
+        "Kokiri Links House Gateway:In": {
+            "Links House Kokiri Gateway:Out": false
+        },
+        "Kokiri Links House Gateway:Out": {
+            "Kokiri Forest": false
+        },
+        "Links House Kokiri Gateway:In": {
+            "Kokiri Links House Gateway:Out": false
+        },
+        "Links House Kokiri Gateway:Out": {
+            "KF Links House": false
+        },
+        "Market Guard House Gateway:In": {
+            "Guard House Market Gateway:Out": false
+        },
+        "Market Guard House Gateway:Out": {
+            "Market Entrance": false
+        },
+        "Guard House Market Gateway:In": {
+            "Market Guard House Gateway:Out": false
+        },
+        "Guard House Market Gateway:Out": {
+            "Market Guard House": false
+        },
+        "Market Mask Shop Gateway:In": {
+            "Mask Shop Market Gateway:Out": false
+        },
+        "Market Mask Shop Gateway:Out": {
+            "Market": false
+        },
+        "Mask Shop Market Gateway:In": {
+            "Market Mask Shop Gateway:Out": false
+        },
+        "Mask Shop Market Gateway:Out": {
+            "Market Mask Shop": false
+        },
+        "Market Bombchu Bowling Gateway:In": {
+            "Bombchu Bowling Market Gateway:Out": false
+        },
+        "Market Bombchu Bowling Gateway:Out": {
+            "Market": false
+        },
+        "Bombchu Bowling Market Gateway:In": {
+            "Market Bombchu Bowling Gateway:Out": false
+        },
+        "Bombchu Bowling Market Gateway:Out": {
+            "Market Bombchu Bowling": false
+        },
+        "Market Potion Shop Gateway:In": {
+            "Potion Shop Market Gateway:Out": false
+        },
+        "Market Potion Shop Gateway:Out": {
+            "Market": false
+        },
+        "Potion Shop Market Gateway:In": {
+            "Market Potion Shop Gateway:Out": false
+        },
+        "Potion Shop Market Gateway:Out": {
+            "Market Potion Shop": false
+        },
+        "Market Treasure Chest Game Gateway:In": {
+            "Treasure Chest Game Market Gateway:Out": false
+        },
+        "Market Treasure Chest Game Gateway:Out": {
+            "Market": false
+        },
+        "Treasure Chest Game Market Gateway:In": {
+            "Market Treasure Chest Game Gateway:Out": false
+        },
+        "Treasure Chest Game Market Gateway:Out": {
+            "Market Treasure Chest Game": false
+        },
+        "Market Bombchu Shop Gateway:In": {
+            "Bombchu Shop Market Gateway:Out": false
+        },
+        "Market Bombchu Shop Gateway:Out": {
+            "Market Back Alley": false
+        },
+        "Bombchu Shop Market Gateway:In": {
+            "Market Bombchu Shop Gateway:Out": false
+        },
+        "Bombchu Shop Market Gateway:Out": {
+            "Market Bombchu Shop": false
+        },
+        "Market Back House Gateway:In": {
+            "Back House Market Gateway:Out": false
+        },
+        "Market Back House Gateway:Out": {
+            "Market Back Alley": false
+        },
+        "Back House Market Gateway:In": {
+            "Market Back House Gateway:Out": false
+        },
+        "Back House Market Gateway:Out": {
+            "Market Man in Green House": false
+        },
+        "Market Bazaar Gateway:In": {
+            "Bazaar Market Gateway:Out": false
+        },
+        "Market Bazaar Gateway:Out": {
+            "Market": false
+        },
+        "Bazaar Market Gateway:In": {
+            "Market Bazaar Gateway:Out": false
+        },
+        "Bazaar Market Gateway:Out": {
+            "Market Bazaar": false
+        },
+        "Market Shooting Gallery Gateway:In": {
+            "Shooting Gallery Market Gateway:Out": false
+        },
+        "Market Shooting Gallery Gateway:Out": {
+            "Market": false
+        },
+        "Shooting Gallery Market Gateway:In": {
+            "Market Shooting Gallery Gateway:Out": false
+        },
+        "Shooting Gallery Market Gateway:Out": {
+            "Market Shooting Gallery": false
+        },
+        "Ranch Talons House Gateway:In": {
+            "Talons House Ranch Gateway:Out": false
+        },
+        "Ranch Talons House Gateway:Out": {
+            "Lon Lon Ranch": false
+        },
+        "Talons House Ranch Gateway:In": {
+            "Ranch Talons House Gateway:Out": false
+        },
+        "Talons House Ranch Gateway:Out": {
+            "LLR Talons House": false
+        },
+        "Ranch Stables Gateway:In": {
+            "Stables Ranch Gateway:Out": false
+        },
+        "Ranch Stables Gateway:Out": {
+            "Lon Lon Ranch": false
+        },
+        "Stables Ranch Gateway:In": {
+            "Ranch Stables Gateway:Out": false
+        },
+        "Stables Ranch Gateway:Out": {
+            "LLR Stables": false
+        },
+        "Ranch Tower Gateway:In": {
+            "Tower Ranch Gateway:Out": false
+        },
+        "Ranch Tower Gateway:Out": {
+            "Lon Lon Ranch": false
+        },
+        "Tower Ranch Gateway:In": {
+            "Ranch Tower Gateway:Out": false
+        },
+        "Tower Ranch Gateway:Out": {
+            "LLR Tower": false
+        },
+        "Grounds Great Fairy Gateway:In": {
+            "Great Fairy Grounds Gateway:Out": false
+        },
+        "Grounds Great Fairy Gateway:Out": {
+            "Hyrule Castle Grounds": false
+        },
+        "Great Fairy Grounds Gateway:In": {
+            "Grounds Great Fairy Gateway:Out": false
+        },
+        "Great Fairy Grounds Gateway:Out": {
+            "HC Great Fairy Fountain": false
+        },
+        "Ganon Grounds Great Fairy Gateway:In": {
+            "Great Fairy Ganon Grounds Gateway:Out": false
+        },
+        "Ganon Grounds Great Fairy Gateway:Out": {
+            "OGC Great Fairy Fountain": false
+        },
+        "Great Fairy Ganon Grounds Gateway:In": {
+            "Ganon Grounds Great Fairy Gateway:Out": false
+        },
+        "Great Fairy Ganon Grounds Gateway:Out": {
+            "Ganons Castle Grounds": false
+        },
+        "Kakariko Carpenter House Gateway:In": {
+            "Carpenter House Kakariko Gateway:Out": false
+        },
+        "Kakariko Carpenter House Gateway:Out": {
+            "Kakariko Village": false
+        },
+        "Carpenter House Kakariko Gateway:In": {
+            "Kakariko Carpenter House Gateway:Out": false
+        },
+        "Carpenter House Kakariko Gateway:Out": {
+            "Kak Carpenter Boss House": false
+        },
+        "Kakariko Skulltula House Gateway:In": {
+            "Skulltula House Kakariko Gateway:Out": false
+        },
+        "Kakariko Skulltula House Gateway:Out": {
+            "Kakariko Village": false
+        },
+        "Skulltula House Kakariko Gateway:In": {
+            "Kakariko Skulltula House Gateway:Out": false
+        },
+        "Skulltula House Kakariko Gateway:Out": {
+            "Kak House of Skulltula": false
+        },
+        "Kakariko Impas House Gateway:In": {
+            "Impas House Kakariko Gateway:Out": false
+        },
+        "Kakariko Impas House Gateway:Out": {
+            "Kakariko Village": false
+        },
+        "Impas House Kakariko Gateway:In": {
+            "Kakariko Impas House Gateway:Out": false
+        },
+        "Impas House Kakariko Gateway:Out": {
+            "Kak Impas House": false
+        },
+        "Kakariko Impas Back Gateway:In": {
+            "Impas Back Kakariko Gateway:Out": false
+        },
+        "Kakariko Impas Back Gateway:Out": {
+            "Kak Impas Ledge": false
+        },
+        "Impas Back Kakariko Gateway:In": {
+            "Kakariko Impas Back Gateway:Out": false
+        },
+        "Impas Back Kakariko Gateway:Out": {
+            "Kak Impas House Back": false
+        },
+        "Kakariko Medicine Building Gateway:In": {
+            "Medicine Building Kakariko Gateway:Out": false
+        },
+        "Kakariko Medicine Building Gateway:Out": {
+            "Kak Backyard": false
+        },
+        "Medicine Building Kakariko Gateway:In": {
+            "Kakariko Medicine Building Gateway:Out": false
+        },
+        "Medicine Building Kakariko Gateway:Out": {
+            "Kak Odd Medicine Building": false
+        },
+        "Kakariko Bazaar Gateway:In": {
+            "Bazaar Kakariko Gateway:Out": false
+        },
+        "Kakariko Bazaar Gateway:Out": {
+            "Kakariko Village": false
+        },
+        "Bazaar Kakariko Gateway:In": {
+            "Kakariko Bazaar Gateway:Out": false
+        },
+        "Bazaar Kakariko Gateway:Out": {
+            "Kak Bazaar": false
+        },
+        "Kakariko Shooting Gallery Gateway:In": {
+            "Shooting Gallery Kakariko Gateway:Out": false
+        },
+        "Kakariko Shooting Gallery Gateway:Out": {
+            "Kakariko Village": false
+        },
+        "Shooting Gallery Kakariko Gateway:In": {
+            "Kakariko Shooting Gallery Gateway:Out": false
+        },
+        "Shooting Gallery Kakariko Gateway:Out": {
+            "Kak Shooting Gallery": false
+        },
+        "Kakariko Windmill Gateway:In": {
+            "Windmill Kakariko Gateway:Out": false
+        },
+        "Kakariko Windmill Gateway:Out": {
+            "Kakariko Village": false
+        },
+        "Windmill Kakariko Gateway:In": {
+            "Kakariko Windmill Gateway:Out": false
+        },
+        "Windmill Kakariko Gateway:Out": {
+            "Kak Windmill": false
+        },
+        "Kakariko Potion Shop Gateway:In": {
+            "Potion Shop Kakariko Gateway:Out": false
+        },
+        "Kakariko Potion Shop Gateway:Out": {
+            "Kakariko Village": false
+        },
+        "Potion Shop Kakariko Gateway:In": {
+            "Kakariko Potion Shop Gateway:Out": false
+        },
+        "Potion Shop Kakariko Gateway:Out": {
+            "Kak Potion Shop Front": false
+        },
+        "Kakariko Potion Back Gateway:In": {
+            "Potion Back Kakariko Gateway:Out": false
+        },
+        "Kakariko Potion Back Gateway:Out": {
+            "Kak Backyard": false
+        },
+        "Potion Back Kakariko Gateway:In": {
+            "Kakariko Potion Back Gateway:Out": false
+        },
+        "Potion Back Kakariko Gateway:Out": {
+            "Kak Potion Shop Back": false
+        },
+        "Graveyard Dampes House Gateway:In": {
+            "Dampes House Graveyard Gateway:Out": false
+        },
+        "Graveyard Dampes House Gateway:Out": {
+            "Graveyard": false
+        },
+        "Dampes House Graveyard Gateway:In": {
+            "Graveyard Dampes House Gateway:Out": false
+        },
+        "Dampes House Graveyard Gateway:Out": {
+            "Graveyard Dampes House": false
+        },
+        "Mountain Great Fairy Gateway:In": {
+            "Great Fairy Mountain Gateway:Out": false
+        },
+        "Mountain Great Fairy Gateway:Out": {
+            "Death Mountain Summit": false
+        },
+        "Great Fairy Mountain Gateway:In": {
+            "Mountain Great Fairy Gateway:Out": false
+        },
+        "Great Fairy Mountain Gateway:Out": {
+            "DMT Great Fairy Fountain": false
+        },
+        "Crater Great Fairy Gateway:In": {
+            "Great Fairy Crater Gateway:Out": false
+        },
+        "Crater Great Fairy Gateway:Out": {
+            "DMC Lower Nearby": false
+        },
+        "Great Fairy Crater Gateway:In": {
+            "Crater Great Fairy Gateway:Out": false
+        },
+        "Great Fairy Crater Gateway:Out": {
+            "DMC Great Fairy Fountain": false
+        },
+        "Goron Shop Gateway:In": {
+            "Shop Goron Gateway:Out": false
+        },
+        "Goron Shop Gateway:Out": {
+            "Goron City": false
+        },
+        "Shop Goron Gateway:In": {
+            "Goron Shop Gateway:Out": false
+        },
+        "Shop Goron Gateway:Out": {
+            "GC Shop": false
+        },
+        "Zora Shop Gateway:In": {
+            "Shop Zora Gateway:Out": false
+        },
+        "Zora Shop Gateway:Out": {
+            "Zoras Domain": false
+        },
+        "Shop Zora Gateway:In": {
+            "Zora Shop Gateway:Out": false
+        },
+        "Shop Zora Gateway:Out": {
+            "ZD Shop": false
+        },
+        "Fountain Great Fairy Gateway:In": {
+            "Great Fairy Fountain Gateway:Out": false
+        },
+        "Fountain Great Fairy Gateway:Out": {
+            "Zoras Fountain": false
+        },
+        "Great Fairy Fountain Gateway:In": {
+            "Fountain Great Fairy Gateway:Out": false
+        },
+        "Great Fairy Fountain Gateway:Out": {
+            "ZF Great Fairy Fountain": false
+        },
+        "Lake Lab Gateway:In": {
+            "Lab Lake Gateway:Out": false
+        },
+        "Lake Lab Gateway:Out": {
+            "Lake Hylia": false
+        },
+        "Lab Lake Gateway:In": {
+            "Lake Lab Gateway:Out": false
+        },
+        "Lab Lake Gateway:Out": {
+            "LH Lab": false
+        },
+        "Lake Fishing Hole Gateway:In": {
+            "Fishing Hole Lake Gateway:Out": false
+        },
+        "Lake Fishing Hole Gateway:Out": {
+            "LH Fishing Island": false
+        },
+        "Fishing Hole Lake Gateway:In": {
+            "Lake Fishing Hole Gateway:Out": false
+        },
+        "Fishing Hole Lake Gateway:Out": {
+            "LH Fishing Hole": false
+        },
+        "Valley Carpenter Tent Gateway:In": {
+            "Carpenter Tent Valley Gateway:Out": false
+        },
+        "Valley Carpenter Tent Gateway:Out": {
+            "GV Fortress Side": false
+        },
+        "Carpenter Tent Valley Gateway:In": {
+            "Valley Carpenter Tent Gateway:Out": false
+        },
+        "Carpenter Tent Valley Gateway:Out": {
+            "GV Carpenter Tent": false
+        },
+        "Colossus Great Fairy Gateway:In": {
+            "Great Fairy Colossus Gateway:Out": false
+        },
+        "Colossus Great Fairy Gateway:Out": {
+            "Desert Colossus": false
+        },
+        "Great Fairy Colossus Gateway:In": {
+            "Colossus Great Fairy Gateway:Out": false
+        },
+        "Great Fairy Colossus Gateway:Out": {
+            "Colossus Great Fairy Fountain": false
+        },
+        "Bottom of the Well MQ": {
+            "Well Kakriko Gateway:In": false,
+            "Bottom of the Well Perimeter MQ": false
+        },
+        "Bottom of the Well Perimeter MQ": {
+            "Bottom of the Well MQ": false,
+            "Bottom of the Well Middle MQ": false
+        },
+        "Bottom of the Well Middle MQ": {
+            "Bottom of the Well Perimeter MQ": false
+        },
+        "Bottom of the Well": {
+            "Well Kakriko Gateway:In": false,
+            "Bottom of the Well Main Area": false
+        },
+        "Bottom of the Well Main Area": {
+            "Bottom of the Well": false
+        },
+        "Deku Tree Lobby MQ": {
+            "Deku Kokiri Gateway:In": false,
+            "Deku Tree Compass Room MQ": false,
+            "Deku Tree Basement Water Room Front MQ": false,
+            "Deku Tree Basement Ledge MQ": false
+        },
+        "Deku Tree Compass Room MQ": {
+            "Deku Tree Lobby MQ": false
+        },
+        "Deku Tree Basement Water Room Front MQ": {
+            "Deku Tree Basement Water Room Back MQ": false,
+            "Deku Tree Lobby MQ": false
+        },
+        "Deku Tree Basement Water Room Back MQ": {
+            "Deku Tree Basement Back Room MQ": false,
+            "Deku Tree Basement Water Room Front MQ": false
+        },
+        "Deku Tree Basement Back Room MQ": {
+            "Deku Tree Basement Ledge MQ": false,
+            "Deku Tree Basement Water Room Back MQ": false
+        },
+        "Deku Tree Basement Ledge MQ": {
+            "Deku Tree Basement Back Room MQ": false,
+            "Deku Tree Lobby MQ": false
+        },
+        "Deku Tree Lobby": {
+            "Deku Kokiri Gateway:In": false,
+            "Deku Tree Slingshot Room": false,
+            "Deku Tree Basement Backroom": false,
+            "Deku Tree Boss Room": false
+        },
+        "Deku Tree Slingshot Room": {
+            "Deku Tree Lobby": false
+        },
+        "Deku Tree Basement Backroom": {
+            "Deku Tree Lobby": false
+        },
+        "Deku Tree Boss Room": {
+            "Deku Tree Lobby": false
+        },
+        "Dodongos Cavern Beginning MQ": {
+            "Dodongo Mountain Gateway:In": false,
+            "Dodongos Cavern Lobby MQ": false
+        },
+        "Dodongos Cavern Lobby MQ": {
+            "Dodongos Cavern Lower Right Side MQ": false,
+            "Dodongos Cavern Bomb Bag Area MQ": false,
+            "Dodongos Cavern Boss Area MQ": false
+        },
+        "Dodongos Cavern Lower Right Side MQ": {
+            "Dodongos Cavern Bomb Bag Area MQ": false
+        },
+        "Dodongos Cavern Bomb Bag Area MQ": {
+            "Dodongos Cavern Lower Right Side MQ": false
+        },
+        "Dodongos Cavern Beginning": {
+            "Dodongo Mountain Gateway:In": false,
+            "Dodongos Cavern Lobby": false
+        },
+        "Dodongos Cavern Lobby": {
+            "Dodongos Cavern Beginning": false,
+            "Dodongos Cavern Staircase Room": false,
+            "Dodongos Cavern Far Bridge": false
+        },
+        "Dodongos Cavern Staircase Room": {
+            "Dodongos Cavern Lobby": false,
+            "Dodongos Cavern Climb": false
+        },
+        "Dodongos Cavern Climb": {
+            "Dodongos Cavern Lobby": false,
+            "Dodongos Cavern Far Bridge": false
+        },
+        "Dodongos Cavern Far Bridge": {
+            "Dodongos Cavern Boss Area": false,
+            "Dodongos Cavern Lobby": false
+        },
+        "Dodongos Cavern Boss Area": {
+            "Dodongos Cavern Lobby": false
+        },
+        "Fire Temple Lower MQ": {
+            "Fire Temple Crater Gateway:In": false,
+            "Fire Boss Room MQ": false,
+            "Fire Lower Locked Door MQ": false,
+            "Fire Big Lava Room MQ": false
+        },
+        "Fire Big Lava Room MQ": {
+            "Fire Lower Maze MQ": false
+        },
+        "Fire Lower Maze MQ": {
+            "Fire Upper Maze MQ": false
+        },
+        "Fire Upper Maze MQ": {
+            "Fire Temple Upper MQ": false
+        },
+        "Fire Temple Lower": {
+            "Fire Temple Crater Gateway:In": false,
+            "Fire Temple Big Lava Room": false
+        },
+        "Fire Temple Big Lava Room": {
+            "Fire Temple Lower": false,
+            "Fire Temple Middle": false
+        },
+        "Fire Temple Middle": {
+            "Fire Temple Upper": false
+        },
+        "Forest Temple Lobby MQ": {
+            "Forest Temple Meadow Gateway:In": false,
+            "Forest Temple Central Area MQ": false
+        },
+        "Forest Temple Central Area MQ": {
+            "Forest Temple NW Outdoors MQ": false,
+            "Forest Temple NE Outdoors MQ": false,
+            "Forest Temple After Block Puzzle MQ": false,
+            "Forest Temple Outdoor Ledge MQ": false,
+            "Forest Temple Boss Region MQ": false
+        },
+        "Forest Temple After Block Puzzle MQ": {
+            "Forest Temple Bow Region MQ": false,
+            "Forest Temple Outdoor Ledge MQ": false,
+            "Forest Temple NW Outdoors MQ": false
+        },
+        "Forest Temple Outdoor Ledge MQ": {
+            "Forest Temple NW Outdoors MQ": false
+        },
+        "Forest Temple NW Outdoors MQ": {
+            "Forest Temple NE Outdoors MQ": false,
+            "Forest Temple Outdoors Top Ledges MQ": false
+        },
+        "Forest Temple NE Outdoors MQ": {
+            "Forest Temple Outdoors Top Ledges MQ": false,
+            "Forest Temple NE Outdoors Ledge MQ": false
+        },
+        "Forest Temple Outdoors Top Ledges MQ": {
+            "Forest Temple NE Outdoors MQ": false,
+            "Forest Temple NE Outdoors Ledge MQ": false
+        },
+        "Forest Temple NE Outdoors Ledge MQ": {
+            "Forest Temple NE Outdoors MQ": false,
+            "Forest Temple Falling Room MQ": false
+        },
+        "Forest Temple Bow Region MQ": {
+            "Forest Temple Falling Room MQ": false
+        },
+        "Forest Temple Falling Room MQ": {
+            "Forest Temple NE Outdoors Ledge MQ": false
+        },
+        "Forest Temple Lobby": {
+            "Forest Temple Meadow Gateway:In": false,
+            "Forest Temple NW Outdoors": false,
+            "Forest Temple NE Outdoors": false,
+            "Forest Temple Block Push Room": false,
+            "Forest Temple Boss Region": false
+        },
+        "Forest Temple NW Outdoors": {
+            "Forest Temple NE Outdoors": false,
+            "Forest Temple Outdoors High Balconies": false
+        },
+        "Forest Temple NE Outdoors": {
+            "Forest Temple Outdoors High Balconies": false,
+            "Forest Temple NW Outdoors": false,
+            "Forest Temple Lobby": false
+        },
+        "Forest Temple Outdoors High Balconies": {
+            "Forest Temple NW Outdoors": false,
+            "Forest Temple NE Outdoors": false,
+            "Forest Temple Falling Room": false
+        },
+        "Forest Temple Falling Room": {
+            "Forest Temple NE Outdoors": false
+        },
+        "Forest Temple Block Push Room": {
+            "Forest Temple Outside Upper Ledge": false,
+            "Forest Temple Bow Region": false,
+            "Forest Temple Straightened Hall": false
+        },
+        "Forest Temple Straightened Hall": {
+            "Forest Temple Outside Upper Ledge": false
+        },
+        "Forest Temple Outside Upper Ledge": {
+            "Forest Temple NW Outdoors": false
+        },
+        "Forest Temple Bow Region": {
+            "Forest Temple Falling Room": false
+        },
+        "Ganons Castle Lobby MQ": {
+            "Ganons Castle Castle Grounds Gateway:In": false,
+            "Ganons Castle Forest Trial MQ": false,
+            "Ganons Castle Fire Trial MQ": false,
+            "Ganons Castle Water Trial MQ": false,
+            "Ganons Castle Shadow Trial MQ": false,
+            "Ganons Castle Spirit Trial MQ": false,
+            "Ganons Castle Light Trial MQ": false,
+            "Ganons Castle Tower": false,
+            "Ganons Castle Deku Scrubs MQ": false
+        },
+        "Ganons Castle Lobby": {
+            "Ganons Castle Castle Grounds Gateway:In": false,
+            "Ganons Castle Forest Trial": false,
+            "Ganons Castle Fire Trial": false,
+            "Ganons Castle Water Trial": false,
+            "Ganons Castle Shadow Trial": false,
+            "Ganons Castle Spirit Trial": false,
+            "Ganons Castle Light Trial": false,
+            "Ganons Castle Tower": false,
+            "Ganons Castle Deku Scrubs": false
+        },
+        "Gerudo Training Ground Lobby MQ": {
+            "Training Grounds Fortress Gateway:In": false,
+            "Gerudo Training Ground Left Side MQ": false,
+            "Gerudo Training Ground Right Side MQ": false
+        },
+        "Gerudo Training Ground Right Side MQ": {
+            "Gerudo Training Ground Underwater MQ": false
+        },
+        "Gerudo Training Ground Left Side MQ": {
+            "Gerudo Training Ground Stalfos Room MQ": false
+        },
+        "Gerudo Training Ground Stalfos Room MQ": {
+            "Gerudo Training Ground Back Areas MQ": false
+        },
+        "Gerudo Training Ground Back Areas MQ": {
+            "Gerudo Training Ground Central Maze Right MQ": false,
+            "Gerudo Training Ground Right Side MQ": false
+        },
+        "Gerudo Training Ground Central Maze Right MQ": {
+            "Gerudo Training Ground Underwater MQ": false,
+            "Gerudo Training Ground Right Side MQ": false
+        },
+        "Gerudo Training Ground Lobby": {
+            "Training Grounds Fortress Gateway:In": false,
+            "Gerudo Training Ground Heavy Block Room": false,
+            "Gerudo Training Ground Lava Room": false,
+            "Gerudo Training Ground Central Maze": false
+        },
+        "Gerudo Training Ground Central Maze": {
+            "Gerudo Training Ground Central Maze Right": false
+        },
+        "Gerudo Training Ground Central Maze Right": {
+            "Gerudo Training Ground Hammer Room": false,
+            "Gerudo Training Ground Lava Room": false
+        },
+        "Gerudo Training Ground Lava Room": {
+            "Gerudo Training Ground Central Maze Right": false,
+            "Gerudo Training Ground Hammer Room": false
+        },
+        "Gerudo Training Ground Hammer Room": {
+            "Gerudo Training Ground Eye Statue Lower": false,
+            "Gerudo Training Ground Lava Room": false
+        },
+        "Gerudo Training Ground Eye Statue Lower": {
+            "Gerudo Training Ground Hammer Room": false
+        },
+        "Gerudo Training Ground Eye Statue Upper": {
+            "Gerudo Training Ground Eye Statue Lower": false
+        },
+        "Gerudo Training Ground Heavy Block Room": {
+            "Gerudo Training Ground Eye Statue Upper": false,
+            "Gerudo Training Ground Like Like Room": false
+        },
+        "Ice Cavern Beginning MQ": {
+            "Ice Cavern Fountain Gateway:In": false,
+            "Ice Cavern Map Room MQ": false,
+            "Ice Cavern Compass Room MQ": false,
+            "Ice Cavern Iron Boots Region MQ": false
+        },
+        "Ice Cavern Beginning": {
+            "Ice Cavern Fountain Gateway:In": false,
+            "Ice Cavern": false
+        },
+        "Jabu Jabus Belly Beginning MQ": {
+            "Jabu Fountain Gateway:In": false,
+            "Jabu Jabus Belly Main MQ": false
+        },
+        "Jabu Jabus Belly Main MQ": {
+            "Jabu Jabus Belly Beginning MQ": false,
+            "Jabu Jabus Belly Depths MQ": false
+        },
+        "Jabu Jabus Belly Depths MQ": {
+            "Jabu Jabus Belly Main MQ": false,
+            "Jabu Jabus Belly Boss Area MQ": false
+        },
+        "Jabu Jabus Belly Boss Area MQ": {
+            "Jabu Jabus Belly Main MQ": false
+        },
+        "Jabu Jabus Belly Beginning": {
+            "Jabu Fountain Gateway:In": false,
+            "Jabu Jabus Belly Main": false
+        },
+        "Jabu Jabus Belly Main": {
+            "Jabu Jabus Belly Beginning": false,
+            "Jabu Jabus Belly Depths": false,
+            "Jabu Jabus Belly Boss Area": false
+        },
+        "Jabu Jabus Belly Depths": {
+            "Jabu Jabus Belly Main": false,
+            "Jabu Jabus Belly Boss Area": false
+        },
+        "Jabu Jabus Belly Boss Area": {
+            "Jabu Jabus Belly Main": false
+        },
+        "Root": {
+            "Root Exits": false,
+            "HC Garden Locations": false
+        },
+        "Root Exits": {
+            "Child Spawn": false,
+            "Adult Spawn": false,
+            "Prelude of Light Warp": false,
+            "Minuet of Forest Warp": false,
+            "Bolero of Fire Warp": false,
+            "Serenade of Water Warp": false,
+            "Nocturne of Shadow Warp": false,
+            "Requiem of Spirit Warp": false
+        },
+        "Child Spawn": {
+            "KF Links House": false
+        },
+        "Adult Spawn": {
+            "Temple of Time": false
+        },
+        "Prelude of Light Warp": {
+            "Temple of Time": false
+        },
+        "Minuet of Forest Warp": {
+            "Sacred Forest Meadow": false
+        },
+        "Bolero of Fire Warp": {
+            "DMC Central Local": false
+        },
+        "Serenade of Water Warp": {
+            "Lake Hylia": false
+        },
+        "Nocturne of Shadow Warp": {
+            "Graveyard Warp Pad Region": false
+        },
+        "Requiem of Spirit Warp": {
+            "Desert Colossus": false
+        },
+        "Kokiri Forest": {
+            "Kokiri Links House Gateway:In": false,
+            "Kokiri Midos House Gateway:In": false,
+            "Kokiri Sarias House Gateway:In": false,
+            "Kokiri House of Twins Gateway:In": false,
+            "Kokiri Know It All House Gateway:In": false,
+            "Kokiri Kokiri Shop Gateway:In": false,
+            "KF Outside Deku Tree": false,
+            "Kokiri Woods Gateway:In": false,
+            "Kokiri Bridge Gateway:In": false,
+            "Kokiri Storms Grotto Gateway:In": true
+        },
+        "KF Outside Deku Tree": {
+            "Kokiri Deku Gateway:In": false,
+            "Kokiri Forest": false
+        },
+        "KF Links House": {
+            "Links House Kokiri Gateway:In": false
+        },
+        "KF Midos House": {
+            "Midos House Kokiri Gateway:In": false
+        },
+        "KF Sarias House": {
+            "Sarias House Kokiri Gateway:In": false
+        },
+        "KF House of Twins": {
+            "House of Twins Kokiri Gateway:In": false
+        },
+        "KF Know It All House": {
+            "Know It All House Kokiri Gateway:In": false
+        },
+        "KF Kokiri Shop": {
+            "Kokiri Shop Kokiri Gateway:In": false
+        },
+        "LW Forest Exit": {
+            "Kokiri Forest": false
+        },
+        "Lost Woods": {
+            "Woods Kokiri Gateway:In": false,
+            "Woods GC Gateway:In": false,
+            "LW Bridge": false,
+            "Woods River Gateway:In": false,
+            "LW Beyond Mido": false,
+            "Woods Near Shortcuts Grotto Gateway:In": false
+        },
+        "LW Beyond Mido": {
+            "Woods Kokiri Gateway:In": false,
+            "Lost Woods": false,
+            "Woods Meadow Gateway:In": false,
+            "Woods Deku Theater Gateway:In": false,
+            "Woods Scrubs Grotto Gateway:In": false
+        },
+        "Lost Woods Mushroom Timeout": {
+            "Lost Woods": false
+        },
+        "SFM Entryway": {
+            "Meadow Woods Gateway:In": false,
+            "Sacred Forest Meadow": false,
+            "Meadow Wolfos Grotto Gateway:In": false
+        },
+        "Sacred Forest Meadow": {
+            "SFM Entryway": false,
+            "SFM Forest Temple Entrance Ledge": false,
+            "Meadow Fairy Grotto Gateway:In": false,
+            "Meadow Storms Grotto Gateway:In": false
+        },
+        "SFM Forest Temple Entrance Ledge": {
+            "Sacred Forest Meadow": false,
+            "Meadow Forest Temple Gateway:In": false
+        },
+        "LW Bridge From Forest": {
+            "LW Bridge": false
+        },
+        "LW Bridge": {
+            "Bridge Kokiri Gateway:In": false,
+            "Woods Field Gateway:In": false,
+            "Lost Woods": false
+        },
+        "Hyrule Field": {
+            "Field Woods Gateway:In": false,
+            "Field Lake Gateway:In": false,
+            "Field Valley Gateway:In": false,
+            "Field MarketEntrance Gateway:In": false,
+            "Field Kakariko Gateway:In": false,
+            "Field River Gateway:In": false,
+            "Field Ranch Gateway:In": false,
+            "Field Southeast Grotto Gateway:In": false,
+            "Field Open Grotto Gateway:In": false,
+            "Field Inside Fence Grotto Gateway:In": false,
+            "Field Cow Grotto Gateway:In": false,
+            "Field Near Market Grotto Gateway:In": false,
+            "Field Fairy Grotto Gateway:In": false,
+            "Field Near Kak Grotto Gateway:In": false,
+            "Field Tektite Grotto Gateway:In": false
+        },
+        "Lake Hylia": {
+            "Lake Field Gateway:In": false,
+            "Lake Domain Gateway:In": false,
+            "LH Owl Flight": false,
+            "Lake Lab Gateway:In": false,
+            "LH Fishing Island": false,
+            "Lake Water Temple Gateway:In": false,
+            "Lake Grotto Gateway:In": false
+        },
+        "LH Fishing Island": {
+            "Lake Hylia": false,
+            "Lake Fishing Hole Gateway:In": false
+        },
+        "LH Owl Flight": {
+            "Hyrule Field": false
+        },
+        "LH Lab": {
+            "Lab Lake Gateway:In": false
+        },
+        "LH Fishing Hole": {
+            "Fishing Hole Lake Gateway:In": false
+        },
+        "Gerudo Valley": {
+            "Valley Field Gateway:In": false,
+            "GV Upper Stream": false,
+            "GV Crate Ledge": false,
+            "GV Grotto Ledge": false,
+            "GV Fortress Side": false
+        },
+        "GV Upper Stream": {
+            "GV Lower Stream": false
+        },
+        "GV Lower Stream": {
+            "Valley Lake Gateway:In": false
+        },
+        "GV Grotto Ledge": {
+            "GV Lower Stream": false,
+            "Valley Octorok Grotto Gateway:In": false,
+            "GV Crate Ledge": false
+        },
+        "GV Crate Ledge": {
+            "GV Lower Stream": false
+        },
+        "GV Fortress Side": {
+            "Valley Fortress Gateway:In": false,
+            "GV Upper Stream": false,
+            "GV Crate Ledge": false,
+            "Gerudo Valley": false,
+            "Valley Carpenter Tent Gateway:In": false,
+            "Valley Storms Grotto Gateway:In": false
+        },
+        "GV Carpenter Tent": {
+            "Carpenter Tent Valley Gateway:In": false
+        },
+        "Gerudo Fortress": {
+            "Fortress Valley Gateway:In": false,
+            "GF Outside Gate": false,
+            "Fortress Training Grounds Gateway:In": true,
+            "Fortress Storms Grotto Gateway:In": false
+        },
+        "GF Outside Gate": {
+            "Gerudo Fortress": false,
+            "Fortress Wasteland Gateway:In": false
+        },
+        "Wasteland Near Fortress": {
+            "Wasteland Fortress Gateway:In": false,
+            "Haunted Wasteland": false
+        },
+        "Haunted Wasteland": {
+            "Wasteland Near Colossus": false,
+            "Wasteland Near Fortress": false
+        },
+        "Wasteland Near Colossus": {
+            "Wasteland Colossus Gateway:In": false,
+            "Haunted Wasteland": false
+        },
+        "Desert Colossus": {
+            "Colossus Great Fairy Gateway:In": false,
+            "Colossus Spirit Temple Gateway:In": false,
+            "Colossus Wasteland Gateway:In": false,
+            "Colossus Grotto Gateway:In": false
+        },
+        "Desert Colossus From Spirit Lobby": {
+            "Desert Colossus": false
+        },
+        "Colossus Great Fairy Fountain": {
+            "Great Fairy Colossus Gateway:In": false
+        },
+        "Market Entrance": {
+            "MarketEntrance Field Gateway:In": false,
+            "MarketEntrance Market Gateway:In": false,
+            "Guard House Market Gateway:In": false
+        },
+        "Market": {
+            "Market MarketEntrance Gateway:In": false,
+            "Market ToT Gateway:In": false,
+            "Market Grounds Gateway:In": false,
+            "Market Bazaar Gateway:In": false,
+            "Market Mask Shop Gateway:In": false,
+            "Market Shooting Gallery Gateway:In": false,
+            "Market Bombchu Bowling Gateway:In": false,
+            "Market Potion Shop Gateway:In": false,
+            "Market Treasure Chest Game Gateway:In": false,
+            "Market Marketback Gateway:In": false
+        },
+        "Market Back Alley": {
+            "Marketback Market Gateway:In": false,
+            "Market Bombchu Shop Gateway:In": false,
+            "Market Dog Lady House": false,
+            "Market Back House Gateway:In": false
+        },
+        "ToT Entrance": {
+            "ToT Market Gateway:In": false,
+            "Temple of Time": false
+        },
+        "Temple of Time": {
+            "ToT Entrance": false,
+            "Beyond Door of Time": false
+        },
+        "Beyond Door of Time": {
+            "Temple of Time": false
+        },
+        "Castle Grounds": {
+            "Grounds Market Gateway:In": false,
+            "Hyrule Castle Grounds": false,
+            "Ganons Castle Grounds": false
+        },
+        "Hyrule Castle Grounds": {
+            "Castle Grounds": false,
+            "HC Garden": false,
+            "Grounds Great Fairy Gateway:In": false,
+            "Grounds Storms Grotto Gateway:In": false
+        },
+        "HC Garden": {
+            "HC Garden Locations": false,
+            "Hyrule Castle Grounds": false
+        },
+        "HC Great Fairy Fountain": {
+            "Great Fairy Grounds Gateway:In": false
+        },
+        "Ganons Castle Grounds": {
+            "Castle Grounds": false,
+            "Ganon Grounds Great Fairy Gateway:In": false,
+            "Castle Grounds Ganons Castle Gateway:In": false
+        },
+        "OGC Great Fairy Fountain": {
+            "Great Fairy Ganon Grounds Gateway:In": false
+        },
+        "Market Guard House": {
+            "Guard House Market Gateway:In": false
+        },
+        "Market Bazaar": {
+            "Bazaar Market Gateway:In": false
+        },
+        "Market Mask Shop": {
+            "Mask Shop Market Gateway:In": false
+        },
+        "Market Shooting Gallery": {
+            "Shooting Gallery Market Gateway:In": false
+        },
+        "Market Bombchu Bowling": {
+            "Bombchu Bowling Market Gateway:In": false
+        },
+        "Market Potion Shop": {
+            "Potion Shop Market Gateway:In": false
+        },
+        "Market Treasure Chest Game": {
+            "Treasure Chest Game Market Gateway:In": false
+        },
+        "Market Bombchu Shop": {
+            "Bombchu Shop Market Gateway:In": false
+        },
+        "Market Dog Lady House": {
+            "Market Back Alley": false
+        },
+        "Market Man in Green House": {
+            "Back House Market Gateway:In": false
+        },
+        "Kakariko Village": {
+            "Kakariko Field Gateway:In": false,
+            "Kakariko Carpenter House Gateway:In": false,
+            "Kakariko Skulltula House Gateway:In": false,
+            "Kakariko Impas House Gateway:In": false,
+            "Kakariko Windmill Gateway:In": false,
+            "Kakariko Bazaar Gateway:In": false,
+            "Kakariko Shooting Gallery Gateway:In": false,
+            "Kakariko Well Gateway:In": false,
+            "Kakariko Potion Shop Gateway:In": false,
+            "Kakariko Redead Grotto Gateway:In": false,
+            "Kak Impas Ledge": false,
+            "Kak Impas Rooftop": false,
+            "Kak Odd Medicine Rooftop": false,
+            "Kak Backyard": false,
+            "Kakariko Graveyard Gateway:In": false,
+            "Kak Behind Gate": false
+        },
+        "Kak Impas Ledge": {
+            "Kakariko Impas Back Gateway:In": false,
+            "Kakariko Village": false
+        },
+        "Kak Impas Rooftop": {
+            "Kak Impas Ledge": false,
+            "Kakariko Village": false
+        },
+        "Kak Odd Medicine Rooftop": {
+            "Kakariko Village": false,
+            "Kak Backyard": false
+        },
+        "Kak Backyard": {
+            "Kakariko Village": false,
+            "Kakariko Open Grotto Gateway:In": false,
+            "Kakariko Medicine Building Gateway:In": false,
+            "Kakariko Potion Back Gateway:In": false
+        },
+        "Kak Carpenter Boss House": {
+            "Carpenter House Kakariko Gateway:In": false
+        },
+        "Kak House of Skulltula": {
+            "Skulltula House Kakariko Gateway:In": false
+        },
+        "Kak Impas House": {
+            "Impas House Kakariko Gateway:In": false,
+            "Kak Impas House Near Cow": false
+        },
+        "Kak Impas House Back": {
+            "Impas Back Kakariko Gateway:In": false,
+            "Kak Impas House Near Cow": false
+        },
+        "Kak Windmill": {
+            "Windmill Kakariko Gateway:In": false
+        },
+        "Kak Bazaar": {
+            "Bazaar Kakariko Gateway:In": false
+        },
+        "Kak Shooting Gallery": {
+            "Shooting Gallery Kakariko Gateway:In": false
+        },
+        "Kak Potion Shop Front": {
+            "Potion Shop Kakariko Gateway:In": false,
+            "Kak Potion Shop Back": false
+        },
+        "Kak Potion Shop Back": {
+            "Potion Back Kakariko Gateway:In": false,
+            "Kak Potion Shop Front": false
+        },
+        "Kak Odd Medicine Building": {
+            "Medicine Building Kakariko Gateway:In": false
+        },
+        "Graveyard": {
+            "Graveyard Shield Grave Gateway:In": false,
+            "Graveyard Composers Grave Gateway:In": false,
+            "Graveyard Redead Grave Gateway:In": false,
+            "Graveyard Dampes Grave Gateway:In": false,
+            "Graveyard Dampes House Gateway:In": false,
+            "Graveyard Kakariko Gateway:In": false
+        },
+        "Graveyard Shield Grave": {
+            "Shield Grave Graveyard Gateway:In": false
+        },
+        "Graveyard Heart Piece Grave": {
+            "Redead Grave Graveyard Gateway:In": false
+        },
+        "Graveyard Royal Familys Tomb": {
+            "Composers Grave Graveyard Gateway:In": false
+        },
+        "Graveyard Dampes Grave": {
+            "Dampes Grave Graveyard Gateway:In": false,
+            "Kak Windmill": false
+        },
+        "Graveyard Dampes House": {
+            "Dampes House Graveyard Gateway:In": false
+        },
+        "Graveyard Warp Pad Region": {
+            "Graveyard": false,
+            "Graveyard Shadow Temple Gateway:In": false
+        },
+        "Kak Behind Gate": {
+            "Kakariko Village": false,
+            "Kakariko Mountain Gateway:In": false
+        },
+        "Death Mountain": {
+            "Mountain Kakariko Gateway:In": false,
+            "Mountain Goron Gateway:In": false,
+            "Death Mountain Summit": false,
+            "Mountain Dodongo Gateway:In": true,
+            "Mountain Storms Grotto Gateway:In": false
+        },
+        "Death Mountain Summit": {
+            "Death Mountain": false,
+            "Mountain Crater Gateway:In": false,
+            "DMT Owl Flight": false,
+            "Mountain Cow Grotto Gateway:In": false,
+            "Mountain Great Fairy Gateway:In": false
+        },
+        "DMT Owl Flight": {
+            "Kak Impas Rooftop": false
+        },
+        "Goron City": {
+            "Goron Mountain Gateway:In": false,
+            "GC Woods Warp": false,
+            "Goron Shop Gateway:In": false,
+            "GC Darunias Chamber": false,
+            "GC Grotto Platform": false
+        },
+        "GC Woods Warp": {
+            "Goron City": false,
+            "GC Woods Gateway:In": false
+        },
+        "GC Darunias Chamber": {
+            "Goron City": false,
+            "Goron Crater Gateway:In": false
+        },
+        "GC Grotto Platform": {
+            "Goron Grotto Gateway:In": false,
+            "Goron City": false
+        },
+        "GC Shop": {
+            "Shop Goron Gateway:In": false
+        },
+        "DMC Upper Nearby": {
+            "DMC Upper Local": false,
+            "Crater Mountain Gateway:In": false,
+            "Crater Upper Grotto Gateway:In": false
+        },
+        "DMC Upper Local": {
+            "DMC Upper Nearby": false,
+            "DMC Ladder Area Nearby": false,
+            "DMC Central Nearby": false
+        },
+        "DMC Ladder Area Nearby": {
+            "DMC Upper Nearby": false,
+            "DMC Lower Nearby": false
+        },
+        "DMC Lower Nearby": {
+            "DMC Lower Local": false,
+            "DMC Ladder Area Nearby": false,
+            "Crater Great Fairy Gateway:In": false,
+            "Crater Hammer Grotto Gateway:In": false
+        },
+        "DMC Lower Local": {
+            "DMC Lower Nearby": false,
+            "Crater Goron Gateway:In": false,
+            "DMC Central Nearby": false,
+            "DMC Fire Temple Entrance": false
+        },
+        "DMC Central Nearby": {
+            "DMC Central Local": false
+        },
+        "DMC Central Local": {
+            "DMC Central Nearby": false,
+            "DMC Lower Nearby": false,
+            "DMC Upper Nearby": false,
+            "DMC Fire Temple Entrance": false
+        },
+        "DMC Fire Temple Entrance": {
+            "Crater Fire Temple Gateway:In": false,
+            "DMC Central Nearby": false
+        },
+        "DMC Great Fairy Fountain": {
+            "Great Fairy Crater Gateway:In": false
+        },
+        "DMT Great Fairy Fountain": {
+            "Great Fairy Mountain Gateway:In": false
+        },
+        "ZR Front": {
+            "Zora River": false,
+            "River Field Gateway:In": false
+        },
+        "Zora River": {
+            "ZR Front": false,
+            "River Open Grotto Gateway:In": false,
+            "River Fairy Grotto Gateway:In": false,
+            "River Woods Gateway:In": false,
+            "River Storms Grotto Gateway:In": false,
+            "ZR Behind Waterfall": false
+        },
+        "ZR Behind Waterfall": {
+            "Zora River": false,
+            "River Domain Gateway:In": false
+        },
+        "ZR Top of Waterfall": {
+            "Zora River": false
+        },
+        "Zoras Domain": {
+            "Domain River Gateway:In": false,
+            "Domain Lake Gateway:In": false,
+            "ZD Behind King Zora": false,
+            "Zora Shop Gateway:In": false,
+            "Domain Storms Grotto Gateway:In": false
+        },
+        "ZD Behind King Zora": {
+            "Zoras Domain": false,
+            "Domain Fountain Gateway:In": false
+        },
+        "ZD Eyeball Frog Timeout": {
+            "Zoras Domain": false
+        },
+        "Zoras Fountain": {
+            "Fountain Domain Gateway:In": false,
+            "Fountain Jabu Gateway:In": true,
+            "ZF Ice Ledge": false,
+            "Fountain Great Fairy Gateway:In": false
+        },
+        "ZF Ice Ledge": {
+            "Zoras Fountain": false,
+            "Fountain Ice Cavern Gateway:In": false
+        },
+        "ZD Shop": {
+            "Shop Zora Gateway:In": false
+        },
+        "ZF Great Fairy Fountain": {
+            "Great Fairy Fountain Gateway:In": false
+        },
+        "Lon Lon Ranch": {
+            "Ranch Field Gateway:In": false,
+            "Ranch Talons House Gateway:In": false,
+            "Ranch Stables Gateway:In": false,
+            "Ranch Tower Gateway:In": false,
+            "Ranch Grotto Gateway:In": false
+        },
+        "LLR Talons House": {
+            "Talons House Ranch Gateway:In": false
+        },
+        "LLR Stables": {
+            "Stables Ranch Gateway:In": false
+        },
+        "LLR Tower": {
+            "Tower Ranch Gateway:In": false
+        },
+        "GF Storms Grotto": {
+            "Fortress Storms Grotto Gateway:In": false
+        },
+        "ZD Storms Grotto": {
+            "Storms Grotto Domain Gateway:In": false
+        },
+        "KF Storms Grotto": {
+            "Storms Grotto Kokiri Gateway:In": false
+        },
+        "LW Near Shortcuts Grotto": {
+            "Near Shortcuts Grotto Woods Gateway:In": false
+        },
+        "Deku Theater": {
+            "Deku Theater Woods Gateway:In": false
+        },
+        "LW Scrubs Grotto": {
+            "Scrubs Grotto Woods Gateway:In": false
+        },
+        "SFM Fairy Grotto": {
+            "Fairy Grotto Meadow Gateway:In": false
+        },
+        "SFM Storms Grotto": {
+            "Storms Grotto Meadow Gateway:In": false
+        },
+        "SFM Wolfos Grotto": {
+            "Wolfos Grotto Meadow Gateway:In": false
+        },
+        "LLR Grotto": {
+            "Grotto Ranch Gateway:In": false
+        },
+        "HF Southeast Grotto": {
+            "Southeast Grotto Field Gateway:In": false
+        },
+        "HF Open Grotto": {
+            "Open Grotto Field Gateway:In": false
+        },
+        "HF Inside Fence Grotto": {
+            "Inside Fence Grotto Field Gateway:In": false
+        },
+        "HF Cow Grotto": {
+            "Cow Grotto Field Gateway:In": false
+        },
+        "HF Near Market Grotto": {
+            "Near Market Grotto Field Gateway:In": false
+        },
+        "HF Fairy Grotto": {
+            "Fairy Grotto Field Gateway:In": false
+        },
+        "HF Near Kak Grotto": {
+            "Near Kak Grotto Field Gateway:In": false
+        },
+        "HF Tektite Grotto": {
+            "Tektite Grotto Field Gateway:In": false
+        },
+        "HC Storms Grotto": {
+            "Storms Grotto Grounds Gateway:In": false
+        },
+        "Kak Redead Grotto": {
+            "Kakariko Redead Grotto Gateway:In": false
+        },
+        "Kak Open Grotto": {
+            "Open Grotto Kakariko Gateway:In": false
+        },
+        "DMT Cow Grotto": {
+            "Cow Grotto Mountain Gateway:In": false
+        },
+        "DMT Storms Grotto": {
+            "Storms Grotto Mountain Gateway:In": false
+        },
+        "GC Grotto": {
+            "Grotto Goron Gateway:In": false
+        },
+        "DMC Upper Grotto": {
+            "Upper Grotto Crater Gateway:In": false
+        },
+        "DMC Hammer Grotto": {
+            "Hammer Grotto Crater Gateway:In": false
+        },
+        "ZR Open Grotto": {
+            "Open Grotto River Gateway:In": false
+        },
+        "ZR Fairy Grotto": {
+            "Fairy Grotto River Gateway:In": false
+        },
+        "ZR Storms Grotto": {
+            "Storms Grotto River Gateway:In": false
+        },
+        "LH Grotto": {
+            "Grotto Lake Gateway:In": false
+        },
+        "Colossus Grotto": {
+            "Grotto Colossus Gateway:In": false
+        },
+        "GV Octorok Grotto": {
+            "Octorok Grotto Valley Gateway:In": false
+        },
+        "GV Storms Grotto": {
+            "Storms Grotto Valley Gateway:In": false
+        },
+        "Shadow Temple Entryway MQ": {
+            "Shadow Temple Graveyard Gateway:In": false,
+            "Shadow Temple Beginning MQ": false
+        },
+        "Shadow Temple Beginning MQ": {
+            "Shadow Temple Entryway MQ": false,
+            "Shadow Temple First Beamos MQ": false,
+            "Shadow Temple Dead Hand Area MQ": false
+        },
+        "Shadow Temple First Beamos MQ": {
+            "Shadow Temple Upper Huge Pit MQ": false
+        },
+        "Shadow Temple Upper Huge Pit MQ": {
+            "Shadow Temple Lower Huge Pit MQ": false
+        },
+        "Shadow Temple Lower Huge Pit MQ": {
+            "Shadow Temple Wind Tunnel MQ": false
+        },
+        "Shadow Temple Wind Tunnel MQ": {
+            "Shadow Temple Beyond Boat MQ": false
+        },
+        "Shadow Temple Beyond Boat MQ": {
+            "Shadow Temple Invisible Maze MQ": false
+        },
+        "Shadow Temple Entryway": {
+            "Shadow Temple Graveyard Gateway:In": false,
+            "Shadow Temple Beginning": false
+        },
+        "Shadow Temple Beginning": {
+            "Shadow Temple Entryway": false,
+            "Shadow Temple First Beamos": false
+        },
+        "Shadow Temple First Beamos": {
+            "Shadow Temple Huge Pit": false
+        },
+        "Shadow Temple Huge Pit": {
+            "Shadow Temple Wind Tunnel": false
+        },
+        "Shadow Temple Wind Tunnel": {
+            "Shadow Temple Beyond Boat": false
+        },
+        "Spirit Temple Lobby MQ": {
+            "Desert Colossus From Spirit Lobby MQ": false,
+            "Child Spirit Temple MQ": false,
+            "Adult Spirit Temple MQ": false
+        },
+        "Child Spirit Temple MQ": {
+            "Spirit Temple Shared MQ": false
+        },
+        "Adult Spirit Temple MQ": {
+            "Lower Adult Spirit Temple MQ": false,
+            "Spirit Temple Shared MQ": false,
+            "Spirit Temple Boss Area MQ": false,
+            "Mirror Shield Hand MQ": false
+        },
+        "Spirit Temple Shared MQ": {
+            "Silver Gauntlets Hand MQ": false,
+            "Desert Colossus": false
+        },
+        "Spirit Temple Lobby": {
+            "Spirit Temple Colossus Gateway:In": false,
+            "Child Spirit Temple": false,
+            "Early Adult Spirit Temple": false
+        },
+        "Child Spirit Temple": {
+            "Child Spirit Before Locked Door": false
+        },
+        "Child Spirit Before Locked Door": {
+            "Child Spirit Temple Climb": false
+        },
+        "Child Spirit Temple Climb": {
+            "Spirit Temple Central Chamber": false,
+            "Child Spirit Before Locked Door": false
+        },
+        "Early Adult Spirit Temple": {
+            "Spirit Temple Central Chamber": false
+        },
+        "Spirit Temple Central Chamber": {
+            "Spirit Temple Outdoor Hands": false,
+            "Spirit Temple Beyond Central Locked Door": false,
+            "Child Spirit Temple Climb": false
+        },
+        "Spirit Temple Outdoor Hands": {
+            "Desert Colossus": false
+        },
+        "Spirit Temple Beyond Central Locked Door": {
+            "Spirit Temple Beyond Final Locked Door": false
+        },
+        "Water Temple Lobby MQ": {
+            "Water Temple Lake Gateway:In": false,
+            "Water Temple Dive MQ": false,
+            "Water Temple Dark Link Region MQ": false
+        },
+        "Water Temple Dive MQ": {
+            "Water Temple Lowered Water Levels MQ": false
+        },
+        "Water Temple Dark Link Region MQ": {
+            "Water Temple Basement Gated Areas MQ": false
+        },
+        "Water Temple Lobby": {
+            "Water Temple Lake Gateway:In": false,
+            "Water Temple Highest Water Level": false,
+            "Water Temple Dive": false
+        },
+        "Water Temple Highest Water Level": {
+            "Water Temple Falling Platform Room": false
+        },
+        "Water Temple Dive": {
+            "Water Temple Cracked Wall": false,
+            "Water Temple Middle Water Level": false,
+            "Water Temple North Basement": false,
+            "Water Temple Dragon Statue": false
+        },
+        "Water Temple Middle Water Level": {
+            "Water Temple Cracked Wall": false
+        },
+        "Water Temple Falling Platform Room": {
+            "Water Temple Dark Link Region": false
+        },
+        "Water Temple Dark Link Region": {
+            "Water Temple Dragon Statue": false
+        }
+    }
+}

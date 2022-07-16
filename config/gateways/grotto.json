@@ -1,0 +1,520 @@
+[
+    {
+        "region_name": "Field Tektite Grotto Gateway",
+        "exits": {
+            "Tektite Grotto Field Gateway": "True",
+            "Hyrule Field": "True"
+        }
+    },
+    {
+        "region_name": "Tektite Grotto Field Gateway",
+        "exits": {
+            "Field Tektite Grotto Gateway": "True",
+            "HF Tektite Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Field Near Kak Grotto Gateway",
+        "exits": {
+            "Near Kak Grotto Field Gateway": "True",
+            "Hyrule Field": "True"
+        }
+    },
+    {
+        "region_name": "Near Kak Grotto Field Gateway",
+        "exits": {
+            "Field Near Kak Grotto Gateway": "True",
+            "HF Near Kak Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Field Fairy Grotto Gateway",
+        "exits": {
+            "Fairy Grotto Field Gateway": "True",
+            "Hyrule Field": "True"
+        }
+    },
+    {
+        "region_name": "Fairy Grotto Field Gateway",
+        "exits": {
+            "Grotto Field Fairy Gateway": "True",
+            "HF Fairy Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Field Near Market Grotto Gateway",
+        "exits": {
+            "Near Market Grotto Field Gateway": "True",
+            "Hyrule Field": "True"
+        }
+    },
+    {
+        "region_name": "Near Market Grotto Field Gateway",
+        "exits": {
+            "Field Near Market Grotto Gateway": "True",
+            "HF Near Market Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Field Cow Grotto Gateway",
+        "exits": {
+            "Cow Grotto Field Gateway": "True",
+            "Hyrule Field": "True"
+        }
+    },
+    {
+        "region_name": "Cow Grotto Field Gateway",
+        "exits": {
+            "Field Cow Grotto Gateway": "True",
+            "HF Cow Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Field Inside Fence Grotto Gateway",
+        "exits": {
+            "Inside Fence Grotto Field Gateway": "True",
+            "Hyrule Field": "True"
+        }
+    },
+    {
+        "region_name": "Inside Fence Grotto Field Gateway",
+        "exits": {
+            "Field Inside Fence Grotto Gateway": "True",
+            "HF Inside Fence Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Field Open Grotto Gateway",
+        "exits": {
+            "Open Grotto Field Gateway": "True",
+            "Hyrule Field": "True"
+        }
+    },
+    {
+        "region_name": "Open Grotto Field Gateway",
+        "exits": {
+            "Field Open Grotto Gateway": "True",
+            "HF Open Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Field Southeast Grotto Gateway",
+        "exits": {
+            "Southeast Grotto Field Gateway": "True",
+            "Hyrule Field": "True"
+        }
+    },
+    {
+        "region_name": "Southeast Grotto Field Gateway",
+        "exits": {
+            "Field Southeast Grotto Gateway": "True",
+            "HF Southeast Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Kokiri Storms Grotto Gateway",
+        "exits": {
+            "Storms Grotto Kokiri Gateway": "True",
+            "Kokiri Forest": "True"
+        }
+    },
+    {
+        "region_name": "Storms Grotto Kokiri Gateway",
+        "exits": {
+            "Kokiri Storms Grotto Gateway": "True",
+            "KF Storms Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Woods Near Shortcuts Grotto Gateway",
+        "exits": {
+            "Near Shortcuts Grotto Woods Gateway": "True",
+            "Lost Woods": "True"
+        }
+    },
+    {
+        "region_name": "Near Shortcuts Grotto Woods Gateway",
+        "exits": {
+            "Woods Near Shortcuts Grotto Gateway": "True",
+            "LW Near Shortcuts Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Woods Scrubs Grotto Gateway",
+        "exits": {
+            "Scrubs Grotto Woods Gateway": "True",
+            "LW Beyond Mido": "True"
+        }
+    },
+    {
+        "region_name": "Scrubs Grotto Woods Gateway",
+        "exits": {
+            "Woods Scrubs Grotto Gateway": "True",
+            "LW Scrubs Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Woods Deku Theater Gateway",
+        "exits": {
+            "Deku Theater Woods Gateway": "True",
+            "LW Beyond Mido": "True"
+        }
+    },
+    {
+        "region_name": "Deku Theater Woods Gateway",
+        "exits": {
+            "Woods Deku Theater Gateway": "True",
+            "Deku Theater": "True"
+        }
+    },
+    {
+        "region_name": "Meadow Wolfos Grotto Gateway",
+        "exits": {
+            "Wolfos Grotto Meadow Gateway": "True",
+            "SFM Entryway": "True"
+        }
+    },
+    {
+        "region_name": "Wolfos Grotto Meadow Gateway",
+        "exits": {
+            "Meadow Wolfos Grotto Gateway": "True",
+            "SFM Wolfos Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Meadow Storms Grotto Gateway",
+        "exits": {
+            "Storms Grotto Meadow Gateway": "True",
+            "Sacred Forest Meadow": "True"
+        }
+    },
+    {
+        "region_name": "Storms Grotto Meadow Gateway",
+        "exits": {
+            "Meadow Storms Grotto Gateway": "True",
+            "SFM Storms Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Meadow Fairy Grotto Gateway",
+        "exits": {
+            "Fairy Grotto Meadow Gateway": "True",
+            "Sacred Forest Meadow": "True"
+        }
+    },
+    {
+        "region_name": "Fairy Grotto Meadow Gateway",
+        "exits": {
+            "Meadow Fairy Grotto Gateway": "True",
+            "SFM Fairy Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Ranch Grotto Gateway",
+        "exits": {
+            "Grotto Ranch Gateway": "True",
+            "Lon Lon Ranch": "True"
+        }
+    },
+    {
+        "region_name": "Grotto Ranch Gateway",
+        "exits": {
+            "Ranch Grotto Gateway": "True",
+            "LLR Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Grounds Storms Grotto Gateway",
+        "exits": {
+            "Storms Grotto Grounds Gateway": "True",
+            "Hyrule Castle Grounds": "True"
+        }
+    },
+    {
+        "region_name": "Storms Grotto Grounds Gateway",
+        "exits": {
+            "Grounds Storms Grotto Gateway": "True",
+            "HC Storms Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Kakariko Open Grotto Gateway",
+        "exits": {
+            "Open Grotto Kakariko Gateway": "True",
+            "Kak Backyard": "True"
+        }
+    },
+    {
+        "region_name": "Open Grotto Kakariko Gateway",
+        "exits": {
+            "Kakariko Open Grotto Gateway": "True",
+            "Kak Open Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Kakariko Redead Grotto Gateway",
+        "exits": {
+            "Redead Grotto Kakariko Gateway": "True",
+            "Kakariko Village": "True"
+        }
+    },
+    {
+        "region_name": "Kakariko Redead Grotto Gateway",
+        "exits": {
+            "Kakariko Redead Grotto Gateway": "True",
+            "Kak Redead Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Graveyard Shield Grave Gateway",
+        "exits": {
+            "Shield Grave Graveyard Gateway": "True",
+            "Graveyard": "True"
+        }
+    },
+    {
+        "region_name": "Shield Grave Graveyard Gateway",
+        "exits": {
+            "Graveyard Shield Grave Gateway": "True",
+            "Graveyard Shield Grave": "True"
+        }
+    },
+    {
+        "region_name": "Graveyard Redead Grave Gateway",
+        "exits": {
+            "Redead Grave Graveyard Gateway": "True",
+            "Graveyard": "True"
+        }
+    },
+    {
+        "region_name": "Redead Grave Graveyard Gateway",
+        "exits": {
+            "Graveyard Redead Grave Gateway": "True",
+            "Graveyard Heart Piece Grave": "True"
+        }
+    },
+    {
+        "region_name": "Graveyard Composers Grave Gateway",
+        "exits": {
+            "Composers Grave Graveyard Gateway": "True",
+            "Graveyard": "True"
+        }
+    },
+    {
+        "region_name": "Composers Grave Graveyard Gateway",
+        "exits": {
+            "Graveyard Composers Grave Gateway": "True",
+            "Graveyard Royal Familys Tomb": "True"
+        }
+    },
+    {
+        "region_name": "Graveyard Dampes Grave Gateway",
+        "exits": {
+            "Dampes Grave Graveyard Gateway": "True",
+            "Graveyard": "True"
+        }
+    },
+    {
+        "region_name": "Dampes Grave Graveyard Gateway",
+        "exits": {
+            "Graveyard Dampes Grave Gateway": "True",
+            "Graveyard Dampes Grave": "True"
+        }
+    },
+    {
+        "region_name": "Mountain Storms Grotto Gateway",
+        "exits": {
+            "Storms Grotto Mountain Gateway": "True",
+            "Death Mountain": "True"
+        }
+    },
+    {
+        "region_name": "Storms Grotto Mountain Gateway",
+        "exits": {
+            "Mountain Storms Grotto Gateway": "True",
+            "DMT Storms Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Mountain Cow Grotto Gateway",
+        "exits": {
+            "Cow Grotto Mountain Gateway": "True",
+            "Death Mountain Summit": "True"
+        }
+    },
+    {
+        "region_name": "Cow Grotto Mountain Gateway",
+        "exits": {
+            "Mountain Cow Grotto Gateway": "True",
+            "DMT Cow Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Crater Hammer Grotto Gateway",
+        "exits": {
+            "Hammer Grotto Crater Gateway": "True",
+            "DMC Lower Nearby": "True"
+        }
+    },
+    {
+        "region_name": "Hammer Grotto Crater Gateway",
+        "exits": {
+            "Crater Hammer Grotto Gateway": "True",
+            "DMC Hammer Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Crater Upper Grotto Gateway",
+        "exits": {
+            "Upper Grotto Crater Gateway": "True",
+            "DMC Upper Nearby": "True"
+        }
+    },
+    {
+        "region_name": "Upper Grotto Crater Gateway",
+        "exits": {
+            "Crater Upper Grotto Gateway": "True",
+            "DMC Upper Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Goron Grotto Gateway",
+        "exits": {
+            "Grotto Goron Gateway": "True",
+            "GC Grotto Platform": "True"
+        }
+    },
+    {
+        "region_name": "Grotto Goron Gateway",
+        "exits": {
+            "Goron Grotto Gateway": "True",
+            "GC Grotto": "True"
+        }
+    },
+    {
+        "region_name": "River Storms Grotto Gateway",
+        "exits": {
+            "Storms Grotto River Gateway": "True",
+            "Zora River": "True"
+        }
+    },
+    {
+        "region_name": "Storms Grotto River Gateway",
+        "exits": {
+            "River Storms Grotto Gateway": "True",
+            "ZR Storms Grotto": "True"
+        }
+    },
+    {
+        "region_name": "River Fairy Grotto Gateway",
+        "exits": {
+            "Fairy Grotto River Gateway": "True",
+            "Zora River": "True"
+        }
+    },
+    {
+        "region_name": "Fairy Grotto River Gateway",
+        "exits": {
+            "River Fairy Grotto Gateway": "True",
+            "ZR Fairy Grotto": "True"
+        }
+    },
+    {
+        "region_name": "River Open Grotto Gateway",
+        "exits": {
+            "Open Grotto River Gateway": "True",
+            "Zora River": "True"
+        }
+    },
+    {
+        "region_name": "Open Grotto River Gateway",
+        "exits": {
+            "River Open Grotto Gateway": "True",
+            "ZR Open Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Domain Storms Grotto Gateway",
+        "exits": {
+            "Storms Grotto Domain Gateway": "True",
+            "Zoras Domain": "True"
+        }
+    },
+    {
+        "region_name": "Storms Grotto Domain Gateway",
+        "exits": {
+            "Domain Storms Grotto Gateway": "True",
+            "ZD Storms Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Lake Grotto Gateway",
+        "exits": {
+            "Grotto Lake Gateway": "True",
+            "Lake Hylia": "True"
+        }
+    },
+    {
+        "region_name": "Grotto Lake Gateway",
+        "exits": {
+            "Lake Grotto Gateway": "True",
+            "LH Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Valley Storms Grotto Gateway",
+        "exits": {
+            "Storms Grotto Valley Gateway": "True",
+            "GV Fortress Side": "True"
+        }
+    },
+    {
+        "region_name": "Storms Grotto Valley Gateway",
+        "exits": {
+            "Valley Storms Grotto Gateway": "True",
+            "GV Storms Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Valley Octorok Grotto Gateway",
+        "exits": {
+            "Octorok Grotto Valley Gateway": "True",
+            "GV Grotto Ledge": "True"
+        }
+    },
+    {
+        "region_name": "Octorok Grotto Valley Gateway",
+        "exits": {
+            "Valley Octorok Grotto Gateway": "True",
+            "GV Octorok Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Fortress Storms Grotto Gateway",
+        "exits": {
+            "Fortress Storms Grotto Gateway": "True",
+            "Gerudo Fortress": "True"
+        }
+    },
+    {
+        "region_name": "Fortress Storms Grotto Gateway",
+        "exits": {
+            "Fortress Storms Grotto Gateway": "True",
+            "GF Storms Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Colossus Grotto Gateway",
+        "exits": {
+            "Grotto Colossus Gateway": "True",
+            "Desert Colossus": "True"
+        }
+    },
+    {
+        "region_name": "Grotto Colossus Gateway",
+        "exits": {
+            "Colossus Grotto Gateway": "True",
+            "Colossus Grotto": "True"
+        }
+    }
+]

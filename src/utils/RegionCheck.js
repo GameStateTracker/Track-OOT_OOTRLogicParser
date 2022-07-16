@@ -2,8 +2,8 @@ import fs from "fs";
 import path from "path";
 
 const __dirname = path.resolve();
-const inExitSuccessFile  = path.join(__dirname, "/gateways/regionUpdates.json");
-const regionUpdates = JSON.parse(fs.readFileSync(inExitSuccessFile, "utf8"));
+const exitSuccessFile  = path.join(__dirname, "/debug/regionUpdates.json");
+const regionUpdates = JSON.parse(fs.readFileSync(exitSuccessFile, "utf8"));
 const regionFile = {
     mainRegions: {},
     subRegions: {}
@@ -26,7 +26,7 @@ class RegionCheck {
         this.getRegions()
         data = this.checkNew(data, importRegions);
         this.checkRemoved(importRegions);
-        fs.writeFileSync(`${__dirname}/gateways/regionUpdates.json`, JSON.stringify(data, null, 4));
+        fs.writeFileSync(exitSuccessFile, JSON.stringify(data, null, 4));
     }
 
     checkNew(data = null, importRegions = null) {

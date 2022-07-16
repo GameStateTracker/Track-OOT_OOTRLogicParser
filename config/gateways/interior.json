@@ -1,0 +1,562 @@
+[
+    {
+        "region_name": "Kokiri Midos House Gateway",
+        "exits": {
+            "Midos Kokiri House Gateway": "True",
+            "Kokiri Forest": "True"
+        }
+    },
+    {
+        "region_name": "Midos House Kokiri Gateway",
+        "exits": {
+            "Kokiri Midos House Gateway": "True",
+            "KF Midos House": "True"
+        }
+    },
+    {
+        "region_name": "Kokiri Sarias House Gateway",
+        "exits": {
+            "Sarias House Kokiri Gateway": "True",
+            "Kokiri Forest": "True"
+        }
+    },
+    {
+        "region_name": "Sarias House Kokiri Gateway",
+        "exits": {
+            "Kokiri Sarias House Gateway": "True",
+            "KF Sarias House": "True"
+        }
+    },
+    {
+        "region_name": "Kokiri House of Twins Gateway",
+        "exits": {
+            "House of Twins Kokiri Gateway": "True",
+            "Kokiri Forest": "True"
+        }
+    },
+    {
+        "region_name": "House of Twins Kokiri Gateway",
+        "exits": {
+            "Kokiri House of Twins Gateway": "True",
+            "KF House of Twins": "True"
+        }
+    },
+    {
+        "region_name": "Kokiri Know It All House Gateway",
+        "exits": {
+            "Know It All House Kokiri Gateway": "True",
+            "Kokiri Forest": "True"
+        }
+    },
+    {
+        "region_name": "Know It All House Kokiri Gateway",
+        "exits": {
+            "Kokiri Know It All House Gateway": "True",
+            "KF Know It All House": "True"
+        }
+    },
+    {
+        "region_name": "Kokiri Kokiri Shop Gateway",
+        "exits": {
+            "Kokiri Shop Kokiri Gateway": "True",
+            "Kokiri Forest": "True"
+        }
+    },
+    {
+        "region_name": "Kokiri Shop Kokiri Gateway",
+        "exits": {
+            "Kokiri Kokiri Shop Gateway": "True",
+            "KF Kokiri Shop": "True"
+        }
+    },
+    {
+        "region_name": "Kokiri Links House Gateway",
+        "exits": {
+            "Links House Kokiri Gateway": "True",
+            "Kokiri Forest": "True"
+        }
+    },
+    {
+        "region_name": "Links House Kokiri Gateway",
+        "exits": {
+            "Kokiri Links House Gateway": "True",
+            "KF Links House": "True"
+        }
+    },
+    {
+        "region_name": "Market Guard House Gateway",
+        "exits": {
+            "Guard House Market Gateway": "True",
+            "Market Entrance": "True"
+        }
+    },
+    {
+        "region_name": "Guard House Market Gateway",
+        "exits": {
+            "Market Guard House Gateway": "True",
+            "Market Guard House": "True"
+        }
+    },
+    {
+        "region_name": "Market Mask Shop Gateway",
+        "exits": {
+            "Mask Shop Market Gateway": "True",
+            "Market": "True"
+        }
+    },
+    {
+        "region_name": "Mask Shop Market Gateway",
+        "exits": {
+            "Market Mask Shop Gateway": "True",
+            "Market Mask Shop": "True"
+        }
+    },
+    {
+        "region_name": "Market Bombchu Bowling Gateway",
+        "exits": {
+            "Bombchu Bowling Market Gateway": "True",
+            "Market": "True"
+        }
+    },
+    {
+        "region_name": "Bombchu Bowling Market Gateway",
+        "exits": {
+            "Market Bombchu Bowling Gateway": "True",
+            "Market Bombchu Bowling": "True"
+        }
+    },
+    {
+        "region_name": "Market Potion Shop Gateway",
+        "exits": {
+            "Potion Shop Market Gateway": "True",
+            "Market": "True"
+        }
+    },
+    {
+        "region_name": "Potion Shop Market Gateway",
+        "exits": {
+            "Market Potion Shop Gateway": "True",
+            "Market Potion Shop": "True"
+        }
+    },
+    {
+        "region_name": "Market Treasure Chest Game Gateway",
+        "exits": {
+            "Treasure Chest Game Market Gateway": "True",
+            "Market": "True"
+        }
+    },
+    {
+        "region_name": "Treasure Chest Game Market Gateway",
+        "exits": {
+            "Market Treasure Chest Game Gateway": "True",
+            "Market Treasure Chest Game": "True"
+        }
+    },
+    {
+        "region_name": "Market Bombchu Shop Gateway",
+        "exits": {
+            "Bombchu Shop Market Gateway": "True",
+            "Market Back Alley": "True"
+        }
+    },
+    {
+        "region_name": "Bombchu Shop Market Gateway",
+        "exits": {
+            "Market Bombchu Shop Gateway": "True",
+            "Market Bombchu Shop": "True"
+        }
+    },
+    {
+        "region_name": "Market Back House Gateway",
+        "exits": {
+            "Back House Market Gateway": "True",
+            "Market Back Alley": "True"
+        }
+    },
+    {
+        "region_name": "Back House Market Gateway",
+        "exits": {
+            "Market Back House Gateway": "True",
+            "Market Man in Green House": "True"
+        }
+    },
+    {
+        "region_name": "Market Bazaar Gateway",
+        "exits": {
+            "Bazaar Market Gateway": "True",
+            "Market": "True"
+        }
+    },
+    {
+        "region_name": "Bazaar Market Gateway",
+        "exits": {
+            "Market Bazaar Gateway": "True",
+            "Market Bazaar": "True"
+        }
+    },
+    {
+        "region_name": "Market Shooting Gallery Gateway",
+        "exits": {
+            "Shooting Gallery Market Gateway": "True",
+            "Market": "True"
+        }
+    },
+    {
+        "region_name": "Shooting Gallery Market Gateway",
+        "exits": {
+            "Market Shooting Gallery Gateway": "True",
+            "Market Shooting Gallery": "True"
+        }
+    },
+    {
+        "region_name": "Ranch Talons House Gateway",
+        "exits": {
+            "Talons House Ranch Gateway": "True",
+            "Lon Lon Ranch": "True"
+        }
+    },
+    {
+        "region_name": "Talons House Ranch Gateway",
+        "exits": {
+            "Ranch Talons House Gateway": "True",
+            "LLR Talons House": "True"
+        }
+    },
+    {
+        "region_name": "Ranch Stables Gateway",
+        "exits": {
+            "Stables Ranch Gateway": "True",
+            "Lon Lon Ranch": "True"
+        }
+    },
+    {
+        "region_name": "Stables Ranch Gateway",
+        "exits": {
+            "Ranch Stables Gateway": "True",
+            "LLR Stables": "True"
+        }
+    },
+    {
+        "region_name": "Ranch Tower Gateway",
+        "exits": {
+            "Tower Ranch Gateway": "True",
+            "Lon Lon Ranch": "True"
+        }
+    },
+    {
+        "region_name": "Tower Ranch Gateway",
+        "exits": {
+            "Ranch Tower Gateway": "True",
+            "LLR Tower": "True"
+        }
+    },
+    {
+        "region_name": "Grounds Great Fairy Gateway",
+        "exits": {
+            "Great Fairy Grounds Gateway": "True",
+            "Hyrule Castle Grounds": "True"
+        }
+    },
+    {
+        "region_name": "Great Fairy Grounds Gateway",
+        "exits": {
+            "Grounds Great Fairy Gateway": "True",
+            "HC Great Fairy Fountain": "True"
+        }
+    },
+    {
+        "region_name": "Ganon Grounds Great Fairy Gateway",
+        "exits": {
+            "Great Fairy Ganon Grounds Gateway": "True",
+            "OGC Great Fairy Fountain": "True"
+        }
+    },
+    {
+        "region_name": "Great Fairy Ganon Grounds Gateway",
+        "exits": {
+            "Ganon Grounds Great Fairy Gateway": "True",
+            "Ganons Castle Grounds": "True"
+        }
+    },
+    {
+        "region_name": "Kakariko Carpenter House Gateway",
+        "exits": {
+            "Carpenter House Kakariko Gateway": "True",
+            "Kakariko Village": "True"
+        }
+    },
+    {
+        "region_name": "Carpenter House Kakariko Gateway",
+        "exits": {
+            "Kakariko Carpenter House Gateway": "True",
+            "Kak Carpenter Boss House": "True"
+        }
+    },
+    {
+        "region_name": "Kakariko Skulltula House Gateway",
+        "exits": {
+            "Skulltula House Kakariko Gateway": "True",
+            "Kakariko Village": "True"
+        }
+    },
+    {
+        "region_name": "Skulltula House Kakariko Gateway",
+        "exits": {
+            "Kakariko Skulltula House Gateway": "True",
+            "Kak House of Skulltula": "True"
+        }
+    },
+    {
+        "region_name": "Kakariko Impas House Gateway",
+        "exits": {
+            "Impas House Kakariko Gateway": "True",
+            "Kakariko Village": "True"
+        }
+    },
+    {
+        "region_name": "Impas House Kakariko Gateway",
+        "exits": {
+            "Kakariko Impas House Gateway": "True",
+            "Kak Impas House": "True"
+        }
+    },
+    {
+        "region_name": "Kakariko Impas Back Gateway",
+        "exits": {
+            "Impas Back Kakariko Gateway": "True",
+            "Kak Impas Ledge": "True"
+        }
+    },
+    {
+        "region_name": "Impas Back Kakariko Gateway",
+        "exits": {
+            "Kakariko Impas Back Gateway": "True",
+            "Kak Impas House Back": "True"
+        }
+    },
+    {
+        "region_name": "Kakariko Medicine Building Gateway",
+        "exits": {
+            "Medicine Building Kakariko Gateway": "True",
+            "Kak Backyard": "True"
+        }
+    },
+    {
+        "region_name": "Medicine Building Kakariko Gateway",
+        "exits": {
+            "Kakariko Medicine Building Gateway": "True",
+            "Kak Odd Medicine Building": "True"
+        }
+    },
+    {
+        "region_name": "Kakariko Bazaar Gateway",
+        "exits": {
+            "Bazaar Kakariko Gateway": "True",
+            "Kakariko Village": "True"
+        }
+    },
+    {
+        "region_name": "Bazaar Kakariko Gateway",
+        "exits": {
+            "Kakariko Bazaar Gateway": "True",
+            "Kak Bazaar": "True"
+        }
+    },
+    {
+        "region_name": "Kakariko Shooting Gallery Gateway",
+        "exits": {
+            "Shooting Gallery Kakariko Gateway": "True",
+            "Kakariko Village": "True"
+        }
+    },
+    {
+        "region_name": "Shooting Gallery Kakariko Gateway",
+        "exits": {
+            "Kakariko Shooting Gallery Gateway": "True",
+            "Kak Shooting Gallery": "True"
+        }
+    },
+    {
+        "region_name": "Kakariko Windmill Gateway",
+        "exits": {
+            "Windmill Kakariko Gateway": "True",
+            "Kakariko Village": "True"
+        }
+    },
+    {
+        "region_name": "Windmill Kakariko Gateway",
+        "exits": {
+            "Kakariko Windmill Gateway": "True",
+            "Kak Windmill": "True"
+        }
+    },
+    {
+        "region_name": "Kakariko Potion Shop Gateway",
+        "exits": {
+            "Potion Shop Kakariko Gateway": "True",
+            "Kakariko Village": "True"
+        }
+    },
+    {
+        "region_name": "Potion Shop Kakariko Gateway",
+        "exits": {
+            "Kakariko Potion Shop Gateway": "True",
+            "Kak Potion Shop Front": "True"
+        }
+    },
+    {
+        "region_name": "Kakariko Potion Back Gateway",
+        "exits": {
+            "Potion Back Kakariko Gateway": "True",
+            "Kak Backyard": "True"
+        }
+    },
+    {
+        "region_name": "Potion Back Kakariko Gateway",
+        "exits": {
+            "Kakariko Potion Back Gateway": "True",
+            "Kak Potion Shop Back": "True"
+        }
+    },
+    {
+        "region_name": "Graveyard Dampes House Gateway",
+        "exits": {
+            "Dampes House Graveyard Gateway": "True",
+            "Graveyard": "True"
+        }
+    },
+    {
+        "region_name": "Dampes House Graveyard Gateway",
+        "exits": {
+            "Graveyard Dampes House Gateway": "True",
+            "Graveyard Dampes House": "True"
+        }
+    },
+    {
+        "region_name": "Mountain Great Fairy Gateway",
+        "exits": {
+            "Great Fairy Mountain Gateway": "True",
+            "Death Mountain Summit": "True"
+        }
+    },
+    {
+        "region_name": "Great Fairy Mountain Gateway",
+        "exits": {
+            "Mountain Great Fairy Gateway": "True",
+            "DMT Great Fairy Fountain": "True"
+        }
+    },
+    {
+        "region_name": "Crater Great Fairy Gateway",
+        "exits": {
+            "Great Fairy Crater Gateway": "True",
+            "DMC Lower Nearby": "True"
+        }
+    },
+    {
+        "region_name": "Great Fairy Crater Gateway",
+        "exits": {
+            "Crater Great Fairy Gateway": "True",
+            "DMC Great Fairy Fountain": "True"
+        }
+    },
+    {
+        "region_name": "Goron Shop Gateway",
+        "exits": {
+            "Shop Goron Gateway": "True",
+            "Goron City": "True"
+        }
+    },
+    {
+        "region_name": "Shop Goron Gateway",
+        "exits": {
+            "Goron Shop Gateway": "True",
+            "GC Shop": "True"
+        }
+    },
+    {
+        "region_name": "Zora Shop Gateway",
+        "exits": {
+            "Shop Zora Gateway": "True",
+            "Zoras Domain": "True"
+        }
+    },
+    {
+        "region_name": "Shop Zora Gateway",
+        "exits": {
+            "Zora Shop Gateway": "True",
+            "ZD Shop": "True"
+        }
+    },
+    {
+        "region_name": "Fountain Great Fairy Gateway",
+        "exits": {
+            "Great Fairy Fountain Gateway": "True",
+            "Zoras Fountain": "True"
+        }
+    },
+    {
+        "region_name": "Great Fairy Fountain Gateway",
+        "exits": {
+            "Fountain Great Fairy Gateway": "True",
+            "ZF Great Fairy Fountain": "True"
+        }
+    },
+    {
+        "region_name": "Lake Lab Gateway",
+        "exits": {
+            "Lab Lake Gateway": "True",
+            "Lake Hylia": "True"
+        }
+    },
+    {
+        "region_name": "Lab Lake Gateway",
+        "exits": {
+            "Lake Lab Gateway": "True",
+            "LH Lab": "True"
+        }
+    },
+    {
+        "region_name": "Lake Fishing Hole Gateway",
+        "exits": {
+            "Fishing Hole Lake Gateway": "True",
+            "LH Fishing Island": "True"
+        }
+    },
+    {
+        "region_name": "Fishing Hole Lake Gateway",
+        "exits": {
+            "Lake Fishing Hole Gateway": "True",
+            "LH Fishing Hole": "True"
+        }
+    },
+    {
+        "region_name": "Valley Carpenter Tent Gateway",
+        "exits": {
+            "Carpenter Tent Valley Gateway": "True",
+            "GV Fortress Side": "True"
+        }
+    },
+    {
+        "region_name": "Carpenter Tent Valley Gateway",
+        "exits": {
+            "Valley Carpenter Tent Gateway": "True",
+            "GV Carpenter Tent": "True"
+        }
+    },
+    {
+        "region_name": "Colossus Great Fairy Gateway",
+        "exits": {
+            "Great Fairy Colossus Gateway": "True",
+            "Desert Colossus": "True"
+        }
+    },
+    {
+        "region_name": "Great Fairy Colossus Gateway",
+        "exits": {
+            "Colossus Great Fairy Gateway": "True",
+            "Colossus Great Fairy Fountain": "True"
+        }
+    }
+]

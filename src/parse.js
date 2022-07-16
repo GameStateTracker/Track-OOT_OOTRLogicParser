@@ -17,10 +17,12 @@ import {
 import {
     reduceLogic
 } from "./_test/LogicReducer.js";
+import {
+    gatewayData
+} from "./utils/GatewayLoader.js";
 
 const __dirname = path.resolve();
 
-const inGatewayFile  = path.join(__dirname, "/gateways/gateways.json");
 const inHelperFile  = path.join(__dirname, "/input/data/LogicHelpers.json");
 const inLogicDir  = path.join(__dirname, "/input/data/World");
 const inGlitchedDir  = path.join(__dirname, "/input/data/Glitched World");
@@ -48,7 +50,7 @@ rules.forEach((v, k) => {
 // parser for normal logic
 function parseLogic() {
     LogicGenerator.reset();
-    LogicParser.parse(fs.readFileSync(inGatewayFile).toString(), false);
+    LogicParser.parse(gatewayData, false);
     fs.readdirSync(inLogicDir).forEach(function(file) {
         const iname = path.join(inLogicDir, file);
         let mq = false;
@@ -83,7 +85,7 @@ function parseLogic() {
 // parser for glitched logic
 function parseGlitchedLogic() {
     LogicGenerator.reset();
-    LogicParser.parse(fs.readFileSync(inGatewayFile).toString());
+    LogicParser.parse(gatewayData);
     fs.readdirSync(inGlitchedDir).forEach(function(file) {
         const iname = path.join(inGlitchedDir, file);
         let mq = false;

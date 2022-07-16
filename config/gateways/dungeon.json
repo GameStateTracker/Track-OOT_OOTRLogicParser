@@ -1,0 +1,182 @@
+[
+    {
+        "region_name": "Kakariko Well Gateway",
+        "exits": {
+            "Kakariko Village": "True",
+            "Well Kakriko Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Well Kakriko Gateway",
+        "exits": {
+            "Kakariko Well Gateway": "True",
+            "Bottom of the Well": "dungeontype[well] != 'mq'",
+            "Bottom of the Well MQ": "dungeontype[well] != 'v'"
+        }
+    },
+    {
+        "region_name": "Kokiri Deku Gateway",
+        "exits": {
+            "KF Outside Deku Tree": "True",
+            "Deku Kokiri Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Deku Kokiri Gateway",
+        "exits": {
+            "Kokiri Deku Gateway": "True",
+            "Deku Tree Lobby": "dungeontype[deku] != 'mq'",
+            "Deku Tree Lobby MQ": "dungeontype[deku] != 'v'"
+        }
+    },
+    {
+        "region_name": "Mountain Dodongo Gateway",
+        "exits": {
+            "Death Mountain": "True",
+            "Dodongo Mountain Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Dodongo Mountain Gateway",
+        "exits": {
+            "Mountain Dodongo Gateway": "True",
+            "Dodongos Cavern Beginning": "dungeontype[dodongo] != 'mq'",
+            "Dodongos Cavern Beginning MQ": "dungeontype[dodongo] != 'v'"
+        }
+    },
+    {
+        "region_name": "Fountain Jabu Gateway",
+        "exits": {
+            "Zoras Fountain": "True",
+            "Jabu Fountain Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Jabu Fountain Gateway",
+        "exits": {
+            "Fountain Jabu Gateway": "True",
+            "Jabu Jabus Belly Beginning": "dungeontype[jabujabu] != 'mq'",
+            "Jabu Jabus Belly Beginning MQ": "dungeontype[jabujabu] != 'v'"
+        }
+    },
+    {
+        "region_name": "Fountain Ice Cavern Gateway",
+        "exits": {
+            "ZF Ice Ledge": "True",
+            "Ice Cavern Fountain Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Ice Cavern Fountain Gateway",
+        "exits": {
+            "Fountain Ice Cavern Gateway": "True",
+            "Ice Cavern Beginning": "dungeontype[ice_cavern] != 'mq'",
+            "Ice Cavern Beginning MQ": "dungeontype[ice_cavern] != 'v'"
+        }
+    },
+    {
+        "region_name": "Fortress Training Grounds Gateway",
+        "exits": {
+            "Gerudo Fortress": "True",
+            "Training Grounds Fortress Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Training Grounds Fortress Gateway",
+        "exits": {
+            "Fortress Training Grounds Gateway": "True",
+            "Gerudo Training Ground Lobby": "dungeontype[training_grounds] != 'mq'",
+            "Gerudo Training Ground Lobby MQ": "dungeontype[training_grounds] != 'v'"
+        }
+    },
+    {
+        "region_name": "Meadow Forest Temple Gateway",
+        "exits": {
+            "SFM Forest Temple Entrance Ledge": "True",
+            "Forest Temple Meadow Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Forest Temple Meadow Gateway",
+        "exits": {
+            "Meadow Forest Temple Gateway": "True",
+            "Forest Temple Lobby": "dungeontype[temple_forest] != 'mq'",
+            "Forest Temple Lobby MQ": "dungeontype[temple_forest] != 'v'"
+        }
+    },
+    {
+        "region_name": "Crater Fire Temple Gateway",
+        "exits": {
+            "Fire Temple Crater Gateway": "True",
+            "DMC Fire Temple Entrance": "True"
+        }
+    },
+    {
+        "region_name": "Fire Temple Crater Gateway",
+        "exits": {
+            "Crater Fire Temple Gateway": "True",
+            "Fire Temple Lower": "dungeontype[temple_fire] != 'mq'",
+            "Fire Temple Lower MQ": "dungeontype[temple_fire] != 'v'"
+        }
+    },
+    {
+        "region_name": "Lake Water Temple Gateway",
+        "exits": {
+            "Lake Hylia": "True",
+            "Water Temple Lake Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Water Temple Lake Gateway",
+        "exits": {
+            "Lake Water Temple Gateway": "True",
+            "Water Temple Lobby": "dungeontype[temple_water] != 'mq'",
+            "Water Temple Lobby MQ": "dungeontype[temple_water] != 'v'"
+        }
+    },
+    {
+        "region_name": "Graveyard Shadow Temple Gateway",
+        "exits": {
+            "Graveyard Warp Pad Region": "True",
+            "Shadow Temple Graveyard Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Shadow Temple Graveyard Gateway",
+        "exits": {
+            "Graveyard Shadow Temple Gateway": "True",
+            "Shadow Temple Entryway": "dungeontype[temple_shadow] != 'mq'",
+            "Shadow Temple Entryway MQ": "dungeontype[temple_shadow] != 'v'"
+        }
+    },
+    {
+        "region_name": "Colossus Spirit Temple Gateway",
+        "exits": {
+            "Desert Colossus From Spirit Lobby": "True",
+            "Spirit Temple Colossus Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Spirit Temple Colossus Gateway",
+        "exits": {
+            "Colossus Spirit Temple Gateway": "True",
+            "Spirit Temple Lobby": "dungeontype[temple_spirit] != 'mq'",
+            "Spirit Temple Lobby MQ": "dungeontype[temple_spirit] != 'v'"
+        }
+    },
+    {
+        "region_name": "Castle Grounds Ganons Castle Gateway",
+        "exits": {
+            "Ganons Castle Grounds": "True",
+            "Ganons Castle Castle Grounds Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Ganons Castle Castle Grounds Gateway",
+        "exits": {
+            "Castle Grounds Ganons Castle Gateway": "True",
+            "Ganons Castle Lobby": "dungeontype[castle_ganon] != 'mq'",
+            "Ganons Castle Lobby MQ": "dungeontype[castle_ganon] != 'v'"
+        }
+    }
+]
