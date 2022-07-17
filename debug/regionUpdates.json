@@ -104,12 +104,16 @@
         "Domain River Gateway:Out": false,
         "Domain Fountain Gateway:In": false,
         "Domain Fountain Gateway:Out": false,
-        "Valley Lake Gateway:In": false,
-        "Lake Valley Gateway:Out": false,
         "Market Marketback Gateway:In": false,
         "Market Marketback Gateway:Out": false,
         "Marketback Market Gateway:In": false,
         "Marketback Market Gateway:Out": false,
+        "Valley Lake Gateway:In": false,
+        "Lake Valley Gateway:Out": false,
+        "Lake Owl Gateway:In": false,
+        "Owl Lake Gateway:Out": false,
+        "Mountain Owl Gateway:In": false,
+        "Owl Mountain Gateway:Out": false,
         "Kakariko Well Gateway:In": false,
         "Kakariko Well Gateway:Out": false,
         "Well Kakriko Gateway:In": false,
@@ -1045,12 +1049,6 @@
         "Domain Fountain Gateway:Out": {
             "ZD Behind King Zora": false
         },
-        "Valley Lake Gateway:In": {
-            "Lake Valley Gateway:Out": false
-        },
-        "Lake Valley Gateway:Out": {
-            "Lake Hylia": false
-        },
         "Market Marketback Gateway:In": {
             "Marketback Market Gateway:Out": false
         },
@@ -1062,6 +1060,24 @@
         },
         "Marketback Market Gateway:Out": {
             "Market Back Alley": false
+        },
+        "Valley Lake Gateway:In": {
+            "Lake Valley Gateway:Out": false
+        },
+        "Lake Valley Gateway:Out": {
+            "Lake Hylia": false
+        },
+        "Lake Owl Gateway:In": {
+            "Owl Lake Gateway:Out": false
+        },
+        "Owl Lake Gateway:Out": {
+            "Hyrule Field": false
+        },
+        "Mountain Owl Gateway:In": {
+            "Owl Mountain Gateway:Out": false
+        },
+        "Owl Mountain Gateway:Out": {
+            "Kak Impas Rooftop": false
         },
         "Kakariko Well Gateway:In": {
             "Well Kakriko Gateway:Out": false
@@ -2500,7 +2516,7 @@
             "KF Outside Deku Tree": false,
             "Kokiri Woods Gateway:In": false,
             "Kokiri Bridge Gateway:In": false,
-            "Kokiri Storms Grotto Gateway:In": true
+            "Kokiri Storms Grotto Gateway:In": false
         },
         "KF Outside Deku Tree": {
             "Kokiri Deku Gateway:In": false,
@@ -2588,7 +2604,7 @@
         "Lake Hylia": {
             "Lake Field Gateway:In": false,
             "Lake Domain Gateway:In": false,
-            "LH Owl Flight": false,
+            "Lake Owl Gateway:In": false,
             "Lake Lab Gateway:In": false,
             "LH Fishing Island": false,
             "Lake Water Temple Gateway:In": false,
@@ -2642,7 +2658,7 @@
         "Gerudo Fortress": {
             "Fortress Valley Gateway:In": false,
             "GF Outside Gate": false,
-            "Fortress Training Grounds Gateway:In": true,
+            "Fortress Training Grounds Gateway:In": false,
             "Fortress Storms Grotto Gateway:In": false
         },
         "GF Outside Gate": {
@@ -2869,13 +2885,13 @@
             "Mountain Kakariko Gateway:In": false,
             "Mountain Goron Gateway:In": false,
             "Death Mountain Summit": false,
-            "Mountain Dodongo Gateway:In": true,
+            "Mountain Dodongo Gateway:In": false,
             "Mountain Storms Grotto Gateway:In": false
         },
         "Death Mountain Summit": {
             "Death Mountain": false,
             "Mountain Crater Gateway:In": false,
-            "DMT Owl Flight": false,
+            "Mountain Owl Gateway:In": false,
             "Mountain Cow Grotto Gateway:In": false,
             "Mountain Great Fairy Gateway:In": false
         },
@@ -2984,7 +3000,7 @@
         },
         "Zoras Fountain": {
             "Fountain Domain Gateway:In": false,
-            "Fountain Jabu Gateway:In": true,
+            "Fountain Jabu Gateway:In": false,
             "ZF Ice Ledge": false,
             "Fountain Great Fairy Gateway:In": false
         },

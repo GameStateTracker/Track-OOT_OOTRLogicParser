@@ -364,6 +364,27 @@
         }
     },
     {
+        "region_name": "Market Marketback Gateway",
+        "exits": {
+            "Market": "True",
+            "Marketback Market Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Marketback Market Gateway",
+        "exits": {
+            "Market Back Alley": "True",
+            "Market Marketback Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Marketback Market Gateway",
+        "exits": {
+            "Market Back Alley": "True",
+            "Market Marketback Gateway": "True"
+        }
+    },
+    {
         "region_name": "Valley Lake Gateway",
         "exits": {
             "Lake Valley Gateway": "True"
@@ -376,17 +397,27 @@
         }
     },
     {
-        "region_name": "Market Marketback Gateway",
+        "region_name": "Lake Owl Gateway",
         "exits": {
-            "Market": "True",
-            "Marketback Market Gateway": "True"
+            "Owl Lake Gateway": "True"
         }
     },
     {
-        "region_name": "Marketback Market Gateway",
+        "region_name": "Owl Lake Gateway",
         "exits": {
-            "Market Back Alley": "True",
-            "Market Marketback Gateway": "True"
+            "Hyrule Field": "True"
+        }
+    },
+    {
+        "region_name": "Mountain Owl Gateway",
+        "exits": {
+            "Owl Mountain Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Owl Mountain Gateway",
+        "exits": {
+            "Kak Impas Rooftop": "True"
         }
     }
 ]

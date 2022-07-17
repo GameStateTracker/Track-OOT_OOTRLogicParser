@@ -24,7 +24,7 @@
         "option[doors_open_mountain]": false,
         "option[doors_open_temple]": true,
         "option[doors_open_zora]": "doors_open_zora_closed",
-        "option[gerudo_fortress_open]": "gerudo_fortress_open_default",
+        "option[gerudo_fortress_open]": "gerudo_fortress_open_open",
         "option[ganon_castle_open]": "ganon_castle_open_default",
         "option[ganon_castle_skulltulas]": 100,
         "option[trade_sequence_start_item]": "1",

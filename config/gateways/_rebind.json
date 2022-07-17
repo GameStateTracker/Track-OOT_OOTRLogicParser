@@ -43,7 +43,8 @@
         "Hyrule Field": "Lake Field Gateway",
         "Zoras Domain": "Lake Domain Gateway",
         "LH Lab": "Lake Lab Gateway",
-        "LH Grotto": "Lake Grotto Gateway"
+        "LH Grotto": "Lake Grotto Gateway",
+        "LH Owl Flight": "Lake Owl Gateway"
     },
     "Graveyard Warp Pad Region": {
         "Shadow Temple Entryway": "Graveyard Shadow Temple Gateway"
@@ -254,7 +255,8 @@
     "Death Mountain Summit": {
         "DMC Upper Local": "Mountain Crater Gateway",
         "DMT Great Fairy Fountain": "Mountain Great Fairy Gateway",
-        "DMT Cow Grotto": "Mountain Cow Grotto Gateway"
+        "DMT Cow Grotto": "Mountain Cow Grotto Gateway",
+        "DMT Owl Flight": "Mountain Owl Gateway"
     },
     "DMC Upper Nearby": {
         "Death Mountain Summit": "Crater Mountain Gateway",
