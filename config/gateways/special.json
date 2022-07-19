@@ -1,0 +1,122 @@
+[
+    {
+        "region_name": "Child Spawn Links House Gateway",
+        "exits": {
+            "Links House Child Spawn Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Links House Child Spawn Gateway",
+        "exits": {
+            "KF Links House": "True"
+        }
+    },
+    {
+        "region_name": "Adult Spawn Temple of Time Gateway",
+        "exits": {
+            "Temple of Time Adult Spawn Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Temple of Time Adult Spawn Gateway",
+        "exits": {
+            "Temple of Time": "True"
+        }
+    },
+    {
+        "region_name": "Prelude Temple of Time Gateway",
+        "exits": {
+            "Temple of Time Prelude Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Temple of Time Prelude Gateway",
+        "exits": {
+            "Temple of Time": "True"
+        }
+    },
+    {
+        "region_name": "Minuet Meadow Gateway",
+        "exits": {
+            "Meadow Minuet Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Meadow Minuet Gateway",
+        "exits": {
+            "Sacred Forest Meadow": "True"
+        }
+    },
+    {
+        "region_name": "Bolero Crater Gateway",
+        "exits": {
+            "Crater Bolero Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Crater Bolero Gateway",
+        "exits": {
+            "DMC Central Local": "True"
+        }
+    },
+    {
+        "region_name": "Serenade Lake Gateway",
+        "exits": {
+            "Lake Serenade Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Lake Serenade Gateway",
+        "exits": {
+            "Lake Hylia": "True"
+        }
+    },
+    {
+        "region_name": "Nocturne Graveyard Gateway",
+        "exits": {
+            "Graveyard Nocturne Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Graveyard Nocturne Gateway",
+        "exits": {
+            "Graveyard Warp Pad Region": "True"
+        }
+    },
+    {
+        "region_name": "Requiem Colossus Gateway",
+        "exits": {
+            "Colossus Requiem Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Colossus Requiem Gateway",
+        "exits": {
+            "Desert Colossus": "True"
+        }
+    },
+    {
+        "region_name": "Lake Owl Gateway",
+        "exits": {
+            "Owl Lake Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Owl Lake Gateway",
+        "exits": {
+            "Hyrule Field": "True"
+        }
+    },
+    {
+        "region_name": "Mountain Owl Gateway",
+        "exits": {
+            "Owl Mountain Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Owl Mountain Gateway",
+        "exits": {
+            "Kak Impas Rooftop": "True"
+        }
+    }
+]

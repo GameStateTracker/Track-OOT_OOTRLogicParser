@@ -1,5 +1,19 @@
 [
     {
+        "region_name": "ToT Entrance Temple of Time Gateway",
+        "exits": {
+            "Temple of Time ToT Entrance Gateway": "True",
+            "ToT Entrance": "True"
+        }
+    },
+    {
+        "region_name": "Temple of Time ToT Entrance Gateway",
+        "exits": {
+            "ToT Entrance Temple of Time Gateway": "True",
+            "Temple of Time": "True"
+        }
+    },
+    {
         "region_name": "Kokiri Midos House Gateway",
         "exits": {
             "Midos Kokiri House Gateway": "True",

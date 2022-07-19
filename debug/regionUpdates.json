@@ -1,5 +1,25 @@
 {
     "mainRegions": {
+        "Child Spawn Links House Gateway:In": true,
+        "Links House Child Spawn Gateway:Out": true,
+        "Adult Spawn Temple of Time Gateway:In": true,
+        "Temple of Time Adult Spawn Gateway:Out": true,
+        "Prelude Temple of Time Gateway:In": true,
+        "Temple of Time Prelude Gateway:Out": true,
+        "Minuet Meadow Gateway:In": true,
+        "Meadow Minuet Gateway:Out": true,
+        "Bolero Crater Gateway:In": true,
+        "Crater Bolero Gateway:Out": true,
+        "Serenade Lake Gateway:In": true,
+        "Lake Serenade Gateway:Out": true,
+        "Nocturne Graveyard Gateway:In": true,
+        "Graveyard Nocturne Gateway:Out": true,
+        "Requiem Colossus Gateway:In": true,
+        "Colossus Requiem Gateway:Out": true,
+        "Lake Owl Gateway:In": false,
+        "Owl Lake Gateway:Out": false,
+        "Mountain Owl Gateway:In": false,
+        "Owl Mountain Gateway:Out": false,
         "Kokiri Bridge Gateway:In": false,
         "Kokiri Bridge Gateway:Out": false,
         "Kokiri Woods Gateway:In": false,
@@ -110,10 +130,6 @@
         "Marketback Market Gateway:Out": false,
         "Valley Lake Gateway:In": false,
         "Lake Valley Gateway:Out": false,
-        "Lake Owl Gateway:In": false,
-        "Owl Lake Gateway:Out": false,
-        "Mountain Owl Gateway:In": false,
-        "Owl Mountain Gateway:Out": false,
         "Kakariko Well Gateway:In": false,
         "Kakariko Well Gateway:Out": false,
         "Well Kakriko Gateway:In": false,
@@ -306,6 +322,10 @@
         "Colossus Grotto Gateway:Out": false,
         "Grotto Colossus Gateway:In": false,
         "Grotto Colossus Gateway:Out": false,
+        "ToT Entrance Temple of Time Gateway:In": true,
+        "ToT Entrance Temple of Time Gateway:Out": true,
+        "Temple of Time ToT Entrance Gateway:In": true,
+        "Temple of Time ToT Entrance Gateway:Out": true,
         "Kokiri Midos House Gateway:In": false,
         "Kokiri Midos House Gateway:Out": false,
         "Midos House Kokiri Gateway:In": false,
@@ -737,6 +757,66 @@
         "Water Temple Dark Link Region": false
     },
     "subRegions": {
+        "Child Spawn Links House Gateway:In": {
+            "Links House Child Spawn Gateway:Out": true
+        },
+        "Links House Child Spawn Gateway:Out": {
+            "KF Links House": true
+        },
+        "Adult Spawn Temple of Time Gateway:In": {
+            "Temple of Time Adult Spawn Gateway:Out": true
+        },
+        "Temple of Time Adult Spawn Gateway:Out": {
+            "Temple of Time": true
+        },
+        "Prelude Temple of Time Gateway:In": {
+            "Temple of Time Prelude Gateway:Out": true
+        },
+        "Temple of Time Prelude Gateway:Out": {
+            "Temple of Time": true
+        },
+        "Minuet Meadow Gateway:In": {
+            "Meadow Minuet Gateway:Out": true
+        },
+        "Meadow Minuet Gateway:Out": {
+            "Sacred Forest Meadow": true
+        },
+        "Bolero Crater Gateway:In": {
+            "Crater Bolero Gateway:Out": true
+        },
+        "Crater Bolero Gateway:Out": {
+            "DMC Central Local": true
+        },
+        "Serenade Lake Gateway:In": {
+            "Lake Serenade Gateway:Out": true
+        },
+        "Lake Serenade Gateway:Out": {
+            "Lake Hylia": true
+        },
+        "Nocturne Graveyard Gateway:In": {
+            "Graveyard Nocturne Gateway:Out": true
+        },
+        "Graveyard Nocturne Gateway:Out": {
+            "Graveyard Warp Pad Region": true
+        },
+        "Requiem Colossus Gateway:In": {
+            "Colossus Requiem Gateway:Out": true
+        },
+        "Colossus Requiem Gateway:Out": {
+            "Desert Colossus": true
+        },
+        "Lake Owl Gateway:In": {
+            "Owl Lake Gateway:Out": false
+        },
+        "Owl Lake Gateway:Out": {
+            "Hyrule Field": false
+        },
+        "Mountain Owl Gateway:In": {
+            "Owl Mountain Gateway:Out": false
+        },
+        "Owl Mountain Gateway:Out": {
+            "Kak Impas Rooftop": false
+        },
         "Kokiri Bridge Gateway:In": {
             "Bridge Kokiri Gateway:Out": false
         },
@@ -1066,18 +1146,6 @@
         },
         "Lake Valley Gateway:Out": {
             "Lake Hylia": false
-        },
-        "Lake Owl Gateway:In": {
-            "Owl Lake Gateway:Out": false
-        },
-        "Owl Lake Gateway:Out": {
-            "Hyrule Field": false
-        },
-        "Mountain Owl Gateway:In": {
-            "Owl Mountain Gateway:Out": false
-        },
-        "Owl Mountain Gateway:Out": {
-            "Kak Impas Rooftop": false
         },
         "Kakariko Well Gateway:In": {
             "Well Kakriko Gateway:Out": false
@@ -1669,6 +1737,18 @@
         },
         "Grotto Colossus Gateway:Out": {
             "Colossus Grotto": false
+        },
+        "ToT Entrance Temple of Time Gateway:In": {
+            "Temple of Time ToT Entrance Gateway:Out": true
+        },
+        "ToT Entrance Temple of Time Gateway:Out": {
+            "ToT Entrance": true
+        },
+        "Temple of Time ToT Entrance Gateway:In": {
+            "ToT Entrance Temple of Time Gateway:Out": true
+        },
+        "Temple of Time ToT Entrance Gateway:Out": {
+            "Temple of Time": true
         },
         "Kokiri Midos House Gateway:In": {
             "Midos Kokiri House Gateway:Out": false
@@ -2483,28 +2563,28 @@
             "Requiem of Spirit Warp": false
         },
         "Child Spawn": {
-            "KF Links House": false
+            "Child Spawn Links House Gateway:In": true
         },
         "Adult Spawn": {
-            "Temple of Time": false
+            "Adult Spawn Temple of Time Gateway:In": true
         },
         "Prelude of Light Warp": {
-            "Temple of Time": false
+            "Prelude Temple of Time Gateway:In": true
         },
         "Minuet of Forest Warp": {
-            "Sacred Forest Meadow": false
+            "Minuet Meadow Gateway:In": true
         },
         "Bolero of Fire Warp": {
-            "DMC Central Local": false
+            "Bolero Crater Gateway:In": true
         },
         "Serenade of Water Warp": {
-            "Lake Hylia": false
+            "Serenade Lake Gateway:In": true
         },
         "Nocturne of Shadow Warp": {
-            "Graveyard Warp Pad Region": false
+            "Nocturne Graveyard Gateway:In": true
         },
         "Requiem of Spirit Warp": {
-            "Desert Colossus": false
+            "Requiem Colossus Gateway:In": true
         },
         "Kokiri Forest": {
             "Kokiri Links House Gateway:In": false,
@@ -2714,10 +2794,10 @@
         },
         "ToT Entrance": {
             "ToT Market Gateway:In": false,
-            "Temple of Time": false
+            "ToT Entrance Temple of Time Gateway:In": true
         },
         "Temple of Time": {
-            "ToT Entrance": false,
+            "Temple of Time ToT Entrance Gateway:In": true,
             "Beyond Door of Time": false
         },
         "Beyond Door of Time": {

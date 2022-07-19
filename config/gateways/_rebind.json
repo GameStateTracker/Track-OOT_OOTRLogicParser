@@ -1,4 +1,28 @@
 {
+    "Child Spawn": {
+        "KF Links House": "Child Spawn Links House Gateway"
+    },
+    "Adult Spawn": {
+        "Temple of Time": "Adult Spawn Temple of Time Gateway"
+    },
+    "Prelude of Light Warp": {
+        "Temple of Time": "Prelude Temple of Time Gateway"
+    },
+    "Minuet of Forest Warp": {
+        "Sacred Forest Meadow": "Minuet Meadow Gateway"
+    },
+    "Bolero of Fire Warp": {
+        "DMC Central Local": "Bolero Crater Gateway"
+    },
+    "Serenade of Water Warp": {
+        "Lake Hylia": "Serenade Lake Gateway"
+    },
+    "Nocturne of Shadow Warp": {
+        "Graveyard Warp Pad Region": "Nocturne Graveyard Gateway"
+    },
+    "Requiem of Spirit Warp": {
+        "Desert Colossus": "Requiem Colossus Gateway"
+    },
     "Kakariko Village": {
         "Bottom of the Well": "Kakariko Well Gateway",
         "Hyrule Field": "Kakariko Field Gateway",
@@ -215,7 +239,11 @@
         "Market": "Grounds Market Gateway"
     },
     "ToT Entrance": {
-        "Market": "ToT Market Gateway"
+        "Market": "ToT Market Gateway",
+        "Temple of Time": "ToT Entrance Temple of Time Gateway"
+    },
+    "Temple of Time": {
+        "ToT Entrance": "Temple of Time ToT Entrance Gateway"
     },
     "Graveyard": {
         "Kakariko Village": "Graveyard Kakariko Gateway",

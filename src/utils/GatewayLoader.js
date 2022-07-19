@@ -4,6 +4,7 @@ import path from "path";
 const __dirname = path.resolve();
 
 /* files */
+const specialInFileName  = path.join(__dirname, "/config/gateways/special.json");
 const overworldInFileName  = path.join(__dirname, "/config/gateways/overworld.json");
 const dungeonInFileName  = path.join(__dirname, "/config/gateways/dungeon.json");
 const interiorInFileName  = path.join(__dirname, "/config/gateways/interior.json");
@@ -40,12 +41,16 @@ function modify(source = [], target = []) {
 
 /* module */
 
+const specialInData = JSON.parse(fs.readFileSync(specialInFileName));
 const overworldInData = JSON.parse(fs.readFileSync(overworldInFileName));
 const dungeonInData = JSON.parse(fs.readFileSync(dungeonInFileName));
 const interiorInData = JSON.parse(fs.readFileSync(interiorInFileName));
 const grottoInData = JSON.parse(fs.readFileSync(grottoInFileName));
+
 const outData = [];
+
 modify([
+    ...specialInData,
     ...overworldInData,
     ...dungeonInData,
     ...grottoInData,
