@@ -30,7 +30,7 @@ const outputDir = path.join(__dirname, "/output/");
 
 const transRulesFile = path.join(__dirname, "/translation/predict_rules.json");
 
-const RANDO_VERSION = "6.2.1";
+const RANDO_VERSION = "Dev";
 
 if (fs.existsSync("./input")) {
     fs.rmSync("./input", {recursive: true});

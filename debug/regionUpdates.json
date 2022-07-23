@@ -1,21 +1,21 @@
 {
     "mainRegions": {
-        "Child Spawn Links House Gateway:In": true,
-        "Links House Child Spawn Gateway:Out": true,
-        "Adult Spawn Temple of Time Gateway:In": true,
-        "Temple of Time Adult Spawn Gateway:Out": true,
-        "Prelude Temple of Time Gateway:In": true,
-        "Temple of Time Prelude Gateway:Out": true,
-        "Minuet Meadow Gateway:In": true,
-        "Meadow Minuet Gateway:Out": true,
-        "Bolero Crater Gateway:In": true,
-        "Crater Bolero Gateway:Out": true,
-        "Serenade Lake Gateway:In": true,
-        "Lake Serenade Gateway:Out": true,
-        "Nocturne Graveyard Gateway:In": true,
-        "Graveyard Nocturne Gateway:Out": true,
-        "Requiem Colossus Gateway:In": true,
-        "Colossus Requiem Gateway:Out": true,
+        "Child Spawn Links House Gateway:In": false,
+        "Links House Child Spawn Gateway:Out": false,
+        "Adult Spawn Temple of Time Gateway:In": false,
+        "Temple of Time Adult Spawn Gateway:Out": false,
+        "Prelude Temple of Time Gateway:In": false,
+        "Temple of Time Prelude Gateway:Out": false,
+        "Minuet Meadow Gateway:In": false,
+        "Meadow Minuet Gateway:Out": false,
+        "Bolero Crater Gateway:In": false,
+        "Crater Bolero Gateway:Out": false,
+        "Serenade Lake Gateway:In": false,
+        "Lake Serenade Gateway:Out": false,
+        "Nocturne Graveyard Gateway:In": false,
+        "Graveyard Nocturne Gateway:Out": false,
+        "Requiem Colossus Gateway:In": false,
+        "Colossus Requiem Gateway:Out": false,
         "Lake Owl Gateway:In": false,
         "Owl Lake Gateway:Out": false,
         "Mountain Owl Gateway:In": false,
@@ -322,10 +322,10 @@
         "Colossus Grotto Gateway:Out": false,
         "Grotto Colossus Gateway:In": false,
         "Grotto Colossus Gateway:Out": false,
-        "ToT Entrance Temple of Time Gateway:In": true,
-        "ToT Entrance Temple of Time Gateway:Out": true,
-        "Temple of Time ToT Entrance Gateway:In": true,
-        "Temple of Time ToT Entrance Gateway:Out": true,
+        "ToT Entrance Temple of Time Gateway:In": false,
+        "ToT Entrance Temple of Time Gateway:Out": false,
+        "Temple of Time ToT Entrance Gateway:In": false,
+        "Temple of Time ToT Entrance Gateway:Out": false,
         "Kokiri Midos House Gateway:In": false,
         "Kokiri Midos House Gateway:Out": false,
         "Midos House Kokiri Gateway:In": false,
@@ -486,6 +486,22 @@
         "Colossus Great Fairy Gateway:Out": false,
         "Great Fairy Colossus Gateway:In": false,
         "Great Fairy Colossus Gateway:Out": false,
+        "Deku Tree Boss Door": true,
+        "Gohma Boss Room": true,
+        "Dodongos Cavern Boss Door": true,
+        "King Dodongo Boss Room": true,
+        "Jabu Jabus Belly Boss Door": true,
+        "Barinade Boss Room": true,
+        "Forest Temple Boss Door": true,
+        "Phantom Ganon Boss Room": true,
+        "Fire Temple Boss Door": true,
+        "Volvagia Boss Room": true,
+        "Water Temple Boss Door": true,
+        "Morpha Boss Room": true,
+        "Shadow Temple Boss Door": true,
+        "Bongo Bongo Boss Room": true,
+        "Spirit Temple Boss Door": true,
+        "Twinrova Boss Room": true,
         "Bottom of the Well MQ": false,
         "Bottom of the Well Perimeter MQ": false,
         "Bottom of the Well Middle MQ": false,
@@ -499,18 +515,20 @@
         "Deku Tree Basement Ledge MQ": false,
         "Deku Tree Lobby": false,
         "Deku Tree Slingshot Room": false,
-        "Deku Tree Basement Backroom": false,
-        "Deku Tree Boss Room": false,
+        "Deku Tree Basement Back Room": true,
+        "Deku Tree Basement Ledge": true,
         "Dodongos Cavern Beginning MQ": false,
         "Dodongos Cavern Lobby MQ": false,
+        "Dodongos Cavern Elevator MQ": true,
         "Dodongos Cavern Lower Right Side MQ": false,
         "Dodongos Cavern Bomb Bag Area MQ": false,
+        "Dodongos Cavern Before Boss MQ": true,
         "Dodongos Cavern Beginning": false,
         "Dodongos Cavern Lobby": false,
         "Dodongos Cavern Staircase Room": false,
         "Dodongos Cavern Climb": false,
         "Dodongos Cavern Far Bridge": false,
-        "Dodongos Cavern Boss Area": false,
+        "Dodongos Cavern Before Boss": true,
         "Fire Temple Lower MQ": false,
         "Fire Big Lava Room MQ": false,
         "Fire Lower Maze MQ": false,
@@ -520,6 +538,7 @@
         "Fire Temple Middle": false,
         "Forest Temple Lobby MQ": false,
         "Forest Temple Central Area MQ": false,
+        "Forest Temple Before Block Puzzle MQ": true,
         "Forest Temple After Block Puzzle MQ": false,
         "Forest Temple Outdoor Ledge MQ": false,
         "Forest Temple NW Outdoors MQ": false,
@@ -528,7 +547,9 @@
         "Forest Temple NE Outdoors Ledge MQ": false,
         "Forest Temple Bow Region MQ": false,
         "Forest Temple Falling Room MQ": false,
+        "Forest Temple Before Boss MQ": true,
         "Forest Temple Lobby": false,
+        "Forest Temple Central Area": true,
         "Forest Temple NW Outdoors": false,
         "Forest Temple NE Outdoors": false,
         "Forest Temple Outdoors High Balconies": false,
@@ -537,7 +558,9 @@
         "Forest Temple Straightened Hall": false,
         "Forest Temple Outside Upper Ledge": false,
         "Forest Temple Bow Region": false,
+        "Forest Temple Before Boss": true,
         "Ganons Castle Lobby MQ": false,
+        "Ganons Castle Main MQ": true,
         "Ganons Castle Lobby": false,
         "Gerudo Training Ground Lobby MQ": false,
         "Gerudo Training Ground Right Side MQ": false,
@@ -556,13 +579,15 @@
         "Ice Cavern Beginning MQ": false,
         "Ice Cavern Beginning": false,
         "Jabu Jabus Belly Beginning MQ": false,
+        "Jabu Jabus Belly Elevator Room MQ": true,
         "Jabu Jabus Belly Main MQ": false,
         "Jabu Jabus Belly Depths MQ": false,
-        "Jabu Jabus Belly Boss Area MQ": false,
+        "Jabu Jabus Belly Past Big Octo MQ": true,
+        "Jabu Jabus Belly Before Boss MQ": true,
         "Jabu Jabus Belly Beginning": false,
         "Jabu Jabus Belly Main": false,
         "Jabu Jabus Belly Depths": false,
-        "Jabu Jabus Belly Boss Area": false,
+        "Jabu Jabus Belly Before Boss": true,
         "Root": false,
         "Root Exits": false,
         "Child Spawn": false,
@@ -621,6 +646,7 @@
         "Hyrule Castle Grounds": false,
         "HC Garden": false,
         "HC Great Fairy Fountain": false,
+        "Castle Grounds From Ganons Castle": true,
         "Ganons Castle Grounds": false,
         "OGC Great Fairy Fountain": false,
         "Market Guard House": false,
@@ -727,30 +753,38 @@
         "Shadow Temple First Beamos MQ": false,
         "Shadow Temple Upper Huge Pit MQ": false,
         "Shadow Temple Lower Huge Pit MQ": false,
+        "Shadow Temple Invisible Spikes MQ": true,
         "Shadow Temple Wind Tunnel MQ": false,
+        "Shadow Temple After Wind MQ": true,
+        "Shadow Temple Boat MQ": true,
         "Shadow Temple Beyond Boat MQ": false,
+        "Shadow Temple Before Boss MQ": true,
         "Shadow Temple Entryway": false,
         "Shadow Temple Beginning": false,
         "Shadow Temple First Beamos": false,
         "Shadow Temple Huge Pit": false,
+        "Shadow Temple Invisible Spikes": true,
         "Shadow Temple Wind Tunnel": false,
+        "Shadow Temple After Wind": true,
+        "Shadow Temple Boat": true,
+        "Shadow Temple Before Boss": true,
         "Spirit Temple Lobby MQ": false,
         "Child Spirit Temple MQ": false,
         "Adult Spirit Temple MQ": false,
         "Spirit Temple Shared MQ": false,
+        "Spirit Temple Boss Area MQ": true,
         "Spirit Temple Lobby": false,
         "Child Spirit Temple": false,
         "Child Spirit Before Locked Door": false,
-        "Child Spirit Temple Climb": false,
         "Early Adult Spirit Temple": false,
+        "Child Spirit Temple Climb": false,
         "Spirit Temple Central Chamber": false,
-        "Spirit Temple Outdoor Hands": false,
-        "Spirit Temple Beyond Central Locked Door": false,
+        "Adult Spirit Temple Climb": true,
+        "Spirit Temple Beyond Final Locked Door": true,
         "Water Temple Lobby MQ": false,
         "Water Temple Dive MQ": false,
         "Water Temple Dark Link Region MQ": false,
         "Water Temple Lobby": false,
-        "Water Temple Highest Water Level": false,
         "Water Temple Dive": false,
         "Water Temple Middle Water Level": false,
         "Water Temple Falling Platform Room": false,
@@ -758,52 +792,52 @@
     },
     "subRegions": {
         "Child Spawn Links House Gateway:In": {
-            "Links House Child Spawn Gateway:Out": true
+            "Links House Child Spawn Gateway:Out": false
         },
         "Links House Child Spawn Gateway:Out": {
-            "KF Links House": true
+            "KF Links House": false
         },
         "Adult Spawn Temple of Time Gateway:In": {
-            "Temple of Time Adult Spawn Gateway:Out": true
+            "Temple of Time Adult Spawn Gateway:Out": false
         },
         "Temple of Time Adult Spawn Gateway:Out": {
-            "Temple of Time": true
+            "Temple of Time": false
         },
         "Prelude Temple of Time Gateway:In": {
-            "Temple of Time Prelude Gateway:Out": true
+            "Temple of Time Prelude Gateway:Out": false
         },
         "Temple of Time Prelude Gateway:Out": {
-            "Temple of Time": true
+            "Temple of Time": false
         },
         "Minuet Meadow Gateway:In": {
-            "Meadow Minuet Gateway:Out": true
+            "Meadow Minuet Gateway:Out": false
         },
         "Meadow Minuet Gateway:Out": {
-            "Sacred Forest Meadow": true
+            "Sacred Forest Meadow": false
         },
         "Bolero Crater Gateway:In": {
-            "Crater Bolero Gateway:Out": true
+            "Crater Bolero Gateway:Out": false
         },
         "Crater Bolero Gateway:Out": {
-            "DMC Central Local": true
+            "DMC Central Local": false
         },
         "Serenade Lake Gateway:In": {
-            "Lake Serenade Gateway:Out": true
+            "Lake Serenade Gateway:Out": false
         },
         "Lake Serenade Gateway:Out": {
-            "Lake Hylia": true
+            "Lake Hylia": false
         },
         "Nocturne Graveyard Gateway:In": {
-            "Graveyard Nocturne Gateway:Out": true
+            "Graveyard Nocturne Gateway:Out": false
         },
         "Graveyard Nocturne Gateway:Out": {
-            "Graveyard Warp Pad Region": true
+            "Graveyard Warp Pad Region": false
         },
         "Requiem Colossus Gateway:In": {
-            "Colossus Requiem Gateway:Out": true
+            "Colossus Requiem Gateway:Out": false
         },
         "Colossus Requiem Gateway:Out": {
-            "Desert Colossus": true
+            "Desert Colossus": false
         },
         "Lake Owl Gateway:In": {
             "Owl Lake Gateway:Out": false
@@ -1739,16 +1773,16 @@
             "Colossus Grotto": false
         },
         "ToT Entrance Temple of Time Gateway:In": {
-            "Temple of Time ToT Entrance Gateway:Out": true
+            "Temple of Time ToT Entrance Gateway:Out": false
         },
         "ToT Entrance Temple of Time Gateway:Out": {
-            "ToT Entrance": true
+            "ToT Entrance": false
         },
         "Temple of Time ToT Entrance Gateway:In": {
-            "ToT Entrance Temple of Time Gateway:Out": true
+            "ToT Entrance Temple of Time Gateway:Out": false
         },
         "Temple of Time ToT Entrance Gateway:Out": {
-            "Temple of Time": true
+            "Temple of Time": false
         },
         "Kokiri Midos House Gateway:In": {
             "Midos Kokiri House Gateway:Out": false
@@ -2230,6 +2264,54 @@
         "Great Fairy Colossus Gateway:Out": {
             "Colossus Great Fairy Fountain": false
         },
+        "Deku Tree Boss Door": {
+            "Gohma Boss Room": true
+        },
+        "Gohma Boss Room": {
+            "Deku Tree Boss Door": true
+        },
+        "Dodongos Cavern Boss Door": {
+            "King Dodongo Boss Room": true
+        },
+        "King Dodongo Boss Room": {
+            "Dodongos Cavern Boss Door": true
+        },
+        "Jabu Jabus Belly Boss Door": {
+            "Barinade Boss Room": true
+        },
+        "Barinade Boss Room": {
+            "Jabu Jabus Belly Boss Door": true
+        },
+        "Forest Temple Boss Door": {
+            "Phantom Ganon Boss Room": true
+        },
+        "Phantom Ganon Boss Room": {
+            "Forest Temple Boss Door": true
+        },
+        "Fire Temple Boss Door": {
+            "Volvagia Boss Room": true
+        },
+        "Volvagia Boss Room": {
+            "Fire Temple Boss Door": true
+        },
+        "Water Temple Boss Door": {
+            "Morpha Boss Room": true
+        },
+        "Morpha Boss Room": {
+            "Water Temple Boss Door": true
+        },
+        "Shadow Temple Boss Door": {
+            "Bongo Bongo Boss Room": true
+        },
+        "Bongo Bongo Boss Room": {
+            "Shadow Temple Boss Door": true
+        },
+        "Spirit Temple Boss Door": {
+            "Twinrova Boss Room": true
+        },
+        "Twinrova Boss Room": {
+            "Spirit Temple Boss Door": true
+        },
         "Bottom of the Well MQ": {
             "Well Kakriko Gateway:In": false,
             "Bottom of the Well Perimeter MQ": false
@@ -2271,37 +2353,51 @@
         },
         "Deku Tree Basement Ledge MQ": {
             "Deku Tree Basement Back Room MQ": false,
-            "Deku Tree Lobby MQ": false
+            "Deku Tree Lobby MQ": false,
+            "Deku Tree Boss Door MQ": true
         },
         "Deku Tree Lobby": {
             "Deku Kokiri Gateway:In": false,
             "Deku Tree Slingshot Room": false,
-            "Deku Tree Basement Backroom": false,
-            "Deku Tree Boss Room": false
+            "Deku Tree Basement Back Room": true,
+            "Deku Tree Basement Ledge": true
         },
         "Deku Tree Slingshot Room": {
             "Deku Tree Lobby": false
         },
-        "Deku Tree Basement Backroom": {
-            "Deku Tree Lobby": false
+        "Deku Tree Basement Back Room": {
+            "Deku Tree Lobby": true,
+            "Deku Tree Basement Ledge": true
         },
-        "Deku Tree Boss Room": {
-            "Deku Tree Lobby": false
+        "Deku Tree Basement Ledge": {
+            "Deku Tree Basement Back Room": true,
+            "Deku Tree Lobby": true,
+            "Deku Tree Boss Door": true
         },
         "Dodongos Cavern Beginning MQ": {
             "Dodongo Mountain Gateway:In": false,
             "Dodongos Cavern Lobby MQ": false
         },
         "Dodongos Cavern Lobby MQ": {
+            "Dodongos Cavern Elevator MQ": true,
             "Dodongos Cavern Lower Right Side MQ": false,
             "Dodongos Cavern Bomb Bag Area MQ": false,
-            "Dodongos Cavern Boss Area MQ": false
+            "Dodongos Cavern Before Boss MQ": true
+        },
+        "Dodongos Cavern Elevator MQ": {
+            "Dodongos Cavern Upper Level MQ": true,
+            "Dodongos Cavern Lower Right Side MQ": true,
+            "Dodongos Cavern Bomb Bag Area MQ": true,
+            "Dodongos Cavern Before Boss MQ": true
         },
         "Dodongos Cavern Lower Right Side MQ": {
             "Dodongos Cavern Bomb Bag Area MQ": false
         },
         "Dodongos Cavern Bomb Bag Area MQ": {
             "Dodongos Cavern Lower Right Side MQ": false
+        },
+        "Dodongos Cavern Before Boss MQ": {
+            "Dodongos Cavern Boss Door MQ": true
         },
         "Dodongos Cavern Beginning": {
             "Dodongo Mountain Gateway:In": false,
@@ -2310,7 +2406,8 @@
         "Dodongos Cavern Lobby": {
             "Dodongos Cavern Beginning": false,
             "Dodongos Cavern Staircase Room": false,
-            "Dodongos Cavern Far Bridge": false
+            "Dodongos Cavern Far Bridge": false,
+            "Dodongos Cavern Before Boss": true
         },
         "Dodongos Cavern Staircase Room": {
             "Dodongos Cavern Lobby": false,
@@ -2321,15 +2418,16 @@
             "Dodongos Cavern Far Bridge": false
         },
         "Dodongos Cavern Far Bridge": {
-            "Dodongos Cavern Boss Area": false,
+            "Dodongos Cavern Before Boss": true,
             "Dodongos Cavern Lobby": false
         },
-        "Dodongos Cavern Boss Area": {
-            "Dodongos Cavern Lobby": false
+        "Dodongos Cavern Before Boss": {
+            "Dodongos Cavern Lobby": true,
+            "Dodongos Cavern Boss Door": true
         },
         "Fire Temple Lower MQ": {
             "Fire Temple Crater Gateway:In": false,
-            "Fire Boss Room MQ": false,
+            "Fire Temple Boss Door MQ": true,
             "Fire Lower Locked Door MQ": false,
             "Fire Big Lava Room MQ": false
         },
@@ -2344,6 +2442,7 @@
         },
         "Fire Temple Lower": {
             "Fire Temple Crater Gateway:In": false,
+            "Fire Temple Boss Door": true,
             "Fire Temple Big Lava Room": false
         },
         "Fire Temple Big Lava Room": {
@@ -2360,9 +2459,12 @@
         "Forest Temple Central Area MQ": {
             "Forest Temple NW Outdoors MQ": false,
             "Forest Temple NE Outdoors MQ": false,
-            "Forest Temple After Block Puzzle MQ": false,
-            "Forest Temple Outdoor Ledge MQ": false,
-            "Forest Temple Boss Region MQ": false
+            "Forest Temple Before Block Puzzle MQ": true,
+            "Forest Temple Before Boss MQ": true
+        },
+        "Forest Temple Before Block Puzzle MQ": {
+            "Forest Temple After Block Puzzle MQ": true,
+            "Forest Temple Outdoor Ledge MQ": true
         },
         "Forest Temple After Block Puzzle MQ": {
             "Forest Temple Bow Region MQ": false,
@@ -2394,12 +2496,18 @@
         "Forest Temple Falling Room MQ": {
             "Forest Temple NE Outdoors Ledge MQ": false
         },
+        "Forest Temple Before Boss MQ": {
+            "Forest Temple Boss Door MQ": true
+        },
         "Forest Temple Lobby": {
             "Forest Temple Meadow Gateway:In": false,
-            "Forest Temple NW Outdoors": false,
-            "Forest Temple NE Outdoors": false,
-            "Forest Temple Block Push Room": false,
-            "Forest Temple Boss Region": false
+            "Forest Temple Central Area": true
+        },
+        "Forest Temple Central Area": {
+            "Forest Temple NW Outdoors": true,
+            "Forest Temple NE Outdoors": true,
+            "Forest Temple Block Push Room": true,
+            "Forest Temple Before Boss": true
         },
         "Forest Temple NW Outdoors": {
             "Forest Temple NE Outdoors": false,
@@ -2432,19 +2540,25 @@
         "Forest Temple Bow Region": {
             "Forest Temple Falling Room": false
         },
+        "Forest Temple Before Boss": {
+            "Forest Temple Boss Door": true
+        },
         "Ganons Castle Lobby MQ": {
-            "Ganons Castle Castle Grounds Gateway:In": false,
-            "Ganons Castle Forest Trial MQ": false,
-            "Ganons Castle Fire Trial MQ": false,
-            "Ganons Castle Water Trial MQ": false,
-            "Ganons Castle Shadow Trial MQ": false,
-            "Ganons Castle Spirit Trial MQ": false,
-            "Ganons Castle Light Trial MQ": false,
-            "Ganons Castle Tower": false,
-            "Ganons Castle Deku Scrubs MQ": false
+            "Castle Grounds From Ganons Castle MQ": true,
+            "Ganons Castle Main MQ": true
+        },
+        "Ganons Castle Main MQ": {
+            "Ganons Castle Forest Trial MQ": true,
+            "Ganons Castle Fire Trial MQ": true,
+            "Ganons Castle Water Trial MQ": true,
+            "Ganons Castle Shadow Trial MQ": true,
+            "Ganons Castle Spirit Trial MQ": true,
+            "Ganons Castle Light Trial MQ": true,
+            "Ganons Castle Tower": true,
+            "Ganons Castle Deku Scrubs MQ": true
         },
         "Ganons Castle Lobby": {
-            "Ganons Castle Castle Grounds Gateway:In": false,
+            "Castle Grounds From Ganons Castle": true,
             "Ganons Castle Forest Trial": false,
             "Ganons Castle Fire Trial": false,
             "Ganons Castle Water Trial": false,
@@ -2521,16 +2635,25 @@
             "Jabu Fountain Gateway:In": false,
             "Jabu Jabus Belly Main MQ": false
         },
+        "Jabu Jabus Belly Elevator Room MQ": {
+            "Jabu Jabus Belly Beginning MQ": true,
+            "Jabu Jabus Belly Main MQ": true,
+            "Jabu Jabus Belly Before Boss MQ": true
+        },
         "Jabu Jabus Belly Main MQ": {
-            "Jabu Jabus Belly Beginning MQ": false,
+            "Jabu Jabus Belly Elevator Room MQ": true,
             "Jabu Jabus Belly Depths MQ": false
         },
         "Jabu Jabus Belly Depths MQ": {
             "Jabu Jabus Belly Main MQ": false,
-            "Jabu Jabus Belly Boss Area MQ": false
+            "Jabu Jabus Belly Past Big Octo MQ": true
         },
-        "Jabu Jabus Belly Boss Area MQ": {
-            "Jabu Jabus Belly Main MQ": false
+        "Jabu Jabus Belly Past Big Octo MQ": {
+            "Jabu Jabus Belly Main MQ": true
+        },
+        "Jabu Jabus Belly Before Boss MQ": {
+            "Jabu Jabus Belly Main MQ": true,
+            "Jabu Jabus Belly Boss Door MQ": true
         },
         "Jabu Jabus Belly Beginning": {
             "Jabu Fountain Gateway:In": false,
@@ -2539,14 +2662,14 @@
         "Jabu Jabus Belly Main": {
             "Jabu Jabus Belly Beginning": false,
             "Jabu Jabus Belly Depths": false,
-            "Jabu Jabus Belly Boss Area": false
+            "Jabu Jabus Belly Before Boss": true
         },
         "Jabu Jabus Belly Depths": {
-            "Jabu Jabus Belly Main": false,
-            "Jabu Jabus Belly Boss Area": false
-        },
-        "Jabu Jabus Belly Boss Area": {
             "Jabu Jabus Belly Main": false
+        },
+        "Jabu Jabus Belly Before Boss": {
+            "Jabu Jabus Belly Main": true,
+            "Jabu Jabus Belly Boss Door": true
         },
         "Root": {
             "Root Exits": false,
@@ -2563,28 +2686,28 @@
             "Requiem of Spirit Warp": false
         },
         "Child Spawn": {
-            "Child Spawn Links House Gateway:In": true
+            "Child Spawn Links House Gateway:In": false
         },
         "Adult Spawn": {
-            "Adult Spawn Temple of Time Gateway:In": true
+            "Adult Spawn Temple of Time Gateway:In": false
         },
         "Prelude of Light Warp": {
-            "Prelude Temple of Time Gateway:In": true
+            "Prelude Temple of Time Gateway:In": false
         },
         "Minuet of Forest Warp": {
-            "Minuet Meadow Gateway:In": true
+            "Minuet Meadow Gateway:In": false
         },
         "Bolero of Fire Warp": {
-            "Bolero Crater Gateway:In": true
+            "Bolero Crater Gateway:In": false
         },
         "Serenade of Water Warp": {
-            "Serenade Lake Gateway:In": true
+            "Serenade Lake Gateway:In": false
         },
         "Nocturne of Shadow Warp": {
-            "Nocturne Graveyard Gateway:In": true
+            "Nocturne Graveyard Gateway:In": false
         },
         "Requiem of Spirit Warp": {
-            "Requiem Colossus Gateway:In": true
+            "Requiem Colossus Gateway:In": false
         },
         "Kokiri Forest": {
             "Kokiri Links House Gateway:In": false,
@@ -2794,10 +2917,10 @@
         },
         "ToT Entrance": {
             "ToT Market Gateway:In": false,
-            "ToT Entrance Temple of Time Gateway:In": true
+            "ToT Entrance Temple of Time Gateway:In": false
         },
         "Temple of Time": {
-            "Temple of Time ToT Entrance Gateway:In": true,
+            "Temple of Time ToT Entrance Gateway:In": false,
             "Beyond Door of Time": false
         },
         "Beyond Door of Time": {
@@ -2820,6 +2943,9 @@
         },
         "HC Great Fairy Fountain": {
             "Great Fairy Grounds Gateway:In": false
+        },
+        "Castle Grounds From Ganons Castle": {
+            "Ganons Castle Grounds": true
         },
         "Ganons Castle Grounds": {
             "Castle Grounds": false,
@@ -3214,24 +3340,44 @@
             "Shadow Temple Beginning MQ": false
         },
         "Shadow Temple Beginning MQ": {
-            "Shadow Temple Entryway MQ": false,
             "Shadow Temple First Beamos MQ": false,
             "Shadow Temple Dead Hand Area MQ": false
         },
         "Shadow Temple First Beamos MQ": {
-            "Shadow Temple Upper Huge Pit MQ": false
+            "Shadow Temple Upper Huge Pit MQ": false,
+            "Shadow Temple Boat MQ": true
         },
         "Shadow Temple Upper Huge Pit MQ": {
+            "Shadow Temple Invisible Blades MQ": true,
             "Shadow Temple Lower Huge Pit MQ": false
         },
         "Shadow Temple Lower Huge Pit MQ": {
-            "Shadow Temple Wind Tunnel MQ": false
+            "Shadow Temple Falling Spikes MQ": true,
+            "Shadow Temple Invisible Spikes MQ": true,
+            "Shadow Temple Upper Huge Pit MQ": true
+        },
+        "Shadow Temple Invisible Spikes MQ": {
+            "Shadow Temple Wind Tunnel MQ": true,
+            "Shadow Temple Lower Huge Pit MQ": true
         },
         "Shadow Temple Wind Tunnel MQ": {
-            "Shadow Temple Beyond Boat MQ": false
+            "Shadow Temple After Wind MQ": true,
+            "Shadow Temple Invisible Spikes MQ": true
+        },
+        "Shadow Temple After Wind MQ": {
+            "Shadow Temple Boat MQ": true,
+            "Shadow Temple Wind Tunnel MQ": true
+        },
+        "Shadow Temple Boat MQ": {
+            "Shadow Temple After Wind MQ": true,
+            "Shadow Temple Beyond Boat MQ": true
         },
         "Shadow Temple Beyond Boat MQ": {
-            "Shadow Temple Invisible Maze MQ": false
+            "Shadow Temple Invisible Maze MQ": false,
+            "Shadow Temple Before Boss MQ": true
+        },
+        "Shadow Temple Before Boss MQ": {
+            "Shadow Temple Boss Door MQ": true
         },
         "Shadow Temple Entryway": {
             "Shadow Temple Graveyard Gateway:In": false,
@@ -3242,13 +3388,30 @@
             "Shadow Temple First Beamos": false
         },
         "Shadow Temple First Beamos": {
-            "Shadow Temple Huge Pit": false
+            "Shadow Temple Huge Pit": false,
+            "Shadow Temple Boat": true
         },
         "Shadow Temple Huge Pit": {
-            "Shadow Temple Wind Tunnel": false
+            "Shadow Temple Invisible Spikes": true
+        },
+        "Shadow Temple Invisible Spikes": {
+            "Shadow Temple Wind Tunnel": true,
+            "Shadow Temple Huge Pit": true
         },
         "Shadow Temple Wind Tunnel": {
-            "Shadow Temple Beyond Boat": false
+            "Shadow Temple After Wind": true,
+            "Shadow Temple Invisible Spikes": true
+        },
+        "Shadow Temple After Wind": {
+            "Shadow Temple Boat": true,
+            "Shadow Temple Wind Tunnel": true
+        },
+        "Shadow Temple Boat": {
+            "Shadow Temple After Wind": true,
+            "Shadow Temple Before Boss": true
+        },
+        "Shadow Temple Before Boss": {
+            "Shadow Temple Boss Door": true
         },
         "Spirit Temple Lobby MQ": {
             "Desert Colossus From Spirit Lobby MQ": false,
@@ -3262,16 +3425,21 @@
             "Lower Adult Spirit Temple MQ": false,
             "Spirit Temple Shared MQ": false,
             "Spirit Temple Boss Area MQ": false,
-            "Mirror Shield Hand MQ": false
+            "Mirror Shield Hand MQ": false,
+            "Spirit Temple Boss Door MQ": true
         },
         "Spirit Temple Shared MQ": {
             "Silver Gauntlets Hand MQ": false,
             "Desert Colossus": false
         },
+        "Spirit Temple Boss Area MQ": {
+            "Spirit Temple Boss Door MQ": true
+        },
         "Spirit Temple Lobby": {
             "Spirit Temple Colossus Gateway:In": false,
             "Child Spirit Temple": false,
-            "Early Adult Spirit Temple": false
+            "Early Adult Spirit Temple": false,
+            "Spirit Temple Central Chamber": true
         },
         "Child Spirit Temple": {
             "Child Spirit Before Locked Door": false
@@ -3279,28 +3447,33 @@
         "Child Spirit Before Locked Door": {
             "Child Spirit Temple Climb": false
         },
+        "Early Adult Spirit Temple": {
+            "Spirit Temple Central Chamber": false,
+            "Adult Spirit Temple Climb": true
+        },
         "Child Spirit Temple Climb": {
             "Spirit Temple Central Chamber": false,
             "Child Spirit Before Locked Door": false
         },
-        "Early Adult Spirit Temple": {
-            "Spirit Temple Central Chamber": false
-        },
         "Spirit Temple Central Chamber": {
-            "Spirit Temple Outdoor Hands": false,
-            "Spirit Temple Beyond Central Locked Door": false,
-            "Child Spirit Temple Climb": false
+            "Child Spirit Temple Climb": false,
+            "Adult Spirit Temple Climb": true,
+            "Spirit Temple Boss Door": true,
+            "Desert Colossus": true
         },
-        "Spirit Temple Outdoor Hands": {
-            "Desert Colossus": false
+        "Adult Spirit Temple Climb": {
+            "Early Adult Spirit Temple": true,
+            "Spirit Temple Beyond Anubis Room": true,
+            "Spirit Temple Beyond Final Locked Door": true
         },
-        "Spirit Temple Beyond Central Locked Door": {
-            "Spirit Temple Beyond Final Locked Door": false
+        "Spirit Temple Beyond Final Locked Door": {
+            "Spirit Temple Boss Door": true
         },
         "Water Temple Lobby MQ": {
             "Water Temple Lake Gateway:In": false,
             "Water Temple Dive MQ": false,
-            "Water Temple Dark Link Region MQ": false
+            "Water Temple Dark Link Region MQ": false,
+            "Water Temple Boss Door MQ": true
         },
         "Water Temple Dive MQ": {
             "Water Temple Lowered Water Levels MQ": false
@@ -3310,11 +3483,9 @@
         },
         "Water Temple Lobby": {
             "Water Temple Lake Gateway:In": false,
-            "Water Temple Highest Water Level": false,
-            "Water Temple Dive": false
-        },
-        "Water Temple Highest Water Level": {
-            "Water Temple Falling Platform Room": false
+            "Water Temple Dive": false,
+            "Water Temple Boss Door": true,
+            "Water Temple Falling Platform Room": true
         },
         "Water Temple Dive": {
             "Water Temple Cracked Wall": false,

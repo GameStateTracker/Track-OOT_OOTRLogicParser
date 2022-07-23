@@ -89,7 +89,8 @@
             "stones": "light_arrow_cutscene_stones",
             "medallions": "light_arrow_cutscene_medallions",
             "dungeons": "light_arrow_cutscene_dungeons",
-            "tokens": "light_arrow_cutscene_tokens"
+            "tokens": "light_arrow_cutscene_tokens",
+            "hearts": "light_arrow_cutscene_hearts"
         }
     },
     "shuffle_ganon_bosskey": {
@@ -98,7 +99,8 @@
             "stones": "gbk_stones",
             "medallions": "gbk_medallions",
             "dungeons": "gbk_dungeons",
-            "tokens": "gbk_tokens"
+            "tokens": "gbk_tokens",
+            "hearts": "gbk_hearts"
         }
     },
     "damage_multiplier": {
@@ -166,6 +168,14 @@
             "closed": "doors_open_kakariko_closed",
             "zelda": "doors_open_kakariko_zelda",
             "open": "doors_open_kakariko_open"
+        }
+    },
+    "shuffle_interior_entrances": {
+        "name": "option[entrance_shuffle_interior]",
+        "values": {
+            "off": "",
+            "entrance_shuffle_simple": "entrance_shuffle_simple",
+            "entrance_shuffle_all": "entrance_shuffle_all"
         }
     },
     "option[entrance_shuffle]": {
