@@ -1,21 +1,21 @@
 {
     "mainRegions": {
-        "Child Spawn Links House Gateway:In": true,
-        "Links House Child Spawn Gateway:Out": true,
-        "Adult Spawn Temple of Time Gateway:In": true,
-        "Temple of Time Adult Spawn Gateway:Out": true,
-        "Prelude Temple of Time Gateway:In": true,
-        "Temple of Time Prelude Gateway:Out": true,
-        "Minuet Meadow Gateway:In": true,
-        "Meadow Minuet Gateway:Out": true,
-        "Bolero Crater Gateway:In": true,
-        "Crater Bolero Gateway:Out": true,
-        "Serenade Lake Gateway:In": true,
-        "Lake Serenade Gateway:Out": true,
-        "Nocturne Graveyard Gateway:In": true,
-        "Graveyard Nocturne Gateway:Out": true,
-        "Requiem Colossus Gateway:In": true,
-        "Colossus Requiem Gateway:Out": true,
+        "Child Spawn Links House Gateway:In": false,
+        "Links House Child Spawn Gateway:Out": false,
+        "Adult Spawn Temple of Time Gateway:In": false,
+        "Temple of Time Adult Spawn Gateway:Out": false,
+        "Prelude Temple of Time Gateway:In": false,
+        "Temple of Time Prelude Gateway:Out": false,
+        "Minuet Meadow Gateway:In": false,
+        "Meadow Minuet Gateway:Out": false,
+        "Bolero Crater Gateway:In": false,
+        "Crater Bolero Gateway:Out": false,
+        "Serenade Lake Gateway:In": false,
+        "Lake Serenade Gateway:Out": false,
+        "Nocturne Graveyard Gateway:In": false,
+        "Graveyard Nocturne Gateway:Out": false,
+        "Requiem Colossus Gateway:In": false,
+        "Colossus Requiem Gateway:Out": false,
         "Lake Owl Gateway:In": false,
         "Owl Lake Gateway:Out": false,
         "Mountain Owl Gateway:In": false,
@@ -280,10 +280,10 @@
         "Crater Hammer Grotto Gateway:Out": false,
         "Hammer Grotto Crater Gateway:In": false,
         "Hammer Grotto Crater Gateway:Out": false,
-        "Crater Upper Grotto Gateway:In": false,
-        "Crater Upper Grotto Gateway:Out": false,
-        "Upper Grotto Crater Gateway:In": false,
-        "Upper Grotto Crater Gateway:Out": false,
+        "Crater Bomb Grotto Gateway:In": false,
+        "Crater Bomb Grotto Gateway:Out": false,
+        "Bomb Grotto Crater Gateway:In": false,
+        "Bomb Grotto Crater Gateway:Out": false,
         "Goron Grotto Gateway:In": false,
         "Goron Grotto Gateway:Out": false,
         "Grotto Goron Gateway:In": false,
@@ -322,10 +322,10 @@
         "Colossus Grotto Gateway:Out": false,
         "Grotto Colossus Gateway:In": false,
         "Grotto Colossus Gateway:Out": false,
-        "ToT Entrance Temple of Time Gateway:In": true,
-        "ToT Entrance Temple of Time Gateway:Out": true,
-        "Temple of Time ToT Entrance Gateway:In": true,
-        "Temple of Time ToT Entrance Gateway:Out": true,
+        "ToT Entrance Temple of Time Gateway:In": false,
+        "ToT Entrance Temple of Time Gateway:Out": false,
+        "Temple of Time ToT Entrance Gateway:In": false,
+        "Temple of Time ToT Entrance Gateway:Out": false,
         "Kokiri Midos House Gateway:In": false,
         "Kokiri Midos House Gateway:Out": false,
         "Midos House Kokiri Gateway:In": false,
@@ -758,52 +758,52 @@
     },
     "subRegions": {
         "Child Spawn Links House Gateway:In": {
-            "Links House Child Spawn Gateway:Out": true
+            "Links House Child Spawn Gateway:Out": false
         },
         "Links House Child Spawn Gateway:Out": {
-            "KF Links House": true
+            "KF Links House": false
         },
         "Adult Spawn Temple of Time Gateway:In": {
-            "Temple of Time Adult Spawn Gateway:Out": true
+            "Temple of Time Adult Spawn Gateway:Out": false
         },
         "Temple of Time Adult Spawn Gateway:Out": {
-            "Temple of Time": true
+            "Temple of Time": false
         },
         "Prelude Temple of Time Gateway:In": {
-            "Temple of Time Prelude Gateway:Out": true
+            "Temple of Time Prelude Gateway:Out": false
         },
         "Temple of Time Prelude Gateway:Out": {
-            "Temple of Time": true
+            "Temple of Time": false
         },
         "Minuet Meadow Gateway:In": {
-            "Meadow Minuet Gateway:Out": true
+            "Meadow Minuet Gateway:Out": false
         },
         "Meadow Minuet Gateway:Out": {
-            "Sacred Forest Meadow": true
+            "Sacred Forest Meadow": false
         },
         "Bolero Crater Gateway:In": {
-            "Crater Bolero Gateway:Out": true
+            "Crater Bolero Gateway:Out": false
         },
         "Crater Bolero Gateway:Out": {
-            "DMC Central Local": true
+            "DMC Central Local": false
         },
         "Serenade Lake Gateway:In": {
-            "Lake Serenade Gateway:Out": true
+            "Lake Serenade Gateway:Out": false
         },
         "Lake Serenade Gateway:Out": {
-            "Lake Hylia": true
+            "Lake Hylia": false
         },
         "Nocturne Graveyard Gateway:In": {
-            "Graveyard Nocturne Gateway:Out": true
+            "Graveyard Nocturne Gateway:Out": false
         },
         "Graveyard Nocturne Gateway:Out": {
-            "Graveyard Warp Pad Region": true
+            "Graveyard Warp Pad Region": false
         },
         "Requiem Colossus Gateway:In": {
-            "Colossus Requiem Gateway:Out": true
+            "Colossus Requiem Gateway:Out": false
         },
         "Colossus Requiem Gateway:Out": {
-            "Desert Colossus": true
+            "Desert Colossus": false
         },
         "Lake Owl Gateway:In": {
             "Owl Lake Gateway:Out": false
@@ -1611,16 +1611,16 @@
         "Hammer Grotto Crater Gateway:Out": {
             "DMC Hammer Grotto": false
         },
-        "Crater Upper Grotto Gateway:In": {
-            "Upper Grotto Crater Gateway:Out": false
+        "Crater Bomb Grotto Gateway:In": {
+            "Bomb Grotto Crater Gateway:Out": false
         },
-        "Crater Upper Grotto Gateway:Out": {
+        "Crater Bomb Grotto Gateway:Out": {
             "DMC Upper Nearby": false
         },
-        "Upper Grotto Crater Gateway:In": {
-            "Crater Upper Grotto Gateway:Out": false
+        "Bomb Grotto Crater Gateway:In": {
+            "Crater Bomb Grotto Gateway:Out": false
         },
-        "Upper Grotto Crater Gateway:Out": {
+        "Bomb Grotto Crater Gateway:Out": {
             "DMC Upper Grotto": false
         },
         "Goron Grotto Gateway:In": {
@@ -1739,19 +1739,19 @@
             "Colossus Grotto": false
         },
         "ToT Entrance Temple of Time Gateway:In": {
-            "Temple of Time ToT Entrance Gateway:Out": true
+            "Temple of Time ToT Entrance Gateway:Out": false
         },
         "ToT Entrance Temple of Time Gateway:Out": {
-            "ToT Entrance": true
+            "ToT Entrance": false
         },
         "Temple of Time ToT Entrance Gateway:In": {
-            "ToT Entrance Temple of Time Gateway:Out": true
+            "ToT Entrance Temple of Time Gateway:Out": false
         },
         "Temple of Time ToT Entrance Gateway:Out": {
-            "Temple of Time": true
+            "Temple of Time": false
         },
         "Kokiri Midos House Gateway:In": {
-            "Midos Kokiri House Gateway:Out": false
+            "Midos House Kokiri Gateway:Out": false
         },
         "Kokiri Midos House Gateway:Out": {
             "Kokiri Forest": false
@@ -2563,28 +2563,28 @@
             "Requiem of Spirit Warp": false
         },
         "Child Spawn": {
-            "Child Spawn Links House Gateway:In": true
+            "Child Spawn Links House Gateway:In": false
         },
         "Adult Spawn": {
-            "Adult Spawn Temple of Time Gateway:In": true
+            "Adult Spawn Temple of Time Gateway:In": false
         },
         "Prelude of Light Warp": {
-            "Prelude Temple of Time Gateway:In": true
+            "Prelude Temple of Time Gateway:In": false
         },
         "Minuet of Forest Warp": {
-            "Minuet Meadow Gateway:In": true
+            "Minuet Meadow Gateway:In": false
         },
         "Bolero of Fire Warp": {
-            "Bolero Crater Gateway:In": true
+            "Bolero Crater Gateway:In": false
         },
         "Serenade of Water Warp": {
-            "Serenade Lake Gateway:In": true
+            "Serenade Lake Gateway:In": false
         },
         "Nocturne of Shadow Warp": {
-            "Nocturne Graveyard Gateway:In": true
+            "Nocturne Graveyard Gateway:In": false
         },
         "Requiem of Spirit Warp": {
-            "Requiem Colossus Gateway:In": true
+            "Requiem Colossus Gateway:In": false
         },
         "Kokiri Forest": {
             "Kokiri Links House Gateway:In": false,
@@ -2772,7 +2772,7 @@
         "Market Entrance": {
             "MarketEntrance Field Gateway:In": false,
             "MarketEntrance Market Gateway:In": false,
-            "Guard House Market Gateway:In": false
+            "Market Guard House Gateway:In": false
         },
         "Market": {
             "Market MarketEntrance Gateway:In": false,
@@ -2794,10 +2794,10 @@
         },
         "ToT Entrance": {
             "ToT Market Gateway:In": false,
-            "ToT Entrance Temple of Time Gateway:In": true
+            "ToT Entrance Temple of Time Gateway:In": false
         },
         "Temple of Time": {
-            "Temple of Time ToT Entrance Gateway:In": true,
+            "Temple of Time ToT Entrance Gateway:In": false,
             "Beyond Door of Time": false
         },
         "Beyond Door of Time": {
@@ -3003,7 +3003,7 @@
         "DMC Upper Nearby": {
             "DMC Upper Local": false,
             "Crater Mountain Gateway:In": false,
-            "Crater Upper Grotto Gateway:In": false
+            "Crater Bomb Grotto Gateway:In": false
         },
         "DMC Upper Local": {
             "DMC Upper Nearby": false,
@@ -3183,7 +3183,7 @@
             "Grotto Goron Gateway:In": false
         },
         "DMC Upper Grotto": {
-            "Upper Grotto Crater Gateway:In": false
+            "Bomb Grotto Crater Gateway:In": false
         },
         "DMC Hammer Grotto": {
             "Hammer Grotto Crater Gateway:In": false

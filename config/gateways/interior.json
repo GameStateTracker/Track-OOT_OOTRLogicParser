@@ -16,7 +16,7 @@
     {
         "region_name": "Kokiri Midos House Gateway",
         "exits": {
-            "Midos Kokiri House Gateway": "True",
+            "Midos House Kokiri Gateway": "True",
             "Kokiri Forest": "True"
         }
     },
