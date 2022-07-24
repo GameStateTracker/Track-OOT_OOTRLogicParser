@@ -364,16 +364,16 @@
         }
     },
     {
-        "region_name": "Crater Upper Grotto Gateway",
+        "region_name": "Crater Bomb Grotto Gateway",
         "exits": {
-            "Upper Grotto Crater Gateway": "True",
+            "Bomb Grotto Crater Gateway": "True",
             "DMC Upper Nearby": "True"
         }
     },
     {
-        "region_name": "Upper Grotto Crater Gateway",
+        "region_name": "Bomb Grotto Crater Gateway",
         "exits": {
-            "Crater Upper Grotto Gateway": "True",
+            "Crater Bomb Grotto Gateway": "True",
             "DMC Upper Grotto": "True"
         }
     },

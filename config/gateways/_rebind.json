@@ -183,7 +183,7 @@
     "Market Entrance": {
         "Hyrule Field": "MarketEntrance Field Gateway",
         "Market": "MarketEntrance Market Gateway",
-        "Market Guard House": "Guard House Market Gateway"
+        "Market Guard House": "Market Guard House Gateway"
     },
     "ZR Front": {
         "Hyrule Field": "River Field Gateway"
@@ -288,7 +288,7 @@
     },
     "DMC Upper Nearby": {
         "Death Mountain Summit": "Crater Mountain Gateway",
-        "DMC Upper Grotto": "Crater Upper Grotto Gateway"
+        "DMC Upper Grotto": "Crater Bomb Grotto Gateway"
     },
     "DMC Ladder Nearby": {
         "DMC Upper Nearby": "DMC Upper Local",
@@ -490,7 +490,7 @@
         "DMC Lower Local": "Hammer Grotto Crater Gateway"
     },
     "DMC Upper Grotto": {
-        "DMC Upper Local": "Upper Grotto Crater Gateway"
+        "DMC Upper Local": "Bomb Grotto Crater Gateway"
     },
     "GC Shop": {
         "Goron City": "Shop Goron Gateway"

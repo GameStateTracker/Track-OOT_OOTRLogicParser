@@ -280,10 +280,10 @@
         "Crater Hammer Grotto Gateway:Out": false,
         "Hammer Grotto Crater Gateway:In": false,
         "Hammer Grotto Crater Gateway:Out": false,
-        "Crater Upper Grotto Gateway:In": false,
-        "Crater Upper Grotto Gateway:Out": false,
-        "Upper Grotto Crater Gateway:In": false,
-        "Upper Grotto Crater Gateway:Out": false,
+        "Crater Bomb Grotto Gateway:In": false,
+        "Crater Bomb Grotto Gateway:Out": false,
+        "Bomb Grotto Crater Gateway:In": false,
+        "Bomb Grotto Crater Gateway:Out": false,
         "Goron Grotto Gateway:In": false,
         "Goron Grotto Gateway:Out": false,
         "Grotto Goron Gateway:In": false,
@@ -1645,16 +1645,16 @@
         "Hammer Grotto Crater Gateway:Out": {
             "DMC Hammer Grotto": false
         },
-        "Crater Upper Grotto Gateway:In": {
-            "Upper Grotto Crater Gateway:Out": false
+        "Crater Bomb Grotto Gateway:In": {
+            "Bomb Grotto Crater Gateway:Out": false
         },
-        "Crater Upper Grotto Gateway:Out": {
+        "Crater Bomb Grotto Gateway:Out": {
             "DMC Upper Nearby": false
         },
-        "Upper Grotto Crater Gateway:In": {
-            "Crater Upper Grotto Gateway:Out": false
+        "Bomb Grotto Crater Gateway:In": {
+            "Crater Bomb Grotto Gateway:Out": false
         },
-        "Upper Grotto Crater Gateway:Out": {
+        "Bomb Grotto Crater Gateway:Out": {
             "DMC Upper Grotto": false
         },
         "Goron Grotto Gateway:In": {
@@ -1785,7 +1785,7 @@
             "Temple of Time": false
         },
         "Kokiri Midos House Gateway:In": {
-            "Midos Kokiri House Gateway:Out": false
+            "Midos House Kokiri Gateway:Out": false
         },
         "Kokiri Midos House Gateway:Out": {
             "Kokiri Forest": false
@@ -2895,7 +2895,7 @@
         "Market Entrance": {
             "MarketEntrance Field Gateway:In": false,
             "MarketEntrance Market Gateway:In": false,
-            "Guard House Market Gateway:In": false
+            "Market Guard House Gateway:In": false
         },
         "Market": {
             "Market MarketEntrance Gateway:In": false,
@@ -3129,7 +3129,7 @@
         "DMC Upper Nearby": {
             "DMC Upper Local": false,
             "Crater Mountain Gateway:In": false,
-            "Crater Upper Grotto Gateway:In": false
+            "Crater Bomb Grotto Gateway:In": false
         },
         "DMC Upper Local": {
             "DMC Upper Nearby": false,
@@ -3309,7 +3309,7 @@
             "Grotto Goron Gateway:In": false
         },
         "DMC Upper Grotto": {
-            "Upper Grotto Crater Gateway:In": false
+            "Bomb Grotto Crater Gateway:In": false
         },
         "DMC Hammer Grotto": {
             "Hammer Grotto Crater Gateway:In": false
