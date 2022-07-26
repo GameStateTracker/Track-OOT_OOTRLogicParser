@@ -126,7 +126,7 @@
 - Forest Temple Before Boss
     - Forest Temple Boss Door
 - Ganons Castle Lobby MQ
-    - Castle Grounds From Ganons Castle MQ
+    - Castle Grounds From Ganons Castle MQ [x]
 - Ganons Castle Lobby MQ
     - Ganons Castle Main MQ
 - Ganons Castle Main MQ
@@ -146,7 +146,7 @@
 - Ganons Castle Main MQ
     - Ganons Castle Deku Scrubs MQ
 - Ganons Castle Lobby
-    - Castle Grounds From Ganons Castle
+    - Castle Grounds From Ganons Castle [x]
 - Jabu Jabus Belly Elevator Room MQ
     - Jabu Jabus Belly Beginning MQ
     - Jabu Jabus Belly Main MQ
@@ -330,7 +330,7 @@
 ### missing translations
 
 - logic_dc_hammer_floor
-- deadly_bonks
+- deadly_bonks [x]
 - logic_shadow_bongo
 - logic_lens_bongo
 - logic_dc_mq_eyes_adult

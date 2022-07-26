@@ -1813,5 +1813,13 @@
         "type": "value",
         "el": "option[skip.king_zora_skip]"
     },
+    "deadly_bonks": {
+        "type": "not",
+        "el": {
+            "type": "state",
+            "el": "option[deadly_bonks]",
+            "value": "bonk_off"
+        }
+    },
     "": ""
 }

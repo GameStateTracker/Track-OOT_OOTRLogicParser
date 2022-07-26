@@ -323,6 +323,27 @@
             }
         ]
     },
+    "function[can_use](item[arrow_ice])": {
+        "type": "and",
+        "el": [
+            {
+                "type": "value",
+                "el": "item[arrow_ice]"
+            },
+            {
+                "type": "value",
+                "el": "item[bow]"
+            },
+            {
+                "type": "value",
+                "el": "item[magic_power]"
+            },
+            {
+                "type": "mixin",
+                "el": "mixin[is_adult]"
+            }
+        ]
+    },
     /* can use magic item */
     "function[can_use](item[lens])": {
         "type": "and",

@@ -117,8 +117,7 @@
         "Desert Colossus From Spirit Lobby": "Spirit Temple Colossus Gateway"
     },
     "Ganons Castle Lobby": {
-        "Ganons Castle Grounds": "Ganons Castle Castle Grounds Gateway",
-        "Castle Grounds": "Ganons Castle Castle Grounds Gateway"
+        "Castle Grounds From Ganons Castle": "Ganons Castle Castle Grounds Gateway"
     },
     "Kokiri Forest": {
         "LW Bridge From Forest": "Kokiri Bridge Gateway",

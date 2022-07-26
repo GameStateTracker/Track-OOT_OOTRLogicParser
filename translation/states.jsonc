@@ -75,6 +75,12 @@
             "child": "child"
         }
     },
+    "option[deadly_bonks]": {
+        "name": "option[deadly_bonks]",
+        "values": {
+            "bonk_off": "bonk_off"
+        }
+    },
     "hints": {
         "name": "option[hints_condition]",
         "values": {
@@ -106,8 +112,14 @@
     "damage_multiplier": {
         "name": "option[damage_multiplier]",
         "values": {
-            "ohko": "damage_multiplier_ohko",
-            "quadruple": "damage_multiplier_quadruple"
+            "ohko": "dmg_ohko",
+            "quadruple": "dmg_quadruple"
+        }
+    },
+    "deadly_bonks": {
+        "name": "option[deadly_bonks]",
+        "values": {
+            "ohko": "bonk_ohko"
         }
     },
     "shuffle_scrubs": {
@@ -131,7 +143,8 @@
             "stones": "ganon_castle_open_stones",
             "medallions": "ganon_castle_open_medallion",
             "dungeons": "ganon_castle_open_dungeon",
-            "tokens": "ganon_castle_open_skulltulas"
+            "tokens": "ganon_castle_open_skulltulas",
+            "hearts": "ganon_castle_open_hearts"
         }
     },
     "gerudo_fortress": {
@@ -173,7 +186,7 @@
     "shuffle_interior_entrances": {
         "name": "option[entrance_shuffle_interior]",
         "values": {
-            "off": "",
+            "off": "entrance_shuffle_off",
             "entrance_shuffle_simple": "entrance_shuffle_simple",
             "entrance_shuffle_all": "entrance_shuffle_all"
         }
@@ -196,7 +209,8 @@
             "ganon_castle_open_stones": "ganon_castle_open_stones",
             "ganon_castle_open_medallion": "ganon_castle_open_medallion",
             "ganon_castle_open_dungeon": "ganon_castle_open_dungeon",
-            "ganon_castle_open_skulltulas": "ganon_castle_open_skulltulas"
+            "ganon_castle_open_skulltulas": "ganon_castle_open_skulltulas",
+            "ganon_castle_open_hearts": "ganon_castle_open_hearts"
         }
     },
     "option[entrance_shuffle_interior]": {
@@ -213,7 +227,8 @@
             "light_arrow_cutscene_stones": "light_arrow_cutscene_stones",
             "light_arrow_cutscene_medallions": "light_arrow_cutscene_medallions",
             "light_arrow_cutscene_dungeons": "light_arrow_cutscene_dungeons",
-            "light_arrow_cutscene_skulltulas": "light_arrow_cutscene_skulltulas"
+            "light_arrow_cutscene_skulltulas": "light_arrow_cutscene_skulltulas",
+            "light_arrow_cutscene_hearts": "light_arrow_cutscene_hearts"
         }
     },
     "option[small_key_logic]": {
