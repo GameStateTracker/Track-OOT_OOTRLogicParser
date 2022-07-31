@@ -283,14 +283,14 @@
         "region_name": "Ganon Grounds Great Fairy Gateway",
         "exits": {
             "Great Fairy Ganon Grounds Gateway": "True",
-            "OGC Great Fairy Fountain": "True"
+            "Ganons Castle Grounds": "True"
         }
     },
     {
         "region_name": "Great Fairy Ganon Grounds Gateway",
         "exits": {
             "Ganon Grounds Great Fairy Gateway": "True",
-            "Ganons Castle Grounds": "True"
+            "OGC Great Fairy Fountain": "True"
         }
     },
     {
