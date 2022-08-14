@@ -37,70 +37,73 @@ class LogicBuilder {
             return el;
         }
         if (current.indexOf("not ") >= 0) {
-            let [, value] = current.split("not ");
-            value = this.resolveToken(value, token);
+            const [, value] = current.split("not ");
+            const resValue = this.resolveToken(value, token);
             const not = new OperatorNot();
-            not.append(value);
+            not.append(resValue);
             return not;
         }
         if (current.indexOf(" == ") >= 0) {
-            let [ref, value] = current.split(" == ");
-            ref = token[parseInt(ref.slice(2, -2))];
-            value = token[parseInt(value.slice(2, -2))];
-            const el = new LiteralState(ref, value);
+            const [ref, value] = current.split(" == ");
+            const resRef = this.#getTokenValue(ref, token);
+            const resValue = this.#getTokenValue(value, token);
+            const el = new LiteralState(resRef, resValue);
             return el;
         }
         if (current.indexOf(" != ") >= 0) {
-            let [ref, value] = current.split(" != ");
-            ref = token[parseInt(ref.slice(2, -2))];
-            value = token[parseInt(value.slice(2, -2))];
+            const [ref, value] = current.split(" != ");
+            const resRef = this.#getTokenValue(ref, token);
+            const resValue = this.#getTokenValue(value, token);
             const not = new OperatorNot();
-            const el = new LiteralState(ref, value);
+            const el = new LiteralState(resRef, resValue);
             not.append(el);
             return not;
         }
         if (current.startsWith("min(")) {
-            const [ch, value] = current.slice(4, -1).split(", ");
+            const [ref, value] = current.slice(4, -1).split(", ");
+            const resRef = this.resolveToken(ref, token);
             const el = new OperatorMin(parseInt(value) || 0);
-            el.append(this.resolveToken(ch, token));
+            el.append(resRef);
             return el;
         }
         if (current.startsWith("gte(")) {
-            const [ch, value] = current.slice(4, -1).split(", ");
+            const [ref, value] = current.slice(4, -1).split(", ");
+            const resRef = this.resolveToken(ref, token);
+            const resValue = this.resolveToken(value, token);
             const el = new ComparatorGreaterThanEqual();
-            el.append(this.resolveToken(ch, token));
-            el.append(this.resolveToken(value, token));
+            el.append(resRef);
+            el.append(resValue);
             return el;
         }
         if (current.startsWith("at(")) {
-            const [value, ch] = current.slice(3, -1).split(", ");
-            const newValue = token[parseInt(value.slice(2, -2))].replace(/^'(.*)'$/, "$1");
-            const el = new ReferrerAt(newValue);
-            el.append(this.resolveToken(ch, token));
+            const [ref, value] = current.slice(3, -1).split(", ");
+            const resRef = this.#getTokenValue(ref, token).replace(/^'(.*)'$/, "$1");
+            const resValue = this.resolveToken(value, token);
+            const el = new ReferrerAt(resRef);
+            el.append(resValue);
             return el;
         }
         if (current.startsWith("here(")) {
-            const ch = current.slice(5, -1);
+            const ref = current.slice(5, -1);
+            const resRef = this.resolveToken(ref, token);
             const el = new ReferrerHere();
-            el.append(this.resolveToken(ch, token));
+            el.append(resRef);
             return el;
         }
         if (current.indexOf("(") >= 0) {
             const name = current.slice(0, current.indexOf("("));
             const params = current.slice(current.indexOf("(") + 1, -1).split(", ");
             const el = new LogicFunction(name);
-            for (const ch of params) {
-                el.append(this.resolveToken(ch, token));
+            for (const param of params) {
+                const resParam = this.resolveToken(param, token);
+                el.append(resParam);
             }
             return el;
         }
-        if (current.startsWith("{{") && current.endsWith("}}")) {
-            const next = token[parseInt(current.slice(2, -2))];
-            return this.resolveToken(next, token);
-        }
-        if (current.startsWith(" {{") && current.endsWith("}}")) {
-            const next = token[parseInt(current.slice(3, -2))];
-            return this.resolveToken(next, token);
+        if (isSurroundedBy(current.trim(), "{{", "}}")) {
+            const next = this.#getTokenValue(current, token);
+            const result = this.resolveToken(next, token);
+            return result;
         }
         if (current == "False") {
             return new LiteralFalse();
@@ -108,9 +111,24 @@ class LogicBuilder {
         if (current == "True") {
             return new LiteralTrue();
         }
+        if (current === "shadow_temple_shortcuts") {
+            console.log("found it")
+        }
         return new LiteralValue(current);
     }
 
+    #getTokenValue(current, token) {
+        const value =  token[parseInt(current.slice(2, -2))];
+        if (isSurroundedBy(value.trim(), "{{", "}}")) {
+            return this.#getTokenValue(value, token);
+        }
+        return value;
+    }
+
+}
+
+function isSurroundedBy(value, start, end) {
+    return value.startsWith(start) && value.endsWith(end);
 }
 
 export default new LogicBuilder();

@@ -35,6 +35,7 @@
             "Deku_Shield": "item[deku_shield]",
             "Fire_Arrows": "item[arrow_fire]",
             "Light_Arrows": "item[arrow_light]",
+            "Ice_Arrows": "item[arrow_ice]",
             "Mirror_Shield": "item[mirror_shield]"
         }
     },

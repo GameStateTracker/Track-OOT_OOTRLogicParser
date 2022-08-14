@@ -201,6 +201,14 @@
         "type": "value",
         "el": "event[raise_water_level]"
     },
+    "Jabu_Jabus_Belly_Floor_Lowered": {
+        "type": "value",
+        "el": "event[jabu_jabus_belly_floor_lowered]"
+    },
+    "Jabu_Jabus_Belly_Parasitic_Tentacle_Cleared": {
+        "type": "value",
+        "el": "event[jabu_jabus_belly_parasitic_tentacle_cleared]"
+    },
     /* items */
     "Bow": {
         "type": "value",
@@ -1249,6 +1257,10 @@
         "type": "value",
         "el": "option[skip.dc_mq_child_bombs]"
     },
+    "logic_dc_hammer_floor": {
+        "type": "value",
+        "el": "option[skip.dc_hammer_floor]"
+    },
     "logic_jabu_scrub_jump_dive": {
         "type": "value",
         "el": "option[skip.jabu_scrub_jump_dive]"
@@ -1820,6 +1832,18 @@
             "el": "option[deadly_bonks]",
             "value": "bonk_off"
         }
+    },
+    "blue_fire_arrows": {
+        "type": "value",
+        "el": "option[blue_fire_arrows]"
+    },
+    "chicken_count": {
+        "type": "value",
+        "el": "option[chicken_count]"
+    },
+    "plant_beans": {
+        "type": "value",
+        "el": "option[plant_beans]"
     },
     "": ""
 }

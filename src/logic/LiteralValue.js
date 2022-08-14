@@ -12,6 +12,10 @@ export default class Literal extends AbstractLiteral {
         this.#category = category;
     }
 
+    get ref() {
+        return this.#ref;
+    }
+
     toJSON()  {
         if (this.#category != null) {
             return {

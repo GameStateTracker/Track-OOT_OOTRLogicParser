@@ -2016,13 +2016,13 @@
             "Great Fairy Ganon Grounds Gateway:Out": false
         },
         "Ganon Grounds Great Fairy Gateway:Out": {
-            "Ganons Castle Grounds": true
+            "Ganons Castle Grounds": false
         },
         "Great Fairy Ganon Grounds Gateway:In": {
             "Ganon Grounds Great Fairy Gateway:Out": false
         },
         "Great Fairy Ganon Grounds Gateway:Out": {
-            "OGC Great Fairy Fountain": true
+            "OGC Great Fairy Fountain": false
         },
         "Kakariko Carpenter House Gateway:In": {
             "Carpenter House Kakariko Gateway:Out": false

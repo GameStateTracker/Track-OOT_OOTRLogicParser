@@ -50,14 +50,14 @@ rules.forEach((v, k) => {
 // parser for normal logic
 function parseLogic() {
     LogicGenerator.reset();
-    LogicParser.parse(gatewayData, false);
+    LogicParser.parse(gatewayData);
     fs.readdirSync(inLogicDir).forEach(function(file) {
         const iname = path.join(inLogicDir, file);
         let mq = false;
         if (iname.endsWith("MQ.json")) {
             mq = true;
         }
-        LogicParser.parse(fs.readFileSync(iname).toString(), mq);
+        LogicParser.parseFile(iname, mq);
     });
     LogicParser.addCustomLogic();
     LogicParser.regionCheckCall();
@@ -92,7 +92,7 @@ function parseGlitchedLogic() {
         if (iname.endsWith("MQ.json")) {
             mq = true;
         }
-        LogicParser.parse(fs.readFileSync(iname).toString(), mq);
+        LogicParser.parseFile(iname, mq);
     });
     LogicParser.addCustomLogic();
     // LogicParser.regionCheckCall();

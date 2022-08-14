@@ -19,9 +19,35 @@ const exits = ["Kakariko Village", "KF Outside Deku Tree", "Death Mountain", "Zo
 
 class LogicParser {
 
+    parseFile(fileName, mq = false) {
+        const input = fs.readFileSync(fileName).toString();
+        const output = this.#parseInput(input);
+        if (!Array.isArray(output)) {
+            console.warn(`skip parsing logic file "${fileName}": does not match base format`);
+            return;
+        }
+        this.#extractToken(output, mq);
+    }
+
     parse(input, mq = false) {
         const output = this.#parseInput(input);
-        output.forEach((value) => {
+        if (!Array.isArray(output)) {
+            console.warn("skip parsing logic: does not match base format");
+            return;
+        }
+        this.#extractToken(output, mq);
+    }
+
+    #parseInput(input) {
+        if (typeof input === "string") {
+            return RandONC.parse(input);
+        } else {
+            return input;
+        }
+    }
+
+    #extractToken(data, mq = false) {
+        data.forEach((value) => {
             if (mq) {
                 value.region_name = value.region_name + " MQ"
             }
@@ -78,15 +104,7 @@ class LogicParser {
                 const rule = value.events[i];
                 LogicGenerator.addEvent(value.region_name, i, transpile(rule));
             }
-        })
-    }
-
-    #parseInput(input) {
-        if (typeof input === "string") {
-            return RandONC.parse(input);
-        } else {
-            return input;
-        }
+        });
     }
 
     addCustomLogic() {
