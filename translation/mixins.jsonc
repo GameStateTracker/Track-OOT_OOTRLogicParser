@@ -1,6 +1,6 @@
 {
     /* time travel */
-    "mixin[is_starting_age]": { 
+    "mixin[is_starting_age]": {
         "type": "or",
         "el": [
             {
@@ -566,6 +566,41 @@
             {
                 "type": "value",
                 "el": "event[deku_tree_clear]"
+            }
+        ]
+    },
+    "mixin[king_dodongo_shortcuts]": {
+        "type": "and",
+        "el": [
+            {
+                "type": "false"
+            },
+            {
+                "type": "not",
+                "el": {
+                    "type": "state",
+                    "el": "option[shuffle_bosses]",
+                    "value": "shuffle_bosses_off"
+                }
+            },
+            {
+                "type": "or",
+                "el": [
+                    {
+                        "type": "and",
+                        "el": [
+                            {
+                                "type": "value",
+                                "el": "option[dungeon_shortcuts.deku]"
+                            },
+                            {
+                                "type": "state",
+                                "el": " -> ",
+                                "value": ""
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },

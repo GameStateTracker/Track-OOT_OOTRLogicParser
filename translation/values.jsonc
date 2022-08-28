@@ -1845,5 +1845,37 @@
         "type": "value",
         "el": "option[plant_beans]"
     },
+    "'Deku Tree' in dungeon_shortcuts": {
+        "type": "value",
+        "el": "option[dungeon_shortcuts.deku]"
+    },
+    "'Dodongos Cavern' in dungeon_shortcuts": {
+        "type": "value",
+        "el": "option[dungeon_shortcuts.dodongo]"
+    },
+    "'Jabu Jabus Belly' in dungeon_shortcuts": {
+        "type": "value",
+        "el": "option[dungeon_shortcuts.jabu]"
+    },
+    "'Forest Temple' in dungeon_shortcuts": {
+        "type": "value",
+        "el": "option[dungeon_shortcuts.temple_forest]"
+    },
+    "'Fire Temple' in dungeon_shortcuts": {
+        "type": "value",
+        "el": "option[dungeon_shortcuts.temple_fire]"
+    },
+    "'Water Temple' in dungeon_shortcuts": {
+        "type": "value",
+        "el": "option[dungeon_shortcuts.temple_water]"
+    },
+    "'Shadow Temple' in dungeon_shortcuts": {
+        "type": "value",
+        "el": "option[dungeon_shortcuts.temple_shadow]"
+    },
+    "'Spirit Temple' in dungeon_shortcuts": {
+        "type": "value",
+        "el": "option[dungeon_shortcuts.temple_spirit]"
+    },
     "": ""
 }
