@@ -32,11 +32,8 @@ class Translation {
     }
 
     getValueName(value) {
-        value = value.replace(/ /g, "_").replace(/^'|'$/g, "");
-        if (values[value] != null) {
-            const res = values[value];
-            return res;
-        }
+        const newValue = value.replace(/ /g, "_").replace(/^'(.*)'$/g, "$1");
+        return values[newValue] ?? values[value] ?? undefined;
     }
 
     getStateConfig(value) {

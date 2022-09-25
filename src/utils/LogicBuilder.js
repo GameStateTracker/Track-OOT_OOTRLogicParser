@@ -6,10 +6,13 @@ import OperatorAnd from "../logic/OperatorAnd.js";
 import OperatorOr from "../logic/OperatorOr.js";
 import OperatorNot from "../logic/OperatorNot.js";
 import OperatorMin from "../logic/OperatorMin.js";
+import ComparatorLessThan from "../logic/ComparatorLessThan.js";
 import ComparatorGreaterThanEqual from "../logic/ComparatorGreaterThanEqual.js";
 import ReferrerAt from "../logic/ReferrerAt.js";
 import ReferrerHere from "../logic/ReferrerHere.js";
 import LogicFunction from "../logic/LogicFunction.js";
+
+const REF_REGEX = /^\{\{[0-9]+\}\}$/;
 
 class LogicBuilder {
 
@@ -59,6 +62,13 @@ class LogicBuilder {
             not.append(el);
             return not;
         }
+        if (current.indexOf(" < ") >= 0) {
+            const [ref, value] = current.split(" < ");
+            const resRef = this.#getTokenValue(ref, token);
+            const resValue = this.#getTokenValue(value, token);
+            const el = new ComparatorLessThan(resRef, resValue);
+            return el;
+        }
         if (current.startsWith("min(")) {
             const [ref, value] = current.slice(4, -1).split(", ");
             const resRef = this.resolveToken(ref, token);
@@ -100,7 +110,7 @@ class LogicBuilder {
             }
             return el;
         }
-        if (isSurroundedBy(current.trim(), "{{", "}}")) {
+        if (REF_REGEX.test(current.trim())) {
             const next = this.#getTokenValue(current, token);
             const result = this.resolveToken(next, token);
             return result;
@@ -118,17 +128,14 @@ class LogicBuilder {
     }
 
     #getTokenValue(current, token) {
-        const value =  token[parseInt(current.slice(2, -2))];
-        if (isSurroundedBy(value.trim(), "{{", "}}")) {
+        current = current.trim();
+        if (REF_REGEX.test(current)) {
+            const value = token[parseInt(current.slice(2, -2))];
             return this.#getTokenValue(value, token);
         }
-        return value;
+        return current;
     }
 
-}
-
-function isSurroundedBy(value, start, end) {
-    return value.startsWith(start) && value.endsWith(end);
 }
 
 export default new LogicBuilder();

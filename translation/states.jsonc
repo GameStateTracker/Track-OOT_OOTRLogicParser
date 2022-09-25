@@ -202,6 +202,14 @@
             "entrance_shuffle_all": "entrance_shuffle_all"
         }
     },
+    "option[shuffle_bosses]": {
+        "name": "option[shuffle_bosses]",
+        "values": {
+            "shuffle_bosses_off": "shuffle_bosses_off",
+            "shuffle_bosses_age": "shuffle_bosses_age",
+            "shuffle_bosses_all": "shuffle_bosses_all"
+        }
+    },
     "option[ganon_castle_open]": {
         "name": "option[ganon_castle_open]",
         "values": {

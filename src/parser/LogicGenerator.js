@@ -127,7 +127,7 @@ class LogicGenerator {
     generate(glitched = false) {
         console.log("");
         console.log("-------------------------------------------");
-        console.log(`generate ${glitched ? "glitched" : ""} logic output`);
+        console.log("generate logic output");
         console.log("");
 
         for (const key in function_overrides) {

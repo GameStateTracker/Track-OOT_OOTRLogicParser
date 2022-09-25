@@ -363,6 +363,8 @@
 - (-) 'Shadow Temple' in dungeon_shortcuts
 - (-) 'Spirit Temple' in dungeon_shortcuts
 
+- (-) shuffle_child_trade -> skip_child_zelda
+
 ### states not converted
 
 {

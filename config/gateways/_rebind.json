@@ -547,5 +547,53 @@
     },
     "Colossus Grotto": {
         "Desert Colossus": "Grotto Colossus Gateway"
+    },
+    "Deku Tree Boss Door": {
+        "Queen Gohma Boss Room": "Deku Boss Gateway"
+    },
+    "Queen Gohma Boss Room": {
+        "Deku Tree Boss Door": "Boss Deku Gateway"
+    },
+    "Dodongos Cavern Boss Door": {
+        "King Dodongo Boss Room": "Dodongo Boss Gateway"
+    },
+    "King Dodongo Boss Room": {
+        "Dodongos Cavern Boss Door": "Boss Dodongo Gateway"
+    },
+    "Jabu Jabus Belly Boss Door": {
+        "Barinade Boss Room": "Jabu Boss Gateway"
+    },
+    "Barinade Boss Room": {
+        "Jabu Jabus Belly Boss Door": "Boss Jabu Gateway"
+    },
+    "Forest Temple Boss Door": {
+        "Phantom Ganon Boss Room": "Forest Temple Boss Gateway"
+    },
+    "Phantom Ganon Boss Room": {
+        "Forest Temple Boss Door": "Boss Forest Temple Gateway"
+    },
+    "Fire Temple Boss Door": {
+        "Volvagia Boss Room": "Fire Temple Boss Gateway"
+    },
+    "Volvagia Boss Room": {
+        "Fire Temple Boss Door": "Boss Fire Temple Gateway"
+    },
+    "Water Temple Boss Door": {
+        "Morpha Boss Room": "Water Temple Boss Gateway"
+    },
+    "Morpha Boss Room": {
+        "Water Temple Boss Door": "Boss Water Temple Gateway"
+    },
+    "Shadow Temple Boss Door": {
+        "Bongo Bongo Boss Room": "Shadow Temple Boss Gateway"
+    },
+    "Bongo Bongo Boss Room": {
+        "Shadow Temple Boss Door": "Boss Shadow Temple Gateway"
+    },
+    "Spirit Temple Boss Door": {
+        "Twinrova Boss Room": "Spirit Temple Boss Gateway"
+    },
+    "Twinrova Boss Room": {
+        "Spirit Temple Boss Door": "Boss Spirit Temple Gateway"
     }
 }

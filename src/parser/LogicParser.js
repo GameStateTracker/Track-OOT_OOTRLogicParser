@@ -72,7 +72,10 @@ class LogicParser {
                         rule = split.join("at_night_gs");
                     }
                 }
-                LogicGenerator.addLocation(value.region_name, i, transpile(rule));
+                const token = RandTokenizer.tokenize(rule);
+                const logic = LogicBuilder.build(token);
+                LogicGenerator.addLocation(value.region_name, i, logic);
+                //console.log("token location:\n", value.region_name, i, "\n", token);
             }
             for (let i in value.exits) {
                 const rule = value.exits[i];
@@ -98,11 +101,17 @@ class LogicParser {
                 }
                 success.mainRegions[value.region_name] = false;
                 success.subRegions[value.region_name][i] = false;
-                LogicGenerator.addExit(value.region_name, i, transpile(rule));
+                const token = RandTokenizer.tokenize(rule);
+                const logic = LogicBuilder.build(token);
+                LogicGenerator.addExit(value.region_name, i, logic);
+                //console.log("token exit:\n", value.region_name, i, "\n", token);
             }
             for (const i in value.events) {
                 const rule = value.events[i];
-                LogicGenerator.addEvent(value.region_name, i, transpile(rule));
+                const token = RandTokenizer.tokenize(rule);
+                const logic = LogicBuilder.build(token);
+                LogicGenerator.addEvent(value.region_name, i, logic);
+                //console.log("token event:\n", value.region_name, i, "\n", token);
             }
         });
     }
@@ -113,7 +122,10 @@ class LogicParser {
             if (region.locations != null) {
                 for (const locationName in region.locations) {
                     const rule = region.locations[locationName];
-                    LogicGenerator.addLocation(regionName, locationName, transpile(rule));
+                    const token = RandTokenizer.tokenize(rule);
+                    const logic = LogicBuilder.build(token);
+                    LogicGenerator.addLocation(regionName, locationName, logic);
+                    //console.log("token location (custom):\n", regionName, locationName, "\n", token);
                 }
             }
         }
@@ -123,11 +135,6 @@ class LogicParser {
         RegionCheck.checkRegions(success);
     }
 
-}
-
-function transpile(input) {
-    const token = RandTokenizer.tokenize(input);
-    return LogicBuilder.build(token);
 }
 
 export default new LogicParser();

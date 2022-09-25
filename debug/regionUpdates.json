@@ -487,7 +487,7 @@
         "Great Fairy Colossus Gateway:In": false,
         "Great Fairy Colossus Gateway:Out": false,
         "Deku Tree Boss Door": false,
-        "Gohma Boss Room": false,
+        "Queen Gohma Boss Room": false,
         "Dodongos Cavern Boss Door": false,
         "King Dodongo Boss Room": false,
         "Jabu Jabus Belly Boss Door": false,
@@ -2265,52 +2265,52 @@
             "Colossus Great Fairy Fountain": false
         },
         "Deku Tree Boss Door": {
-            "Gohma Boss Room": false
+            "Queen Gohma Boss Room": false
         },
-        "Gohma Boss Room": {
+        "Queen Gohma Boss Room": {
             "Deku Tree Boss Door": false
         },
         "Dodongos Cavern Boss Door": {
-            "King Dodongo Boss Room": false
+            "Dodongo Boss Gateway:In": false
         },
         "King Dodongo Boss Room": {
-            "Dodongos Cavern Boss Door": false
+            "Boss Dodongo Gateway:In": false
         },
         "Jabu Jabus Belly Boss Door": {
-            "Barinade Boss Room": false
+            "Jabu Boss Gateway:In": false
         },
         "Barinade Boss Room": {
-            "Jabu Jabus Belly Boss Door": false
+            "Boss Jabu Gateway:In": false
         },
         "Forest Temple Boss Door": {
-            "Phantom Ganon Boss Room": false
+            "Forest Temple Boss Gateway:In": false
         },
         "Phantom Ganon Boss Room": {
-            "Forest Temple Boss Door": false
+            "Boss Forest Temple Gateway:In": false
         },
         "Fire Temple Boss Door": {
-            "Volvagia Boss Room": false
+            "Fire Temple Boss Gateway:In": false
         },
         "Volvagia Boss Room": {
-            "Fire Temple Boss Door": false
+            "Boss Fire Temple Gateway:In": false
         },
         "Water Temple Boss Door": {
-            "Morpha Boss Room": false
+            "Water Temple Boss Gateway:In": false
         },
         "Morpha Boss Room": {
-            "Water Temple Boss Door": false
+            "Boss Water Temple Gateway:In": false
         },
         "Shadow Temple Boss Door": {
-            "Bongo Bongo Boss Room": false
+            "Shadow Temple Boss Gateway:In": false
         },
         "Bongo Bongo Boss Room": {
-            "Shadow Temple Boss Door": false
+            "Boss Shadow Temple Gateway:In": false
         },
         "Spirit Temple Boss Door": {
-            "Twinrova Boss Room": false
+            "Spirit Temple Boss Gateway:In": false
         },
         "Twinrova Boss Room": {
-            "Spirit Temple Boss Door": false
+            "Boss Spirit Temple Gateway:In": false
         },
         "Bottom of the Well MQ": {
             "Well Kakriko Gateway:In": false,

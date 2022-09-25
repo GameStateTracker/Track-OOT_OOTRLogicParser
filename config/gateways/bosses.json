@@ -1,1 +1,122 @@
-[]
+[
+    {
+        "region_name": "Deku Boss Gateway",
+        "exits": {
+            "Deku Tree Boss Door": "dungeontype[deku] != 'mq'",
+            "Deku Tree Boss Door MQ": "dungeontype[deku] != 'v'",
+            "Boss Deku Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Boss Deku Gateway",
+        "exits": {
+            "Deku Boss Gateway": "True",
+            "Queen Gohma Boss Room": "True"
+        }
+    },
+    {
+        "region_name": "Dodongo Boss Gateway",
+        "exits": {
+            "Dodongos Cavern Boss Door": "dungeontype[dodongo] != 'mq'",
+            "Dodongos Cavern Boss Door MQ": "dungeontype[dodongo] != 'v'",
+            "Boss Dodongo Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Boss Dodongo Gateway",
+        "exits": {
+            "Dodongo Boss Gateway": "True",
+            "King Dodongo Boss Room": "True"
+        }
+    },
+    {
+        "region_name": "Jabu Boss Gateway",
+        "exits": {
+            "Jabu Jabus Belly Boss Door": "dungeontype[jabujabu] != 'mq'",
+            "Jabu Jabus Belly Boss Door MQ": "dungeontype[jabujabu] != 'v'",
+            "Boss Jabu Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Boss Jabu Gateway",
+        "exits": {
+            "Jabu Boss Gateway": "True",
+            "Barinade Boss Room": "True"
+        }
+    },
+    {
+        "region_name": "Forest Temple Boss Gateway",
+        "exits": {
+            "Forest Temple Boss Door": "dungeontype[temple_forest] != 'mq'",
+            "Forest Temple Boss Door MQ": "dungeontype[temple_forest] != 'v'",
+            "Boss Forest Temple Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Boss Forest Temple Gateway",
+        "exits": {
+            "Forest Temple Boss Gateway": "True",
+            "Phantom Ganon Boss Room": "True"
+        }
+    },
+    {
+        "region_name": "Fire Temple Boss Gateway",
+        "exits": {
+            "Fire Temple Boss Door": "dungeontype[temple_fire] != 'mq'",
+            "Fire Temple Boss Door MQ": "dungeontype[temple_fire] != 'v'",
+            "Boss Fire Temple Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Boss Fire Temple Gateway",
+        "exits": {
+            "Fire Temple Boss Gateway": "True",
+            "Volvagia Boss Room": "True"
+        }
+    },
+    {
+        "region_name": "Water Temple Boss Gateway",
+        "exits": {
+            "Water Temple Boss Door": "dungeontype[temple_water] != 'mq'",
+            "Water Temple Boss Door MQ": "dungeontype[temple_water] != 'v'",
+            "Boss Water Temple Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Boss Water Temple Gateway",
+        "exits": {
+            "Water Temple Boss Gateway": "True",
+            "Morpha Boss Room": "True"
+        }
+    },
+    {
+        "region_name": "Shadow Temple Boss Gateway",
+        "exits": {
+            "Shadow Temple Boss Door": "dungeontype[temple_shadow] != 'mq'",
+            "Shadow Temple Boss Door MQ": "dungeontype[temple_shadow] != 'v'",
+            "Boss Shadow Temple Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Boss Shadow Temple Gateway",
+        "exits": {
+            "Shadow Temple Boss Gateway": "True",
+            "Bongo Bongo Boss Room": "True"
+        }
+    },
+    {
+        "region_name": "Spirit Temple Boss Gateway",
+        "exits": {
+            "Spirit Temple Boss Door": "dungeontype[temple_spirit] != 'mq'",
+            "Spirit Temple Boss Door MQ": "dungeontype[temple_spirit] != 'v'",
+            "Boss Spirit Temple Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Boss Spirit Temple Gateway",
+        "exits": {
+            "Spirit Temple Boss Gateway": "True",
+            "Twinrova Boss Room": "True"
+        }
+    }
+]

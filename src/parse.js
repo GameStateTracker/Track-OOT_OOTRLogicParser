@@ -49,6 +49,10 @@ rules.forEach((v, k) => {
 
 // parser for normal logic
 function parseLogic() {
+    console.log("");
+    console.log("===========================================");
+    console.log("PARSE LOGIC");
+    console.log("");
     LogicGenerator.reset();
     LogicParser.parse(gatewayData);
     fs.readdirSync(inLogicDir).forEach(function(file) {
@@ -84,6 +88,10 @@ function parseLogic() {
 
 // parser for glitched logic
 function parseGlitchedLogic() {
+    console.log("");
+    console.log("===========================================");
+    console.log("PARSE GLITCHED LOGIC");
+    console.log("");
     LogicGenerator.reset();
     LogicParser.parse(gatewayData);
     fs.readdirSync(inGlitchedDir).forEach(function(file) {
@@ -120,6 +128,10 @@ function parseGlitchedLogic() {
 // --------------------------
 
 // parse helpers
+console.log("");
+console.log("===========================================");
+console.log("PARSE HELPERS");
+console.log("");
 HelperParser.parse(fs.readFileSync(inHelperFile).toString());
 // parse logic
 parseLogic();
