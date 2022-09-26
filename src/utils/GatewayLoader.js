@@ -7,6 +7,7 @@ const __dirname = path.resolve();
 const specialInFileName  = path.join(__dirname, "/config/gateways/special.json");
 const overworldInFileName  = path.join(__dirname, "/config/gateways/overworld.json");
 const dungeonInFileName  = path.join(__dirname, "/config/gateways/dungeon.json");
+const bossesInFileName  = path.join(__dirname, "/config/gateways/bosses.json");
 const interiorInFileName  = path.join(__dirname, "/config/gateways/interior.json");
 const grottoInFileName  = path.join(__dirname, "/config/gateways/grotto.json");
 
@@ -44,6 +45,7 @@ function modify(source = [], target = []) {
 const specialInData = JSON.parse(fs.readFileSync(specialInFileName));
 const overworldInData = JSON.parse(fs.readFileSync(overworldInFileName));
 const dungeonInData = JSON.parse(fs.readFileSync(dungeonInFileName));
+const bossesInData = JSON.parse(fs.readFileSync(bossesInFileName));
 const interiorInData = JSON.parse(fs.readFileSync(interiorInFileName));
 const grottoInData = JSON.parse(fs.readFileSync(grottoInFileName));
 
@@ -53,6 +55,7 @@ modify([
     ...specialInData,
     ...overworldInData,
     ...dungeonInData,
+    ...bossesInData,
     ...grottoInData,
     ...interiorInData
 ], outData);

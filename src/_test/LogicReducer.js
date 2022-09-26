@@ -12,7 +12,7 @@ function filterFalse(input) {
 }
 
 function logicReducer(input) {
-    switch (input.type) {
+    switch (input?.type) {
         case "and": {
             const output = {
                 type: input.type,
@@ -191,6 +191,7 @@ export function reduceLogic(config) {
                 res.edges[s][t] = logicReducer(logic) ?? {type: "false"};
             } catch (err) {
                 console.error(`Error in edge "${s}" -> "${t}"`, err);
+                console.error("---\n", JSON.stringify(logic, null, 4), "\n---");
             }
         }
     }
@@ -200,6 +201,7 @@ export function reduceLogic(config) {
             res.logic[n] = logicReducer(logic) ?? {type: "false"};
         } catch (err) {
             console.error(`Error in mixin "${n}"`, err);
+            console.error("---\n", JSON.stringify(logic, null, 4), "\n---");
         }
     }
 

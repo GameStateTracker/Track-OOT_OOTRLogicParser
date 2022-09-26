@@ -121,9 +121,6 @@ class LogicBuilder {
         if (current == "True") {
             return new LiteralTrue();
         }
-        if (current === "shadow_temple_shortcuts") {
-            console.log("found it")
-        }
         return new LiteralValue(current);
     }
 

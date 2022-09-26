@@ -178,6 +178,38 @@
         "Castle Grounds Ganons Castle Gateway:Out": false,
         "Ganons Castle Castle Grounds Gateway:In": false,
         "Ganons Castle Castle Grounds Gateway:Out": false,
+        "Deku Boss Gateway:In": true,
+        "Deku Boss Gateway:Out": true,
+        "Boss Deku Gateway:In": true,
+        "Boss Deku Gateway:Out": true,
+        "Dodongo Boss Gateway:In": true,
+        "Dodongo Boss Gateway:Out": true,
+        "Boss Dodongo Gateway:In": true,
+        "Boss Dodongo Gateway:Out": true,
+        "Jabu Boss Gateway:In": true,
+        "Jabu Boss Gateway:Out": true,
+        "Boss Jabu Gateway:In": true,
+        "Boss Jabu Gateway:Out": true,
+        "Forest Temple Boss Gateway:In": true,
+        "Forest Temple Boss Gateway:Out": true,
+        "Boss Forest Temple Gateway:In": true,
+        "Boss Forest Temple Gateway:Out": true,
+        "Fire Temple Boss Gateway:In": true,
+        "Fire Temple Boss Gateway:Out": true,
+        "Boss Fire Temple Gateway:In": true,
+        "Boss Fire Temple Gateway:Out": true,
+        "Water Temple Boss Gateway:In": true,
+        "Water Temple Boss Gateway:Out": true,
+        "Boss Water Temple Gateway:In": true,
+        "Boss Water Temple Gateway:Out": true,
+        "Shadow Temple Boss Gateway:In": true,
+        "Shadow Temple Boss Gateway:Out": true,
+        "Boss Shadow Temple Gateway:In": true,
+        "Boss Shadow Temple Gateway:Out": true,
+        "Spirit Temple Boss Gateway:In": true,
+        "Spirit Temple Boss Gateway:Out": true,
+        "Boss Spirit Temple Gateway:In": true,
+        "Boss Spirit Temple Gateway:Out": true,
         "Field Tektite Grotto Gateway:In": false,
         "Field Tektite Grotto Gateway:Out": false,
         "Tektite Grotto Field Gateway:In": false,
@@ -1337,6 +1369,110 @@
             "Ganons Castle Lobby": false,
             "Ganons Castle Lobby MQ": false
         },
+        "Deku Boss Gateway:In": {
+            "Boss Deku Gateway:Out": true
+        },
+        "Deku Boss Gateway:Out": {
+            "Deku Tree Boss Door": true,
+            "Deku Tree Boss Door MQ": true
+        },
+        "Boss Deku Gateway:In": {
+            "Deku Boss Gateway:Out": true
+        },
+        "Boss Deku Gateway:Out": {
+            "Queen Gohma Boss Room": true
+        },
+        "Dodongo Boss Gateway:In": {
+            "Boss Dodongo Gateway:Out": true
+        },
+        "Dodongo Boss Gateway:Out": {
+            "Dodongos Cavern Boss Door": true,
+            "Dodongos Cavern Boss Door MQ": true
+        },
+        "Boss Dodongo Gateway:In": {
+            "Dodongo Boss Gateway:Out": true
+        },
+        "Boss Dodongo Gateway:Out": {
+            "King Dodongo Boss Room": true
+        },
+        "Jabu Boss Gateway:In": {
+            "Boss Jabu Gateway:Out": true
+        },
+        "Jabu Boss Gateway:Out": {
+            "Jabu Jabus Belly Boss Door": true,
+            "Jabu Jabus Belly Boss Door MQ": true
+        },
+        "Boss Jabu Gateway:In": {
+            "Jabu Boss Gateway:Out": true
+        },
+        "Boss Jabu Gateway:Out": {
+            "Barinade Boss Room": true
+        },
+        "Forest Temple Boss Gateway:In": {
+            "Boss Forest Temple Gateway:Out": true
+        },
+        "Forest Temple Boss Gateway:Out": {
+            "Forest Temple Boss Door": true,
+            "Forest Temple Boss Door MQ": true
+        },
+        "Boss Forest Temple Gateway:In": {
+            "Forest Temple Boss Gateway:Out": true
+        },
+        "Boss Forest Temple Gateway:Out": {
+            "Phantom Ganon Boss Room": true
+        },
+        "Fire Temple Boss Gateway:In": {
+            "Boss Fire Temple Gateway:Out": true
+        },
+        "Fire Temple Boss Gateway:Out": {
+            "Fire Temple Boss Door": true,
+            "Fire Temple Boss Door MQ": true
+        },
+        "Boss Fire Temple Gateway:In": {
+            "Fire Temple Boss Gateway:Out": true
+        },
+        "Boss Fire Temple Gateway:Out": {
+            "Volvagia Boss Room": true
+        },
+        "Water Temple Boss Gateway:In": {
+            "Boss Water Temple Gateway:Out": true
+        },
+        "Water Temple Boss Gateway:Out": {
+            "Water Temple Boss Door": true,
+            "Water Temple Boss Door MQ": true
+        },
+        "Boss Water Temple Gateway:In": {
+            "Water Temple Boss Gateway:Out": true
+        },
+        "Boss Water Temple Gateway:Out": {
+            "Morpha Boss Room": true
+        },
+        "Shadow Temple Boss Gateway:In": {
+            "Boss Shadow Temple Gateway:Out": true
+        },
+        "Shadow Temple Boss Gateway:Out": {
+            "Shadow Temple Boss Door": true,
+            "Shadow Temple Boss Door MQ": true
+        },
+        "Boss Shadow Temple Gateway:In": {
+            "Shadow Temple Boss Gateway:Out": true
+        },
+        "Boss Shadow Temple Gateway:Out": {
+            "Bongo Bongo Boss Room": true
+        },
+        "Spirit Temple Boss Gateway:In": {
+            "Boss Spirit Temple Gateway:Out": true
+        },
+        "Spirit Temple Boss Gateway:Out": {
+            "Spirit Temple Boss Door": true,
+            "Spirit Temple Boss Door MQ": true
+        },
+        "Boss Spirit Temple Gateway:In": {
+            "Spirit Temple Boss Gateway:Out": true
+        },
+        "Boss Spirit Temple Gateway:Out": {
+            "Twinrova Boss Room": true
+        },
         "Field Tektite Grotto Gateway:In": {
             "Tektite Grotto Field Gateway:Out": false
         },
@@ -2265,10 +2401,10 @@
             "Colossus Great Fairy Fountain": false
         },
         "Deku Tree Boss Door": {
-            "Queen Gohma Boss Room": false
+            "Deku Boss Gateway:In": false
         },
         "Queen Gohma Boss Room": {
-            "Deku Tree Boss Door": false
+            "Boss Deku Gateway:In": false
         },
         "Dodongos Cavern Boss Door": {
             "Dodongo Boss Gateway:In": false

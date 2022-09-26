@@ -192,6 +192,12 @@
             "entrance_shuffle_all": "entrance_shuffle_all"
         }
     },
+    "shuffle_child_trade": {
+        "name": "option[shuffle_child_trade]",
+        "values": {
+            "skip_child_zelda": "skip_child_zelda"
+        }
+    },
     "option[entrance_shuffle]": {
         "name": "option[entrance_shuffle]",
         "values": {
