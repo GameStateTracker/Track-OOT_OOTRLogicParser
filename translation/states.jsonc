@@ -208,6 +208,14 @@
             "entrance_shuffle_all": "entrance_shuffle_all"
         }
     },
+    "option[shuffle_dungeons]": {
+        "name": "option[shuffle_dungeons]",
+        "values": {
+            "shuffle_dungeons_off": "shuffle_dungeons_off",
+            "shuffle_dungeons_simple": "shuffle_dungeons_simple",
+            "shuffle_dungeons_all": "shuffle_dungeons_all"
+        }
+    },
     "option[shuffle_bosses]": {
         "name": "option[shuffle_bosses]",
         "values": {

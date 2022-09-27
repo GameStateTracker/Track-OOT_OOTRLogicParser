@@ -893,8 +893,14 @@
                 "el": "option[shuffle_grottos]"
             },
             {
-                "type": "value",
-                "el": "option[shuffle_dungeons]"
+                "type": "state",
+                "el": "option[shuffle_dungeons]",
+                "value": "shuffle_dungeons_simple"
+            },
+            {
+                "type": "state",
+                "el": "option[shuffle_dungeons]",
+                "value": "shuffle_dungeons_all"
             },
             {
                 "type": "value",
@@ -913,8 +919,19 @@
         ]
     },
     "shuffle_dungeon_entrances": {
-        "type": "value",
-        "el": "option[shuffle_dungeons]"
+        "type": "or",
+        "el": [
+            {
+                "type": "state",
+                "el": "option[shuffle_dungeons]",
+                "value": "shuffle_dungeons_simple"
+            },
+            {
+                "type": "state",
+                "el": "option[shuffle_dungeons]",
+                "value": "shuffle_dungeons_all"
+            }
+        ]
     },
     /*"shuffle_special_indoor_entrances": {
         "type": "and",
