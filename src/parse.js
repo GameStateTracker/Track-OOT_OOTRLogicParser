@@ -23,14 +23,17 @@ import {
 
 const __dirname = path.resolve();
 
+/* SETTINGS */
+const RANDO_VERSION = "Dev";
+const FILTER_LOGIC = false;
+/* -------- */
+
 const inHelperFile  = path.join(__dirname, "/input/data/LogicHelpers.json");
 const inLogicDir  = path.join(__dirname, "/input/data/World");
 const inGlitchedDir  = path.join(__dirname, "/input/data/Glitched World");
 const outputDir = path.join(__dirname, "/output/");
 
 const transRulesFile = path.join(__dirname, "/translation/predict_rules.json");
-
-const RANDO_VERSION = "Dev";
 
 if (fs.existsSync("./input")) {
     fs.rmSync("./input", {recursive: true});
@@ -77,7 +80,7 @@ function parseLogic() {
     fs.writeFileSync(`${outputDir}/vanilla.filtered.json`, filteredData);
 
     /* reduce */
-    const reducedLogic = reduceLogic(filtered);
+    const reducedLogic = reduceLogic(FILTER_LOGIC ? filtered : logic);
     const reducedLogicData = JSON.stringify(reducedLogic, null, 4);
     fs.writeFileSync(`${outputDir}/vanilla.readable.json`, reducedLogicData);
 
@@ -116,7 +119,7 @@ function parseGlitchedLogic() {
     fs.writeFileSync(`${outputDir}/glitched.filtered.json`, filteredData);
 
     /* reduce */
-    const reducedLogic = reduceLogic(filtered);
+    const reducedLogic = reduceLogic(FILTER_LOGIC ? filtered : logic);
     const reducedLogicData = JSON.stringify(reducedLogic, null, 4);
     fs.writeFileSync(`${outputDir}/glitched.readable.json`, reducedLogicData);
 

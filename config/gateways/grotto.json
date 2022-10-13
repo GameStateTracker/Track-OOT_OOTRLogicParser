@@ -259,7 +259,7 @@
         }
     },
     {
-        "region_name": "Kakariko Redead Grotto Gateway",
+        "region_name": "Redead Grotto Kakariko Gateway",
         "exits": {
             "Kakariko Redead Grotto Gateway": "True",
             "Kak Redead Grotto": "True"
@@ -492,12 +492,12 @@
     {
         "region_name": "Fortress Storms Grotto Gateway",
         "exits": {
-            "Fortress Storms Grotto Gateway": "True",
+            "Storms Grotto Fortress Gateway": "True",
             "Gerudo Fortress": "True"
         }
     },
     {
-        "region_name": "Fortress Storms Grotto Gateway",
+        "region_name": "Storms Grotto Fortress Gateway",
         "exits": {
             "Fortress Storms Grotto Gateway": "True",
             "GF Storms Grotto": "True"

@@ -284,6 +284,8 @@
         "Open Grotto Kakariko Gateway:Out": false,
         "Kakariko Redead Grotto Gateway:In": false,
         "Kakariko Redead Grotto Gateway:Out": false,
+        "Redead Grotto Kakariko Gateway:In": true,
+        "Redead Grotto Kakariko Gateway:Out": true,
         "Graveyard Shield Grave Gateway:In": false,
         "Graveyard Shield Grave Gateway:Out": false,
         "Shield Grave Graveyard Gateway:In": false,
@@ -350,6 +352,8 @@
         "Octorok Grotto Valley Gateway:Out": false,
         "Fortress Storms Grotto Gateway:In": false,
         "Fortress Storms Grotto Gateway:Out": false,
+        "Storms Grotto Fortress Gateway:In": false,
+        "Storms Grotto Fortress Gateway:Out": false,
         "Colossus Grotto Gateway:In": false,
         "Colossus Grotto Gateway:Out": false,
         "Grotto Colossus Gateway:In": false,
@@ -1690,12 +1694,16 @@
             "Kak Open Grotto": false
         },
         "Kakariko Redead Grotto Gateway:In": {
-            "Redead Grotto Kakariko Gateway:Out": false,
-            "Kakariko Redead Grotto Gateway:Out": false
+            "Redead Grotto Kakariko Gateway:Out": false
         },
         "Kakariko Redead Grotto Gateway:Out": {
-            "Kakariko Village": false,
-            "Kak Redead Grotto": false
+            "Kakariko Village": false
+        },
+        "Redead Grotto Kakariko Gateway:In": {
+            "Kakariko Redead Grotto Gateway:Out": true
+        },
+        "Redead Grotto Kakariko Gateway:Out": {
+            "Kak Redead Grotto": true
         },
         "Graveyard Shield Grave Gateway:In": {
             "Shield Grave Graveyard Gateway:Out": false
@@ -1890,10 +1898,15 @@
             "GV Octorok Grotto": false
         },
         "Fortress Storms Grotto Gateway:In": {
-            "Fortress Storms Grotto Gateway:Out": false
+            "Storms Grotto Fortress Gateway:Out": false
         },
         "Fortress Storms Grotto Gateway:Out": {
-            "Gerudo Fortress": false,
+            "Gerudo Fortress": false
+        },
+        "Storms Grotto Fortress Gateway:In": {
+            "Fortress Storms Grotto Gateway:Out": false
+        },
+        "Storms Grotto Fortress Gateway:Out": {
             "GF Storms Grotto": false
         },
         "Colossus Grotto Gateway:In": {
@@ -3373,7 +3386,7 @@
             "Tower Ranch Gateway:In": false
         },
         "GF Storms Grotto": {
-            "Fortress Storms Grotto Gateway:In": false
+            "Storms Grotto Fortress Gateway:In": false
         },
         "ZD Storms Grotto": {
             "Storms Grotto Domain Gateway:In": false
@@ -3430,7 +3443,7 @@
             "Storms Grotto Grounds Gateway:In": false
         },
         "Kak Redead Grotto": {
-            "Kakariko Redead Grotto Gateway:In": false
+            "Redead Grotto Kakariko Gateway:In": true
         },
         "Kak Open Grotto": {
             "Open Grotto Kakariko Gateway:In": false
