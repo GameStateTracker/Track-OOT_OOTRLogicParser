@@ -326,6 +326,11 @@
 - (-) Kak GS Near Gate Guard
 - (-) Graveyard Dampe Race Hookshot Chest
 - (-) Dampe Diary Hint
+- (-) 10 Skulltulas Reward Hint
+- (-) 20 Skulltulas Reward Hint
+- (-) 30 Skulltulas Reward Hint
+- (-) 40 Skulltulas Reward Hint
+- (-) 50 Skulltulas Reward Hint
 
 ### missing translations
 

@@ -64,7 +64,9 @@ function parseLogic() {
         if (iname.endsWith("MQ.json")) {
             mq = true;
         }
-        LogicParser.parseFile(iname, mq);
+        LogicParser.parseFile(iname, mq, [
+            / Boss Door$/
+        ]);
     });
     LogicParser.addCustomLogic();
     LogicParser.regionCheckCall();
@@ -103,7 +105,9 @@ function parseGlitchedLogic() {
         if (iname.endsWith("MQ.json")) {
             mq = true;
         }
-        LogicParser.parseFile(iname, mq);
+        LogicParser.parseFile(iname, mq, [
+            / Boss Door$/
+        ]);
     });
     LogicParser.addCustomLogic();
     // LogicParser.regionCheckCall();

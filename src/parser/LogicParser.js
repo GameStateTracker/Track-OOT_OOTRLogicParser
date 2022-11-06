@@ -17,25 +17,40 @@ const success = {
 };
 const exits = ["Kakariko Village", "KF Outside Deku Tree", "Death Mountain", "Zoras Fountain", "ZF Ice Ledge", "Gerudo Fortress", "SFM Forest Temple Entrance Ledge", "DMC Fire Temple Entrance", "Lake Hylia", "Graveyard Warp Pad Region", "Desert Colossus", "Castle Grounds", "Ganons Castle Grounds", "Ganons Castle Tower"]
 
+function testBlacklist(list, value) {
+    if (Array.isArray(list)) {
+        return list.some((el) => {
+            if (el instanceof RegExp) {
+                return el.test(value);
+            }
+            return el == value;
+        })
+    }
+    if (list instanceof RegExp) {
+        return list.test(value);
+    }
+    return list == value;
+}
+
 class LogicParser {
 
-    parseFile(fileName, mq = false) {
+    parseFile(fileName, mq = false, renameBlacklist = []) {
         const input = fs.readFileSync(fileName).toString();
         const output = this.#parseInput(input);
         if (!Array.isArray(output)) {
             console.warn(`skip parsing logic file "${fileName}": does not match base format`);
             return;
         }
-        this.#extractToken(output, mq);
+        this.#extractToken(output, mq, renameBlacklist);
     }
 
-    parse(input, mq = false) {
+    parse(input, mq = false, renameBlacklist = []) {
         const output = this.#parseInput(input);
         if (!Array.isArray(output)) {
             console.warn("skip parsing logic: does not match base format");
             return;
         }
-        this.#extractToken(output, mq);
+        this.#extractToken(output, mq, renameBlacklist);
     }
 
     #parseInput(input) {
@@ -46,9 +61,9 @@ class LogicParser {
         }
     }
 
-    #extractToken(data, mq = false) {
+    #extractToken(data, mq = false, renameBlacklist = []) {
         data.forEach((value) => {
-            if (mq) {
+            if (mq && !testBlacklist(renameBlacklist, value.region_name)) {
                 value.region_name = value.region_name + " MQ"
             }
             for (const i in value.locations) {
@@ -57,7 +72,7 @@ class LogicParser {
                     let split = rule.split("at('")
                     if (split[1] != undefined) {
                         let split2 = split[1].split("'");
-                        if (mq) {
+                        if (mq && !testBlacklist(renameBlacklist, split2[0])) {
                             split2[0] = split2[0] + " MQ";
                             split2 = split2.join("'");
                             split[1] = split2;
@@ -79,7 +94,7 @@ class LogicParser {
             }
             for (let i in value.exits) {
                 const rule = value.exits[i];
-                if (mq) {
+                if (mq && !testBlacklist(renameBlacklist, i)) {
                     if (!exits.includes(i)) {
                         i = i + " MQ"
                     }

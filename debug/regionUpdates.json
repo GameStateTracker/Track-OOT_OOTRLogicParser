@@ -179,36 +179,20 @@
         "Ganons Castle Castle Grounds Gateway:In": false,
         "Ganons Castle Castle Grounds Gateway:Out": false,
         "Deku Boss Gateway:In": false,
-        "Deku Boss Gateway:Out": false,
-        "Boss Deku Gateway:In": false,
         "Boss Deku Gateway:Out": false,
         "Dodongo Boss Gateway:In": false,
-        "Dodongo Boss Gateway:Out": false,
-        "Boss Dodongo Gateway:In": false,
         "Boss Dodongo Gateway:Out": false,
         "Jabu Boss Gateway:In": false,
-        "Jabu Boss Gateway:Out": false,
-        "Boss Jabu Gateway:In": false,
         "Boss Jabu Gateway:Out": false,
         "Forest Temple Boss Gateway:In": false,
-        "Forest Temple Boss Gateway:Out": false,
-        "Boss Forest Temple Gateway:In": false,
         "Boss Forest Temple Gateway:Out": false,
         "Fire Temple Boss Gateway:In": false,
-        "Fire Temple Boss Gateway:Out": false,
-        "Boss Fire Temple Gateway:In": false,
         "Boss Fire Temple Gateway:Out": false,
         "Water Temple Boss Gateway:In": false,
-        "Water Temple Boss Gateway:Out": false,
-        "Boss Water Temple Gateway:In": false,
         "Boss Water Temple Gateway:Out": false,
         "Shadow Temple Boss Gateway:In": false,
-        "Shadow Temple Boss Gateway:Out": false,
-        "Boss Shadow Temple Gateway:In": false,
         "Boss Shadow Temple Gateway:Out": false,
         "Spirit Temple Boss Gateway:In": false,
-        "Spirit Temple Boss Gateway:Out": false,
-        "Boss Spirit Temple Gateway:In": false,
         "Boss Spirit Temple Gateway:Out": false,
         "Field Tektite Grotto Gateway:In": false,
         "Field Tektite Grotto Gateway:Out": false,
@@ -284,8 +268,8 @@
         "Open Grotto Kakariko Gateway:Out": false,
         "Kakariko Redead Grotto Gateway:In": false,
         "Kakariko Redead Grotto Gateway:Out": false,
-        "Redead Grotto Kakariko Gateway:In": true,
-        "Redead Grotto Kakariko Gateway:Out": true,
+        "Redead Grotto Kakariko Gateway:In": false,
+        "Redead Grotto Kakariko Gateway:Out": false,
         "Graveyard Shield Grave Gateway:In": false,
         "Graveyard Shield Grave Gateway:Out": false,
         "Shield Grave Graveyard Gateway:In": false,
@@ -1376,25 +1360,11 @@
         "Deku Boss Gateway:In": {
             "Boss Deku Gateway:Out": false
         },
-        "Deku Boss Gateway:Out": {
-            "Deku Tree Boss Door": false,
-            "Deku Tree Boss Door MQ": false
-        },
-        "Boss Deku Gateway:In": {
-            "Deku Boss Gateway:Out": false
-        },
         "Boss Deku Gateway:Out": {
             "Queen Gohma Boss Room": false
         },
         "Dodongo Boss Gateway:In": {
             "Boss Dodongo Gateway:Out": false
-        },
-        "Dodongo Boss Gateway:Out": {
-            "Dodongos Cavern Boss Door": false,
-            "Dodongos Cavern Boss Door MQ": false
-        },
-        "Boss Dodongo Gateway:In": {
-            "Dodongo Boss Gateway:Out": false
         },
         "Boss Dodongo Gateway:Out": {
             "King Dodongo Boss Room": false
@@ -1402,25 +1372,11 @@
         "Jabu Boss Gateway:In": {
             "Boss Jabu Gateway:Out": false
         },
-        "Jabu Boss Gateway:Out": {
-            "Jabu Jabus Belly Boss Door": false,
-            "Jabu Jabus Belly Boss Door MQ": false
-        },
-        "Boss Jabu Gateway:In": {
-            "Jabu Boss Gateway:Out": false
-        },
         "Boss Jabu Gateway:Out": {
             "Barinade Boss Room": false
         },
         "Forest Temple Boss Gateway:In": {
             "Boss Forest Temple Gateway:Out": false
-        },
-        "Forest Temple Boss Gateway:Out": {
-            "Forest Temple Boss Door": false,
-            "Forest Temple Boss Door MQ": false
-        },
-        "Boss Forest Temple Gateway:In": {
-            "Forest Temple Boss Gateway:Out": false
         },
         "Boss Forest Temple Gateway:Out": {
             "Phantom Ganon Boss Room": false
@@ -1428,25 +1384,11 @@
         "Fire Temple Boss Gateway:In": {
             "Boss Fire Temple Gateway:Out": false
         },
-        "Fire Temple Boss Gateway:Out": {
-            "Fire Temple Boss Door": false,
-            "Fire Temple Boss Door MQ": false
-        },
-        "Boss Fire Temple Gateway:In": {
-            "Fire Temple Boss Gateway:Out": false
-        },
         "Boss Fire Temple Gateway:Out": {
             "Volvagia Boss Room": false
         },
         "Water Temple Boss Gateway:In": {
             "Boss Water Temple Gateway:Out": false
-        },
-        "Water Temple Boss Gateway:Out": {
-            "Water Temple Boss Door": false,
-            "Water Temple Boss Door MQ": false
-        },
-        "Boss Water Temple Gateway:In": {
-            "Water Temple Boss Gateway:Out": false
         },
         "Boss Water Temple Gateway:Out": {
             "Morpha Boss Room": false
@@ -1454,25 +1396,11 @@
         "Shadow Temple Boss Gateway:In": {
             "Boss Shadow Temple Gateway:Out": false
         },
-        "Shadow Temple Boss Gateway:Out": {
-            "Shadow Temple Boss Door": false,
-            "Shadow Temple Boss Door MQ": false
-        },
-        "Boss Shadow Temple Gateway:In": {
-            "Shadow Temple Boss Gateway:Out": false
-        },
         "Boss Shadow Temple Gateway:Out": {
             "Bongo Bongo Boss Room": false
         },
         "Spirit Temple Boss Gateway:In": {
             "Boss Spirit Temple Gateway:Out": false
-        },
-        "Spirit Temple Boss Gateway:Out": {
-            "Spirit Temple Boss Door": false,
-            "Spirit Temple Boss Door MQ": false
-        },
-        "Boss Spirit Temple Gateway:In": {
-            "Spirit Temple Boss Gateway:Out": false
         },
         "Boss Spirit Temple Gateway:Out": {
             "Twinrova Boss Room": false
@@ -1700,10 +1628,10 @@
             "Kakariko Village": false
         },
         "Redead Grotto Kakariko Gateway:In": {
-            "Kakariko Redead Grotto Gateway:Out": true
+            "Kakariko Redead Grotto Gateway:Out": false
         },
         "Redead Grotto Kakariko Gateway:Out": {
-            "Kak Redead Grotto": true
+            "Kak Redead Grotto": false
         },
         "Graveyard Shield Grave Gateway:In": {
             "Shield Grave Graveyard Gateway:Out": false
@@ -2503,7 +2431,7 @@
         "Deku Tree Basement Ledge MQ": {
             "Deku Tree Basement Back Room MQ": false,
             "Deku Tree Lobby MQ": false,
-            "Deku Tree Boss Door MQ": false
+            "Deku Tree Boss Door": true
         },
         "Deku Tree Lobby": {
             "Deku Kokiri Gateway:In": false,
@@ -2546,7 +2474,7 @@
             "Dodongos Cavern Lower Right Side MQ": false
         },
         "Dodongos Cavern Before Boss MQ": {
-            "Dodongos Cavern Boss Door MQ": false
+            "Dodongos Cavern Boss Door": true
         },
         "Dodongos Cavern Beginning": {
             "Dodongo Mountain Gateway:In": false,
@@ -2576,7 +2504,7 @@
         },
         "Fire Temple Lower MQ": {
             "Fire Temple Crater Gateway:In": false,
-            "Fire Temple Boss Door MQ": false,
+            "Fire Temple Boss Door": true,
             "Fire Lower Locked Door MQ": false,
             "Fire Big Lava Room MQ": false
         },
@@ -2646,7 +2574,7 @@
             "Forest Temple NE Outdoors Ledge MQ": false
         },
         "Forest Temple Before Boss MQ": {
-            "Forest Temple Boss Door MQ": false
+            "Forest Temple Boss Door": true
         },
         "Forest Temple Lobby": {
             "Forest Temple Meadow Gateway:In": false,
@@ -2802,7 +2730,7 @@
         },
         "Jabu Jabus Belly Before Boss MQ": {
             "Jabu Jabus Belly Main MQ": false,
-            "Jabu Jabus Belly Boss Door MQ": false
+            "Jabu Jabus Belly Boss Door": true
         },
         "Jabu Jabus Belly Beginning": {
             "Jabu Fountain Gateway:In": false,
@@ -3443,7 +3371,7 @@
             "Storms Grotto Grounds Gateway:In": false
         },
         "Kak Redead Grotto": {
-            "Redead Grotto Kakariko Gateway:In": true
+            "Redead Grotto Kakariko Gateway:In": false
         },
         "Kak Open Grotto": {
             "Open Grotto Kakariko Gateway:In": false
@@ -3526,7 +3454,7 @@
             "Shadow Temple Before Boss MQ": false
         },
         "Shadow Temple Before Boss MQ": {
-            "Shadow Temple Boss Door MQ": false
+            "Shadow Temple Boss Door": true
         },
         "Shadow Temple Entryway": {
             "Shadow Temple Graveyard Gateway:In": false,
@@ -3575,14 +3503,14 @@
             "Spirit Temple Shared MQ": false,
             "Spirit Temple Boss Area MQ": false,
             "Mirror Shield Hand MQ": false,
-            "Spirit Temple Boss Door MQ": false
+            "Spirit Temple Boss Door": true
         },
         "Spirit Temple Shared MQ": {
             "Silver Gauntlets Hand MQ": false,
             "Desert Colossus": false
         },
         "Spirit Temple Boss Area MQ": {
-            "Spirit Temple Boss Door MQ": false
+            "Spirit Temple Boss Door": true
         },
         "Spirit Temple Lobby": {
             "Spirit Temple Colossus Gateway:In": false,
@@ -3622,7 +3550,7 @@
             "Water Temple Lake Gateway:In": false,
             "Water Temple Dive MQ": false,
             "Water Temple Dark Link Region MQ": false,
-            "Water Temple Boss Door MQ": false
+            "Water Temple Boss Door": true
         },
         "Water Temple Dive MQ": {
             "Water Temple Lowered Water Levels MQ": false
