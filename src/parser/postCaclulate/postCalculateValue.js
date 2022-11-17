@@ -34,7 +34,7 @@ export default function postCalculate(scope, input, age = "", region = "", basic
         };
     }
     if (!EXPECTED_REG.test(input.el)) {
-        console.log(`no translation: ${input.el}`);
+        console.log(`no translation for value:\t\t${input.el}`);
     }
     return input;
 }

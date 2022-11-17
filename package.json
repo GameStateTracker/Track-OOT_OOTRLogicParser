@@ -21,6 +21,6 @@
   "scripts": {
     "lint": "yarn eslint .",
     "lintfix": "yarn eslint --fix .",
-    "parse": "node src/parse.js"
+    "parse": "node src/parse.js > run.log 2>&1"
   }
 }

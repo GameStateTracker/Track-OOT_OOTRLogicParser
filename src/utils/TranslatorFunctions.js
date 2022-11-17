@@ -1,28 +1,27 @@
 import Translation from "./Translation.js";
 
-export const INDEX_DELIMITER = "--#";
-
-export const INDEX_DELIMITER_REGEX = new RegExp(`${INDEX_DELIMITER}[0-9]*$`);
-
 export function translateRegionName(input) {
     if (input.startsWith("region[") && input.endsWith("]")) {
         return input;
     }
-    return `region[${input.toLowerCase().replace(/ /g, "_").replace(INDEX_DELIMITER_REGEX, "")}]`;
+    return `region[${input.toLowerCase().replace(/ /g, "_")}]`;
 }
 
 export function translateLocationName(input) {
     if (input.startsWith("reach_location[") && input.endsWith("]")) {
         return input;
     }
-    return `reach_location[${Translation.translateName(input.replace(INDEX_DELIMITER_REGEX, ""))}]`;
+    const result = Translation.translateName(input);
+    if (result) {
+        return `reach_location[${result}]`;
+    }
 }
 
 export function translateEventName(input) {
     if (input.startsWith("event[") && input.endsWith("]")) {
         return input;
     }
-    return `event[${input.toLowerCase().replace(/ /g, "_").replace(INDEX_DELIMITER_REGEX, "")}]`;
+    return `event[${input.toLowerCase().replace(/ /g, "_")}]`;
 }
 
 export function translateMixinName(input) {

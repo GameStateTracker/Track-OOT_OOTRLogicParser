@@ -50,6 +50,22 @@ rules.forEach((v, k) => {
     Translation.addRule(new RegExp(k, "i"), new RegExp(v, "i"));
 });
 
+const RENAME_BLACKLIST = [
+    / Boss Door$/,
+    "KF Outside Deku Tree",
+    "Death Mountain",
+    "Zoras Fountain",
+    "Kakariko Village",
+    "SFM Forest Temple Entrance Ledge",
+    "DMC Fire Temple Entrance",
+    "Lake Hylia",
+    "Graveyard Warp Pad Region",
+    "Desert Colossus From Spirit Lobby",
+    "ZF Ice Ledge",
+    "Gerudo Fortress",
+    "Castle Grounds From Ganons Castle"
+]
+
 // parser for normal logic
 function parseLogic() {
     console.log("");
@@ -64,9 +80,7 @@ function parseLogic() {
         if (iname.endsWith("MQ.json")) {
             mq = true;
         }
-        LogicParser.parseFile(iname, mq, [
-            / Boss Door$/
-        ]);
+        LogicParser.parseFile(iname, mq, RENAME_BLACKLIST);
     });
     LogicParser.addCustomLogic();
     LogicParser.regionCheckCall();
@@ -105,9 +119,7 @@ function parseGlitchedLogic() {
         if (iname.endsWith("MQ.json")) {
             mq = true;
         }
-        LogicParser.parseFile(iname, mq, [
-            / Boss Door$/
-        ]);
+        LogicParser.parseFile(iname, mq, RENAME_BLACKLIST);
     });
     LogicParser.addCustomLogic();
     // LogicParser.regionCheckCall();

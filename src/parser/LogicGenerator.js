@@ -3,13 +3,13 @@ import path from "path";
 import JSONCFile from "../utils/JSONCFile.js";
 import postCalculateMethod from "./postCaclulate/postCalculate.js";
 import {
-    INDEX_DELIMITER,
     translateRegionName,
     translateLocationName,
     translateEventName,
     translateMixinName,
     translateFunctionName
 } from "../utils/TranslatorFunctions.js";
+import StringIndexer from "../utils/StringIndexer.js";
 
 const __dirname = path.resolve();
 
@@ -25,6 +25,10 @@ const exits = new Map();
 const locations = new Map();
 const events = new Map();
 let structure = {};
+
+const exitIndexer = new StringIndexer();
+const locationIndexer = new StringIndexer();
+const eventIndexer = new StringIndexer();
 
 const unstate = {};
 
@@ -78,12 +82,7 @@ class LogicGenerator {
                 events: []
             };
         }
-        let idx = 0;
-        let name = `${key}${INDEX_DELIMITER}${idx}`
-        while (exits.has(name)) {
-            idx++;
-            name = `${key}${INDEX_DELIMITER}${idx}`;
-        }
+        const name = exitIndexer.apply(key);
         structure[region].exits.push(name);
         exits.set(name, value);
     }
@@ -96,12 +95,7 @@ class LogicGenerator {
                 events: []
             };
         }
-        let idx = 0;
-        let name = `${key}${INDEX_DELIMITER}${idx}`
-        while (locations.has(name)) {
-            idx++;
-            name = `${key}${INDEX_DELIMITER}${idx}`;
-        }
+        const name = locationIndexer.apply(key);
         structure[region].locations.push(name);
         locations.set(name, value);
     }
@@ -114,12 +108,7 @@ class LogicGenerator {
                 events: []
             };
         }
-        let idx = 0;
-        let name = `${key}${INDEX_DELIMITER}${idx}`
-        while (events.has(name)) {
-            name = `${key}${INDEX_DELIMITER}${++idx}`;
-        }
-        //console.log(name);
+        const name = eventIndexer.apply(key);
         structure[region].events.push(name);
         events.set(name, value);
     }
@@ -162,7 +151,8 @@ class LogicGenerator {
             const regA = {};
             const regName = translateRegionName(region);
             for (const node of data.exits) {
-                const name = translateRegionName(node);
+                const nodeName = StringIndexer.remove(node);
+                const name = translateRegionName(nodeName);
                 const basicGeneration = generator_config["useBasicGeneration"]?.["exits"];
                 const wrapNotEra = generator_config["wrapNotEra"]?.["exits"];
                 const basicGenerationChild = xor(basicGeneration["default"], (basicGeneration["child"] ?? []).includes(name));
@@ -178,7 +168,12 @@ class LogicGenerator {
                 }
             }
             for (const node of data.locations) {
-                const name = translateLocationName(node);
+                const nodeName = StringIndexer.remove(node);
+                const name = translateLocationName(nodeName);
+                if (name == null) {
+                    console.log(`no translation for location:\t${nodeName}`);
+                    continue;
+                }
                 const basicGeneration = generator_config["useBasicGeneration"]?.["locations"];
                 const wrapNotEra = generator_config["wrapNotEra"]?.["locations"];
                 const basicGenerationChild = xor(basicGeneration["default"], (basicGeneration["child"] ?? []).includes(name));
@@ -194,7 +189,8 @@ class LogicGenerator {
                 }
             }
             for (const node of data.events) {
-                const name = translateEventName(node);
+                const nodeName = StringIndexer.remove(node);
+                const name = translateEventName(nodeName);
                 const basicGeneration = generator_config["useBasicGeneration"]?.["events"];
                 const wrapNotEra = generator_config["wrapNotEra"]?.["events"];
                 const basicGenerationChild = xor(basicGeneration["default"], (basicGeneration["child"] ?? []).includes(name));

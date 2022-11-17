@@ -66,8 +66,8 @@ class LogicParser {
             if (mq && !testBlacklist(renameBlacklist, value.region_name)) {
                 value.region_name = value.region_name + " MQ"
             }
-            for (const i in value.locations) {
-                let rule = value.locations[i];
+            for (const location in value.locations) {
+                let rule = value.locations[location];
                 if (rule.includes("at")) {
                     let split = rule.split("at('")
                     if (split[1] != undefined) {
@@ -81,7 +81,7 @@ class LogicParser {
                         }
                     }
                 }
-                if (i.includes(" GS ") || i.endsWith(" GS")) {
+                if (location.includes(" GS ") || location.endsWith(" GS")) {
                     if (rule.includes("at_night")) {
                         const split = rule.split("at_night");
                         rule = split.join("at_night_gs");
@@ -89,43 +89,38 @@ class LogicParser {
                 }
                 const token = RandTokenizer.tokenize(rule);
                 const logic = LogicBuilder.build(token);
-                LogicGenerator.addLocation(value.region_name, i, logic);
+                LogicGenerator.addLocation(value.region_name, location, logic);
                 //console.log("token location:\n", value.region_name, i, "\n", token);
             }
-            for (let i in value.exits) {
-                const rule = value.exits[i];
-                if (mq && !testBlacklist(renameBlacklist, i)) {
-                    if (!exits.includes(i)) {
-                        i = i + " MQ"
+            for (let exit in value.exits) {
+                const rule = value.exits[exit];
+                if (mq && !testBlacklist(renameBlacklist, exit)) {
+                    if (!exits.includes(exit)) {
+                        exit = exit + " MQ"
                     }
                 }
-                let regionName = value.region_name
-                if (regionName.endsWith(" MQ")) {
-                    regionName = regionName.replace(" MQ", "");
-                }
-                if (renameData[regionName] != null) {
-                    if (renameData[regionName][i] !== undefined) {
-                        i = renameData[regionName][i];
-                        if (i.endsWith(" Gateway")) {
-                            i += ":In"
-                        }
+                const regionName = value.region_name.replace(/ MQ$/, "");
+                if (renameData[regionName]?.[exit] != null) {
+                    exit = renameData[regionName][exit];
+                    if (exit.endsWith(" Gateway")) {
+                        exit += ":In"
                     }
                 }
                 if (success.subRegions[value.region_name] == null) {
                     success.subRegions[value.region_name] = {};
                 }
                 success.mainRegions[value.region_name] = false;
-                success.subRegions[value.region_name][i] = false;
+                success.subRegions[value.region_name][exit] = false;
                 const token = RandTokenizer.tokenize(rule);
                 const logic = LogicBuilder.build(token);
-                LogicGenerator.addExit(value.region_name, i, logic);
+                LogicGenerator.addExit(value.region_name, exit, logic);
                 //console.log("token exit:\n", value.region_name, i, "\n", token);
             }
-            for (const i in value.events) {
-                const rule = value.events[i];
+            for (const event in value.events) {
+                const rule = value.events[event];
                 const token = RandTokenizer.tokenize(rule);
                 const logic = LogicBuilder.build(token);
-                LogicGenerator.addEvent(value.region_name, i, logic);
+                LogicGenerator.addEvent(value.region_name, event, logic);
                 //console.log("token event:\n", value.region_name, i, "\n", token);
             }
         });

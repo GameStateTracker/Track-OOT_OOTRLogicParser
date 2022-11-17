@@ -107,7 +107,11 @@
             "medallions": "gbk_medallions",
             "dungeons": "gbk_dungeons",
             "tokens": "gbk_tokens",
-            "hearts": "gbk_hearts"
+            "hearts": "gbk_hearts",
+            "triforce": {
+                "type": "value",
+                "el": "item[triforce_hunt]"
+            }
         }
     },
     "damage_multiplier": {
@@ -342,6 +346,18 @@
         "values": {
             "mq": "mq",
             "v": "v"
+        }
+    },
+    "shuffle_overworld_entrances": {
+        "name": "option[shuffle_overworld]",
+        "values": {
+            "off": {
+                "type": "not",
+                "el": {
+                    "type": "value",
+                    "el": "option[shuffle_overworld]"
+                }
+            }
         }
     }
 }

@@ -35,6 +35,8 @@ export default function postCalculate(scope, input, age = ""/* , region = "", ba
                 el: sta.name,
                 value: stapar
             };
+        } else if (typeof value === "object") {
+            return value;
         } else {
             return {
                 type: "state",

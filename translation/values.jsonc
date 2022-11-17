@@ -1862,6 +1862,14 @@
         "type": "value",
         "el": "option[plant_beans]"
     },
+    "triforce_hunt": {
+        "type": "value",
+        "el": "item[triforce_hunt]"
+    },
+    "triforce_goal_per_world": {
+        "type": "value",
+        "el": "option[triforce_hunt_goal]"
+    },
     "'Deku Tree' in dungeon_shortcuts": {
         "type": "value",
         "el": "option[dungeon_shortcuts.deku]"
