@@ -862,7 +862,6 @@
         "Spirit Temple Big Mirror Room MQ": false,
         "Spirit Temple Mirror Puzzle MQ": false,
         "Spirit Temple Lobby": false,
-        "Child Spirit Temple": false,
         "Child Spirit Before Locked Door": false,
         "Early Adult Spirit Temple": false,
         "Child Spirit Temple Climb": false,
@@ -3851,9 +3850,6 @@
             "Child Spirit Before Locked Door": false,
             "Early Adult Spirit Temple": false,
             "Spirit Temple Central Chamber": false
-        },
-        "Child Spirit Temple": {
-            "Child Spirit Before Locked Door": false
         },
         "Child Spirit Before Locked Door": {
             "Child Spirit Temple Climb": false

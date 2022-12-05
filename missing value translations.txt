@@ -1,0 +1,30 @@
+logic_shadow_bongo
+logic_lens_bongo
+logic_dc_mq_eyes_adult
+logic_dc_mq_eyes_child
+logic_forest_mq_hallway_switch_boomerang
+logic_jabu_alcove_jump_dive
+logic_jabu_mq_rang_jump
+logic_jabu_near_boss_ranged
+logic_jabu_boss_hover
+logic_jabu_near_boss_explosives
+logic_gf_jump
+'Hideout 1 Torch Jail Gerudo'
+'Hideout 2 Torches Jail Gerudo'
+'Hideout 3 Torches Jail Gerudo'
+'Hideout 4 Torches Jail Gerudo'
+logic_crater_boulder_jumpslash
+logic_crater_boulder_skip
+logic_crater_bolero_jump
+logic_lens_shadow_mq_platform
+logic_lens_shadow_mq_invisible_blades
+logic_shadow_mq_windy_walkway
+logic_lens_shadow_mq_dead_hand
+logic_lens_shadow_platform
+logic_spirit_platform_hookshot
+Deku_Shield_Drop
+logic_beehives_bombchus
+'Hideout 1 Torch Jail Carpenter'
+'Hideout 2 Torches Jail Carpenter'
+'Hideout 3 Torches Jail Carpenter'
+'Hideout 4 Torches Jail Carpenter'

@@ -6,7 +6,7 @@ import {
 const EXPECTED_REG = /item\[.*?\]/;
 
 export default function postCalculate(scope, input, age = "", region = "", basic = false) {
-    const {calc, mixins} = scope;
+    const {calc, mixins, missingValue} = scope;
     if (input.el.indexOf("[") >= 0 && input.el.endsWith("]")) {
         if (input.el.startsWith("mixin[") || input.el.startsWith("function[") && age != "") {
             return {
@@ -34,7 +34,7 @@ export default function postCalculate(scope, input, age = "", region = "", basic
         };
     }
     if (!EXPECTED_REG.test(input.el)) {
-        console.log(`no translation for value:\t\t${input.el}`);
+        missingValue.add(input.el);
     }
     return input;
 }

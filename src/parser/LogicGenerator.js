@@ -30,7 +30,9 @@ const exitIndexer = new StringIndexer();
 const locationIndexer = new StringIndexer();
 const eventIndexer = new StringIndexer();
 
-const unstate = {};
+const missingState = new Map();
+const missingValue = new Set();
+const missingLocation = new Set();
 
 function xor(a, b) {
     return !a != !b;
@@ -39,7 +41,8 @@ function xor(a, b) {
 function postCalcutate(input, age = "", region = "", basic = false) {
     const scope = {
         mixins,
-        unstate
+        missingState,
+        missingValue
     };
     return postCalculateMethod(scope, input, age, region, basic);
 }
@@ -64,6 +67,9 @@ class LogicGenerator {
 
     reset() {
         structure = {};
+        missingState.clear();
+        missingValue.clear();
+        missingLocation.clear();
     }
 
     addMixin(key, value) {
@@ -171,7 +177,7 @@ class LogicGenerator {
                 const nodeName = StringIndexer.remove(node);
                 const name = translateLocationName(nodeName);
                 if (name == null) {
-                    console.log(`no translation for location:\t${nodeName}`);
+                    missingLocation.add(nodeName);
                     continue;
                 }
                 const basicGeneration = generator_config["useBasicGeneration"]?.["locations"];
@@ -254,9 +260,27 @@ class LogicGenerator {
 
         console.log("");
         console.log("-------------------------------------------");
+        console.log("locations not converted");
+        console.log("");
+        for (const name of missingLocation) {
+            console.log(name);
+        }
+
+        console.log("");
+        console.log("-------------------------------------------");
+        console.log("values not converted");
+        console.log("");
+        for (const name of missingValue) {
+            console.log(name);
+        }
+
+        console.log("");
+        console.log("-------------------------------------------");
         console.log("states not converted");
         console.log("");
-        console.log(JSON.stringify(unstate, null, 4));
+        for (const [name, state] of missingState) {
+            console.log(`${name}:`, JSON.stringify(state, null, 4));
+        }
 
         return res;
     }

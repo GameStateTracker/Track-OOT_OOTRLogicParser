@@ -1,7 +1,7 @@
 import Translation from "../../utils/Translation.js";
 
 export default function postCalculate(scope, input, age = ""/* , region = "", basic = false */) {
-    const {unstate} = scope;
+    const {missingState} = scope;
     if (input.el == "age" && age != "") {
         if (input.value == age) {
             return {type: "true"};
@@ -12,11 +12,12 @@ export default function postCalculate(scope, input, age = ""/* , region = "", ba
     const stapar = input.value.replace(/^'|'$/g, "");
     const sta = Translation.getStateConfig(input.el);
     if (sta == null) {
-        unstate[input.el] = unstate[input.el] ?? {
+        const state = missingState.get(input.el) ?? {
             name: "",
             values: {}
         };
-        unstate[input.el].values[stapar] = "";
+        missingState.set(input.el, state);
+        state.values[stapar] = "";
         return {
             type: "state",
             el: input.el,
@@ -25,11 +26,12 @@ export default function postCalculate(scope, input, age = ""/* , region = "", ba
     } else {
         const value = sta.values[stapar];
         if (value == null) {
-            unstate[input.el] = unstate[input.el] ?? {
+            const state = missingState.get(input.el) ?? {
                 name: sta.name,
                 values: {}
             };
-            unstate[input.el].values[stapar] = "";
+            missingState.set(input.el, state);
+            state.values[stapar] = "";
             return {
                 type: "state",
                 el: sta.name,
