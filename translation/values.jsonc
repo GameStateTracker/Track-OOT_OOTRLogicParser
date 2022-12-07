@@ -1902,5 +1902,13 @@
         "type": "value",
         "el": "option[dungeon_shortcuts.temple_spirit]"
     },
+    "logic_shadow_bongo": {
+        "type": "value",
+        "el": "option[skip.logic_shadow_bongo]"
+    },
+    "skip.logic_lens_bongo": {
+        "type": "value",
+        "el": "option[skip.logic_lens_bongo]"
+    },
     "": ""
 }
