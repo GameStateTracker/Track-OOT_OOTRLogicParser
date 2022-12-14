@@ -9,6 +9,9 @@ import {
     translateMixinName,
     translateFunctionName
 } from "../utils/TranslatorFunctions.js";
+import NameTranslations from "../utils/translation/NameTranslations.js";
+import StateTranslations from "../utils/translation/StateTranslations.js";
+import ValueTranslations from "../utils/translation/ValueTranslations.js";
 import StringIndexer from "../utils/StringIndexer.js";
 
 const __dirname = path.resolve();
@@ -281,6 +284,33 @@ class LogicGenerator {
         for (const [name, state] of missingState) {
             console.log(`${name}:`, JSON.stringify(state, null, 4));
         }
+
+        console.log("");
+        console.log("-------------------------------------------");
+        console.log("unused name translations");
+        console.log("");
+        for (const name of NameTranslations.getUnusedKeys()) {
+            console.log(name);
+        }
+        NameTranslations.reset();
+
+        console.log("");
+        console.log("-------------------------------------------");
+        console.log("unused value translations");
+        console.log("");
+        for (const name of ValueTranslations.getUnusedKeys()) {
+            console.log(name);
+        }
+        ValueTranslations.reset();
+
+        console.log("");
+        console.log("-------------------------------------------");
+        console.log("unused state translations");
+        console.log("");
+        for (const name of StateTranslations.getUnusedKeys()) {
+            console.log(name);
+        }
+        StateTranslations.reset();
 
         return res;
     }
