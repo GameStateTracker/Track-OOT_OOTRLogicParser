@@ -157,6 +157,38 @@
         "type": "value",
         "el": "event[carpenter_rescue]"
     },
+    "Hideout_1_Torch_Jail_Gerudo": {
+        "type": "value",
+        "el": "event[hideout_1_torch_jail_gerudo]"
+    },
+    "Hideout_2_Torches_Jail_Gerudo": {
+        "type": "value",
+        "el": "event[hideout_2_torches_jail_gerudo]"
+    },
+    "Hideout_3_Torches_Jail_Gerudo": {
+        "type": "value",
+        "el": "event[hideout_3_torches_jail_gerudo]"
+    },
+    "Hideout_4_Torches_Jail_Gerudo": {
+        "type": "value",
+        "el": "event[hideout_4_torches_jail_gerudo]"
+    },
+    "Hideout_1_Torch_Jail_Carpenter": {
+        "type": "value",
+        "el": "event[hideout_1_torch_jail_carpenter]"
+    },
+    "Hideout_2_Torches_Jail_Carpenter": {
+        "type": "value",
+        "el": "event[hideout_2_torches_jail_carpenter]"
+    },
+    "Hideout_3_Torches_Jail_Carpenter": {
+        "type": "value",
+        "el": "event[hideout_3_torches_jail_carpenter]"
+    },
+    "Hideout_4_Torches_Jail_Carpenter": {
+        "type": "value",
+        "el": "event[hideout_4_torches_jail_carpenter]"
+    },
     "GF_Gate_Open": {
         "type": "value",
         "el": "event[gf_gate_open]"
@@ -501,6 +533,10 @@
         "el": "item[sword_biggoron]"
     },
     "Deku_Shield": {
+        "type": "value",
+        "el": "item[shield_kokiri]"
+    },
+    "Deku_Shield_Drop": {
         "type": "value",
         "el": "item[shield_kokiri]"
     },
@@ -1906,9 +1942,85 @@
         "type": "value",
         "el": "option[skip.logic_shadow_bongo]"
     },
-    "skip.logic_lens_bongo": {
+    "logic_lens_bongo": {
         "type": "value",
         "el": "option[skip.logic_lens_bongo]"
+    },
+    "logic_dc_mq_eyes_child": {
+        "type": "value",
+        "el": "option[skip.logic_dc_mq_eyes_child]"
+    },
+    "logic_dc_mq_eyes_adult": {
+        "type": "value",
+        "el": "option[skip.logic_dc_mq_eyes_adult]"
+    },
+    "logic_forest_mq_hallway_switch_boomerang": {
+        "type": "value",
+        "el": "option[skip.logic_forest_mq_hallway_switch_boomerang]"
+    },
+    "logic_jabu_alcove_jump_dive": {
+        "type": "value",
+        "el": "option[skip.logic_jabu_alcove_jump_dive]"
+    },
+    "logic_jabu_mq_rang_jump": {
+        "type": "value",
+        "el": "option[skip.logic_jabu_mq_rang_jump]"
+    },
+    "logic_jabu_near_boss_ranged": {
+        "type": "value",
+        "el": "option[skip.logic_jabu_near_boss_ranged]"
+    },
+    "logic_jabu_boss_hover": {
+        "type": "value",
+        "el": "option[skip.logic_jabu_boss_hover]"
+    },
+    "logic_jabu_near_boss_explosives": {
+        "type": "value",
+        "el": "option[skip.logic_jabu_near_boss_explosives]"
+    },
+    "logic_gf_jump": {
+        "type": "value",
+        "el": "option[skip.logic_gf_jump]"
+    },
+    "logic_crater_boulder_jumpslash": {
+        "type": "value",
+        "el": "option[skip.logic_crater_boulder_jumpslash]"
+    },
+    "logic_crater_boulder_skip": {
+        "type": "value",
+        "el": "option[skip.logic_crater_boulder_skip]"
+    },
+    "logic_crater_bolero_jump": {
+        "type": "value",
+        "el": "option[skip.logic_crater_bolero_jump]"
+    },
+    "logic_lens_shadow_mq_platform": {
+        "type": "value",
+        "el": "option[skip.logic_lens_shadow_mq_platform]"
+    },
+    "logic_lens_shadow_mq_invisible_blades": {
+        "type": "value",
+        "el": "option[skip.logic_lens_shadow_mq_invisible_blades]"
+    },
+    "logic_shadow_mq_windy_walkway": {
+        "type": "value",
+        "el": "option[skip.logic_shadow_mq_windy_walkway]"
+    },
+    "logic_lens_shadow_mq_dead_hand": {
+        "type": "value",
+        "el": "option[skip.logic_lens_shadow_mq_dead_hand]"
+    },
+    "logic_lens_shadow_platform": {
+        "type": "value",
+        "el": "option[skip.logic_lens_shadow_platform]"
+    },
+    "logic_spirit_platform_hookshot": {
+        "type": "value",
+        "el": "option[skip.logic_spirit_platform_hookshot]"
+    },
+    "logic_beehives_bombchus": {
+        "type": "value",
+        "el": "option[skip.logic_beehives_bombchus]"
     },
     "": ""
 }
