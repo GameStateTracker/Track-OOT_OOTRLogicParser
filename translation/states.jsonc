@@ -36,7 +36,8 @@
             "Fire_Arrows": "item[arrow_fire]",
             "Light_Arrows": "item[arrow_light]",
             "Ice_Arrows": "item[arrow_ice]",
-            "Mirror_Shield": "item[mirror_shield]"
+            "Mirror_Shield": "item[mirror_shield]",
+            "Blue_Fire_Arrows": "item[arrow_ice]"
         }
     },
     "option[skip.lens_required]": {
@@ -356,6 +357,18 @@
                 "el": {
                     "type": "value",
                     "el": "option[shuffle_overworld]"
+                }
+            }
+        }
+    },
+    "shuffle_pots": {
+        "name": "option[shuffle_pots]",
+        "values": {
+            "off": {
+                "type": "not",
+                "el": {
+                    "type": "value",
+                    "el": "option[shuffle_pots]"
                 }
             }
         }
