@@ -23,6 +23,8 @@ import {
 
 const __dirname = path.resolve();
 
+const PARSE_OFFLINE = process.argv.indexOf("-offline") >= 0;
+
 /* SETTINGS */
 const RANDO_VERSION = "Dev";
 const FILTER_LOGIC = false;
@@ -35,10 +37,16 @@ const outputDir = path.join(__dirname, "/output/");
 
 const transRulesFile = path.join(__dirname, "/translation/predict_rules.json");
 
-if (fs.existsSync("./input")) {
-    fs.rmSync("./input", {recursive: true});
+if (!PARSE_OFFLINE) {
+    if (fs.existsSync("./input")) {
+        fs.rmSync("./input", {recursive: true});
+    }
+    execSync(`git clone --branch "${RANDO_VERSION}" "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "input"`);
 }
-execSync(`git clone --branch "${RANDO_VERSION}" "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "input"`);
+
+if (!fs.existsSync("./input/data/World")) {
+    throw new Error("randomizer logic was not found");
+}
 
 if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, {recursive: true});
