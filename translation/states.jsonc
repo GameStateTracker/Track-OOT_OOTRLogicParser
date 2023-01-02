@@ -364,13 +364,7 @@
     "shuffle_pots": {
         "name": "option[shuffle_pots]",
         "values": {
-            "off": {
-                "type": "not",
-                "el": {
-                    "type": "value",
-                    "el": "option[shuffle_pots]"
-                }
-            }
+            "off": "off"
         }
     }
 }
