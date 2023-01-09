@@ -285,6 +285,20 @@
                         ]
                     }
                 ]
+            },
+            {
+                "type": "and",
+                "el": [
+                    {
+                        "type": "state",
+                        "el": "option[ganon_castle_open]",
+                        "value": "ganon_castle_open_hearts"
+                    },
+                    {
+                        "type": "mixin",
+                        "el": "function[has_hearts](ganon_bosskey_hearts)"
+                    }
+                ]
             }
         ]
     },

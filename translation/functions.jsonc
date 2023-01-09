@@ -636,6 +636,19 @@
             }
         ]
     },
+    "function[can_use](item[shield_mirror])": {
+        "type": "and",
+        "el": [
+            {
+                "type": "value",
+                "el": "item[shield_mirror]"
+            },
+            {
+                "type": "mixin",
+                "el": "mixin[is_adult]"
+            }
+        ]
+    },
     "function[can_use](item[stick])": {
         "type": "and",
         "el": [
@@ -989,6 +1002,32 @@
             {
                 "type": "value",
                 "el": "option[dungeon_count_bridge]"
+            }
+        ]
+    },
+    "function[has_hearts](lacs_hearts)": {
+        "type": "gte",
+        "el": [
+            {
+                "type": "value",
+                "el": "calculated[hearts_total]"
+            },
+            {
+                "type": "value",
+                "el": "option[heart_count_lacs]"
+            }
+        ]
+    },
+    "function[has_hearts](ganon_bosskey_hearts)": {
+        "type": "gte",
+        "el": [
+            {
+                "type": "value",
+                "el": "calculated[hearts_total]"
+            },
+            {
+                "type": "value",
+                "el": "option[heart_count_bridge]"
             }
         ]
     },
