@@ -206,7 +206,7 @@
         "region_name": "Woods River Gateway",
         "exits": {
             "River Woods Gateway": "True",
-            "Lost Woods": "True"
+            "LW Underwater Entrance": "True"
         }
     },
     {

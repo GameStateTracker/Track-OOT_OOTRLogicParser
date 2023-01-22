@@ -1126,7 +1126,7 @@
             "River Woods Gateway:Out": false
         },
         "Woods River Gateway:Out": {
-            "Lost Woods": false
+            "LW Underwater Entrance": false
         },
         "Woods Meadow Gateway:In": {
             "Meadow Woods Gateway:Out": false
@@ -1425,7 +1425,7 @@
             "Ganons Castle Castle Grounds Gateway:Out": false
         },
         "Castle Grounds Ganons Castle Gateway:Out": {
-            "Ganons Castle Grounds": false
+            "Castle Grounds From Ganons Castle": true
         },
         "Ganons Castle Castle Grounds Gateway:In": {
             "Castle Grounds Ganons Castle Gateway:Out": false
@@ -1513,7 +1513,7 @@
             "Hyrule Field": false
         },
         "Fairy Grotto Field Gateway:In": {
-            "Grotto Field Fairy Gateway:Out": false
+            "Field Fairy Grotto Gateway:Out": false
         },
         "Fairy Grotto Field Gateway:Out": {
             "HF Fairy Grotto": false
@@ -1906,7 +1906,7 @@
             "Storms Grotto Fortress Gateway:Out": false
         },
         "Fortress Storms Grotto Gateway:Out": {
-            "Gerudo Fortress": false
+            "GF Entrances Behind Crates": false
         },
         "Storms Grotto Fortress Gateway:In": {
             "Fortress Storms Grotto Gateway:Out": false
@@ -3162,7 +3162,7 @@
             "Hideout 1 Torch Jail": false,
             "Hideout Kitchen Hallway": false,
             "GF Roof Entrance Cluster": false,
-            "GF Storms Grotto": false
+            "Fortress Storms Grotto Gateway:In": false
         },
         "GF Roof Entrance Cluster": {
             "Hideout 4 Torches Jail": false,
@@ -3560,7 +3560,7 @@
             "ZR Front": false,
             "River Open Grotto Gateway:In": false,
             "River Fairy Grotto Gateway:In": false,
-            "LW Underwater Entrance": false,
+            "River Woods Gateway:In": false,
             "River Storms Grotto Gateway:In": false,
             "ZR Behind Waterfall": false
         },

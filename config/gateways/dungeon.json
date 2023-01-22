@@ -167,7 +167,7 @@
     {
         "region_name": "Castle Grounds Ganons Castle Gateway",
         "exits": {
-            "Ganons Castle Grounds": "True",
+            "Castle Grounds From Ganons Castle": "True",
             "Ganons Castle Castle Grounds Gateway": "True"
         }
     },

@@ -6,6 +6,8 @@ PARSE HELPERS
 ===========================================
 PARSE LOGIC
 
+subRegions: Castle Grounds Ganons Castle Gateway:Out: Castle Grounds From Ganons Castle is new
+subRegions: Castle Grounds Ganons Castle Gateway:Out: Ganons Castle Grounds doesn't exist anymore
 
 -------------------------------------------
 generate logic output

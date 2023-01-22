@@ -49,7 +49,9 @@
     },
     "Gerudo Fortress": {
         "Gerudo Training Ground Lobby": "Fortress Training Grounds Gateway",
-        "GV Fortress Side": "Fortress Valley Gateway",
+        "GV Fortress Side": "Fortress Valley Gateway"
+    },
+    "GF Entrances Behind Crates": {
         "GF Storms Grotto": "Fortress Storms Grotto Gateway"
     },
     "Sacred Forest Meadow": {
@@ -144,7 +146,7 @@
         "Lost Woods": "GC Woods Gateway"
     },
     "Zora River": {
-        "Lost Woods": "River Woods Gateway",
+        "LW Underwater Entrance": "River Woods Gateway",
         "ZR Storms Grotto": "River Storms Grotto Gateway",
         "ZR Fairy Grotto": "River Fairy Grotto Gateway",
         "ZR Open Grotto": "River Open Grotto Gateway"

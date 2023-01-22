@@ -415,7 +415,7 @@
                     },
                     {
                         "type": "mixin",
-                        "el": "function[can_use](item[blue_fire_arrows]){child}"
+                        "el": "function[can_use](item[blue_fire_arrows])"
                     }
                 ]
             }

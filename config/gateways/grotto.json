@@ -37,7 +37,7 @@
     {
         "region_name": "Fairy Grotto Field Gateway",
         "exits": {
-            "Grotto Field Fairy Gateway": "True",
+            "Field Fairy Grotto Gateway": "True",
             "HF Fairy Grotto": "True"
         }
     },
@@ -493,7 +493,7 @@
         "region_name": "Fortress Storms Grotto Gateway",
         "exits": {
             "Storms Grotto Fortress Gateway": "True",
-            "Gerudo Fortress": "True"
+            "GF Entrances Behind Crates": "True"
         }
     },
     {
