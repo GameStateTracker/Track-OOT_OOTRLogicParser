@@ -6,8 +6,6 @@ PARSE HELPERS
 ===========================================
 PARSE LOGIC
 
-subRegions: Castle Grounds Ganons Castle Gateway:Out: Castle Grounds From Ganons Castle is new
-subRegions: Castle Grounds Ganons Castle Gateway:Out: Ganons Castle Grounds doesn't exist anymore
 
 -------------------------------------------
 generate logic output
@@ -1066,7 +1064,7 @@ shuffle_overworld_entrances
 ===========================================
 PARSE GLITCHED LOGIC
 
-skip parsing logic file "E:\vscode\OOTRLogicParser\input\data\Glitched World\Bosses.json": does not match base format
+skip parsing logic file "D:\vscode\OOTRLogicParser\input\data\Glitched World\Bosses.json": does not match base format
 
 -------------------------------------------
 generate logic output

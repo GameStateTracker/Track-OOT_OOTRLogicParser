@@ -1425,7 +1425,7 @@
             "Ganons Castle Castle Grounds Gateway:Out": false
         },
         "Castle Grounds Ganons Castle Gateway:Out": {
-            "Castle Grounds From Ganons Castle": true
+            "Castle Grounds From Ganons Castle": false
         },
         "Ganons Castle Castle Grounds Gateway:In": {
             "Castle Grounds Ganons Castle Gateway:Out": false
