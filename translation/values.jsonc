@@ -104,6 +104,10 @@
         "type": "value",
         "el": "event[cojiro_access]"
     },
+    "Mask_Shop_Open": {
+        "type": "value",
+        "el": "event[mask_shop_open]"
+    },
     "Odd_Potion_Access": {
         "type": "value",
         "el": "event[odd_potion_access]"
@@ -1032,9 +1036,17 @@
         "type": "value",
         "el": "option[bombchu_logic]"
     },
+    "free_bombchu_drops": {
+        "type": "value",
+        "el": "option[bombchu_logic]"
+    },
     "shuffle_weird_egg": {
         "type": "value",
         "el": "option[shuffle_egg]"
+    },
+    "fix_broken_drops": {
+        "type": "value",
+        "el": "option[fix_broken_drops]"
     },
     "skipped_trials[Forest]": {
         "type": "not",
