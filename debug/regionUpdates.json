@@ -506,13 +506,21 @@
         "Colossus Great Fairy Gateway:Out": false,
         "Great Fairy Colossus Gateway:In": false,
         "Great Fairy Colossus Gateway:Out": false,
+        "Deku Tree Boss Door": false,
         "Queen Gohma Boss Room": false,
+        "Dodongos Cavern Boss Door": false,
         "King Dodongo Boss Room": false,
+        "Jabu Jabus Belly Boss Door": false,
         "Barinade Boss Room": false,
+        "Forest Temple Boss Door": false,
         "Phantom Ganon Boss Room": false,
+        "Fire Temple Boss Door": false,
         "Volvagia Boss Room": false,
+        "Water Temple Boss Door": false,
         "Morpha Boss Room": false,
+        "Shadow Temple Boss Door": false,
         "Bongo Bongo Boss Room": false,
+        "Spirit Temple Boss Door": false,
         "Twinrova Boss Room": false,
         "Ganons Castle Tower": false,
         "Ganons Castle Tower Below Boss": false,
@@ -536,7 +544,6 @@
         "Dodongos Cavern Beginning MQ": false,
         "Dodongos Cavern Lobby MQ": false,
         "Dodongos Cavern Elevator MQ": false,
-        "Dodongos Cavern Above Staircase MQ": false,
         "Dodongos Cavern Torch Puzzle Lower MQ": false,
         "Dodongos Cavern Before Upper Lizalfos MQ": false,
         "Dodongos Cavern Torch Puzzle Upper MQ": false,
@@ -554,11 +561,9 @@
         "Dodongos Cavern Before Upper Lizalfos": false,
         "Dodongos Cavern Upper Lizalfos": false,
         "Dodongos Cavern Far Bridge": false,
-        "Dodongos Cavern Mouth": false,
         "Dodongos Cavern Before Boss": false,
         "Fire Temple Lower MQ": false,
         "Fire Temple Near Boss MQ": false,
-        "Fire Temple Before Boss MQ": false,
         "Fire Temple Big Lava Room MQ": false,
         "Fire Temple Elevator Room MQ": false,
         "Fire Temple Lower Lizalfos Maze MQ": false,
@@ -567,8 +572,6 @@
         "Fire Temple Shoot Torch On Wall Room MQ": false,
         "Fire Temple Flame Maze MQ": false,
         "Fire Temple Lower": false,
-        "Fire Temple Near Boss": false,
-        "Fire Temple Before Boss": false,
         "Fire Temple Big Lava Room": false,
         "Fire Temple Elevator Room": false,
         "Fire Temple Boulder Maze Lower": false,
@@ -588,7 +591,6 @@
         "Forest Temple NE Outdoors Ledge MQ": false,
         "Forest Temple Bow Region MQ": false,
         "Forest Temple Falling Room MQ": false,
-        "Forest Temple Basement MQ": false,
         "Forest Temple Before Boss MQ": false,
         "Forest Temple Lobby": false,
         "Forest Temple Central Area": false,
@@ -601,24 +603,18 @@
         "Forest Temple Bow Region": false,
         "Forest Temple Frozen Eye Switch Room": false,
         "Forest Temple Falling Room": false,
-        "Forest Temple Basement": false,
         "Forest Temple Before Boss": false,
         "Ganons Castle Lobby MQ": false,
         "Ganons Castle Main MQ": false,
         "Ganons Castle Forest Trial MQ": false,
         "Ganons Castle Water Trial MQ": false,
-        "Ganons Castle Water Trial Push Block Room MQ": false,
         "Ganons Castle Shadow Trial MQ": false,
-        "Ganons Castle Shadow Trial Moving Platform MQ": false,
-        "Ganons Castle Shadow Trial Second Gap MQ": false,
-        "Ganons Castle Fire Trial MQ": false,
         "Ganons Castle Light Trial MQ": false,
         "Ganons Castle Light Trial Boulder Room MQ": false,
         "Ganons Castle Spirit Trial MQ": false,
         "Ganons Castle Spirit Trial Second Room MQ": false,
         "Ganons Castle Lobby": false,
         "Ganons Castle Forest Trial": false,
-        "Ganons Castle Forest Trial Wind Room": false,
         "Ganons Castle Water Trial": false,
         "Ganons Castle Shadow Trial": false,
         "Ganons Castle Shadow Trial First Gap": false,
@@ -631,33 +627,24 @@
         "Ganons Castle Spirit Trial Second Room Back": false,
         "Gerudo Training Ground Lobby MQ": false,
         "Gerudo Training Ground Right Side MQ": false,
-        "Gerudo Training Ground Lava Room Front MQ": false,
-        "Gerudo Training Ground Water Room Entrance MQ": false,
-        "Gerudo Training Ground Lava Room Back MQ": false,
-        "Gerudo Training Ground Water Room MQ": false,
         "Gerudo Training Ground Left Side MQ": false,
         "Gerudo Training Ground Stalfos Room MQ": false,
         "Gerudo Training Ground Back Areas MQ": false,
         "Gerudo Training Ground Central Maze Right MQ": false,
         "Gerudo Training Ground Lobby": false,
-        "Gerudo Training Ground Lava Room Front": false,
-        "Gerudo Training Ground Lava Room Back": false,
-        "Gerudo Training Ground Water Room": false,
+        "Gerudo Training Ground Lava Room": false,
         "Gerudo Training Ground Central Maze Right": false,
-        "Gerudo Training Ground Boulder Room": false,
         "Gerudo Training Ground Heavy Block Room": false,
         "Gerudo Training Ground Eye Statue Upper": false,
         "Gerudo Training Ground Eye Statue Lower": false,
         "Gerudo Training Ground Hammer Room": false,
         "Ice Cavern Beginning MQ": false,
         "Ice Cavern Beginning": false,
-        "Ice Cavern Spinning Scythe Room": false,
-        "Ice Cavern Behind Ice Walls": false,
+        "Ice Cavern Spinning Blades": false,
         "Jabu Jabus Belly Beginning MQ": false,
         "Jabu Jabus Belly Elevator Room MQ": false,
         "Jabu Jabus Belly Main MQ": false,
         "Jabu Jabus Belly Depths MQ": false,
-        "Jabu Jabus Belly Before Slimy Thing MQ": false,
         "Jabu Jabus Belly Before Boss MQ": false,
         "Jabu Jabus Belly Beginning": false,
         "Jabu Jabus Belly Main": false,
@@ -710,7 +697,7 @@
         "GF Kitchen Roof Access": false,
         "GF 3 Torches Jail Exterior": false,
         "GF Chest Roof": false,
-        "GF Break Room Entrance": false,
+        "GF Hall to Balcony Entrance": false,
         "GF Balcony": false,
         "GF Outside Gate": false,
         "Hideout 1 Torch Jail": false,
@@ -720,8 +707,8 @@
         "Hideout Kitchen Hallway": false,
         "Hideout Kitchen Front": false,
         "Hideout Kitchen Rear": false,
-        "Hideout Break Room": false,
-        "Hideout Hall to Balcony": false,
+        "Hideout Hall to Balcony Lower": false,
+        "Hideout Hall to Balcony Upper": false,
         "Wasteland Near Fortress": false,
         "Haunted Wasteland": false,
         "Wasteland Near Crate": false,
@@ -845,7 +832,6 @@
         "Shadow Temple Beginning MQ": false,
         "Shadow Temple First Beamos MQ": false,
         "Shadow Temple Upper Huge Pit MQ": false,
-        "Shadow Temple Invisible Blades Room MQ": false,
         "Shadow Temple Lower Huge Pit MQ": false,
         "Shadow Temple Invisible Spikes MQ": false,
         "Shadow Temple Wind Tunnel MQ": false,
@@ -873,10 +859,8 @@
         "Spirit Temple Shared MQ": false,
         "Spirit Temple Beamos Room MQ": false,
         "Spirit Temple Shifting Wall MQ": false,
-        "Spirit Temple After Shifting Wall MQ": false,
         "Spirit Temple Big Mirror Room MQ": false,
         "Spirit Temple Mirror Puzzle MQ": false,
-        "Spirit Temple Before Boss MQ": false,
         "Spirit Temple Lobby": false,
         "Child Spirit Before Locked Door": false,
         "Early Adult Spirit Temple": false,
@@ -885,9 +869,7 @@
         "Adult Spirit Temple Climb": false,
         "Spirit Temple Anubis Room": false,
         "Spirit Temple Big Mirror Room": false,
-        "Spirit Temple Before Boss": false,
         "Water Temple Lobby MQ": false,
-        "Water Temple Before Boss MQ": false,
         "Water Temple Dive MQ": false,
         "Water Temple Lowered Water Levels MQ": false,
         "Water Temple Dark Link Region MQ": false,
@@ -897,7 +879,6 @@
         "Water Temple Freestanding Key Room MQ": false,
         "Water Temple Dodongo Room MQ": false,
         "Water Temple Lobby": false,
-        "Water Temple Before Boss": false,
         "Water Temple Dive": false,
         "Water Temple Lowered Water Levels": false,
         "Water Temple Middle Water Level": false,
@@ -2437,37 +2418,53 @@
         "Great Fairy Colossus Gateway:Out": {
             "Colossus Great Fairy Fountain": false
         },
+        "Deku Tree Boss Door": {
+            "Deku Boss Gateway:In": false
+        },
         "Queen Gohma Boss Room": {
-            "Deku Tree Before Boss": false,
-            "KF Outside Deku Tree": false
+            "Boss Deku Gateway:In": false
+        },
+        "Dodongos Cavern Boss Door": {
+            "Dodongo Boss Gateway:In": false
         },
         "King Dodongo Boss Room": {
-            "Dodongos Cavern Mouth": false,
-            "Death Mountain": false
+            "Boss Dodongo Gateway:In": false
+        },
+        "Jabu Jabus Belly Boss Door": {
+            "Jabu Boss Gateway:In": false
         },
         "Barinade Boss Room": {
-            "Jabu Jabus Belly Before Boss": false,
-            "Zoras Fountain": false
+            "Boss Jabu Gateway:In": false
+        },
+        "Forest Temple Boss Door": {
+            "Forest Temple Boss Gateway:In": false
         },
         "Phantom Ganon Boss Room": {
-            "Forest Temple Before Boss": false,
-            "Sacred Forest Meadow": false
+            "Boss Forest Temple Gateway:In": false
+        },
+        "Fire Temple Boss Door": {
+            "Fire Temple Boss Gateway:In": false
         },
         "Volvagia Boss Room": {
-            "Fire Temple Before Boss": false,
-            "DMC Central Local": false
+            "Boss Fire Temple Gateway:In": false
+        },
+        "Water Temple Boss Door": {
+            "Water Temple Boss Gateway:In": false
         },
         "Morpha Boss Room": {
-            "Water Temple Before Boss": false,
-            "Lake Hylia": false
+            "Boss Water Temple Gateway:In": false
+        },
+        "Shadow Temple Boss Door": {
+            "Shadow Temple Boss Gateway:In": false
         },
         "Bongo Bongo Boss Room": {
-            "Shadow Temple Before Boss": false,
-            "Graveyard Warp Pad Region": false
+            "Boss Shadow Temple Gateway:In": false
+        },
+        "Spirit Temple Boss Door": {
+            "Spirit Temple Boss Gateway:In": false
         },
         "Twinrova Boss Room": {
-            "Spirit Temple Before Boss": false,
-            "Desert Colossus": false
+            "Boss Spirit Temple Gateway:In": false
         },
         "Ganons Castle Tower": {
             "Ganons Castle Tower Below Boss": false
@@ -2487,11 +2484,9 @@
             "Bottom of the Well Main Area": false
         },
         "Bottom of the Well Main Area": {
-            "Bottom of the Well Left Side": false,
             "Bottom of the Well Behind Fake Walls": false
         },
         "Bottom of the Well Behind Fake Walls": {
-            "Bottom of the Well Left Side": false,
             "Bottom of the Well Behind Locked Doors": false
         },
         "Deku Tree Lobby MQ": {
@@ -2519,8 +2514,7 @@
             "Deku Tree Before Boss MQ": false
         },
         "Deku Tree Before Boss MQ": {
-            "Deku Tree Basement Ledge MQ": false,
-            "Queen Gohma Boss Room MQ": false
+            "Deku Tree Boss Door": false
         },
         "Deku Tree Lobby": {
             "Deku Kokiri Gateway:In": false,
@@ -2535,13 +2529,11 @@
             "Deku Tree Basement Ledge": false
         },
         "Deku Tree Basement Ledge": {
-            "Deku Tree Basement": false,
             "Deku Tree Basement Back Room": false,
             "Deku Tree Before Boss": false
         },
         "Deku Tree Before Boss": {
-            "Deku Tree Basement Ledge": false,
-            "Queen Gohma Boss Room": false
+            "Deku Tree Boss Door": false
         },
         "Dodongos Cavern Beginning MQ": {
             "Dodongo Mountain Gateway:In": false,
@@ -2554,16 +2546,12 @@
             "Dodongos Cavern Mouth MQ": false
         },
         "Dodongos Cavern Elevator MQ": {
-            "Dodongos Cavern Above Staircase MQ": false,
+            "Dodongos Cavern Torch Puzzle Lower MQ": false,
             "Dodongos Cavern Torch Puzzle Upper MQ": false,
             "Dodongos Cavern Poes Room MQ": false,
             "Dodongos Cavern Mouth MQ": false
         },
-        "Dodongos Cavern Above Staircase MQ": {
-            "Dodongos Cavern Torch Puzzle Lower MQ": false
-        },
         "Dodongos Cavern Torch Puzzle Lower MQ": {
-            "Dodongos Cavern Above Staircase MQ": false,
             "Dodongos Cavern Larvae Room MQ": false,
             "Dodongos Cavern Before Upper Lizalfos MQ": false,
             "Dodongos Cavern Torch Puzzle Upper MQ": false
@@ -2589,11 +2577,10 @@
             "Dodongos Cavern Lower Lizalfos MQ": false
         },
         "Dodongos Cavern Mouth MQ": {
-            "Dodongos Cavern Lobby MQ": false,
             "Dodongos Cavern Before Boss MQ": false
         },
         "Dodongos Cavern Before Boss MQ": {
-            "King Dodongo Boss Room MQ": false
+            "Dodongos Cavern Boss Door": false
         },
         "Dodongos Cavern Beginning": {
             "Dodongo Mountain Gateway:In": false,
@@ -2604,7 +2591,7 @@
             "Dodongos Cavern Torch Room": false,
             "Dodongos Cavern Staircase Room": false,
             "Dodongos Cavern Far Bridge": false,
-            "Dodongos Cavern Mouth": false
+            "Dodongos Cavern Before Boss": false
         },
         "Dodongos Cavern Lower Right Side": {
             "Dodongos Cavern Torch Room": false
@@ -2627,15 +2614,11 @@
             "Dodongos Cavern Far Bridge": false
         },
         "Dodongos Cavern Far Bridge": {
-            "Dodongos Cavern Mouth": false,
+            "Dodongos Cavern Before Boss": false,
             "Dodongos Cavern Upper Lizalfos": false
         },
-        "Dodongos Cavern Mouth": {
-            "Dodongos Cavern Lobby": false,
-            "Dodongos Cavern Before Boss": false
-        },
         "Dodongos Cavern Before Boss": {
-            "King Dodongo Boss Room": false
+            "Dodongos Cavern Boss Door": false
         },
         "Fire Temple Lower MQ": {
             "Fire Temple Crater Gateway:In": false,
@@ -2644,11 +2627,7 @@
             "Fire Temple Big Lava Room MQ": false
         },
         "Fire Temple Near Boss MQ": {
-            "Fire Temple Before Boss MQ": false
-        },
-        "Fire Temple Before Boss MQ": {
-            "Fire Temple Near Boss MQ": false,
-            "Volvagia Boss Room MQ": false
+            "Fire Temple Boss Door": false
         },
         "Fire Temple Big Lava Room MQ": {
             "Fire Temple Elevator Room MQ": false
@@ -2675,19 +2654,13 @@
             "Fire Temple Near Boss MQ": false,
             "Fire Temple Flame Maze Side Room MQ": false,
             "Fire Temple Upper MQ": false,
-            "Fire Temple Before Boss MQ": false
+            "Fire Temple Boss Door": false
         },
         "Fire Temple Lower": {
             "Fire Temple Crater Gateway:In": false,
-            "Fire Temple Near Boss": false,
             "Fire Temple Big Lava Room": false,
-            "Fire Temple Lower Locked Door": false
-        },
-        "Fire Temple Near Boss": {
-            "Fire Temple Before Boss": false
-        },
-        "Fire Temple Before Boss": {
-            "Volvagia Boss Room": false
+            "Fire Temple Lower Locked Door": false,
+            "Fire Temple Boss Door": false
         },
         "Fire Temple Big Lava Room": {
             "Fire Temple Elevator Room": false
@@ -2708,7 +2681,7 @@
             "Fire Temple Upper": false
         },
         "Fire Temple Upper": {
-            "Fire Temple Before Boss": false
+            "Fire Temple Boss Door": false
         },
         "Forest Temple Lobby MQ": {
             "Forest Temple Meadow Gateway:In": false,
@@ -2718,7 +2691,7 @@
             "Forest Temple NW Outdoors MQ": false,
             "Forest Temple NE Outdoors MQ": false,
             "Forest Temple Before Block Puzzle MQ": false,
-            "Forest Temple Basement MQ": false
+            "Forest Temple Before Boss MQ": false
         },
         "Forest Temple Before Block Puzzle MQ": {
             "Forest Temple After Block Puzzle MQ": false,
@@ -2757,12 +2730,8 @@
         "Forest Temple Falling Room MQ": {
             "Forest Temple NE Outdoors Ledge MQ": false
         },
-        "Forest Temple Basement MQ": {
-            "Forest Temple Before Boss MQ": false
-        },
         "Forest Temple Before Boss MQ": {
-            "Forest Temple Basement MQ": false,
-            "Phantom Ganon Boss Room MQ": false
+            "Forest Temple Boss Door": false
         },
         "Forest Temple Lobby": {
             "Forest Temple Meadow Gateway:In": false,
@@ -2772,7 +2741,7 @@
             "Forest Temple NW Outdoors": false,
             "Forest Temple NE Outdoors": false,
             "Forest Temple Block Push Room": false,
-            "Forest Temple Basement": false
+            "Forest Temple Before Boss": false
         },
         "Forest Temple NW Outdoors": {
             "Forest Temple NE Outdoors": false,
@@ -2807,13 +2776,8 @@
         "Forest Temple Falling Room": {
             "Forest Temple NE Outdoors": false
         },
-        "Forest Temple Basement": {
-            "Forest Temple Central Area": false,
-            "Forest Temple Before Boss": false
-        },
         "Forest Temple Before Boss": {
-            "Forest Temple Basement": false,
-            "Phantom Ganon Boss Room": false
+            "Forest Temple Boss Door": false
         },
         "Ganons Castle Lobby MQ": {
             "Ganons Castle Castle Grounds Gateway:In": false,
@@ -2833,22 +2797,10 @@
             "Ganons Castle Forest Trial Ending MQ": false
         },
         "Ganons Castle Water Trial MQ": {
-            "Ganons Castle Water Trial Push Block Room MQ": false
-        },
-        "Ganons Castle Water Trial Push Block Room MQ": {
             "Ganons Castle Water Trial Ending MQ": false
         },
         "Ganons Castle Shadow Trial MQ": {
-            "Ganons Castle Shadow Trial Moving Platform MQ": false
-        },
-        "Ganons Castle Shadow Trial Moving Platform MQ": {
-            "Ganons Castle Shadow Trial Second Gap MQ": false
-        },
-        "Ganons Castle Shadow Trial Second Gap MQ": {
             "Ganons Castle Shadow Trial Ending MQ": false
-        },
-        "Ganons Castle Fire Trial MQ": {
-            "Ganons Castle Fire Trial Ending MQ": false
         },
         "Ganons Castle Light Trial MQ": {
             "Ganons Castle Light Trial Boulder Room MQ": false
@@ -2874,9 +2826,6 @@
             "Ganons Castle Tower": false
         },
         "Ganons Castle Forest Trial": {
-            "Ganons Castle Forest Trial Wind Room": false
-        },
-        "Ganons Castle Forest Trial Wind Room": {
             "Ganons Castle Forest Trial Ending": false
         },
         "Ganons Castle Water Trial": {
@@ -2915,24 +2864,6 @@
             "Gerudo Training Ground Left Side MQ": false
         },
         "Gerudo Training Ground Right Side MQ": {
-            "Gerudo Training Ground Lava Room Front MQ": false,
-            "Gerudo Training Ground Water Room Entrance MQ": false
-        },
-        "Gerudo Training Ground Lava Room Front MQ": {
-            "Gerudo Training Ground Right Side MQ": false,
-            "Gerudo Training Ground Water Room Entrance MQ": false,
-            "Gerudo Training Ground Lava Room Back MQ": false
-        },
-        "Gerudo Training Ground Water Room Entrance MQ": {
-            "Gerudo Training Ground Right Side MQ": false,
-            "Gerudo Training Ground Lava Room Front MQ": false,
-            "Gerudo Training Ground Water Room MQ": false
-        },
-        "Gerudo Training Ground Lava Room Back MQ": {
-            "Gerudo Training Ground Lava Room Front MQ": false,
-            "Gerudo Training Ground Lava Room Back Left MQ": false
-        },
-        "Gerudo Training Ground Water Room MQ": {
             "Gerudo Training Ground Underwater MQ": false
         },
         "Gerudo Training Ground Left Side MQ": {
@@ -2943,41 +2874,25 @@
         },
         "Gerudo Training Ground Back Areas MQ": {
             "Gerudo Training Ground Central Maze Right MQ": false,
-            "Gerudo Training Ground Lava Room Back MQ": false,
-            "Gerudo Training Ground Water Room Entrance MQ": false
+            "Gerudo Training Ground Right Side MQ": false
         },
         "Gerudo Training Ground Central Maze Right MQ": {
-            "Gerudo Training Ground Right Side MQ": false,
-            "Gerudo Training Ground Lava Room Front MQ": false,
-            "Gerudo Training Ground Lava Room Back MQ": false,
-            "Gerudo Training Ground Lava Room Back Left MQ": false
+            "Gerudo Training Ground Underwater MQ": false,
+            "Gerudo Training Ground Right Side MQ": false
         },
         "Gerudo Training Ground Lobby": {
             "Training Grounds Fortress Gateway:In": false,
-            "Gerudo Training Ground Lava Room Front": false,
+            "Gerudo Training Ground Lava Room": false,
             "Gerudo Training Ground Central Maze Right": false,
-            "Gerudo Training Ground Boulder Room": false
+            "Gerudo Training Ground Heavy Block Room": false
         },
-        "Gerudo Training Ground Lava Room Front": {
+        "Gerudo Training Ground Lava Room": {
             "Gerudo Training Ground Central Maze Right": false,
-            "Gerudo Training Ground Lava Room Back": false,
-            "Gerudo Training Ground Hammer Room": false,
-            "Gerudo Training Ground Water Room": false
-        },
-        "Gerudo Training Ground Lava Room Back": {
-            "Gerudo Training Ground Central Maze Right": false,
-            "Gerudo Training Ground Lava Room Front": false,
             "Gerudo Training Ground Hammer Room": false
         },
-        "Gerudo Training Ground Water Room": {
-            "Gerudo Training Ground Underwater": false
-        },
         "Gerudo Training Ground Central Maze Right": {
-            "Gerudo Training Ground Lava Room Front": false,
-            "Gerudo Training Ground Lava Room Back": false
-        },
-        "Gerudo Training Ground Boulder Room": {
-            "Gerudo Training Ground Heavy Block Room": false
+            "Gerudo Training Ground Lava Room": false,
+            "Gerudo Training Ground Hammer Room": false
         },
         "Gerudo Training Ground Heavy Block Room": {
             "Gerudo Training Ground Eye Statue Upper": false
@@ -2990,7 +2905,7 @@
             "Gerudo Training Ground Hammer Room": false
         },
         "Gerudo Training Ground Hammer Room": {
-            "Gerudo Training Ground Lava Room Back": false,
+            "Gerudo Training Ground Lava Room": false,
             "Gerudo Training Ground Eye Statue Lower": false
         },
         "Ice Cavern Beginning MQ": {
@@ -3001,14 +2916,11 @@
         },
         "Ice Cavern Beginning": {
             "Ice Cavern Fountain Gateway:In": false,
-            "Ice Cavern Spinning Scythe Room": false
+            "Ice Cavern Spinning Blades": false
         },
-        "Ice Cavern Spinning Scythe Room": {
+        "Ice Cavern Spinning Blades": {
             "Ice Cavern Map Room": false,
             "Ice Cavern Behind Ice Walls": false
-        },
-        "Ice Cavern Behind Ice Walls": {
-            "Ice Cavern End": false
         },
         "Jabu Jabus Belly Beginning MQ": {
             "Jabu Fountain Gateway:In": false,
@@ -3016,7 +2928,7 @@
         },
         "Jabu Jabus Belly Elevator Room MQ": {
             "Jabu Jabus Belly Main MQ": false,
-            "Jabu Jabus Belly Before Slimy Thing MQ": false
+            "Jabu Jabus Belly Before Boss MQ": false
         },
         "Jabu Jabus Belly Main MQ": {
             "Jabu Jabus Belly Depths MQ": false
@@ -3024,14 +2936,8 @@
         "Jabu Jabus Belly Depths MQ": {
             "Jabu Jabus Belly Past Big Octo MQ": false
         },
-        "Jabu Jabus Belly Before Slimy Thing MQ": {
-            "Jabu Jabus Belly Elevator Room MQ": false,
-            "Jabu Jabus Belly Before Boss MQ": false
-        },
         "Jabu Jabus Belly Before Boss MQ": {
-            "Jabu Jabus Belly Before Slimy Thing MQ": false,
-            "Jabu Jabus Belly Elevator Room MQ": false,
-            "Barinade Boss Room MQ": false
+            "Jabu Jabus Belly Boss Door": false
         },
         "Jabu Jabus Belly Beginning": {
             "Jabu Fountain Gateway:In": false,
@@ -3045,8 +2951,7 @@
             "Jabu Jabus Belly Past Big Octo": false
         },
         "Jabu Jabus Belly Before Boss": {
-            "Jabu Jabus Belly Main": false,
-            "Barinade Boss Room": false
+            "Jabu Jabus Belly Boss Door": false
         },
         "Root": {
             "Root Exits": false,
@@ -3248,7 +3153,7 @@
             "GF Entrances Behind Crates": false,
             "GF Roof Entrance Cluster": false,
             "GF Kitchen Roof Access": false,
-            "GF Break Room Entrance": false,
+            "GF Hall to Balcony Entrance": false,
             "GF Outside Gate": false,
             "Fortress Training Grounds Gateway:In": false
         },
@@ -3279,17 +3184,17 @@
         },
         "GF Chest Roof": {
             "GF Kitchen Roof Access": false,
-            "GF Break Room Entrance": false
+            "GF Hall to Balcony Entrance": false
         },
-        "GF Break Room Entrance": {
+        "GF Hall to Balcony Entrance": {
             "Gerudo Fortress": false,
-            "Hideout Break Room": false
+            "Hideout Hall to Balcony Lower": false
         },
         "GF Balcony": {
-            "Hideout Hall to Balcony": false,
+            "Hideout Hall to Balcony Upper": false,
             "Gerudo Fortress": false,
             "GF Chest Roof": false,
-            "GF Break Room Entrance": false
+            "GF Hall to Balcony Entrance": false
         },
         "GF Outside Gate": {
             "Gerudo Fortress": false,
@@ -3329,12 +3234,12 @@
             "Hideout Kitchen Hallway": false,
             "Hideout Kitchen Pots": false
         },
-        "Hideout Break Room": {
-            "GF Break Room Entrance": false,
-            "Hideout Hall to Balcony": false
+        "Hideout Hall to Balcony Lower": {
+            "GF Hall to Balcony Entrance": false,
+            "Hideout Hall to Balcony Upper": false
         },
-        "Hideout Hall to Balcony": {
-            "Hideout Break Room": false,
+        "Hideout Hall to Balcony Upper": {
+            "Hideout Hall to Balcony Lower": false,
             "GF Balcony": false
         },
         "Wasteland Near Fortress": {
@@ -3826,12 +3731,8 @@
             "Shadow Temple Boat MQ": false
         },
         "Shadow Temple Upper Huge Pit MQ": {
-            "Shadow Temple Invisible Blades Room MQ": false,
+            "Shadow Temple Invisible Blades MQ": false,
             "Shadow Temple Lower Huge Pit MQ": false
-        },
-        "Shadow Temple Invisible Blades Room MQ": {
-            "Shadow Temple Close Proximity to Invisible Blades MQ": false,
-            "Shadow Temple Invisible Blades Song of Time Blocks MQ": false
         },
         "Shadow Temple Lower Huge Pit MQ": {
             "Shadow Temple Falling Spikes MQ": false,
@@ -3865,7 +3766,7 @@
             "Shadow Temple 3 Spinning Pots Rupees MQ": false
         },
         "Shadow Temple Before Boss MQ": {
-            "Bongo Bongo Boss Room MQ": false
+            "Shadow Temple Boss Door": false
         },
         "Shadow Temple Entryway": {
             "Shadow Temple Graveyard Gateway:In": false,
@@ -3879,7 +3780,6 @@
             "Shadow Temple Boat": false
         },
         "Shadow Temple Huge Pit": {
-            "Shadow Temple Falling Spikes": false,
             "Shadow Temple Invisible Spikes": false
         },
         "Shadow Temple Invisible Spikes": {
@@ -3912,7 +3812,7 @@
         },
         "Shadow Temple Before Boss": {
             "Shadow Temple Beyond Boat SoT Block": false,
-            "Bongo Bongo Boss Room": false
+            "Shadow Temple Boss Door": false
         },
         "Spirit Temple Lobby MQ": {
             "Spirit Temple Colossus Gateway:In": false,
@@ -3926,7 +3826,7 @@
             "Spirit Temple Shared MQ": false,
             "Lower Adult Spirit Temple MQ": false,
             "Spirit Temple Beamos Room MQ": false,
-            "Spirit Temple Before Boss MQ": false
+            "Spirit Temple Boss Door": false
         },
         "Spirit Temple Shared MQ": {
             "Desert Colossus": false
@@ -3936,23 +3836,17 @@
             "Spirit Temple Shifting Wall MQ": false
         },
         "Spirit Temple Shifting Wall MQ": {
-            "Spirit Temple After Shifting Wall MQ": false
-        },
-        "Spirit Temple After Shifting Wall MQ": {
             "Spirit Temple Big Mirror Room MQ": false
         },
         "Spirit Temple Big Mirror Room MQ": {
             "Spirit Temple Mirror Puzzle MQ": false
         },
         "Spirit Temple Mirror Puzzle MQ": {
-            "Spirit Temple Before Boss MQ": false
-        },
-        "Spirit Temple Before Boss MQ": {
-            "Twinrova Boss Room MQ": false
+            "Spirit Temple Boss Door": false
         },
         "Spirit Temple Lobby": {
             "Spirit Temple Colossus Gateway:In": false,
-            "Child Spirit Temple Beyond Metal Bridges": false,
+            "Child Spirit Temple": false,
             "Child Spirit Before Locked Door": false,
             "Early Adult Spirit Temple": false,
             "Spirit Temple Central Chamber": false
@@ -3961,7 +3855,6 @@
             "Child Spirit Temple Climb": false
         },
         "Early Adult Spirit Temple": {
-            "Spirit Temple Boulder Room": false,
             "Spirit Temple Central Chamber": false,
             "Adult Spirit Temple Climb": false
         },
@@ -3972,7 +3865,7 @@
         "Spirit Temple Central Chamber": {
             "Child Spirit Temple Climb": false,
             "Adult Spirit Temple Climb": false,
-            "Spirit Temple Before Boss": false,
+            "Spirit Temple Boss Door": false,
             "Desert Colossus": false
         },
         "Adult Spirit Temple Climb": {
@@ -3984,19 +3877,13 @@
             "Spirit Temple Big Mirror Room": false
         },
         "Spirit Temple Big Mirror Room": {
-            "Spirit Temple Before Boss": false
-        },
-        "Spirit Temple Before Boss": {
-            "Twinrova Boss Room": false
+            "Spirit Temple Boss Door": false
         },
         "Water Temple Lobby MQ": {
             "Water Temple Lake Gateway:In": false,
             "Water Temple Dive MQ": false,
             "Water Temple Dark Link Region MQ": false,
-            "Water Temple Before Boss MQ": false
-        },
-        "Water Temple Before Boss MQ": {
-            "Morpha Boss Room MQ": false
+            "Water Temple Boss Door": false
         },
         "Water Temple Dive MQ": {
             "Water Temple Below Central Pillar MQ": false,
@@ -4030,10 +3917,7 @@
             "Water Temple Lake Gateway:In": false,
             "Water Temple Dive": false,
             "Water Temple Falling Platform Room": false,
-            "Water Temple Before Boss": false
-        },
-        "Water Temple Before Boss": {
-            "Morpha Boss Room": false
+            "Water Temple Boss Door": false
         },
         "Water Temple Dive": {
             "Water Temple Lowered Water Levels": false,
