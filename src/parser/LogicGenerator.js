@@ -54,10 +54,10 @@ function wrapEraFilter(rule, value) {
     if (value) {
         return {
             "type": "and",
-            "el": [
+            "content": [
                 {
                     "type": "mixin",
-                    "el": "mixin[filter_era]{" + value + "}"
+                    "content": "mixin[filter_era]{" + value + "}"
                 },
                 rule
             ]
@@ -232,12 +232,12 @@ class LogicGenerator {
         res.edges["region[root]"] = {
             "region[root]{child}": {
                 "type": "state",
-                "el": "option[starting_age]",
+                "content": "option[starting_age]",
                 "value": "child"
             },
             "region[root]{adult}": {
                 "type": "state",
-                "el": "option[starting_age]",
+                "content": "option[starting_age]",
                 "value": "adult"
             }
         };

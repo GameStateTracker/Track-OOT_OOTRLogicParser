@@ -15,7 +15,7 @@ export default class Operator extends AbstractOperator {
     toJSON()  {
         return {
             type: "pow",
-            el: this.children.slice(0, 2).map((e) => e.toJSON())
+            content: this.children.slice(0, 2).map((e) => e.toJSON())
         };
     }
 

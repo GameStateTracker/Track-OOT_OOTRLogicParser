@@ -2,115 +2,115 @@
     "region[root]": {
         "region[root_exits]": {
             "type": "mixin",
-            "el": "mixin[is_starting_age]"
+            "content": "mixin[is_starting_age]"
         }
     },
     "region[hyrule_castle_grounds]": {
         "region[hc_garden]": {
             "type": "value",
-            "el": "item[egg]"
+            "content": "item[egg]"
         }
     },
     "region[ganons_castle_lobby]": {
         "region[ganons_castle_tower]": {
             "type": "gte",
-            "el": [
+            "content": [
                 {
                     "type": "add",
-                    "el": [
+                    "content": [
                         {
                             "type": "or",
-                            "el": [
+                            "content": [
                                 {
                                     "type": "not",
-                                    "el": {
+                                    "content": {
                                         "type": "value",
-                                        "el": "option[forest_trial]"
+                                        "content": "option[forest_trial]"
                                     }
                                 },
                                 {
                                     "type": "value",
-                                    "el": "event[forest_trial_clear]"
+                                    "content": "event[forest_trial_clear]"
                                 }
                             ]
                         },
                         {
                             "type": "or",
-                            "el": [
+                            "content": [
                                 {
                                     "type": "not",
-                                    "el": {
+                                    "content": {
                                         "type": "value",
-                                        "el": "option[fire_trial]"
+                                        "content": "option[fire_trial]"
                                     }
                                 },
                                 {
                                     "type": "value",
-                                    "el": "event[fire_trial_clear]"
+                                    "content": "event[fire_trial_clear]"
                                 }
                             ]
                         },
                         {
                             "type": "or",
-                            "el": [
+                            "content": [
                                 {
                                     "type": "not",
-                                    "el": {
+                                    "content": {
                                         "type": "value",
-                                        "el": "option[water_trial]"
+                                        "content": "option[water_trial]"
                                     }
                                 },
                                 {
                                     "type": "value",
-                                    "el": "event[water_trial_clear]"
+                                    "content": "event[water_trial_clear]"
                                 }
                             ]
                         },
                         {
                             "type": "or",
-                            "el": [
+                            "content": [
                                 {
                                     "type": "not",
-                                    "el": {
+                                    "content": {
                                         "type": "value",
-                                        "el": "option[shadow_trial]"
+                                        "content": "option[shadow_trial]"
                                     }
                                 },
                                 {
                                     "type": "value",
-                                    "el": "event[shadow_trial_clear]"
+                                    "content": "event[shadow_trial_clear]"
                                 }
                             ]
                         },
                         {
                             "type": "or",
-                            "el": [
+                            "content": [
                                 {
                                     "type": "not",
-                                    "el": {
+                                    "content": {
                                         "type": "value",
-                                        "el": "option[spirit_trial]"
+                                        "content": "option[spirit_trial]"
                                     }
                                 },
                                 {
                                     "type": "value",
-                                    "el": "event[spirit_trial_clear]"
+                                    "content": "event[spirit_trial_clear]"
                                 }
                             ]
                         },
                         {
                             "type": "or",
-                            "el": [
+                            "content": [
                                 {
                                     "type": "not",
-                                    "el": {
+                                    "content": {
                                         "type": "value",
-                                        "el": "option[light_trial]"
+                                        "content": "option[light_trial]"
                                     }
                                 },
                                 {
                                     "type": "value",
-                                    "el": "event[light_trial_clear]"
+                                    "content": "event[light_trial_clear]"
                                 }
                             ]
                         }
@@ -118,7 +118,7 @@
                 },
                 {
                     "type": "value",
-                    "el": "option[number_trials]"
+                    "content": "option[number_trials]"
                 }
             ]
         }
@@ -126,103 +126,103 @@
     "region[ganons_castle_lobby_mq]": {
         "region[ganons_castle_tower]": {
             "type": "gte",
-            "el": [
+            "content": [
                 {
                     "type": "add",
-                    "el": [
+                    "content": [
                         {
                             "type": "or",
-                            "el": [
+                            "content": [
                                 {
                                     "type": "not",
-                                    "el": {
+                                    "content": {
                                         "type": "value",
-                                        "el": "option[forest_trial]"
+                                        "content": "option[forest_trial]"
                                     }
                                 },
                                 {
                                     "type": "value",
-                                    "el": "event[forest_trial_clear]"
+                                    "content": "event[forest_trial_clear]"
                                 }
                             ]
                         },
                         {
                             "type": "or",
-                            "el": [
+                            "content": [
                                 {
                                     "type": "not",
-                                    "el": {
+                                    "content": {
                                         "type": "value",
-                                        "el": "option[fire_trial]"
+                                        "content": "option[fire_trial]"
                                     }
                                 },
                                 {
                                     "type": "value",
-                                    "el": "event[fire_trial_clear]"
+                                    "content": "event[fire_trial_clear]"
                                 }
                             ]
                         },
                         {
                             "type": "or",
-                            "el": [
+                            "content": [
                                 {
                                     "type": "not",
-                                    "el": {
+                                    "content": {
                                         "type": "value",
-                                        "el": "option[water_trial]"
+                                        "content": "option[water_trial]"
                                     }
                                 },
                                 {
                                     "type": "value",
-                                    "el": "event[water_trial_clear]"
+                                    "content": "event[water_trial_clear]"
                                 }
                             ]
                         },
                         {
                             "type": "or",
-                            "el": [
+                            "content": [
                                 {
                                     "type": "not",
-                                    "el": {
+                                    "content": {
                                         "type": "value",
-                                        "el": "option[shadow_trial]"
+                                        "content": "option[shadow_trial]"
                                     }
                                 },
                                 {
                                     "type": "value",
-                                    "el": "event[shadow_trial_clear]"
+                                    "content": "event[shadow_trial_clear]"
                                 }
                             ]
                         },
                         {
                             "type": "or",
-                            "el": [
+                            "content": [
                                 {
                                     "type": "not",
-                                    "el": {
+                                    "content": {
                                         "type": "value",
-                                        "el": "option[spirit_trial]"
+                                        "content": "option[spirit_trial]"
                                     }
                                 },
                                 {
                                     "type": "value",
-                                    "el": "event[spirit_trial_clear]"
+                                    "content": "event[spirit_trial_clear]"
                                 }
                             ]
                         },
                         {
                             "type": "or",
-                            "el": [
+                            "content": [
                                 {
                                     "type": "not",
-                                    "el": {
+                                    "content": {
                                         "type": "value",
-                                        "el": "option[light_trial]"
+                                        "content": "option[light_trial]"
                                     }
                                 },
                                 {
                                     "type": "value",
-                                    "el": "event[light_trial_clear]"
+                                    "content": "event[light_trial_clear]"
                                 }
                             ]
                         }
@@ -230,7 +230,7 @@
                 },
                 {
                     "type": "value",
-                    "el": "option[number_trials]"
+                    "content": "option[number_trials]"
                 }
             ]
         }

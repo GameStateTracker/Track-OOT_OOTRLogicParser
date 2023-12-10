@@ -25,18 +25,18 @@ function calc(scope, input, age = "", region = "", basic = false) {
         case "at": {
             return createOnRegionLogic(
                 `${translateRegionName(input.node)}{child}`,
-                postCalculate(scope, input.el, "child", region, basic),
+                postCalculate(scope, input.content, "child", region, basic),
                 `${translateRegionName(input.node)}{adult}`,
-                postCalculate(scope, input.el, "adult", region, basic),
+                postCalculate(scope, input.content, "adult", region, basic),
                 basic
             );
         }
         case "here": {
             return createOnRegionLogic(
                 `${translateRegionName(region)}{child}`,
-                postCalculate(scope, input.el, "child", region, basic),
+                postCalculate(scope, input.content, "child", region, basic),
                 `${translateRegionName(region)}{adult}`,
-                postCalculate(scope, input.el, "adult", region, basic),
+                postCalculate(scope, input.content, "adult", region, basic),
                 basic
             );
         }
@@ -59,12 +59,12 @@ function calc(scope, input, age = "", region = "", basic = false) {
         case "lt":
         case "lte": {
             const els = [];
-            for (const el of input.el) {
+            for (const el of input.content) {
                 els.push(postCalculate(scope, el, age, region, basic));
             }
             return {
                 type: input.type,
-                el: els
+                content: els
             };
         }
         case "min":
@@ -74,7 +74,7 @@ function calc(scope, input, age = "", region = "", basic = false) {
         case "not": {
             return {
                 type: "not",
-                el: postCalculate(scope, input.el, age, region, basic)
+                content: postCalculate(scope, input.content, age, region, basic)
             };
         }
         default: {

@@ -3,7 +3,7 @@ export default function postCalculate(scope, input, age = ""/* , region = "", ba
     if (age != "") {
         return {
             type: "mixin",
-            el: `${input.el}{${age}}`
+            content: `${input.content}{${age}}`
         };
     }
     return input;

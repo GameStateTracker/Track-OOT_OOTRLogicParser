@@ -7,7 +7,7 @@ export default function postCalculate(scope, input, age = "", region = "", basic
     }
     return {
         type: input.type,
-        el: calc(scope, input.el, age, region, basic),
+        content: calc(scope, input.content, age, region, basic),
         value: buffer
     };
 }

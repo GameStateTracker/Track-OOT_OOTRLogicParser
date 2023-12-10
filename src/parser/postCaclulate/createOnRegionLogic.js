@@ -2,48 +2,48 @@ export default function createOnRegionLogic(nodeC, elC, nodeA, elA, basic = fals
     if (basic) {
         return {
             "type": "or",
-            "el": [
+            "content": [
                 {
                     "type": "at",
                     "node": nodeC,
-                    "el": elC
+                    "content": elC
                 },
                 {
                     "type": "at",
                     "node": nodeA,
-                    "el": elA
+                    "content": elA
                 }
             ]
         }
     } else {
         return {
             "type": "or",
-            "el": [
+            "content": [
                 {
                     "type": "and",
-                    "el": [
+                    "content": [
                         {
                             "type": "mixin",
-                            "el": "mixin[filter_era]{child}"
+                            "content": "mixin[filter_era]{child}"
                         },
                         {
                             "type": "at",
                             "node": nodeC,
-                            "el": elC
+                            "content": elC
                         }
                     ]
                 },
                 {
                     "type": "and",
-                    "el": [
+                    "content": [
                         {
                             "type": "mixin",
-                            "el": "mixin[filter_era]{adult}"
+                            "content": "mixin[filter_era]{adult}"
                         },
                         {
                             "type": "at",
                             "node": nodeA,
-                            "el": elA
+                            "content": elA
                         }
                     ]
                 }

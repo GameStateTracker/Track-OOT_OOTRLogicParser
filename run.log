@@ -1,5 +1,5 @@
 Cloning into 'input'...
-Note: switching to 'ea3c55a388257db8528c39b560b2dac319d8c286'.
+Note: switching to '8d3b2ef1dc823cbd0d4bc4902b2d46668df658ab'.
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -24,6 +24,315 @@ PARSE HELPERS
 ===========================================
 PARSE LOGIC
 
+mainRegions: Dodongos Cavern Above Staircase MQ is new
+mainRegions: Dodongos Cavern Mouth is new
+mainRegions: Fire Temple Before Boss MQ is new
+mainRegions: Fire Temple Near Boss is new
+mainRegions: Fire Temple Before Boss is new
+mainRegions: Forest Temple Basement MQ is new
+mainRegions: Forest Temple Basement is new
+mainRegions: Ganons Castle Water Trial Push Block Room MQ is new
+mainRegions: Ganons Castle Shadow Trial Moving Platform MQ is new
+mainRegions: Ganons Castle Shadow Trial Second Gap MQ is new
+mainRegions: Ganons Castle Fire Trial MQ is new
+mainRegions: Ganons Castle Forest Trial Wind Room is new
+mainRegions: Gerudo Training Ground Lava Room Front MQ is new
+mainRegions: Gerudo Training Ground Water Room Entrance MQ is new
+mainRegions: Gerudo Training Ground Lava Room Back MQ is new
+mainRegions: Gerudo Training Ground Water Room MQ is new
+mainRegions: Gerudo Training Ground Lava Room Front is new
+mainRegions: Gerudo Training Ground Lava Room Back is new
+mainRegions: Gerudo Training Ground Water Room is new
+mainRegions: Gerudo Training Ground Boulder Room is new
+mainRegions: Ice Cavern Spinning Scythe Room is new
+mainRegions: Ice Cavern Behind Ice Walls is new
+mainRegions: Jabu Jabus Belly Before Slimy Thing MQ is new
+mainRegions: Farores Wind Warp is new
+mainRegions: GF Break Room Entrance is new
+mainRegions: Hideout Break Room is new
+mainRegions: Hideout Hall to Balcony is new
+mainRegions: Desert Colossus Hands is new
+mainRegions: Shadow Temple Invisible Blades Room MQ is new
+mainRegions: Spirit Temple After Shifting Wall MQ is new
+mainRegions: Spirit Temple Before Boss MQ is new
+mainRegions: Spirit Temple Before Boss is new
+mainRegions: Water Temple Before Boss MQ is new
+mainRegions: Water Temple North Basement MQ is new
+mainRegions: Water Temple Before Boss is new
+subRegions: Queen Gohma Boss Room: Deku Tree Before Boss is new
+subRegions: Queen Gohma Boss Room: KF Outside Deku Tree is new
+subRegions: King Dodongo Boss Room: Dodongos Cavern Mouth is new
+subRegions: King Dodongo Boss Room: Death Mountain is new
+subRegions: Barinade Boss Room: Jabu Jabus Belly Before Boss is new
+subRegions: Barinade Boss Room: Zoras Fountain is new
+subRegions: Phantom Ganon Boss Room: Forest Temple Before Boss is new
+subRegions: Phantom Ganon Boss Room: Sacred Forest Meadow is new
+subRegions: Volvagia Boss Room: Fire Temple Before Boss is new
+subRegions: Volvagia Boss Room: DMC Central Local is new
+subRegions: Morpha Boss Room: Water Temple Before Boss is new
+subRegions: Morpha Boss Room: Lake Hylia is new
+subRegions: Bongo Bongo Boss Room: Shadow Temple Before Boss is new
+subRegions: Bongo Bongo Boss Room: Graveyard Warp Pad Region is new
+subRegions: Twinrova Boss Room: Spirit Temple Before Boss is new
+subRegions: Twinrova Boss Room: Desert Colossus is new
+subRegions: Bottom of the Well MQ: Farores Wind Warp MQ is new
+subRegions: Bottom of the Well: Farores Wind Warp is new
+subRegions: Bottom of the Well Main Area: Bottom of the Well Left Side is new
+subRegions: Bottom of the Well Behind Fake Walls: Bottom of the Well Left Side is new
+subRegions: Deku Tree Lobby MQ: Farores Wind Warp MQ is new
+subRegions: Deku Tree Before Boss MQ: Deku Tree Basement Ledge MQ is new
+subRegions: Deku Tree Before Boss MQ: Queen Gohma Boss Room MQ is new
+subRegions: Deku Tree Lobby: Farores Wind Warp is new
+subRegions: Deku Tree Basement Ledge: Deku Tree Basement is new
+subRegions: Deku Tree Before Boss: Deku Tree Basement Ledge is new
+subRegions: Deku Tree Before Boss: Queen Gohma Boss Room is new
+subRegions: Dodongos Cavern Beginning MQ: Farores Wind Warp MQ is new
+subRegions: Dodongos Cavern Elevator MQ: Dodongos Cavern Above Staircase MQ is new
+subRegions: Dodongos Cavern Above Staircase MQ: Dodongos Cavern Torch Puzzle Lower MQ is new
+subRegions: Dodongos Cavern Torch Puzzle Lower MQ: Dodongos Cavern Above Staircase MQ is new
+subRegions: Dodongos Cavern Mouth MQ: Dodongos Cavern Lobby MQ is new
+subRegions: Dodongos Cavern Before Boss MQ: King Dodongo Boss Room MQ is new
+subRegions: Dodongos Cavern Beginning: Farores Wind Warp is new
+subRegions: Dodongos Cavern Lobby: Dodongos Cavern Mouth is new
+subRegions: Dodongos Cavern Far Bridge: Dodongos Cavern Mouth is new
+subRegions: Dodongos Cavern Mouth: Dodongos Cavern Lobby is new
+subRegions: Dodongos Cavern Mouth: Dodongos Cavern Before Boss is new
+subRegions: Dodongos Cavern Before Boss: King Dodongo Boss Room is new
+subRegions: Fire Temple Lower MQ: Farores Wind Warp MQ is new
+subRegions: Fire Temple Near Boss MQ: Fire Temple Before Boss MQ is new
+subRegions: Fire Temple Before Boss MQ: Fire Temple Near Boss MQ is new
+subRegions: Fire Temple Before Boss MQ: Volvagia Boss Room MQ is new
+subRegions: Fire Temple Flame Maze MQ: Fire Temple Before Boss MQ is new
+subRegions: Fire Temple Lower: Fire Temple Near Boss is new
+subRegions: Fire Temple Lower: Farores Wind Warp is new
+subRegions: Fire Temple Near Boss: Fire Temple Before Boss is new
+subRegions: Fire Temple Before Boss: Volvagia Boss Room is new
+subRegions: Fire Temple Upper: Fire Temple Before Boss is new
+subRegions: Forest Temple Lobby MQ: Farores Wind Warp MQ is new
+subRegions: Forest Temple Central Area MQ: Forest Temple Basement MQ is new
+subRegions: Forest Temple Outside Upper Ledge MQ: Forest Temple NW Outdoors Freestandings MQ is new
+subRegions: Forest Temple NW Outdoors MQ: Forest Temple NW Outdoors Freestandings MQ is new
+subRegions: Forest Temple Basement MQ: Forest Temple Before Boss MQ is new
+subRegions: Forest Temple Before Boss MQ: Forest Temple Basement MQ is new
+subRegions: Forest Temple Before Boss MQ: Phantom Ganon Boss Room MQ is new
+subRegions: Forest Temple Lobby: Farores Wind Warp is new
+subRegions: Forest Temple Central Area: Forest Temple Basement is new
+subRegions: Forest Temple NW Outdoors: Forest Temple NW Outdoors Freestandings is new
+subRegions: Forest Temple Outside Upper Ledge: Forest Temple NW Outdoors Freestandings is new
+subRegions: Forest Temple Basement: Forest Temple Central Area is new
+subRegions: Forest Temple Basement: Forest Temple Before Boss is new
+subRegions: Forest Temple Before Boss: Forest Temple Basement is new
+subRegions: Forest Temple Before Boss: Phantom Ganon Boss Room is new
+subRegions: Ganons Castle Lobby MQ: Farores Wind Warp MQ is new
+subRegions: Ganons Castle Water Trial MQ: Ganons Castle Water Trial Push Block Room MQ is new
+subRegions: Ganons Castle Water Trial Push Block Room MQ: Ganons Castle Water Trial Ending MQ is new
+subRegions: Ganons Castle Shadow Trial MQ: Ganons Castle Shadow Trial Moving Platform MQ is new
+subRegions: Ganons Castle Shadow Trial Moving Platform MQ: Ganons Castle Shadow Trial Second Gap MQ is new
+subRegions: Ganons Castle Shadow Trial Second Gap MQ: Ganons Castle Shadow Trial Ending MQ is new
+subRegions: Ganons Castle Fire Trial MQ: Ganons Castle Fire Trial Ending MQ is new
+subRegions: Ganons Castle Lobby: Farores Wind Warp is new
+subRegions: Ganons Castle Forest Trial: Ganons Castle Forest Trial Wind Room is new
+subRegions: Ganons Castle Forest Trial Wind Room: Ganons Castle Forest Trial Ending is new
+subRegions: Gerudo Training Ground Lobby MQ: Farores Wind Warp MQ is new
+subRegions: Gerudo Training Ground Right Side MQ: Gerudo Training Ground Lava Room Front MQ is new
+subRegions: Gerudo Training Ground Right Side MQ: Gerudo Training Ground Water Room Entrance MQ is new
+subRegions: Gerudo Training Ground Lava Room Front MQ: Gerudo Training Ground Right Side MQ is new
+subRegions: Gerudo Training Ground Lava Room Front MQ: Gerudo Training Ground Water Room Entrance MQ is new
+subRegions: Gerudo Training Ground Lava Room Front MQ: Gerudo Training Ground Lava Room Back MQ is new
+subRegions: Gerudo Training Ground Water Room Entrance MQ: Gerudo Training Ground Right Side MQ is new
+subRegions: Gerudo Training Ground Water Room Entrance MQ: Gerudo Training Ground Lava Room Front MQ is new
+subRegions: Gerudo Training Ground Water Room Entrance MQ: Gerudo Training Ground Water Room MQ is new
+subRegions: Gerudo Training Ground Lava Room Back MQ: Gerudo Training Ground Lava Room Front MQ is new
+subRegions: Gerudo Training Ground Lava Room Back MQ: Gerudo Training Ground Lava Room Back Left MQ is new
+subRegions: Gerudo Training Ground Water Room MQ: Gerudo Training Ground Underwater MQ is new
+subRegions: Gerudo Training Ground Back Areas MQ: Gerudo Training Ground Lava Room Back MQ is new
+subRegions: Gerudo Training Ground Back Areas MQ: Gerudo Training Ground Water Room Entrance MQ is new
+subRegions: Gerudo Training Ground Central Maze Right MQ: Gerudo Training Ground Lava Room Front MQ is new
+subRegions: Gerudo Training Ground Central Maze Right MQ: Gerudo Training Ground Lava Room Back MQ is new
+subRegions: Gerudo Training Ground Central Maze Right MQ: Gerudo Training Ground Lava Room Back Left MQ is new
+subRegions: Gerudo Training Ground Lobby: Gerudo Training Ground Lava Room Front is new
+subRegions: Gerudo Training Ground Lobby: Gerudo Training Ground Boulder Room is new
+subRegions: Gerudo Training Ground Lobby: Farores Wind Warp is new
+subRegions: Gerudo Training Ground Lava Room Front: Gerudo Training Ground Central Maze Right is new
+subRegions: Gerudo Training Ground Lava Room Front: Gerudo Training Ground Lava Room Back is new
+subRegions: Gerudo Training Ground Lava Room Front: Gerudo Training Ground Hammer Room is new
+subRegions: Gerudo Training Ground Lava Room Front: Gerudo Training Ground Water Room is new
+subRegions: Gerudo Training Ground Lava Room Back: Gerudo Training Ground Central Maze Right is new
+subRegions: Gerudo Training Ground Lava Room Back: Gerudo Training Ground Lava Room Front is new
+subRegions: Gerudo Training Ground Lava Room Back: Gerudo Training Ground Hammer Room is new
+subRegions: Gerudo Training Ground Water Room: Gerudo Training Ground Underwater is new
+subRegions: Gerudo Training Ground Central Maze Right: Gerudo Training Ground Lava Room Front is new
+subRegions: Gerudo Training Ground Central Maze Right: Gerudo Training Ground Lava Room Back is new
+subRegions: Gerudo Training Ground Boulder Room: Gerudo Training Ground Heavy Block Room is new
+subRegions: Gerudo Training Ground Hammer Room: Gerudo Training Ground Lava Room Back is new
+subRegions: Ice Cavern Beginning MQ: Farores Wind Warp MQ is new
+subRegions: Ice Cavern Beginning: Ice Cavern Spinning Scythe Room is new
+subRegions: Ice Cavern Beginning: Farores Wind Warp is new
+subRegions: Ice Cavern Spinning Scythe Room: Ice Cavern Map Room is new
+subRegions: Ice Cavern Spinning Scythe Room: Ice Cavern Behind Ice Walls is new
+subRegions: Ice Cavern Behind Ice Walls: Ice Cavern End is new
+subRegions: Jabu Jabus Belly Beginning MQ: Farores Wind Warp MQ is new
+subRegions: Jabu Jabus Belly Elevator Room MQ: Jabu Jabus Belly Before Slimy Thing MQ is new
+subRegions: Jabu Jabus Belly Before Slimy Thing MQ: Jabu Jabus Belly Elevator Room MQ is new
+subRegions: Jabu Jabus Belly Before Slimy Thing MQ: Jabu Jabus Belly Before Boss MQ is new
+subRegions: Jabu Jabus Belly Before Boss MQ: Jabu Jabus Belly Before Slimy Thing MQ is new
+subRegions: Jabu Jabus Belly Before Boss MQ: Jabu Jabus Belly Elevator Room MQ is new
+subRegions: Jabu Jabus Belly Before Boss MQ: Barinade Boss Room MQ is new
+subRegions: Jabu Jabus Belly Beginning: Farores Wind Warp is new
+subRegions: Jabu Jabus Belly Before Boss: Jabu Jabus Belly Main is new
+subRegions: Jabu Jabus Belly Before Boss: Barinade Boss Room is new
+subRegions: Farores Wind Warp: Bottom of the Well is new
+subRegions: Farores Wind Warp: Deku Tree Lobby is new
+subRegions: Farores Wind Warp: Deku Tree Before Boss is new
+subRegions: Farores Wind Warp: Dodongos Cavern Beginning is new
+subRegions: Farores Wind Warp: Dodongos Cavern Mouth is new
+subRegions: Farores Wind Warp: Fire Temple Lower is new
+subRegions: Farores Wind Warp: Fire Temple Before Boss is new
+subRegions: Farores Wind Warp: Forest Temple Lobby is new
+subRegions: Farores Wind Warp: Forest Temple Before Boss is new
+subRegions: Farores Wind Warp: Ganons Castle Lobby is new
+subRegions: Farores Wind Warp: Gerudo Training Ground Lobby is new
+subRegions: Farores Wind Warp: Ice Cavern Beginning is new
+subRegions: Farores Wind Warp: Jabu Jabus Belly Beginning is new
+subRegions: Farores Wind Warp: Jabu Jabus Belly Before Boss is new
+subRegions: Farores Wind Warp: Shadow Temple Entryway is new
+subRegions: Farores Wind Warp: Shadow Temple Before Boss is new
+subRegions: Farores Wind Warp: Spirit Temple Lobby is new
+subRegions: Farores Wind Warp: Spirit Temple Before Boss is new
+subRegions: Farores Wind Warp: Water Temple Lobby is new
+subRegions: Farores Wind Warp: Water Temple Before Boss is new
+subRegions: Gerudo Fortress: GF Break Room Entrance is new
+subRegions: GF Kitchen Roof Access: GF Break Room Entrance is new
+subRegions: GF Chest Roof: GF Break Room Entrance is new
+subRegions: GF Break Room Entrance: Gerudo Fortress is new
+subRegions: GF Break Room Entrance: Hideout Break Room is new
+subRegions: GF Balcony: Hideout Hall to Balcony is new
+subRegions: GF Balcony: GF Break Room Entrance is new
+subRegions: Hideout Break Room: GF Break Room Entrance is new
+subRegions: Hideout Break Room: Hideout Hall to Balcony is new
+subRegions: Hideout Hall to Balcony: Hideout Break Room is new
+subRegions: Hideout Hall to Balcony: GF Balcony is new
+subRegions: Desert Colossus Hands: Desert Colossus is new
+subRegions: Market Mask Shop: Market Mask Shop Storefront is new
+subRegions: Shadow Temple Entryway MQ: Farores Wind Warp MQ is new
+subRegions: Shadow Temple Upper Huge Pit MQ: Shadow Temple Invisible Blades Room MQ is new
+subRegions: Shadow Temple Invisible Blades Room MQ: Shadow Temple Close Proximity to Invisible Blades MQ is new
+subRegions: Shadow Temple Invisible Blades Room MQ: Shadow Temple Invisible Blades Song of Time Blocks MQ is new
+subRegions: Shadow Temple Before Boss MQ: Bongo Bongo Boss Room MQ is new
+subRegions: Shadow Temple Entryway: Farores Wind Warp is new
+subRegions: Shadow Temple Huge Pit: Shadow Temple Falling Spikes is new
+subRegions: Shadow Temple Before Boss: Bongo Bongo Boss Room is new
+subRegions: Spirit Temple Lobby MQ: Farores Wind Warp MQ is new
+subRegions: Adult Spirit Temple MQ: Spirit Temple Before Boss MQ is new
+subRegions: Spirit Temple Shared MQ: Desert Colossus Hands MQ is new
+subRegions: Spirit Temple Shifting Wall MQ: Spirit Temple After Shifting Wall MQ is new
+subRegions: Spirit Temple After Shifting Wall MQ: Spirit Temple Big Mirror Room MQ is new
+subRegions: Spirit Temple Mirror Puzzle MQ: Spirit Temple Before Boss MQ is new
+subRegions: Spirit Temple Before Boss MQ: Twinrova Boss Room MQ is new
+subRegions: Spirit Temple Lobby: Child Spirit Temple Beyond Metal Bridges is new
+subRegions: Spirit Temple Lobby: Farores Wind Warp is new
+subRegions: Early Adult Spirit Temple: Spirit Temple Boulder Room is new
+subRegions: Spirit Temple Central Chamber: Spirit Temple Before Boss is new
+subRegions: Spirit Temple Central Chamber: Desert Colossus Hands is new
+subRegions: Spirit Temple Big Mirror Room: Spirit Temple Before Boss is new
+subRegions: Spirit Temple Before Boss: Twinrova Boss Room is new
+subRegions: Water Temple Lobby MQ: Water Temple Before Boss MQ is new
+subRegions: Water Temple Lobby MQ: Farores Wind Warp MQ is new
+subRegions: Water Temple Before Boss MQ: Morpha Boss Room MQ is new
+subRegions: Water Temple Basement Gated Areas MQ: Water Temple North Basement MQ is new
+subRegions: Water Temple North Basement MQ: Water Temple Freestanding Key Room MQ is new
+subRegions: Water Temple North Basement MQ: Water Temple Dodongo Room MQ is new
+subRegions: Water Temple Lobby: Water Temple Before Boss is new
+subRegions: Water Temple Lobby: Farores Wind Warp is new
+subRegions: Water Temple Before Boss: Morpha Boss Room is new
+mainRegions: Deku Tree Boss Door doesn't exist anymore
+mainRegions: Dodongos Cavern Boss Door doesn't exist anymore
+mainRegions: Jabu Jabus Belly Boss Door doesn't exist anymore
+mainRegions: Forest Temple Boss Door doesn't exist anymore
+mainRegions: Fire Temple Boss Door doesn't exist anymore
+mainRegions: Water Temple Boss Door doesn't exist anymore
+mainRegions: Shadow Temple Boss Door doesn't exist anymore
+mainRegions: Spirit Temple Boss Door doesn't exist anymore
+mainRegions: Gerudo Training Ground Lava Room doesn't exist anymore
+mainRegions: Ice Cavern Spinning Blades doesn't exist anymore
+mainRegions: GF Hall to Balcony Entrance doesn't exist anymore
+mainRegions: Hideout Hall to Balcony Lower doesn't exist anymore
+mainRegions: Hideout Hall to Balcony Upper doesn't exist anymore
+subRegions: Deku Tree Boss Door: Deku Boss Gateway:In doesn't exist anymore
+subRegions: Queen Gohma Boss Room: Boss Deku Gateway:In doesn't exist anymore
+subRegions: Dodongos Cavern Boss Door: Dodongo Boss Gateway:In doesn't exist anymore
+subRegions: King Dodongo Boss Room: Boss Dodongo Gateway:In doesn't exist anymore
+subRegions: Jabu Jabus Belly Boss Door: Jabu Boss Gateway:In doesn't exist anymore
+subRegions: Barinade Boss Room: Boss Jabu Gateway:In doesn't exist anymore
+subRegions: Forest Temple Boss Door: Forest Temple Boss Gateway:In doesn't exist anymore
+subRegions: Phantom Ganon Boss Room: Boss Forest Temple Gateway:In doesn't exist anymore
+subRegions: Fire Temple Boss Door: Fire Temple Boss Gateway:In doesn't exist anymore
+subRegions: Volvagia Boss Room: Boss Fire Temple Gateway:In doesn't exist anymore
+subRegions: Water Temple Boss Door: Water Temple Boss Gateway:In doesn't exist anymore
+subRegions: Morpha Boss Room: Boss Water Temple Gateway:In doesn't exist anymore
+subRegions: Shadow Temple Boss Door: Shadow Temple Boss Gateway:In doesn't exist anymore
+subRegions: Bongo Bongo Boss Room: Boss Shadow Temple Gateway:In doesn't exist anymore
+subRegions: Spirit Temple Boss Door: Spirit Temple Boss Gateway:In doesn't exist anymore
+subRegions: Twinrova Boss Room: Boss Spirit Temple Gateway:In doesn't exist anymore
+subRegions: Deku Tree Before Boss MQ: Deku Tree Boss Door doesn't exist anymore
+subRegions: Deku Tree Before Boss: Deku Tree Boss Door doesn't exist anymore
+subRegions: Dodongos Cavern Elevator MQ: Dodongos Cavern Torch Puzzle Lower MQ doesn't exist anymore
+subRegions: Dodongos Cavern Before Boss MQ: Dodongos Cavern Boss Door doesn't exist anymore
+subRegions: Dodongos Cavern Lobby: Dodongos Cavern Before Boss doesn't exist anymore
+subRegions: Dodongos Cavern Far Bridge: Dodongos Cavern Before Boss doesn't exist anymore
+subRegions: Dodongos Cavern Before Boss: Dodongos Cavern Boss Door doesn't exist anymore
+subRegions: Fire Temple Near Boss MQ: Fire Temple Boss Door doesn't exist anymore
+subRegions: Fire Temple Flame Maze MQ: Fire Temple Boss Door doesn't exist anymore
+subRegions: Fire Temple Lower: Fire Temple Boss Door doesn't exist anymore
+subRegions: Fire Temple Upper: Fire Temple Boss Door doesn't exist anymore
+subRegions: Forest Temple Central Area MQ: Forest Temple Before Boss MQ doesn't exist anymore
+subRegions: Forest Temple Before Boss MQ: Forest Temple Boss Door doesn't exist anymore
+subRegions: Forest Temple Central Area: Forest Temple Before Boss doesn't exist anymore
+subRegions: Forest Temple Before Boss: Forest Temple Boss Door doesn't exist anymore
+subRegions: Ganons Castle Water Trial MQ: Ganons Castle Water Trial Ending MQ doesn't exist anymore
+subRegions: Ganons Castle Shadow Trial MQ: Ganons Castle Shadow Trial Ending MQ doesn't exist anymore
+subRegions: Ganons Castle Forest Trial: Ganons Castle Forest Trial Ending doesn't exist anymore
+subRegions: Gerudo Training Ground Right Side MQ: Gerudo Training Ground Underwater MQ doesn't exist anymore
+subRegions: Gerudo Training Ground Back Areas MQ: Gerudo Training Ground Right Side MQ doesn't exist anymore
+subRegions: Gerudo Training Ground Central Maze Right MQ: Gerudo Training Ground Underwater MQ doesn't exist anymore
+subRegions: Gerudo Training Ground Lobby: Gerudo Training Ground Lava Room doesn't exist anymore
+subRegions: Gerudo Training Ground Lobby: Gerudo Training Ground Heavy Block Room doesn't exist anymore
+subRegions: Gerudo Training Ground Lava Room: Gerudo Training Ground Central Maze Right doesn't exist anymore
+subRegions: Gerudo Training Ground Lava Room: Gerudo Training Ground Hammer Room doesn't exist anymore
+subRegions: Gerudo Training Ground Central Maze Right: Gerudo Training Ground Lava Room doesn't exist anymore
+subRegions: Gerudo Training Ground Central Maze Right: Gerudo Training Ground Hammer Room doesn't exist anymore
+subRegions: Gerudo Training Ground Hammer Room: Gerudo Training Ground Lava Room doesn't exist anymore
+subRegions: Ice Cavern Beginning: Ice Cavern Spinning Blades doesn't exist anymore
+subRegions: Ice Cavern Spinning Blades: Ice Cavern Map Room doesn't exist anymore
+subRegions: Ice Cavern Spinning Blades: Ice Cavern Behind Ice Walls doesn't exist anymore
+subRegions: Jabu Jabus Belly Elevator Room MQ: Jabu Jabus Belly Before Boss MQ doesn't exist anymore
+subRegions: Jabu Jabus Belly Before Boss MQ: Jabu Jabus Belly Boss Door doesn't exist anymore
+subRegions: Jabu Jabus Belly Before Boss: Jabu Jabus Belly Boss Door doesn't exist anymore
+subRegions: Gerudo Fortress: GF Hall to Balcony Entrance doesn't exist anymore
+subRegions: GF Chest Roof: GF Hall to Balcony Entrance doesn't exist anymore
+subRegions: GF Hall to Balcony Entrance: Gerudo Fortress doesn't exist anymore
+subRegions: GF Hall to Balcony Entrance: Hideout Hall to Balcony Lower doesn't exist anymore
+subRegions: GF Balcony: Hideout Hall to Balcony Upper doesn't exist anymore
+subRegions: GF Balcony: GF Hall to Balcony Entrance doesn't exist anymore
+subRegions: Hideout Hall to Balcony Lower: GF Hall to Balcony Entrance doesn't exist anymore
+subRegions: Hideout Hall to Balcony Lower: Hideout Hall to Balcony Upper doesn't exist anymore
+subRegions: Hideout Hall to Balcony Upper: Hideout Hall to Balcony Lower doesn't exist anymore
+subRegions: Hideout Hall to Balcony Upper: GF Balcony doesn't exist anymore
+subRegions: Shadow Temple Upper Huge Pit MQ: Shadow Temple Invisible Blades MQ doesn't exist anymore
+subRegions: Shadow Temple Before Boss MQ: Shadow Temple Boss Door doesn't exist anymore
+subRegions: Shadow Temple Before Boss: Shadow Temple Boss Door doesn't exist anymore
+subRegions: Adult Spirit Temple MQ: Spirit Temple Boss Door doesn't exist anymore
+subRegions: Spirit Temple Shared MQ: Desert Colossus doesn't exist anymore
+subRegions: Spirit Temple Shifting Wall MQ: Spirit Temple Big Mirror Room MQ doesn't exist anymore
+subRegions: Spirit Temple Mirror Puzzle MQ: Spirit Temple Boss Door doesn't exist anymore
+subRegions: Spirit Temple Lobby: Child Spirit Temple doesn't exist anymore
+subRegions: Spirit Temple Central Chamber: Spirit Temple Boss Door doesn't exist anymore
+subRegions: Spirit Temple Central Chamber: Desert Colossus doesn't exist anymore
+subRegions: Spirit Temple Big Mirror Room: Spirit Temple Boss Door doesn't exist anymore
+subRegions: Water Temple Lobby MQ: Water Temple Boss Door doesn't exist anymore
+subRegions: Water Temple Basement Gated Areas MQ: Water Temple Freestanding Key Room MQ doesn't exist anymore
+subRegions: Water Temple Basement Gated Areas MQ: Water Temple Dodongo Room MQ doesn't exist anymore
+subRegions: Water Temple Lobby: Water Temple Boss Door doesn't exist anymore
 
 -------------------------------------------
 generate logic output
@@ -32,9 +341,101 @@ generate logic output
 -------------------------------------------
 locations not converted
 
+Bottom of the Well Basement Silver Rupee Wood Beam Front
+Bottom of the Well Basement Silver Rupee Wood Beam Back
+Bottom of the Well Basement Silver Rupee Ladders Bottom
+Bottom of the Well Basement Silver Rupee Ladders Middle
+Bottom of the Well Basement Silver Rupee Ladders Top
+Dodongos Cavern MQ Staircase Silver Rupee Beamos
+Dodongos Cavern MQ Staircase Silver Rupee Lower Crate
+Dodongos Cavern MQ Staircase Silver Rupee Mid Left Crate
+Dodongos Cavern MQ Staircase Silver Rupee Top Right Crate
+Dodongos Cavern MQ Staircase Silver Rupee Vines
+Ganons Castle MQ Water Trial Silver Rupee Hole
+Ganons Castle MQ Water Trial Silver Rupee Near Blocks
+Ganons Castle MQ Water Trial Silver Rupee Center Left
+Ganons Castle MQ Water Trial Silver Rupee Red Ice
+Ganons Castle MQ Water Trial Silver Rupee Above Void
+Ganons Castle MQ Shadow Trial Silver Rupee Moving Platform
+Ganons Castle MQ Shadow Trial Silver Rupee Bomb Flower
+Ganons Castle MQ Shadow Trial Silver Rupee First Beamos
+Ganons Castle MQ Shadow Trial Silver Rupee Last Beamos
+Ganons Castle MQ Shadow Trial Silver Rupee Guillotine
+Ganons Castle MQ Fire Trial Silver Rupee Rising Platform
+Ganons Castle MQ Fire Trial Silver Rupee Beamos
+Ganons Castle MQ Fire Trial Silver Rupee Left Front
+Ganons Castle MQ Fire Trial Silver Rupee Left Center
+Ganons Castle MQ Fire Trial Silver Rupee Left Back
+Ganons Castle Forest Trial Silver Rupee Front Right
+Ganons Castle Forest Trial Silver Rupee Front Left
+Ganons Castle Forest Trial Silver Rupee Back Right
+Ganons Castle Forest Trial Silver Rupee Back Center
+Ganons Castle Forest Trial Silver Rupee Center Left
+Ganons Castle Fire Trial Silver Rupee Right Back
+Ganons Castle Fire Trial Silver Rupee Flamethrower
+Ganons Castle Fire Trial Silver Rupee Right Center
+Ganons Castle Fire Trial Silver Rupee Right Front
+Ganons Castle Fire Trial Silver Rupee Inside Pillar
+Ganons Castle Light Trial Silver Rupee Right Alcove
+Ganons Castle Light Trial Silver Rupee Left Alcove
+Ganons Castle Light Trial Silver Rupee Center Top
+Ganons Castle Light Trial Silver Rupee Center Right
+Ganons Castle Light Trial Silver Rupee Center Left
+Ganons Castle Spirit Trial Silver Rupee Ceiling
+Ganons Castle Spirit Trial Silver Rupee Front Right
+Ganons Castle Spirit Trial Silver Rupee Center
+Ganons Castle Spirit Trial Silver Rupee Back Left
+Ganons Castle Spirit Trial Silver Rupee Back Right
+Gerudo Training Ground MQ Lava Room Silver Rupee Front Left
+Gerudo Training Ground MQ Lava Room Silver Rupee Front Center
+Gerudo Training Ground MQ Lava Room Silver Rupee Front Right
+Gerudo Training Ground MQ Lava Room Silver Rupee Back Center
+Gerudo Training Ground MQ Lava Room Silver Rupee Back Right
+Gerudo Training Ground MQ Lava Room Silver Rupee Back Left
+Gerudo Training Ground MQ Underwater Silver Rupee Middle
+Gerudo Training Ground MQ Underwater Silver Rupee Front Right
+Gerudo Training Ground MQ Underwater Silver Rupee Back Left
+Gerudo Training Ground MQ Icicle Room Silver Rupee Freezard
+Gerudo Training Ground MQ Icicle Room Silver Rupee Icicles
+Gerudo Training Ground MQ Icicle Room Silver Rupee Center
+Gerudo Training Ground MQ Icicle Room Silver Rupee Ceiling
+Gerudo Training Ground MQ Icicle Room Silver Rupee Above Void
+Gerudo Training Ground Lava Room Silver Rupee Front Left
+Gerudo Training Ground Lava Room Silver Rupee Front Right
+Gerudo Training Ground Lava Room Silver Rupee Flame Circle
+Gerudo Training Ground Lava Room Silver Rupee Center Right
+Gerudo Training Ground Underwater Silver Rupee Top
+Gerudo Training Ground Underwater Silver Rupee Bottom Center
+Gerudo Training Ground Underwater Silver Rupee Bottom Back Left
+Gerudo Training Ground Underwater Silver Rupee Middle
+Gerudo Training Ground Underwater Silver Rupee Bottom Front Right
+Gerudo Training Ground Boulder Room Silver Rupee Bottom Right
+Gerudo Training Ground Boulder Room Silver Rupee Bottom Left
+Gerudo Training Ground Boulder Room Silver Rupee Ledge
+Gerudo Training Ground Boulder Room Silver Rupee Top Left
+Gerudo Training Ground Boulder Room Silver Rupee Ceiling
+Gerudo Training Ground Lava Room Silver Rupee Hookshot Target
+Ice Cavern Spinning Scythe Pot 1
+Ice Cavern Spinning Scythe Pot 2
+Ice Cavern Spinning Scythe Pot 3
+Ice Cavern Spinning Scythe Flying Pot
+Ice Cavern Spinning Scythe Silver Rupee Icicles
+Ice Cavern Spinning Scythe Silver Rupee Center Left
+Ice Cavern Spinning Scythe Silver Rupee Center Back
+Ice Cavern Spinning Scythe Silver Rupee Center Right
+Ice Cavern Spinning Scythe Silver Rupee Ledge
+Ice Cavern Push Block Room Red Rupee 1
+Ice Cavern Push Block Room Red Rupee 2
+Ice Cavern Push Block Room Red Rupee 3
+Ice Cavern Push Block Silver Rupee Back Left
+Ice Cavern Push Block Silver Rupee Back Center
+Ice Cavern Push Block Silver Rupee Front Center
+Ice Cavern Push Block Silver Rupee Red Ice
+Ice Cavern Push Block Silver Rupee Front Left
 LW Trade Cojiro
 LW Trade Odd Potion
 LH Trade Eyeball Frog
+LH Loach Fishing
 GV Trade Poachers Saw
 ToT Child Altar Hint
 ToT Adult Altar Hint
@@ -47,6 +448,17 @@ Market Mask Shop Item 6
 Market Mask Shop Item 7
 Market Mask Shop Item 8
 Market Bombchu Bowling Bomb
+Market Treasure Chest Game Salesman
+Market Treasure Chest Game Room 1 Bottom
+Market Treasure Chest Game Room 1 Top
+Market Treasure Chest Game Room 2 Bottom
+Market Treasure Chest Game Room 2 Top
+Market Treasure Chest Game Room 3 Bottom
+Market Treasure Chest Game Room 3 Top
+Market Treasure Chest Game Room 4 Bottom
+Market Treasure Chest Game Room 4 Top
+Market Treasure Chest Game Room 5 Bottom
+Market Treasure Chest Game Room 5 Top
 Kak Anju Trade Pocket Cucco
 10 Skulltulas Reward Hint
 20 Skulltulas Reward Hint
@@ -60,18 +472,149 @@ DMT Trade Broken Sword
 DMT Trade Eyedrops
 ZR Frogs Ocarina Minigame Hint
 ZD Trade Prescription
+Shadow Temple MQ Scythe Shortcut Silver Rupee Center Left
+Shadow Temple MQ Scythe Shortcut Silver Rupee Ledge
+Shadow Temple MQ Scythe Shortcut Silver Rupee Back Alcove
+Shadow Temple MQ Scythe Shortcut Silver Rupee Left Alcove
+Shadow Temple MQ Scythe Shortcut Silver Rupee Center Right
+Shadow Temple MQ Invisible Blades Silver Rupee Back Left
+Shadow Temple MQ Invisible Blades Silver Rupee Back Right
+Shadow Temple MQ Invisible Blades Silver Rupee 1
+Shadow Temple MQ Invisible Blades Silver Rupee 2
+Shadow Temple MQ Invisible Blades Silver Rupee 3
+Shadow Temple MQ Invisible Blades Silver Rupee 4
+Shadow Temple MQ Invisible Blades Silver Rupee 5
+Shadow Temple MQ Invisible Blades Silver Rupee 6
+Shadow Temple MQ Invisible Blades Silver Rupee Like Like
+Shadow Temple MQ Invisible Blades Silver Rupee Song of Time Block
+Shadow Temple MQ Huge Pit Silver Rupee Center Front
+Shadow Temple MQ Huge Pit Silver Rupee Center Back
+Shadow Temple MQ Huge Pit Silver Rupee Right
+Shadow Temple MQ Huge Pit Silver Rupee Ceiling Upper
+Shadow Temple MQ Huge Pit Silver Rupee Ceiling Lower
+Shadow Temple MQ Invisible Spikes Silver Rupee Center Front
+Shadow Temple MQ Invisible Spikes Silver Rupee Center Right
+Shadow Temple MQ Invisible Spikes Silver Rupee Left Hookshot Target
+Shadow Temple MQ Invisible Spikes Silver Rupee Right Hookshot Target
+Shadow Temple MQ Invisible Spikes Silver Rupee Back Right
+Shadow Temple MQ Invisible Spikes Silver Rupee Ledge
+Shadow Temple MQ Invisible Spikes Silver Rupee Near Ledge
+Shadow Temple MQ Invisible Spikes Silver Rupee Ceiling Front
+Shadow Temple MQ Invisible Spikes Silver Rupee Ceiling Middle
+Shadow Temple MQ Invisible Spikes Silver Rupee Ceiling Back
+Shadow Temple Scythe Shortcut Silver Rupee Center Left
+Shadow Temple Scythe Shortcut Silver Rupee Ledge
+Shadow Temple Scythe Shortcut Silver Rupee Back Alcove
+Shadow Temple Scythe Shortcut Silver Rupee Left Alcove
+Shadow Temple Scythe Shortcut Silver Rupee Center Right
+Shadow Temple Huge Pit Silver Rupee Right
+Shadow Temple Huge Pit Silver Rupee Left
+Shadow Temple Huge Pit Silver Rupee Center
+Shadow Temple Huge Pit Silver Rupee Center Front
+Shadow Temple Huge Pit Silver Rupee Center Back
+Shadow Temple Invisible Spikes Silver Rupee Ledge
+Shadow Temple Invisible Spikes Silver Rupee Right
+Shadow Temple Invisible Spikes Silver Rupee Center
+Shadow Temple Invisible Spikes Silver Rupee Left
+Shadow Temple Invisible Spikes Silver Rupee Near Ledge
+Spirit Temple MQ Lobby and Lower Adult Silver Rupee Right Boulder
+Spirit Temple MQ Lobby and Lower Adult Silver Rupee Left Boulder
+Spirit Temple MQ Lobby and Lower Adult Silver Rupee Near Door
+Spirit Temple MQ Lobby and Lower Adult Silver Rupee Behind Water Jet
+Spirit Temple MQ Lobby and Lower Adult Silver Rupee Water Jet
+Spirit Temple MQ Adult Climb Silver Rupee 1
+Spirit Temple MQ Adult Climb Silver Rupee 2
+Spirit Temple MQ Adult Climb Silver Rupee 3
+Spirit Temple MQ Adult Climb Silver Rupee 4
+Spirit Temple MQ Adult Climb Silver Rupee 5
+Spirit Temple Child Early Torches Silver Rupee Top Right
+Spirit Temple Child Early Torches Silver Rupee Bottom Right
+Spirit Temple Child Early Torches Silver Rupee Bottom Left
+Spirit Temple Child Early Torches Silver Rupee Top Left
+Spirit Temple Child Early Torches Silver Rupee Near Torch
+Spirit Temple Adult Boulder Silver Rupee Ledge
+Spirit Temple Adult Boulder Silver Rupee Front Left
+Spirit Temple Adult Boulder Silver Rupee Front Right
+Spirit Temple Adult Boulder Silver Rupee Back Right
+Spirit Temple Adult Boulder Silver Rupee Back Left
+Spirit Temple Sun Block Room Silver Rupee Left
+Spirit Temple Sun Block Room Silver Rupee Center Front
+Spirit Temple Sun Block Room Silver Rupee Center Back
+Spirit Temple Sun Block Room Silver Rupee Right Front
+Spirit Temple Sun Block Room Silver Rupee Right Back
 
 -------------------------------------------
 values not converted
 
+'Defeat Queen Gohma'
+'Defeat King Dodongo'
+'Defeat Barinade'
+'Defeat Phantom Ganon'
+'Defeat Volvagia'
+'Defeat Morpha'
+logic_water_morpha
+'Defeat Bongo Bongo'
+'Defeat Twinrova'
+Silver_Rupee_Bottom_of_the_Well_Basement
+Silver_Rupee_Dodongos_Cavern_Staircase
+logic_dc_chu_eyes
+logic_fire_mq_child_flame
+logic_forest_courtyard_hearts
+logic_boomerang_boulders
+Silver_Rupee_Ganons_Castle_Water_Trial
+logic_lens_shadow_trial_mq
+Silver_Rupee_Ganons_Castle_Shadow_Trial
+Silver_Rupee_Ganons_Castle_Fire_Trial
+Silver_Rupee_Ganons_Castle_Forest_Trial
+shuffle_silver_rupees
+Silver_Rupee_Ganons_Castle_Light_Trial
+Silver_Rupee_Ganons_Castle_Spirit_Trial
+Silver_Rupee_Gerudo_Training_Ground_Lava
+Silver_Rupee_Gerudo_Training_Ground_Water
+Silver_Rupee_Gerudo_Training_Ground_Slopes
+logic_gtg_mq_eye_statue_jumpslash
+logic_gtg_mq_maze_right
+logic_gtg_flame_wall
+logic_ice_frozen_rupee
+Silver_Rupee_Ice_Cavern_Spinning_Scythe
+logic_ice_frozen_pot
+Silver_Rupee_Ice_Cavern_Push_Block
+logic_adult_kokiri_gs_hovers
+logic_adult_kokiri_gs_nothing
+Ocarina_A_Button
+Ocarina_C_down_Button
+Ocarina_C_right_Button
+Ocarina_C_left_Button
+Ocarina_C_up_Button
 adult_trade_shuffle
 shuffle_interior_entrances
-at_night {{7}}
+logic_gf_break_room_jump
+shuffle_expensive_merchants
 Keaton_Mask
 Spooky_Mask
 Bunny_Hood
+Small_Key_Treasure_Chest_Game
+logic_trail_gs_lower
 logic_zora_river_rupees
 Chicken
+Silver_Rupee_Shadow_Temple_Scythe_Shortcut
+Silver_Rupee_Shadow_Temple_Invisible_Blades
+Silver_Rupee_Shadow_Temple_Huge_Pit
+Silver_Rupee_Shadow_Temple_Invisible_Spikes
+logic_shadow_mq_after_boat_gs
+logic_shadow_triple_pots
+Silver_Rupee_Spirit_Temple_Lobby_and_Lower_Adult
+Silver_Rupee_Spirit_Temple_Adult_Climb
+Silver_Rupee_Spirit_Temple_Child_Early_Torches
+logic_spirit_fence_gs
+Silver_Rupee_Spirit_Temple_Adult_Boulders
+logic_spirit_adult_side_hovers
+logic_spirit_sun_chest_no_rupees
+Silver_Rupee_Spirit_Temple_Sun_Block
+logic_spirit_sun_chest_bow
+logic_water_mq_dark_link
+logic_water_north_basement
+shuffle_individual_ocarina_notes
 
 -------------------------------------------
 states not converted
@@ -96,6 +639,13 @@ shuffle_weird_egg
 shuffle_dungeon_entrances
 lacs_condition
 logic_man_on_roof
+Ice Cavern Spinning Blade Pot 1
+Ice Cavern Spinning Blade Pot 2
+Ice Cavern Spinning Blade Pot 3
+Ice Cavern Spinning Blade Flying Pot
+Ice Cavern Block Room Red Rupee 1
+Ice Cavern Block Room Red Rupee 2
+Ice Cavern Block Room Red Rupee 3
 
 
 -------------------------------------------
@@ -103,8 +653,10 @@ unused value translations
 
 Time_Travel
 is_starting_age
+Mask_Shop_Open
 Eyedrops_Access
 Carpenter_Rescue
+Deku_Tree_Clear
 Hammer
 Ice_Arrows
 Ice_Trap
@@ -112,9 +664,9 @@ Arrows
 Magic_Bean_Pack
 Biggoron_Sword
 Bottle_with_Letter
-Scarecrow_Song
 Buy_Blue_Fire
 shuffle_gerudo_card
+shuffle_overworld_entrances
 bombchus_in_logic
 shuffle_weird_egg
 skipped_trials[Forest]
@@ -123,21 +675,31 @@ skipped_trials[Water]
 skipped_trials[Shadow]
 skipped_trials[Spirit]
 skipped_trials[Light]
+logic_adult_kokiri_gs
+logic_trail_gs_lower_hookshot
+logic_trail_gs_lower_bean
 logic_crater_upper_to_lower
 logic_botw_cage_gs
 logic_jabu_scrub_jump_dive
 logic_jabu_boss_gs_adult
+logic_gtg_without_hookshot
+logic_gtg_mq_without_hookshot
+logic_gtg_mq_with_hookshot
 logic_forest_scarecrow
 logic_forest_mq_hallway_switch
 logic_fire_mq_bombable_chest
+logic_water_boss_key_region
 logic_water_dragon_bombchu
 logic_water_bk_chest
 logic_water_falling_platform_gs
 logic_lens_shadow_back
 logic_lens_shadow_mq_back
+logic_spirit_sun_chest
+logic_spirit_trial_hookshot
 logic_dc_mq_eyes
 logic_dc_mq_child_back
 logic_forest_mq_hallway_switch_hookshot
+logic_trail_gs_lower_hovers
 deadly_bonks
 blue_fire_arrows
 chicken_count
@@ -168,6 +730,7 @@ locations not converted
 LW Trade Cojiro
 LW Trade Odd Potion
 LH Trade Eyeball Frog
+LH Loach Fishing
 GV Trade Poachers Saw
 ToT Child Altar Hint
 ToT Adult Altar Hint
@@ -180,6 +743,17 @@ Market Mask Shop Item 6
 Market Mask Shop Item 7
 Market Mask Shop Item 8
 Market Bombchu Bowling Bomb
+Market Treasure Chest Game Salesman
+Market Treasure Chest Game Room 1 Bottom
+Market Treasure Chest Game Room 1 Top
+Market Treasure Chest Game Room 2 Bottom
+Market Treasure Chest Game Room 2 Top
+Market Treasure Chest Game Room 3 Bottom
+Market Treasure Chest Game Room 3 Top
+Market Treasure Chest Game Room 4 Bottom
+Market Treasure Chest Game Room 4 Top
+Market Treasure Chest Game Room 5 Bottom
+Market Treasure Chest Game Room 5 Top
 Kak Anju Trade Pocket Cucco
 10 Skulltulas Reward Hint
 20 Skulltulas Reward Hint
@@ -197,10 +771,18 @@ ZD Trade Prescription
 -------------------------------------------
 values not converted
 
+'Defeat Queen Gohma'
+Ocarina_A_Button
+Ocarina_C_down_Button
+Ocarina_C_right_Button
+Ocarina_C_left_Button
+Ocarina_C_up_Button
 Keaton_Mask
 Spooky_Mask
 Bunny_Hood
+Small_Key_Treasure_Chest_Game
 Chicken
+shuffle_individual_ocarina_notes
 
 -------------------------------------------
 states not converted
@@ -1223,7 +1805,6 @@ Arrows
 Magic_Bean_Pack
 Odd_Potion
 Bottle_with_Letter
-Scarecrow_Song
 Buy_Blue_Fire
 shuffle_gerudo_card
 entrance_shuffle

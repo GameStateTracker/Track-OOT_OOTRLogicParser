@@ -2,7 +2,7 @@ import Translation from "../../utils/Translation.js";
 
 export default function postCalculate(scope, input, age = ""/* , region = "", basic = false */) {
     const {missingState} = scope;
-    if (input.el == "age" && age != "") {
+    if (input.content == "age" && age != "") {
         if (input.value == age) {
             return {type: "true"};
         } else {
@@ -10,31 +10,31 @@ export default function postCalculate(scope, input, age = ""/* , region = "", ba
         }
     }
     const stapar = input.value.replace(/^'|'$/g, "");
-    const sta = Translation.getStateConfig(input.el);
+    const sta = Translation.getStateConfig(input.content);
     if (sta == null) {
-        const state = missingState.get(input.el) ?? {
+        const state = missingState.get(input.content) ?? {
             name: "",
             values: {}
         };
-        missingState.set(input.el, state);
+        missingState.set(input.content, state);
         state.values[stapar] = "";
         return {
             type: "state",
-            el: input.el,
+            content: input.content,
             value: stapar
         };
     } else {
         const value = sta.values[stapar];
         if (value == null) {
-            const state = missingState.get(input.el) ?? {
+            const state = missingState.get(input.content) ?? {
                 name: sta.name,
                 values: {}
             };
-            missingState.set(input.el, state);
+            missingState.set(input.content, state);
             state.values[stapar] = "";
             return {
                 type: "state",
-                el: sta.name,
+                content: sta.name,
                 value: stapar
             };
         } else if (typeof value === "object") {
@@ -42,7 +42,7 @@ export default function postCalculate(scope, input, age = ""/* , region = "", ba
         } else {
             return {
                 type: "state",
-                el: sta.name,
+                content: sta.name,
                 value: value
             };
         }

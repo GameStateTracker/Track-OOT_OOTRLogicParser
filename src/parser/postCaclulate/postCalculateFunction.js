@@ -5,23 +5,23 @@ import {
 
 export default function postCalculate(scope, input, age = ""/* , region = "", basic = false */) {
     let fnName = translateFunctionName(input.value);
-    let param = input.el[0];
+    let param = input.content[0];
     if (param != null) {
-        param = param.el
+        param = param.content
         const paramBuff = Translation.getValueName(param);
         if (paramBuff != null) {
-            param = paramBuff.el;
+            param = paramBuff.content;
         }
         fnName = `${fnName}(${param})`;
     }
     if (age != "") {
         return {
             type: "mixin",
-            el: `${fnName}{${age}}`
+            content: `${fnName}{${age}}`
         };
     }
     return {
         type: "mixin",
-        el: fnName
+        content: fnName
     };
 }
