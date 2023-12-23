@@ -111,7 +111,7 @@
             "hearts": "gbk_hearts",
             "triforce": {
                 "type": "value",
-                "el": "item[triforce_hunt]"
+                "content": "item[triforce_hunt]"
             }
         }
     },
@@ -354,9 +354,9 @@
         "values": {
             "off": {
                 "type": "not",
-                "el": {
+                "content": {
                     "type": "value",
-                    "el": "option[shuffle_overworld]"
+                    "content": "option[shuffle_overworld]"
                 }
             }
         }

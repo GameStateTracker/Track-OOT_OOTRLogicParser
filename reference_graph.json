@@ -2,22 +2,22 @@
     "A": {
         "B": {
             "type": "or",
-            "el": [
+            "content": [
                 {
                     "type": "number",
-                    "el": "item.item_0",
+                    "content": "item.item_0",
                     "category": "item"
                 },
                 {
                     "type": "number",
-                    "el": "item.item_1",
+                    "content": "item.item_1",
                     "category": "item"
                 }
             ]
         },
         "C": {
             "type": "number",
-            "el": "item.item_2",
+            "content": "item.item_2",
             "category": "item"
         },
         "D": {
@@ -35,7 +35,7 @@
         },
         "D": {
             "type": "number",
-            "el": "item.item_4",
+            "content": "item.item_4",
             "category": "item"
         }
     },
@@ -45,15 +45,15 @@
         },
         "C": {
             "type": "and",
-            "el": [
+            "content": [
                 {
                     "type": "number",
-                    "el": "item.item_1",
+                    "content": "item.item_1",
                     "category": "item"
                 },
                 {
                     "type": "number",
-                    "el": "item.item_3",
+                    "content": "item.item_3",
                     "category": "item"
                 }
             ]
