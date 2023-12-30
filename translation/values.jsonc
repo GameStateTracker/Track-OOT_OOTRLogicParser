@@ -805,6 +805,98 @@
         "type": "value",
         "content": "item[key_small_well]"
     },
+    "Small_Key_Treasure_Chest_Game": {
+        "type": "value",
+        "content": "item[key_small_treasure_game]"
+    },
+    "Silver_Rupee_Bottom_of_the_Well_Basement": {
+        "type": "value",
+        "content": "item[silver_rupee_well_basement]"
+    },
+    "Silver_Rupee_Dodongos_Cavern_Staircase": {
+        "type": "value",
+        "content": "item[silver_rupee_dodongo_staircase]"
+    },
+    "Silver_Rupee_Ganons_Castle_Forest_Trial": {
+        "type": "value",
+        "content": "item[silver_rupee_castle_ganon_trial_forest]"
+    },
+    "Silver_Rupee_Ganons_Castle_Fire_Trial": {
+        "type": "value",
+        "content": "item[silver_rupee_castle_ganon_trial_fire]"
+    },
+    "Silver_Rupee_Ganons_Castle_Water_Trial": {
+        "type": "value",
+        "content": "item[silver_rupee_castle_ganon_trial_water]"
+    },
+    "Silver_Rupee_Ganons_Castle_Shadow_Trial": {
+        "type": "value",
+        "content": "item[silver_rupee_castle_ganon_trial_shadow]"
+    },
+    "Silver_Rupee_Ganons_Castle_Spirit_Trial": {
+        "type": "value",
+        "content": "item[silver_rupee_castle_ganon_trial_spirit]"
+    },
+    "Silver_Rupee_Ganons_Castle_Light_Trial": {
+        "type": "value",
+        "content": "item[silver_rupee_castle_ganon_trial_light]"
+    },
+    "Silver_Rupee_Gerudo_Training_Ground_Lava": {
+        "type": "value",
+        "content": "item[silver_rupee_training_grounds_lava]"
+    },
+    "Silver_Rupee_Gerudo_Training_Ground_Water": {
+        "type": "value",
+        "content": "item[silver_rupee_training_grounds_water]"
+    },
+    "Silver_Rupee_Gerudo_Training_Ground_Slopes": {
+        "type": "value",
+        "content": "item[silver_rupee_training_grounds_slopes]"
+    },
+    "Silver_Rupee_Ice_Cavern_Spinning_Scythe": {
+        "type": "value",
+        "content": "item[silver_rupee_ice_cavern_spinning_scythe]"
+    },
+    "Silver_Rupee_Ice_Cavern_Push_Block": {
+        "type": "value",
+        "content": "item[silver_rupee_ice_cavern_block_push]"
+    },
+    "Silver_Rupee_Shadow_Temple_Scythe_Shortcut": {
+        "type": "value",
+        "content": "item[silver_rupee_temple_shadow_scythe_shortcut]"
+    },
+    "Silver_Rupee_Shadow_Temple_Invisible_Blades": {
+        "type": "value",
+        "content": "item[silver_rupee_temple_shadow_invisible_blades]"
+    },
+    "Silver_Rupee_Shadow_Temple_Huge_Pit": {
+        "type": "value",
+        "content": "item[silver_rupee_temple_shadow_huge_pit]"
+    },
+    "Silver_Rupee_Shadow_Temple_Invisible_Spikes": {
+        "type": "value",
+        "content": "item[silver_rupee_temple_shadow_invisible_spikes]"
+    },
+    "Silver_Rupee_Spirit_Temple_Lobby_and_Lower_Adult": {
+        "type": "value",
+        "content": "item[silver_rupee_temple_spirit_lobby_and_lower_adult]"
+    },
+    "Silver_Rupee_Spirit_Temple_Adult_Climb": {
+        "type": "value",
+        "content": "item[silver_rupee_temple_spirit_adult_climb]"
+    },
+    "Silver_Rupee_Spirit_Temple_Child_Early_Torches": {
+        "type": "value",
+        "content": "item[silver_rupee_temple_spirit_child_early_torches]"
+    },
+    "Silver_Rupee_Spirit_Temple_Adult_Boulders": {
+        "type": "value",
+        "content": "item[silver_rupee_temple_spirit_adult_boulders]"
+    },
+    "Silver_Rupee_Spirit_Temple_Sun_Block": {
+        "type": "value",
+        "content": "item[silver_rupee_temple_spirit_sun_block]"
+    },
     //"item[compass_deku]",
     //"item[dungeon_map_deku]",
     //"item[compass_dodongo]",
@@ -925,6 +1017,10 @@
         "type": "value",
         "content": "option[gerudo_card_shuffle]"
     },
+    "shuffle_silver_rupees": {
+        "type": "value",
+        "content": "option[shuffle_silver_rupees]"
+    },
     "entrance_shuffle": {
         "type": "or",
         "content": [
@@ -973,56 +1069,14 @@
             }
         ]
     },
-    /*"shuffle_special_indoor_entrances": {
-        "type": "and",
-        "content": [
-            {
-                "type": "not",
-                "content": {
-                    "type": "state",
-                    "content": "option[entrance_shuffle]",
-                    "value": "entrance_shuffle_off"
-                }
-            },
-            {
-                "type": "not",
-                "content": {
-                    "type": "state",
-                    "content": "option[entrance_shuffle]",
-                    "value": "entrance_shuffle_dungeon"
-                }
-            }
-        ]
-    },
     "shuffle_interior_entrances": {
-        "type": "and",
-        "content": [
-            {
-                "type": "not",
-                "content": {
-                    "type": "state",
-                    "content": "option[entrance_shuffle]",
-                    "value": "entrance_shuffle_off"
-                }
-            },
-            {
-                "type": "not",
-                "content": {
-                    "type": "state",
-                    "content": "option[entrance_shuffle]",
-                    "value": "entrance_shuffle_dungeon"
-                }
-            },
-            {
-                "type": "not",
-                "content": {
-                    "type": "state",
-                    "content": "option[entrance_shuffle]",
-                    "value": "entrance_shuffle_simple"
-                }
-            }
-        ]
-    },*/
+        "type": "not",
+        "content": {
+            "type": "state",
+            "content": "option[entrance_shuffle_interior]",
+            "value": "entrance_shuffle_off"
+        }
+    },
     "shuffle_overworld_entrances": {
         "type": "value",
         "content": "option[shuffle_overworld]"
@@ -1032,10 +1086,6 @@
         "content": "option[small_key_logic]",
         "value": "keylogic_keysanity"
     },
-    "bombchus_in_logic": {
-        "type": "value",
-        "content": "option[bombchu_logic]"
-    },
     "free_bombchu_drops": {
         "type": "value",
         "content": "option[bombchu_logic]"
@@ -1043,6 +1093,10 @@
     "shuffle_weird_egg": {
         "type": "value",
         "content": "option[shuffle_egg]"
+    },
+    "shuffle_expensive_merchants": {
+        "type": "value",
+        "content": "option[shuffle_expensive_merchants]"
     },
     "fix_broken_drops": {
         "type": "value",

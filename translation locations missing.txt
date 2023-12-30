@@ -1,0 +1,51 @@
+# adult trade
+
+LW Trade Cojiro
+LW Trade Odd Potion
+LH Trade Eyeball Frog
+GV Trade Poachers Saw
+DMT Trade Broken Sword
+DMT Trade Eyedrops
+ZD Trade Prescription
+Kak Granny Trade Odd Mushroom
+Kak Anju Trade Pocket Cucco
+
+# shops
+
+Market Mask Shop Item 1
+Market Mask Shop Item 2
+Market Mask Shop Item 3
+Market Mask Shop Item 4
+Market Mask Shop Item 5
+Market Mask Shop Item 6
+Market Mask Shop Item 7
+Market Mask Shop Item 8
+Kak Granny Buy Blue Potion
+
+# minigames
+
+Market Treasure Chest Game Salesman
+Market Treasure Chest Game Room 1 Bottom
+Market Treasure Chest Game Room 1 Top
+Market Treasure Chest Game Room 2 Bottom
+Market Treasure Chest Game Room 2 Top
+Market Treasure Chest Game Room 3 Bottom
+Market Treasure Chest Game Room 3 Top
+Market Treasure Chest Game Room 4 Bottom
+Market Treasure Chest Game Room 4 Top
+Market Treasure Chest Game Room 5 Bottom
+Market Treasure Chest Game Room 5 Top
+Market Bombchu Bowling Bomb
+LH Loach Fishing
+
+# hints
+
+ToT Child Altar Hint
+ToT Adult Altar Hint
+10 Skulltulas Reward Hint
+20 Skulltulas Reward Hint
+30 Skulltulas Reward Hint
+40 Skulltulas Reward Hint
+50 Skulltulas Reward Hint
+Dampe Diary Hint
+ZR Frogs Ocarina Minigame Hint

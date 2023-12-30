@@ -19,7 +19,7 @@
         "option[cowsanity]": true,
         "option[beansanity]": true,
         "option[skullsanity]": false,
-        "option[shuffleMediCarpet]": true,
+        "option[shuffle_expensive_merchants]": true,
         "option[doors_open_forest]": "doors_open_forest_closed",
         "option[doors_open_mountain]": false,
         "option[doors_open_temple]": true,

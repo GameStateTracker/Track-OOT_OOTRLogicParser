@@ -1,7 +1,0 @@
-adult_trade_shuffle
-shuffle_interior_entrances
-Keaton_Mask
-Spooky_Mask
-Bunny_Hood
-logic_zora_river_rupees
-Chicken

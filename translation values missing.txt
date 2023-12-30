@@ -1,0 +1,59 @@
+
+
+
+
+'Defeat Queen Gohma'
+'Defeat King Dodongo'
+'Defeat Barinade'
+'Defeat Phantom Ganon'
+'Defeat Volvagia'
+'Defeat Morpha'
+'Defeat Bongo Bongo'
+'Defeat Twinrova'
+
+# adult trade sequence
+
+adult_trade_shuffle
+
+# child trade sequence
+
+Chicken
+Keaton_Mask
+Spooky_Mask
+Bunny_Hood
+
+# shuffle ocarina notes
+
+shuffle_individual_ocarina_notes
+Ocarina_A_Button
+Ocarina_C_down_Button
+Ocarina_C_right_Button
+Ocarina_C_left_Button
+Ocarina_C_up_Button
+
+# logic
+
+logic_water_morpha
+logic_dc_chu_eyes
+logic_fire_mq_child_flame
+logic_forest_courtyard_hearts
+logic_boomerang_boulders
+logic_lens_shadow_trial_mq
+logic_gtg_mq_eye_statue_jumpslash
+logic_gtg_mq_maze_right
+logic_gtg_flame_wall
+logic_ice_frozen_rupee
+logic_ice_frozen_pot
+logic_adult_kokiri_gs_hovers
+logic_adult_kokiri_gs_nothing
+logic_gf_break_room_jump
+logic_trail_gs_lower
+logic_zora_river_rupees
+logic_shadow_mq_after_boat_gs
+logic_shadow_triple_pots
+logic_spirit_fence_gs
+logic_spirit_adult_side_hovers
+logic_spirit_sun_chest_no_rupees
+logic_spirit_sun_chest_bow
+logic_water_mq_dark_link
+logic_water_north_basement
