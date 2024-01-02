@@ -448,7 +448,7 @@
     },
     "Pocket_Cucco": {
         "type": "value",
-        "ref": "item[pocket_cocco]"
+        "ref": "item[pocket_cucco]"
     },
     "Cojiro": {
         "type": "value",
