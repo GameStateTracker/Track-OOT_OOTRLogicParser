@@ -1,36 +1,6 @@
 
 
 
-
-'Defeat Queen Gohma'
-'Defeat King Dodongo'
-'Defeat Barinade'
-'Defeat Phantom Ganon'
-'Defeat Volvagia'
-'Defeat Morpha'
-'Defeat Bongo Bongo'
-'Defeat Twinrova'
-
-# adult trade sequence
-
-adult_trade_shuffle
-
-# child trade sequence
-
-Chicken
-Keaton_Mask
-Spooky_Mask
-Bunny_Hood
-
-# shuffle ocarina notes
-
-shuffle_individual_ocarina_notes
-Ocarina_A_Button
-Ocarina_C_down_Button
-Ocarina_C_right_Button
-Ocarina_C_left_Button
-Ocarina_C_up_Button
-
 # logic
 
 logic_water_morpha

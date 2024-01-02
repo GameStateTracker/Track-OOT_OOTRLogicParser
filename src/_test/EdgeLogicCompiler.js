@@ -4,9 +4,8 @@ const TRANSPILERS = {
     "false":    () => "0",
     "string":   (logic) => escape(logic.content),
     "number":   (logic) => toNumber(logic.content),
-    "value":    (logic) => `(val("${escape(logic.content)}")||0)`,
-    "pointer":  (logic) => `(val(val("${escape(logic.content)}")||"")||0)`,
-    "state":    (logic) => `(val("${escape(logic.content)}")||"")=="${escape(logic.value)}"`,
+    "value":    (logic) => `(val("${escape(logic.ref)}")||0)`,
+    "state":    (logic) => `(val("${escape(logic.ref)}")||"")=="${escape(logic.value)}"`,
 
     /* operators */
     "and":      (logic) => `${multiElementOperation(logic.content, "&&")}`,
@@ -39,7 +38,7 @@ const TRANSPILERS = {
 
     /* special */
     "at":       (logic) => logic.content ? `((val("${escape(logic.node)}")||0)&&${buildLogic(logic.content)})` : `(val("${escape(logic.node)}")||0)`,
-    "mixin":    (logic) => `execute("${escape(logic.content)}")`
+    "mixin":    (logic) => `execute("${escape(logic.ref)}")`
 };
 
 let dependencies = null;

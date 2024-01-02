@@ -12,8 +12,8 @@ export default class Operator extends AbstractOperator {
     toJSON()  {
         return {
             type: "function",
-            value: this.#ref,
-            content: this.children.map((e) => e.toJSON())
+            ref: this.#ref,
+            params: this.children.map((e) => e.toJSON())
         };
     }
 

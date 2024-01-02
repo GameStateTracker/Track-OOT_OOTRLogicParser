@@ -13,566 +13,526 @@
     /* mixins */
     "is_child": {
         "type": "mixin",
-        "content": "mixin[is_child]"
+        "ref": "mixin[is_child]"
     },
     "is_adult": {
         "type": "mixin",
-        "content": "mixin[is_adult]"
+        "ref": "mixin[is_adult]"
     },
     "at_night": {
         "type": "mixin",
-        "content": "mixin[is_night]"
+        "ref": "mixin[is_night]"
     },
     "at_night_gs": {
         "type": "mixin",
-        "content": "mixin[is_night_gs]"
+        "ref": "mixin[is_night_gs]"
     },
     "at_day": {
         "type": "mixin",
-        "content": "mixin[is_day]"
+        "ref": "mixin[is_day]"
     },
     "Forest_Temple_Jo_and_Beth": {
         "type": "value",
-        "content": "event[forest_temple_jo_and_beth]"
+        "ref": "event[forest_temple_jo_and_beth]"
     },
     "Forest_Temple_Amy_and_Meg": {
         "type": "value",
-        "content": "event[forest_temple_amy_and_meg]"
+        "ref": "event[forest_temple_amy_and_meg]"
     },
     "at_dampe_time": {
         "type": "mixin",
-        "content": "mixin[is_night]"
+        "ref": "mixin[is_night]"
     },
     /* specials */
     "Showed_Mido_Sword_&_Shield": {
         "type": "value",
-        "content": "event[showed_mido_sword_&_shield]"
+        "ref": "event[showed_mido_sword_&_shield]"
     },
     "Drain_Well": {
         "type": "value",
-        "content": "event[drain_well]"
+        "ref": "event[drain_well]"
     },
     "Kakariko_Village_Gate_Open": {
         "type": "value",
-        "content": "event[kakariko_village_gate_open]"
+        "ref": "event[kakariko_village_gate_open]"
     },
     "Wake_Up_Adult_Talon": {
         "type": "value",
-        "content": "event[wake_up_adult_talon]"
+        "ref": "event[wake_up_adult_talon]"
     },
     "GC_Woods_Warp_Open": {
         "type": "value",
-        "content": "event[gc_woods_warp_open]"
+        "ref": "event[gc_woods_warp_open]"
     },
     "Goron_City_Child_Fire": {
         "type": "value",
-        "content": "event[goron_city_child_fire]"
+        "ref": "event[goron_city_child_fire]"
     },
     "Stop_GC_Rolling_Goron_as_Adult": {
         "type": "value",
-        "content": "event[stop_gc_rolling_goron_as_adult]"
+        "ref": "event[stop_gc_rolling_goron_as_adult]"
     },
     "Child_Water_Temple": {
         "type": "value",
-        "content": "event[child_water_temple]"
+        "ref": "event[child_water_temple]"
     },
     "had_night_start": {
         "type": "value",
-        "content": "option[time_start_night]"
+        "ref": "option[time_start_night]"
     },
     "Links_Cow": {
         "type": "value",
-        "content": "event[links_cow]"
+        "ref": "event[links_cow]"
     },
     "Epona": {
         "type": "value",
-        "content": "event[epona]"
+        "ref": "event[epona]"
     },
     "Big_Poe": {
         "type": "value",
-        "content": "reach_location[big_poe_kill]"
+        "ref": "reach_location[big_poe_kill]"
     },
     "Bonooru": {
         "type": "value",
-        "content": "event[bonooru]"
+        "ref": "event[bonooru]"
     },
     "Dampes_Windmill_Access": {
         "type": "value",
-        "content": "event[dampes_windmill_access]"
+        "ref": "event[dampes_windmill_access]"
     },
     "Cojiro_Access": {
         "type": "value",
-        "content": "event[cojiro_access]"
+        "ref": "event[cojiro_access]"
     },
     "Mask_Shop_Open": {
         "type": "value",
-        "content": "event[mask_shop_open]"
+        "ref": "event[mask_shop_open]"
     },
     "Odd_Potion_Access": {
         "type": "value",
-        "content": "event[odd_potion_access]"
+        "ref": "event[odd_potion_access]"
     },
     "Eyeball_Frog_Access": {
         "type": "value",
-        "content": "event[eyeball_frog_access]"
+        "ref": "event[eyeball_frog_access]"
     },
     "Poachers_Saw_Access": {
         "type": "value",
-        "content": "event[poachers_saw_access]"
+        "ref": "event[poachers_saw_access]"
     },
     "Odd_Mushroom_Access": {
         "type": "value",
-        "content": "event[odd_mushroom_access]"
+        "ref": "event[odd_mushroom_access]"
     },
     "Broken_Sword_Access": {
         "type": "value",
-        "content": "event[broken_sword_access]"
+        "ref": "event[broken_sword_access]"
     },
     "Prescription_Access": {
         "type": "value",
-        "content": "event[prescription_access]"
+        "ref": "event[prescription_access]"
     },
     "Eyedrops_Access": {
         "type": "value",
-        "content": "event[eyedrops_access]"
+        "ref": "event[eyedrops_access]"
     },
     "disable_trade_revert": {
-        "type": "and",
+        "type": "or",
         "content": [
             {
                 "type": "not",
                 "content": {
                     "type": "state",
-                    "content": "option[entrance_shuffle]",
+                    "ref": "option[entrance_shuffle_interior]",
                     "value": "entrance_shuffle_off"
                 }
             },
             {
-                "type": "not",
-                "content": {
-                    "type": "state",
-                    "content": "option[entrance_shuffle]",
-                    "value": "entrance_shuffle_dungeon"
-                }
+                "type": "value",
+                "ref": "option[shuffle_overworld]"
+            },
+            {
+                "type": "value",
+                "ref": "option[adult_trade_shuffle]"
             }
         ]
     },
     "Carpenter_Rescue": {
         "type": "value",
-        "content": "event[carpenter_rescue]"
+        "ref": "event[carpenter_rescue]"
     },
     "Hideout_1_Torch_Jail_Gerudo": {
         "type": "value",
-        "content": "event[hideout_1_torch_jail_gerudo]"
+        "ref": "event[hideout_1_torch_jail_gerudo]"
     },
     "Hideout_2_Torches_Jail_Gerudo": {
         "type": "value",
-        "content": "event[hideout_2_torches_jail_gerudo]"
+        "ref": "event[hideout_2_torches_jail_gerudo]"
     },
     "Hideout_3_Torches_Jail_Gerudo": {
         "type": "value",
-        "content": "event[hideout_3_torches_jail_gerudo]"
+        "ref": "event[hideout_3_torches_jail_gerudo]"
     },
     "Hideout_4_Torches_Jail_Gerudo": {
         "type": "value",
-        "content": "event[hideout_4_torches_jail_gerudo]"
+        "ref": "event[hideout_4_torches_jail_gerudo]"
     },
     "Hideout_1_Torch_Jail_Carpenter": {
         "type": "value",
-        "content": "event[hideout_1_torch_jail_carpenter]"
+        "ref": "event[hideout_1_torch_jail_carpenter]"
     },
     "Hideout_2_Torches_Jail_Carpenter": {
         "type": "value",
-        "content": "event[hideout_2_torches_jail_carpenter]"
+        "ref": "event[hideout_2_torches_jail_carpenter]"
     },
     "Hideout_3_Torches_Jail_Carpenter": {
         "type": "value",
-        "content": "event[hideout_3_torches_jail_carpenter]"
+        "ref": "event[hideout_3_torches_jail_carpenter]"
     },
     "Hideout_4_Torches_Jail_Carpenter": {
         "type": "value",
-        "content": "event[hideout_4_torches_jail_carpenter]"
+        "ref": "event[hideout_4_torches_jail_carpenter]"
     },
     "GF_Gate_Open": {
         "type": "value",
-        "content": "event[gf_gate_open]"
+        "ref": "event[gf_gate_open]"
     },
     "King_Zora_Thawed": {
         "type": "value",
-        "content": "event[king_zora_thawed]"
+        "ref": "event[king_zora_thawed]"
     },
     "Deku_Tree_Clear": {
         "type": "value",
-        "content": "event[deku_tree_clear]"
+        "ref": "event[deku_tree_clear]"
     },
     "Water_Temple_Clear": {
         "type": "value",
-        "content": "event[water_temple_clear]"
+        "ref": "event[water_temple_clear]"
     },
     "Forest_Trial_Clear": {
         "type": "value",
-        "content": "event[forest_trial_clear]"
+        "ref": "event[forest_trial_clear]"
     },
     "Fire_Trial_Clear": {
         "type": "value",
-        "content": "event[fire_trial_clear]"
+        "ref": "event[fire_trial_clear]"
     },
     "Water_Trial_Clear": {
         "type": "value",
-        "content": "event[water_trial_clear]"
+        "ref": "event[water_trial_clear]"
     },
     "Shadow_Trial_Clear": {
         "type": "value",
-        "content": "event[shadow_trial_clear]"
+        "ref": "event[shadow_trial_clear]"
     },
     "Spirit_Trial_Clear": {
         "type": "value",
-        "content": "event[spirit_trial_clear]"
+        "ref": "event[spirit_trial_clear]"
     },
     "Light_Trial_Clear": {
         "type": "value",
-        "content": "event[light_trial_clear]"
+        "ref": "event[light_trial_clear]"
     },
     "Raise_Water_Level": {
         "type": "value",
-        "content": "event[raise_water_level]"
+        "ref": "event[raise_water_level]"
     },
     "Jabu_Jabus_Belly_Floor_Lowered": {
         "type": "value",
-        "content": "event[jabu_jabus_belly_floor_lowered]"
+        "ref": "event[jabu_jabus_belly_floor_lowered]"
     },
     "Jabu_Jabus_Belly_Parasitic_Tentacle_Cleared": {
         "type": "value",
-        "content": "event[jabu_jabus_belly_parasitic_tentacle_cleared]"
+        "ref": "event[jabu_jabus_belly_parasitic_tentacle_cleared]"
     },
     /* items */
     "Bow": {
         "type": "value",
-        "content": "item[bow]"
+        "ref": "item[bow]"
     },
     "Progressive_Hookshot": {
         "type": "value",
-        "content": "item[hookshot]"
+        "ref": "item[hookshot]"
     },
     "Hookshot": {
         "type": "value",
-        "content": "item[hookshot]"
+        "ref": "item[hookshot]"
     },
     "Longshot": {
         "type": "value",
-        "content": "mixin[longshot]"
+        "ref": "mixin[longshot]"
     },
     "Megaton_Hammer": {
         "type": "value",
-        "content": "item[hammer]"
+        "ref": "item[hammer]"
     },
     "Hammer": {
         "type": "value",
-        "content": "item[hammer]"
+        "ref": "item[hammer]"
     },
     "Sticks": {
         "type": "value",
-        "content": "item[stick]"
+        "ref": "item[stick]"
     },
     "Buy_Deku_Stick_1": {
         "type": "value",
-        "content": "item[stick_1]"
+        "ref": "item[stick_1]"
     },
     "Deku_Stick_Drop": {
         "type": "value",
-        "content": "item[stick]"
+        "ref": "item[stick]"
     },
     "Nuts": {
         "type": "value",
-        "content": "item[nut]"
+        "ref": "item[nut]"
     },
     "Buy_Deku_Nut_5": {
         "type": "value",
-        "content": "item[nut_5]"
+        "ref": "item[nut_5]"
     },
     "Buy_Deku_Nut_10": {
         "type": "value",
-        "content": "item[nut_10]"
+        "ref": "item[nut_10]"
     },
     "Deku_Nut_Drop": {
         "type": "value",
-        "content": "item[nut]"
+        "ref": "item[nut]"
     },
     "Slingshot": {
         "type": "value",
-        "content": "item[slingshot]"
+        "ref": "item[slingshot]"
     },
     "Boomerang": {
         "type": "value",
-        "content": "item[boomerang]"
+        "ref": "item[boomerang]"
     },
     "Bomb_Bag": {
         "type": "value",
-        "content": "item[bombs]"
+        "ref": "item[bombs]"
     },
     "Bombs": {
         "type": "value",
-        "content": "item[bombs]"
+        "ref": "item[bombs]"
     },
     "Bombchus": {
         "type": "value",
-        "content": "item[bombchu]"
+        "ref": "item[bombchu]"
     },
     "Bombchu_Drop": {
         "type": "value",
-        "content": "item[bombchu]"
+        "ref": "item[bombchu]"
     },
     "Bombchus_5": {
         "type": "value",
-        "content": "item[bombchu_5]"
+        "ref": "item[bombchu_5]"
     },
     "Bombchus_10": {
         "type": "value",
-        "content": "item[bombchu_10]"
+        "ref": "item[bombchu_10]"
     },
     "Bombchus_20": {
         "type": "value",
-        "content": "item[bombchu_20]"
+        "ref": "item[bombchu_20]"
     },
     "Buy_Bombchu_5": {
         "type": "value",
-        "content": "item[bombchu_5]"
+        "ref": "item[bombchu_5]"
     },
     "Buy_Bombchu_10": {
         "type": "value",
-        "content": "item[bombchu_10]"
+        "ref": "item[bombchu_10]"
     },
     "Buy_Bombchu_20": {
         "type": "value",
-        "content": "item[bombchu_20]"
+        "ref": "item[bombchu_20]"
     },
     "Lens_of_Truth": {
         "type": "value",
-        "content": "item[lens]"
+        "ref": "item[lens]"
     },
     "Dins_Fire": {
         "type": "value",
-        "content": "item[magic_din]"
+        "ref": "item[magic_din]"
     },
     "Farores_Wind": {
         "type": "value",
-        "content": "item[magic_farore]"
+        "ref": "item[magic_farore]"
     },
     "Nayrus_Love": {
         "type": "value",
-        "content": "item[magic_nayru]"
+        "ref": "item[magic_nayru]"
     },
     "Fire_Arrows": {
         "type": "value",
-        "content": "item[arrow_fire]"
+        "ref": "item[arrow_fire]"
     },
     "Ice_Arrows": {
         "type": "value",
-        "content": "item[arrow_ice]"
+        "ref": "item[arrow_ice]"
     },
     "Light_Arrows": {
         "type": "value",
-        "content": "item[arrow_light]"
+        "ref": "item[arrow_light]"
     },
     "Ice_Trap": {
         "type": "value",
-        "content": "item[ice_trap]"
+        "ref": "item[ice_trap]"
     },
     "Triforce_Piece": {
         "type": "value",
-        "content": "item[triforce_piece]"
+        "ref": "item[triforce_piece]"
     },
     "Arrows": {
         "type": "value",
-        "content": "item[arrows]"
+        "ref": "item[arrows]"
     },
     "Ocarina": {
         "type": "mixin",
-        "content": "mixin[can_play_ocarina]"
+        "ref": "mixin[can_play_ocarina]"
     },
     "has_bottle": {
         "type": "value",
-        "content": "item[bottle]"
+        "ref": "item[bottle]"
     },
     "Progressive_Wallet": {
         "type": "value",
-        "content": "item[wallet]"
+        "ref": "item[wallet]"
     },
     "Magic_Bean": {
         "type": "value",
-        "content": "item[bean]"
+        "ref": "item[bean]"
     },
     "Magic_Bean_Pack": {
         "type": "value",
-        "content": "item[bean]"
+        "ref": "item[bean]"
     },
     "Gold_Skulltula_Token": {
         "type": "value",
-        "content": "item[skulltula]"
+        "ref": "item[skulltula]"
     },
     "Weird_Egg": {
         "type": "value",
-        "content": "item[egg]"
+        "ref": "item[weird_egg]"
+    },
+    "Chicken": {
+        "type": "value",
+        "ref": "item[chicken]"
     },
     "Zeldas_Letter": {
-        "type": "min",
-        "content": {
-            "type": "value",
-            "content": "item[egg]"
-        },
-        "value": 3
+        "type": "value",
+        "ref": "item[zeldas_letter]"
+    },
+    "Keaton_Mask": {
+        "type": "value",
+        "ref": "item[mask_keaton]"
     },
     "Skull_Mask": {
-        "type": "min",
-        "content": {
-            "type": "value",
-            "content": "item[egg]"
-        },
-        "value": 5
+        "type": "value",
+        "ref": "item[mask_skull]"
+    },
+    "Spooky_Mask": {
+        "type": "value",
+        "ref": "item[mask_spooky]"
+    },
+    "Bunny_Hood": {
+        "type": "value",
+        "ref": "item[mask_bunny]"
     },
     "Mask_of_Truth": {
-        "type": "min",
-        "content": {
-            "type": "value",
-            "content": "item[egg]"
-        },
-        "value": 8
+        "type": "value",
+        "ref": "item[mask_truth]"
     },
     "Pocket_Egg": {
-        "type": "min",
-        "content": {
-            "type": "value",
-            "content": "item[cojiro]"
-        },
-        "value": 1
+        "type": "value",
+        "ref": "item[pocket_egg]"
     },
     "Pocket_Cucco": {
-        "type": "min",
-        "content": {
-            "type": "value",
-            "content": "item[cojiro]"
-        },
-        "value": 2
+        "type": "value",
+        "ref": "item[pocket_cocco]"
     },
     "Cojiro": {
-        "type": "min",
-        "content": {
-            "type": "value",
-            "content": "item[cojiro]"
-        },
-        "value": 3
+        "type": "value",
+        "ref": "item[cojiro]"
     },
     "Odd_Mushroom": {
-        "type": "min",
-        "content": {
-            "type": "value",
-            "content": "item[cojiro]"
-        },
-        "value": 4
+        "type": "value",
+        "ref": "item[odd_mushroom]"
     },
     "Odd_Potion": {
-        "type": "min",
-        "content": {
-            "type": "value",
-            "content": "item[cojiro]"
-        },
-        "value": 5
+        "type": "value",
+        "ref": "item[odd_potion]"
     },
     "Poachers_Saw": {
-        "type": "min",
-        "content": {
-            "type": "value",
-            "content": "item[cojiro]"
-        },
-        "value": 6
+        "type": "value",
+        "ref": "item[poachers_saw]"
     },
     "Broken_Sword": {
-        "type": "min",
-        "content": {
-            "type": "value",
-            "content": "item[cojiro]"
-        },
-        "value": 7
+        "type": "value",
+        "ref": "item[broken_sword]"
     },
     "Prescription": {
-        "type": "min",
-        "content": {
-            "type": "value",
-            "content": "item[cojiro]"
-        },
-        "value": 8
+        "type": "value",
+        "ref": "item[prescription]"
     },
     "Eyeball_Frog": {
-        "type": "min",
-        "content": {
-            "type": "value",
-            "content": "item[cojiro]"
-        },
-        "value": 9
+        "type": "value",
+        "ref": "item[eyeball_frog]"
     },
     "Eyedrops": {
-        "type": "min",
-        "content": {
-            "type": "value",
-            "content": "item[cojiro]"
-        },
-        "value": 10
+        "type": "value",
+        "ref": "item[eyedrops]"
     },
     "Claim_Check": {
-        "type": "min",
-        "content": {
-            "type": "value",
-            "content": "item[cojiro]"
-        },
-        "value": 11
+        "type": "value",
+        "ref": "item[claim_check]"
     },
     //"item[cojiro]",
     "Kokiri_Sword": {
         "type": "value",
-        "content": "item[sword_kokiri]"
+        "ref": "item[sword_kokiri]"
     },
     //"item[sword_master]",
     "Biggoron_Sword": {
         "type": "value",
-        "content": "item[sword_biggoron]"
+        "ref": "item[sword_biggoron]"
     },
     "Deku_Shield": {
         "type": "value",
-        "content": "item[shield_kokiri]"
+        "ref": "item[shield_kokiri]"
     },
     "Deku_Shield_Drop": {
         "type": "value",
-        "content": "item[shield_kokiri]"
+        "ref": "item[shield_kokiri]"
     },
     "Buy_Deku_Shield": {
         "type": "value",
-        "content": "item[shield_kokiri]"
+        "ref": "item[shield_kokiri]"
     },
     "Buy_Hylian_Shield": {
         "type": "value",
-        "content": "item[shield_hylia]"
+        "ref": "item[shield_hylia]"
     },
     "Mirror_Shield": {
         "type": "value",
-        "content": "item[shield_mirror]"
+        "ref": "item[shield_mirror]"
     },
     //"item[tunic_forest]",
     "Goron_Tunic": {
         "type": "value",
-        "content": "item[tunic_fire]"
+        "ref": "item[tunic_fire]"
     },
     "Buy_Goron_Tunic": {
         "type": "and",
         "content": [
             {
                 "type": "value",
-                "content": "option[consider_buyable]"
+                "ref": "option[consider_buyable]"
             },
             {
                 "type": "min",
                 "content": {
                     "type": "value",
-                    "content": "item[wallet]"
+                    "ref": "item[wallet]"
                 },
                 "value": 1
             }
@@ -580,20 +540,20 @@
     },
     "Zora_Tunic": {
         "type": "value",
-        "content": "item[tunic_water]"
+        "ref": "item[tunic_water]"
     },
     "Buy_Zora_Tunic": {
         "type": "and",
         "content": [
             {
                 "type": "value",
-                "content": "option[consider_buyable]"
+                "ref": "option[consider_buyable]"
             },
             {
                 "type": "min",
                 "content": {
                     "type": "value",
-                    "content": "item[wallet]"
+                    "ref": "item[wallet]"
                 },
                 "value": 2
             }
@@ -602,300 +562,300 @@
     //"item[boots_normal]",
     "Iron_Boots": {
         "type": "value",
-        "content": "item[boots_iron]"
+        "ref": "item[boots_iron]"
     },
     "Hover_Boots": {
         "type": "value",
-        "content": "item[boots_hover]"
+        "ref": "item[boots_hover]"
     },
     //"item[boots]",
     "Progressive_Strength_Upgrade": {
         "type": "value",
-        "content": "item[glove]"
+        "ref": "item[glove]"
     },
     "Silver_Gauntlets": {
         "type": "mixin",
-        "content": "mixin[silver_gauntlets]"
+        "ref": "mixin[silver_gauntlets]"
     },
     "Golden_Gauntlets": {
         "type": "mixin",
-        "content": "mixin[golden_gauntlets]"
+        "ref": "mixin[golden_gauntlets]"
     },
     "Progressive_Scale": {
         "type": "value",
-        "content": "item[scale]"
+        "ref": "item[scale]"
     },
     "Stone_of_Agony": {
         "type": "value",
-        "content": "item[stone_of_agony]"
+        "ref": "item[stone_of_agony]"
     },
     "Magic_Meter": {
         "type": "value",
-        "content": "item[magic_power]"
+        "ref": "item[magic_power]"
     },
     "Bottle_with_Letter": {
         "type": "value",
-        "content": "item[zora_letter]"
+        "ref": "item[zora_letter]"
     },
     "Rutos_Letter": {
         "type": "value",
-        "content": "item[zora_letter]"
+        "ref": "item[zora_letter]"
     },
     "Deliver_Letter": {
         "type": "value",
-        "content": "reach_location[deliver_letter]"
+        "ref": "reach_location[deliver_letter]"
     },
     "Gerudo_Membership_Card": {
         "type": "value",
-        "content": "item[membership]"
+        "ref": "item[membership]"
     },
     "Zeldas_Lullaby": {
         "type": "value",
-        "content": "item[song_zelda]"
+        "ref": "item[song_zelda]"
     },
     "Eponas_Song": {
         "type": "value",
-        "content": "item[song_epona]"
+        "ref": "item[song_epona]"
     },
     "Suns_Song": {
         "type": "value",
-        "content": "item[song_sun]"
+        "ref": "item[song_sun]"
     },
     "Sarias_Song": {
         "type": "value",
-        "content": "item[song_saria]"
+        "ref": "item[song_saria]"
     },
     "Song_of_Time": {
         "type": "value",
-        "content": "item[song_time]"
+        "ref": "item[song_time]"
     },
     "Song_of_Storms": {
         "type": "value",
-        "content": "item[song_storm]"
+        "ref": "item[song_storm]"
     },
     "Minuet_of_Forest": {
         "type": "value",
-        "content": "item[warp_forest]"
+        "ref": "item[warp_forest]"
     },
     "Bolero_of_Fire": {
         "type": "value",
-        "content": "item[warp_fire]"
+        "ref": "item[warp_fire]"
     },
     "Serenade_of_Water": {
         "type": "value",
-        "content": "item[warp_water]"
+        "ref": "item[warp_water]"
     },
     "Nocturne_of_Shadow": {
         "type": "value",
-        "content": "item[warp_shadow]"
+        "ref": "item[warp_shadow]"
     },
     "Requiem_of_Spirit": {
         "type": "value",
-        "content": "item[warp_spirit]"
+        "ref": "item[warp_spirit]"
     },
     "Prelude_of_Light": {
         "type": "value",
-        "content": "item[warp_light]"
+        "ref": "item[warp_light]"
     },
     "Scarecrow_Song": {
         "type": "value",
-        "content": "item[song_scarecrow]"
+        "ref": "item[song_scarecrow]"
     },
     "Scarecrow": {
         "type": "mixin",
-        "content": "mixin[scarecrow]"
+        "ref": "mixin[scarecrow]"
     },
     "Distant_Scarecrow": {
         "type": "mixin",
-        "content": "mixin[distant_scarecrow]"
+        "ref": "mixin[distant_scarecrow]"
     },
     "Kokiri_Emerald": {
         "type": "value",
-        "content": "item[stone_forest]"
+        "ref": "item[stone_forest]"
     },
     "Goron_Ruby": {
         "type": "value",
-        "content": "item[stone_fire]"
+        "ref": "item[stone_fire]"
     },
     "Zora_Sapphire": {
         "type": "value",
-        "content": "item[stone_water]"
+        "ref": "item[stone_water]"
     },
     "Forest_Medallion": {
         "type": "value",
-        "content": "item[medallion_forest]"
+        "ref": "item[medallion_forest]"
     },
     "Fire_Medallion": {
         "type": "value",
-        "content": "item[medallion_fire]"
+        "ref": "item[medallion_fire]"
     },
     "Water_Medallion": {
         "type": "value",
-        "content": "item[medallion_water]"
+        "ref": "item[medallion_water]"
     },
     "Spirit_Medallion": {
         "type": "value",
-        "content": "item[medallion_spirit]"
+        "ref": "item[medallion_spirit]"
     },
     "Shadow_Medallion": {
         "type": "value",
-        "content": "item[medallion_shadow]"
+        "ref": "item[medallion_shadow]"
     },
     "Light_Medallion": {
         "type": "value",
-        "content": "item[medallion_light]"
+        "ref": "item[medallion_light]"
     },
     "Small_Key_Forest_Temple": {
         "type": "value",
-        "content": "item[key_small_forest]"
+        "ref": "item[key_small_forest]"
     },
     "Boss_Key_Forest_Temple": {
         "type": "value",
-        "content": "item[key_boss_forest]"
+        "ref": "item[key_boss_forest]"
     },
     "Small_Key_Fire_Temple": {
         "type": "value",
-        "content": "item[key_small_fire]"
+        "ref": "item[key_small_fire]"
     },
     "Boss_Key_Fire_Temple": {
         "type": "value",
-        "content": "item[key_boss_fire]"
+        "ref": "item[key_boss_fire]"
     },
     "Small_Key_Water_Temple": {
         "type": "value",
-        "content": "item[key_small_water]"
+        "ref": "item[key_small_water]"
     },
     "Boss_Key_Water_Temple": {
         "type": "value",
-        "content": "item[key_boss_water]"
+        "ref": "item[key_boss_water]"
     },
     "Small_Key_Shadow_Temple": {
         "type": "value",
-        "content": "item[key_small_shadow]"
+        "ref": "item[key_small_shadow]"
     },
     "Boss_Key_Shadow_Temple": {
         "type": "value",
-        "content": "item[key_boss_shadow]"
+        "ref": "item[key_boss_shadow]"
     },
     "Small_Key_Spirit_Temple": {
         "type": "value",
-        "content": "item[key_small_spirit]"
+        "ref": "item[key_small_spirit]"
     },
     "Boss_Key_Spirit_Temple": {
         "type": "value",
-        "content": "item[key_boss_spirit]"
+        "ref": "item[key_boss_spirit]"
     },
     "Small_Key_Ganons_Castle": {
         "type": "value",
-        "content": "item[key_small_ganon]"
+        "ref": "item[key_small_ganon]"
     },
     "Boss_Key_Ganons_Castle": {
         "type": "value",
-        "content": "item[key_boss_ganon]"
+        "ref": "item[key_boss_ganon]"
     },
     "Small_Key_Thieves_Hideout": {
         "type": "value",
-        "content": "item[key_small_gerudo]"
+        "ref": "item[key_small_gerudo]"
     },
     "Small_Key_Gerudo_Training_Ground": {
         "type": "value",
-        "content": "item[key_small_training]"
+        "ref": "item[key_small_training]"
     },
     "Small_Key_Bottom_of_the_Well": {
         "type": "value",
-        "content": "item[key_small_well]"
+        "ref": "item[key_small_well]"
     },
     "Small_Key_Treasure_Chest_Game": {
         "type": "value",
-        "content": "item[key_small_treasure_game]"
+        "ref": "item[key_small_treasure_game]"
     },
     "Silver_Rupee_Bottom_of_the_Well_Basement": {
         "type": "value",
-        "content": "item[silver_rupee_well_basement]"
+        "ref": "item[silver_rupee_well_basement]"
     },
     "Silver_Rupee_Dodongos_Cavern_Staircase": {
         "type": "value",
-        "content": "item[silver_rupee_dodongo_staircase]"
+        "ref": "item[silver_rupee_dodongo_staircase]"
     },
     "Silver_Rupee_Ganons_Castle_Forest_Trial": {
         "type": "value",
-        "content": "item[silver_rupee_castle_ganon_trial_forest]"
+        "ref": "item[silver_rupee_castle_ganon_trial_forest]"
     },
     "Silver_Rupee_Ganons_Castle_Fire_Trial": {
         "type": "value",
-        "content": "item[silver_rupee_castle_ganon_trial_fire]"
+        "ref": "item[silver_rupee_castle_ganon_trial_fire]"
     },
     "Silver_Rupee_Ganons_Castle_Water_Trial": {
         "type": "value",
-        "content": "item[silver_rupee_castle_ganon_trial_water]"
+        "ref": "item[silver_rupee_castle_ganon_trial_water]"
     },
     "Silver_Rupee_Ganons_Castle_Shadow_Trial": {
         "type": "value",
-        "content": "item[silver_rupee_castle_ganon_trial_shadow]"
+        "ref": "item[silver_rupee_castle_ganon_trial_shadow]"
     },
     "Silver_Rupee_Ganons_Castle_Spirit_Trial": {
         "type": "value",
-        "content": "item[silver_rupee_castle_ganon_trial_spirit]"
+        "ref": "item[silver_rupee_castle_ganon_trial_spirit]"
     },
     "Silver_Rupee_Ganons_Castle_Light_Trial": {
         "type": "value",
-        "content": "item[silver_rupee_castle_ganon_trial_light]"
+        "ref": "item[silver_rupee_castle_ganon_trial_light]"
     },
     "Silver_Rupee_Gerudo_Training_Ground_Lava": {
         "type": "value",
-        "content": "item[silver_rupee_training_grounds_lava]"
+        "ref": "item[silver_rupee_training_grounds_lava]"
     },
     "Silver_Rupee_Gerudo_Training_Ground_Water": {
         "type": "value",
-        "content": "item[silver_rupee_training_grounds_water]"
+        "ref": "item[silver_rupee_training_grounds_water]"
     },
     "Silver_Rupee_Gerudo_Training_Ground_Slopes": {
         "type": "value",
-        "content": "item[silver_rupee_training_grounds_slopes]"
+        "ref": "item[silver_rupee_training_grounds_slopes]"
     },
     "Silver_Rupee_Ice_Cavern_Spinning_Scythe": {
         "type": "value",
-        "content": "item[silver_rupee_ice_cavern_spinning_scythe]"
+        "ref": "item[silver_rupee_ice_cavern_spinning_scythe]"
     },
     "Silver_Rupee_Ice_Cavern_Push_Block": {
         "type": "value",
-        "content": "item[silver_rupee_ice_cavern_block_push]"
+        "ref": "item[silver_rupee_ice_cavern_block_push]"
     },
     "Silver_Rupee_Shadow_Temple_Scythe_Shortcut": {
         "type": "value",
-        "content": "item[silver_rupee_temple_shadow_scythe_shortcut]"
+        "ref": "item[silver_rupee_temple_shadow_scythe_shortcut]"
     },
     "Silver_Rupee_Shadow_Temple_Invisible_Blades": {
         "type": "value",
-        "content": "item[silver_rupee_temple_shadow_invisible_blades]"
+        "ref": "item[silver_rupee_temple_shadow_invisible_blades]"
     },
     "Silver_Rupee_Shadow_Temple_Huge_Pit": {
         "type": "value",
-        "content": "item[silver_rupee_temple_shadow_huge_pit]"
+        "ref": "item[silver_rupee_temple_shadow_huge_pit]"
     },
     "Silver_Rupee_Shadow_Temple_Invisible_Spikes": {
         "type": "value",
-        "content": "item[silver_rupee_temple_shadow_invisible_spikes]"
+        "ref": "item[silver_rupee_temple_shadow_invisible_spikes]"
     },
     "Silver_Rupee_Spirit_Temple_Lobby_and_Lower_Adult": {
         "type": "value",
-        "content": "item[silver_rupee_temple_spirit_lobby_and_lower_adult]"
+        "ref": "item[silver_rupee_temple_spirit_lobby_and_lower_adult]"
     },
     "Silver_Rupee_Spirit_Temple_Adult_Climb": {
         "type": "value",
-        "content": "item[silver_rupee_temple_spirit_adult_climb]"
+        "ref": "item[silver_rupee_temple_spirit_adult_climb]"
     },
     "Silver_Rupee_Spirit_Temple_Child_Early_Torches": {
         "type": "value",
-        "content": "item[silver_rupee_temple_spirit_child_early_torches]"
+        "ref": "item[silver_rupee_temple_spirit_child_early_torches]"
     },
     "Silver_Rupee_Spirit_Temple_Adult_Boulders": {
         "type": "value",
-        "content": "item[silver_rupee_temple_spirit_adult_boulders]"
+        "ref": "item[silver_rupee_temple_spirit_adult_boulders]"
     },
     "Silver_Rupee_Spirit_Temple_Sun_Block": {
         "type": "value",
-        "content": "item[silver_rupee_temple_spirit_sun_block]"
+        "ref": "item[silver_rupee_temple_spirit_sun_block]"
     },
     //"item[compass_deku]",
     //"item[dungeon_map_deku]",
@@ -923,28 +883,28 @@
     //"item[sold_out]",
     "lacs_tokens": {
         "type": "value",
-        "content": "option[lacs_skulltulas]"
+        "ref": "option[lacs_skulltulas]"
     },
     "ganon_bosskey_tokens": {
         "type": "value",
-        "content": "option[gbk_skulltulas]"
+        "ref": "option[gbk_skulltulas]"
     },
     "Blue_Fire": {
         "type": "mixin",
-        "content": "mixin[blue_fire]"
+        "ref": "mixin[blue_fire]"
     },
     "Buy_Blue_Fire": {
         "type": "and",
         "content": [
             {
                 "type": "value",
-                "content": "option[consider_buyable]"
+                "ref": "option[consider_buyable]"
             },
             {
                 "type": "min",
                 "content": {
                     "type": "value",
-                    "content": "item[wallet]"
+                    "ref": "item[wallet]"
                 },
                 "value": 2
             }
@@ -952,33 +912,33 @@
     },
     "Bugs": {
         "type": "value",
-        "content": "item[bottle]"
+        "ref": "item[bottle]"
     },
     "Buy_Bottle_Bug": {
         "type": "value",
-        "content": "item[bugs_1]"
+        "ref": "item[bugs_1]"
     },
     "Fairy": {
         "type": "value",
-        "content": "item[fairy]"
+        "ref": "item[fairy]"
     },
     "Buy_Fairys_Spirit": {
         "type": "value",
-        "content": "item[fairy_1]"
+        "ref": "item[fairy_1]"
     },
     "Fish": {
         "type": "value",
-        "content": "item[bottle]"
+        "ref": "item[bottle]"
     },
     "Buy_Fish": {
         "type": "value",
-        "content": "item[fish_1]"
+        "ref": "item[fish_1]"
     },
     //"item[milk]",
     //"item[poe]",
     "Bottle_with_Big_Poe": {
         "type": "value",
-        "content": "item[poe_big]"
+        "ref": "item[poe_big]"
     },
     //"item[potion_red]",
     //"item[potion_green]",
@@ -986,70 +946,74 @@
     /* dummy items */
     "item": {
         "type": "value",
-        "content": "item[dummy]"
+        "ref": "item[dummy]"
     },
     "song": {
         "type": "value",
-        "content": "item[song_dummy]"
+        "ref": "item[song_dummy]"
     },
     /* options */
     "big_poe_count": {
         "type": "value",
-        "content": "option[big_poe_count]"
+        "ref": "option[big_poe_count]"
     },
     "skip_child_zelda": {
         "type": "value",
-        "content": "option[skip_child_zelda]"
+        "ref": "option[skip_child_zelda]"
     },
     "warp_songs": {
         "type": "value",
-        "content": "option[shuffle_warps]"
+        "ref": "option[shuffle_warps]"
     },
     "open_door_of_time": {
         "type": "value",
-        "content": "option[doors_open_temple]"
+        "ref": "option[doors_open_temple]"
     },
     "free_scarecrow": {
         "type": "value",
-        "content": "option[freescarecrow]"
+        "ref": "option[freescarecrow]"
     },
     "shuffle_gerudo_card": {
         "type": "value",
-        "content": "option[gerudo_card_shuffle]"
+        "ref": "option[gerudo_card_shuffle]"
     },
     "shuffle_silver_rupees": {
         "type": "value",
-        "content": "option[shuffle_silver_rupees]"
+        "ref": "option[shuffle_silver_rupees]"
+    },
+    "adult_trade_shuffle": {
+        "type": "value",
+        "ref": "option[adult_trade_shuffle]"
     },
     "entrance_shuffle": {
         "type": "or",
         "content": [
             {
                 "type": "value",
-                "content": "option[shuffle_grottos]"
+                "ref": "option[shuffle_grottos]"
             },
             {
                 "type": "state",
-                "content": "option[shuffle_dungeons]",
+                "ref": "option[shuffle_dungeons]",
                 "value": "shuffle_dungeons_simple"
             },
             {
                 "type": "state",
-                "content": "option[shuffle_dungeons]",
+                "ref": "option[shuffle_dungeons]",
                 "value": "shuffle_dungeons_all"
             },
             {
                 "type": "value",
-                "content": "option[shuffle_overworld]"
+                "ref": "option[shuffle_overworld]"
             },
             {
                 "type": "state",
-                "content": "option[entrance_shuffle_interior]",
+                "ref": "option[entrance_shuffle_interior]",
                 "value": "entrance_shuffle_simple"
             },
             {
                 "type": "state",
-                "content": "option[entrance_shuffle_interior]",
+                "ref": "option[entrance_shuffle_interior]",
                 "value": "entrance_shuffle_all"
             }
         ]
@@ -1059,12 +1023,12 @@
         "content": [
             {
                 "type": "state",
-                "content": "option[shuffle_dungeons]",
+                "ref": "option[shuffle_dungeons]",
                 "value": "shuffle_dungeons_simple"
             },
             {
                 "type": "state",
-                "content": "option[shuffle_dungeons]",
+                "ref": "option[shuffle_dungeons]",
                 "value": "shuffle_dungeons_all"
             }
         ]
@@ -1073,243 +1037,243 @@
         "type": "not",
         "content": {
             "type": "state",
-            "content": "option[entrance_shuffle_interior]",
+            "ref": "option[entrance_shuffle_interior]",
             "value": "entrance_shuffle_off"
         }
     },
     "shuffle_overworld_entrances": {
         "type": "value",
-        "content": "option[shuffle_overworld]"
+        "ref": "option[shuffle_overworld]"
     },
     "keysanity": {
         "type": "state",
-        "content": "option[small_key_logic]",
+        "ref": "option[small_key_logic]",
         "value": "keylogic_keysanity"
     },
     "free_bombchu_drops": {
         "type": "value",
-        "content": "option[bombchu_logic]"
+        "ref": "option[bombchu_logic]"
     },
     "shuffle_weird_egg": {
         "type": "value",
-        "content": "option[shuffle_egg]"
+        "ref": "option[shuffle_egg]"
     },
     "shuffle_expensive_merchants": {
         "type": "value",
-        "content": "option[shuffle_expensive_merchants]"
+        "ref": "option[shuffle_expensive_merchants]"
     },
     "fix_broken_drops": {
         "type": "value",
-        "content": "option[fix_broken_drops]"
+        "ref": "option[fix_broken_drops]"
     },
     "skipped_trials[Forest]": {
         "type": "not",
         "content": {
             "type": "value",
-            "content": "option[forest_trial]"
+            "ref": "option[forest_trial]"
         }
     },
     "skipped_trials[Fire]": {
         "type": "not",
         "content": {
             "type": "value",
-            "content": "option[fire_trial]"
+            "ref": "option[fire_trial]"
         }
     },
     "skipped_trials[Water]": {
         "type": "not",
         "content": {
             "type": "value",
-            "content": "option[water_trial]"
+            "ref": "option[water_trial]"
         }
     },
     "skipped_trials[Shadow]": {
         "type": "not",
         "content": {
             "type": "value",
-            "content": "option[shadow_trial]"
+            "ref": "option[shadow_trial]"
         }
     },
     "skipped_trials[Spirit]": {
         "type": "not",
         "content": {
             "type": "value",
-            "content": "option[spirit_trial]"
+            "ref": "option[spirit_trial]"
         }
     },
     "skipped_trials[Light]": {
         "type": "not",
         "content": {
             "type": "value",
-            "content": "option[light_trial]"
+            "ref": "option[light_trial]"
         }
     },
     /* skips */
     "logic_grottos_without_agony": {
         "type": "value",
-        "content": "option[skip.grottos_without_agony]"
+        "ref": "option[skip.grottos_without_agony]"
     },
     "logic_fewer_tunic_requirements": {
         "type": "value",
-        "content": "option[skip.fewer_tunic_requirements]"
+        "ref": "option[skip.fewer_tunic_requirements]"
     },
     "logic_adult_kokiri_gs": {
         "type": "value",
-        "content": "option[skip.adult_kokiri_gs]"
+        "ref": "option[skip.adult_kokiri_gs]"
     },
     "logic_lost_woods_bridge": {
         "type": "value",
-        "content": "option[skip.lost_woods_bridge]"
+        "ref": "option[skip.lost_woods_bridge]"
     },
     "logic_mido_backflip": {
         "type": "value",
-        "content": "option[skip.mido_backflip]"
+        "ref": "option[skip.mido_backflip]"
     },
     "logic_lost_woods_gs_bean": {
         "type": "value",
-        "content": "option[skip.lost_woods_gs_bean]"
+        "ref": "option[skip.lost_woods_gs_bean]"
     },
     "logic_lab_wall_gs": {
         "type": "value",
-        "content": "option[skip.lab_wall_gs]"
+        "ref": "option[skip.lab_wall_gs]"
     },
     "logic_water_hookshot_entry": {
         "type": "value",
-        "content": "option[skip.water_hookshot_entry]"
+        "ref": "option[skip.water_hookshot_entry]"
     },
     "logic_lab_diving": {
         "type": "value",
-        "content": "option[skip.lab_diving]"
+        "ref": "option[skip.lab_diving]"
     },
     "logic_valley_crate_hovers": {
         "type": "value",
-        "content": "option[skip.valley_crate_hovers]"
+        "ref": "option[skip.valley_crate_hovers]"
     },
     "logic_gerudo_kitchen": {
         "type": "value",
-        "content": "option[skip.gerudo_kitchen]"
+        "ref": "option[skip.gerudo_kitchen]"
     },
     "logic_wasteland_crossing": {
         "type": "value",
-        "content": "option[skip.wasteland_crossing]"
+        "ref": "option[skip.wasteland_crossing]"
     },
     "logic_lens_wasteland": {
         "type": "or",
         "content": [
             {
                 "type": "state",
-                "content": "option[skip.lens_required]",
+                "ref": "option[skip.lens_required]",
                 "value": "lens_required_never"
             },
             {
                 "type": "value",
-                "content": "option[skip.lens_wasteland]"
+                "ref": "option[skip.lens_wasteland]"
             }
         ]
     },
     "logic_reverse_wasteland": {
         "type": "value",
-        "content": "option[skip.reverse_wasteland]"
+        "ref": "option[skip.reverse_wasteland]"
     },
     "logic_colossus_gs": {
         "type": "value",
-        "content": "option[skip.colossus_gs]"
+        "ref": "option[skip.colossus_gs]"
     },
     "logic_kakariko_tower_gs": {
         "type": "value",
-        "content": "option[skip.kakariko_tower_gs]"
+        "ref": "option[skip.kakariko_tower_gs]"
     },
     "logic_visible_collisions": {
         "type": "value",
-        "content": "option[skip.visible_collisions]"
+        "ref": "option[skip.visible_collisions]"
     },
     "logic_man_on_roof": {
         "type": "value",
-        "content": "option[skip.man_on_roof]"
+        "ref": "option[skip.man_on_roof]"
     },
     "logic_windmill_poh": {
         "type": "value",
-        "content": "option[skip.windmill_poh]"
+        "ref": "option[skip.windmill_poh]"
     },
     "logic_graveyard_poh": {
         "type": "value",
-        "content": "option[skip.graveyard_poh]"
+        "ref": "option[skip.graveyard_poh]"
     },
     "logic_child_dampe_race_poh": {
         "type": "value",
-        "content": "option[skip.child_dampe_race_poh]"
+        "ref": "option[skip.child_dampe_race_poh]"
     },
     "logic_shadow_fire_arrow_entry": {
         "type": "value",
-        "content": "option[skip.shadow_fire_arrow_entry]"
+        "ref": "option[skip.shadow_fire_arrow_entry]"
     },
     "logic_dmt_bombable": {
         "type": "value",
-        "content": "option[skip.dmt_bombable]"
+        "ref": "option[skip.dmt_bombable]"
     },
     "logic_dmt_soil_gs": {
         "type": "value",
-        "content": "option[skip.dmt_soil_gs]"
+        "ref": "option[skip.dmt_soil_gs]"
     },
     "logic_trail_gs_lower_hookshot": {
         "type": "value",
-        "content": "option[skip.trail_gs_lower_hookshot]"
+        "ref": "option[skip.trail_gs_lower_hookshot]"
     },
     "logic_trail_gs_lower_bean": {
         "type": "value",
-        "content": "option[skip.trail_gs_lower_bean]"
+        "ref": "option[skip.trail_gs_lower_bean]"
     },
     "logic_trail_gs_upper": {
         "type": "value",
-        "content": "option[skip.trail_gs_upper]"
+        "ref": "option[skip.trail_gs_upper]"
     },
     "logic_biggoron_bolero": {
         "type": "value",
-        "content": "option[skip.biggoron_bolero]"
+        "ref": "option[skip.biggoron_bolero]"
     },
     "logic_link_goron_dins": {
         "type": "value",
-        "content": "option[skip.link_goron_dins]"
+        "ref": "option[skip.link_goron_dins]"
     },
     "logic_goron_city_leftmost": {
         "type": "value",
-        "content": "option[skip.goron_city_leftmost]"
+        "ref": "option[skip.goron_city_leftmost]"
     },
     "logic_goron_city_pot_with_strength": {
         "type": "value",
-        "content": "option[skip.goron_city_pot_with_strength]"
+        "ref": "option[skip.goron_city_pot_with_strength]"
     },
     "logic_goron_city_pot": {
         "type": "value",
-        "content": "option[skip.goron_city_pot]"
+        "ref": "option[skip.goron_city_pot]"
     },
     "logic_child_rolling_with_strength": {
         "type": "value",
-        "content": "option[skip.child_rolling_with_strength]"
+        "ref": "option[skip.child_rolling_with_strength]"
     },
     "logic_crater_upper_to_lower": {
         "type": "value",
-        "content": "option[skip.crater_upper_to_lower]"
+        "ref": "option[skip.crater_upper_to_lower]"
     },
     "logic_crater_bean_poh_with_hovers": {
         "type": "value",
-        "content": "option[skip.crater_bean_poh_with_hovers]"
+        "ref": "option[skip.crater_bean_poh_with_hovers]"
     },
     "logic_zora_river_lower": {
         "type": "value",
-        "content": "option[skip.zora_river_lower]"
+        "ref": "option[skip.zora_river_lower]"
     },
     "logic_zora_river_upper": {
         "type": "value",
-        "content": "option[skip.zora_river_upper]"
+        "ref": "option[skip.zora_river_upper]"
     },
     "logic_zora_with_hovers": {
         "type": "value",
-        "content": "option[skip.zora_with_hovers]"
+        "ref": "option[skip.zora_with_hovers]"
     },
     "logic_zora_with_cucco": {
         "type": "value",
-        "content": "option[skip.zora_with_cucco]"
+        "ref": "option[skip.zora_with_cucco]"
     },
     "logic_lens_botw": {
         "type": "or",
@@ -1318,79 +1282,79 @@
                 "type": "not",
                 "content": {
                     "type": "state",
-                    "content": "option[skip.lens_required]",
+                    "ref": "option[skip.lens_required]",
                     "value": "lens_required_default"
                 }
             },
             {
                 "type": "value",
-                "content": "option[skip.lens_botw]"
+                "ref": "option[skip.lens_botw]"
             }
         ]
     },
     "logic_child_deadhand": {
         "type": "value",
-        "content": "option[skip.child_deadhand]"
+        "ref": "option[skip.child_deadhand]"
     },
     "logic_botw_basement": {
         "type": "value",
-        "content": "option[skip.botw_basement]"
+        "ref": "option[skip.botw_basement]"
     },
     "logic_botw_cage_gs": {
         "type": "value",
-        "content": "option[skip.botw_cage_gs]"
+        "ref": "option[skip.botw_cage_gs]"
     },
     "logic_botw_mq_dead_hand_key": {
         "type": "value",
-        "content": "option[skip.botw_mq_dead_hand_key]"
+        "ref": "option[skip.botw_mq_dead_hand_key]"
     },
     "logic_deku_basement_gs": {
         "type": "value",
-        "content": "option[skip.deku_basement_gs]"
+        "ref": "option[skip.deku_basement_gs]"
     },
     "logic_deku_b1_webs_with_bow": {
         "type": "value",
-        "content": "option[skip.deku_b1_webs_with_bow]"
+        "ref": "option[skip.deku_b1_webs_with_bow]"
     },
     "logic_deku_b1_skip": {
         "type": "value",
-        "content": "option[skip.deku_b1_skip]"
+        "ref": "option[skip.deku_b1_skip]"
     },
     "logic_dc_scarecrow_gs": {
         "type": "value",
-        "content": "option[skip.dc_scarecrow_gs]"
+        "ref": "option[skip.dc_scarecrow_gs]"
     },
     "logic_dc_staircase": {
         "type": "value",
-        "content": "option[skip.dc_staircase]"
+        "ref": "option[skip.dc_staircase]"
     },
     "logic_dc_slingshot_skip": {
         "type": "value",
-        "content": "option[skip.dc_slingshot_skip]"
+        "ref": "option[skip.dc_slingshot_skip]"
     },
     "logic_dc_jump": {
         "type": "value",
-        "content": "option[skip.dc_jump]"
+        "ref": "option[skip.dc_jump]"
     },
     "logic_dc_mq_child_bombs": {
         "type": "value",
-        "content": "option[skip.dc_mq_child_bombs]"
+        "ref": "option[skip.dc_mq_child_bombs]"
     },
     "logic_dc_hammer_floor": {
         "type": "value",
-        "content": "option[skip.dc_hammer_floor]"
+        "ref": "option[skip.dc_hammer_floor]"
     },
     "logic_jabu_scrub_jump_dive": {
         "type": "value",
-        "content": "option[skip.jabu_scrub_jump_dive]"
+        "ref": "option[skip.jabu_scrub_jump_dive]"
     },
     "logic_jabu_boss_gs_adult": {
         "type": "value",
-        "content": "option[skip.jabu_boss_gs_adult]"
+        "ref": "option[skip.jabu_boss_gs_adult]"
     },
     "logic_jabu_mq_sot_gs": {
         "type": "value",
-        "content": "option[skip.jabu_mq_sot_gs]"
+        "ref": "option[skip.jabu_mq_sot_gs]"
     },
     "logic_lens_jabu_mq": {
         "type": "or",
@@ -1399,23 +1363,23 @@
                 "type": "not",
                 "content": {
                     "type": "state",
-                    "content": "option[skip.lens_required]",
+                    "ref": "option[skip.lens_required]",
                     "value": "lens_required_default"
                 }
             },
             {
                 "type": "value",
-                "content": "option[skip.lens_jabu_mq]"
+                "ref": "option[skip.lens_jabu_mq]"
             }
         ]
     },
     "logic_ice_mq_scarecrow": {
         "type": "value",
-        "content": "option[skip.ice_mq_scarecrow]"
+        "ref": "option[skip.ice_mq_scarecrow]"
     },
     "logic_gtg_without_hookshot": {
         "type": "value",
-        "content": "option[skip.gtg_without_hookshot]"
+        "ref": "option[skip.gtg_without_hookshot]"
     },
     "logic_lens_gtg": {
         "type": "or",
@@ -1424,19 +1388,19 @@
                 "type": "not",
                 "content": {
                     "type": "state",
-                    "content": "option[skip.lens_required]",
+                    "ref": "option[skip.lens_required]",
                     "value": "lens_required_default"
                 }
             },
             {
                 "type": "value",
-                "content": "option[skip.lens_gtg]"
+                "ref": "option[skip.lens_gtg]"
             }
         ]
     },
     "logic_gtg_fake_wall": {
         "type": "value",
-        "content": "option[skip.gtg_fake_wall]"
+        "ref": "option[skip.gtg_fake_wall]"
     },
     "logic_lens_gtg_mq": {
         "type": "or",
@@ -1445,151 +1409,151 @@
                 "type": "not",
                 "content": {
                     "type": "state",
-                    "content": "option[skip.lens_required]",
+                    "ref": "option[skip.lens_required]",
                     "value": "lens_required_default"
                 }
             },
             {
                 "type": "value",
-                "content": "option[skip.lens_gtg_mq]"
+                "ref": "option[skip.lens_gtg_mq]"
             }
         ]
     },
     "logic_gtg_mq_without_hookshot": {
         "type": "value",
-        "content": "option[skip.gtg_mq_without_hookshot]"
+        "ref": "option[skip.gtg_mq_without_hookshot]"
     },
     "logic_gtg_mq_with_hookshot": {
         "type": "value",
-        "content": "option[skip.gtg_mq_with_hookshot]"
+        "ref": "option[skip.gtg_mq_with_hookshot]"
     },
     "logic_forest_outdoors_ledge": {
         "type": "value",
-        "content": "option[skip.forest_outdoors_ledge]"
+        "ref": "option[skip.forest_outdoors_ledge]"
     },
     "logic_forest_outdoor_east_gs": {
         "type": "value",
-        "content": "option[skip.forest_outdoor_east_gs]"
+        "ref": "option[skip.forest_outdoor_east_gs]"
     },
     "logic_forest_vines": {
         "type": "value",
-        "content": "option[skip.forest_vines]"
+        "ref": "option[skip.forest_vines]"
     },
     "logic_forest_scarecrow": {
         "type": "value",
-        "content": "option[skip.forest_scarecrow]"
+        "ref": "option[skip.forest_scarecrow]"
     },
     "logic_forest_outside_backdoor": {
         "type": "value",
-        "content": "option[skip.forest_outside_backdoor]"
+        "ref": "option[skip.forest_outside_backdoor]"
     },
     "logic_forest_mq_block_puzzle": {
         "type": "value",
-        "content": "option[skip.forest_mq_block_puzzle]"
+        "ref": "option[skip.forest_mq_block_puzzle]"
     },
     "logic_forest_mq_hallway_switch": {
         "type": "value",
-        "content": "option[skip.forest_mq_hallway_switch]"
+        "ref": "option[skip.forest_mq_hallway_switch]"
     },
     "logic_forest_well_swim": {
         "type": "value",
-        "content": "option[skip.forest_well_swim]"
+        "ref": "option[skip.forest_well_swim]"
     },
     "logic_fire_boss_door_jump": {
         "type": "value",
-        "content": "option[skip.fire_boss_door_jump]"
+        "ref": "option[skip.fire_boss_door_jump]"
     },
     "logic_fire_song_of_time": {
         "type": "value",
-        "content": "option[skip.fire_song_of_time]"
+        "ref": "option[skip.fire_song_of_time]"
     },
     "logic_fire_strength": {
         "type": "value",
-        "content": "option[skip.fire_strength]"
+        "ref": "option[skip.fire_strength]"
     },
     "logic_fire_scarecrow": {
         "type": "value",
-        "content": "option[skip.fire_scarecrow]"
+        "ref": "option[skip.fire_scarecrow]"
     },
     "logic_fire_flame_maze": {
         "type": "value",
-        "content": "option[skip.fire_flame_maze]"
+        "ref": "option[skip.fire_flame_maze]"
     },
     "logic_rusted_switches": {
         "type": "value",
-        "content": "option[skip.rusted_switches]"
+        "ref": "option[skip.rusted_switches]"
     },
     "logic_fire_mq_near_boss": {
         "type": "value",
-        "content": "option[skip.fire_mq_near_boss]"
+        "ref": "option[skip.fire_mq_near_boss]"
     },
     "logic_fire_mq_bk_chest": {
         "type": "value",
-        "content": "option[skip.fire_mq_bk_chest]"
+        "ref": "option[skip.fire_mq_bk_chest]"
     },
     "logic_fire_mq_bombable_chest": {
         "type": "value",
-        "content": "option[skip.fire_mq_bombable_chest]"
+        "ref": "option[skip.fire_mq_bombable_chest]"
     },
     "logic_fire_mq_climb": {
         "type": "value",
-        "content": "option[skip.fire_mq_climb]"
+        "ref": "option[skip.fire_mq_climb]"
     },
     "logic_fire_mq_maze_side_room": {
         "type": "value",
-        "content": "option[skip.fire_mq_maze_side_room]"
+        "ref": "option[skip.fire_mq_maze_side_room]"
     },
     "logic_fire_mq_flame_maze": {
         "type": "value",
-        "content": "option[skip.fire_mq_flame_maze]"
+        "ref": "option[skip.fire_mq_flame_maze]"
     },
     "logic_water_temple_torch_longshot": {
         "type": "value",
-        "content": "option[skip.water_temple_torch_longshot]"
+        "ref": "option[skip.water_temple_torch_longshot]"
     },
     "logic_water_central_bow": {
         "type": "value",
-        "content": "option[skip.water_central_bow]"
+        "ref": "option[skip.water_central_bow]"
     },
     "logic_water_cracked_wall_nothing": {
         "type": "value",
-        "content": "option[skip.water_cracked_wall_nothing]"
+        "ref": "option[skip.water_cracked_wall_nothing]"
     },
     "logic_water_cracked_wall_hovers": {
         "type": "value",
-        "content": "option[skip.water_cracked_wall_hovers]"
+        "ref": "option[skip.water_cracked_wall_hovers]"
     },
     "logic_water_boss_key_region": {
         "type": "value",
-        "content": "option[skip.water_boss_key_region]"
+        "ref": "option[skip.water_boss_key_region]"
     },
     "logic_water_dragon_bombchu": {
         "type": "value",
-        "content": "option[skip.water_dragon_bombchu]"
+        "ref": "option[skip.water_dragon_bombchu]"
     },
     "logic_water_dragon_jump_dive": {
         "type": "value",
-        "content": "option[skip.water_dragon_jump_dive]"
+        "ref": "option[skip.water_dragon_jump_dive]"
     },
     "logic_water_bk_jump_dive": {
         "type": "value",
-        "content": "option[skip.water_bk_jump_dive]"
+        "ref": "option[skip.water_bk_jump_dive]"
     },
     "logic_water_bk_chest": {
         "type": "value",
-        "content": "option[skip.water_bk_chest]"
+        "ref": "option[skip.water_bk_chest]"
     },
     "logic_water_north_basement_ledge_jump": {
         "type": "value",
-        "content": "option[skip.water_north_basement_ledge_jump]"
+        "ref": "option[skip.water_north_basement_ledge_jump]"
     },
     "logic_water_river_gs": {
         "type": "value",
-        "content": "option[skip.water_river_gs]"
+        "ref": "option[skip.water_river_gs]"
     },
     "logic_water_falling_platform_gs": {
         "type": "value",
-        "content": "option[skip.water_falling_platform_gs]"
+        "ref": "option[skip.water_falling_platform_gs]"
     },
     "logic_lens_shadow": {
         "type": "or",
@@ -1598,19 +1562,19 @@
                 "type": "not",
                 "content": {
                     "type": "state",
-                    "content": "option[skip.lens_required]",
+                    "ref": "option[skip.lens_required]",
                     "value": "lens_required_default"
                 }
             },
             {
                 "type": "value",
-                "content": "option[skip.lens_shadow]"
+                "ref": "option[skip.lens_shadow]"
             }
         ]
     },
     "logic_shadow_umbrella": {
         "type": "value",
-        "content": "option[skip.shadow_umbrella]"
+        "ref": "option[skip.shadow_umbrella]"
     },
     "logic_lens_shadow_back": {
         "type": "or",
@@ -1619,23 +1583,23 @@
                 "type": "not",
                 "content": {
                     "type": "state",
-                    "content": "option[skip.lens_required]",
+                    "ref": "option[skip.lens_required]",
                     "value": "lens_required_default"
                 }
             },
             {
                 "type": "value",
-                "content": "option[skip.lens_shadow_back]"
+                "ref": "option[skip.lens_shadow_back]"
             }
         ]
     },
     "logic_shadow_freestanding_key": {
         "type": "value",
-        "content": "option[skip.shadow_freestand_key]"
+        "ref": "option[skip.shadow_freestand_key]"
     },
     "logic_shadow_statue": {
         "type": "value",
-        "content": "option[skip.shadow_statue]"
+        "ref": "option[skip.shadow_statue]"
     },
     "logic_lens_shadow_mq": {
         "type": "or",
@@ -1644,23 +1608,23 @@
                 "type": "not",
                 "content": {
                     "type": "state",
-                    "content": "option[skip.lens_required]",
+                    "ref": "option[skip.lens_required]",
                     "value": "lens_required_default"
                 }
             },
             {
                 "type": "value",
-                "content": "option[skip.lens_shadow_mq]"
+                "ref": "option[skip.lens_shadow_mq]"
             }
         ]
     },
     "logic_shadow_mq_gap": {
         "type": "value",
-        "content": "option[skip.shadow_mq_gap]"
+        "ref": "option[skip.shadow_mq_gap]"
     },
     "logic_shadow_mq_huge_pit": {
         "type": "value",
-        "content": "option[skip.shadow_mq_huge_pit]"
+        "ref": "option[skip.shadow_mq_huge_pit]"
     },
     "logic_lens_shadow_mq_back": {
         "type": "or",
@@ -1669,35 +1633,35 @@
                 "type": "not",
                 "content": {
                     "type": "state",
-                    "content": "option[skip.lens_required]",
+                    "ref": "option[skip.lens_required]",
                     "value": "lens_required_default"
                 }
             },
             {
                 "type": "value",
-                "content": "option[skip.lens_shadow_mq_back]"
+                "ref": "option[skip.lens_shadow_mq_back]"
             }
         ]
     },
     "logic_spirit_child_bombchu": {
         "type": "value",
-        "content": "option[skip.spirit_child_bombchu]"
+        "ref": "option[skip.spirit_child_bombchu]"
     },
     "logic_spirit_lower_adult_switch": {
         "type": "value",
-        "content": "option[skip.spirit_lower_adult_switch]"
+        "ref": "option[skip.spirit_lower_adult_switch]"
     },
     "logic_spirit_map_chest": {
         "type": "value",
-        "content": "option[skip.spirit_map_chest]"
+        "ref": "option[skip.spirit_map_chest]"
     },
     "logic_spirit_sun_chest": {
         "type": "value",
-        "content": "option[skip.spirit_sun_chest]"
+        "ref": "option[skip.spirit_sun_chest]"
     },
     "logic_spirit_lobby_gs": {
         "type": "value",
-        "content": "option[skip.spirit_lobby_gs]"
+        "ref": "option[skip.spirit_lobby_gs]"
     },
     "logic_lens_spirit": {
         "type": "or",
@@ -1706,23 +1670,23 @@
                 "type": "not",
                 "content": {
                     "type": "state",
-                    "content": "option[skip.lens_required]",
+                    "ref": "option[skip.lens_required]",
                     "value": "lens_required_default"
                 }
             },
             {
                 "type": "value",
-                "content": "option[skip.lens_spirit]"
+                "ref": "option[skip.lens_spirit]"
             }
         ]
     },
     "logic_spirit_wall": {
         "type": "value",
-        "content": "option[skip.spirit_wall]"
+        "ref": "option[skip.spirit_wall]"
     },
     "logic_spirit_mq_frozen_eye": {
         "type": "value",
-        "content": "option[skip.spirit_mq_frozen_eye]"
+        "ref": "option[skip.spirit_mq_frozen_eye]"
     },
     "logic_lens_spirit_mq": {
         "type": "or",
@@ -1731,23 +1695,23 @@
                 "type": "not",
                 "content": {
                     "type": "state",
-                    "content": "option[skip.lens_required]",
+                    "ref": "option[skip.lens_required]",
                     "value": "lens_required_default"
                 }
             },
             {
                 "type": "value",
-                "content": "option[skip.lens_spirit_mq]"
+                "ref": "option[skip.lens_spirit_mq]"
             }
         ]
     },
     "logic_spirit_mq_lower_adult": {
         "type": "value",
-        "content": "option[skip.spirit_mq_lower_adult]"
+        "ref": "option[skip.spirit_mq_lower_adult]"
     },
     "logic_spirit_mq_sun_block_gs": {
         "type": "value",
-        "content": "option[skip.spirit_mq_sun_block_gs]"
+        "ref": "option[skip.spirit_mq_sun_block_gs]"
     },
     "logic_lens_castle": {
         "type": "or",
@@ -1756,19 +1720,19 @@
                 "type": "not",
                 "content": {
                     "type": "state",
-                    "content": "option[skip.lens_required]",
+                    "ref": "option[skip.lens_required]",
                     "value": "lens_required_default"
                 }
             },
             {
                 "type": "value",
-                "content": "option[skip.lens_castle]"
+                "ref": "option[skip.lens_castle]"
             }
         ]
     },
     "logic_spirit_trial_hookshot": {
         "type": "value",
-        "content": "option[skip.spirit_trial_hookshot]"
+        "ref": "option[skip.spirit_trial_hookshot]"
     },
     "logic_lens_castle_mq": {
         "type": "or",
@@ -1777,316 +1741,376 @@
                 "type": "not",
                 "content": {
                     "type": "state",
-                    "content": "option[skip.lens_required]",
+                    "ref": "option[skip.lens_required]",
                     "value": "lens_required_default"
                 }
             },
             {
                 "type": "value",
-                "content": "option[skip.lens_castle_mq]"
+                "ref": "option[skip.lens_castle_mq]"
             }
         ]
     },
     "logic_shadow_trial_mq": {
         "type": "value",
-        "content": "option[skip.shadow_trial_mq]"
+        "ref": "option[skip.shadow_trial_mq]"
     },
     "logic_light_trial_mq": {
         "type": "value",
-        "content": "option[skip.light_trial_mq]"
+        "ref": "option[skip.light_trial_mq]"
     },
     "logic_dc_vines_gs": {
         "type": "value",
-        "content": "option[skip.dc_vines_gs]"
+        "ref": "option[skip.dc_vines_gs]"
     },
     "logic_dc_scrub_room": {
         "type": "value",
-        "content": "option[skip.dc_scrub_room]"
+        "ref": "option[skip.dc_scrub_room]"
     },
     "logic_forest_first_gs": {
         "type": "value",
-        "content": "option[skip.forest_first_gs]"
+        "ref": "option[skip.forest_first_gs]"
     },
     "logic_ice_block_gs": {
         "type": "value",
-        "content": "option[skip.ice_block_gs]"
+        "ref": "option[skip.ice_block_gs]"
     },
     "logic_dmt_climb_hovers": {
         "type": "value",
-        "content": "option[skip.dmt_climb_hovers]"
+        "ref": "option[skip.dmt_climb_hovers]"
     },
     "logic_goron_grotto": {
         "type": "value",
-        "content": "option[skip.goron_grotto]"
+        "ref": "option[skip.goron_grotto]"
     },
     "logic_domain_gs": {
         "type": "value",
-        "content": "option[skip.domain_gs]"
+        "ref": "option[skip.domain_gs]"
     },
     "logic_castle_storms_gs": {
         "type": "value",
-        "content": "option[skip.castle_storms_gs]"
+        "ref": "option[skip.castle_storms_gs]"
     },
     "logic_shadow_umbrella_gs": {
         "type": "value",
-        "content": "option[skip.shadow_umbrella_gs]"
+        "ref": "option[skip.shadow_umbrella_gs]"
     },
     "logic_spirit_lobby_jump": {
         "type": "value",
-        "content": "option[skip.spirit_lobby_jump]"
+        "ref": "option[skip.spirit_lobby_jump]"
     },
     "logic_water_dragon_adult": {
         "type": "value",
-        "content": "option[skip.water_dragon_adult]"
+        "ref": "option[skip.water_dragon_adult]"
     },
     "logic_water_dragon_child": {
         "type": "value",
-        "content": "option[skip.water_dragon_child]"
+        "ref": "option[skip.water_dragon_child]"
     },
     "logic_water_central_gs_irons": {
         "type": "value",
-        "content": "option[skip.water_central_gs_irons]"
+        "ref": "option[skip.water_central_gs_irons]"
     },
     "logic_water_falling_platform_gs_hookshot": {
         "type": "value",
-        "content": "option[skip.water_falling_platform_gs_hookshot]"
+        "ref": "option[skip.water_falling_platform_gs_hookshot]"
     },
     "logic_water_falling_platform_gs_boomerang": {
         "type": "value",
-        "content": "option[skip.water_falling_platform_gs_boomerang]"
+        "ref": "option[skip.water_falling_platform_gs_boomerang]"
     },
     //unadded
     "logic_botw_mq_pits": {
         "type": "value",
-        "content": "option[skip.botw_mq_pits]"
+        "ref": "option[skip.botw_mq_pits]"
     },
     "logic_deku_mq_compass_gs": {
         "type": "value",
-        "content": "option[skip.deku_mq_compass_gs]"
+        "ref": "option[skip.deku_mq_compass_gs]"
     },
     "logic_deku_mq_log": {
         "type": "value",
-        "content": "option[skip.deku_mq_log]"
+        "ref": "option[skip.deku_mq_log]"
     },
     "logic_dc_mq_eyes": {
         "type": "value",
-        "content": "option[skip.dc_mq_eyes]"
+        "ref": "option[skip.dc_mq_eyes]"
     },
     "logic_dc_mq_child_back": {
         "type": "value",
-        "content": "option[skip.dc_mq_child_back]"
+        "ref": "option[skip.dc_mq_child_back]"
     },
     "logic_fire_mq_blocked_chest": {
         "type": "value",
-        "content": "option[skip.fire_mq_blocked_chest]"
+        "ref": "option[skip.fire_mq_blocked_chest]"
     },
     "logic_fire_mq_maze_hovers": {
         "type": "value",
-        "content": "option[skip.fire_mq_maze_hovers]"
+        "ref": "option[skip.fire_mq_maze_hovers]"
     },
     "logic_fire_mq_maze_jump": {
         "type": "value",
-        "content": "option[skip.fire_mq_maze_jump]"
+        "ref": "option[skip.fire_mq_maze_jump]"
     },
     "logic_fire_mq_above_maze_gs": {
         "type": "value",
-        "content": "option[skip.fire_mq_above_maze_gs]"
+        "ref": "option[skip.fire_mq_above_maze_gs]"
     },
     "logic_forest_mq_hallway_switch_jumpslash": {
         "type": "value",
-        "content": "option[skip.forest_mq_hallway_switch_jumpslash]"
+        "ref": "option[skip.forest_mq_hallway_switch_jumpslash]"
     },
     "logic_forest_mq_hallway_switch_hookshot": {
         "type": "value",
-        "content": "option[skip.forest_mq_hallway_switch_hookshot]"
+        "ref": "option[skip.forest_mq_hallway_switch_hookshot]"
     },
     "logic_forest_door_frame": {
         "type": "value",
-        "content": "option[skip.forest_door_frame]"
+        "ref": "option[skip.forest_door_frame]"
     },
     "logic_fire_trial_mq": {
         "type": "value",
-        "content": "option[skip.fire_trial_mq]"
+        "ref": "option[skip.fire_trial_mq]"
     },
     "logic_ice_mq_red_ice_gs": {
         "type": "value",
-        "content": "option[skip.ice_mq_red_ice_gs]"
+        "ref": "option[skip.ice_mq_red_ice_gs]"
     },
     "logic_kakariko_rooftop_gs": {
         "type": "value",
-        "content": "option[skip.kakariko_rooftop_gs]"
+        "ref": "option[skip.kakariko_rooftop_gs]"
     },
     "logic_trail_gs_lower_hovers": {
         "type": "value",
-        "content": "option[skip.trail_gs_lower_hovers]"
+        "ref": "option[skip.trail_gs_lower_hovers]"
     },
     "logic_shadow_mq_invisible_blades": {
         "type": "value",
-        "content": "option[skip.shadow_mq_invisible_blades]"
+        "ref": "option[skip.shadow_mq_invisible_blades]"
     },
     "logic_spirit_mq_sun_block_sot": {
         "type": "value",
-        "content": "option[skip.spirit_mq_sun_block_sot]"
+        "ref": "option[skip.spirit_mq_sun_block_sot]"
     },
     "logic_water_mq_central_pillar": {
         "type": "value",
-        "content": "option[skip.water_mq_central_pillar]"
+        "ref": "option[skip.water_mq_central_pillar]"
     },
     "logic_water_mq_locked_gs": {
         "type": "value",
-        "content": "option[skip.water_mq_locked_gs]"
+        "ref": "option[skip.water_mq_locked_gs]"
     },
     "logic_water_central_gs_fw": {
         "type": "value",
-        "content": "option[skip.water_central_gs_fw]"
+        "ref": "option[skip.water_central_gs_fw]"
     },
     "logic_king_zora_skip": {
         "type": "value",
-        "content": "option[skip.king_zora_skip]"
+        "ref": "option[skip.king_zora_skip]"
     },
     "deadly_bonks": {
         "type": "not",
         "content": {
             "type": "state",
-            "content": "option[deadly_bonks]",
+            "ref": "option[deadly_bonks]",
             "value": "bonk_off"
         }
     },
     "blue_fire_arrows": {
         "type": "value",
-        "content": "option[blue_fire_arrows]"
+        "ref": "option[blue_fire_arrows]"
     },
     "chicken_count": {
         "type": "value",
-        "content": "option[chicken_count]"
+        "ref": "option[chicken_count]"
     },
     "plant_beans": {
         "type": "value",
-        "content": "option[plant_beans]"
+        "ref": "option[plant_beans]"
+    },
+    "shuffle_individual_ocarina_notes": {
+        "type": "value",
+        "ref": "option[shuffle_individual_ocarina_notes]"
+    },
+    "Ocarina_A_Button": {
+        "type": "value",
+        "ref": "item[ocarina_a_button]"
+    },
+    "Ocarina_C_down_Button": {
+        "type": "value",
+        "ref": "item[ocarina_down_button]"
+    },
+    "Ocarina_C_right_Button": {
+        "type": "value",
+        "ref": "item[ocarina_right_button]"
+    },
+    "Ocarina_C_left_Button": {
+        "type": "value",
+        "ref": "item[ocarina_left_button]"
+    },
+    "Ocarina_C_up_Button": {
+        "type": "value",
+        "ref": "item[ocarina_up_button]"
     },
     "triforce_hunt": {
         "type": "value",
-        "content": "item[triforce_hunt]"
+        "ref": "item[triforce_hunt]"
     },
     "triforce_goal_per_world": {
         "type": "value",
-        "content": "option[triforce_hunt_goal]"
+        "ref": "option[triforce_hunt_goal]"
     },
     "'Deku Tree' in dungeon_shortcuts": {
         "type": "value",
-        "content": "option[dungeon_shortcuts.deku]"
+        "ref": "option[dungeon_shortcuts.deku]"
     },
     "'Dodongos Cavern' in dungeon_shortcuts": {
         "type": "value",
-        "content": "option[dungeon_shortcuts.dodongo]"
+        "ref": "option[dungeon_shortcuts.dodongo]"
     },
     "'Jabu Jabus Belly' in dungeon_shortcuts": {
         "type": "value",
-        "content": "option[dungeon_shortcuts.jabu]"
+        "ref": "option[dungeon_shortcuts.jabu]"
     },
     "'Forest Temple' in dungeon_shortcuts": {
         "type": "value",
-        "content": "option[dungeon_shortcuts.temple_forest]"
+        "ref": "option[dungeon_shortcuts.temple_forest]"
     },
     "'Fire Temple' in dungeon_shortcuts": {
         "type": "value",
-        "content": "option[dungeon_shortcuts.temple_fire]"
+        "ref": "option[dungeon_shortcuts.temple_fire]"
     },
     "'Water Temple' in dungeon_shortcuts": {
         "type": "value",
-        "content": "option[dungeon_shortcuts.temple_water]"
+        "ref": "option[dungeon_shortcuts.temple_water]"
     },
     "'Shadow Temple' in dungeon_shortcuts": {
         "type": "value",
-        "content": "option[dungeon_shortcuts.temple_shadow]"
+        "ref": "option[dungeon_shortcuts.temple_shadow]"
     },
     "'Spirit Temple' in dungeon_shortcuts": {
         "type": "value",
-        "content": "option[dungeon_shortcuts.temple_spirit]"
+        "ref": "option[dungeon_shortcuts.temple_spirit]"
     },
     "logic_shadow_bongo": {
         "type": "value",
-        "content": "option[skip.logic_shadow_bongo]"
+        "ref": "option[skip.logic_shadow_bongo]"
     },
     "logic_lens_bongo": {
         "type": "value",
-        "content": "option[skip.logic_lens_bongo]"
+        "ref": "option[skip.logic_lens_bongo]"
     },
     "logic_dc_mq_eyes_child": {
         "type": "value",
-        "content": "option[skip.logic_dc_mq_eyes_child]"
+        "ref": "option[skip.logic_dc_mq_eyes_child]"
     },
     "logic_dc_mq_eyes_adult": {
         "type": "value",
-        "content": "option[skip.logic_dc_mq_eyes_adult]"
+        "ref": "option[skip.logic_dc_mq_eyes_adult]"
     },
     "logic_forest_mq_hallway_switch_boomerang": {
         "type": "value",
-        "content": "option[skip.logic_forest_mq_hallway_switch_boomerang]"
+        "ref": "option[skip.logic_forest_mq_hallway_switch_boomerang]"
     },
     "logic_jabu_alcove_jump_dive": {
         "type": "value",
-        "content": "option[skip.logic_jabu_alcove_jump_dive]"
+        "ref": "option[skip.logic_jabu_alcove_jump_dive]"
     },
     "logic_jabu_mq_rang_jump": {
         "type": "value",
-        "content": "option[skip.logic_jabu_mq_rang_jump]"
+        "ref": "option[skip.logic_jabu_mq_rang_jump]"
     },
     "logic_jabu_near_boss_ranged": {
         "type": "value",
-        "content": "option[skip.logic_jabu_near_boss_ranged]"
+        "ref": "option[skip.logic_jabu_near_boss_ranged]"
     },
     "logic_jabu_boss_hover": {
         "type": "value",
-        "content": "option[skip.logic_jabu_boss_hover]"
+        "ref": "option[skip.logic_jabu_boss_hover]"
     },
     "logic_jabu_near_boss_explosives": {
         "type": "value",
-        "content": "option[skip.logic_jabu_near_boss_explosives]"
+        "ref": "option[skip.logic_jabu_near_boss_explosives]"
     },
     "logic_gf_jump": {
         "type": "value",
-        "content": "option[skip.logic_gf_jump]"
+        "ref": "option[skip.logic_gf_jump]"
     },
     "logic_crater_boulder_jumpslash": {
         "type": "value",
-        "content": "option[skip.logic_crater_boulder_jumpslash]"
+        "ref": "option[skip.logic_crater_boulder_jumpslash]"
     },
     "logic_crater_boulder_skip": {
         "type": "value",
-        "content": "option[skip.logic_crater_boulder_skip]"
+        "ref": "option[skip.logic_crater_boulder_skip]"
     },
     "logic_crater_bolero_jump": {
         "type": "value",
-        "content": "option[skip.logic_crater_bolero_jump]"
+        "ref": "option[skip.logic_crater_bolero_jump]"
     },
     "logic_lens_shadow_mq_platform": {
         "type": "value",
-        "content": "option[skip.logic_lens_shadow_mq_platform]"
+        "ref": "option[skip.logic_lens_shadow_mq_platform]"
     },
     "logic_lens_shadow_mq_invisible_blades": {
         "type": "value",
-        "content": "option[skip.logic_lens_shadow_mq_invisible_blades]"
+        "ref": "option[skip.logic_lens_shadow_mq_invisible_blades]"
     },
     "logic_shadow_mq_windy_walkway": {
         "type": "value",
-        "content": "option[skip.logic_shadow_mq_windy_walkway]"
+        "ref": "option[skip.logic_shadow_mq_windy_walkway]"
     },
     "logic_lens_shadow_mq_dead_hand": {
         "type": "value",
-        "content": "option[skip.logic_lens_shadow_mq_dead_hand]"
+        "ref": "option[skip.logic_lens_shadow_mq_dead_hand]"
     },
     "logic_lens_shadow_platform": {
         "type": "value",
-        "content": "option[skip.logic_lens_shadow_platform]"
+        "ref": "option[skip.logic_lens_shadow_platform]"
     },
     "logic_spirit_platform_hookshot": {
         "type": "value",
-        "content": "option[skip.logic_spirit_platform_hookshot]"
+        "ref": "option[skip.logic_spirit_platform_hookshot]"
     },
     "logic_beehives_bombchus": {
         "type": "value",
-        "content": "option[skip.logic_beehives_bombchus]"
+        "ref": "option[skip.logic_beehives_bombchus]"
+    },
+    "Defeat_Queen_Gohma": {
+        "type": "value",
+        "ref": "event[defeat_queen_gohma]"
+    },
+    "Defeat_King_Dodongo": {
+        "type": "value",
+        "ref": "event[defeat_king_dodongo]"
+    },
+    "Defeat_Barinade": {
+        "type": "value",
+        "ref": "event[defeat_barinade]"
+    },
+    "Defeat_Phantom_Ganon": {
+        "type": "value",
+        "ref": "event[defeat_phantom_ganon]"
+    },
+    "Defeat_Volvagia": {
+        "type": "value",
+        "ref": "event[defeat_volvagia]"
+    },
+    "Defeat_Morpha": {
+        "type": "value",
+        "ref": "event[defeat_morpha]"
+    },
+    "Defeat_Bongo_Bongo": {
+        "type": "value",
+        "ref": "event[defeat_bongo_bongo]"
+    },
+    "Defeat_Twinrova": {
+        "type": "value",
+        "ref": "event[defeat_twinrova]"
+    },
+    "Mask_of_Truth_Access": {
+        "type": "value",
+        "ref": "event[mask_of_truth_access]"
     },
     "": ""
 }

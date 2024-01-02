@@ -8,12 +8,12 @@
                 "content": [
                     {
                         "type": "state",
-                        "content": "age",
+                        "ref": "age",
                         "value": "child"
                     },
                     {
                         "type": "state",
-                        "content": "option[starting_age]",
+                        "ref": "option[starting_age]",
                         "value": "child"
                     }
                 ]
@@ -23,12 +23,12 @@
                 "content": [
                     {
                         "type": "state",
-                        "content": "age",
+                        "ref": "age",
                         "value": "adult"
                     },
                     {
                         "type": "state",
-                        "content": "option[starting_age]",
+                        "ref": "option[starting_age]",
                         "value": "adult"
                     }
                 ]
@@ -40,7 +40,7 @@
         "content": [
             {
                 "type": "state",
-                "content": "option[starting_age]",
+                "ref": "option[starting_age]",
                 "value": "adult"
             },
             {
@@ -57,7 +57,7 @@
         "content": [
             {
                 "type": "state",
-                "content": "option[starting_age]",
+                "ref": "option[starting_age]",
                 "value": "child"
             },
             {
@@ -77,14 +77,14 @@
                 "content": [
                     {
                         "type": "state",
-                        "content": "age",
+                        "ref": "age",
                         "value": "child"
                     },
                     {
                         "type": "not",
                         "content": {
                             "type": "state",
-                            "content": "filter[era]",
+                            "ref": "filter[era]",
                             "value": "adult"
                         }
                     }
@@ -95,14 +95,14 @@
                 "content": [
                     {
                         "type": "state",
-                        "content": "age",
+                        "ref": "age",
                         "value": "adult"
                     },
                     {
                         "type": "not",
                         "content": {
                             "type": "state",
-                            "content": "filter[era]",
+                            "ref": "filter[era]",
                             "value": "child"
                         }
                     }
@@ -110,26 +110,26 @@
             },
             {
                 "type": "state",
-                "content": "filter[era_apply]",
+                "ref": "filter[era_apply]",
                 "value": "loose"
             }
         ]
     },
     "mixin[is_child]": {
         "type": "state",
-        "content": "age",
+        "ref": "age",
         "value": "child"
     },
     "mixin[is_adult]": {
         "type": "state",
-        "content": "age",
+        "ref": "age",
         "value": "adult"
     },
     "mixin[is_night]": {
         "type": "not",
         "content": {
             "type": "state",
-            "content": "filter[time]",
+            "ref": "filter[time]",
             "value": "day"
         }
     },
@@ -137,7 +137,7 @@
         "type": "not",
         "content": {
             "type": "state",
-            "content": "filter[time]",
+            "ref": "filter[time]",
             "value": "night"
         }
     },
@@ -145,7 +145,7 @@
         "type": "min",
         "content": {
             "type": "value",
-            "content": "item[hookshot]"
+            "ref": "item[hookshot]"
         },
         "value": 2
     },
@@ -153,7 +153,7 @@
         "type": "min",
         "content": {
             "type": "value",
-            "content": "item[glove]"
+            "ref": "item[glove]"
         },
         "value": 2
     },
@@ -161,7 +161,7 @@
         "type": "min",
         "content": {
             "type": "value",
-            "content": "item[glove]"
+            "ref": "item[glove]"
         },
         "value": 3
     },
@@ -170,11 +170,11 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "function[can_play](item[song_scarecrow])"
+                "ref": "function[can_play](item[song_scarecrow])"
             },
             {
                 "type": "value",
-                "content": "item[hookshot]"
+                "ref": "item[hookshot]"
             }
         ]
     },
@@ -183,11 +183,11 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "function[can_play](item[song_scarecrow])"
+                "ref": "function[can_play](item[song_scarecrow])"
             },
             {
                 "type": "mixin",
-                "content": "mixin[longshot]"
+                "ref": "mixin[longshot]"
             }
         ]
     },
@@ -196,7 +196,7 @@
         "content": [
             {
                 "type": "state",
-                "content": "option[ganon_castle_open]",
+                "ref": "option[ganon_castle_open]",
                 "value": "ganon_castle_open_open"
             },
             {
@@ -204,20 +204,20 @@
                 "content": [
                     {
                         "type": "state",
-                        "content": "option[ganon_castle_open]",
+                        "ref": "option[ganon_castle_open]",
                         "value": "ganon_castle_open_default"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_shadow]"
+                        "ref": "item[medallion_shadow]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_spirit]"
+                        "ref": "item[medallion_spirit]"
                     },
                     {
                         "type": "value",
-                        "content": "item[arrow_light]"
+                        "ref": "item[arrow_light]"
                     }
                 ]
             },
@@ -226,12 +226,12 @@
                 "content": [
                     {
                         "type": "state",
-                        "content": "option[ganon_castle_open]",
+                        "ref": "option[ganon_castle_open]",
                         "value": "ganon_castle_open_stones"
                     },
                     {
                         "type": "mixin",
-                        "content": "function[has_stones](bridge_stones)"
+                        "ref": "function[has_stones](bridge_stones)"
                     }
                 ]
             },
@@ -240,12 +240,12 @@
                 "content": [
                     {
                         "type": "state",
-                        "content": "option[ganon_castle_open]",
+                        "ref": "option[ganon_castle_open]",
                         "value": "ganon_castle_open_medallion"
                     },
                     {
                         "type": "mixin",
-                        "content": "function[has_medallions](bridge_medallions)"
+                        "ref": "function[has_medallions](bridge_medallions)"
                     }
                 ]
             },
@@ -254,12 +254,12 @@
                 "content": [
                     {
                         "type": "state",
-                        "content": "option[ganon_castle_open]",
+                        "ref": "option[ganon_castle_open]",
                         "value": "ganon_castle_open_dungeon"
                     },
                     {
                         "type": "mixin",
-                        "content": "function[has_dungeon_rewards](bridge_rewards)"
+                        "ref": "function[has_dungeon_rewards](bridge_rewards)"
                     }
                 ]
             },
@@ -268,7 +268,7 @@
                 "content": [
                     {
                         "type": "state",
-                        "content": "option[ganon_castle_open]",
+                        "ref": "option[ganon_castle_open]",
                         "value": "ganon_castle_open_skulltulas"
                     },
                     {
@@ -276,11 +276,11 @@
                         "content": [
                             {
                                 "type": "value",
-                                "content": "item[skulltula]"
+                                "ref": "item[skulltula]"
                             },
                             {
                                 "type": "value",
-                                "content": "option[ganon_castle_skulltulas]"
+                                "ref": "option[ganon_castle_skulltulas]"
                             }
                         ]
                     }
@@ -291,12 +291,12 @@
                 "content": [
                     {
                         "type": "state",
-                        "content": "option[ganon_castle_open]",
+                        "ref": "option[ganon_castle_open]",
                         "value": "ganon_castle_open_hearts"
                     },
                     {
                         "type": "mixin",
-                        "content": "function[has_hearts](ganon_bosskey_hearts)"
+                        "ref": "function[has_hearts](ganon_bosskey_hearts)"
                     }
                 ]
             }
@@ -307,24 +307,24 @@
         "content": [
             {
                 "type": "value",
-                "content": "reach_location[blue_fire]"
+                "ref": "reach_location[blue_fire]"
             },
             {
                 "type": "and",
                 "content": [
                     {
                         "type": "value",
-                        "content": "option[consider_buyable]"
+                        "ref": "option[consider_buyable]"
                     },
                     {
                         "type": "value",
-                        "content": "item[bottle]"
+                        "ref": "item[bottle]"
                     },
                     {
                         "type": "min",
                         "content": {
                             "type": "value",
-                            "content": "item[wallet]"
+                            "ref": "item[wallet]"
                         },
                         "value": 2
                     }
@@ -335,11 +335,11 @@
                 "content": [
                     {
                         "type": "value",
-                        "content": "option[blue_fire_arrows]"
+                        "ref": "option[blue_fire_arrows]"
                     },
                     {
                         "type": "mixin",
-                        "content": "function[can_use](item[blue_fire_arrows])"
+                        "ref": "function[can_use](item[blue_fire_arrows])"
                     }
                 ]
             }
@@ -350,65 +350,65 @@
         "content": [
             {
                 "type": "value",
-                "content": "item[ocarina]"
+                "ref": "item[ocarina]"
             },
             {
                 "type": "and",
                 "content": [
                     {
                         "type": "value",
-                        "content": "item[bottle]"
+                        "ref": "item[bottle]"
                     },
                     {
                         "type": "or",
                         "content": [
                             {
                                 "type": "value",
-                                "content": "option[skip.invisible_ocarina]"
+                                "ref": "option[skip.invisible_ocarina]"
                             },
                             {
                                 "type": "and",
                                 "content": [
                                     {
                                         "type": "value",
-                                        "content": "option[skip.invisible_ocarina_midair]"
+                                        "ref": "option[skip.invisible_ocarina_midair]"
                                     },
                                     {
                                         "type": "or",
                                         "content": [
                                             {
                                                 "type": "value",
-                                                "content": "item[bombs]"
+                                                "ref": "item[bombs]"
                                             },
                                             {
                                                 "type": "value",
-                                                "content": "item[bombchu]"
+                                                "ref": "item[bombchu]"
                                             },
                                             {
                                                 "type": "and",
                                                 "content": [
                                                     {
                                                         "type": "mixin",
-                                                        "content": "mixin[is_child]"
+                                                        "ref": "mixin[is_child]"
                                                     },
                                                     {
                                                         "type": "or",
                                                         "content": [
                                                             {
                                                                 "type": "value",
-                                                                "content": "item[stick]"
+                                                                "ref": "item[stick]"
                                                             },
                                                             {
                                                                 "type": "value",
-                                                                "content": "item[sword_kokiri]"
+                                                                "ref": "item[sword_kokiri]"
                                                             },
                                                             {
                                                                 "type": "value",
-                                                                "content": "item[slingshot]"
+                                                                "ref": "item[slingshot]"
                                                             },
                                                             {
                                                                 "type": "value",
-                                                                "content": "item[boomerang]"
+                                                                "ref": "item[boomerang]"
                                                             }
                                                         ]
                                                     }
@@ -419,30 +419,30 @@
                                                 "content": [
                                                     {
                                                         "type": "mixin",
-                                                        "content": "mixin[is_adult]"
+                                                        "ref": "mixin[is_adult]"
                                                     },
                                                     {
                                                         "type": "or",
                                                         "content": [
                                                             {
                                                                 "type": "value",
-                                                                "content": "item[sword_master]"
+                                                                "ref": "item[sword_master]"
                                                             },
                                                             {
                                                                 "type": "value",
-                                                                "content": "item[sword_biggoron]"
+                                                                "ref": "item[sword_biggoron]"
                                                             },
                                                             {
                                                                 "type": "value",
-                                                                "content": "item[bow]"
+                                                                "ref": "item[bow]"
                                                             },
                                                             {
                                                                 "type": "value",
-                                                                "content": "item[hookshot]"
+                                                                "ref": "item[hookshot]"
                                                             },
                                                             {
                                                                 "type": "value",
-                                                                "content": "item[hammer]"
+                                                                "ref": "item[hammer]"
                                                             }
                                                         ]
                                                     }
@@ -466,13 +466,13 @@
                 "content": [
                     {
                         "type": "mixin",
-                        "content": "mixin[is_night]"
+                        "ref": "mixin[is_night]"
                     },
                     {
                         "type": "not",
                         "content": {
                             "type": "value",
-                            "content": "option[sun_song_skulltuta]"
+                            "ref": "option[sun_song_skulltuta]"
                         }
                     }
                 ]
@@ -482,11 +482,11 @@
                 "content": [
                     {
                         "type": "value",
-                        "content": "option[sun_song_skulltuta]"
+                        "ref": "option[sun_song_skulltuta]"
                     },
                     {
                         "type": "mixin",
-                        "content": "function[can_play](item[song_sun])"
+                        "ref": "function[can_play](item[song_sun])"
                     }
                 ]
             }
@@ -499,66 +499,34 @@
                 "type": "not",
                 "content": {
                     "type": "state",
-                    "content": "option[doors_open_forest]",
+                    "ref": "option[doors_open_forest]",
                     "value": "doors_open_forest_closed"
                 }
             },
             {
                 "type": "mixin",
-                "content": "mixin[is_adult]"
+                "ref": "mixin[is_adult]"
             },
             {
                 "type": "value",
-                "content": "option[shuffle_overworld]"
+                "ref": "option[shuffle_overworld]"
             },
             {
                 "type": "value",
-                "content": "option[shuffle_warps]"
+                "ref": "option[shuffle_warps]"
             },
             {
                 "type": "value",
-                "content": "option[shuffle_spawns]"
+                "ref": "option[shuffle_spawns]"
             },
             {
                 "type": "value",
-                "content": "event[deku_tree_clear]"
+                "ref": "event[deku_tree_clear]"
             }
         ]
     },
     "mixin[king_dodongo_shortcuts]": {
-        "type": "and",
-        "content": [
-            {
-                "type": "false"
-            },
-            {
-                "type": "not",
-                "content": {
-                    "type": "state",
-                    "content": "option[shuffle_bosses]",
-                    "value": "shuffle_bosses_off"
-                }
-            },
-            {
-                "type": "or",
-                "content": [
-                    {
-                        "type": "and",
-                        "content": [
-                            {
-                                "type": "value",
-                                "content": "option[dungeon_shortcuts.deku]"
-                            },
-                            {
-                                "type": "state",
-                                "content": " -> ",
-                                "value": ""
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
+        "type": "false"
     },
     "mixin[has_bombchus]": {
         "type": "or",
@@ -568,11 +536,11 @@
                 "content": [
                     {
                         "type": "value",
-                        "content": "option[bombchu_logic]"
+                        "ref": "option[bombchu_logic]"
                     },
                     {
                         "type": "value",
-                        "content": "item[bombchu]"
+                        "ref": "item[bombchu]"
                     }
                 ]
             },
@@ -583,16 +551,16 @@
                         "type": "not",
                         "content": {
                             "type": "value",
-                            "content": "option[bombchu_logic]"
+                            "ref": "option[bombchu_logic]"
                         }
                     },
                     {
                         "type": "value",
-                        "content": "item[bombchu]"
+                        "ref": "item[bombchu]"
                     },
                     {
                         "type": "value",
-                        "content": "item[bombs]"
+                        "ref": "item[bombs]"
                     }
                 ]
             }

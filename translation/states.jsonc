@@ -111,7 +111,7 @@
             "hearts": "gbk_hearts",
             "triforce": {
                 "type": "value",
-                "content": "item[triforce_hunt]"
+                "ref": "item[triforce_hunt]"
             }
         }
     },
@@ -245,7 +245,8 @@
         "name": "option[entrance_shuffle_interior]",
         "values": {
             "entrance_shuffle_simple": "entrance_shuffle_simple",
-            "entrance_shuffle_all": "entrance_shuffle_all"
+            "entrance_shuffle_all": "entrance_shuffle_all",
+            "entrance_shuffle_off": "entrance_shuffle_off"
         }
     },
     "option[light_arrow_cutscene]": {
@@ -356,7 +357,7 @@
                 "type": "not",
                 "content": {
                     "type": "value",
-                    "content": "option[shuffle_overworld]"
+                    "ref": "option[shuffle_overworld]"
                 }
             }
         }
@@ -365,6 +366,12 @@
         "name": "option[shuffle_pots]",
         "values": {
             "off": "off"
+        }
+    },
+    "shuffle_tcgkeys": {
+        "name": "option[shuffle_tcgkeys]",
+        "values": {
+            "vanilla": "keylogic_vanilla"
         }
     }
 }

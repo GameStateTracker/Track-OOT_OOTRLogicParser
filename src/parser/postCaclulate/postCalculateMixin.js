@@ -3,7 +3,7 @@ export default function postCalculate(scope, input, age = ""/* , region = "", ba
     if (age != "") {
         return {
             type: "mixin",
-            content: `${input.content}{${age}}`
+            ref: `${input.ref}{${age}}`
         };
     }
     return input;

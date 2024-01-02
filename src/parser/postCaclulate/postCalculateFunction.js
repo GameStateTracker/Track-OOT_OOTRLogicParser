@@ -4,24 +4,24 @@ import {
 } from "../../utils/TranslatorFunctions.js";
 
 export default function postCalculate(scope, input, age = ""/* , region = "", basic = false */) {
-    let fnName = translateFunctionName(input.value);
-    let param = input.content[0];
+    let fnName = translateFunctionName(input.ref);
+    let param = input.params[0];
     if (param != null) {
-        param = param.content
+        param = param.ref;
         const paramBuff = Translation.getValueName(param);
         if (paramBuff != null) {
-            param = paramBuff.content;
+            param = paramBuff.ref;
         }
         fnName = `${fnName}(${param})`;
     }
     if (age != "") {
         return {
             type: "mixin",
-            content: `${fnName}{${age}}`
+            ref: `${fnName}{${age}}`
         };
     }
     return {
         type: "mixin",
-        content: fnName
+        ref: fnName
     };
 }

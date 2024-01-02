@@ -32,59 +32,20 @@ generate logic output
 -------------------------------------------
 locations not converted
 
-LW Trade Cojiro
-LW Trade Odd Potion
-LH Trade Eyeball Frog
-LH Loach Fishing
-GV Trade Poachers Saw
 ToT Child Altar Hint
 ToT Adult Altar Hint
-Market Mask Shop Item 1
-Market Mask Shop Item 2
-Market Mask Shop Item 3
-Market Mask Shop Item 4
-Market Mask Shop Item 5
-Market Mask Shop Item 6
-Market Mask Shop Item 7
-Market Mask Shop Item 8
-Market Bombchu Bowling Bomb
-Market Treasure Chest Game Salesman
-Market Treasure Chest Game Room 1 Bottom
-Market Treasure Chest Game Room 1 Top
-Market Treasure Chest Game Room 2 Bottom
-Market Treasure Chest Game Room 2 Top
-Market Treasure Chest Game Room 3 Bottom
-Market Treasure Chest Game Room 3 Top
-Market Treasure Chest Game Room 4 Bottom
-Market Treasure Chest Game Room 4 Top
-Market Treasure Chest Game Room 5 Bottom
-Market Treasure Chest Game Room 5 Top
-Kak Anju Trade Pocket Cucco
 10 Skulltulas Reward Hint
 20 Skulltulas Reward Hint
 30 Skulltulas Reward Hint
 40 Skulltulas Reward Hint
 50 Skulltulas Reward Hint
-Kak Granny Trade Odd Mushroom
-Kak Granny Buy Blue Potion
 Dampe Diary Hint
-DMT Trade Broken Sword
-DMT Trade Eyedrops
 ZR Frogs Ocarina Minigame Hint
-ZD Trade Prescription
 
 -------------------------------------------
 values not converted
 
-'Defeat Queen Gohma'
-'Defeat King Dodongo'
-'Defeat Barinade'
-'Defeat Phantom Ganon'
-'Defeat Volvagia'
-'Defeat Morpha'
 logic_water_morpha
-'Defeat Bongo Bongo'
-'Defeat Twinrova'
 logic_dc_chu_eyes
 logic_fire_mq_child_flame
 logic_forest_courtyard_hearts
@@ -99,19 +60,9 @@ logic_ice_frozen_rupee
 logic_ice_frozen_pot
 logic_adult_kokiri_gs_hovers
 logic_adult_kokiri_gs_nothing
-Ocarina_A_Button
-Ocarina_C_down_Button
-Ocarina_C_right_Button
-Ocarina_C_left_Button
-Ocarina_C_up_Button
-adult_trade_shuffle
 logic_gf_break_room_jump
-Keaton_Mask
-Spooky_Mask
-Bunny_Hood
 logic_trail_gs_lower
 logic_zora_river_rupees
-Chicken
 logic_shadow_mq_after_boat_gs
 logic_shadow_triple_pots
 logic_spirit_mq_water_rupee
@@ -121,21 +72,20 @@ logic_spirit_sun_chest_no_rupees
 logic_spirit_sun_chest_bow
 logic_water_mq_dark_link
 logic_water_north_basement
-shuffle_individual_ocarina_notes
 
 -------------------------------------------
 states not converted
 
-option[entrance_shuffle_interior]: {
-    "name": "option[entrance_shuffle_interior]",
-    "values": {
-        "entrance_shuffle_off": ""
-    }
-}
- -> : {
+selected_adult_trade_item: {
     "name": "",
     "values": {
-        "": ""
+        "Odd": "",
+        "Poachers": "",
+        "Broken": "",
+        "Prescription": "",
+        "Eyeball": "",
+        "Eyedrops": "",
+        "Claim": ""
     }
 }
 
@@ -150,7 +100,6 @@ unused value translations
 Time_Travel
 is_starting_age
 Mask_Shop_Open
-Eyedrops_Access
 Carpenter_Rescue
 Deku_Tree_Clear
 Hammer
@@ -205,6 +154,8 @@ unused state translations
 option[deadly_bonks]
 shuffle_interior_entrances
 shuffle_child_trade
+option[entrance_shuffle]
+option[shuffle_bosses]
 option[light_arrow_cutscene]
 
 ===========================================
@@ -224,71 +175,23 @@ Fire Temple MQ GS Fire Wall Maze Center
 Fire Temple MQ GS Above Fire Wall Maze
 Forest Temple Deku Baba Nuts
 Forest Temple Deku Baba Sticks
-LW Trade Cojiro
-LW Trade Odd Potion
-LH Trade Eyeball Frog
-LH Loach Fishing
-GV Trade Poachers Saw
 ToT Child Altar Hint
 ToT Adult Altar Hint
-Market Mask Shop Item 1
-Market Mask Shop Item 2
-Market Mask Shop Item 3
-Market Mask Shop Item 4
-Market Mask Shop Item 5
-Market Mask Shop Item 6
-Market Mask Shop Item 7
-Market Mask Shop Item 8
-Market Bombchu Bowling Bomb
-Market Treasure Chest Game Salesman
-Market Treasure Chest Game Room 1 Bottom
-Market Treasure Chest Game Room 1 Top
-Market Treasure Chest Game Room 2 Bottom
-Market Treasure Chest Game Room 2 Top
-Market Treasure Chest Game Room 3 Bottom
-Market Treasure Chest Game Room 3 Top
-Market Treasure Chest Game Room 4 Bottom
-Market Treasure Chest Game Room 4 Top
-Market Treasure Chest Game Room 5 Bottom
-Market Treasure Chest Game Room 5 Top
-Kak Anju Trade Pocket Cucco
 10 Skulltulas Reward Hint
 20 Skulltulas Reward Hint
 30 Skulltulas Reward Hint
 40 Skulltulas Reward Hint
 50 Skulltulas Reward Hint
-Kak Granny Trade Odd Mushroom
-Kak Granny Buy Blue Potion
 Dampe Diary Hint
-DMT Trade Broken Sword
-DMT Trade Eyedrops
 ZR Frogs Ocarina Minigame Hint
-ZD Trade Prescription
 
 -------------------------------------------
 values not converted
 
-'Defeat Queen Gohma'
-Ocarina_A_Button
-Ocarina_C_down_Button
-Ocarina_C_right_Button
-Ocarina_C_left_Button
-Ocarina_C_up_Button
-Keaton_Mask
-Spooky_Mask
-Bunny_Hood
-Chicken
-shuffle_individual_ocarina_notes
 
 -------------------------------------------
 states not converted
 
- -> : {
-    "name": "",
-    "values": {
-        "": ""
-    }
-}
 
 -------------------------------------------
 unused name translations
@@ -1419,7 +1322,6 @@ Time_Travel
 is_starting_age
 at_night
 at_dampe_time
-Wake_Up_Adult_Talon
 Goron_City_Child_Fire
 Child_Water_Temple
 Dampes_Windmill_Access
@@ -1448,7 +1350,6 @@ Ice_Arrows
 Ice_Trap
 Arrows
 Magic_Bean_Pack
-Odd_Potion
 Bottle_with_Letter
 Silver_Rupee_Bottom_of_the_Well_Basement
 Silver_Rupee_Dodongos_Cavern_Staircase
@@ -1645,6 +1546,13 @@ logic_shadow_mq_windy_walkway
 logic_lens_shadow_mq_dead_hand
 logic_lens_shadow_platform
 logic_spirit_platform_hookshot
+Defeat_King_Dodongo
+Defeat_Barinade
+Defeat_Phantom_Ganon
+Defeat_Volvagia
+Defeat_Morpha
+Defeat_Bongo_Bongo
+Defeat_Twinrova
 
 -------------------------------------------
 unused state translations
@@ -1653,8 +1561,9 @@ option[deadly_bonks]
 bridge
 shuffle_interior_entrances
 shuffle_child_trade
+option[entrance_shuffle]
 option[shuffle_dungeons]
-option[entrance_shuffle_interior]
+option[shuffle_bosses]
 option[light_arrow_cutscene]
 shuffle_overworld_entrances
 shuffle_pots

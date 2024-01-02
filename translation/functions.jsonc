@@ -5,11 +5,11 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "mixin[can_play_ocarina]"
+                "ref": "mixin[can_play_ocarina]"
             },
             {
                 "type": "value",
-                "content": "item[song_zelda]"
+                "ref": "item[song_zelda]"
             }
         ]
     },
@@ -18,11 +18,11 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "mixin[can_play_ocarina]"
+                "ref": "mixin[can_play_ocarina]"
             },
             {
                 "type": "value",
-                "content": "item[song_epona]"
+                "ref": "item[song_epona]"
             }
         ]
     },
@@ -31,11 +31,11 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "mixin[can_play_ocarina]"
+                "ref": "mixin[can_play_ocarina]"
             },
             {
                 "type": "value",
-                "content": "item[song_saria]"
+                "ref": "item[song_saria]"
             }
         ]
     },
@@ -44,11 +44,11 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "mixin[can_play_ocarina]"
+                "ref": "mixin[can_play_ocarina]"
             },
             {
                 "type": "value",
-                "content": "item[song_sun]"
+                "ref": "item[song_sun]"
             }
         ]
     },
@@ -57,11 +57,11 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "mixin[can_play_ocarina]"
+                "ref": "mixin[can_play_ocarina]"
             },
             {
                 "type": "value",
-                "content": "item[song_time]"
+                "ref": "item[song_time]"
             }
         ]
     },
@@ -70,11 +70,11 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "mixin[can_play_ocarina]"
+                "ref": "mixin[can_play_ocarina]"
             },
             {
                 "type": "value",
-                "content": "item[song_storm]"
+                "ref": "item[song_storm]"
             }
         ]
     },
@@ -84,11 +84,11 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "mixin[can_play_ocarina]"
+                "ref": "mixin[can_play_ocarina]"
             },
             {
                 "type": "value",
-                "content": "item[warp_forest]"
+                "ref": "item[warp_forest]"
             }
         ]
     },
@@ -97,11 +97,11 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "mixin[can_play_ocarina]"
+                "ref": "mixin[can_play_ocarina]"
             },
             {
                 "type": "value",
-                "content": "item[warp_fire]"
+                "ref": "item[warp_fire]"
             }
         ]
     },
@@ -110,11 +110,11 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "mixin[can_play_ocarina]"
+                "ref": "mixin[can_play_ocarina]"
             },
             {
                 "type": "value",
-                "content": "item[warp_water]"
+                "ref": "item[warp_water]"
             }
         ]
     },
@@ -123,11 +123,11 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "mixin[can_play_ocarina]"
+                "ref": "mixin[can_play_ocarina]"
             },
             {
                 "type": "value",
-                "content": "item[warp_shadow]"
+                "ref": "item[warp_shadow]"
             }
         ]
     },
@@ -136,11 +136,11 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "mixin[can_play_ocarina]"
+                "ref": "mixin[can_play_ocarina]"
             },
             {
                 "type": "value",
-                "content": "item[warp_spirit]"
+                "ref": "item[warp_spirit]"
             }
         ]
     },
@@ -149,11 +149,11 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "mixin[can_play_ocarina]"
+                "ref": "mixin[can_play_ocarina]"
             },
             {
                 "type": "value",
-                "content": "item[warp_light]"
+                "ref": "item[warp_light]"
             }
         ]
     },
@@ -163,18 +163,18 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "mixin[can_play_ocarina]"
+                "ref": "mixin[can_play_ocarina]"
             },
             {
                 "type": "or",
                 "content": [
                     {
                         "type": "value",
-                        "content": "item[song_scarecrow]"
+                        "ref": "item[song_scarecrow]"
                     },
                     {
                         "type": "value",
-                        "content": "option[free_scarecrow]"
+                        "ref": "option[free_scarecrow]"
                     }
                 ]
             }
@@ -186,15 +186,15 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "mixin[has_explosives]"
+                "ref": "mixin[has_explosives]"
             },
             {
                 "type": "value",
-                "content": "item[slingshot]"
+                "ref": "item[slingshot]"
             },
             {
                 "type": "value",
-                "content": "item[boomerang]"
+                "ref": "item[boomerang]"
             }
         ]
     },
@@ -203,15 +203,15 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "mixin[has_explosives]"
+                "ref": "mixin[has_explosives]"
             },
             {
                 "type": "value",
-                "content": "item[bow]"
+                "ref": "item[bow]"
             },
             {
                 "type": "value",
-                "content": "item[hookshot]"
+                "ref": "item[hookshot]"
             }
         ]
     },
@@ -220,7 +220,7 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "mixin[has_explosives]"
+                "ref": "mixin[has_explosives]"
             },
             {
                 "type": "and",
@@ -230,11 +230,11 @@
                         "content": [
                             {
                                 "type": "value",
-                                "content": "item[slingshot]"
+                                "ref": "item[slingshot]"
                             },
                             {
                                 "type": "value",
-                                "content": "item[boomerang]"
+                                "ref": "item[boomerang]"
                             }
                         ]
                     },
@@ -243,11 +243,11 @@
                         "content": [
                             {
                                 "type": "value",
-                                "content": "item[bow]"
+                                "ref": "item[bow]"
                             },
                             {
                                 "type": "value",
-                                "content": "item[hookshot]"
+                                "ref": "item[hookshot]"
                             }
                         ]
                     }
@@ -260,23 +260,23 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "mixin[has_explosives]"
+                "ref": "mixin[has_explosives]"
             },
             {
                 "type": "value",
-                "content": "item[slingshot]"
+                "ref": "item[slingshot]"
             },
             {
                 "type": "value",
-                "content": "item[boomerang]"
+                "ref": "item[boomerang]"
             },
             {
                 "type": "value",
-                "content": "item[bow]"
+                "ref": "item[bow]"
             },
             {
                 "type": "value",
-                "content": "item[hookshot]"
+                "ref": "item[hookshot]"
             }
         ]
     },
@@ -286,19 +286,19 @@
         "content": [
             {
                 "type": "value",
-                "content": "item[arrow_fire]"
+                "ref": "item[arrow_fire]"
             },
             {
                 "type": "value",
-                "content": "item[bow]"
+                "ref": "item[bow]"
             },
             {
                 "type": "value",
-                "content": "item[magic_power]"
+                "ref": "item[magic_power]"
             },
             {
                 "type": "mixin",
-                "content": "mixin[is_adult]"
+                "ref": "mixin[is_adult]"
             }
         ]
     },
@@ -307,19 +307,19 @@
         "content": [
             {
                 "type": "value",
-                "content": "item[arrow_light]"
+                "ref": "item[arrow_light]"
             },
             {
                 "type": "value",
-                "content": "item[bow]"
+                "ref": "item[bow]"
             },
             {
                 "type": "value",
-                "content": "item[magic_power]"
+                "ref": "item[magic_power]"
             },
             {
                 "type": "mixin",
-                "content": "mixin[is_adult]"
+                "ref": "mixin[is_adult]"
             }
         ]
     },
@@ -328,19 +328,19 @@
         "content": [
             {
                 "type": "value",
-                "content": "item[arrow_ice]"
+                "ref": "item[arrow_ice]"
             },
             {
                 "type": "value",
-                "content": "item[bow]"
+                "ref": "item[bow]"
             },
             {
                 "type": "value",
-                "content": "item[magic_power]"
+                "ref": "item[magic_power]"
             },
             {
                 "type": "mixin",
-                "content": "mixin[is_adult]"
+                "ref": "mixin[is_adult]"
             }
         ]
     },
@@ -349,19 +349,19 @@
         "content": [
             {
                 "type": "value",
-                "content": "item[arrow_ice]"
+                "ref": "item[arrow_ice]"
             },
             {
                 "type": "value",
-                "content": "item[bow]"
+                "ref": "item[bow]"
             },
             {
                 "type": "value",
-                "content": "item[magic_power]"
+                "ref": "item[magic_power]"
             },
             {
                 "type": "mixin",
-                "content": "mixin[is_adult]"
+                "ref": "mixin[is_adult]"
             }
         ]
     },
@@ -371,11 +371,11 @@
         "content": [
             {
                 "type": "value",
-                "content": "item[lens]"
+                "ref": "item[lens]"
             },
             {
                 "type": "value",
-                "content": "item[magic_power]"
+                "ref": "item[magic_power]"
             }
         ]
     },
@@ -384,11 +384,11 @@
         "content": [
             {
                 "type": "value",
-                "content": "item[magic_din]"
+                "ref": "item[magic_din]"
             },
             {
                 "type": "value",
-                "content": "item[magic_power]"
+                "ref": "item[magic_power]"
             }
         ]
     },
@@ -397,11 +397,11 @@
         "content": [
             {
                 "type": "value",
-                "content": "item[magic_farore]"
+                "ref": "item[magic_farore]"
             },
             {
                 "type": "value",
-                "content": "item[magic_power]"
+                "ref": "item[magic_power]"
             }
         ]
     },
@@ -410,11 +410,11 @@
         "content": [
             {
                 "type": "value",
-                "content": "item[magic_nayru]"
+                "ref": "item[magic_nayru]"
             },
             {
                 "type": "value",
-                "content": "item[magic_power]"
+                "ref": "item[magic_power]"
             }
         ]
     },
@@ -424,11 +424,11 @@
         "content": [
             {
                 "type": "value",
-                "content": "item[bow]"
+                "ref": "item[bow]"
             },
             {
                 "type": "mixin",
-                "content": "mixin[is_adult]"
+                "ref": "mixin[is_adult]"
             }
         ]
     },
@@ -437,11 +437,11 @@
         "content": [
             {
                 "type": "value",
-                "content": "item[hammer]"
+                "ref": "item[hammer]"
             },
             {
                 "type": "mixin",
-                "content": "mixin[is_adult]"
+                "ref": "mixin[is_adult]"
             }
         ]
     },
@@ -450,11 +450,11 @@
         "content": [
             {
                 "type": "value",
-                "content": "item[boots_iron]"
+                "ref": "item[boots_iron]"
             },
             {
                 "type": "mixin",
-                "content": "mixin[is_adult]"
+                "ref": "mixin[is_adult]"
             }
         ]
     },
@@ -463,11 +463,11 @@
         "content": [
             {
                 "type": "value",
-                "content": "item[boots_hover]"
+                "ref": "item[boots_hover]"
             },
             {
                 "type": "mixin",
-                "content": "mixin[is_adult]"
+                "ref": "mixin[is_adult]"
             }
         ]
     },
@@ -476,11 +476,11 @@
         "content": [
             {
                 "type": "value",
-                "content": "item[hookshot]"
+                "ref": "item[hookshot]"
             },
             {
                 "type": "mixin",
-                "content": "mixin[is_adult]"
+                "ref": "mixin[is_adult]"
             }
         ]
     },
@@ -489,11 +489,11 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "mixin[longshot]"
+                "ref": "mixin[longshot]"
             },
             {
                 "type": "mixin",
-                "content": "mixin[is_adult]"
+                "ref": "mixin[is_adult]"
             }
         ]
     },
@@ -502,11 +502,11 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "mixin[silver_gauntlets]"
+                "ref": "mixin[silver_gauntlets]"
             },
             {
                 "type": "mixin",
-                "content": "mixin[is_adult]"
+                "ref": "mixin[is_adult]"
             }
         ]
     },
@@ -515,11 +515,11 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "mixin[golden_gauntlets]"
+                "ref": "mixin[golden_gauntlets]"
             },
             {
                 "type": "mixin",
-                "content": "mixin[is_adult]"
+                "ref": "mixin[is_adult]"
             }
         ]
     },
@@ -528,11 +528,11 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "mixin[goron_tunic]"
+                "ref": "mixin[goron_tunic]"
             },
             {
                 "type": "mixin",
-                "content": "mixin[is_adult]"
+                "ref": "mixin[is_adult]"
             }
         ]
     },
@@ -541,11 +541,11 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "mixin[zora_tunic]"
+                "ref": "mixin[zora_tunic]"
             },
             {
                 "type": "mixin",
-                "content": "mixin[is_adult]"
+                "ref": "mixin[is_adult]"
             }
         ]
     },
@@ -554,15 +554,15 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "mixin[is_adult]"
+                "ref": "mixin[is_adult]"
             },
             {
                 "type": "mixin",
-                "content": "mixin[hookshot]"
+                "ref": "mixin[hookshot]"
             },
             {
                 "type": "mixin",
-                "content": "function[can_play](item[song_scarecrow])"
+                "ref": "function[can_play](item[song_scarecrow])"
             }
         ]
     },
@@ -571,15 +571,15 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "mixin[is_adult]"
+                "ref": "mixin[is_adult]"
             },
             {
                 "type": "mixin",
-                "content": "mixin[longshot]"
+                "ref": "mixin[longshot]"
             },
             {
                 "type": "mixin",
-                "content": "function[can_play](item[song_scarecrow])"
+                "ref": "function[can_play](item[song_scarecrow])"
             }
         ]
     },
@@ -589,11 +589,11 @@
         "content": [
             {
                 "type": "mixin",
-                "content": "mixin[is_child]"
+                "ref": "mixin[is_child]"
             },
             {
                 "type": "value",
-                "content": "item[slingshot]"
+                "ref": "item[slingshot]"
             }
         ]
     },
@@ -602,11 +602,11 @@
         "content": [
             {
                 "type": "value",
-                "content": "item[boomerang]"
+                "ref": "item[boomerang]"
             },
             {
                 "type": "mixin",
-                "content": "mixin[is_child]"
+                "ref": "mixin[is_child]"
             }
         ]
     },
@@ -615,11 +615,11 @@
         "content": [
             {
                 "type": "value",
-                "content": "item[sword_kokiri]"
+                "ref": "item[sword_kokiri]"
             },
             {
                 "type": "mixin",
-                "content": "mixin[is_child]"
+                "ref": "mixin[is_child]"
             }
         ]
     },
@@ -628,11 +628,11 @@
         "content": [
             {
                 "type": "value",
-                "content": "item[shield_kokiri]"
+                "ref": "item[shield_kokiri]"
             },
             {
                 "type": "mixin",
-                "content": "mixin[is_child]"
+                "ref": "mixin[is_child]"
             }
         ]
     },
@@ -641,11 +641,11 @@
         "content": [
             {
                 "type": "value",
-                "content": "item[shield_mirror]"
+                "ref": "item[shield_mirror]"
             },
             {
                 "type": "mixin",
-                "content": "mixin[is_adult]"
+                "ref": "mixin[is_adult]"
             }
         ]
     },
@@ -654,11 +654,11 @@
         "content": [
             {
                 "type": "value",
-                "content": "item[stick]"
+                "ref": "item[stick]"
             },
             {
                 "type": "mixin",
-                "content": "mixin[is_child]"
+                "ref": "mixin[is_child]"
             }
         ]
     },
@@ -671,21 +671,21 @@
                 "content": [
                     {
                         "type": "value",
-                        "content": "item[stone_forest]"
+                        "ref": "item[stone_forest]"
                     },
                     {
                         "type": "value",
-                        "content": "item[stone_fire]"
+                        "ref": "item[stone_fire]"
                     },
                     {
                         "type": "value",
-                        "content": "item[stone_water]"
+                        "ref": "item[stone_water]"
                     }
                 ]
             },
             {
                 "type": "value",
-                "content": "option[stone_count_lacs]"
+                "ref": "option[stone_count_lacs]"
             }
         ]
     },
@@ -697,33 +697,33 @@
                 "content": [
                     {
                         "type": "value",
-                        "content": "item[medallion_forest]"
+                        "ref": "item[medallion_forest]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_fire]"
+                        "ref": "item[medallion_fire]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_water]"
+                        "ref": "item[medallion_water]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_spirit]"
+                        "ref": "item[medallion_spirit]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_shadow]"
+                        "ref": "item[medallion_shadow]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_light]"
+                        "ref": "item[medallion_light]"
                     }
                 ]
             },
             {
                 "type": "value",
-                "content": "option[medallion_count_lacs]"
+                "ref": "option[medallion_count_lacs]"
             }
         ]
     },
@@ -735,45 +735,45 @@
                 "content": [
                     {
                         "type": "value",
-                        "content": "item[medallion_forest]"
+                        "ref": "item[medallion_forest]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_fire]"
+                        "ref": "item[medallion_fire]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_water]"
+                        "ref": "item[medallion_water]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_spirit]"
+                        "ref": "item[medallion_spirit]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_shadow]"
+                        "ref": "item[medallion_shadow]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_light]"
+                        "ref": "item[medallion_light]"
                     },
                     {
                         "type": "value",
-                        "content": "item[stone_forest]"
+                        "ref": "item[stone_forest]"
                     },
                     {
                         "type": "value",
-                        "content": "item[stone_fire]"
+                        "ref": "item[stone_fire]"
                     },
                     {
                         "type": "value",
-                        "content": "item[stone_water]"
+                        "ref": "item[stone_water]"
                     }
                 ]
             },
             {
                 "type": "value",
-                "content": "option[dungeon_count_lacs]"
+                "ref": "option[dungeon_count_lacs]"
             }
         ]
     },
@@ -785,21 +785,21 @@
                 "content": [
                     {
                         "type": "value",
-                        "content": "item[stone_forest]"
+                        "ref": "item[stone_forest]"
                     },
                     {
                         "type": "value",
-                        "content": "item[stone_fire]"
+                        "ref": "item[stone_fire]"
                     },
                     {
                         "type": "value",
-                        "content": "item[stone_water]"
+                        "ref": "item[stone_water]"
                     }
                 ]
             },
             {
                 "type": "value",
-                "content": "option[stone_count_bridge]"
+                "ref": "option[stone_count_bridge]"
             }
         ]
     },
@@ -811,33 +811,33 @@
                 "content": [
                     {
                         "type": "value",
-                        "content": "item[medallion_forest]"
+                        "ref": "item[medallion_forest]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_fire]"
+                        "ref": "item[medallion_fire]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_water]"
+                        "ref": "item[medallion_water]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_spirit]"
+                        "ref": "item[medallion_spirit]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_shadow]"
+                        "ref": "item[medallion_shadow]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_light]"
+                        "ref": "item[medallion_light]"
                     }
                 ]
             },
             {
                 "type": "value",
-                "content": "option[medallion_count_bridge]"
+                "ref": "option[medallion_count_bridge]"
             }
         ]
     },
@@ -849,45 +849,45 @@
                 "content": [
                     {
                         "type": "value",
-                        "content": "item[medallion_forest]"
+                        "ref": "item[medallion_forest]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_fire]"
+                        "ref": "item[medallion_fire]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_water]"
+                        "ref": "item[medallion_water]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_spirit]"
+                        "ref": "item[medallion_spirit]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_shadow]"
+                        "ref": "item[medallion_shadow]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_light]"
+                        "ref": "item[medallion_light]"
                     },
                     {
                         "type": "value",
-                        "content": "item[stone_forest]"
+                        "ref": "item[stone_forest]"
                     },
                     {
                         "type": "value",
-                        "content": "item[stone_fire]"
+                        "ref": "item[stone_fire]"
                     },
                     {
                         "type": "value",
-                        "content": "item[stone_water]"
+                        "ref": "item[stone_water]"
                     }
                 ]
             },
             {
                 "type": "value",
-                "content": "option[dungeon_count_bridge]"
+                "ref": "option[dungeon_count_bridge]"
             }
         ]
     },
@@ -899,21 +899,21 @@
                 "content": [
                     {
                         "type": "value",
-                        "content": "item[stone_forest]"
+                        "ref": "item[stone_forest]"
                     },
                     {
                         "type": "value",
-                        "content": "item[stone_fire]"
+                        "ref": "item[stone_fire]"
                     },
                     {
                         "type": "value",
-                        "content": "item[stone_water]"
+                        "ref": "item[stone_water]"
                     }
                 ]
             },
             {
                 "type": "value",
-                "content": "option[stone_count_bridge]"
+                "ref": "option[stone_count_bridge]"
             }
         ]
     },
@@ -925,33 +925,33 @@
                 "content": [
                     {
                         "type": "value",
-                        "content": "item[medallion_forest]"
+                        "ref": "item[medallion_forest]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_fire]"
+                        "ref": "item[medallion_fire]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_water]"
+                        "ref": "item[medallion_water]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_spirit]"
+                        "ref": "item[medallion_spirit]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_shadow]"
+                        "ref": "item[medallion_shadow]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_light]"
+                        "ref": "item[medallion_light]"
                     }
                 ]
             },
             {
                 "type": "value",
-                "content": "option[medallion_count_bridge]"
+                "ref": "option[medallion_count_bridge]"
             }
         ]
     },
@@ -963,45 +963,45 @@
                 "content": [
                     {
                         "type": "value",
-                        "content": "item[medallion_forest]"
+                        "ref": "item[medallion_forest]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_fire]"
+                        "ref": "item[medallion_fire]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_water]"
+                        "ref": "item[medallion_water]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_spirit]"
+                        "ref": "item[medallion_spirit]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_shadow]"
+                        "ref": "item[medallion_shadow]"
                     },
                     {
                         "type": "value",
-                        "content": "item[medallion_light]"
+                        "ref": "item[medallion_light]"
                     },
                     {
                         "type": "value",
-                        "content": "item[stone_forest]"
+                        "ref": "item[stone_forest]"
                     },
                     {
                         "type": "value",
-                        "content": "item[stone_fire]"
+                        "ref": "item[stone_fire]"
                     },
                     {
                         "type": "value",
-                        "content": "item[stone_water]"
+                        "ref": "item[stone_water]"
                     }
                 ]
             },
             {
                 "type": "value",
-                "content": "option[dungeon_count_bridge]"
+                "ref": "option[dungeon_count_bridge]"
             }
         ]
     },
@@ -1010,11 +1010,11 @@
         "content": [
             {
                 "type": "value",
-                "content": "calculated[hearts_total]"
+                "ref": "calculated[hearts_total]"
             },
             {
                 "type": "value",
-                "content": "option[heart_count_lacs]"
+                "ref": "option[heart_count_lacs]"
             }
         ]
     },
@@ -1023,11 +1023,11 @@
         "content": [
             {
                 "type": "value",
-                "content": "calculated[hearts_total]"
+                "ref": "calculated[hearts_total]"
             },
             {
                 "type": "value",
-                "content": "option[heart_count_bridge]"
+                "ref": "option[heart_count_bridge]"
             }
         ]
     },

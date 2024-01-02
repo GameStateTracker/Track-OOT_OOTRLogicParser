@@ -7,34 +7,34 @@ const EXPECTED_REG = /item\[.*?\]/;
 
 export default function postCalculate(scope, input, age = "", region = "", basic = false) {
     const {calc, mixins, missingValue} = scope;
-    if (input.content.indexOf("[") >= 0 && input.content.endsWith("]")) {
-        if (input.content.startsWith("mixin[") || input.content.startsWith("function[") && age != "") {
+    if (input.ref.indexOf("[") >= 0 && input.ref.endsWith("]")) {
+        if (input.ref.startsWith("mixin[") || input.ref.startsWith("function[") && age != "") {
             return {
                 type: "mixin",
-                content: `${input.content}{${age}}`
+                ref: `${input.ref}{${age}}`
             };
         }
         return input;
     }
-    const res = Translation.getValueName(input.content);
+    const res = Translation.getValueName(input.ref);
     if (res != null) {
         return calc(scope, res, age, region, basic);
     }
-    const mixname = translateMixinName(input.content);
+    const mixname = translateMixinName(input.ref);
     if (mixins.has(mixname)) {
         if (age != "") {
             return {
                 type: "mixin",
-                content: `${mixname}{${age}}`
+                ref: `${mixname}{${age}}`
             };
         }
         return {
             type: "mixin",
-            content: mixname
+            ref: mixname
         };
     }
-    if (!EXPECTED_REG.test(input.content)) {
-        missingValue.add(input.content);
+    if (!EXPECTED_REG.test(input.ref)) {
+        missingValue.add(input.ref);
     }
     return input;
 }
