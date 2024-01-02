@@ -10,6 +10,22 @@
             {
                 "type": "value",
                 "ref": "item[song_zelda]"
+            },
+            {
+                "type": "or",
+                "content": [
+                    {
+                        "type": "not",
+                        "content": {
+                            "type": "value",
+                            "ref": "option[shuffle_individual_ocarina_notes]"
+                        }
+                    },
+                    {
+                        "type": "value",
+                        "ref": "calculated[has_all_notes_for_song(song_zelda)]"
+                    }
+                ]
             }
         ]
     },
@@ -23,6 +39,22 @@
             {
                 "type": "value",
                 "ref": "item[song_epona]"
+            },
+            {
+                "type": "or",
+                "content": [
+                    {
+                        "type": "not",
+                        "content": {
+                            "type": "value",
+                            "ref": "option[shuffle_individual_ocarina_notes]"
+                        }
+                    },
+                    {
+                        "type": "value",
+                        "ref": "calculated[has_all_notes_for_song(song_epona)]"
+                    }
+                ]
             }
         ]
     },
@@ -36,6 +68,22 @@
             {
                 "type": "value",
                 "ref": "item[song_saria]"
+            },
+            {
+                "type": "or",
+                "content": [
+                    {
+                        "type": "not",
+                        "content": {
+                            "type": "value",
+                            "ref": "option[shuffle_individual_ocarina_notes]"
+                        }
+                    },
+                    {
+                        "type": "value",
+                        "ref": "calculated[has_all_notes_for_song(song_saria)]"
+                    }
+                ]
             }
         ]
     },
@@ -49,6 +97,22 @@
             {
                 "type": "value",
                 "ref": "item[song_sun]"
+            },
+            {
+                "type": "or",
+                "content": [
+                    {
+                        "type": "not",
+                        "content": {
+                            "type": "value",
+                            "ref": "option[shuffle_individual_ocarina_notes]"
+                        }
+                    },
+                    {
+                        "type": "value",
+                        "ref": "calculated[has_all_notes_for_song(song_sun)]"
+                    }
+                ]
             }
         ]
     },
@@ -62,6 +126,22 @@
             {
                 "type": "value",
                 "ref": "item[song_time]"
+            },
+            {
+                "type": "or",
+                "content": [
+                    {
+                        "type": "not",
+                        "content": {
+                            "type": "value",
+                            "ref": "option[shuffle_individual_ocarina_notes]"
+                        }
+                    },
+                    {
+                        "type": "value",
+                        "ref": "calculated[has_all_notes_for_song(song_time)]"
+                    }
+                ]
             }
         ]
     },
@@ -75,6 +155,22 @@
             {
                 "type": "value",
                 "ref": "item[song_storm]"
+            },
+            {
+                "type": "or",
+                "content": [
+                    {
+                        "type": "not",
+                        "content": {
+                            "type": "value",
+                            "ref": "option[shuffle_individual_ocarina_notes]"
+                        }
+                    },
+                    {
+                        "type": "value",
+                        "ref": "calculated[has_all_notes_for_song(song_storm)]"
+                    }
+                ]
             }
         ]
     },
@@ -89,6 +185,22 @@
             {
                 "type": "value",
                 "ref": "item[warp_forest]"
+            },
+            {
+                "type": "or",
+                "content": [
+                    {
+                        "type": "not",
+                        "content": {
+                            "type": "value",
+                            "ref": "option[shuffle_individual_ocarina_notes]"
+                        }
+                    },
+                    {
+                        "type": "value",
+                        "ref": "calculated[has_all_notes_for_song(warp_forest)]"
+                    }
+                ]
             }
         ]
     },
@@ -102,6 +214,22 @@
             {
                 "type": "value",
                 "ref": "item[warp_fire]"
+            },
+            {
+                "type": "or",
+                "content": [
+                    {
+                        "type": "not",
+                        "content": {
+                            "type": "value",
+                            "ref": "option[shuffle_individual_ocarina_notes]"
+                        }
+                    },
+                    {
+                        "type": "value",
+                        "ref": "calculated[has_all_notes_for_song(warp_fire)]"
+                    }
+                ]
             }
         ]
     },
@@ -115,6 +243,22 @@
             {
                 "type": "value",
                 "ref": "item[warp_water]"
+            },
+            {
+                "type": "or",
+                "content": [
+                    {
+                        "type": "not",
+                        "content": {
+                            "type": "value",
+                            "ref": "option[shuffle_individual_ocarina_notes]"
+                        }
+                    },
+                    {
+                        "type": "value",
+                        "ref": "calculated[has_all_notes_for_song(warp_water)]"
+                    }
+                ]
             }
         ]
     },
@@ -128,6 +272,22 @@
             {
                 "type": "value",
                 "ref": "item[warp_shadow]"
+            },
+            {
+                "type": "or",
+                "content": [
+                    {
+                        "type": "not",
+                        "content": {
+                            "type": "value",
+                            "ref": "option[shuffle_individual_ocarina_notes]"
+                        }
+                    },
+                    {
+                        "type": "value",
+                        "ref": "calculated[has_all_notes_for_song(warp_shadow)]"
+                    }
+                ]
             }
         ]
     },
@@ -141,6 +301,22 @@
             {
                 "type": "value",
                 "ref": "item[warp_spirit]"
+            },
+            {
+                "type": "or",
+                "content": [
+                    {
+                        "type": "not",
+                        "content": {
+                            "type": "value",
+                            "ref": "option[shuffle_individual_ocarina_notes]"
+                        }
+                    },
+                    {
+                        "type": "value",
+                        "ref": "calculated[has_all_notes_for_song(warp_spirit)]"
+                    }
+                ]
             }
         ]
     },
@@ -154,6 +330,22 @@
             {
                 "type": "value",
                 "ref": "item[warp_light]"
+            },
+            {
+                "type": "or",
+                "content": [
+                    {
+                        "type": "not",
+                        "content": {
+                            "type": "value",
+                            "ref": "option[shuffle_individual_ocarina_notes]"
+                        }
+                    },
+                    {
+                        "type": "value",
+                        "ref": "calculated[has_all_notes_for_song(warp_light)]"
+                    }
+                ]
             }
         ]
     },
@@ -177,8 +369,28 @@
                         "ref": "option[free_scarecrow]"
                     }
                 ]
+            },
+            {
+                "type": "or",
+                "content": [
+                    {
+                        "type": "not",
+                        "content": {
+                            "type": "value",
+                            "ref": "option[shuffle_individual_ocarina_notes]"
+                        }
+                    },
+                    {
+                        "type": "value",
+                        "ref": "calculated[has_all_notes_for_song(song_scarecrow)]"
+                    }
+                ]
             }
         ]
+    },
+    "function[has_all_notes_for_song](item[song_scarecrow])": {
+        "type": "value",
+        "ref": "calculated[has_all_notes_for_song(song_scarecrow)]"
     },
     /* projectile check */
     "function[has_projectile](child)": {
