@@ -234,5 +234,70 @@
                 }
             ]
         }
+    },
+    "region[kak_odd_medicine_building]": {
+        "reach_location[kakariko.c_granny_buy_blue_potion]": {
+            "type": "and",
+            "content": [
+                {
+                    "type": "value",
+                    "ref": "item[wallet]"
+                },
+                {
+                    "type": "or",
+                    "content": [
+                        {
+                            "type": "value",
+                            "ref": "event[odd_potion_access]"
+                        },
+                        {
+                            "type": "and",
+                            "content": [
+                                {
+                                    "type": "not",
+                                    "content": {
+                                        "type": "value",
+                                        "ref": "option[adult_trade_shuffle]"
+                                    }
+                                },
+                                {
+                                    "type": "or",
+                                    "content": [
+                                        {
+                                            "type": "value",
+                                            "ref": "item[odd_potion]"
+                                        },
+                                        {
+                                            "type": "value",
+                                            "ref": "item[poachers_saw]"
+                                        },
+                                        {
+                                            "type": "value",
+                                            "ref": "item[broken_sword]"
+                                        },
+                                        {
+                                            "type": "value",
+                                            "ref": "item[prescription]"
+                                        },
+                                        {
+                                            "type": "value",
+                                            "ref": "item[eyeball_frog]"
+                                        },
+                                        {
+                                            "type": "value",
+                                            "ref": "item[eyedrops]"
+                                        },
+                                        {
+                                            "type": "value",
+                                            "ref": "item[claim_check]"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
     }
 }

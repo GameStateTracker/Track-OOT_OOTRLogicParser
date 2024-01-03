@@ -76,18 +76,6 @@ logic_water_north_basement
 -------------------------------------------
 states not converted
 
-selected_adult_trade_item: {
-    "name": "",
-    "values": {
-        "Odd": "",
-        "Poachers": "",
-        "Broken": "",
-        "Prescription": "",
-        "Eyeball": "",
-        "Eyedrops": "",
-        "Claim": ""
-    }
-}
 
 -------------------------------------------
 unused name translations
@@ -1376,6 +1364,7 @@ Silver_Rupee_Spirit_Temple_Sun_Block
 Buy_Blue_Fire
 shuffle_gerudo_card
 shuffle_silver_rupees
+adult_trade_shuffle
 entrance_shuffle
 shuffle_dungeon_entrances
 shuffle_interior_entrances
