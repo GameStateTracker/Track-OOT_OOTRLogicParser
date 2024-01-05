@@ -5,12 +5,6 @@
             "ref": "mixin[is_starting_age]"
         }
     },
-    "region[hyrule_castle_grounds]": {
-        "region[hc_garden]": {
-            "type": "value",
-            "ref": "item[egg]"
-        }
-    },
     "region[ganons_castle_lobby]": {
         "region[ganons_castle_tower]": {
             "type": "gte",
