@@ -24,6 +24,22 @@ PARSE HELPERS
 ===========================================
 PARSE LOGIC
 
+subRegions: Deku Tree Before Boss MQ: Queen Gohma Boss Room is new
+subRegions: Dodongos Cavern Before Boss MQ: King Dodongo Boss Room is new
+subRegions: Fire Temple Before Boss MQ: Volvagia Boss Room is new
+subRegions: Forest Temple Before Boss MQ: Phantom Ganon Boss Room is new
+subRegions: Jabu Jabus Belly Before Boss MQ: Barinade Boss Room is new
+subRegions: Shadow Temple Before Boss MQ: Bongo Bongo Boss Room is new
+subRegions: Spirit Temple Before Boss MQ: Twinrova Boss Room is new
+subRegions: Water Temple Before Boss MQ: Morpha Boss Room is new
+subRegions: Deku Tree Before Boss MQ: Queen Gohma Boss Room MQ doesn't exist anymore
+subRegions: Dodongos Cavern Before Boss MQ: King Dodongo Boss Room MQ doesn't exist anymore
+subRegions: Fire Temple Before Boss MQ: Volvagia Boss Room MQ doesn't exist anymore
+subRegions: Forest Temple Before Boss MQ: Phantom Ganon Boss Room MQ doesn't exist anymore
+subRegions: Jabu Jabus Belly Before Boss MQ: Barinade Boss Room MQ doesn't exist anymore
+subRegions: Shadow Temple Before Boss MQ: Bongo Bongo Boss Room MQ doesn't exist anymore
+subRegions: Spirit Temple Before Boss MQ: Twinrova Boss Room MQ doesn't exist anymore
+subRegions: Water Temple Before Boss MQ: Morpha Boss Room MQ doesn't exist anymore
 
 -------------------------------------------
 generate logic output

@@ -2526,7 +2526,7 @@
         },
         "Deku Tree Before Boss MQ": {
             "Deku Tree Basement Ledge MQ": false,
-            "Queen Gohma Boss Room MQ": false
+            "Queen Gohma Boss Room": true
         },
         "Deku Tree Lobby": {
             "Deku Kokiri Gateway:In": false,
@@ -2601,7 +2601,7 @@
             "Dodongos Cavern Before Boss MQ": false
         },
         "Dodongos Cavern Before Boss MQ": {
-            "King Dodongo Boss Room MQ": false
+            "King Dodongo Boss Room": true
         },
         "Dodongos Cavern Beginning": {
             "Dodongo Mountain Gateway:In": false,
@@ -2658,7 +2658,7 @@
         },
         "Fire Temple Before Boss MQ": {
             "Fire Temple Near Boss MQ": false,
-            "Volvagia Boss Room MQ": false
+            "Volvagia Boss Room": true
         },
         "Fire Temple Big Lava Room MQ": {
             "Fire Temple Elevator Room MQ": false
@@ -2776,7 +2776,7 @@
         },
         "Forest Temple Before Boss MQ": {
             "Forest Temple Basement MQ": false,
-            "Phantom Ganon Boss Room MQ": false
+            "Phantom Ganon Boss Room": true
         },
         "Forest Temple Lobby": {
             "Forest Temple Meadow Gateway:In": false,
@@ -3055,7 +3055,7 @@
         "Jabu Jabus Belly Before Boss MQ": {
             "Jabu Jabus Belly Before Slimy Thing MQ": false,
             "Jabu Jabus Belly Elevator Room MQ": false,
-            "Barinade Boss Room MQ": false
+            "Barinade Boss Room": true
         },
         "Jabu Jabus Belly Beginning": {
             "Jabu Fountain Gateway:In": false,
@@ -3918,7 +3918,7 @@
             "Shadow Temple 3 Spinning Pots Rupees MQ": false
         },
         "Shadow Temple Before Boss MQ": {
-            "Bongo Bongo Boss Room MQ": false
+            "Bongo Bongo Boss Room": true
         },
         "Shadow Temple Entryway": {
             "Shadow Temple Graveyard Gateway:In": false,
@@ -4003,7 +4003,7 @@
             "Spirit Temple Before Boss MQ": false
         },
         "Spirit Temple Before Boss MQ": {
-            "Twinrova Boss Room MQ": false
+            "Twinrova Boss Room": true
         },
         "Spirit Temple Lobby": {
             "Spirit Temple Colossus Gateway:In": false,
@@ -4053,7 +4053,7 @@
             "Farores Wind Warp MQ": false
         },
         "Water Temple Before Boss MQ": {
-            "Morpha Boss Room MQ": false
+            "Morpha Boss Room": true
         },
         "Water Temple Dive MQ": {
             "Water Temple Below Central Pillar MQ": false,
