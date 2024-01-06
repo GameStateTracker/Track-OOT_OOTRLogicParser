@@ -117,7 +117,7 @@
             ]
         }
     },
-    "region[ganons_castle_lobby_mq]": {
+    "region[ganons_castle_main_mq]": {
         "region[ganons_castle_tower]": {
             "type": "gte",
             "content": [
