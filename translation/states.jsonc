@@ -266,85 +266,85 @@
             "keylogic_keysanity": "keylogic_keysanity"
         }
     },
-    "dungeontype[well]": {
-        "name": "dungeontype[well]",
+    "arealist[well]": {
+        "name": "arealist[well]",
         "values": {
             "mq": "mq",
             "v": "v"
         }
     },
-    "dungeontype[deku]": {
-        "name": "dungeontype[deku]",
+    "arealist[deku]": {
+        "name": "arealist[deku]",
         "values": {
             "mq": "mq",
             "v": "v"
         }
     },
-    "dungeontype[dodongo]": {
-        "name": "dungeontype[dodongo]",
+    "arealist[dodongo]": {
+        "name": "arealist[dodongo]",
         "values": {
             "mq": "mq",
             "v": "v"
         }
     },
-    "dungeontype[jabujabu]": {
-        "name": "dungeontype[jabujabu]",
+    "arealist[jabujabu]": {
+        "name": "arealist[jabujabu]",
         "values": {
             "mq": "mq",
             "v": "v"
         }
     },
-    "dungeontype[ice_cavern]": {
-        "name": "dungeontype[ice_cavern]",
+    "arealist[ice_cavern]": {
+        "name": "arealist[ice_cavern]",
         "values": {
             "mq": "mq",
             "v": "v"
         }
     },
-    "dungeontype[training_grounds]": {
-        "name": "dungeontype[training_grounds]",
+    "arealist[training_grounds]": {
+        "name": "arealist[training_grounds]",
         "values": {
             "mq": "mq",
             "v": "v"
         }
     },
-    "dungeontype[temple_forest]": {
-        "name": "dungeontype[temple_forest]",
+    "arealist[temple_forest]": {
+        "name": "arealist[temple_forest]",
         "values": {
             "mq": "mq",
             "v": "v"
         }
     },
-    "dungeontype[temple_fire]": {
-        "name": "dungeontype[temple_fire]",
+    "arealist[temple_fire]": {
+        "name": "arealist[temple_fire]",
         "values": {
             "mq": "mq",
             "v": "v"
         }
     },
-    "dungeontype[temple_water]": {
-        "name": "dungeontype[temple_water]",
+    "arealist[temple_water]": {
+        "name": "arealist[temple_water]",
         "values": {
             "mq": "mq",
             "v": "v"
         }
     },
-    "dungeontype[temple_shadow]": {
-        "name": "dungeontype[temple_shadow]",
+    "arealist[temple_shadow]": {
+        "name": "arealist[temple_shadow]",
         "values": {
             "mq": "mq",
             "v": "v"
         }
     },
-    "dungeontype[temple_spirit]": {
-        "name": "dungeontype[temple_spirit]",
+    "arealist[temple_spirit]": {
+        "name": "arealist[temple_spirit]",
         "values": {
             "mq": "mq",
             "v": "v"
         }
     },
-    "dungeontype[castle_ganon]": {
-        "name": "dungeontype[castle_ganon]",
+    "arealist[castle_ganon]": {
+        "name": "arealist[castle_ganon]",
         "values": {
             "mq": "mq",
             "v": "v"
