@@ -1,0 +1,51 @@
+"item[silver_rupee_well_basement]"
+"item[silver_rupee_dodongo_staircase]"
+"item[silver_rupee_castle_ganon_trial_forest]"
+"item[silver_rupee_castle_ganon_trial_fire]"
+"item[silver_rupee_castle_ganon_trial_water]"
+"item[silver_rupee_castle_ganon_trial_shadow]"
+"item[silver_rupee_castle_ganon_trial_spirit]"
+"item[silver_rupee_castle_ganon_trial_light]"
+"item[silver_rupee_training_grounds_lava]"
+"item[silver_rupee_training_grounds_water]"
+"item[silver_rupee_training_grounds_slopes]"
+"item[silver_rupee_ice_cavern_spinning_scythe]"
+"item[silver_rupee_ice_cavern_block_push]"
+"item[silver_rupee_temple_shadow_scythe_shortcut]"
+"item[silver_rupee_temple_shadow_invisible_blades]"
+"item[silver_rupee_temple_shadow_huge_pit]"
+"item[silver_rupee_temple_shadow_invisible_spikes]"
+"item[silver_rupee_temple_spirit_lobby_and_lower_adult]"
+"item[silver_rupee_temple_spirit_adult_climb]"
+"item[silver_rupee_temple_spirit_child_early_torches]"
+"item[silver_rupee_temple_spirit_adult_boulders]"
+"item[silver_rupee_temple_spirit_sun_block]"
+
+---
+
+add to logic file:
+
+{
+    "augmentations": {
+        "item[silver_rupee_training_grounds_slopes]": {
+            "condition": {
+                "type": "state",
+                "ref": "option[shuffle_silver_rupees]",
+                "value": "keylogic_vanilla"
+            },
+            "value": {
+                "type": "and",
+                "content": [
+                    {
+                        "type": "value",
+                        "ref": "reach_location[training_grounds_mq.icicle_room_silver_rupee_ceiling]"
+                    },
+                    {
+                        "type": "number",
+                        "value": 9999
+                    }
+                ]
+            }
+        }
+    }
+}
