@@ -102,6 +102,9 @@ class LogicParser {
                 const regionName = value.region_name.replace(/ MQ$/, "");
                 if (renameData[regionName]?.[exit] != null) {
                     exit = renameData[regionName][exit];
+                    if (exit === "") {
+                        continue;
+                    }
                     if (exit.endsWith(" Gateway")) {
                         exit += ":In"
                     }

@@ -3,11 +3,11 @@
         "region_name": "Kakariko Well Gateway",
         "exits": {
             "Kakariko Village": "True",
-            "Well Kakriko Gateway": "True"
+            "Well Kakariko Gateway": "True"
         }
     },
     {
-        "region_name": "Well Kakriko Gateway",
+        "region_name": "Well Kakariko Gateway",
         "exits": {
             "Kakariko Well Gateway": "True",
             "Bottom of the Well": "arealist[well] != 'mq'",

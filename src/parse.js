@@ -72,7 +72,8 @@ const RENAME_BLACKLIST = [
     "Desert Colossus From Spirit Lobby",
     "ZF Ice Ledge",
     "Gerudo Fortress",
-    "Castle Grounds From Ganons Castle"
+    "Castle Grounds From Ganons Castle",
+    "Farores Wind Warp"
 ]
 
 // parser for normal logic

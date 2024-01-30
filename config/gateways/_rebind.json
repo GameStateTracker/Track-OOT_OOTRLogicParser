@@ -86,7 +86,7 @@
         "OGC Great Fairy Fountain": "Ganon Grounds Great Fairy Gateway"
     },
     "Bottom of the Well": {
-        "Kakariko Village": "Well Kakriko Gateway"
+        "Kakariko Village": "Well Kakariko Gateway"
     },
     "Deku Tree Lobby": {
         "KF Outside Deku Tree": "Deku Kokiri Gateway"
@@ -555,55 +555,77 @@
     },
     "Queen Gohma Boss Room": {
         "Deku Tree Before Boss": "Boss Deku Gateway",
-        "KF Outside Deku Tree": "Void"
+        "KF Outside Deku Tree": ""
     },
     "Dodongos Cavern Before Boss": {
         "King Dodongo Boss Room": "Dodongo Boss Gateway"
     },
     "King Dodongo Boss Room": {
         "Dodongos Cavern Before Boss": "Boss Dodongo Gateway",
-        "Death Mountain": "Void"
+        "Death Mountain": ""
     },
     "Jabu Jabus Belly Before Boss": {
         "Barinade Boss Room": "Jabu Boss Gateway"
     },
     "Barinade Boss Room": {
         "Jabu Jabus Belly Before Boss": "Boss Jabu Gateway",
-        "Zoras Fountain": "Void"
+        "Zoras Fountain": ""
     },
     "Forest Temple Before Boss": {
         "Phantom Ganon Boss Room": "Forest Temple Boss Gateway"
     },
     "Phantom Ganon Boss Room": {
         "Forest Temple Before Boss": "Boss Forest Temple Gateway",
-        "Sacred Forest Meadow": "Void"
+        "Sacred Forest Meadow": ""
     },
     "Fire Temple Before Boss": {
         "Volvagia Boss Room": "Fire Temple Boss Gateway"
     },
     "Volvagia Boss Room": {
         "Fire Temple Before Boss": "Boss Fire Temple Gateway",
-        "DMC Central Local": "Void"
+        "DMC Central Local": ""
     },
     "Water Temple Before Boss": {
         "Morpha Boss Room": "Water Temple Boss Gateway"
     },
     "Morpha Boss Room": {
         "Water Temple Before Boss": "Boss Water Temple Gateway",
-        "Lake Hylia": "Void"
+        "Lake Hylia": ""
     },
     "Shadow Temple Before Boss": {
         "Bongo Bongo Boss Room": "Shadow Temple Boss Gateway"
     },
     "Bongo Bongo Boss Room": {
         "Shadow Temple Before Boss": "Boss Shadow Temple Gateway",
-        "Graveyard Warp Pad Region": "Void"
+        "Graveyard Warp Pad Region": ""
     },
     "Spirit Temple Before Boss": {
         "Twinrova Boss Room": "Spirit Temple Boss Gateway"
     },
     "Twinrova Boss Room": {
         "Spirit Temple Before Boss": "Boss Spirit Temple Gateway",
-        "Desert Colossus": "Void"
+        "Desert Colossus": ""
+    },
+    "Farores Wind Warp": {
+        "Bottom of the Well": "Well Kakariko Gateway:Out",
+        "Deku Tree Lobby": "Deku Kokiri Gateway:Out",
+        "Deku Tree Before Boss": "",
+        "Dodongos Cavern Beginning": "Dodongo Mountain Gateway:Out",
+        "Dodongos Cavern Mouth": "",
+        "Fire Temple Lower": "Fire Temple Crater Gateway:Out",
+        "Fire Temple Before Boss": "",
+        "Forest Temple Lobby": "Forest Temple Meadow Gateway:Out",
+        "Forest Temple Before Boss": "",
+        "Ganons Castle Lobby": "Ganons Castle Castle Grounds Gateway:Out",
+        "Gerudo Training Ground Lobby": "Training Grounds Fortress Gateway:Out",
+        "Ice Cavern Beginning": "Ice Cavern Fountain Gateway:Out",
+        "Jabu Jabus Belly Beginning": "Jabu Fountain Gateway:Out",
+        "Jabu Jabus Belly Before Boss": "",
+        "Shadow Temple Entryway": "Shadow Temple Graveyard Gateway:Out",
+        "Shadow Temple Before Boss": "",
+        "Spirit Temple Lobby": "Spirit Temple Colossus Gateway:Out",
+        "Spirit Temple Before Boss": "",
+        "Water Temple Lobby": "Water Temple Lake Gateway:Out",
+        "Water Temple Before Boss": ""
     }
 }

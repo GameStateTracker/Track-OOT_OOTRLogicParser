@@ -132,8 +132,8 @@
         "Lake Valley Gateway:Out": false,
         "Kakariko Well Gateway:In": false,
         "Kakariko Well Gateway:Out": false,
-        "Well Kakriko Gateway:In": false,
-        "Well Kakriko Gateway:Out": false,
+        "Well Kakariko Gateway:In": false,
+        "Well Kakariko Gateway:Out": false,
         "Kokiri Deku Gateway:In": false,
         "Kokiri Deku Gateway:Out": false,
         "Deku Kokiri Gateway:In": false,
@@ -1301,15 +1301,15 @@
             "Lake Hylia": false
         },
         "Kakariko Well Gateway:In": {
-            "Well Kakriko Gateway:Out": false
+            "Well Kakariko Gateway:Out": false
         },
         "Kakariko Well Gateway:Out": {
             "Kakariko Village": false
         },
-        "Well Kakriko Gateway:In": {
+        "Well Kakariko Gateway:In": {
             "Kakariko Well Gateway:Out": false
         },
-        "Well Kakriko Gateway:Out": {
+        "Well Kakariko Gateway:Out": {
             "Bottom of the Well": false,
             "Bottom of the Well MQ": false
         },
@@ -2441,36 +2441,28 @@
             "Colossus Great Fairy Fountain": false
         },
         "Queen Gohma Boss Room": {
-            "Boss Deku Gateway:In": false,
-            "Void": false
+            "Boss Deku Gateway:In": false
         },
         "King Dodongo Boss Room": {
-            "Dodongos Cavern Mouth": false,
-            "Void": false
+            "Dodongos Cavern Mouth": false
         },
         "Barinade Boss Room": {
-            "Boss Jabu Gateway:In": false,
-            "Void": false
+            "Boss Jabu Gateway:In": false
         },
         "Phantom Ganon Boss Room": {
-            "Boss Forest Temple Gateway:In": false,
-            "Void": false
+            "Boss Forest Temple Gateway:In": false
         },
         "Volvagia Boss Room": {
-            "Boss Fire Temple Gateway:In": false,
-            "Void": false
+            "Boss Fire Temple Gateway:In": false
         },
         "Morpha Boss Room": {
-            "Boss Water Temple Gateway:In": false,
-            "Void": false
+            "Boss Water Temple Gateway:In": false
         },
         "Bongo Bongo Boss Room": {
-            "Boss Shadow Temple Gateway:In": false,
-            "Void": false
+            "Boss Shadow Temple Gateway:In": false
         },
         "Twinrova Boss Room": {
-            "Boss Spirit Temple Gateway:In": false,
-            "Void": false
+            "Boss Spirit Temple Gateway:In": false
         },
         "Ganons Castle Tower": {
             "Ganons Castle Tower Below Boss": false
@@ -2479,15 +2471,15 @@
             "Ganondorf Boss Room": false
         },
         "Bottom of the Well MQ": {
-            "Well Kakriko Gateway:In": false,
+            "Well Kakariko Gateway:In": false,
             "Bottom of the Well Perimeter MQ": false,
-            "Farores Wind Warp MQ": false
+            "Farores Wind Warp": false
         },
         "Bottom of the Well Perimeter MQ": {
             "Bottom of the Well Middle MQ": false
         },
         "Bottom of the Well": {
-            "Well Kakriko Gateway:In": false,
+            "Well Kakariko Gateway:In": false,
             "Bottom of the Well Main Area": false,
             "Farores Wind Warp": false
         },
@@ -2504,7 +2496,7 @@
             "Deku Tree Near Compass Room MQ": false,
             "Deku Tree Basement Water Room Front MQ": false,
             "Deku Tree Basement Ledge MQ": false,
-            "Farores Wind Warp MQ": false
+            "Farores Wind Warp": false
         },
         "Deku Tree Near Compass Room MQ": {
             "Deku Tree Compass Room MQ": false
@@ -2553,7 +2545,7 @@
         "Dodongos Cavern Beginning MQ": {
             "Dodongo Mountain Gateway:In": false,
             "Dodongos Cavern Lobby MQ": false,
-            "Farores Wind Warp MQ": false
+            "Farores Wind Warp": false
         },
         "Dodongos Cavern Lobby MQ": {
             "Dodongos Cavern Elevator MQ": false,
@@ -2651,7 +2643,7 @@
             "Fire Temple Near Boss MQ": false,
             "Fire Temple Lower Locked Door MQ": false,
             "Fire Temple Big Lava Room MQ": false,
-            "Farores Wind Warp MQ": false
+            "Farores Wind Warp": false
         },
         "Fire Temple Near Boss MQ": {
             "Fire Temple Before Boss MQ": false
@@ -2724,7 +2716,7 @@
         "Forest Temple Lobby MQ": {
             "Forest Temple Meadow Gateway:In": false,
             "Forest Temple Central Area MQ": false,
-            "Farores Wind Warp MQ": false
+            "Farores Wind Warp": false
         },
         "Forest Temple Central Area MQ": {
             "Forest Temple NW Outdoors MQ": false,
@@ -2835,7 +2827,7 @@
         "Ganons Castle Lobby MQ": {
             "Ganons Castle Castle Grounds Gateway:In": false,
             "Ganons Castle Main MQ": false,
-            "Farores Wind Warp MQ": false
+            "Farores Wind Warp": false
         },
         "Ganons Castle Main MQ": {
             "Ganons Castle Forest Trial MQ": false,
@@ -2932,7 +2924,7 @@
             "Training Grounds Fortress Gateway:In": false,
             "Gerudo Training Ground Right Side MQ": false,
             "Gerudo Training Ground Left Side MQ": false,
-            "Farores Wind Warp MQ": false
+            "Farores Wind Warp": false
         },
         "Gerudo Training Ground Right Side MQ": {
             "Gerudo Training Ground Lava Room Front MQ": false,
@@ -3019,7 +3011,7 @@
             "Ice Cavern Map Room MQ": false,
             "Ice Cavern Compass Room MQ": false,
             "Ice Cavern Iron Boots Region MQ": false,
-            "Farores Wind Warp MQ": false
+            "Farores Wind Warp": false
         },
         "Ice Cavern Beginning": {
             "Ice Cavern Fountain Gateway:In": false,
@@ -3036,7 +3028,7 @@
         "Jabu Jabus Belly Beginning MQ": {
             "Jabu Fountain Gateway:In": false,
             "Jabu Jabus Belly Elevator Room MQ": false,
-            "Farores Wind Warp MQ": false
+            "Farores Wind Warp": false
         },
         "Jabu Jabus Belly Elevator Room MQ": {
             "Jabu Jabus Belly Main MQ": false,
@@ -3112,26 +3104,18 @@
             "Requiem Colossus Gateway:In": false
         },
         "Farores Wind Warp": {
-            "Bottom of the Well": false,
-            "Deku Tree Lobby": false,
-            "Deku Tree Before Boss": false,
-            "Dodongos Cavern Beginning": false,
-            "Dodongos Cavern Mouth": false,
-            "Fire Temple Lower": false,
-            "Fire Temple Before Boss": false,
-            "Forest Temple Lobby": false,
-            "Forest Temple Before Boss": false,
-            "Ganons Castle Lobby": false,
-            "Gerudo Training Ground Lobby": false,
-            "Ice Cavern Beginning": false,
-            "Jabu Jabus Belly Beginning": false,
-            "Jabu Jabus Belly Before Boss": false,
-            "Shadow Temple Entryway": false,
-            "Shadow Temple Before Boss": false,
-            "Spirit Temple Lobby": false,
-            "Spirit Temple Before Boss": false,
-            "Water Temple Lobby": false,
-            "Water Temple Before Boss": false
+            "Well Kakariko Gateway:Out": false,
+            "Deku Kokiri Gateway:Out": false,
+            "Dodongo Mountain Gateway:Out": false,
+            "Fire Temple Crater Gateway:Out": false,
+            "Forest Temple Meadow Gateway:Out": false,
+            "Ganons Castle Castle Grounds Gateway:Out": false,
+            "Training Grounds Fortress Gateway:Out": false,
+            "Ice Cavern Fountain Gateway:Out": false,
+            "Jabu Fountain Gateway:Out": false,
+            "Shadow Temple Graveyard Gateway:Out": false,
+            "Spirit Temple Colossus Gateway:Out": false,
+            "Water Temple Lake Gateway:Out": false
         },
         "Kokiri Forest": {
             "Kokiri Links House Gateway:In": false,
@@ -3868,7 +3852,7 @@
         "Shadow Temple Entryway MQ": {
             "Shadow Temple Graveyard Gateway:In": false,
             "Shadow Temple Beginning MQ": false,
-            "Farores Wind Warp MQ": false
+            "Farores Wind Warp": false
         },
         "Shadow Temple Beginning MQ": {
             "Shadow Temple First Beamos MQ": false,
@@ -3972,7 +3956,7 @@
             "Spirit Temple Colossus Gateway:In": false,
             "Child Spirit Temple MQ": false,
             "Adult Spirit Temple MQ": false,
-            "Farores Wind Warp MQ": false
+            "Farores Wind Warp": false
         },
         "Child Spirit Temple MQ": {
             "Spirit Temple Shared MQ": false
@@ -4050,7 +4034,7 @@
             "Water Temple Dive MQ": false,
             "Water Temple Dark Link Region MQ": false,
             "Water Temple Before Boss MQ": false,
-            "Farores Wind Warp MQ": false
+            "Farores Wind Warp": false
         },
         "Water Temple Before Boss MQ": {
             "Water Temple Boss Gateway:In": false
