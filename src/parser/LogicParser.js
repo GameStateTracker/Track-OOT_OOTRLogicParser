@@ -69,7 +69,7 @@ class LogicParser {
             for (const location in value.locations) {
                 let rule = value.locations[location];
                 if (rule.includes("at")) {
-                    let split = rule.split("at('")
+                    let split = rule.split("at('");
                     if (split[1] != undefined) {
                         let split2 = split[1].split("'");
                         if (mq && !testBlacklist(renameBlacklist, split2[0])) {
@@ -93,7 +93,20 @@ class LogicParser {
                 //console.log("token location:\n", value.region_name, i, "\n", token);
             }
             for (let exit in value.exits) {
-                const rule = value.exits[exit];
+                let rule = value.exits[exit];
+                if (rule.includes("at")) {
+                    let split = rule.split("at('");
+                    if (split[1] != undefined) {
+                        let split2 = split[1].split("'");
+                        if (mq && !testBlacklist(renameBlacklist, split2[0])) {
+                            split2[0] = split2[0] + " MQ";
+                            split2 = split2.join("'");
+                            split[1] = split2;
+                            split = split.join("at('");
+                            rule = split;
+                        }
+                    }
+                }
                 if (mq && !testBlacklist(renameBlacklist, exit)) {
                     if (!exits.includes(exit)) {
                         exit = exit + " MQ"

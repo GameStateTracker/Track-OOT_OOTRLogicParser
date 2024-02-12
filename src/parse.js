@@ -84,14 +84,17 @@ function parseLogic() {
     console.log("");
     LogicGenerator.reset();
     LogicParser.parse(gatewayData);
-    fs.readdirSync(inLogicDir).forEach(function(file) {
+
+    const files = fs.readdirSync(inLogicDir);
+    for (const file of files) {
         const iname = path.join(inLogicDir, file);
         let mq = false;
         if (iname.endsWith("MQ.json")) {
             mq = true;
         }
         LogicParser.parseFile(iname, mq, RENAME_BLACKLIST);
-    });
+    }
+
     LogicParser.addCustomLogic();
     LogicParser.regionCheckCall();
     const logic = LogicGenerator.generate();
@@ -123,14 +126,17 @@ function parseGlitchedLogic() {
     console.log("");
     LogicGenerator.reset();
     LogicParser.parse(gatewayData);
-    fs.readdirSync(inGlitchedDir).forEach(function(file) {
+
+    const files = fs.readdirSync(inGlitchedDir);
+    for (const file of files) {
         const iname = path.join(inGlitchedDir, file);
         let mq = false;
         if (iname.endsWith("MQ.json")) {
             mq = true;
         }
         LogicParser.parseFile(iname, mq, RENAME_BLACKLIST);
-    });
+    }
+
     LogicParser.addCustomLogic();
     // LogicParser.regionCheckCall();
     const logic = LogicGenerator.generate(true);
