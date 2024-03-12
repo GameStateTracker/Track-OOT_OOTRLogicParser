@@ -273,11 +273,8 @@
     "GC Darunias Chamber": {
         "DMC Lower Local": "Goron Crater Gateway"
     },
-    "DMC Lower Local": {
-        "DMC Ladder Area Nearby": "Crater Goron Gateway"
-    },
     "DMC Lower Nearby": {
-        "GC Darunias Chamber": "DMC Ladder Area Nearby",
+        "GC Darunias Chamber": "Crater Goron Gateway",
         "DMC Great Fairy Fountain": "Crater Great Fairy Gateway",
         "DMC Hammer Grotto": "Crater Hammer Grotto Gateway"
     },

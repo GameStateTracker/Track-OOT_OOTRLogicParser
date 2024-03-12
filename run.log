@@ -24,6 +24,10 @@ PARSE HELPERS
 ===========================================
 PARSE LOGIC
 
+subRegions: DMC Lower Nearby: Crater Goron Gateway:In is new
+subRegions: DMC Lower Local: DMC Ladder Area Nearby is new
+subRegions: DMC Lower Nearby: DMC Ladder Area Nearby doesn't exist anymore
+subRegions: DMC Lower Local: Crater Goron Gateway:In doesn't exist anymore
 
 -------------------------------------------
 generate logic output

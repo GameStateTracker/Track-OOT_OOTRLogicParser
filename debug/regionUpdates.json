@@ -3653,13 +3653,13 @@
         },
         "DMC Lower Nearby": {
             "DMC Lower Local": false,
-            "DMC Ladder Area Nearby": false,
+            "Crater Goron Gateway:In": true,
             "Crater Great Fairy Gateway:In": false,
             "Crater Hammer Grotto Gateway:In": false
         },
         "DMC Lower Local": {
             "DMC Lower Nearby": false,
-            "Crater Goron Gateway:In": false,
+            "DMC Ladder Area Nearby": true,
             "DMC Central Nearby": false,
             "DMC Fire Temple Entrance": false
         },
