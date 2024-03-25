@@ -1117,9 +1117,13 @@
         "type": "value",
         "ref": "option[skip.fewer_tunic_requirements]"
     },
-    "logic_adult_kokiri_gs": {
+    "logic_adult_kokiri_gs_hovers": {
         "type": "value",
-        "ref": "option[skip.adult_kokiri_gs]"
+        "ref": "option[skip.adult_kokiri_gs_hovers]"
+    },
+    "logic_adult_kokiri_gs_nothing": {
+        "type": "value",
+        "ref": "option[skip.adult_kokiri_gs_nothing]"
     },
     "logic_lost_woods_bridge": {
         "type": "value",
@@ -1215,13 +1219,9 @@
         "type": "value",
         "ref": "option[skip.dmt_soil_gs]"
     },
-    "logic_trail_gs_lower_hookshot": {
+    "logic_trail_gs_lower": {
         "type": "value",
-        "ref": "option[skip.trail_gs_lower_hookshot]"
-    },
-    "logic_trail_gs_lower_bean": {
-        "type": "value",
-        "ref": "option[skip.trail_gs_lower_bean]"
+        "ref": "option[skip.trail_gs_lower]"
     },
     "logic_trail_gs_upper": {
         "type": "value",
@@ -1250,10 +1250,6 @@
     "logic_child_rolling_with_strength": {
         "type": "value",
         "ref": "option[skip.child_rolling_with_strength]"
-    },
-    "logic_crater_upper_to_lower": {
-        "type": "value",
-        "ref": "option[skip.crater_upper_to_lower]"
     },
     "logic_crater_bean_poh_with_hovers": {
         "type": "value",
@@ -1300,10 +1296,6 @@
         "type": "value",
         "ref": "option[skip.botw_basement]"
     },
-    "logic_botw_cage_gs": {
-        "type": "value",
-        "ref": "option[skip.botw_cage_gs]"
-    },
     "logic_botw_mq_dead_hand_key": {
         "type": "value",
         "ref": "option[skip.botw_mq_dead_hand_key]"
@@ -1343,14 +1335,6 @@
     "logic_dc_hammer_floor": {
         "type": "value",
         "ref": "option[skip.dc_hammer_floor]"
-    },
-    "logic_jabu_scrub_jump_dive": {
-        "type": "value",
-        "ref": "option[skip.jabu_scrub_jump_dive]"
-    },
-    "logic_jabu_boss_gs_adult": {
-        "type": "value",
-        "ref": "option[skip.jabu_boss_gs_adult]"
     },
     "logic_jabu_mq_sot_gs": {
         "type": "value",
@@ -1419,10 +1403,6 @@
             }
         ]
     },
-    "logic_gtg_mq_without_hookshot": {
-        "type": "value",
-        "ref": "option[skip.gtg_mq_without_hookshot]"
-    },
     "logic_gtg_mq_with_hookshot": {
         "type": "value",
         "ref": "option[skip.gtg_mq_with_hookshot]"
@@ -1439,10 +1419,6 @@
         "type": "value",
         "ref": "option[skip.forest_vines]"
     },
-    "logic_forest_scarecrow": {
-        "type": "value",
-        "ref": "option[skip.forest_scarecrow]"
-    },
     "logic_forest_outside_backdoor": {
         "type": "value",
         "ref": "option[skip.forest_outside_backdoor]"
@@ -1450,10 +1426,6 @@
     "logic_forest_mq_block_puzzle": {
         "type": "value",
         "ref": "option[skip.forest_mq_block_puzzle]"
-    },
-    "logic_forest_mq_hallway_switch": {
-        "type": "value",
-        "ref": "option[skip.forest_mq_hallway_switch]"
     },
     "logic_forest_well_swim": {
         "type": "value",
@@ -1491,10 +1463,6 @@
         "type": "value",
         "ref": "option[skip.fire_mq_bk_chest]"
     },
-    "logic_fire_mq_bombable_chest": {
-        "type": "value",
-        "ref": "option[skip.fire_mq_bombable_chest]"
-    },
     "logic_fire_mq_climb": {
         "type": "value",
         "ref": "option[skip.fire_mq_climb]"
@@ -1523,13 +1491,9 @@
         "type": "value",
         "ref": "option[skip.water_cracked_wall_hovers]"
     },
-    "logic_water_boss_key_region": {
+    "logic_water_north_basement": {
         "type": "value",
-        "ref": "option[skip.water_boss_key_region]"
-    },
-    "logic_water_dragon_bombchu": {
-        "type": "value",
-        "ref": "option[skip.water_dragon_bombchu]"
+        "ref": "option[skip.water_north_basement]"
     },
     "logic_water_dragon_jump_dive": {
         "type": "value",
@@ -1539,10 +1503,6 @@
         "type": "value",
         "ref": "option[skip.water_bk_jump_dive]"
     },
-    "logic_water_bk_chest": {
-        "type": "value",
-        "ref": "option[skip.water_bk_chest]"
-    },
     "logic_water_north_basement_ledge_jump": {
         "type": "value",
         "ref": "option[skip.water_north_basement_ledge_jump]"
@@ -1550,10 +1510,6 @@
     "logic_water_river_gs": {
         "type": "value",
         "ref": "option[skip.water_river_gs]"
-    },
-    "logic_water_falling_platform_gs": {
-        "type": "value",
-        "ref": "option[skip.water_falling_platform_gs]"
     },
     "logic_lens_shadow": {
         "type": "or",
@@ -1575,23 +1531,6 @@
     "logic_shadow_umbrella": {
         "type": "value",
         "ref": "option[skip.shadow_umbrella]"
-    },
-    "logic_lens_shadow_back": {
-        "type": "or",
-        "content": [
-            {
-                "type": "not",
-                "content": {
-                    "type": "state",
-                    "ref": "option[skip.lens_required]",
-                    "value": "lens_required_default"
-                }
-            },
-            {
-                "type": "value",
-                "ref": "option[skip.lens_shadow_back]"
-            }
-        ]
     },
     "logic_shadow_freestanding_key": {
         "type": "value",
@@ -1626,23 +1565,6 @@
         "type": "value",
         "ref": "option[skip.shadow_mq_huge_pit]"
     },
-    "logic_lens_shadow_mq_back": {
-        "type": "or",
-        "content": [
-            {
-                "type": "not",
-                "content": {
-                    "type": "state",
-                    "ref": "option[skip.lens_required]",
-                    "value": "lens_required_default"
-                }
-            },
-            {
-                "type": "value",
-                "ref": "option[skip.lens_shadow_mq_back]"
-            }
-        ]
-    },
     "logic_spirit_child_bombchu": {
         "type": "value",
         "ref": "option[skip.spirit_child_bombchu]"
@@ -1655,9 +1577,9 @@
         "type": "value",
         "ref": "option[skip.spirit_map_chest]"
     },
-    "logic_spirit_sun_chest": {
+    "logic_spirit_sun_chest_bow": {
         "type": "value",
-        "ref": "option[skip.spirit_sun_chest]"
+        "ref": "option[skip.spirit_sun_chest_bow]"
     },
     "logic_spirit_lobby_gs": {
         "type": "value",
@@ -1832,14 +1754,6 @@
         "type": "value",
         "ref": "option[skip.deku_mq_log]"
     },
-    "logic_dc_mq_eyes": {
-        "type": "value",
-        "ref": "option[skip.dc_mq_eyes]"
-    },
-    "logic_dc_mq_child_back": {
-        "type": "value",
-        "ref": "option[skip.dc_mq_child_back]"
-    },
     "logic_fire_mq_blocked_chest": {
         "type": "value",
         "ref": "option[skip.fire_mq_blocked_chest]"
@@ -1860,10 +1774,6 @@
         "type": "value",
         "ref": "option[skip.forest_mq_hallway_switch_jumpslash]"
     },
-    "logic_forest_mq_hallway_switch_hookshot": {
-        "type": "value",
-        "ref": "option[skip.forest_mq_hallway_switch_hookshot]"
-    },
     "logic_forest_door_frame": {
         "type": "value",
         "ref": "option[skip.forest_door_frame]"
@@ -1879,10 +1789,6 @@
     "logic_kakariko_rooftop_gs": {
         "type": "value",
         "ref": "option[skip.kakariko_rooftop_gs]"
-    },
-    "logic_trail_gs_lower_hovers": {
-        "type": "value",
-        "ref": "option[skip.trail_gs_lower_hovers]"
     },
     "logic_shadow_mq_invisible_blades": {
         "type": "value",
@@ -2075,6 +1981,94 @@
     "logic_beehives_bombchus": {
         "type": "value",
         "ref": "option[skip.logic_beehives_bombchus]"
+    },
+    "logic_boomerang_boulders": {
+        "type": "value",
+        "ref": "option[skip.boomerang_boulders]"
+    },
+    "logic_zora_river_rupees": {
+        "type": "value",
+        "ref": "option[skip.zora_river_rupees]"
+    },
+    "logic_gf_break_room_jump": {
+        "type": "value",
+        "ref": "option[skip.logic_gf_break_room_jump]"
+    },
+    "logic_dc_chu_eyes": {
+        "type": "value",
+        "ref": "option[skip.dc_chu_eyes]"
+    },
+    "logic_ice_frozen_rupee": {
+        "type": "value",
+        "ref": "option[skip.ice_frozen_rupee]"
+    },
+    "logic_ice_frozen_pot": {
+        "type": "value",
+        "ref": "option[skip.ice_frozen_pot]"
+    },
+    "logic_gtg_underwater_highest": {
+        "type": "value",
+        "ref": "option[skip.gtg_underwater_highest]"
+    },
+    "logic_gtg_flame_wall": {
+        "type": "value",
+        "ref": "option[skip.gtg_flame_wall]"
+    },
+    "logic_gtg_mq_eye_statue_jumpslash": {
+        "type": "value",
+        "ref": "option[skip.gtg_mq_eye_statue_jumpslash]"
+    },
+    "logic_gtg_mq_maze_right": {
+        "type": "value",
+        "ref": "option[skip.gtg_mq_maze_right]"
+    },
+    "logic_fire_trial_slug_rupee": {
+        "type": "value",
+        "ref": "option[skip.fire_trial_slug_rupee]"
+    },
+    "logic_lens_shadow_trial_mq": {
+        "type": "value",
+        "ref": "option[skip.lens_shadow_trial_mq]"
+    },
+    "logic_forest_courtyard_hearts": {
+        "type": "value",
+        "ref": "option[skip.forest_courtyard_hearts]"
+    },
+    "logic_fire_mq_child_flame": {
+        "type": "value",
+        "ref": "option[skip.fire_mq_child_flame]"
+    },
+    "logic_water_morpha": {
+        "type": "value",
+        "ref": "option[skip.water_morpha]"
+    },
+    "logic_water_mq_dark_link": {
+        "type": "value",
+        "ref": "option[skip.water_mq_dark_link]"
+    },
+    "logic_shadow_triple_pots": {
+        "type": "value",
+        "ref": "option[skip.shadow_triple_pots]"
+    },
+    "logic_shadow_mq_after_boat_gs": {
+        "type": "value",
+        "ref": "option[skip.shadow_mq_after_boat_gs]"
+    },
+    "logic_spirit_fence_gs": {
+        "type": "value",
+        "ref": "option[skip.spirit_fence_gs]"
+    },
+    "logic_spirit_adult_side_hovers": {
+        "type": "value",
+        "ref": "option[skip.spirit_adult_side_hovers]"
+    },
+    "logic_spirit_sun_chest_no_rupees": {
+        "type": "value",
+        "ref": "option[skip.spirit_sun_chest_no_rupees]"
+    },
+    "logic_spirit_mq_water_rupee": {
+        "type": "value",
+        "ref": "option[skip.spirit_mq_water_rupee]"
     },
     "Defeat_Queen_Gohma": {
         "type": "value",
