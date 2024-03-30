@@ -1900,87 +1900,87 @@
     },
     "logic_shadow_bongo": {
         "type": "value",
-        "ref": "option[skip.logic_shadow_bongo]"
+        "ref": "option[skip.shadow_bongo]"
     },
     "logic_lens_bongo": {
         "type": "value",
-        "ref": "option[skip.logic_lens_bongo]"
+        "ref": "option[skip.lens_bongo]"
     },
     "logic_dc_mq_eyes_child": {
         "type": "value",
-        "ref": "option[skip.logic_dc_mq_eyes_child]"
+        "ref": "option[skip.dc_mq_eyes_child]"
     },
     "logic_dc_mq_eyes_adult": {
         "type": "value",
-        "ref": "option[skip.logic_dc_mq_eyes_adult]"
+        "ref": "option[skip.dc_mq_eyes_adult]"
     },
     "logic_forest_mq_hallway_switch_boomerang": {
         "type": "value",
-        "ref": "option[skip.logic_forest_mq_hallway_switch_boomerang]"
+        "ref": "option[skip.forest_mq_hallway_switch_boomerang]"
     },
     "logic_jabu_alcove_jump_dive": {
         "type": "value",
-        "ref": "option[skip.logic_jabu_alcove_jump_dive]"
+        "ref": "option[skip.jabu_alcove_jump_dive]"
     },
     "logic_jabu_mq_rang_jump": {
         "type": "value",
-        "ref": "option[skip.logic_jabu_mq_rang_jump]"
+        "ref": "option[skip.jabu_mq_rang_jump]"
     },
     "logic_jabu_near_boss_ranged": {
         "type": "value",
-        "ref": "option[skip.logic_jabu_near_boss_ranged]"
+        "ref": "option[skip.jabu_near_boss_ranged]"
     },
     "logic_jabu_boss_hover": {
         "type": "value",
-        "ref": "option[skip.logic_jabu_boss_hover]"
+        "ref": "option[skip.jabu_boss_hover]"
     },
     "logic_jabu_near_boss_explosives": {
         "type": "value",
-        "ref": "option[skip.logic_jabu_near_boss_explosives]"
+        "ref": "option[skip.jabu_near_boss_explosives]"
     },
     "logic_gf_jump": {
         "type": "value",
-        "ref": "option[skip.logic_gf_jump]"
+        "ref": "option[skip.gf_jump]"
     },
     "logic_crater_boulder_jumpslash": {
         "type": "value",
-        "ref": "option[skip.logic_crater_boulder_jumpslash]"
+        "ref": "option[skip.crater_boulder_jumpslash]"
     },
     "logic_crater_boulder_skip": {
         "type": "value",
-        "ref": "option[skip.logic_crater_boulder_skip]"
+        "ref": "option[skip.crater_boulder_skip]"
     },
     "logic_crater_bolero_jump": {
         "type": "value",
-        "ref": "option[skip.logic_crater_bolero_jump]"
+        "ref": "option[skip.crater_bolero_jump]"
     },
     "logic_lens_shadow_mq_platform": {
         "type": "value",
-        "ref": "option[skip.logic_lens_shadow_mq_platform]"
+        "ref": "option[skip.lens_shadow_mq_platform]"
     },
     "logic_lens_shadow_mq_invisible_blades": {
         "type": "value",
-        "ref": "option[skip.logic_lens_shadow_mq_invisible_blades]"
+        "ref": "option[skip.lens_shadow_mq_invisible_blades]"
     },
     "logic_shadow_mq_windy_walkway": {
         "type": "value",
-        "ref": "option[skip.logic_shadow_mq_windy_walkway]"
+        "ref": "option[skip.shadow_mq_windy_walkway]"
     },
     "logic_lens_shadow_mq_dead_hand": {
         "type": "value",
-        "ref": "option[skip.logic_lens_shadow_mq_dead_hand]"
+        "ref": "option[skip.lens_shadow_mq_dead_hand]"
     },
     "logic_lens_shadow_platform": {
         "type": "value",
-        "ref": "option[skip.logic_lens_shadow_platform]"
+        "ref": "option[skip.lens_shadow_platform]"
     },
     "logic_spirit_platform_hookshot": {
         "type": "value",
-        "ref": "option[skip.logic_spirit_platform_hookshot]"
+        "ref": "option[skip.spirit_platform_hookshot]"
     },
     "logic_beehives_bombchus": {
         "type": "value",
-        "ref": "option[skip.logic_beehives_bombchus]"
+        "ref": "option[skip.beehives_bombchus]"
     },
     "logic_boomerang_boulders": {
         "type": "value",
@@ -1992,7 +1992,7 @@
     },
     "logic_gf_break_room_jump": {
         "type": "value",
-        "ref": "option[skip.logic_gf_break_room_jump]"
+        "ref": "option[skip.gf_break_room_jump]"
     },
     "logic_dc_chu_eyes": {
         "type": "value",
