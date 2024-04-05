@@ -8,7 +8,8 @@
     },
     // I have no good way of setting this up in logic as it pings in two different places, so this might be permanent
     "complete_mask_quest": {
-        "type": "true"
+        "type": "value",
+        "ref": "option[complete_mask_quest]"
     },
     /* mixins */
     "is_child": {

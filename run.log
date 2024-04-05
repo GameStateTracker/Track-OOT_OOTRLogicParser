@@ -106,7 +106,7 @@ option[light_arrow_cutscene]
 ===========================================
 PARSE GLITCHED LOGIC
 
-skip parsing logic file "E:\vscode\OOTRLogicParser\input\data\Glitched World\Bosses.json": does not match base format
+skip parsing logic file "E:\__Development__\ZidArgs\OOTRLogicParser\input\data\Glitched World\Bosses.json": does not match base format
 
 -------------------------------------------
 generate logic output
