@@ -255,10 +255,10 @@ class LogicGenerator {
         };
         res.logic["mixin[is_glitched]{child}"] = {
             "type": `${glitched}`
-        }
+        };
         res.logic["mixin[is_glitched]{adult}"] = {
             "type": `${glitched}`
-        }
+        };
         // END overrides
 
         console.log("");

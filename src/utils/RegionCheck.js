@@ -7,14 +7,14 @@ const regionUpdates = JSON.parse(fs.readFileSync(exitSuccessFile, "utf8"));
 const regionFile = {
     mainRegions: {},
     subRegions: {}
-}
+};
 
 class RegionCheck {
 
     getRegions() {
         if (regionUpdates.mainregions !== null) {
-            regionFile.mainRegions = regionUpdates.mainRegions
-            regionFile.subRegions = regionUpdates.subRegions
+            regionFile.mainRegions = regionUpdates.mainRegions;
+            regionFile.subRegions = regionUpdates.subRegions;
         }
     }
 
@@ -22,8 +22,8 @@ class RegionCheck {
         let data = {
             mainRegions: {},
             subRegions: {}
-        }
-        this.getRegions()
+        };
+        this.getRegions();
         data = this.checkNew(data, importRegions);
         this.checkRemoved(importRegions);
         fs.writeFileSync(exitSuccessFile, JSON.stringify(data, null, 4));
@@ -31,33 +31,33 @@ class RegionCheck {
 
     checkNew(data = null, importRegions = null) {
         for (const traverse in importRegions) {
-            data[traverse] = {}
-            const topLevel = importRegions[traverse]
-            const topLevelFile = regionFile[traverse]
+            data[traverse] = {};
+            const topLevel = importRegions[traverse];
+            const topLevelFile = regionFile[traverse];
 
             for (const secondTraverse in topLevel) {
                 if (traverse === "mainRegions") {
                     //data[traverse][secondTraverse] = false
                     if (typeof topLevelFile[secondTraverse] === "undefined") {
                         data[traverse][secondTraverse] = true;
-                        console.log(`${traverse}: ${secondTraverse} is new`)
+                        console.log(`${traverse}: ${secondTraverse} is new`);
                     } else {
-                        data[traverse][secondTraverse] = false
+                        data[traverse][secondTraverse] = false;
                     }
                 } else {
-                    data[traverse][secondTraverse] = {}
-                    const secondLevel = topLevel[secondTraverse]
-                    let secondLevelFile = topLevelFile[secondTraverse]
+                    data[traverse][secondTraverse] = {};
+                    const secondLevel = topLevel[secondTraverse];
+                    let secondLevelFile = topLevelFile[secondTraverse];
                     if (typeof secondLevelFile === "undefined") {
-                        secondLevelFile = {}
+                        secondLevelFile = {};
                     }
 
                     for (const thirdTraverse in secondLevel) {
                         if (typeof secondLevelFile[thirdTraverse] === "undefined") {
                             data[traverse][secondTraverse][thirdTraverse] = true;
-                            console.log(`${traverse}: ${secondTraverse}: ${thirdTraverse} is new`)
+                            console.log(`${traverse}: ${secondTraverse}: ${thirdTraverse} is new`);
                         } else {
-                            data[traverse][secondTraverse][thirdTraverse] = false
+                            data[traverse][secondTraverse][thirdTraverse] = false;
                         }
                     }
                 }
@@ -69,24 +69,24 @@ class RegionCheck {
 
     checkRemoved(importRegions = null) {
         for (const traverse in regionFile) {
-            const topLevelImport = importRegions[traverse]
-            const topLevel = regionFile[traverse]
+            const topLevelImport = importRegions[traverse];
+            const topLevel = regionFile[traverse];
 
             for (const secondTraverse in topLevel) {
                 if (traverse === "mainRegions") {
                     if (typeof topLevelImport[secondTraverse] === "undefined") {
-                        console.log(`${traverse}: ${secondTraverse} doesn't exist anymore`)
+                        console.log(`${traverse}: ${secondTraverse} doesn't exist anymore`);
                     }
                 } else {
-                    let secondLevelImport = topLevelImport[secondTraverse]
+                    let secondLevelImport = topLevelImport[secondTraverse];
                     if (typeof secondLevelImport === "undefined") {
-                        secondLevelImport = {}
+                        secondLevelImport = {};
                     }
-                    const secondLevel = topLevel[secondTraverse]
+                    const secondLevel = topLevel[secondTraverse];
 
                     for (const thirdTraverse in secondLevel) {
                         if (typeof secondLevelImport[thirdTraverse] === "undefined") {
-                            console.log(`${traverse}: ${secondTraverse}: ${thirdTraverse} doesn't exist anymore`)
+                            console.log(`${traverse}: ${secondTraverse}: ${thirdTraverse} doesn't exist anymore`);
                         }
                     }
                 }

@@ -101,7 +101,7 @@ function convert(term, token) {
             return `${buf[1]}{{${cnt0}}}${buf[3]}`;
         }
     }
-    buf = COMPARATOR.exec(term)
+    buf = COMPARATOR.exec(term);
     if (buf != null) {
         const cnt0 = ++count;
         const cnt1 = ++count;

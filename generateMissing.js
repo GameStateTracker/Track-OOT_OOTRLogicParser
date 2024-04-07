@@ -72,7 +72,7 @@ for (const entry of Object.values(chests)) {
         },
         "icon": "/images/icons/chest.svg",
         "tags": []
-    }
+    };
 }
 
 for (const entry of Object.values(shops)) {
@@ -105,7 +105,7 @@ for (const entry of Object.values(shops)) {
         },
         "icon": "/images/icons/shops.svg",
         "tags": []
-    }
+    };
 }
 
 for (const entry of Object.values(trade)) {
@@ -138,7 +138,7 @@ for (const entry of Object.values(trade)) {
         },
         "icon": "/images/icons/saw.svg",
         "tags": []
-    }
+    };
 }
 
 fs.writeFileSync("missing locations.json", JSON.stringify(res, null, 4));

@@ -13,7 +13,7 @@ export default class StringIndexer {
     }
 
     static remove(value) {
-        return value.replace(INDEX_DELIMITER_REGEX, "")
+        return value.replace(INDEX_DELIMITER_REGEX, "");
     }
 
 }

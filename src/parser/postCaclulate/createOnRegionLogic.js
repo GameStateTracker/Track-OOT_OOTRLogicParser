@@ -14,7 +14,7 @@ export default function createOnRegionLogic(nodeC, elC, nodeA, elA, basic = fals
                     "content": elA
                 }
             ]
-        }
+        };
     } else {
         return {
             "type": "or",
@@ -48,6 +48,6 @@ export default function createOnRegionLogic(nodeC, elC, nodeA, elA, basic = fals
                     ]
                 }
             ]
-        }
+        };
     }
 }

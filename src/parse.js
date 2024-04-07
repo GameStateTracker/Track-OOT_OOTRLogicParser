@@ -74,7 +74,7 @@ const RENAME_BLACKLIST = [
     "Gerudo Fortress",
     "Castle Grounds From Ganons Castle",
     "Farores Wind Warp"
-]
+];
 
 // parser for normal logic
 function parseLogic() {

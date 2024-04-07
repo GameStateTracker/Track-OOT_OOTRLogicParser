@@ -15,7 +15,7 @@ const success = {
     mainRegions: {},
     subRegions: {}
 };
-const exits = ["Kakariko Village", "KF Outside Deku Tree", "Death Mountain", "Zoras Fountain", "ZF Ice Ledge", "Gerudo Fortress", "SFM Forest Temple Entrance Ledge", "DMC Fire Temple Entrance", "Lake Hylia", "Graveyard Warp Pad Region", "Desert Colossus", "Castle Grounds", "Ganons Castle Grounds", "Ganons Castle Tower"]
+const exits = ["Kakariko Village", "KF Outside Deku Tree", "Death Mountain", "Zoras Fountain", "ZF Ice Ledge", "Gerudo Fortress", "SFM Forest Temple Entrance Ledge", "DMC Fire Temple Entrance", "Lake Hylia", "Graveyard Warp Pad Region", "Desert Colossus", "Castle Grounds", "Ganons Castle Grounds", "Ganons Castle Tower"];
 
 function testBlacklist(list, value) {
     if (Array.isArray(list)) {
@@ -24,7 +24,7 @@ function testBlacklist(list, value) {
                 return el.test(value);
             }
             return el == value;
-        })
+        });
     }
     if (list instanceof RegExp) {
         return list.test(value);
@@ -64,7 +64,7 @@ class LogicParser {
     #extractToken(data, mq = false, renameBlacklist = []) {
         data.forEach((value) => {
             if (mq && !testBlacklist(renameBlacklist, value.region_name)) {
-                value.region_name = value.region_name + " MQ"
+                value.region_name = value.region_name + " MQ";
             }
             for (const location in value.locations) {
                 let rule = value.locations[location];
@@ -109,7 +109,7 @@ class LogicParser {
                 }
                 if (mq && !testBlacklist(renameBlacklist, exit)) {
                     if (!exits.includes(exit)) {
-                        exit = exit + " MQ"
+                        exit = exit + " MQ";
                     }
                 }
                 const regionName = value.region_name.replace(/ MQ$/, "");
@@ -119,7 +119,7 @@ class LogicParser {
                         continue;
                     }
                     if (exit.endsWith(" Gateway")) {
-                        exit += ":In"
+                        exit += ":In";
                     }
                 }
                 if (success.subRegions[value.region_name] == null) {
