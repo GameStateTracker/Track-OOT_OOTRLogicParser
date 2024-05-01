@@ -70,6 +70,11 @@ Shadow_Trial_Clear
 Spirit_Trial_Clear
 Light_Trial_Clear
 Hammer
+Buy_Deku_Stick_1
+Deku_Stick_Drop
+Buy_Deku_Nut_5
+Buy_Deku_Nut_10
+Deku_Nut_Drop
 Ice_Arrows
 Ice_Trap
 Arrows
@@ -77,6 +82,9 @@ Magic_Bean_Pack
 Biggoron_Sword
 Bottle_with_Letter
 Buy_Blue_Fire
+Buy_Bottle_Bug
+Buy_Fairys_Spirit
+Buy_Fish
 shuffle_gerudo_card
 shuffle_overworld_entrances
 shuffle_weird_egg
@@ -1285,6 +1293,11 @@ Raise_Water_Level
 Jabu_Jabus_Belly_Floor_Lowered
 Jabu_Jabus_Belly_Parasitic_Tentacle_Cleared
 Hammer
+Buy_Deku_Stick_1
+Deku_Stick_Drop
+Buy_Deku_Nut_5
+Buy_Deku_Nut_10
+Deku_Nut_Drop
 Ice_Arrows
 Ice_Trap
 Arrows
@@ -1313,6 +1326,9 @@ Silver_Rupee_Spirit_Temple_Child_Early_Torches
 Silver_Rupee_Spirit_Temple_Adult_Boulders
 Silver_Rupee_Spirit_Temple_Sun_Block
 Buy_Blue_Fire
+Buy_Bottle_Bug
+Buy_Fairys_Spirit
+Buy_Fish
 shuffle_gerudo_card
 shuffle_silver_rupees
 adult_trade_shuffle

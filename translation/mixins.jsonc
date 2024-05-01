@@ -314,7 +314,7 @@
                 "content": [
                     {
                         "type": "value",
-                        "ref": "option[consider_buyable]"
+                        "ref": "buyable[blue_fire]"
                     },
                     {
                         "type": "value",
@@ -342,6 +342,146 @@
                         "ref": "function[can_use](item[blue_fire_arrows])"
                     }
                 ]
+            }
+        ]
+    },
+    "mixin[fish]": {
+        "type": "or",
+        "content": [
+            {
+                "type": "value",
+                "ref": "reach_location[fish_lone]"
+            },
+            {
+                "type": "value",
+                "ref": "reach_location[fish_group]"
+            },
+            {
+                "type": "and",
+                "content": [
+                    {
+                        "type": "value",
+                        "ref": "buyable[fish]"
+                    },
+                    {
+                        "type": "value",
+                        "ref": "item[bottle]"
+                    },
+                    {
+                        "type": "min",
+                        "content": {
+                            "type": "value",
+                            "ref": "item[wallet]"
+                        },
+                        "value": 1
+                    }
+                ]
+            }
+        ]
+    },
+    "mixin[fairy]": {
+        "type": "or",
+        "content": [
+            {
+                "type": "value",
+                "ref": "reach_location[fairy_pot]"
+            },
+            {
+                "type": "value",
+                "ref": "reach_location[gossip_fairy]"
+            },
+            {
+                "type": "value",
+                "ref": "reach_location[bean_fairy]"
+            },
+            {
+                "type": "value",
+                "ref": "reach_location[butterfly_fairy]"
+            },
+            {
+                "type": "value",
+                "ref": "reach_location[pond_fairy]"
+            },
+            {
+                "type": "and",
+                "content": [
+                    {
+                        "type": "value",
+                        "ref": "buyable[fairy]"
+                    },
+                    {
+                        "type": "value",
+                        "ref": "item[bottle]"
+                    }
+                ]
+            }
+        ]
+    },
+    "mixin[bugs]": {
+        "type": "or",
+        "content": [
+            {
+                "type": "value",
+                "ref": "reach_location[bug_shrub]"
+            },
+            {
+                "type": "value",
+                "ref": "reach_location[bug_rock]"
+            },
+            {
+                "type": "value",
+                "ref": "reach_location[bugs_wandering]"
+            },
+            {
+                "type": "and",
+                "content": [
+                    {
+                        "type": "value",
+                        "ref": "buyable[bugs]"
+                    },
+                    {
+                        "type": "value",
+                        "ref": "item[bottle]"
+                    }
+                ]
+            }
+        ]
+    },
+    "mixin[sticks]": {
+        "type": "or",
+        "content": [
+            {
+                "type": "value",
+                "ref": "reach_location[stick_pot]"
+            },
+            {
+                "type": "value",
+                "ref": "reach_location[baba_sticks]"
+            },
+            {
+                "type": "value",
+                "ref": "buyable[sticks]"
+            }
+        ]
+    },
+    "mixin[nuts]": {
+        "type": "or",
+        "content": [
+            {
+                "type": "value",
+                "ref": "reach_location[nut_pot]"
+            },
+            {
+                "type": "value",
+                "ref": "reach_location[nut_crate]"
+            },
+            {
+                "type": "value",
+                "ref": "reach_location[baba_nuts]"
+            },
+            {
+                "type": "value",
+                "ref": "buyable[nuts]"
             }
         ]
     },

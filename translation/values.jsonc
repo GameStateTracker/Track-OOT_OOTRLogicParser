@@ -273,7 +273,7 @@
     },
     "Sticks": {
         "type": "value",
-        "ref": "item[stick]"
+        "ref": "mixin[sticks]"
     },
     "Buy_Deku_Stick_1": {
         "type": "value",
@@ -285,7 +285,7 @@
     },
     "Nuts": {
         "type": "value",
-        "ref": "item[nut]"
+        "ref": "mixin[nuts]"
     },
     "Buy_Deku_Nut_5": {
         "type": "value",
@@ -527,7 +527,7 @@
         "content": [
             {
                 "type": "value",
-                "ref": "option[consider_buyable]"
+                "ref": "buyable[tunic_fire]"
             },
             {
                 "type": "min",
@@ -548,7 +548,7 @@
         "content": [
             {
                 "type": "value",
-                "ref": "option[consider_buyable]"
+                "ref": "buyable[tunic_water]"
             },
             {
                 "type": "min",
@@ -899,7 +899,11 @@
         "content": [
             {
                 "type": "value",
-                "ref": "option[consider_buyable]"
+                "ref": "buyable[blue_fire]"
+            },
+            {
+                "type": "value",
+                "ref": "item[bottle]"
             },
             {
                 "type": "min",
@@ -913,7 +917,7 @@
     },
     "Bugs": {
         "type": "value",
-        "ref": "item[bottle]"
+        "ref": "mixin[bugs]"
     },
     "Buy_Bottle_Bug": {
         "type": "value",
@@ -921,7 +925,7 @@
     },
     "Fairy": {
         "type": "value",
-        "ref": "item[fairy]"
+        "ref": "mixin[fairy]"
     },
     "Buy_Fairys_Spirit": {
         "type": "value",
@@ -929,7 +933,7 @@
     },
     "Fish": {
         "type": "value",
-        "ref": "item[bottle]"
+        "ref": "mixin[fish]"
     },
     "Buy_Fish": {
         "type": "value",
