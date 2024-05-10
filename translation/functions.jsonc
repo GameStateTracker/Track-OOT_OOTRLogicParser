@@ -861,12 +861,12 @@
             }
         ]
     },
-    "function[can_use](item[stick])": {
+    "function[can_use](mixin[sticks])": {
         "type": "and",
         "content": [
             {
                 "type": "value",
-                "ref": "item[stick]"
+                "ref": "mixin[sticks]"
             },
             {
                 "type": "mixin",
