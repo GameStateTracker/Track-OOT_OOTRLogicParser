@@ -666,7 +666,8 @@
         ]
     },
     "mixin[king_dodongo_shortcuts]": {
-        "type": "false"
+        "type": "value",
+        "ref": "calculated[king_dodongo_shortcuts]"
     },
     "mixin[has_bombchus]": {
         "type": "or",
