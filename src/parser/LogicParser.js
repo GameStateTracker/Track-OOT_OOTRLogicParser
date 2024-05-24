@@ -145,15 +145,35 @@ class LogicParser {
     addCustomLogic() {
         for (const region of customLogicData) {
             const regionName = region.region_name;
+            console.log("add custom logic for region:", regionName);
             if (region.locations != null) {
                 for (const locationName in region.locations) {
                     const rule = region.locations[locationName];
                     const token = RandTokenizer.tokenize(rule);
                     const logic = LogicBuilder.build(token);
                     LogicGenerator.addLocation(regionName, locationName, logic);
-                    //console.log("token location (custom):\n", regionName, locationName, "\n", token);
+                    console.log("location:", locationName, "\n", token, "\n---");
                 }
             }
+            if (region.exits != null) {
+                for (const exitName in region.exits) {
+                    const rule = region.exits[exitName];
+                    const token = RandTokenizer.tokenize(rule);
+                    const logic = LogicBuilder.build(token);
+                    LogicGenerator.addExit(regionName, exitName, logic);
+                    console.log("exit:", exitName, "\n", token, "\n---");
+                }
+            }
+            if (region.events != null) {
+                for (const eventName in region.events) {
+                    const rule = region.events[eventName];
+                    const token = RandTokenizer.tokenize(rule);
+                    const logic = LogicBuilder.build(token);
+                    LogicGenerator.addEvent(regionName, eventName, logic);
+                    console.log("event:", eventName, "\n", token, "\n---");
+                }
+            }
+            console.log("--- --- ---");
         }
     }
 

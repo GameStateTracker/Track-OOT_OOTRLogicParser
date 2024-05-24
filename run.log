@@ -24,6 +24,11 @@ PARSE HELPERS
 ===========================================
 PARSE LOGIC
 
+add custom logic for region: Desert Colossus Hands MQ
+exit: Desert Colossus 
+ [ 'True' ] 
+---
+--- --- ---
 
 -------------------------------------------
 generate logic output
@@ -115,6 +120,11 @@ option[light_arrow_cutscene]
 PARSE GLITCHED LOGIC
 
 skip parsing logic file "E:\__Development__\ZidArgs\OOTRLogicParser\input\data\Glitched World\Bosses.json": does not match base format
+add custom logic for region: Desert Colossus Hands MQ
+exit: Desert Colossus 
+ [ 'True' ] 
+---
+--- --- ---
 
 -------------------------------------------
 generate logic output
