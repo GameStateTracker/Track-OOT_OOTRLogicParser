@@ -47,7 +47,6 @@ for (const entry of Object.values(chests)) {
         "type": "chest",
         "logicAccess": `reach_location[${entry}]`,
         "visible": true,
-        "visibleRootOnly": false,
         "filter": {
             "era": {
                 "child": true,
@@ -80,7 +79,6 @@ for (const entry of Object.values(shops)) {
         "type": "shopslot",
         "logicAccess": `reach_location[${entry}]`,
         "visible": true,
-        "visibleRootOnly": false,
         "filter": {
             "era": {
                 "child": true,
@@ -113,7 +111,6 @@ for (const entry of Object.values(trade)) {
         "type": "chest",
         "logicAccess": `reach_location[${entry}]`,
         "visible": true,
-        "visibleRootOnly": false,
         "filter": {
             "era": {
                 "child": false,
