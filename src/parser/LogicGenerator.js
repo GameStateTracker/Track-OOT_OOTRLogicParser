@@ -231,27 +231,49 @@ class LogicGenerator {
         // BEGIN overrides
         res.edges["region[root]"] = {
             "region[root]{child}": {
-                "type": "state",
-                "ref": "option[starting_age]",
-                "value": "child"
+                "type": "or",
+                "content": [
+                    {
+                        "type": "state",
+                        "ref": "option[starting_age]",
+                        "value": "child"
+                    },
+                    {
+                        "type": "value",
+                        "ref": "flag[time_travel]"
+                    }
+                ]
             },
             "region[root]{adult}": {
-                "type": "state",
-                "ref": "option[starting_age]",
-                "value": "adult"
+                "type": "or",
+                "content": [
+                    {
+                        "type": "state",
+                        "ref": "option[starting_age]",
+                        "value": "adult"
+                    },
+                    {
+                        "type": "value",
+                        "ref": "flag[time_travel]"
+                    }
+                ]
             }
         };
-        res.edges["region[beyond_door_of_time]{child}"]["region[root_exits]{adult}"] = {
-            "type": "true"
-        };
-        res.edges["region[beyond_door_of_time]{adult}"]["region[root_exits]{child}"] = {
-            "type": "true"
-        };
+        // res.edges["region[beyond_door_of_time]{child}"]["region[root]{adult}"] = {
+        //     "type": "value",
+        //     "ref": "flag[time_travel]"
+        // };
+        // res.edges["region[beyond_door_of_time]{adult}"]["region[root]{child}"] = {
+        //     "type": "value",
+        //     "ref": "flag[time_travel]"
+        // };
         res.edges["region[beyond_door_of_time]{child}"]["region[beyond_door_of_time]{adult}"] = {
-            "type": "true"
+            "type": "value",
+            "ref": "flag[time_travel]"
         };
         res.edges["region[beyond_door_of_time]{adult}"]["region[beyond_door_of_time]{child}"] = {
-            "type": "true"
+            "type": "value",
+            "ref": "flag[time_travel]"
         };
         res.logic["mixin[is_glitched]{child}"] = {
             "type": `${glitched}`

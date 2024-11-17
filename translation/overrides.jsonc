@@ -1,8 +1,17 @@
 {
     "region[root]": {
         "region[root_exits]": {
-            "type": "mixin",
-            "ref": "mixin[is_starting_age]"
+            "type": "or",
+            "content": [
+                {
+                    "type": "mixin",
+                    "ref": "mixin[is_starting_age]"
+                },
+                {
+                    "type": "value",
+                    "ref": "flag[time_travel]"
+                }
+            ]
         }
     },
     "region[ganons_castle_lobby]": {
