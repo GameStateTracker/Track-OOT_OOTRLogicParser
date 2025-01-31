@@ -130,17 +130,16 @@
             "error",
             "beside"
         ],
+        "object-property-newline": [
+            "error",
+            {
+                "allowAllPropertiesOnSameLine": false
+            }
+        ],
         "object-curly-newline": [
             "error",
             {
-                "ObjectExpression": {
-                    "consistent": true
-                },
-                "ObjectPattern": {
-                    "consistent": true
-                },
-                "ImportDeclaration": "always",
-                "ExportDeclaration": "always"
+                "minProperties": 1
             }
         ],
         "lines-between-class-members": [
