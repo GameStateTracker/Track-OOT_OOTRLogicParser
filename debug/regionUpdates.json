@@ -889,6 +889,7 @@
         "Spirit Temple Big Mirror Room": false,
         "Spirit Temple Before Boss": false,
         "Water Temple Lobby MQ": false,
+        "Water Temple Before Boss Lower MQ": true,
         "Water Temple Before Boss MQ": false,
         "Water Temple Dive MQ": false,
         "Water Temple Lowered Water Levels MQ": false,
@@ -3067,7 +3068,8 @@
         },
         "Root": {
             "Root Exits": false,
-            "HC Garden Locations": false
+            "HC Garden Skippable Locations": true,
+            "Beyond Door of Time Skippable Locations": true
         },
         "Root Exits": {
             "Child Spawn": false,
@@ -3432,7 +3434,8 @@
             "Beyond Door of Time": false
         },
         "Beyond Door of Time": {
-            "Temple of Time": false
+            "Temple of Time": false,
+            "Beyond Door of Time Skippable Locations": true
         },
         "Castle Grounds": {
             "Grounds Market Gateway:In": false,
@@ -3446,7 +3449,7 @@
             "Grounds Storms Grotto Gateway:In": false
         },
         "HC Garden": {
-            "HC Garden Locations": false,
+            "HC Garden Skippable Locations": true,
             "Hyrule Castle Grounds": false
         },
         "HC Great Fairy Fountain": {
@@ -4033,10 +4036,15 @@
             "Water Temple Lake Gateway:In": false,
             "Water Temple Dive MQ": false,
             "Water Temple Dark Link Region MQ": false,
-            "Water Temple Before Boss MQ": false,
+            "Water Temple Before Boss Lower MQ": true,
             "Farores Wind Warp": false
         },
+        "Water Temple Before Boss Lower MQ": {
+            "Water Temple Before Boss MQ": true,
+            "Water Temple Lobby MQ": true
+        },
         "Water Temple Before Boss MQ": {
+            "Water Temple Before Boss Lower MQ": true,
             "Water Temple Boss Gateway:In": false
         },
         "Water Temple Dive MQ": {
