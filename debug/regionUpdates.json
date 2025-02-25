@@ -1,5 +1,13 @@
 {
     "mainRegions": {
+        "Blue Warp Ghoma Gateway:Out": true,
+        "Blue Warp Dodongo Gateway:Out": true,
+        "Blue Warp Barinade Gateway:Out": true,
+        "Blue Warp Phantom Ganon Gateway:Out": true,
+        "Blue Warp Volvagia Gateway:Out": true,
+        "Blue Warp Morpha Gateway:Out": true,
+        "Blue Warp Bongo Bongo Gateway:Out": true,
+        "Blue Warp Twinrova Gateway:Out": true,
         "Child Spawn Links House Gateway:In": false,
         "Links House Child Spawn Gateway:Out": false,
         "Adult Spawn Temple of Time Gateway:In": false,
@@ -910,6 +918,30 @@
         "Water Temple River": false
     },
     "subRegions": {
+        "Blue Warp Ghoma Gateway:Out": {
+            "KF Outside Deku Tree": true
+        },
+        "Blue Warp Dodongo Gateway:Out": {
+            "Death Mountain": true
+        },
+        "Blue Warp Barinade Gateway:Out": {
+            "Zoras Fountain": true
+        },
+        "Blue Warp Phantom Ganon Gateway:Out": {
+            "Sacred Forest Meadow": true
+        },
+        "Blue Warp Volvagia Gateway:Out": {
+            "DMC Central Local": true
+        },
+        "Blue Warp Morpha Gateway:Out": {
+            "Lake Hylia": true
+        },
+        "Blue Warp Bongo Bongo Gateway:Out": {
+            "Graveyard Warp Pad Region": true
+        },
+        "Blue Warp Twinrova Gateway:Out": {
+            "Desert Colossus": true
+        },
         "Child Spawn Links House Gateway:In": {
             "Links House Child Spawn Gateway:Out": false
         },

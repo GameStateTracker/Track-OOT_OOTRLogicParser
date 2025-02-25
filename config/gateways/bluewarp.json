@@ -1,0 +1,50 @@
+[
+    {
+        "region_name": "Blue Warp Ghoma Gateway",
+        "exits": {
+            "KF Outside Deku Tree": "True"
+        }
+    },
+    {
+        "region_name": "Blue Warp Dodongo Gateway",
+        "exits": {
+            "Death Mountain": "True"
+        }
+    },
+    {
+        "region_name": "Blue Warp Barinade Gateway",
+        "exits": {
+            "Zoras Fountain": "True"
+        }
+    },
+    {
+        "region_name": "Blue Warp Phantom Ganon Gateway",
+        "exits": {
+            "Sacred Forest Meadow": "True"
+        }
+    },
+    {
+        "region_name": "Blue Warp Volvagia Gateway",
+        "exits": {
+            "DMC Central Local": "True"
+        }
+    },
+    {
+        "region_name": "Blue Warp Morpha Gateway",
+        "exits": {
+            "Lake Hylia": "True"
+        }
+    },
+    {
+        "region_name": "Blue Warp Bongo Bongo Gateway",
+        "exits": {
+            "Graveyard Warp Pad Region": "True"
+        }
+    },
+    {
+        "region_name": "Blue Warp Twinrova Gateway",
+        "exits": {
+            "Desert Colossus": "True"
+        }
+    }
+]

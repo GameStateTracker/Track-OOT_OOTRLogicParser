@@ -1,3 +1,21 @@
+Cloning into 'input'...
+Note: switching to '8d3b2ef1dc823cbd0d4bc4902b2d46668df658ab'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
 
 ===========================================
 PARSE HELPERS
@@ -11,6 +29,38 @@ exit: Desert Colossus
  [ 'True' ] 
 ---
 --- --- ---
+mainRegions: Blue Warp Ghoma Gateway:Out is new
+mainRegions: Blue Warp Dodongo Gateway:Out is new
+mainRegions: Blue Warp Barinade Gateway:Out is new
+mainRegions: Blue Warp Phantom Ganon Gateway:Out is new
+mainRegions: Blue Warp Volvagia Gateway:Out is new
+mainRegions: Blue Warp Morpha Gateway:Out is new
+mainRegions: Blue Warp Bongo Bongo Gateway:Out is new
+mainRegions: Blue Warp Twinrova Gateway:Out is new
+subRegions: Blue Warp Ghoma Gateway:Out: KF Outside Deku Tree is new
+subRegions: Blue Warp Dodongo Gateway:Out: Death Mountain is new
+subRegions: Blue Warp Barinade Gateway:Out: Zoras Fountain is new
+subRegions: Blue Warp Phantom Ganon Gateway:Out: Sacred Forest Meadow is new
+subRegions: Blue Warp Volvagia Gateway:Out: DMC Central Local is new
+subRegions: Blue Warp Morpha Gateway:Out: Lake Hylia is new
+subRegions: Blue Warp Bongo Bongo Gateway:Out: Graveyard Warp Pad Region is new
+subRegions: Blue Warp Twinrova Gateway:Out: Desert Colossus is new
+mainRegions: Ghoma Blue Warp Gateway:Out doesn't exist anymore
+mainRegions: Dodongo Blue Warp Gateway:Out doesn't exist anymore
+mainRegions: Barinade Blue Warp Gateway:Out doesn't exist anymore
+mainRegions: Phantom Ganon Blue Warp Gateway:Out doesn't exist anymore
+mainRegions: Volvagia Blue Warp Gateway:Out doesn't exist anymore
+mainRegions: Morpha Blue Warp Gateway:Out doesn't exist anymore
+mainRegions: Bongo Bongo Blue Warp Gateway:Out doesn't exist anymore
+mainRegions: Twinrova Blue Warp Gateway:Out doesn't exist anymore
+subRegions: Ghoma Blue Warp Gateway:Out: KF Outside Deku Tree doesn't exist anymore
+subRegions: Dodongo Blue Warp Gateway:Out: Death Mountain doesn't exist anymore
+subRegions: Barinade Blue Warp Gateway:Out: Zoras Fountain doesn't exist anymore
+subRegions: Phantom Ganon Blue Warp Gateway:Out: Sacred Forest Meadow doesn't exist anymore
+subRegions: Volvagia Blue Warp Gateway:Out: DMC Central Local doesn't exist anymore
+subRegions: Morpha Blue Warp Gateway:Out: Lake Hylia doesn't exist anymore
+subRegions: Bongo Bongo Blue Warp Gateway:Out: Graveyard Warp Pad Region doesn't exist anymore
+subRegions: Twinrova Blue Warp Gateway:Out: Desert Colossus doesn't exist anymore
 
 -------------------------------------------
 generate logic output
