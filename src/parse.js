@@ -39,7 +39,9 @@ const transRulesFile = path.join(__dirname, "/translation/predict_rules.json");
 
 if (!PARSE_OFFLINE) {
     if (fs.existsSync("./input")) {
-        fs.rmSync("./input", {recursive: true});
+        fs.rmSync("./input", {
+            recursive: true
+        });
     }
     execSync(`git clone --branch "${RANDO_VERSION}" "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "input"`);
 }
@@ -49,7 +51,9 @@ if (!fs.existsSync("./input/data/World")) {
 }
 
 if (!fs.existsSync(outputDir)) {
-    fs.mkdirSync(outputDir, {recursive: true});
+    fs.mkdirSync(outputDir, {
+        recursive: true
+    });
 }
 
 // set translation rules
@@ -61,6 +65,7 @@ rules.forEach((v, k) => {
 const RENAME_BLACKLIST = [
     / Boss Room$/,
     / Boss Gateway$/,
+    / Blue Warp Gateway$/,
     "KF Outside Deku Tree",
     "Death Mountain",
     "Zoras Fountain",

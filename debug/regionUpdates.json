@@ -1,5 +1,13 @@
 {
     "mainRegions": {
+        "Blue Warp Gohma Gateway:Out": false,
+        "Blue Warp Dodongo Gateway:Out": false,
+        "Blue Warp Barinade Gateway:Out": false,
+        "Blue Warp Phantom Ganon Gateway:Out": false,
+        "Blue Warp Volvagia Gateway:Out": false,
+        "Blue Warp Morpha Gateway:Out": false,
+        "Blue Warp Bongo Bongo Gateway:Out": false,
+        "Blue Warp Twinrova Gateway:Out": false,
         "Child Spawn Links House Gateway:In": false,
         "Links House Child Spawn Gateway:Out": false,
         "Adult Spawn Temple of Time Gateway:In": false,
@@ -889,7 +897,7 @@
         "Spirit Temple Big Mirror Room": false,
         "Spirit Temple Before Boss": false,
         "Water Temple Lobby MQ": false,
-        "Water Temple Before Boss Lower MQ": true,
+        "Water Temple Before Boss Lower MQ": false,
         "Water Temple Before Boss MQ": false,
         "Water Temple Dive MQ": false,
         "Water Temple Lowered Water Levels MQ": false,
@@ -911,6 +919,30 @@
         "Water Temple River": false
     },
     "subRegions": {
+        "Blue Warp Gohma Gateway:Out": {
+            "KF Outside Deku Tree": false
+        },
+        "Blue Warp Dodongo Gateway:Out": {
+            "Death Mountain": false
+        },
+        "Blue Warp Barinade Gateway:Out": {
+            "Zoras Fountain": false
+        },
+        "Blue Warp Phantom Ganon Gateway:Out": {
+            "Sacred Forest Meadow": false
+        },
+        "Blue Warp Volvagia Gateway:Out": {
+            "DMC Central Local": false
+        },
+        "Blue Warp Morpha Gateway:Out": {
+            "Lake Hylia": false
+        },
+        "Blue Warp Bongo Bongo Gateway:Out": {
+            "Graveyard Warp Pad Region": false
+        },
+        "Blue Warp Twinrova Gateway:Out": {
+            "Desert Colossus": false
+        },
         "Child Spawn Links House Gateway:In": {
             "Links House Child Spawn Gateway:Out": false
         },
@@ -3068,8 +3100,8 @@
         },
         "Root": {
             "Root Exits": false,
-            "HC Garden Skippable Locations": true,
-            "Beyond Door of Time Skippable Locations": true
+            "HC Garden Skippable Locations": false,
+            "Beyond Door of Time Skippable Locations": false
         },
         "Root Exits": {
             "Child Spawn": false,
@@ -3435,7 +3467,7 @@
         },
         "Beyond Door of Time": {
             "Temple of Time": false,
-            "Beyond Door of Time Skippable Locations": true
+            "Beyond Door of Time Skippable Locations": false
         },
         "Castle Grounds": {
             "Grounds Market Gateway:In": false,
@@ -3449,7 +3481,7 @@
             "Grounds Storms Grotto Gateway:In": false
         },
         "HC Garden": {
-            "HC Garden Skippable Locations": true,
+            "HC Garden Skippable Locations": false,
             "Hyrule Castle Grounds": false
         },
         "HC Great Fairy Fountain": {
@@ -4036,15 +4068,15 @@
             "Water Temple Lake Gateway:In": false,
             "Water Temple Dive MQ": false,
             "Water Temple Dark Link Region MQ": false,
-            "Water Temple Before Boss Lower MQ": true,
+            "Water Temple Before Boss Lower MQ": false,
             "Farores Wind Warp": false
         },
         "Water Temple Before Boss Lower MQ": {
-            "Water Temple Before Boss MQ": true,
-            "Water Temple Lobby MQ": true
+            "Water Temple Before Boss MQ": false,
+            "Water Temple Lobby MQ": false
         },
         "Water Temple Before Boss MQ": {
-            "Water Temple Before Boss Lower MQ": true,
+            "Water Temple Before Boss Lower MQ": false,
             "Water Temple Boss Gateway:In": false
         },
         "Water Temple Dive MQ": {

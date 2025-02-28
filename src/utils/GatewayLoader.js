@@ -4,6 +4,7 @@ import path from "path";
 const __dirname = path.resolve();
 
 /* files */
+const bluewarpInFileName  = path.join(__dirname, "/config/gateways/bluewarp.json");
 const specialInFileName  = path.join(__dirname, "/config/gateways/special.json");
 const overworldInFileName  = path.join(__dirname, "/config/gateways/overworld.json");
 const dungeonInFileName  = path.join(__dirname, "/config/gateways/dungeon.json");
@@ -42,6 +43,7 @@ function modify(source = [], target = []) {
 
 /* module */
 
+const bluewarpInData = JSON.parse(fs.readFileSync(bluewarpInFileName));
 const specialInData = JSON.parse(fs.readFileSync(specialInFileName));
 const overworldInData = JSON.parse(fs.readFileSync(overworldInFileName));
 const dungeonInData = JSON.parse(fs.readFileSync(dungeonInFileName));
@@ -52,6 +54,7 @@ const grottoInData = JSON.parse(fs.readFileSync(grottoInFileName));
 const outData = [];
 
 modify([
+    ...bluewarpInData,
     ...specialInData,
     ...overworldInData,
     ...dungeonInData,
