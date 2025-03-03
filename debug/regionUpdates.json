@@ -1841,7 +1841,7 @@
             "Hammer Grotto Crater Gateway:Out": false
         },
         "Crater Hammer Grotto Gateway:Out": {
-            "DMC Lower Nearby": false
+            "DMC Lower Local": false
         },
         "Hammer Grotto Crater Gateway:In": {
             "Crater Hammer Grotto Gateway:Out": false
@@ -1853,7 +1853,7 @@
             "Bomb Grotto Crater Gateway:Out": false
         },
         "Crater Bomb Grotto Gateway:Out": {
-            "DMC Upper Nearby": false
+            "DMC Upper Local": false
         },
         "Bomb Grotto Crater Gateway:In": {
             "Crater Bomb Grotto Gateway:Out": false
@@ -2381,7 +2381,7 @@
             "Great Fairy Crater Gateway:Out": false
         },
         "Crater Great Fairy Gateway:Out": {
-            "DMC Lower Nearby": false
+            "DMC Lower Local": false
         },
         "Great Fairy Crater Gateway:In": {
             "Crater Great Fairy Gateway:Out": false

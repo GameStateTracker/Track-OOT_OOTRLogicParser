@@ -465,7 +465,7 @@
         "region_name": "Crater Great Fairy Gateway",
         "exits": {
             "Great Fairy Crater Gateway": "True",
-            "DMC Lower Nearby": "True"
+            "DMC Lower Local": "True"
         }
     },
     {
