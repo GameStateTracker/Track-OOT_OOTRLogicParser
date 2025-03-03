@@ -353,7 +353,7 @@
         "region_name": "Crater Hammer Grotto Gateway",
         "exits": {
             "Hammer Grotto Crater Gateway": "True",
-            "DMC Lower Nearby": "True"
+            "DMC Lower Local": "True"
         }
     },
     {
@@ -367,7 +367,7 @@
         "region_name": "Crater Bomb Grotto Gateway",
         "exits": {
             "Bomb Grotto Crater Gateway": "True",
-            "DMC Upper Nearby": "True"
+            "DMC Upper Local": "True"
         }
     },
     {

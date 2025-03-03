@@ -29,10 +29,12 @@ exit: Desert Colossus
  [ 'True' ] 
 ---
 --- --- ---
-mainRegions: Blue Warp Gohma Gateway:Out is new
-subRegions: Blue Warp Gohma Gateway:Out: KF Outside Deku Tree is new
-mainRegions: Blue Warp Ghoma Gateway:Out doesn't exist anymore
-subRegions: Blue Warp Ghoma Gateway:Out: KF Outside Deku Tree doesn't exist anymore
+subRegions: Crater Hammer Grotto Gateway:Out: DMC Lower Local is new
+subRegions: Crater Bomb Grotto Gateway:Out: DMC Upper Local is new
+subRegions: Crater Great Fairy Gateway:Out: DMC Lower Local is new
+subRegions: Crater Hammer Grotto Gateway:Out: DMC Lower Nearby doesn't exist anymore
+subRegions: Crater Bomb Grotto Gateway:Out: DMC Upper Nearby doesn't exist anymore
+subRegions: Crater Great Fairy Gateway:Out: DMC Lower Nearby doesn't exist anymore
 
 -------------------------------------------
 generate logic output
