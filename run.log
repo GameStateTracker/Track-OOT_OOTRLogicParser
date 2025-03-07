@@ -29,12 +29,8 @@ exit: Desert Colossus
  [ 'True' ] 
 ---
 --- --- ---
-subRegions: Crater Hammer Grotto Gateway:Out: DMC Lower Local is new
-subRegions: Crater Bomb Grotto Gateway:Out: DMC Upper Local is new
-subRegions: Crater Great Fairy Gateway:Out: DMC Lower Local is new
-subRegions: Crater Hammer Grotto Gateway:Out: DMC Lower Nearby doesn't exist anymore
-subRegions: Crater Bomb Grotto Gateway:Out: DMC Upper Nearby doesn't exist anymore
-subRegions: Crater Great Fairy Gateway:Out: DMC Lower Nearby doesn't exist anymore
+subRegions: King Dodongo Boss Room: Boss Dodongo Gateway:In is new
+subRegions: King Dodongo Boss Room: Dodongos Cavern Mouth doesn't exist anymore
 
 -------------------------------------------
 generate logic output

@@ -1840,7 +1840,7 @@
             "Hammer Grotto Crater Gateway:Out": false
         },
         "Crater Hammer Grotto Gateway:Out": {
-            "DMC Lower Local": true
+            "DMC Lower Local": false
         },
         "Hammer Grotto Crater Gateway:In": {
             "Crater Hammer Grotto Gateway:Out": false
@@ -1852,7 +1852,7 @@
             "Bomb Grotto Crater Gateway:Out": false
         },
         "Crater Bomb Grotto Gateway:Out": {
-            "DMC Upper Local": true
+            "DMC Upper Local": false
         },
         "Bomb Grotto Crater Gateway:In": {
             "Crater Bomb Grotto Gateway:Out": false
@@ -2380,7 +2380,7 @@
             "Great Fairy Crater Gateway:Out": false
         },
         "Crater Great Fairy Gateway:Out": {
-            "DMC Lower Local": true
+            "DMC Lower Local": false
         },
         "Great Fairy Crater Gateway:In": {
             "Crater Great Fairy Gateway:Out": false
@@ -2476,7 +2476,7 @@
             "Boss Deku Gateway:In": false
         },
         "King Dodongo Boss Room": {
-            "Dodongos Cavern Mouth": false
+            "Boss Dodongo Gateway:In": true
         },
         "Barinade Boss Room": {
             "Boss Jabu Gateway:In": false
