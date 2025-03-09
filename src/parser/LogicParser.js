@@ -34,23 +34,23 @@ function testBlacklist(list, value) {
 
 class LogicParser {
 
-    parseFile(fileName, mq = false, renameBlacklist = []) {
+    parseFile(fileName, mq = false, renameBlacklist = [], dataNames = []) {
         const input = fs.readFileSync(fileName).toString();
         const output = this.#parseInput(input);
         if (!Array.isArray(output)) {
             console.warn(`skip parsing logic file "${fileName}": does not match base format`);
             return;
         }
-        this.#extractToken(output, mq, renameBlacklist);
+        this.#extractToken(output, mq, renameBlacklist, dataNames);
     }
 
-    parse(input, mq = false, renameBlacklist = []) {
+    parse(input, mq = false, renameBlacklist = [], dataNames = []) {
         const output = this.#parseInput(input);
         if (!Array.isArray(output)) {
             console.warn("skip parsing logic: does not match base format");
             return;
         }
-        this.#extractToken(output, mq, renameBlacklist);
+        this.#extractToken(output, mq, renameBlacklist, dataNames);
     }
 
     #parseInput(input) {
@@ -61,7 +61,7 @@ class LogicParser {
         }
     }
 
-    #extractToken(data, mq = false, renameBlacklist = []) {
+    #extractToken(data, mq = false, renameBlacklist = [], dataNames = []) {
         data.forEach((value) => {
             if (mq && !testBlacklist(renameBlacklist, value.region_name)) {
                 value.region_name = value.region_name + " MQ";
@@ -88,7 +88,7 @@ class LogicParser {
                     }
                 }
                 const token = RandTokenizer.tokenize(rule);
-                const logic = LogicBuilder.build(token);
+                const logic = LogicBuilder.build(token, dataNames);
                 LogicGenerator.addLocation(value.region_name, location, logic);
                 //console.log("token location:\n", value.region_name, i, "\n", token);
             }
@@ -128,21 +128,21 @@ class LogicParser {
                 success.mainRegions[value.region_name] = false;
                 success.subRegions[value.region_name][exit] = false;
                 const token = RandTokenizer.tokenize(rule);
-                const logic = LogicBuilder.build(token);
+                const logic = LogicBuilder.build(token, dataNames);
                 LogicGenerator.addExit(value.region_name, exit, logic);
                 //console.log("token exit:\n", value.region_name, i, "\n", token);
             }
             for (const event in value.events) {
                 const rule = value.events[event];
                 const token = RandTokenizer.tokenize(rule);
-                const logic = LogicBuilder.build(token);
+                const logic = LogicBuilder.build(token, dataNames);
                 LogicGenerator.addEvent(value.region_name, event, logic);
                 //console.log("token event:\n", value.region_name, i, "\n", token);
             }
         });
     }
 
-    addCustomLogic() {
+    addCustomLogic(dataNames = []) {
         for (const region of customLogicData) {
             const regionName = region.region_name;
             console.log("add custom logic for region:", regionName);
@@ -150,7 +150,7 @@ class LogicParser {
                 for (const locationName in region.locations) {
                     const rule = region.locations[locationName];
                     const token = RandTokenizer.tokenize(rule);
-                    const logic = LogicBuilder.build(token);
+                    const logic = LogicBuilder.build(token, dataNames);
                     LogicGenerator.addLocation(regionName, locationName, logic);
                     console.log("location:", locationName, "\n", token, "\n---");
                 }
@@ -159,7 +159,7 @@ class LogicParser {
                 for (const exitName in region.exits) {
                     const rule = region.exits[exitName];
                     const token = RandTokenizer.tokenize(rule);
-                    const logic = LogicBuilder.build(token);
+                    const logic = LogicBuilder.build(token, dataNames);
                     LogicGenerator.addExit(regionName, exitName, logic);
                     console.log("exit:", exitName, "\n", token, "\n---");
                 }
@@ -168,7 +168,7 @@ class LogicParser {
                 for (const eventName in region.events) {
                     const rule = region.events[eventName];
                     const token = RandTokenizer.tokenize(rule);
-                    const logic = LogicBuilder.build(token);
+                    const logic = LogicBuilder.build(token, dataNames);
                     LogicGenerator.addEvent(regionName, eventName, logic);
                     console.log("event:", eventName, "\n", token, "\n---");
                 }

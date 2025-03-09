@@ -25,13 +25,17 @@ export default class LogicGraph {
             const children = config.edges[name];
             const node = nodeFactory.get(name);
             for (const child in children) {
-                const logic = children[child];
+                const {
+                    logic
+                } = children[child];
                 const fn = Compiler.compile(logic);
                 node.append(nodeFactory.get(child), fn);
             }
         }
-        for (const name in config.logic) {
-            const logic = config.logic[name];
+        for (const name in config.functions) {
+            const {
+                logic
+            } = config.functions[name];
             const fn = Compiler.compile(logic);
             mixins.set(name, fn);
         }

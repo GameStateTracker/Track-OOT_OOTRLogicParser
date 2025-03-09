@@ -1,15 +1,20 @@
 {
-    /* temporary override */
-    "Time_Travel": {
-        "type": "true"
-    },
-    "is_starting_age": {
-        "type": "true"
-    },
     // I have no good way of setting this up in logic as it pings in two different places, so this might be permanent
+    "starting_age": {
+        "type": "value",
+        "ref": "option[starting_age]"
+    },
     "complete_mask_quest": {
         "type": "value",
         "ref": "option[complete_mask_quest]"
+    },
+    "'child'": {
+        "type": "string",
+        "value": "child"
+    },
+    "'adult'": {
+        "type": "string",
+        "value": "adult"
     },
     /* mixins */
     "is_child": {

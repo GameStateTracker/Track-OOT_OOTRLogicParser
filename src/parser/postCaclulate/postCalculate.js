@@ -1,44 +1,39 @@
-import createOnRegionLogic from "./createOnRegionLogic.js";
-import postCalculateMixin from "./postCalculateMixin.js";
 import postCalculateValue from "./postCalculateValue.js";
 import postCalculateFunction from "./postCalculateFunction.js";
+import postCalculateMixin from "./postCalculateMixin.js";
 import postCalculateState from "./postCalculateState.js";
 import postCalculateMinMax from "./postCalculateMinMax.js";
 import {
     translateRegionName
 } from "../../utils/TranslatorFunctions.js";
 
-function calc(scope, input, age = "", region = "", basic = false) {
+function calc(scope, input, region = "", basic = false) {
     switch (input.type) {
-        case "mixin": {
-            return postCalculateMixin(scope, input, age, region, basic);
-        }
         case "value": {
-            return postCalculateValue(scope, input, age, region, basic);
+            return postCalculateValue(scope, input, region, basic);
         }
         case "state": {
-            return postCalculateState(scope, input, age, region, basic);
+            return postCalculateState(scope, input, region, basic);
+        }
+        case "mixin": {
+            return postCalculateMixin(scope, input, region, basic);
         }
         case "function": {
-            return postCalculateFunction(scope, input, age, region, basic);
+            return postCalculateFunction(scope, input, region, basic);
         }
         case "at": {
-            return createOnRegionLogic(
-                `${translateRegionName(input.node)}{child}`,
-                postCalculate(scope, input.content, "child", region, basic),
-                `${translateRegionName(input.node)}{adult}`,
-                postCalculate(scope, input.content, "adult", region, basic),
-                basic
-            );
+            return {
+                "type": "at",
+                "node": translateRegionName(input.node),
+                "content": input.content
+            };
         }
         case "here": {
-            return createOnRegionLogic(
-                `${translateRegionName(region)}{child}`,
-                postCalculate(scope, input.content, "child", region, basic),
-                `${translateRegionName(region)}{adult}`,
-                postCalculate(scope, input.content, "adult", region, basic),
-                basic
-            );
+            return {
+                "type": "at",
+                "node": translateRegionName(region),
+                "content": input.content
+            };
         }
         case "and":
         case "nand":
@@ -60,7 +55,7 @@ function calc(scope, input, age = "", region = "", basic = false) {
         case "lte": {
             const els = [];
             for (const el of input.content) {
-                els.push(postCalculate(scope, el, age, region, basic));
+                els.push(postCalculate(scope, el, region, basic));
             }
             return {
                 type: input.type,
@@ -69,12 +64,12 @@ function calc(scope, input, age = "", region = "", basic = false) {
         }
         case "min":
         case "max": {
-            return postCalculateMinMax(scope, input, age, region, basic);
+            return postCalculateMinMax(scope, input, region, basic);
         }
         case "not": {
             return {
                 type: "not",
-                content: postCalculate(scope, input.content, age, region, basic)
+                content: postCalculate(scope, input.content, region, basic)
             };
         }
         default: {
@@ -83,6 +78,9 @@ function calc(scope, input, age = "", region = "", basic = false) {
     }
 }
 
-export default function postCalculate(scope, input, age, region, basic) {
-    return calc({...scope, calc}, input, age, region, basic);
+export default function postCalculate(scope, input, region, basic) {
+    return calc({
+        ...scope,
+        calc
+    }, input, region, basic);
 }

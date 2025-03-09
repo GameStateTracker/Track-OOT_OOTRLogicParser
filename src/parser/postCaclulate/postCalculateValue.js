@@ -5,31 +5,27 @@ import {
 
 const EXPECTED_REG = /item\[.*?\]/;
 
-export default function postCalculate(scope, input, age = "", region = "", basic = false) {
-    const {calc, mixins, missingValue} = scope;
+export default function postCalculate(scope, input, region = "", basic = false) {
+    const {
+        calc, mixins, missingValue
+    } = scope;
     if (input.ref.indexOf("[") >= 0 && input.ref.endsWith("]")) {
-        if (input.ref.startsWith("mixin[") || input.ref.startsWith("function[") && age != "") {
+        if (input.ref.startsWith("mixin[") || input.ref.startsWith("function[")) {
             return {
-                type: "mixin",
-                ref: `${input.ref}{${age}}`
+                type: "function",
+                ref: input.ref
             };
         }
         return input;
     }
     const res = Translation.getValueName(input.ref);
     if (res != null) {
-        return calc(scope, res, age, region, basic);
+        return calc(scope, res, region, basic);
     }
     const mixname = translateMixinName(input.ref);
     if (mixins.has(mixname)) {
-        if (age != "") {
-            return {
-                type: "mixin",
-                ref: `${mixname}{${age}}`
-            };
-        }
         return {
-            type: "mixin",
+            type: "function",
             ref: mixname
         };
     }

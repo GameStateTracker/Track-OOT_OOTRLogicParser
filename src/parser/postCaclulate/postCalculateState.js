@@ -1,14 +1,9 @@
 import Translation from "../../utils/Translation.js";
 
-export default function postCalculate(scope, input, age = ""/* , region = "", basic = false */) {
-    const {missingState} = scope;
-    if (input.ref == "age" && age != "") {
-        if (input.value == age) {
-            return {type: "true"};
-        } else {
-            return {type: "false"};
-        }
-    }
+export default function postCalculate(scope, input/* , region = "", basic = false */) {
+    const {
+        missingState
+    } = scope;
     const stapar = input.value.replace(/^'|'$/g, "");
     const sta = Translation.getStateConfig(input.ref);
     if (sta == null) {

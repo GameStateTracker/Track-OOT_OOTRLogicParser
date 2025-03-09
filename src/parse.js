@@ -9,12 +9,6 @@ import HelperParser from "./parser/HelperParser.js";
 import LogicParser from "./parser/LogicParser.js";
 import LogicGenerator from "./parser/LogicGenerator.js";
 import {
-    filterLogic, filterMixins
-} from "./_test/LogicTester.js";
-import {
-    filterFailedMixins
-} from "./_test/RemoveBadLogic.js";
-import {
     reduceLogic
 } from "./_test/LogicReducer.js";
 import {
@@ -27,7 +21,6 @@ const PARSE_OFFLINE = process.argv.indexOf("-offline") >= 0;
 
 /* SETTINGS */
 const RANDO_VERSION = "v8.0";
-const FILTER_LOGIC = false;
 /* -------- */
 
 const inHelperFile  = path.join(__dirname, "/input/data/LogicHelpers.json");
@@ -81,6 +74,8 @@ const RENAME_BLACKLIST = [
     "Farores Wind Warp"
 ];
 
+const DATA_NAMES = ["age"];
+
 // parser for normal logic
 function parseLogic() {
     console.log("");
@@ -97,24 +92,17 @@ function parseLogic() {
         if (iname.endsWith("MQ.json")) {
             mq = true;
         }
-        LogicParser.parseFile(iname, mq, RENAME_BLACKLIST);
+        LogicParser.parseFile(iname, mq, RENAME_BLACKLIST, DATA_NAMES);
     }
 
-    LogicParser.addCustomLogic();
+    LogicParser.addCustomLogic(DATA_NAMES);
     LogicParser.regionCheckCall();
     const logic = LogicGenerator.generate();
     const logicData = JSON.stringify(logic, null, 4);
     fs.writeFileSync(`${outputDir}/vanilla.full.json`, logicData);
 
-    /* filter */
-    const [success, failed] = filterMixins(logic);
-    const filteredLogic = filterLogic(success);
-    const filtered = filterFailedMixins([filteredLogic, failed]);
-    const filteredData = JSON.stringify(filtered, null, 4);
-    fs.writeFileSync(`${outputDir}/vanilla.filtered.json`, filteredData);
-
     /* reduce */
-    const reducedLogic = reduceLogic(FILTER_LOGIC ? filtered : logic);
+    const reducedLogic = reduceLogic(logic);
     const reducedLogicData = JSON.stringify(reducedLogic, null, 4);
     fs.writeFileSync(`${outputDir}/vanilla.readable.json`, reducedLogicData);
 
@@ -139,24 +127,17 @@ function parseGlitchedLogic() {
         if (iname.endsWith("MQ.json")) {
             mq = true;
         }
-        LogicParser.parseFile(iname, mq, RENAME_BLACKLIST);
+        LogicParser.parseFile(iname, mq, RENAME_BLACKLIST, DATA_NAMES);
     }
 
-    LogicParser.addCustomLogic();
+    LogicParser.addCustomLogic(DATA_NAMES);
     // LogicParser.regionCheckCall();
     const logic = LogicGenerator.generate(true);
     const logicData = JSON.stringify(logic, null, 4);
     fs.writeFileSync(`${outputDir}/glitched.full.json`, logicData);
 
-    /* filter */
-    const [success, failed] = filterMixins(logic);
-    const filteredLogic = filterLogic(success);
-    const filtered = filterFailedMixins([filteredLogic, failed]);
-    const filteredData = JSON.stringify(filtered, null, 4);
-    fs.writeFileSync(`${outputDir}/glitched.filtered.json`, filteredData);
-
     /* reduce */
-    const reducedLogic = reduceLogic(FILTER_LOGIC ? filtered : logic);
+    const reducedLogic = reduceLogic(logic);
     const reducedLogicData = JSON.stringify(reducedLogic, null, 4);
     fs.writeFileSync(`${outputDir}/glitched.readable.json`, reducedLogicData);
 
@@ -172,7 +153,7 @@ console.log("");
 console.log("===========================================");
 console.log("PARSE HELPERS");
 console.log("");
-HelperParser.parse(fs.readFileSync(inHelperFile).toString());
+HelperParser.parse(fs.readFileSync(inHelperFile).toString(), DATA_NAMES);
 // parse logic
 parseLogic();
 // parse glitched logic

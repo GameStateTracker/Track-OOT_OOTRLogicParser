@@ -29,8 +29,6 @@ exit: Desert Colossus
  [ 'True' ] 
 ---
 --- --- ---
-subRegions: King Dodongo Boss Room: Boss Dodongo Gateway:In is new
-subRegions: King Dodongo Boss Room: Dodongos Cavern Mouth doesn't exist anymore
 
 -------------------------------------------
 generate logic output
@@ -52,6 +50,25 @@ ZR Frogs Ocarina Minigame Hint
 -------------------------------------------
 values not converted
 
+adult
+child
+both
+Blue_Fire_Arrows
+bridge_stones
+bridge_medallions
+bridge_rewards
+bridge_tokens
+bridge_hearts
+lacs_stones
+lacs_medallions
+lacs_rewards
+lacs_hearts
+ganon_bosskey_stones
+ganon_bosskey_medallions
+ganon_bosskey_rewards
+ganon_bosskey_hearts
+'King Dodongo Boss Room'
+either
 
 -------------------------------------------
 states not converted
@@ -65,8 +82,6 @@ unused name translations
 -------------------------------------------
 unused value translations
 
-Time_Travel
-is_starting_age
 Mask_Shop_Open
 Carpenter_Rescue
 Deku_Tree_Clear
@@ -77,21 +92,17 @@ Shadow_Trial_Clear
 Spirit_Trial_Clear
 Light_Trial_Clear
 Hammer
-Buy_Deku_Stick_1
-Deku_Stick_Drop
-Buy_Deku_Nut_5
-Buy_Deku_Nut_10
-Deku_Nut_Drop
 Ice_Arrows
 Ice_Trap
 Arrows
 Magic_Bean_Pack
+Keaton_Mask
+Spooky_Mask
+Bunny_Hood
 Biggoron_Sword
 Bottle_with_Letter
-Buy_Blue_Fire
-Buy_Bottle_Bug
-Buy_Fairys_Spirit
-Buy_Fish
+item
+song
 shuffle_gerudo_card
 shuffle_overworld_entrances
 shuffle_weird_egg
@@ -101,21 +112,32 @@ skipped_trials[Water]
 skipped_trials[Shadow]
 skipped_trials[Spirit]
 skipped_trials[Light]
+logic_deku_b1_webs_with_bow
+logic_lens_jabu_mq
+logic_spirit_mq_frozen_eye
+logic_forest_mq_hallway_switch_jumpslash
 deadly_bonks
-blue_fire_arrows
 chicken_count
 triforce_hunt
 'Water Temple' in dungeon_shortcuts
+logic_dc_mq_eyes_adult
+logic_forest_mq_hallway_switch_boomerang
 
 
 -------------------------------------------
 unused state translations
 
+filter[time]
+filter[era]
+filter[era_apply]
+option[starting_age]
 option[deadly_bonks]
+option[doors_open_forest]
 shuffle_interior_entrances
 shuffle_child_trade
 option[entrance_shuffle]
 option[shuffle_bosses]
+option[ganon_castle_open]
 option[light_arrow_cutscene]
 
 ===========================================
@@ -153,6 +175,31 @@ ZR Frogs Ocarina Minigame Hint
 -------------------------------------------
 values not converted
 
+0.5
+can_become_adult
+1.0
+0.75
+1
+2.0
+child
+adult
+either
+Blue_Fire_Arrows
+bridge_stones
+bridge_medallions
+bridge_rewards
+bridge_tokens
+bridge_hearts
+lacs_stones
+lacs_medallions
+lacs_rewards
+lacs_hearts
+ganon_bosskey_stones
+ganon_bosskey_medallions
+ganon_bosskey_rewards
+ganon_bosskey_hearts
+'King Dodongo Boss Room'
+both
 
 -------------------------------------------
 states not converted
@@ -1283,8 +1330,6 @@ Spirit Temple Sun Block Room Silver Rupee Right Back
 -------------------------------------------
 unused value translations
 
-Time_Travel
-is_starting_age
 at_night
 at_dampe_time
 Goron_City_Child_Fire
@@ -1305,15 +1350,12 @@ Raise_Water_Level
 Jabu_Jabus_Belly_Floor_Lowered
 Jabu_Jabus_Belly_Parasitic_Tentacle_Cleared
 Hammer
-Buy_Deku_Stick_1
-Deku_Stick_Drop
-Buy_Deku_Nut_5
-Buy_Deku_Nut_10
-Deku_Nut_Drop
 Ice_Arrows
 Ice_Trap
 Arrows
 Magic_Bean_Pack
+Weird_Egg
+Chicken
 Bottle_with_Letter
 Silver_Rupee_Bottom_of_the_Well_Basement
 Silver_Rupee_Dodongos_Cavern_Staircase
@@ -1337,10 +1379,8 @@ Silver_Rupee_Spirit_Temple_Adult_Climb
 Silver_Rupee_Spirit_Temple_Child_Early_Torches
 Silver_Rupee_Spirit_Temple_Adult_Boulders
 Silver_Rupee_Spirit_Temple_Sun_Block
-Buy_Blue_Fire
-Buy_Bottle_Bug
-Buy_Fairys_Spirit
-Buy_Fish
+item
+song
 shuffle_gerudo_card
 shuffle_silver_rupees
 adult_trade_shuffle
@@ -1436,6 +1476,7 @@ logic_spirit_sun_chest_bow
 logic_spirit_lobby_gs
 logic_lens_spirit
 logic_spirit_wall
+logic_spirit_mq_frozen_eye
 logic_lens_castle
 logic_spirit_trial_hookshot
 logic_shadow_trial_mq
@@ -1473,7 +1514,6 @@ logic_water_mq_locked_gs
 logic_water_central_gs_fw
 logic_king_zora_skip
 deadly_bonks
-blue_fire_arrows
 chicken_count
 triforce_hunt
 'Water Temple' in dungeon_shortcuts
@@ -1527,16 +1567,22 @@ Defeat_Morpha
 Defeat_Bongo_Bongo
 Defeat_Twinrova
 
+
 -------------------------------------------
 unused state translations
 
+filter[time]
+filter[era]
+filter[era_apply]
+option[starting_age]
 option[deadly_bonks]
-bridge
+option[doors_open_forest]
 shuffle_interior_entrances
 shuffle_child_trade
 option[entrance_shuffle]
 option[shuffle_dungeons]
 option[shuffle_bosses]
+option[ganon_castle_open]
 option[light_arrow_cutscene]
 shuffle_overworld_entrances
 shuffle_pots

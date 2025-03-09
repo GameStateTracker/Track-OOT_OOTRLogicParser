@@ -14,6 +14,8 @@ import StateTranslations from "../utils/translation/StateTranslations.js";
 import ValueTranslations from "../utils/translation/ValueTranslations.js";
 import StringIndexer from "../utils/StringIndexer.js";
 
+const VERSION = 1;
+
 const __dirname = path.resolve();
 
 const generator_config = JSONCFile.read(path.join(__dirname, "/translation/generator_config.jsonc"), {});
@@ -37,33 +39,13 @@ const missingState = new Map();
 const missingValue = new Set();
 const missingLocation = new Set();
 
-function xor(a, b) {
-    return !a != !b;
-}
-
-function postCalcutate(input, age = "", region = "", basic = false) {
+function postCalcutate(input, region = "", basic = false) {
     const scope = {
         mixins,
         missingState,
         missingValue
     };
-    return postCalculateMethod(scope, input, age, region, basic);
-}
-
-function wrapEraFilter(rule, value) {
-    if (value) {
-        return {
-            "type": "and",
-            "content": [
-                {
-                    "type": "mixin",
-                    "ref": "mixin[filter_era]{" + value + "}"
-                },
-                rule
-            ]
-        };
-    }
-    return rule;
+    return postCalculateMethod(scope, input, region, basic);
 }
 
 class LogicGenerator {
@@ -132,14 +114,14 @@ class LogicGenerator {
             if (key == "") {
                 continue;
             }
-            functions.set(key, function_overrides[key]);
+            // functions.set(translateFunctionName(key), function_overrides[key]);
             //console.log(`added function override: ${key}`);
         }
         for (const key in mixin_overrides) {
             if (key == "") {
                 continue;
             }
-            mixins.set(translateMixinName(key), mixin_overrides[key]);
+            // mixins.set(translateMixinName(key), mixin_overrides[key]);
             //console.log(`added mixin override: ${key}`);
         }
         for (const key in event_overrides) {
@@ -151,29 +133,26 @@ class LogicGenerator {
         }
 
         const res = {
+            version: VERSION,
             edges: {},
-            logic: {}
+            functions: {}
         };
         for (const region in structure) {
             const data = structure[region];
-            const regC = {};
-            const regA = {};
+            const reg = {};
             const regName = translateRegionName(region);
             for (const node of data.exits) {
                 const nodeName = StringIndexer.remove(node);
                 const name = translateRegionName(nodeName);
                 const basicGeneration = generator_config["useBasicGeneration"]?.["exits"];
-                const wrapNotEra = generator_config["wrapNotEra"]?.["exits"];
-                const basicGenerationChild = xor(basicGeneration["default"], (basicGeneration["child"] ?? []).includes(name));
-                const basicGenerationAdult = xor(basicGeneration["default"], (basicGeneration["adult"] ?? []).includes(name));
-                const wrapNotEraChild = xor(wrapNotEra["default"], (wrapNotEra["child"] ?? []).includes(name)) && "child";
-                const wrapNotEraAdult = xor(wrapNotEra["default"], (wrapNotEra["adult"] ?? []).includes(name)) && "adult";
                 if (logic_overrides[regName]?.[name] != null) {
-                    regC[`${name}{child}`] = wrapEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName), wrapNotEraChild);
-                    regA[`${name}{adult}`] = wrapEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName), wrapNotEraAdult);
+                    reg[name] = {
+                        logic: postCalcutate(logic_overrides[regName][name], regName)
+                    };
                 } else {
-                    regC[`${name}{child}`] = wrapEraFilter(postCalcutate(exits.get(node), "child", regName, basicGenerationChild), wrapNotEraChild);
-                    regA[`${name}{adult}`] = wrapEraFilter(postCalcutate(exits.get(node), "adult", regName, basicGenerationAdult), wrapNotEraAdult);
+                    reg[name] = {
+                        logic: postCalcutate(exits.get(node), regName, basicGeneration)
+                    };
                 }
             }
             for (const node of data.locations) {
@@ -184,101 +163,99 @@ class LogicGenerator {
                     continue;
                 }
                 const basicGeneration = generator_config["useBasicGeneration"]?.["locations"];
-                const wrapNotEra = generator_config["wrapNotEra"]?.["locations"];
-                const basicGenerationChild = xor(basicGeneration["default"], (basicGeneration["child"] ?? []).includes(name));
-                const basicGenerationAdult = xor(basicGeneration["default"], (basicGeneration["adult"] ?? []).includes(name));
-                const wrapNotEraChild = xor(wrapNotEra["default"], (wrapNotEra["child"] ?? []).includes(name)) && "child";
-                const wrapNotEraAdult = xor(wrapNotEra["default"], (wrapNotEra["adult"] ?? []).includes(name)) && "adult";
                 if (logic_overrides[regName]?.[name] != null) {
-                    regC[name] = wrapEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName), wrapNotEraChild);
-                    regA[name] = wrapEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName), wrapNotEraAdult);
+                    reg[name] = {
+                        logic: postCalcutate(logic_overrides[regName][name], regName)
+                    };
                 } else {
-                    regC[name] = wrapEraFilter(postCalcutate(locations.get(node), "child", regName, basicGenerationChild), wrapNotEraChild);
-                    regA[name] = wrapEraFilter(postCalcutate(locations.get(node), "adult", regName, basicGenerationAdult), wrapNotEraAdult);
+                    reg[name] = {
+                        logic: postCalcutate(locations.get(node), regName, basicGeneration)
+                    };
                 }
             }
             for (const node of data.events) {
                 const nodeName = StringIndexer.remove(node);
                 const name = translateEventName(nodeName);
                 const basicGeneration = generator_config["useBasicGeneration"]?.["events"];
-                const wrapNotEra = generator_config["wrapNotEra"]?.["events"];
-                const basicGenerationChild = xor(basicGeneration["default"], (basicGeneration["child"] ?? []).includes(name));
-                const basicGenerationAdult = xor(basicGeneration["default"], (basicGeneration["adult"] ?? []).includes(name));
-                const wrapNotEraChild = xor(wrapNotEra["default"], (wrapNotEra["child"] ?? []).includes(name)) && "child";
-                const wrapNotEraAdult = xor(wrapNotEra["default"], (wrapNotEra["adult"] ?? []).includes(name)) && "adult";
                 if (logic_overrides[regName]?.[name] != null) {
-                    regC[name] = wrapEraFilter(postCalcutate(logic_overrides[regName][name], "child", regName), wrapNotEraChild);
-                    regA[name] = wrapEraFilter(postCalcutate(logic_overrides[regName][name], "adult", regName), wrapNotEraAdult);
+                    reg[name] = {
+                        logic: postCalcutate(logic_overrides[regName][name], regName)
+                    };
                 } else {
-                    regC[name] = wrapEraFilter(postCalcutate(events.get(node), "child", regName, basicGenerationChild), wrapNotEraChild);
-                    regA[name] = wrapEraFilter(postCalcutate(events.get(node), "adult", regName, basicGenerationAdult), wrapNotEraAdult);
+                    reg[name] = {
+                        logic: postCalcutate(events.get(node), regName, basicGeneration)
+                    };
                 }
             }
-            res.edges[`${regName}{child}`] = regC;
-            res.edges[`${regName}{adult}`] = regA;
+            res.edges[regName] = reg;
         }
         // mixins
         for (const [key, value] of mixins) {
-            res.logic[`${key}{child}`] = postCalcutate(value, "child");
-            res.logic[`${key}{adult}`] = postCalcutate(value, "adult");
+            res.functions[key] = {
+                logic: postCalcutate(value)
+            };
         }
         // functions
         for (const [key, value] of functions) {
-            res.logic[`${key}{child}`] = postCalcutate(value, "child");
-            res.logic[`${key}{adult}`] = postCalcutate(value, "adult");
+            const {
+                logic, params
+            } = value;
+            res.functions[key] = {
+                params,
+                logic: postCalcutate(logic)
+            };
         }
 
         // BEGIN overrides
-        res.edges["region[root]"] = {
-            "region[root]{child}": {
-                "type": "or",
+        res.edges["region[travel_to_adult]"] = {
+            ["region[root]"]: {
+                "type": "true"
+            }
+        };
+        res.edges["region[travel_to_child]"] = {
+            ["region[root]"]: {
+                "type": "true"
+            }
+        };
+        res.edges["region[beyond_door_of_time]"]["region[travel_to_adult]"] = {
+            logic: {
+                "type": "and",
                 "content": [
-                    {
-                        "type": "state",
-                        "ref": "option[starting_age]",
-                        "value": "child"
-                    },
                     {
                         "type": "value",
                         "ref": "flag[time_travel]"
+                    },
+                    {
+                        "type": "data",
+                        "ref": "age",
+                        "value": "child"
                     }
                 ]
             },
-            "region[root]{adult}": {
-                "type": "or",
+            dataMutation: {
+                "era": "adult"
+            }
+        };
+        res.edges["region[beyond_door_of_time]"]["region[travel_to_child]"] = {
+            logic: {
+                "type": "and",
                 "content": [
-                    {
-                        "type": "state",
-                        "ref": "option[starting_age]",
-                        "value": "adult"
-                    },
                     {
                         "type": "value",
                         "ref": "flag[time_travel]"
+                    },
+                    {
+                        "type": "data",
+                        "ref": "age",
+                        "value": "adult"
                     }
                 ]
+            },
+            dataMutation: {
+                "era": "child"
             }
         };
-        // res.edges["region[beyond_door_of_time]{child}"]["region[root]{adult}"] = {
-        //     "type": "value",
-        //     "ref": "flag[time_travel]"
-        // };
-        // res.edges["region[beyond_door_of_time]{adult}"]["region[root]{child}"] = {
-        //     "type": "value",
-        //     "ref": "flag[time_travel]"
-        // };
-        res.edges["region[beyond_door_of_time]{child}"]["region[beyond_door_of_time]{adult}"] = {
-            "type": "value",
-            "ref": "flag[time_travel]"
-        };
-        res.edges["region[beyond_door_of_time]{adult}"]["region[beyond_door_of_time]{child}"] = {
-            "type": "value",
-            "ref": "flag[time_travel]"
-        };
-        res.logic["mixin[is_glitched]{child}"] = {
-            "type": `${glitched}`
-        };
-        res.logic["mixin[is_glitched]{adult}"] = {
+        res.functions["mixin[is_glitched]"] = {
             "type": `${glitched}`
         };
         // END overrides

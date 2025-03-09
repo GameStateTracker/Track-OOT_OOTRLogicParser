@@ -50,7 +50,10 @@ export function testLogic(logic) {
 
 export function filterLogic(logic) {
     const [success] = testLogic(logic);
-    const res = {edges: {}, logic: logic.logic};
+    const res = {
+        edges: {},
+        logic: logic.logic
+    };
     for (const name in logic.edges) {
         const region = {};
         const children = logic.edges[name];
@@ -100,10 +103,13 @@ export function filterMixins(logic) {
     //Possibly fixed this
     //success.add('mixin.can_plant_bean[adult]')
     //failed.delete('mixin.can_plant_bean[adult]')
-    const res = {edges: logic.edges, logic: {}};
-    for (const name in logic.logic) {
+    const res = {
+        edges: logic.edges,
+        functions: {}
+    };
+    for (const name in logic.functions) {
         if (success.has(name)) {
-            res.logic[name] = logic.logic[name];
+            res.functions[name] = logic.functions[name];
         }
     }
     return [res, failed];

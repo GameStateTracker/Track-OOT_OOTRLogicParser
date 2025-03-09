@@ -2476,7 +2476,7 @@
             "Boss Deku Gateway:In": false
         },
         "King Dodongo Boss Room": {
-            "Boss Dodongo Gateway:In": true
+            "Boss Dodongo Gateway:In": false
         },
         "Barinade Boss Room": {
             "Boss Jabu Gateway:In": false

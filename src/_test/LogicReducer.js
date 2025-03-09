@@ -25,7 +25,9 @@ function logicReducer(input) {
                 return output.content[0];
             }
             if (output.content.some((e) => e.type == "false")) {
-                return {type: "false"};
+                return {
+                    type: "false"
+                };
             }
             return output;
         }
@@ -41,7 +43,9 @@ function logicReducer(input) {
                 return output.content[0];
             }
             if (output.content.some((e) => e.type == "false")) {
-                return {type: "true"};
+                return {
+                    type: "true"
+                };
             }
             return output;
         }
@@ -57,7 +61,9 @@ function logicReducer(input) {
                 return output.content[0];
             }
             if (output.content.some((e) => e.type == "true")) {
-                return {type: "true"};
+                return {
+                    type: "true"
+                };
             }
             return output;
         }
@@ -73,7 +79,9 @@ function logicReducer(input) {
                 return output.content[0];
             }
             if (output.content.some((e) => e.type == "true")) {
-                return {type: "false"};
+                return {
+                    type: "false"
+                };
             }
             return output;
         }
@@ -89,10 +97,14 @@ function logicReducer(input) {
                 return output.content[0];
             }
             if (output.content[0].type == "true" && output.content[1].type == "true" || output.content[0].type == "false" && output.content[1].type == "false") {
-                return {type: "false"};
+                return {
+                    type: "false"
+                };
             }
             if (output.content[0].type == "false" && output.content[1].type == "true" || output.content[0].type == "true" && output.content[1].type == "false") {
-                return {type: "true"};
+                return {
+                    type: "true"
+                };
             }
             return output;
         }
@@ -108,10 +120,14 @@ function logicReducer(input) {
                 return output.content[0];
             }
             if (output.content[0].type == "true" && output.content[1].type == "true" || output.content[0].type == "false" && output.content[1].type == "false") {
-                return {type: "true"};
+                return {
+                    type: "true"
+                };
             }
             if (output.content[0].type == "false" && output.content[1].type == "true" || output.content[0].type == "true" && output.content[1].type == "false") {
-                return {type: "false"};
+                return {
+                    type: "false"
+                };
             }
             return output;
         }
@@ -160,10 +176,14 @@ function logicReducer(input) {
                 return;
             }
             if (output.content.type == "false") {
-                return {type: "true"};
+                return {
+                    type: "true"
+                };
             }
             if (output.content.type == "true") {
-                return {type: "false"};
+                return {
+                    type: "false"
+                };
             }
             if (output.content.type == "not") {
                 return output.content.content;
@@ -178,27 +198,58 @@ function logicReducer(input) {
 
 export function reduceLogic(config) {
     const res = {
+        version: config.version,
         edges: {},
-        logic: {}
+        functions: {}
     };
 
     for (const s in config.edges) {
         res.edges[s] = res.edges[s] ?? {};
         const targets = config.edges[s];
         for (const t in targets) {
-            const logic = targets[t];
+            const {
+                logic, dataMutation
+            } = targets[t];
             try {
-                res.edges[s][t] = logicReducer(logic) ?? {type: "false"};
+                const reducedLogic = logicReducer(logic);
+                if (reducedLogic != null) {
+                    res.edges[s][t] = {
+                        logic: reducedLogic,
+                        dataMutation
+                    };
+                } else {
+                    res.edges[s][t] = {
+                        logic: {
+                            type: "false"
+                        },
+                        dataMutation
+                    };
+                }
             } catch (err) {
                 console.error(`Error in edge "${s}" -> "${t}"`, err);
                 console.error("---\n", JSON.stringify(logic, null, 4), "\n---");
             }
         }
     }
-    for (const n in config.logic) {
-        const logic = config.logic[n];
+    for (const n in config.functions) {
+        const {
+            params, logic
+        } = config.functions[n];
         try {
-            res.logic[n] = logicReducer(logic) ?? {type: "false"};
+            const reducedLogic = logicReducer(logic);
+            if (reducedLogic != null) {
+                res.functions[n] = {
+                    params,
+                    logic: reducedLogic
+                };
+            } else {
+                res.functions[n] = {
+                    params,
+                    logic: {
+                        type: "false"
+                    }
+                };
+            }
         } catch (err) {
             console.error(`Error in mixin "${n}"`, err);
             console.error("---\n", JSON.stringify(logic, null, 4), "\n---");
