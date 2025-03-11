@@ -26,11 +26,6 @@ class ValueTranslations {
     }
 
     translate(value) {
-        const newValue = value.replace(/ /g, "_").replace(/^'(.*)'$/g, "$1");
-        if (translations[newValue] != null) {
-            requestedKeys.add(newValue);
-            return translations[newValue];
-        }
         if (translations[value] != null) {
             requestedKeys.add(value);
             return translations[value];

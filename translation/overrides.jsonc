@@ -1,15 +1,31 @@
 {
     "region[root]": {
         "region[root_exits]": {
-            "type": "or",
+            "type": "and",
             "content": [
                 {
-                    "type": "mixin",
-                    "ref": "mixin[is_starting_age]"
+                    "type": "or",
+                    "content": [
+                        {
+                            "type": "mixin",
+                            "ref": "mixin[is_starting_age]"
+                        },
+                        {
+                            "type": "value",
+                            "ref": "flag[time_travel]"
+                        }
+                    ]
                 },
                 {
-                    "type": "value",
-                    "ref": "flag[time_travel]"
+                    "type": "not",
+                    "content": {
+                        "type": "function",
+                        "ref": "function[filter_era]",
+                        "param": {
+                            "type": "data",
+                            "ref": "age"
+                        }
+                    }
                 }
             ]
         }

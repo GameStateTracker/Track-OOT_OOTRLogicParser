@@ -1,3 +1,4 @@
+Debugger attached.
 Cloning into 'input'...
 Note: switching to '8d3b2ef1dc823cbd0d4bc4902b2d46668df658ab'.
 
@@ -33,6 +34,10 @@ exit: Desert Colossus
 -------------------------------------------
 generate logic output
 
+added exit override: region[travel_to_adult] => region[root]
+added exit override: region[travel_to_child] => region[root]
+added exit override: region[beyond_door_of_time] => region[travel_to_child]
+added exit override: region[beyond_door_of_time] => region[travel_to_adult]
 
 -------------------------------------------
 locations not converted
@@ -50,15 +55,43 @@ ZR Frogs Ocarina Minigame Hint
 -------------------------------------------
 values not converted
 
+'Jabu Jabus Belly Parasitic Tentacle Cleared'
+'Showed Mido Sword & Shield'
+'Links Cow'
+'Odd Mushroom Access'
+'Poachers Saw Access'
+'Cojiro Access'
+'Odd Potion Access'
+'Water Temple Clear'
+'Eyedrops Access'
+'Eyeball Frog Access'
+'Broken Sword Access'
+'GF Gate Open'
+'Hideout 1 Torch Jail Gerudo'
+'Hideout 2 Torches Jail Gerudo'
+'Hideout 3 Torches Jail Gerudo'
+'Hideout 4 Torches Jail Gerudo'
+'Kakariko Village Gate Open'
+'Mask of Truth Access'
+'Drain Well'
+'Wake Up Adult Talon'
+'Dampes Windmill Access'
+'Prescription Access'
+'GC Woods Warp Open'
+'Stop GC Rolling Goron as Adult'
+'Goron City Child Fire'
+'King Zora Thawed'
 adult
 child
 both
-Blue_Fire_Arrows
-bridge_stones
-bridge_medallions
-bridge_rewards
-bridge_tokens
-bridge_hearts
+'Goron Tunic'
+'Zora Tunic'
+'Bugs'
+'Fairy'
+'Hideout 1 Torch Jail Carpenter'
+'Hideout 2 Torches Jail Carpenter'
+'Hideout 3 Torches Jail Carpenter'
+'Hideout 4 Torches Jail Carpenter'
 lacs_stones
 lacs_medallions
 lacs_rewards
@@ -82,15 +115,45 @@ unused name translations
 -------------------------------------------
 unused value translations
 
+Showed_Mido_Sword_&_Shield
+Drain_Well
+Kakariko_Village_Gate_Open
+Wake_Up_Adult_Talon
+GC_Woods_Warp_Open
+Goron_City_Child_Fire
+Stop_GC_Rolling_Goron_as_Adult
+Links_Cow
+Dampes_Windmill_Access
+Cojiro_Access
 Mask_Shop_Open
+Odd_Potion_Access
+Eyeball_Frog_Access
+Poachers_Saw_Access
+Odd_Mushroom_Access
+Broken_Sword_Access
+Prescription_Access
+Eyedrops_Access
 Carpenter_Rescue
+Hideout_1_Torch_Jail_Gerudo
+Hideout_2_Torches_Jail_Gerudo
+Hideout_3_Torches_Jail_Gerudo
+Hideout_4_Torches_Jail_Gerudo
+Hideout_1_Torch_Jail_Carpenter
+Hideout_2_Torches_Jail_Carpenter
+Hideout_3_Torches_Jail_Carpenter
+Hideout_4_Torches_Jail_Carpenter
+GF_Gate_Open
+King_Zora_Thawed
 Deku_Tree_Clear
+Water_Temple_Clear
 Forest_Trial_Clear
 Fire_Trial_Clear
 Water_Trial_Clear
 Shadow_Trial_Clear
 Spirit_Trial_Clear
 Light_Trial_Clear
+Jabu_Jabus_Belly_Floor_Lowered
+Jabu_Jabus_Belly_Parasitic_Tentacle_Cleared
 Hammer
 Ice_Arrows
 Ice_Trap
@@ -122,6 +185,7 @@ triforce_hunt
 'Water Temple' in dungeon_shortcuts
 logic_dc_mq_eyes_adult
 logic_forest_mq_hallway_switch_boomerang
+Mask_of_Truth_Access
 
 
 -------------------------------------------
@@ -153,6 +217,10 @@ exit: Desert Colossus
 -------------------------------------------
 generate logic output
 
+added exit override: region[travel_to_adult] => region[root]
+added exit override: region[travel_to_child] => region[root]
+added exit override: region[beyond_door_of_time] => region[travel_to_child]
+added exit override: region[beyond_door_of_time] => region[travel_to_adult]
 
 -------------------------------------------
 locations not converted
@@ -178,18 +246,41 @@ values not converted
 0.5
 can_become_adult
 1.0
+'Forest Trial Clear'
+'Fire Trial Clear'
+'Water Trial Clear'
+'Shadow Trial Clear'
+'Spirit Trial Clear'
+'Light Trial Clear'
+'Showed Mido Sword & Shield'
+'Links Cow'
+'Water Temple Clear'
+'GF Gate Open'
+'Hideout 1 Torch Jail Gerudo'
+'Hideout 2 Torches Jail Gerudo'
+'Hideout 3 Torches Jail Gerudo'
+'Hideout 4 Torches Jail Gerudo'
+'Mask of Truth Access'
+'Mask Shop Open'
+'Kakariko Village Gate Open'
+'Drain Well'
+'Wake Up Adult Talon'
 0.75
+'GC Woods Warp Open'
 1
 2.0
 child
 adult
 either
-Blue_Fire_Arrows
-bridge_stones
-bridge_medallions
-bridge_rewards
-bridge_tokens
-bridge_hearts
+'Goron Tunic'
+'Zora Tunic'
+'Bugs'
+'Fairy'
+'Stop GC Rolling Goron as Adult'
+'Hideout 1 Torch Jail Carpenter'
+'Hideout 2 Torches Jail Carpenter'
+'Hideout 3 Torches Jail Carpenter'
+'Hideout 4 Torches Jail Carpenter'
 lacs_stones
 lacs_medallions
 lacs_rewards
@@ -1332,10 +1423,18 @@ unused value translations
 
 at_night
 at_dampe_time
+Showed_Mido_Sword_&_Shield
+Drain_Well
+Kakariko_Village_Gate_Open
+Wake_Up_Adult_Talon
+GC_Woods_Warp_Open
 Goron_City_Child_Fire
+Stop_GC_Rolling_Goron_as_Adult
 Child_Water_Temple
+Links_Cow
 Dampes_Windmill_Access
 Cojiro_Access
+Mask_Shop_Open
 Odd_Potion_Access
 Eyeball_Frog_Access
 Poachers_Saw_Access
@@ -1344,8 +1443,24 @@ Broken_Sword_Access
 Prescription_Access
 Eyedrops_Access
 Carpenter_Rescue
+Hideout_1_Torch_Jail_Gerudo
+Hideout_2_Torches_Jail_Gerudo
+Hideout_3_Torches_Jail_Gerudo
+Hideout_4_Torches_Jail_Gerudo
+Hideout_1_Torch_Jail_Carpenter
+Hideout_2_Torches_Jail_Carpenter
+Hideout_3_Torches_Jail_Carpenter
+Hideout_4_Torches_Jail_Carpenter
+GF_Gate_Open
 King_Zora_Thawed
 Deku_Tree_Clear
+Water_Temple_Clear
+Forest_Trial_Clear
+Fire_Trial_Clear
+Water_Trial_Clear
+Shadow_Trial_Clear
+Spirit_Trial_Clear
+Light_Trial_Clear
 Raise_Water_Level
 Jabu_Jabus_Belly_Floor_Lowered
 Jabu_Jabus_Belly_Parasitic_Tentacle_Cleared
@@ -1559,13 +1674,15 @@ logic_spirit_fence_gs
 logic_spirit_adult_side_hovers
 logic_spirit_sun_chest_no_rupees
 logic_spirit_mq_water_rupee
-Defeat_King_Dodongo
-Defeat_Barinade
-Defeat_Phantom_Ganon
-Defeat_Volvagia
-Defeat_Morpha
-Defeat_Bongo_Bongo
-Defeat_Twinrova
+'Defeat King Dodongo'
+'Defeat Barinade'
+'Defeat Phantom Ganon'
+'Defeat Volvagia'
+'Defeat Morpha'
+'Defeat Bongo Bongo'
+'Defeat Twinrova'
+Mask_of_Truth_Access
+'Jabu Jabus Belly Floor Lowered'
 
 
 -------------------------------------------
@@ -1586,3 +1703,4 @@ option[ganon_castle_open]
 option[light_arrow_cutscene]
 shuffle_overworld_entrances
 shuffle_pots
+Waiting for the debugger to disconnect...

@@ -7,6 +7,7 @@ import {
     translateRegionName
 } from "../../utils/TranslatorFunctions.js";
 
+// TODO handle mutli value returns (array of value replacements) everywhere
 function calc(scope, input, region = "", basic = false) {
     switch (input.type) {
         case "value": {
@@ -55,7 +56,14 @@ function calc(scope, input, region = "", basic = false) {
         case "lte": {
             const els = [];
             for (const el of input.content) {
-                els.push(postCalculate(scope, el, region, basic));
+                const converted = postCalculate(scope, el, region, basic);
+                if (Array.isArray(converted)) {
+                    for (const entry of converted) {
+                        els.push(entry);
+                    }
+                } else {
+                    els.push(converted);
+                }
             }
             return {
                 type: input.type,

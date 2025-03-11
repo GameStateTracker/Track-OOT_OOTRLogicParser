@@ -1,237 +1,39 @@
 {
     /* time travel */
-    "mixin[is_starting_age]": {
-        "type": "or",
-        "content": [
-            {
-                "type": "and",
-                "content": [
-                    {
-                        "type": "state",
-                        "ref": "age",
-                        "value": "child"
-                    },
-                    {
-                        "type": "state",
-                        "ref": "option[starting_age]",
-                        "value": "child"
-                    }
-                ]
-            },
-            {
-                "type": "and",
-                "content": [
-                    {
-                        "type": "state",
-                        "ref": "age",
-                        "value": "adult"
-                    },
-                    {
-                        "type": "state",
-                        "ref": "option[starting_age]",
-                        "value": "adult"
-                    }
-                ]
-            }
-        ]
-    },
-    "mixin[can_become_adult]": {
-        "type": "or",
-        "content": [
-            {
-                "type": "state",
-                "ref": "option[starting_age]",
-                "value": "adult"
-            },
-            {
-                "type": "at",
-                "node": "region[beyond_door_of_time]",
-                "content": {
-                    "type": "true"
-                }
-            }
-        ]
-    },
-    "mixin[can_become_child]": {
-        "type": "or",
-        "content": [
-            {
-                "type": "state",
-                "ref": "option[starting_age]",
-                "value": "child"
-            },
-            {
-                "type": "at",
-                "node": "region[beyond_door_of_time]",
-                "content": {
-                    "type": "true"
-                }
-            }
-        ]
-    },
-    "mixin[filter_era]": {
-        "type": "or",
-        "content": [
-            {
-                "type": "and",
-                "content": [
-                    {
-                        "type": "state",
-                        "ref": "age",
-                        "value": "child"
-                    },
-                    {
-                        "type": "not",
-                        "content": {
-                            "type": "state",
-                            "ref": "filter[era]",
-                            "value": "adult"
-                        }
-                    }
-                ]
-            },
-            {
-                "type": "and",
-                "content": [
-                    {
-                        "type": "state",
-                        "ref": "age",
-                        "value": "adult"
-                    },
-                    {
-                        "type": "not",
-                        "content": {
-                            "type": "state",
-                            "ref": "filter[era]",
-                            "value": "child"
-                        }
-                    }
-                ]
-            },
-            {
-                "type": "state",
-                "ref": "filter[era_apply]",
-                "value": "loose"
-            }
-        ]
-    },
-    "mixin[is_child]": {
-        "type": "state",
-        "ref": "age",
-        "value": "child"
-    },
-    "mixin[is_adult]": {
-        "type": "state",
-        "ref": "age",
-        "value": "adult"
-    },
-    "mixin[is_night]": {
-        "type": "not",
-        "content": {
-            "type": "state",
-            "ref": "filter[time]",
-            "value": "day"
-        }
-    },
     "mixin[is_day]": {
-        "type": "not",
-        "content": {
-            "type": "state",
-            "ref": "filter[time]",
-            "value": "night"
+        "logic": {
+            "type": "data",
+            "ref": "day"
         }
     },
-    "mixin[longshot]": {
-        "type": "min",
-        "content": {
-            "type": "value",
-            "ref": "item[hookshot]"
-        },
-        "value": 2
+    "mixin[at_night]": {
+        "logic": {
+            "type": "data",
+            "ref": "night"
+        }
     },
-    "mixin[silver_gauntlets]": {
-        "type": "min",
-        "content": {
-            "type": "value",
-            "ref": "item[glove]"
-        },
-        "value": 2
+    "mixin[at_dampe_time]": {
+        "logic": {
+            "type": "data",
+            "ref": "dampe"
+        }
     },
-    "mixin[golden_gauntlets]": {
-        "type": "min",
-        "content": {
-            "type": "value",
-            "ref": "item[glove]"
-        },
-        "value": 3
-    },
-    "mixin[scarecrow]": {
-        "type": "and",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "function[can_play](item[song_scarecrow])"
-            },
-            {
-                "type": "value",
-                "ref": "item[hookshot]"
-            }
-        ]
-    },
-    "mixin[distant_scarecrow]": {
-        "type": "and",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "function[can_play](item[song_scarecrow])"
-            },
-            {
-                "type": "mixin",
-                "ref": "mixin[longshot]"
-            }
-        ]
-    },
-    "mixin[can_build_rainbow_bridge]": {
+    "mixin[is_night_gs]": {
         "type": "or",
         "content": [
             {
-                "type": "state",
-                "ref": "option[ganon_castle_open]",
-                "value": "ganon_castle_open_open"
-            },
-            {
                 "type": "and",
                 "content": [
-                    {
-                        "type": "state",
-                        "ref": "option[ganon_castle_open]",
-                        "value": "ganon_castle_open_default"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_shadow]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_spirit]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[arrow_light]"
-                    }
-                ]
-            },
-            {
-                "type": "and",
-                "content": [
-                    {
-                        "type": "state",
-                        "ref": "option[ganon_castle_open]",
-                        "value": "ganon_castle_open_stones"
-                    },
                     {
                         "type": "mixin",
-                        "ref": "function[has_stones](bridge_stones)"
+                        "ref": "mixin[at_night]"
+                    },
+                    {
+                        "type": "not",
+                        "content": {
+                            "type": "value",
+                            "ref": "option[sun_song_skulltuta]"
+                        }
                     }
                 ]
             },
@@ -239,146 +41,24 @@
                 "type": "and",
                 "content": [
                     {
-                        "type": "state",
-                        "ref": "option[ganon_castle_open]",
-                        "value": "ganon_castle_open_medallion"
+                        "type": "value",
+                        "ref": "option[sun_song_skulltuta]"
                     },
                     {
-                        "type": "mixin",
-                        "ref": "function[has_medallions](bridge_medallions)"
-                    }
-                ]
-            },
-            {
-                "type": "and",
-                "content": [
-                    {
-                        "type": "state",
-                        "ref": "option[ganon_castle_open]",
-                        "value": "ganon_castle_open_dungeon"
-                    },
-                    {
-                        "type": "mixin",
-                        "ref": "function[has_dungeon_rewards](bridge_rewards)"
-                    }
-                ]
-            },
-            {
-                "type": "and",
-                "content": [
-                    {
-                        "type": "state",
-                        "ref": "option[ganon_castle_open]",
-                        "value": "ganon_castle_open_skulltulas"
-                    },
-                    {
-                        "type": "gte",
-                        "content": [
+                        "type": "function",
+                        "ref": "function[can_play]",
+                        "params": [
                             {
                                 "type": "value",
-                                "ref": "item[skulltula]"
-                            },
-                            {
-                                "type": "value",
-                                "ref": "option[ganon_castle_skulltulas]"
+                                "ref": "item[song_sun]"
                             }
                         ]
                     }
                 ]
-            },
-            {
-                "type": "and",
-                "content": [
-                    {
-                        "type": "state",
-                        "ref": "option[ganon_castle_open]",
-                        "value": "ganon_castle_open_hearts"
-                    },
-                    {
-                        "type": "mixin",
-                        "ref": "function[has_hearts](ganon_bosskey_hearts)"
-                    }
-                ]
             }
         ]
     },
-    "mixin[blue_fire]": {
-        "type": "or",
-        "content": [
-            {
-                "type": "value",
-                "ref": "reach_location[blue_fire]"
-            },
-            {
-                "type": "and",
-                "content": [
-                    {
-                        "type": "value",
-                        "ref": "buyable[blue_fire]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[bottle]"
-                    },
-                    {
-                        "type": "min",
-                        "content": {
-                            "type": "value",
-                            "ref": "item[wallet]"
-                        },
-                        "value": 2
-                    }
-                ]
-            },
-            {
-                "type": "and",
-                "content": [
-                    {
-                        "type": "value",
-                        "ref": "option[blue_fire_arrows]"
-                    },
-                    {
-                        "type": "mixin",
-                        "ref": "function[can_use](item[blue_fire_arrows])"
-                    }
-                ]
-            }
-        ]
-    },
-    "mixin[fish]": {
-        "type": "or",
-        "content": [
-            {
-                "type": "value",
-                "ref": "reach_location[fish_lone]"
-            },
-            {
-                "type": "value",
-                "ref": "reach_location[fish_group]"
-            },
-            {
-                "type": "and",
-                "content": [
-                    {
-                        "type": "value",
-                        "ref": "buyable[fish]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[bottle]"
-                    },
-                    {
-                        "type": "min",
-                        "content": {
-                            "type": "value",
-                            "ref": "item[wallet]"
-                        },
-                        "value": 1
-                    }
-                ]
-            }
-        ]
-    },
+    //---
     "mixin[fairy]": {
         "type": "or",
         "content": [
@@ -593,40 +273,6 @@
                                 ]
                             }
                         ]
-                    }
-                ]
-            }
-        ]
-    },
-    "mixin[is_night_gs]": {
-        "type": "or",
-        "content": [
-            {
-                "type": "and",
-                "content": [
-                    {
-                        "type": "mixin",
-                        "ref": "mixin[is_night]"
-                    },
-                    {
-                        "type": "not",
-                        "content": {
-                            "type": "value",
-                            "ref": "option[sun_song_skulltuta]"
-                        }
-                    }
-                ]
-            },
-            {
-                "type": "and",
-                "content": [
-                    {
-                        "type": "value",
-                        "ref": "option[sun_song_skulltuta]"
-                    },
-                    {
-                        "type": "mixin",
-                        "ref": "function[can_play](item[song_sun])"
                     }
                 ]
             }

@@ -27,16 +27,21 @@
     },
     "at_night": {
         "type": "mixin",
-        "ref": "mixin[is_night]"
+        "ref": "mixin[at_night]"
     },
     "at_night_gs": {
         "type": "mixin",
-        "ref": "mixin[is_night_gs]"
+        "ref": "mixin[at_night_gs]"
     },
     "at_day": {
         "type": "mixin",
-        "ref": "mixin[is_day]"
+        "ref": "mixin[at_day]"
     },
+    "at_dampe_time": {
+        "type": "mixin",
+        "ref": "mixin[at_dampe_time]"
+    },
+    /* events */
     "Forest_Temple_Jo_and_Beth": {
         "type": "value",
         "ref": "event[forest_temple_jo_and_beth]"
@@ -44,10 +49,6 @@
     "Forest_Temple_Amy_and_Meg": {
         "type": "value",
         "ref": "event[forest_temple_amy_and_meg]"
-    },
-    "at_dampe_time": {
-        "type": "mixin",
-        "ref": "mixin[is_night]"
     },
     /* specials */
     "Showed_Mido_Sword_&_Shield": {
@@ -887,6 +888,26 @@
     //"item[heart_container]",
     //"item[heart_double]",
     //"item[sold_out]",
+    "bridge_tokens": {
+        "type": "value",
+        "ref": "option[ganon_castle_skulltulas]"
+    },
+    "bridge_stones": {
+        "type": "value",
+        "ref": "option[stone_count_bridge]"
+    },
+    "bridge_medallions": {
+        "type": "value",
+        "ref": "option[medallion_count_bridge]"
+    },
+    "bridge_rewards": {
+        "type": "value",
+        "ref": "option[dungeon_count_bridge]"
+    },
+    "bridge_hearts": {
+        "type": "value",
+        "ref": "option[heart_count_bridge]"
+    },
     "lacs_tokens": {
         "type": "value",
         "ref": "option[lacs_skulltulas]"
@@ -898,6 +919,10 @@
     "Blue_Fire": {
         "type": "mixin",
         "ref": "mixin[blue_fire]"
+    },
+    "'Blue Fire'": {
+        "type": "value",
+        "ref": "reach_location[blue_fire]"
     },
     "Buy_Blue_Fire": {
         "type": "and",
@@ -940,9 +965,36 @@
         "type": "value",
         "ref": "mixin[fish]"
     },
+    "'Fish'": [
+        {
+            "type": "value",
+            "ref": "reach_location[fish_lone]"
+        },
+        {
+            "type": "value",
+            "ref": "reach_location[fish_group]"
+        }
+    ],
     "Buy_Fish": {
-        "type": "value",
-        "ref": "item[fish_1]"
+        "type": "and",
+        "content": [
+            {
+                "type": "value",
+                "ref": "buyable[fish]"
+            },
+            {
+                "type": "value",
+                "ref": "item[bottle]"
+            },
+            {
+                "type": "min",
+                "content": {
+                    "type": "value",
+                    "ref": "item[wallet]"
+                },
+                "value": 1
+            }
+        ]
     },
     //"item[milk]",
     //"item[poe]",
@@ -1832,6 +1884,10 @@
             "value": "bonk_off"
         }
     },
+    "Blue_Fire_Arrows": {
+        "type": "value",
+        "ref": "item[arrow_ice]"
+    },
     "blue_fire_arrows": {
         "type": "value",
         "ref": "option[blue_fire_arrows]"
@@ -2080,41 +2136,45 @@
         "type": "value",
         "ref": "option[skip.spirit_mq_water_rupee]"
     },
-    "Defeat_Queen_Gohma": {
+    "'Defeat Queen Gohma'": {
         "type": "value",
         "ref": "event[defeat_queen_gohma]"
     },
-    "Defeat_King_Dodongo": {
+    "'Defeat King Dodongo'": {
         "type": "value",
         "ref": "event[defeat_king_dodongo]"
     },
-    "Defeat_Barinade": {
+    "'Defeat Barinade'": {
         "type": "value",
         "ref": "event[defeat_barinade]"
     },
-    "Defeat_Phantom_Ganon": {
+    "'Defeat Phantom Ganon'": {
         "type": "value",
         "ref": "event[defeat_phantom_ganon]"
     },
-    "Defeat_Volvagia": {
+    "'Defeat Volvagia'": {
         "type": "value",
         "ref": "event[defeat_volvagia]"
     },
-    "Defeat_Morpha": {
+    "'Defeat Morpha'": {
         "type": "value",
         "ref": "event[defeat_morpha]"
     },
-    "Defeat_Bongo_Bongo": {
+    "'Defeat Bongo Bongo'": {
         "type": "value",
         "ref": "event[defeat_bongo_bongo]"
     },
-    "Defeat_Twinrova": {
+    "'Defeat Twinrova'": {
         "type": "value",
         "ref": "event[defeat_twinrova]"
     },
     "Mask_of_Truth_Access": {
         "type": "value",
         "ref": "event[mask_of_truth_access]"
+    },
+    "'Jabu Jabus Belly Floor Lowered'": {
+        "type": "value",
+        "ref": "event[jabu_jabus_belly_floor_lowered]"
     },
     "": ""
 }

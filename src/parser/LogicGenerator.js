@@ -12,7 +12,6 @@ import {
 import NameTranslations from "../utils/translation/NameTranslations.js";
 import StateTranslations from "../utils/translation/StateTranslations.js";
 import ValueTranslations from "../utils/translation/ValueTranslations.js";
-import StringIndexer from "../utils/StringIndexer.js";
 
 const VERSION = 1;
 
@@ -22,6 +21,7 @@ const generator_config = JSONCFile.read(path.join(__dirname, "/translation/gener
 const function_overrides = JSONCFile.read(path.join(__dirname, "/translation/functions.jsonc"), {});
 const mixin_overrides = JSONCFile.read(path.join(__dirname, "/translation/mixins.jsonc"), {});
 const event_overrides = JSONCFile.read(path.join(__dirname, "/translation/events.jsonc"), {});
+const exit_overrides = JSONCFile.read(path.join(__dirname, "/translation/exits.jsonc"), {});
 const logic_overrides = JSONCFile.read(path.join(__dirname, "/translation/overrides.jsonc"), {});
 
 const mixins = new Map();
@@ -30,10 +30,6 @@ const exits = new Map();
 const locations = new Map();
 const events = new Map();
 let structure = {};
-
-const exitIndexer = new StringIndexer();
-const locationIndexer = new StringIndexer();
-const eventIndexer = new StringIndexer();
 
 const missingState = new Map();
 const missingValue = new Set();
@@ -73,8 +69,8 @@ class LogicGenerator {
                 events: []
             };
         }
-        const name = exitIndexer.apply(key);
-        structure[region].exits.push(name);
+        const name = `${region} => ${key}`;
+        structure[region].exits.push(key);
         exits.set(name, value);
     }
 
@@ -86,8 +82,8 @@ class LogicGenerator {
                 events: []
             };
         }
-        const name = locationIndexer.apply(key);
-        structure[region].locations.push(name);
+        const name = `${region} => ${key}`;
+        structure[region].locations.push(key);
         locations.set(name, value);
     }
 
@@ -99,8 +95,8 @@ class LogicGenerator {
                 events: []
             };
         }
-        const name = eventIndexer.apply(key);
-        structure[region].events.push(name);
+        const name = `${region} => ${key}`;
+        structure[region].events.push(key);
         events.set(name, value);
     }
 
@@ -110,6 +106,34 @@ class LogicGenerator {
         console.log("generate logic output");
         console.log("");
 
+        for (const region in exit_overrides) {
+            if (region == "") {
+                continue;
+            }
+            const target_overrides = exit_overrides[region];
+            for (const key in target_overrides) {
+                if (key == "") {
+                    continue;
+                }
+                const value = target_overrides[key];
+                this.addExit(region, key, value);
+                console.log(`added exit override: ${region} => ${key}`);
+            }
+        }
+        for (const region in event_overrides) {
+            if (region == "") {
+                continue;
+            }
+            const target_overrides = event_overrides[region];
+            for (const key in target_overrides) {
+                if (key == "") {
+                    continue;
+                }
+                const value = target_overrides[key];
+                this.addEvent(region, key, value);
+            }
+            //console.log(`added event override: ${key}`);
+        }
         for (const key in function_overrides) {
             if (key == "") {
                 continue;
@@ -124,13 +148,6 @@ class LogicGenerator {
             // mixins.set(translateMixinName(key), mixin_overrides[key]);
             //console.log(`added mixin override: ${key}`);
         }
-        for (const key in event_overrides) {
-            if (key == "") {
-                continue;
-            }
-            events.set(key, event_overrides[key]);
-            //console.log(`added event override: ${key}`);
-        }
 
         const res = {
             version: VERSION,
@@ -141,50 +158,68 @@ class LogicGenerator {
             const data = structure[region];
             const reg = {};
             const regName = translateRegionName(region);
-            for (const node of data.exits) {
-                const nodeName = StringIndexer.remove(node);
-                const name = translateRegionName(nodeName);
+            for (const nodeName of data.exits) {
+                const exitId = `${region} => ${nodeName}`;
+                const exitName = translateRegionName(nodeName);
                 const basicGeneration = generator_config["useBasicGeneration"]?.["exits"];
-                if (logic_overrides[regName]?.[name] != null) {
-                    reg[name] = {
-                        logic: postCalcutate(logic_overrides[regName][name], regName)
-                    };
+                const overrideConfig = logic_overrides[regName]?.[exitName];
+                if (overrideConfig != null) {
+                    this.#addRegionTarget(reg, regName, exitName, overrideConfig, basicGeneration);
                 } else {
-                    reg[name] = {
-                        logic: postCalcutate(exits.get(node), regName, basicGeneration)
-                    };
+                    const edgeConfig = exits.get(exitId);
+                    if (edgeConfig != null) {
+                        this.#addRegionTarget(reg, regName, exitName, edgeConfig, basicGeneration);
+                    } else {
+                        reg[exitName] = {
+                            logic: {
+                                type: "error"
+                            }
+                        };
+                    }
                 }
             }
-            for (const node of data.locations) {
-                const nodeName = StringIndexer.remove(node);
-                const name = translateLocationName(nodeName);
-                if (name == null) {
+            for (const nodeName of data.locations) {
+                const locationId = `${region} => ${nodeName}`;
+                const locationName = translateLocationName(nodeName);
+                if (locationName == null) {
                     missingLocation.add(nodeName);
                     continue;
                 }
                 const basicGeneration = generator_config["useBasicGeneration"]?.["locations"];
-                if (logic_overrides[regName]?.[name] != null) {
-                    reg[name] = {
-                        logic: postCalcutate(logic_overrides[regName][name], regName)
-                    };
+                const overrideConfig = logic_overrides[regName]?.[locationName];
+                if (overrideConfig != null) {
+                    this.#addRegionTarget(reg, regName, locationName, overrideConfig, basicGeneration);
                 } else {
-                    reg[name] = {
-                        logic: postCalcutate(locations.get(node), regName, basicGeneration)
-                    };
+                    const edgeConfig = locations.get(locationId);
+                    if (edgeConfig != null) {
+                        this.#addRegionTarget(reg, regName, locationName, edgeConfig, basicGeneration);
+                    } else {
+                        reg[locationName] = {
+                            logic: {
+                                type: "error"
+                            }
+                        };
+                    }
                 }
             }
-            for (const node of data.events) {
-                const nodeName = StringIndexer.remove(node);
-                const name = translateEventName(nodeName);
+            for (const nodeName of data.events) {
+                const eventId = `${region} => ${nodeName}`;
+                const eventName = translateEventName(nodeName);
                 const basicGeneration = generator_config["useBasicGeneration"]?.["events"];
-                if (logic_overrides[regName]?.[name] != null) {
-                    reg[name] = {
-                        logic: postCalcutate(logic_overrides[regName][name], regName)
-                    };
+                const overrideConfig = logic_overrides[regName]?.[eventName];
+                if (overrideConfig != null) {
+                    this.#addRegionTarget(reg, regName, eventName, overrideConfig, basicGeneration);
                 } else {
-                    reg[name] = {
-                        logic: postCalcutate(events.get(node), regName, basicGeneration)
-                    };
+                    const edgeConfig = events.get(eventId);
+                    if (edgeConfig != null) {
+                        this.#addRegionTarget(reg, regName, eventName, edgeConfig, basicGeneration);
+                    } else {
+                        reg[eventName] = {
+                            logic: {
+                                type: "error"
+                            }
+                        };
+                    }
                 }
             }
             res.edges[regName] = reg;
@@ -207,54 +242,6 @@ class LogicGenerator {
         }
 
         // BEGIN overrides
-        res.edges["region[travel_to_adult]"] = {
-            ["region[root]"]: {
-                "type": "true"
-            }
-        };
-        res.edges["region[travel_to_child]"] = {
-            ["region[root]"]: {
-                "type": "true"
-            }
-        };
-        res.edges["region[beyond_door_of_time]"]["region[travel_to_adult]"] = {
-            logic: {
-                "type": "and",
-                "content": [
-                    {
-                        "type": "value",
-                        "ref": "flag[time_travel]"
-                    },
-                    {
-                        "type": "data",
-                        "ref": "age",
-                        "value": "child"
-                    }
-                ]
-            },
-            dataMutation: {
-                "era": "adult"
-            }
-        };
-        res.edges["region[beyond_door_of_time]"]["region[travel_to_child]"] = {
-            logic: {
-                "type": "and",
-                "content": [
-                    {
-                        "type": "value",
-                        "ref": "flag[time_travel]"
-                    },
-                    {
-                        "type": "data",
-                        "ref": "age",
-                        "value": "adult"
-                    }
-                ]
-            },
-            dataMutation: {
-                "era": "child"
-            }
-        };
         res.functions["mixin[is_glitched]"] = {
             "type": `${glitched}`
         };
@@ -312,6 +299,22 @@ class LogicGenerator {
         StateTranslations.reset();
 
         return res;
+    }
+
+    #addRegionTarget(regionMap, regionName, targetName, config, basicGeneration) {
+        const {
+            logic, dataMutation
+        } = config;
+        if (logic != null) {
+            regionMap[targetName] = {
+                logic: postCalcutate(logic, regionName, basicGeneration),
+                dataMutation
+            };
+        } else {
+            regionMap[targetName] = {
+                logic: postCalcutate(config, regionName, basicGeneration)
+            };
+        }
     }
 
 }

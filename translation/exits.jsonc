@@ -1,0 +1,52 @@
+{
+    "region[travel_to_adult]": {
+        "region[root]": {
+            "type": "true"
+        }
+    },
+    "region[travel_to_child]": {
+        "region[root]": {
+            "type": "true"
+        }
+    },
+    "region[beyond_door_of_time]": {
+        "region[travel_to_child]": {
+            "logic": {
+                "type": "and",
+                "content": [
+                    {
+                        "type": "value",
+                        "ref": "flag[time_travel]"
+                    },
+                    {
+                        "type": "data",
+                        "ref": "age",
+                        "value": "adult"
+                    }
+                ]
+            },
+            "dataMutation": {
+                "era": "child"
+            }
+        },
+        "region[travel_to_adult]": {
+            "logic": {
+                "type": "and",
+                "content": [
+                    {
+                        "type": "value",
+                        "ref": "flag[time_travel]"
+                    },
+                    {
+                        "type": "data",
+                        "ref": "age",
+                        "value": "child"
+                    }
+                ]
+            },
+            "dataMutation": {
+                "era": "adult"
+            }
+        }
+    }
+}
