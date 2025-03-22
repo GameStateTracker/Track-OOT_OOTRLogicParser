@@ -58,7 +58,53 @@
             }
         ]
     },
-    //---
+    "mixin[had_night_start]": {
+        "type": "or",
+        "content": [
+            {
+                "type": "state",
+                "ref": "option[starting_tod]",
+                "value": "tod_sunset"
+            },
+            {
+                "type": "state",
+                "ref": "option[starting_tod]",
+                "value": "tod_evening"
+            },
+            {
+                "type": "state",
+                "ref": "option[starting_tod]",
+                "value": "tod_midnight"
+            },
+            {
+                "type": "state",
+                "ref": "option[starting_tod]",
+                "value": "tod_witching_hour"
+            }
+        ]
+    },
+    //---,
+    "mixin[disable_trade_revert]": {
+        "type": "or",
+        "content": [
+            {
+                "type": "not",
+                "content": {
+                    "type": "state",
+                    "ref": "option[entrance_shuffle_interior]",
+                    "value": "entrance_shuffle_off"
+                }
+            },
+            {
+                "type": "value",
+                "ref": "option[shuffle_overworld]"
+            },
+            {
+                "type": "value",
+                "ref": "option[adult_trade_shuffle]"
+            }
+        ]
+    },
     "mixin[fairy]": {
         "type": "or",
         "content": [

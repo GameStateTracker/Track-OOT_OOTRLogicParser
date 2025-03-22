@@ -41,7 +41,6 @@
         "type": "mixin",
         "ref": "mixin[at_dampe_time]"
     },
-    /* events */
     "Forest_Temple_Jo_and_Beth": {
         "type": "value",
         "ref": "event[forest_temple_jo_and_beth]"
@@ -50,44 +49,39 @@
         "type": "value",
         "ref": "event[forest_temple_amy_and_meg]"
     },
-    /* specials */
-    "Showed_Mido_Sword_&_Shield": {
-        "type": "value",
-        "ref": "event[showed_mido_sword_&_shield]"
-    },
-    "Drain_Well": {
+    "'Drain Well'": {
         "type": "value",
         "ref": "event[drain_well]"
     },
-    "Kakariko_Village_Gate_Open": {
+    "'Kakariko Village Gate Open'": {
         "type": "value",
         "ref": "event[kakariko_village_gate_open]"
     },
-    "Wake_Up_Adult_Talon": {
+    "'Wake Up Adult Talon'": {
         "type": "value",
         "ref": "event[wake_up_adult_talon]"
     },
-    "GC_Woods_Warp_Open": {
+    "'GC Woods Warp Open'": {
         "type": "value",
         "ref": "event[gc_woods_warp_open]"
     },
-    "Goron_City_Child_Fire": {
+    "'Goron City Child Fire'": {
         "type": "value",
         "ref": "event[goron_city_child_fire]"
     },
-    "Stop_GC_Rolling_Goron_as_Adult": {
+    "'Stop GC Rolling Goron as Adult'": {
         "type": "value",
         "ref": "event[stop_gc_rolling_goron_as_adult]"
     },
-    "Child_Water_Temple": {
+    "'Child Water Temple'": {
         "type": "value",
         "ref": "event[child_water_temple]"
     },
     "had_night_start": {
-        "type": "value",
-        "ref": "option[time_start_night]"
+        "type": "function",
+        "ref": "mixin[had_night_start]"
     },
-    "Links_Cow": {
+    "'Links Cow'": {
         "type": "value",
         "ref": "event[links_cow]"
     },
@@ -103,66 +97,50 @@
         "type": "value",
         "ref": "event[bonooru]"
     },
-    "Dampes_Windmill_Access": {
+    "'Dampes Windmill Access'": {
         "type": "value",
         "ref": "event[dampes_windmill_access]"
     },
-    "Cojiro_Access": {
+    "'Cojiro Access'": {
         "type": "value",
         "ref": "event[cojiro_access]"
     },
-    "Mask_Shop_Open": {
+    "'Mask Shop Open'": {
         "type": "value",
         "ref": "event[mask_shop_open]"
     },
-    "Odd_Potion_Access": {
+    "'Odd Potion Access'": {
         "type": "value",
         "ref": "event[odd_potion_access]"
     },
-    "Eyeball_Frog_Access": {
+    "'Eyeball Frog Access'": {
         "type": "value",
         "ref": "event[eyeball_frog_access]"
     },
-    "Poachers_Saw_Access": {
+    "'Poachers Saw Access'": {
         "type": "value",
         "ref": "event[poachers_saw_access]"
     },
-    "Odd_Mushroom_Access": {
+    "'Odd Mushroom Access'": {
         "type": "value",
         "ref": "event[odd_mushroom_access]"
     },
-    "Broken_Sword_Access": {
+    "'Broken Sword Access'": {
         "type": "value",
         "ref": "event[broken_sword_access]"
     },
-    "Prescription_Access": {
+    "'Prescription Access'": {
         "type": "value",
         "ref": "event[prescription_access]"
     },
-    "Eyedrops_Access": {
+    "'Eyedrops Access'": {
         "type": "value",
         "ref": "event[eyedrops_access]"
     },
+    // stopped here
     "disable_trade_revert": {
-        "type": "or",
-        "content": [
-            {
-                "type": "not",
-                "content": {
-                    "type": "state",
-                    "ref": "option[entrance_shuffle_interior]",
-                    "value": "entrance_shuffle_off"
-                }
-            },
-            {
-                "type": "value",
-                "ref": "option[shuffle_overworld]"
-            },
-            {
-                "type": "value",
-                "ref": "option[adult_trade_shuffle]"
-            }
-        ]
+        "type": "function",
+        "ref": "mixin[disable_trade_revert]"
     },
     "Carpenter_Rescue": {
         "type": "value",
@@ -2175,6 +2153,14 @@
     "'Jabu Jabus Belly Floor Lowered'": {
         "type": "value",
         "ref": "event[jabu_jabus_belly_floor_lowered]"
+    },
+    "'Jabu Jabus Belly Parasitic Tentacle Cleared'": {
+        "type": "value",
+        "ref": "event[jabu_jabus_belly_parasitic_tentacle_cleared]"
+    },
+    "'Showed Mido Sword & Shield'": {
+        "type": "value",
+        "ref": "event[showed_mido_sword_&_shield]"
     },
     "": ""
 }
