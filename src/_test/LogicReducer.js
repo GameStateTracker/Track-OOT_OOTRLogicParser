@@ -197,64 +197,61 @@ function logicReducer(input) {
 }
 
 export function reduceLogic(config) {
-    const res = {
-        version: config.version,
-        edges: {},
-        functions: {}
+    return {
+        _version: config._version,
+        graph: reduceGraph(config.graph),
+        functions: reduceFunctions(config.functions)
     };
+}
 
-    for (const s in config.edges) {
-        res.edges[s] = res.edges[s] ?? {};
-        const targets = config.edges[s];
-        for (const t in targets) {
-            const {
-                logic, dataMutation
-            } = targets[t];
-            try {
-                const reducedLogic = logicReducer(logic);
-                if (reducedLogic != null) {
-                    res.edges[s][t] = {
-                        logic: reducedLogic,
-                        dataMutation
-                    };
-                } else {
-                    res.edges[s][t] = {
-                        logic: {
-                            type: "false"
-                        },
-                        dataMutation
-                    };
-                }
-            } catch (err) {
-                console.error(`Error in edge "${s}" -> "${t}"`, err);
-                console.error("---\n", JSON.stringify(logic, null, 4), "\n---");
-            }
-        }
-    }
-    for (const n in config.functions) {
+function reduceGraph(config) {
+    const res = {};
+    for (const sourceName in config) {
+        const edgeConfig = config[sourceName];
         const {
-            params, logic
-        } = config.functions[n];
-        try {
-            const reducedLogic = logicReducer(logic);
-            if (reducedLogic != null) {
-                res.functions[n] = {
-                    params,
-                    logic: reducedLogic
-                };
-            } else {
-                res.functions[n] = {
-                    params,
-                    logic: {
+            dataMutation, edges = edgeConfig
+        } = edgeConfig;
+        res[sourceName] = res[sourceName] ?? {
+            dataMutation: dataMutation ?? {},
+            edges: {}
+        };
+        for (const targetName in edges) {
+            const targetEdge = edges[targetName];
+            const {
+                dataMutation, logic = targetEdge
+            } = targetEdge;
+            try {
+                res[sourceName].edges[targetName] = {
+                    dataMutation: dataMutation ?? {},
+                    logic: logicReducer(logic) ?? {
                         type: "false"
                     }
                 };
+            } catch (err) {
+                console.error(`Error in edge "${sourceName}" -> "${targetName}"`, err);
             }
-        } catch (err) {
-            console.error(`Error in mixin "${n}"`, err);
-            console.error("---\n", JSON.stringify(logic, null, 4), "\n---");
         }
     }
+    return res;
+}
 
+function reduceFunctions(functions) {
+    const res = {};
+    for (const name in functions) {
+        const func = functions[name];
+        const {
+            params, logic = func
+        } = func;
+        try {
+            res.functions[name] = {
+                params: params ?? [],
+                logic: logicReducer(logic) ?? {
+                    type: "false"
+                }
+            };
+        } catch (err) {
+            console.error(`Error in function "${name}"`, err);
+        }
+    }
     return res;
 }

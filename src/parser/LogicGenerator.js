@@ -151,12 +151,15 @@ class LogicGenerator {
 
         const res = {
             version: VERSION,
-            edges: {},
+            graph: {},
             functions: {}
         };
         for (const region in structure) {
             const data = structure[region];
-            const reg = {};
+            const reg = {
+                dataMutation: {},
+                edges: {}
+            };
             const regName = translateRegionName(region);
             for (const nodeName of data.exits) {
                 const exitId = `${region} => ${nodeName}`;
@@ -164,13 +167,13 @@ class LogicGenerator {
                 const basicGeneration = generator_config["useBasicGeneration"]?.["exits"];
                 const overrideConfig = logic_overrides[regName]?.[exitName];
                 if (overrideConfig != null) {
-                    this.#addRegionTarget(reg, regName, exitName, overrideConfig, basicGeneration);
+                    this.#addRegionTarget(reg.edges, regName, exitName, overrideConfig, basicGeneration);
                 } else {
                     const edgeConfig = exits.get(exitId);
                     if (edgeConfig != null) {
-                        this.#addRegionTarget(reg, regName, exitName, edgeConfig, basicGeneration);
+                        this.#addRegionTarget(reg.edges, regName, exitName, edgeConfig, basicGeneration);
                     } else {
-                        reg[exitName] = {
+                        reg.edges[exitName] = {
                             logic: {
                                 type: "error"
                             }
@@ -188,13 +191,13 @@ class LogicGenerator {
                 const basicGeneration = generator_config["useBasicGeneration"]?.["locations"];
                 const overrideConfig = logic_overrides[regName]?.[locationName];
                 if (overrideConfig != null) {
-                    this.#addRegionTarget(reg, regName, locationName, overrideConfig, basicGeneration);
+                    this.#addRegionTarget(reg.edges, regName, locationName, overrideConfig, basicGeneration);
                 } else {
                     const edgeConfig = locations.get(locationId);
                     if (edgeConfig != null) {
-                        this.#addRegionTarget(reg, regName, locationName, edgeConfig, basicGeneration);
+                        this.#addRegionTarget(reg.edges, regName, locationName, edgeConfig, basicGeneration);
                     } else {
-                        reg[locationName] = {
+                        reg.edges[locationName] = {
                             logic: {
                                 type: "error"
                             }
@@ -208,13 +211,13 @@ class LogicGenerator {
                 const basicGeneration = generator_config["useBasicGeneration"]?.["events"];
                 const overrideConfig = logic_overrides[regName]?.[eventName];
                 if (overrideConfig != null) {
-                    this.#addRegionTarget(reg, regName, eventName, overrideConfig, basicGeneration);
+                    this.#addRegionTarget(reg.edges, regName, eventName, overrideConfig, basicGeneration);
                 } else {
                     const edgeConfig = events.get(eventId);
                     if (edgeConfig != null) {
-                        this.#addRegionTarget(reg, regName, eventName, edgeConfig, basicGeneration);
+                        this.#addRegionTarget(reg.edges, regName, eventName, edgeConfig, basicGeneration);
                     } else {
-                        reg[eventName] = {
+                        reg.edges[eventName] = {
                             logic: {
                                 type: "error"
                             }
@@ -222,7 +225,7 @@ class LogicGenerator {
                     }
                 }
             }
-            res.edges[regName] = reg;
+            res.graph[regName] = reg;
         }
         // mixins
         for (const [key, value] of mixins) {
