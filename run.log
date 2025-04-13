@@ -29,8 +29,6 @@ exit: Desert Colossus
  [ 'True' ] 
 ---
 --- --- ---
-subRegions: King Dodongo Boss Room: Boss Dodongo Gateway:In is new
-subRegions: King Dodongo Boss Room: Dodongos Cavern Mouth doesn't exist anymore
 
 -------------------------------------------
 generate logic output
