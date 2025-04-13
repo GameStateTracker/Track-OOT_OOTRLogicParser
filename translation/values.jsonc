@@ -780,27 +780,27 @@
     },
     "Silver_Rupee_Ganons_Castle_Forest_Trial": {
         "type": "value",
-        "ref": "item[silver_rupee_castle_ganon_trial_forest]"
+        "ref": "item[silver_rupee_ganon_trial_forest]"
     },
     "Silver_Rupee_Ganons_Castle_Fire_Trial": {
         "type": "value",
-        "ref": "item[silver_rupee_castle_ganon_trial_fire]"
+        "ref": "item[silver_rupee_ganon_trial_fire]"
     },
     "Silver_Rupee_Ganons_Castle_Water_Trial": {
         "type": "value",
-        "ref": "item[silver_rupee_castle_ganon_trial_water]"
+        "ref": "item[silver_rupee_ganon_trial_water]"
     },
     "Silver_Rupee_Ganons_Castle_Shadow_Trial": {
         "type": "value",
-        "ref": "item[silver_rupee_castle_ganon_trial_shadow]"
+        "ref": "item[silver_rupee_ganon_trial_shadow]"
     },
     "Silver_Rupee_Ganons_Castle_Spirit_Trial": {
         "type": "value",
-        "ref": "item[silver_rupee_castle_ganon_trial_spirit]"
+        "ref": "item[silver_rupee_ganon_trial_spirit]"
     },
     "Silver_Rupee_Ganons_Castle_Light_Trial": {
         "type": "value",
-        "ref": "item[silver_rupee_castle_ganon_trial_light]"
+        "ref": "item[silver_rupee_ganon_trial_light]"
     },
     "Silver_Rupee_Gerudo_Training_Ground_Lava": {
         "type": "value",
