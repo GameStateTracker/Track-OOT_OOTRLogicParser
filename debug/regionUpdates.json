@@ -625,6 +625,7 @@
         "Ganons Castle Spirit Trial MQ": false,
         "Ganons Castle Spirit Trial Second Room MQ": false,
         "Ganons Castle Lobby": false,
+        "Ganons Castle Main": true,
         "Ganons Castle Forest Trial": false,
         "Ganons Castle Forest Trial Wind Room": false,
         "Ganons Castle Water Trial": false,
@@ -897,7 +898,7 @@
         "Spirit Temple Big Mirror Room": false,
         "Spirit Temple Before Boss": false,
         "Water Temple Lobby MQ": false,
-        "Water Temple Before Boss Lower MQ": false,
+        "Water Temple Before Boss Lower MQ": true,
         "Water Temple Before Boss MQ": false,
         "Water Temple Dive MQ": false,
         "Water Temple Lowered Water Levels MQ": false,
@@ -2498,7 +2499,9 @@
             "Boss Spirit Temple Gateway:In": false
         },
         "Ganons Castle Tower": {
-            "Ganons Castle Tower Below Boss": false
+            "Ganons Castle Main": true,
+            "Ganons Castle Tower Below Boss": false,
+            "Farores Wind Warp": true
         },
         "Ganons Castle Tower Below Boss": {
             "Ganondorf Boss Room": false
@@ -2907,15 +2910,18 @@
         },
         "Ganons Castle Lobby": {
             "Ganons Castle Castle Grounds Gateway:In": false,
-            "Ganons Castle Forest Trial": false,
-            "Ganons Castle Water Trial": false,
-            "Ganons Castle Shadow Trial": false,
-            "Ganons Castle Fire Trial": false,
-            "Ganons Castle Light Trial": false,
-            "Ganons Castle Spirit Trial": false,
-            "Ganons Castle Deku Scrubs": false,
-            "Ganons Castle Tower": false,
+            "Ganons Castle Main": true,
             "Farores Wind Warp": false
+        },
+        "Ganons Castle Main": {
+            "Ganons Castle Forest Trial": true,
+            "Ganons Castle Water Trial": true,
+            "Ganons Castle Shadow Trial": true,
+            "Ganons Castle Fire Trial": true,
+            "Ganons Castle Light Trial": true,
+            "Ganons Castle Spirit Trial": true,
+            "Ganons Castle Deku Scrubs": true,
+            "Ganons Castle Tower": true
         },
         "Ganons Castle Forest Trial": {
             "Ganons Castle Forest Trial Wind Room": false
@@ -3100,8 +3106,9 @@
         },
         "Root": {
             "Root Exits": false,
-            "HC Garden Skippable Locations": false,
-            "Beyond Door of Time Skippable Locations": false
+            "HC Garden Skippable Locations": true,
+            "Beyond Door of Time Skippable Locations": true,
+            "GF Above Jail Child Locations": true
         },
         "Root Exits": {
             "Child Spawn": false,
@@ -3144,6 +3151,8 @@
             "Fire Temple Crater Gateway:Out": false,
             "Forest Temple Meadow Gateway:Out": false,
             "Ganons Castle Castle Grounds Gateway:Out": false,
+            "Ganons Castle Main": true,
+            "Ganons Castle Tower": true,
             "Training Grounds Fortress Gateway:Out": false,
             "Ice Cavern Fountain Gateway:Out": false,
             "Jabu Fountain Gateway:Out": false,
@@ -3355,7 +3364,8 @@
             "Hideout Hall to Balcony": false,
             "Gerudo Fortress": false,
             "GF Chest Roof": false,
-            "GF Break Room Entrance": false
+            "GF Break Room Entrance": false,
+            "GF Above Jail Child Locations": true
         },
         "GF Outside Gate": {
             "Gerudo Fortress": false,
@@ -3467,7 +3477,7 @@
         },
         "Beyond Door of Time": {
             "Temple of Time": false,
-            "Beyond Door of Time Skippable Locations": false
+            "Beyond Door of Time Skippable Locations": true
         },
         "Castle Grounds": {
             "Grounds Market Gateway:In": false,
@@ -3481,7 +3491,7 @@
             "Grounds Storms Grotto Gateway:In": false
         },
         "HC Garden": {
-            "HC Garden Skippable Locations": false,
+            "HC Garden Skippable Locations": true,
             "Hyrule Castle Grounds": false
         },
         "HC Great Fairy Fountain": {
@@ -4068,15 +4078,15 @@
             "Water Temple Lake Gateway:In": false,
             "Water Temple Dive MQ": false,
             "Water Temple Dark Link Region MQ": false,
-            "Water Temple Before Boss Lower MQ": false,
+            "Water Temple Before Boss Lower MQ": true,
             "Farores Wind Warp": false
         },
         "Water Temple Before Boss Lower MQ": {
-            "Water Temple Before Boss MQ": false,
-            "Water Temple Lobby MQ": false
+            "Water Temple Before Boss MQ": true,
+            "Water Temple Lobby MQ": true
         },
         "Water Temple Before Boss MQ": {
-            "Water Temple Before Boss Lower MQ": false,
+            "Water Temple Before Boss Lower MQ": true,
             "Water Temple Boss Gateway:In": false
         },
         "Water Temple Dive MQ": {

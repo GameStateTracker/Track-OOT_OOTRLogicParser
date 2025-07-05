@@ -1,5 +1,5 @@
 Cloning into 'input'...
-Note: switching to '56d08e8934d1617d3ecbd36891023bd160c2f015'.
+Note: switching to 'fbd0ed2b882fcbd5bd5e26f9d905daa8234f7f93'.
 
 You are in 'detached HEAD' state. You can look around, make experimental
 changes and commit them, and you can discard any commits you make in this
@@ -29,6 +29,42 @@ exit: Desert Colossus
  [ 'True' ] 
 ---
 --- --- ---
+mainRegions: Ganons Castle Main is new
+mainRegions: Water Temple Before Boss Lower MQ is new
+subRegions: Ganons Castle Tower: Ganons Castle Main is new
+subRegions: Ganons Castle Tower: Farores Wind Warp is new
+subRegions: Ganons Castle Lobby: Ganons Castle Main is new
+subRegions: Ganons Castle Main: Ganons Castle Forest Trial is new
+subRegions: Ganons Castle Main: Ganons Castle Water Trial is new
+subRegions: Ganons Castle Main: Ganons Castle Shadow Trial is new
+subRegions: Ganons Castle Main: Ganons Castle Fire Trial is new
+subRegions: Ganons Castle Main: Ganons Castle Light Trial is new
+subRegions: Ganons Castle Main: Ganons Castle Spirit Trial is new
+subRegions: Ganons Castle Main: Ganons Castle Deku Scrubs is new
+subRegions: Ganons Castle Main: Ganons Castle Tower is new
+subRegions: Root: HC Garden Skippable Locations is new
+subRegions: Root: Beyond Door of Time Skippable Locations is new
+subRegions: Root: GF Above Jail Child Locations is new
+subRegions: Farores Wind Warp: Ganons Castle Main is new
+subRegions: Farores Wind Warp: Ganons Castle Tower is new
+subRegions: GF Balcony: GF Above Jail Child Locations is new
+subRegions: Beyond Door of Time: Beyond Door of Time Skippable Locations is new
+subRegions: HC Garden: HC Garden Skippable Locations is new
+subRegions: Water Temple Lobby MQ: Water Temple Before Boss Lower MQ is new
+subRegions: Water Temple Before Boss Lower MQ: Water Temple Before Boss MQ is new
+subRegions: Water Temple Before Boss Lower MQ: Water Temple Lobby MQ is new
+subRegions: Water Temple Before Boss MQ: Water Temple Before Boss Lower MQ is new
+subRegions: Ganons Castle Lobby: Ganons Castle Forest Trial doesn't exist anymore
+subRegions: Ganons Castle Lobby: Ganons Castle Water Trial doesn't exist anymore
+subRegions: Ganons Castle Lobby: Ganons Castle Shadow Trial doesn't exist anymore
+subRegions: Ganons Castle Lobby: Ganons Castle Fire Trial doesn't exist anymore
+subRegions: Ganons Castle Lobby: Ganons Castle Light Trial doesn't exist anymore
+subRegions: Ganons Castle Lobby: Ganons Castle Spirit Trial doesn't exist anymore
+subRegions: Ganons Castle Lobby: Ganons Castle Deku Scrubs doesn't exist anymore
+subRegions: Ganons Castle Lobby: Ganons Castle Tower doesn't exist anymore
+subRegions: Root: HC Garden Locations doesn't exist anymore
+subRegions: HC Garden: HC Garden Locations doesn't exist anymore
+subRegions: Water Temple Lobby MQ: Water Temple Before Boss MQ doesn't exist anymore
 
 -------------------------------------------
 generate logic output
@@ -178,6 +214,7 @@ GF HBA Crate 10
 GF HBA Crate 11
 GF HBA Crate 12
 GF HBA Crate 13
+GF Freestanding PoH
 Hideout 1 Torch Jail Wonderitem 1
 Hideout 1 Torch Jail Wonderitem 2
 Hideout 2 Torch Jail Wonderitem 1
@@ -222,6 +259,7 @@ HC Castle Moat Wonderitem 8
 HC Castle Moat Wonderitem 9
 HC Castle Moat Wonderitem 10
 HC Zeldas Courtyard Mario Wonderitem
+Market 10 Big Poes Hint
 Market Guard House Child Crate 1
 Market Guard House Child Crate 2
 Market Guard House Child Crate 3
@@ -370,11 +408,18 @@ Water Temple River Pot 2
 values not converted
 
 skip_reward_from_rauru
+shuffle_hideout_entrances
 shuffle_empty_pots
 
 -------------------------------------------
 states not converted
 
+shuffle_gerudo_fortress_heart_piece: {
+    "name": "",
+    "values": {
+        "remove": ""
+    }
+}
 
 -------------------------------------------
 unused name translations
@@ -405,12 +450,6 @@ is_starting_age
 Mask_Shop_Open
 Carpenter_Rescue
 Deku_Tree_Clear
-Forest_Trial_Clear
-Fire_Trial_Clear
-Water_Trial_Clear
-Shadow_Trial_Clear
-Spirit_Trial_Clear
-Light_Trial_Clear
 Hammer
 Buy_Deku_Stick_1
 Deku_Stick_Drop
@@ -475,8 +514,10 @@ Fire Temple MQ GS Fire Wall Maze Center
 Fire Temple MQ GS Above Fire Wall Maze
 Forest Temple Deku Baba Nuts
 Forest Temple Deku Baba Sticks
+GF Freestanding PoH
 ToT Child Altar Hint
 ToT Adult Altar Hint
+Market 10 Big Poes Hint
 10 Skulltulas Reward Hint
 20 Skulltulas Reward Hint
 30 Skulltulas Reward Hint
