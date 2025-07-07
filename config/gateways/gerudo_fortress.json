@@ -1,0 +1,219 @@
+[
+    {
+        "region_name": "Fortress Valley Gateway",
+        "exits": {
+            "Gerudo Fortress": "True",
+            "Valley Fortress Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Fortress Wasteland Gateway",
+        "exits": {
+            "GF Outside Gate": "True",
+            "Wasteland Fortress Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Fortress Training Grounds Gateway",
+        "exits": {
+            "Gerudo Fortress": "True",
+            "Training Grounds Fortress Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Fortress Storms Grotto Gateway",
+        "exits": {
+            "Storms Grotto Fortress Gateway": "True",
+            "GF Entrances Behind Crates": "True"
+        }
+    },
+    {
+        "region_name": "Storms Grotto Fortress Gateway",
+        "exits": {
+            "Fortress Storms Grotto Gateway": "True",
+            "GF Storms Grotto": "True"
+        }
+    },
+    {
+        "region_name": "Fortress Hideout 1 Torch Jail Gateway",
+        "exits": {
+            "Hideout 1 Torch Jail Fortress Gateway": "True",
+            "Gerudo Fortress": "True"
+        }
+    },
+    {
+        "region_name": "Hideout 1 Torch Jail Fortress Gateway",
+        "exits": {
+            "Fortress Hideout 1 Torch Jail Gateway": "True",
+            "Hideout 1 Torch Jail": "True"
+        }
+    },
+    {
+        "region_name": "Fortress Crates Hideout 1 Torch Jail Gateway",
+        "exits": {
+            "Hideout 1 Torch Jail Fortress Crates Gateway": "True",
+            "GF Entrances Behind Crates": "True"
+        }
+    },
+    {
+        "region_name": "Hideout 1 Torch Jail Fortress Crates Gateway",
+        "exits": {
+            "Fortress Crates Hideout 1 Torch Jail Gateway": "True",
+            "Hideout 1 Torch Jail": "True"
+        }
+    },
+    {
+        "region_name": "Fortress Hideout 2 Torches Jail Gateway",
+        "exits": {
+            "Hideout 2 Torches Jail Fortress Gateway": "True",
+            "Gerudo Fortress": "True"
+        }
+    },
+    {
+        "region_name": "Hideout 2 Torches Jail Fortress Gateway",
+        "exits": {
+            "Fortress Hideout 2 Torches Jail Gateway": "True",
+            "Hideout 2 Torches Jail": "True"
+        }
+    },
+    {
+        "region_name": "Fortress Roof Entrance Cluster Hideout 2 Torches Jail Gateway",
+        "exits": {
+            "Hideout 2 Torches Jail Fortress Roof Entrance Cluster Gateway": "True",
+            "GF Roof Entrance Cluster": "True"
+        }
+    },
+    {
+        "region_name": "Hideout 2 Torches Jail Fortress Roof Entrance Cluster Gateway",
+        "exits": {
+            "Fortress Roof Entrance Cluster Hideout 2 Torches Jail Gateway": "True",
+            "Hideout 2 Torches Jail": "True"
+        }
+    },
+    {
+        "region_name": "Fortress Roof Lone Entrance Hideout 3 Torches Jail Gateway",
+        "exits": {
+            "Hideout 3 Torches Jail Fortress Roof Lone Entrance Gateway": "True",
+            "GF 3 Torches Jail Exterior": "True"
+        }
+    },
+    {
+        "region_name": "Hideout 3 Torches Jail Fortress Roof Lone Entrance Gateway",
+        "exits": {
+            "Fortress Roof Lone Entrance Hideout 3 Torches Jail Gateway": "True",
+            "Hideout 3 Torches Jail": "True"
+        }
+    },
+    {
+        "region_name": "Fortress Hideout 4 Torches Jail Gateway",
+        "exits": {
+            "Hideout 4 Torches Jail Fortress Gateway": "True",
+            "Gerudo Fortress": "True"
+        }
+    },
+    {
+        "region_name": "Hideout 4 Torches Jail Fortress Gateway",
+        "exits": {
+            "Fortress Hideout 4 Torches Jail Gateway": "True",
+            "Hideout 4 Torches Jail": "True"
+        }
+    },
+    {
+        "region_name": "Fortress Roof Entrance Cluster Hideout 4 Torches Jail Gateway",
+        "exits": {
+            "Hideout 4 Torches Jail Fortress Roof Entrance Cluster Gateway": "True",
+            "GF Roof Entrance Cluster": "True"
+        }
+    },
+    {
+        "region_name": "Hideout 4 Torches Jail Fortress Roof Entrance Cluster Gateway",
+        "exits": {
+            "Fortress Roof Entrance Cluster Hideout 4 Torches Jail Gateway": "True",
+            "Hideout 4 Torches Jail": "True"
+        }
+    },
+    {
+        "region_name": "Fortress Hideout Kitchen Gateway",
+        "exits": {
+            "Hideout Kitchen Fortress Gateway": "True",
+            "Gerudo Fortress": "True"
+        }
+    },
+    {
+        "region_name": "Hideout Kitchen Fortress Gateway",
+        "exits": {
+            "Fortress Hideout Kitchen Gateway": "True",
+            "Hideout Kitchen Hallway": "True"
+        }
+    },
+    {
+        "region_name": "Fortress Crates Hideout Kitchen Gateway",
+        "exits": {
+            "Hideout Kitchen Fortress Crates Gateway": "True",
+            "GF Entrances Behind Crates": "True"
+        }
+    },
+    {
+        "region_name": "Hideout Kitchen Fortress Crates Gateway",
+        "exits": {
+            "Fortress Crates Hideout Kitchen Gateway": "True",
+            "Hideout Kitchen Hallway": "True"
+        }
+    },
+    {
+        "region_name": "Fortress Roof Entrance Cluster Hideout Kitchen Gateway",
+        "exits": {
+            "Hideout Kitchen Fortress Roof Entrance Cluster Gateway": "True",
+            "GF Roof Entrance Cluster": "True"
+        }
+    },
+    {
+        "region_name": "Hideout Kitchen Fortress Roof Entrance Cluster Gateway",
+        "exits": {
+            "Fortress Roof Entrance Cluster Hideout Kitchen Gateway": "True",
+            "Hideout Kitchen Front": "True"
+        }
+    },
+    {
+        "region_name": "Fortress Kitchen Roof Access Hideout Kitchen Gateway",
+        "exits": {
+            "Hideout Kitchen Fortress Kitchen Roof Access Gateway": "True",
+            "GF Kitchen Roof Access": "True"
+        }
+    },
+    {
+        "region_name": "Hideout Kitchen Fortress Kitchen Roof Access Gateway",
+        "exits": {
+            "Fortress Kitchen Roof Access Hideout Kitchen Gateway": "True",
+            "Hideout Kitchen Rear": "True"
+        }
+    },
+    {
+        "region_name": "Fortress Break Room Entrance Hideout Break Room Gateway",
+        "exits": {
+            "Hideout Break Room Fortress Break Room Entrance Gateway": "True",
+            "GF Break Room Entrance": "True"
+        }
+    },
+    {
+        "region_name": "Hideout Break Room Fortress Break Room Entrance Gateway",
+        "exits": {
+            "Fortress Break Room Entrance Hideout Break Room Gateway": "True",
+            "Hideout Break Room": "True"
+        }
+    },
+    {
+        "region_name": "Fortress Balcony Hideout Break Room Gateway",
+        "exits": {
+            "Hideout Break Room Fortress Balcony Gateway": "True",
+            "GF Balcony": "True"
+        }
+    },
+    {
+        "region_name": "Hideout Break Room Fortress Balcony Gateway",
+        "exits": {
+            "Fortress Balcony Hideout Break Room Gateway": "True",
+            "Hideout Hall to Balcony": "True"
+        }
+    }
+]

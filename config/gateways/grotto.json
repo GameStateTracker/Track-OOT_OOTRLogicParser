@@ -490,20 +490,6 @@
         }
     },
     {
-        "region_name": "Fortress Storms Grotto Gateway",
-        "exits": {
-            "Storms Grotto Fortress Gateway": "True",
-            "GF Entrances Behind Crates": "True"
-        }
-    },
-    {
-        "region_name": "Storms Grotto Fortress Gateway",
-        "exits": {
-            "Fortress Storms Grotto Gateway": "True",
-            "GF Storms Grotto": "True"
-        }
-    },
-    {
         "region_name": "Colossus Grotto Gateway",
         "exits": {
             "Grotto Colossus Gateway": "True",

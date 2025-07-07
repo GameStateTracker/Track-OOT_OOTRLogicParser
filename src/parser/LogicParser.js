@@ -5,10 +5,11 @@ import RandTokenizer from "../utils/RandTokenizer.js";
 import LogicBuilder from "../utils/LogicBuilder.js";
 import LogicGenerator from "./LogicGenerator.js";
 import RegionCheck from "../utils/RegionCheck.js";
+import {
+    rebindData
+} from "../utils/overrides/RebindLoader.js";
 
 const __dirname = path.resolve();
-const inExitRenameFile  = path.join(__dirname, "/config/gateways/_rebind.json");
-const renameData = JSON.parse(fs.readFileSync(inExitRenameFile, "utf8"));
 const customLogic  = path.join(__dirname, "/config/customLogic.json");
 const customLogicData = JSON.parse(fs.readFileSync(customLogic, "utf8"));
 const success = {
@@ -113,8 +114,8 @@ class LogicParser {
                     }
                 }
                 const regionName = value.region_name.replace(/ MQ$/, "");
-                if (renameData[regionName]?.[exit] != null) {
-                    exit = renameData[regionName][exit];
+                if (rebindData[regionName]?.[exit] != null) {
+                    exit = rebindData[regionName][exit];
                     if (exit === "") {
                         continue;
                     }

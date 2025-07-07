@@ -75,13 +75,6 @@
         }
     },
     {
-        "region_name": "Fortress Training Grounds Gateway",
-        "exits": {
-            "Gerudo Fortress": "True",
-            "Training Grounds Fortress Gateway": "True"
-        }
-    },
-    {
         "region_name": "Training Grounds Fortress Gateway",
         "exits": {
             "Fortress Training Grounds Gateway": "True",

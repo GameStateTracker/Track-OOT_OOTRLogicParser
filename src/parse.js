@@ -19,7 +19,7 @@ import {
 } from "./_test/LogicReducer.js";
 import {
     gatewayData
-} from "./utils/GatewayLoader.js";
+} from "./utils/overrides/GatewayLoader.js";
 
 const __dirname = path.resolve();
 

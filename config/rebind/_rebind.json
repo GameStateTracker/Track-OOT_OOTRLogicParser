@@ -47,13 +47,6 @@
         "ZD Behind King Zora": "Fountain Domain Gateway",
         "ZF Great Fairy Fountain": "Fountain Great Fairy Gateway"
     },
-    "Gerudo Fortress": {
-        "Gerudo Training Ground Lobby": "Fortress Training Grounds Gateway",
-        "GV Fortress Side": "Fortress Valley Gateway"
-    },
-    "GF Entrances Behind Crates": {
-        "GF Storms Grotto": "Fortress Storms Grotto Gateway"
-    },
     "Sacred Forest Meadow": {
         "SFM Storms Grotto": "Meadow Storms Grotto Gateway",
         "SFM Fairy Grotto": "Meadow Fairy Grotto Gateway"
@@ -209,9 +202,6 @@
     },
     "GV Lower Stream": {
         "Lake Hylia": "Valley Lake Gateway"
-    },
-    "GF Outside Gate": {
-        "Wasteland Near Fortress": "Fortress Wasteland Gateway"
     },
     "Wasteland Near Fortress": {
         "GF Outside Gate": "Wasteland Fortress Gateway"
@@ -537,9 +527,6 @@
     },
     "GV Grotto Ledge": {
         "GV Octorok Grotto": "Valley Octorok Grotto Gateway"
-    },
-    "GF Storms Grotto": {
-        "GF Entrances Behind Crates": "Storms Grotto Fortress Gateway"
     },
     "Colossus Great Fairy Fountain": {
         "Desert Colossus": "Great Fairy Colossus Gateway"

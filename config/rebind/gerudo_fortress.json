@@ -1,0 +1,69 @@
+{
+    "Gerudo Fortress": {
+        "Gerudo Training Ground Lobby": "Fortress Training Grounds Gateway",
+        "GV Fortress Side": "Fortress Valley Gateway",
+        "Hideout Kitchen Hallway": "Fortress Hideout Kitchen Gateway",
+        "Hideout 1 Torch Jail": "Fortress Hideout 1 Torch Jail Gateway",
+        "Hideout 2 Torches Jail": "Fortress Hideout 2 Torches Jail Gateway",
+        "Hideout 4 Torches Jail": "Fortress Hideout 4 Torches Jail Gateway"
+    },
+    "GF Outside Gate": {
+        "Wasteland Near Fortress": "Fortress Wasteland Gateway"
+    },
+    "GF Entrances Behind Crates": {
+        "Hideout 1 Torch Jail": "Fortress Crates Hideout 1 Torch Jail Gateway",
+        "Hideout Kitchen Hallway": "Fortress Crates Hideout Kitchen Gateway",
+        "GF Storms Grotto": "Fortress Storms Grotto Gateway"
+    },
+    "GF Roof Entrance Cluster": {
+        "Hideout 2 Torches Jail": "Fortress Roof Entrance Cluster Hideout 2 Torches Jail Gateway",
+        "Hideout 4 Torches Jail": "Fortress Roof Entrance Cluster Hideout 4 Torches Jail Gateway",
+        "Hideout Kitchen Front": "Fortress Roof Entrance Cluster Hideout Kitchen Gateway"
+    },
+    "GF Kitchen Roof Access": {
+        "Hideout Kitchen Rear": "Fortress Kitchen Roof Access Hideout Kitchen Gateway"
+    },
+    "GF Break Room Entrance": {
+        "Hideout Break Room": "Fortress Break Room Entrance Hideout Break Room Gateway"
+    },
+    "GF Balcony": {
+        "Hideout Hall to Balcony": "Fortress Balcony Hideout Break Room Gateway"
+    },
+    "GF 3 Torches Jail Exterior": {
+        "Hideout 3 Torches Jail": "Fortress Roof Lone Entrance Hideout 3 Torches Jail Gateway"
+    },
+    "Hideout 1 Torch Jail": {
+        "Gerudo Fortress": "Hideout 1 Torch Jail Fortress Gateway",
+        "GF Entrances Behind Crates": "Hideout 1 Torch Jail Fortress Crates Gateway"
+    },
+    "Hideout 2 Torches Jail": {
+        "Gerudo Fortress": "Hideout 2 Torches Jail Fortress Gateway",
+        "GF Roof Entrance Cluster": "Hideout 2 Torches Jail Fortress Roof Entrance Cluster Gateway"
+    },
+    "Hideout 3 Torches Jail": {
+        "GF 3 Torches Jail Exterior": "Hideout 3 Torches Jail Fortress Roof Lone Entrance Gateway"
+    },
+    "Hideout 4 Torches Jail": {
+        "Gerudo Fortress": "Hideout 4 Torches Jail Fortress Gateway",
+        "GF Roof Entrance Cluster": "Hideout 4 Torches Jail Fortress Roof Entrance Cluster Gateway"
+    },
+    "Hideout Kitchen Hallway": {
+        "Gerudo Fortress": "Hideout Kitchen Fortress Gateway",
+        "GF Entrances Behind Crates": "Hideout Kitchen Fortress Crates Gateway"
+    },
+    "Hideout Kitchen Front": {
+        "GF Roof Entrance Cluster": "Hideout Kitchen Fortress Roof Entrance Cluster Gateway"
+    },
+    "Hideout Kitchen Rear": {
+        "GF Kitchen Roof Access": "Hideout Kitchen Fortress Kitchen Roof Access Gateway"
+    },
+    "Hideout Break Room": {
+        "GF Break Room Entrance": "Hideout Break Room Fortress Break Room Entrance Gateway"
+    },
+    "Hideout Hall to Balcony": {
+        "GF Balcony": "Hideout Break Room Fortress Balcony Gateway"
+    },
+    "GF Storms Grotto": {
+        "GF Entrances Behind Crates": "Storms Grotto Fortress Gateway"
+    }
+}

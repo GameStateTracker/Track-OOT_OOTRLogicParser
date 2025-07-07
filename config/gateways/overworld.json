@@ -273,20 +273,6 @@
         }
     },
     {
-        "region_name": "Fortress Valley Gateway",
-        "exits": {
-            "Gerudo Fortress": "True",
-            "Valley Fortress Gateway": "True"
-        }
-    },
-    {
-        "region_name": "Fortress Wasteland Gateway",
-        "exits": {
-            "GF Outside Gate": "True",
-            "Wasteland Fortress Gateway": "True"
-        }
-    },
-    {
         "region_name": "Colossus Wasteland Gateway",
         "exits": {
             "Desert Colossus": "True",
