@@ -67,6 +67,15 @@ for (const entry of Object.values(chests)) {
                         "ref": "$IS_DONE"
                     }
                 }
+            },
+            "show_unavailable": {
+                "false": {
+                    "type": "not",
+                    "content": {
+                        "type": "value",
+                        "ref": "$IS_UNAVAILABLE"
+                    }
+                }
             }
         },
         "icon": "/images/icons/chest.svg",
