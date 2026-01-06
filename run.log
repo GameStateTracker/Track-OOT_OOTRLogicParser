@@ -1,3 +1,4 @@
+Debugger attached.
 Cloning into 'input'...
 warning: refs/tags/v9.0 d2ae196258f96ee5ef6abb1e25eecefdbf465722 is not a commit!
 Note: switching to '42013a0a71606563a746996f319ec85692b95b53'.
@@ -249,7 +250,6 @@ Kak Child Construction Wonderitem
 Kak Adult Backyard Crate 1
 Kak Adult Backyard Crate 2
 Kak Adult Backyard Crate 3
-Kak 100 Gold Skulltula Reward
 10 Skulltulas Reward Hint
 20 Skulltulas Reward Hint
 30 Skulltulas Reward Hint
@@ -517,16 +517,6 @@ option[light_arrow_cutscene]
 ===========================================
 PARSE GLITCHED LOGIC
 
-nullsy value detected
-nullsy value detected
-nullsy value detected
-nullsy value detected
-nullsy value detected
-nullsy value detected
-nullsy value detected
-nullsy value detected
-nullsy value detected
-nullsy value detected
 add custom logic for region: Desert Colossus Hands MQ
 exit: Desert Colossus 
  [ 'True' ] 
@@ -743,7 +733,6 @@ Kak Child Construction Wonderitem
 Kak Adult Backyard Crate 1
 Kak Adult Backyard Crate 2
 Kak Adult Backyard Crate 3
-Kak 100 Gold Skulltula Reward
 10 Skulltulas Reward Hint
 20 Skulltulas Reward Hint
 30 Skulltulas Reward Hint
@@ -889,7 +878,7 @@ glitch_ledge_clip
 glitch_clipping
 adv_dc_mq_stairs_skulltula_jump
 glitch_fire_mq_torch_puzzle
-ERROR: nullsy value
+glitch_fire_bk_skip_hover
 glitch_fire_bk_skip_ledge
 adv_fire_mq_bk_chest_flame_skip
 glitch_fire_scarecrow_hover
@@ -985,6 +974,7 @@ glitch_rft_js_clip_child
 glitch_graveyard_shadow_early_hookshot
 glitch_graveyard_shadow_early_hover
 adv_graveyard_hp_damage_boost
+glitch_rft_chest_sticks
 glitch_graveyard_shadow_early_bomb_push
 glitch_dmt_hookshot_jump
 glitch_dmt_dc_groundclip
@@ -1017,6 +1007,8 @@ adv_tektite_hp_rang
 glitch_shadow_boat_skull
 glitch_shadow_boat_skull_adult_nothing
 glitch_shadow_bk_skip_boss
+glitch_shadow_bk_skip_boat_key
+glitch_shadow_bk_skip_deadhand
 adv_shadow_double_boosts
 glitch_shadow_gate_falling_spikes
 glitch_shadow_heart_chasm_hovers
@@ -1030,6 +1022,7 @@ adv_spirit_mq_child_gibdo_eye
 glitch_spirit_mq_lower_adult_no_fire
 glitch_spirit_mq_symphony_lullaby
 glitch_spirit_bk_skip_groundclip
+glitch_spirit_bk_skip_headclip
 glitch_spirit_adult_block_skip
 glitch_spirit_child_side_crawlspace_skip
 adv_spirit_compass_hoverboots_only
@@ -1194,3 +1187,4 @@ shuffle_child_trade
 option[entrance_shuffle]
 option[shuffle_bosses]
 option[light_arrow_cutscene]
+Waiting for the debugger to disconnect...
