@@ -1,6 +1,9 @@
 function deleteBadMixins(obj, mixins) {
     Object.keys(obj).forEach((key) => {
-        if (mixins.has(obj[key].content)) {
+        if (obj[key] == null) {
+            console.warn(`nullsy value detected for key ${key}`);
+            delete obj[key];
+        } else if (mixins.has(obj[key].content)) {
             delete obj[key];
         }
         if (obj[key] && typeof obj[key] === "object") {

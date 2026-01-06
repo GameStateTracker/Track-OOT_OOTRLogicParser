@@ -567,13 +567,21 @@
         "Mountain Owl Gateway:In": false,
         "Owl Mountain Gateway:Out": false,
         "Queen Gohma Boss Room": false,
+        "Queen Gohma Blue Warp": false,
         "King Dodongo Boss Room": false,
+        "King Dodongo Blue Warp": false,
         "Barinade Boss Room": false,
+        "Barinade Blue Warp": false,
         "Phantom Ganon Boss Room": false,
+        "Phantom Ganon Blue Warp": false,
         "Volvagia Boss Room": false,
+        "Volvagia Blue Warp": false,
         "Morpha Boss Room": false,
+        "Morpha Blue Warp": false,
         "Bongo Bongo Boss Room": false,
+        "Bongo Bongo Blue Warp": false,
         "Twinrova Boss Room": false,
+        "Twinrova Blue Warp": false,
         "Ganons Castle Tower": false,
         "Ganons Castle Tower Below Boss": false,
         "Bottom of the Well MQ": false,
@@ -804,6 +812,7 @@
         "HC Great Fairy Fountain": false,
         "Castle Grounds From Ganons Castle": false,
         "Ganons Castle Grounds": false,
+        "Ganons Castle Ledge": false,
         "OGC Great Fairy Fountain": false,
         "Market Guard House": false,
         "Market Bazaar": false,
@@ -2683,28 +2692,60 @@
             "Kak Impas Rooftop": false
         },
         "Queen Gohma Boss Room": {
-            "Boss Deku Gateway:In": false
+            "Boss Deku Gateway:In": false,
+            "Queen Gohma Blue Warp": false
+        },
+        "Queen Gohma Blue Warp": {
+            "KF Outside Deku Tree": false
         },
         "King Dodongo Boss Room": {
-            "Boss Dodongo Gateway:In": false
+            "Boss Dodongo Gateway:In": false,
+            "King Dodongo Blue Warp": false
+        },
+        "King Dodongo Blue Warp": {
+            "Death Mountain": false
         },
         "Barinade Boss Room": {
-            "Boss Jabu Gateway:In": false
+            "Boss Jabu Gateway:In": false,
+            "Barinade Blue Warp": false
+        },
+        "Barinade Blue Warp": {
+            "Zoras Fountain": false
         },
         "Phantom Ganon Boss Room": {
-            "Boss Forest Temple Gateway:In": false
+            "Boss Forest Temple Gateway:In": false,
+            "Phantom Ganon Blue Warp": false
+        },
+        "Phantom Ganon Blue Warp": {
+            "Sacred Forest Meadow": false
         },
         "Volvagia Boss Room": {
-            "Boss Fire Temple Gateway:In": false
+            "Boss Fire Temple Gateway:In": false,
+            "Volvagia Blue Warp": false
+        },
+        "Volvagia Blue Warp": {
+            "DMC Central Local": false
         },
         "Morpha Boss Room": {
-            "Boss Water Temple Gateway:In": false
+            "Boss Water Temple Gateway:In": false,
+            "Morpha Blue Warp": false
+        },
+        "Morpha Blue Warp": {
+            "Lake Hylia": false
         },
         "Bongo Bongo Boss Room": {
-            "Boss Shadow Temple Gateway:In": false
+            "Boss Shadow Temple Gateway:In": false,
+            "Bongo Bongo Blue Warp": false
+        },
+        "Bongo Bongo Blue Warp": {
+            "Graveyard Warp Pad Region": false
         },
         "Twinrova Boss Room": {
-            "Boss Spirit Temple Gateway:In": false
+            "Boss Spirit Temple Gateway:In": false,
+            "Twinrova Blue Warp": false
+        },
+        "Twinrova Blue Warp": {
+            "Desert Colossus": false
         },
         "Ganons Castle Tower": {
             "Ganons Castle Main": false,
@@ -3706,12 +3747,16 @@
             "Great Fairy Grounds Gateway:In": false
         },
         "Castle Grounds From Ganons Castle": {
-            "Ganons Castle Grounds": false
+            "Ganons Castle Ledge": false
         },
         "Ganons Castle Grounds": {
             "Castle Grounds": false,
             "Ganon Grounds Great Fairy Gateway:In": false,
-            "Castle Grounds Ganons Castle Gateway:In": false
+            "Ganons Castle Ledge": false
+        },
+        "Ganons Castle Ledge": {
+            "Ganons Castle Grounds": false,
+            "Ganons Castle Lobby": false
         },
         "OGC Great Fairy Fountain": {
             "Great Fairy Ganon Grounds Gateway:In": false

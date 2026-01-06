@@ -26,7 +26,7 @@ const __dirname = path.resolve();
 const PARSE_OFFLINE = process.argv.indexOf("-offline") >= 0;
 
 /* SETTINGS */
-const RANDO_VERSION = "v8.3";
+const RANDO_VERSION = "v9.0";
 const FILTER_LOGIC = false;
 /* -------- */
 

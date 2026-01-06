@@ -23,6 +23,10 @@ class LogicBuilder {
     }
 
     resolveToken(current, token) {
+        if (current == null) {
+            console.warn("nullsy value detected");
+            return new LiteralValue("ERROR: nullsy value");
+        }
         if (current.indexOf(" and ") >= 0) {
             const children = current.split(" and ");
             const el = new OperatorAnd();
@@ -70,14 +74,14 @@ class LogicBuilder {
             return el;
         }
         if (current.startsWith("min(")) {
-            const [ref, value] = current.slice(4, -1).split(", ");
+            const [ref, value] = current.slice(4, -1).split(/,\s*/);
             const resRef = this.resolveToken(ref, token);
             const el = new OperatorMin(parseInt(value) || 0);
             el.append(resRef);
             return el;
         }
         if (current.startsWith("gte(")) {
-            const [ref, value] = current.slice(4, -1).split(", ");
+            const [ref, value] = current.slice(4, -1).split(/,\s*/);
             const resRef = this.resolveToken(ref, token);
             const resValue = this.resolveToken(value, token);
             const el = new ComparatorGreaterThanEqual();
@@ -86,7 +90,7 @@ class LogicBuilder {
             return el;
         }
         if (current.startsWith("at(")) {
-            const [ref, value] = current.slice(3, -1).split(", ");
+            const [ref, value] = current.slice(3, -1).split(/,\s*/);
             const resRef = this.#getTokenValue(ref, token).replace(/^'(.*)'$/, "$1");
             const resValue = this.resolveToken(value, token);
             const el = new ReferrerAt(resRef);
