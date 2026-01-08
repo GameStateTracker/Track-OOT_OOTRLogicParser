@@ -80,7 +80,8 @@
     "option[deadly_bonks]": {
         "name": "option[deadly_bonks]",
         "values": {
-            "bonk_off": "bonk_off"
+            "bonk_off": "bonk_off",
+            "none": "bonk_off"
         }
     },
     "hints": {
@@ -125,7 +126,8 @@
     "deadly_bonks": {
         "name": "option[deadly_bonks]",
         "values": {
-            "ohko": "bonk_ohko"
+            "ohko": "bonk_ohko",
+            "none": "bonk_off"
         }
     },
     "shuffle_scrubs": {
@@ -372,6 +374,49 @@
         "name": "option[shuffle_tcgkeys]",
         "values": {
             "vanilla": "keylogic_vanilla"
+        }
+    },
+    "open_door_of_time": {
+        "name": "option[open_door_of_time]",
+        "values": {
+            "open": "dot_open",
+            "sot": "dot_sot",
+            "oot_sot": "dot_oot_sot",
+            "stones": "dot_stones",
+            "stones_sot": "dot_stones_sot",
+            "stones_oot_sot": "dot_stones_oot_sot"
+        }
+    },
+    "shuffle_gerudo_fortress_heart_piece": {
+        "name": "option[shuffle_gerudo_fortress_heart_piece]",
+        "values": {
+            "remove": "gf_hp_remove",
+            "vanilla": "gf_hp_vanilla",
+            "shuffle": "gf_hp_shuffle"
+        }
+    },
+    "scarecrow_behavior": {
+        "name": "option[scarecrow_behavior]",
+        "values": {
+            "vanilla": "scarecrow_vanilla",
+            "fast": "scarecrow_fast",
+            "free": "scarecrow_free"
+        }
+    },
+    "selected_adult_trade_item": {
+        "name": "randomized[selected_adult_trade_item]",
+        "values": {
+            "Pocket Egg": "item[pocket_egg]",
+            "Pocket Cucco": "item[pocket_cucco]",
+            "Cojiro": "item[cojiro]",
+            "Odd Mushroom": "item[odd_mushroom]",
+            "Odd Potion": "item[odd_potion]",
+            "Poachers Saw": "item[poachers_saw]",
+            "Broken Sword": "item[broken_sword]",
+            "Prescription": "item[prescription]",
+            "Eyeball Frog": "item[eyeball_frog]",
+            "Eyedrops": "item[eyedrops]",
+            "Claim Check": "item[claim_check]"
         }
     }
 }

@@ -1,4 +1,3 @@
-Debugger attached.
 Cloning into 'input'...
 warning: refs/tags/v9.0 d2ae196258f96ee5ef6abb1e25eecefdbf465722 is not a commit!
 Note: switching to '42013a0a71606563a746996f319ec85692b95b53'.
@@ -413,35 +412,6 @@ glitch_child_shadow
 -------------------------------------------
 states not converted
 
-shuffle_gerudo_fortress_heart_piece: {
-    "name": "",
-    "values": {
-        "remove": ""
-    }
-}
-scarecrow_behavior: {
-    "name": "",
-    "values": {
-        "free": ""
-    }
-}
-open_door_of_time: {
-    "name": "",
-    "values": {
-        "open": "",
-        "sot": "",
-        "oot_sot": "",
-        "stones": "",
-        "stones_sot": "",
-        "stones_oot_sot": ""
-    }
-}
-deadly_bonks: {
-    "name": "option[deadly_bonks]",
-    "values": {
-        "none": ""
-    }
-}
 
 -------------------------------------------
 unused name translations
@@ -513,6 +483,7 @@ shuffle_child_trade
 option[entrance_shuffle]
 option[shuffle_bosses]
 option[light_arrow_cutscene]
+selected_adult_trade_item
 
 ===========================================
 PARSE GLITCHED LOGIC
@@ -1061,47 +1032,15 @@ glitch_child_shadow
 -------------------------------------------
 states not converted
 
-shuffle_gerudo_fortress_heart_piece: {
-    "name": "",
-    "values": {
-        "remove": ""
-    }
-}
 selected_adult_trade_item: {
-    "name": "",
+    "name": "randomized[selected_adult_trade_item]",
     "values": {
         "Pocket": "",
-        "Cojiro": "",
         "Odd": "",
         "Poachers": "",
         "Broken": "",
-        "Prescription": "",
         "Eyeball": "",
-        "Eyedrops": "",
         "Claim": ""
-    }
-}
-scarecrow_behavior: {
-    "name": "",
-    "values": {
-        "free": ""
-    }
-}
-open_door_of_time: {
-    "name": "",
-    "values": {
-        "open": "",
-        "sot": "",
-        "oot_sot": "",
-        "stones": "",
-        "stones_sot": "",
-        "stones_oot_sot": ""
-    }
-}
-deadly_bonks: {
-    "name": "option[deadly_bonks]",
-    "values": {
-        "none": ""
     }
 }
 
@@ -1187,4 +1126,3 @@ shuffle_child_trade
 option[entrance_shuffle]
 option[shuffle_bosses]
 option[light_arrow_cutscene]
-Waiting for the debugger to disconnect...
