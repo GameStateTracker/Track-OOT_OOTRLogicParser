@@ -371,6 +371,10 @@
         "type": "value",
         "ref": "item[arrow_ice]"
     },
+    "Blue_Fire_Arrows": {
+        "type": "value",
+        "ref": "item[arrow_ice]"
+    },
     "Light_Arrows": {
         "type": "value",
         "ref": "item[arrow_light]"
@@ -1842,6 +1846,14 @@
     "shuffle_individual_ocarina_notes": {
         "type": "value",
         "ref": "option[shuffle_individual_ocarina_notes]"
+    },
+    "shuffle_empty_pots": {
+        "type": "value",
+        "ref": "option[shuffle_empty_pots]"
+    },
+    "shuffle_hideout_entrances": {
+        "type": "value",
+        "ref": "option[shuffle_hideout_entrances]"
     },
     "Ocarina_A_Button": {
         "type": "value",
