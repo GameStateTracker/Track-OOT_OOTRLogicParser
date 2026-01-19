@@ -591,6 +591,12 @@
         "Spirit Temple Before Boss": "Boss Spirit Temple Gateway",
         "Desert Colossus": ""
     },
+    "Ganons Castle Main": {
+        "Ganons Castle Tower": "Ganons Castle Ganons Tower Gateway"
+    },
+    "Ganons Castle Tower": {
+        "Ganons Castle Main": "Ganons Tower Ganons Castle Gateway"
+    },
     "Farores Wind Warp": {
         "Bottom of the Well": "Well Kakariko Gateway:Out",
         "Deku Tree Lobby": "Deku Kokiri Gateway:Out",

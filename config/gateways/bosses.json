@@ -94,5 +94,17 @@
         "exits": {
             "Twinrova Boss Room": "True"
         }
+    },
+    {
+        "region_name": "Ganons Castle Ganons Tower Gateway",
+        "exits": {
+            "Ganons Tower Ganons Castle Gateway": "True"
+        }
+    },
+    {
+        "region_name": "Ganons Tower Ganons Castle Gateway",
+        "exits": {
+            "Ganons Castle Ganons Tower Gateway": "True"
+        }
     }
 ]

@@ -24,6 +24,8 @@
         "Boss Shadow Temple Gateway:Out": false,
         "Spirit Temple Boss Gateway:In": false,
         "Boss Spirit Temple Gateway:Out": false,
+        "Ganons Castle Ganons Tower Gateway:In": false,
+        "Ganons Tower Ganons Castle Gateway:In": false,
         "Kakariko Well Gateway:In": false,
         "Kakariko Well Gateway:Out": false,
         "Well Kakariko Gateway:In": false,
@@ -1052,6 +1054,12 @@
         },
         "Boss Spirit Temple Gateway:Out": {
             "Twinrova Boss Room": false
+        },
+        "Ganons Castle Ganons Tower Gateway:In": {
+            "Ganons Tower Ganons Castle Gateway:Out": false
+        },
+        "Ganons Tower Ganons Castle Gateway:In": {
+            "Ganons Castle Ganons Tower Gateway:Out": false
         },
         "Kakariko Well Gateway:In": {
             "Well Kakariko Gateway:Out": false
@@ -2748,7 +2756,7 @@
             "Desert Colossus": false
         },
         "Ganons Castle Tower": {
-            "Ganons Castle Main": false,
+            "Ganons Tower Ganons Castle Gateway:In": false,
             "Ganons Castle Tower Below Boss": false,
             "Farores Wind Warp": false
         },
@@ -3122,7 +3130,7 @@
             "Ganons Castle Light Trial MQ": false,
             "Ganons Castle Spirit Trial MQ": false,
             "Ganons Castle Deku Scrubs MQ": false,
-            "Ganons Castle Tower": false
+            "Ganons Castle Ganons Tower Gateway:In": false
         },
         "Ganons Castle Forest Trial MQ": {
             "Ganons Castle Forest Trial Ending MQ": false
@@ -3170,7 +3178,7 @@
             "Ganons Castle Light Trial": false,
             "Ganons Castle Spirit Trial": false,
             "Ganons Castle Deku Scrubs": false,
-            "Ganons Castle Tower": false
+            "Ganons Castle Ganons Tower Gateway:In": false
         },
         "Ganons Castle Forest Trial": {
             "Ganons Castle Forest Trial Wind Room": false
