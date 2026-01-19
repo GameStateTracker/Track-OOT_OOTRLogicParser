@@ -608,7 +608,7 @@
     },
     "Deliver_Letter": {
         "type": "value",
-        "ref": "reach_location[deliver_letter]"
+        "ref": "reach_location[zoras.c_deliver_letter]"
     },
     "Gerudo_Membership_Card": {
         "type": "value",
