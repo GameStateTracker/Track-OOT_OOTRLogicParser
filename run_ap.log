@@ -1,0 +1,55 @@
+
+===========================================
+PARSE HELPERS
+
+
+===========================================
+PARSE LOGIC
+
+add custom logic for region: Desert Colossus Hands MQ
+exit: Desert Colossus 
+ [ 'True' ] 
+---
+--- --- ---
+
+-------------------------------------------
+generate logic output
+
+
+-------------------------------------------
+locations not converted
+
+
+-------------------------------------------
+values not converted
+
+
+-------------------------------------------
+states not converted
+
+
+===========================================
+PARSE GLITCHED LOGIC
+
+skip parsing logic file "E:\__Development__\ZidArgs\OOTRLogicParser\input_ap\data\Glitched World\Bosses.json": does not match base format
+add custom logic for region: Desert Colossus Hands MQ
+exit: Desert Colossus 
+ [ 'True' ] 
+---
+--- --- ---
+
+-------------------------------------------
+generate logic output
+
+
+-------------------------------------------
+locations not converted
+
+
+-------------------------------------------
+values not converted
+
+
+-------------------------------------------
+states not converted
+

@@ -6,6 +6,14 @@
     "is_starting_age": {
         "type": "true"
     },
+    "_oot_has_beans": {
+        "type": "min",
+        "content": {
+            "type": "value",
+            "ref": "item[bean]"
+        },
+        "value": 10
+    },
     // I have no good way of setting this up in logic as it pings in two different places, so this might be permanent
     "complete_mask_quest": {
         "type": "value",
@@ -246,6 +254,14 @@
         "type": "value",
         "ref": "event[jabu_jabus_belly_parasitic_tentacle_cleared]"
     },
+    "Jabu_Jabus_Belly_Center_Tentacle_Cleared": {
+        "type": "value",
+        "ref": "event[jabu_jabus_belly_center_tentacle_cleared]"
+    },
+    "Jabu_Jabus_Belly_Right_Tentacle_Cleared": {
+        "type": "value",
+        "ref": "event[jabu_jabus_belly_right_tentacle_cleared]"
+    },
     /* items */
     "Bow": {
         "type": "value",
@@ -438,6 +454,18 @@
     "Spooky_Mask": {
         "type": "value",
         "ref": "item[mask_spooky]"
+    },
+    "Goron_Mask": {
+        "type": "value",
+        "ref": "item[mask_goron]"
+    },
+    "Zora_Mask": {
+        "type": "value",
+        "ref": "item[mask_zora]"
+    },
+    "Gerudo_Mask": {
+        "type": "value",
+        "ref": "item[mask_gerudo]"
     },
     "Bunny_Hood": {
         "type": "value",
@@ -974,13 +1002,15 @@
         "type": "value",
         "ref": "option[shuffle_warps]"
     },
-    "open_door_of_time": {
-        "type": "value",
-        "ref": "option[doors_open_temple]"
-    },
     "free_scarecrow": {
-        "type": "value",
-        "ref": "option[freescarecrow]"
+        "type": "state",
+        "ref": "option[scarecrow_behavior]",
+        "value": "scarecrow_free"
+    },
+    "open_door_of_time": {
+        "type": "state",
+        "ref": "option[open_door_of_time]",
+        "value": "dot_open"
     },
     "shuffle_gerudo_card": {
         "type": "value",
@@ -1059,6 +1089,10 @@
         "ref": "option[small_key_logic]",
         "value": "keylogic_keysanity"
     },
+    "bombchus_in_logic": {
+        "type": "value",
+        "ref": "option[bombchu_logic]"
+    },
     "free_bombchu_drops": {
         "type": "value",
         "ref": "option[bombchu_logic]"
@@ -1125,6 +1159,10 @@
     "logic_fewer_tunic_requirements": {
         "type": "value",
         "ref": "option[skip.fewer_tunic_requirements]"
+    },
+    "logic_adult_kokiri_gs": {
+        "type": "value",
+        "ref": "option[skip.adult_kokiri_gs_hovers]"
     },
     "logic_adult_kokiri_gs_hovers": {
         "type": "value",
@@ -1227,6 +1265,18 @@
     "logic_dmt_soil_gs": {
         "type": "value",
         "ref": "option[skip.dmt_soil_gs]"
+    },
+    "logic_trail_gs_lower_hookshot": {
+        "type": "value",
+        "ref": "option[skip.trail_gs_lower_hookshot]"
+    },
+    "logic_trail_gs_lower_hovers": {
+        "type": "value",
+        "ref": "option[skip.trail_gs_lower_hovers]"
+    },
+    "logic_trail_gs_lower_bean": {
+        "type": "value",
+        "ref": "option[skip.trail_gs_lower_bean]"
     },
     "logic_trail_gs_lower": {
         "type": "value",
@@ -1416,6 +1466,10 @@
         "type": "value",
         "ref": "option[skip.gtg_mq_with_hookshot]"
     },
+    "logic_gtg_mq_without_hookshot": {
+        "type": "value",
+        "ref": "option[skip.gtg_mq_without_hookshot]"
+    },
     "logic_forest_outdoors_ledge": {
         "type": "value",
         "ref": "option[skip.forest_outdoors_ledge]"
@@ -1508,6 +1562,10 @@
         "type": "value",
         "ref": "option[skip.water_dragon_jump_dive]"
     },
+    "logic_water_boss_key_region": {
+        "type": "value",
+        "ref": "option[skip.water_boss_key_region]"
+    },
     "logic_water_bk_jump_dive": {
         "type": "value",
         "ref": "option[skip.water_bk_jump_dive]"
@@ -1585,6 +1643,10 @@
     "logic_spirit_map_chest": {
         "type": "value",
         "ref": "option[skip.spirit_map_chest]"
+    },
+    "logic_spirit_sun_chest": {
+        "type": "value",
+        "ref": "option[skip.spirit_sun_chest_bow]"
     },
     "logic_spirit_sun_chest_bow": {
         "type": "value",

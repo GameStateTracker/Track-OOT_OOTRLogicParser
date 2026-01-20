@@ -68,6 +68,16 @@ function wrapEraFilter(rule, value) {
 
 class LogicGenerator {
 
+    #printUnusedInfo = false;
+
+    set printUnusedInfo(value) {
+        this.#printUnusedInfo = value;
+    }
+
+    get printUnusedInfo() {
+        return this.#printUnusedInfo;
+    }
+
     reset() {
         structure = {};
         missingState.clear();
@@ -275,12 +285,8 @@ class LogicGenerator {
             "type": "value",
             "ref": "flag[time_travel]"
         };
-        res.logic["mixin[is_glitched]{child}"] = {
-            "type": `${glitched}`
-        };
-        res.logic["mixin[is_glitched]{adult}"] = {
-            "type": `${glitched}`
-        };
+        res.logic["mixin[is_glitched]{child}"] = {"type": `${glitched}`};
+        res.logic["mixin[is_glitched]{adult}"] = {"type": `${glitched}`};
         // END overrides
 
         console.log("");
@@ -307,32 +313,38 @@ class LogicGenerator {
             console.log(`${name}:`, JSON.stringify(state, null, 4));
         }
 
-        console.log("");
-        console.log("-------------------------------------------");
-        console.log("unused name translations");
-        console.log("");
-        for (const name of NameTranslations.getUnusedKeys()) {
-            console.log(name);
-        }
-        NameTranslations.reset();
+        if (this.#printUnusedInfo) {
+            console.log("");
+            console.log("-------------------------------------------");
+            console.log("unused name translations");
+            console.log("");
+            for (const name of NameTranslations.getUnusedKeys()) {
+                console.log(name);
+            }
+            NameTranslations.reset();
 
-        console.log("");
-        console.log("-------------------------------------------");
-        console.log("unused value translations");
-        console.log("");
-        for (const name of ValueTranslations.getUnusedKeys()) {
-            console.log(name);
-        }
-        ValueTranslations.reset();
+            console.log("");
+            console.log("-------------------------------------------");
+            console.log("unused value translations");
+            console.log("");
+            for (const name of ValueTranslations.getUnusedKeys()) {
+                console.log(name);
+            }
+            ValueTranslations.reset();
 
-        console.log("");
-        console.log("-------------------------------------------");
-        console.log("unused state translations");
-        console.log("");
-        for (const name of StateTranslations.getUnusedKeys()) {
-            console.log(name);
+            console.log("");
+            console.log("-------------------------------------------");
+            console.log("unused state translations");
+            console.log("");
+            for (const name of StateTranslations.getUnusedKeys()) {
+                console.log(name);
+            }
+            StateTranslations.reset();
+        } else {
+            NameTranslations.reset();
+            ValueTranslations.reset();
+            StateTranslations.reset();
         }
-        StateTranslations.reset();
 
         return res;
     }

@@ -38,18 +38,12 @@ generate logic output
 -------------------------------------------
 locations not converted
 
-100 Skulltulas Reward Hint
-Deku Theater Skull Mask Hint
-Deku Theater Mask of Truth Hint
 
 -------------------------------------------
 values not converted
 
 logic_gtg_eye_statue_wonderitem
 skip_reward_from_rauru
-'Goron Mask'
-'Zora Mask'
-'Gerudo Mask'
 adv_hovers_recoil
 adv_damage_boost
 glitch_groundjump
@@ -81,78 +75,6 @@ glitch_child_shadow
 states not converted
 
 
--------------------------------------------
-unused name translations
-
-Links Pocket
-Market Guard House Child Crate
-Jabu Jabus Belly Small Wooden Crate
-Dodongos Cavern MQ Armos Army Room Upper Pot
-Fire Temple MQ Boss Key Chest Room Pot
-Forest Temple MQ Wolfos Room Pot
-Forest Temple Lower Stalfos Pot
-Ice Cavern MQ Near End Pot
-Shadow Temple After Boat Pot
-Spirit Temple Child Bridge Flying Pot
-Spirit Temple Child Anubis Pot
-Water Temple MQ Before Dark Link Lower Pot
-Water Temple MQ Room After Dark Link Pot
-Water Temple MQ River Pot
-Water Temple MQ Freestanding Key Room Pot
-KF Shop Blue Rupee
-
-
--------------------------------------------
-unused value translations
-
-Time_Travel
-is_starting_age
-Mask_Shop_Open
-Carpenter_Rescue
-Deku_Tree_Clear
-Hammer
-Buy_Deku_Stick_1
-Deku_Stick_Drop
-Buy_Deku_Nut_5
-Buy_Deku_Nut_10
-Deku_Nut_Drop
-Ice_Trap
-Arrows
-Magic_Bean_Pack
-Bottle_with_Letter
-Buy_Blue_Fire
-Buy_Bottle_Bug
-Buy_Fairys_Spirit
-Buy_Fish
-open_door_of_time
-free_scarecrow
-shuffle_gerudo_card
-shuffle_weird_egg
-skipped_trials[Forest]
-skipped_trials[Fire]
-skipped_trials[Water]
-skipped_trials[Shadow]
-skipped_trials[Spirit]
-skipped_trials[Light]
-deadly_bonks
-chicken_count
-triforce_hunt
-'Water Temple' in dungeon_shortcuts
-
-
--------------------------------------------
-unused state translations
-
-option[deadly_bonks]
-bridge
-logic_rules
-shuffle_interior_entrances
-shuffle_child_trade
-option[entrance_shuffle]
-option[shuffle_bosses]
-option[light_arrow_cutscene]
-selected_adult_trade_item
-
 ===========================================
 PARSE GLITCHED LOGIC
 
@@ -170,9 +92,6 @@ generate logic output
 locations not converted
 
 Forest Temple MQ ReDead Chest
-100 Skulltulas Reward Hint
-Deku Theater Skull Mask Hint
-Deku Theater Mask of Truth Hint
 Kak ReDead Grotto Chest
 
 -------------------------------------------
@@ -224,8 +143,6 @@ glitch_ice_ledges_child
 glitch_reverse_ice
 adv_ice_hp_no_bottle
 adv_ice_push_block_silver
-'Jabu Jabus Belly Center Tentacle Cleared'
-Jabu_Jabus_Belly_Right_Tentacle_Cleared
 glitch_jabu_switch_hover
 glitch_jabu_compass_with_death
 glitch_jabu_compass_skip_tentacle
@@ -356,9 +273,6 @@ glitch_water_bk_skip_chus
 glitch_water_central_pillar_with_torch_clip
 glitch_water_dragon_cs_dive
 glitch_water_sot_block_skip
-'Goron Mask'
-'Zora Mask'
-'Gerudo Mask'
 adv_recoil_jump
 glitch_equip_swap
 glitch_megaflip
@@ -377,106 +291,3 @@ glitch_child_shadow
 -------------------------------------------
 states not converted
 
-selected_adult_trade_item: {
-    "name": "randomized[selected_adult_trade_item]",
-    "values": {
-        "Pocket": "",
-        "Odd": "",
-        "Poachers": "",
-        "Broken": "",
-        "Eyeball": "",
-        "Claim": ""
-    }
-}
-
--------------------------------------------
-unused name translations
-
-Links Pocket
-Kak Redead Grotto Chest
-Forest Temple MQ Redead Chest
-Market Guard House Child Crate
-Jabu Jabus Belly Small Wooden Crate
-Dodongos Cavern MQ Armos Army Room Upper Pot
-Fire Temple MQ Boss Key Chest Room Pot
-Forest Temple MQ Wolfos Room Pot
-Forest Temple Lower Stalfos Pot
-Ice Cavern MQ Near End Pot
-Shadow Temple After Boat Pot
-Spirit Temple Child Bridge Flying Pot
-Spirit Temple Child Anubis Pot
-Water Temple MQ Before Dark Link Lower Pot
-Water Temple MQ Room After Dark Link Pot
-Water Temple MQ River Pot
-Water Temple MQ Freestanding Key Room Pot
-KF Shop Blue Rupee
-Shadow Temple MQ Invisible Blades Silver Rupee Like Like
-Jabu Jabus Belly MQ Falling Like-Like Room Right Cow Wonderitem 1
-Jabu Jabus Belly MQ Falling Like-Like Room Right Cow Wonderitem 2
-Jabu Jabus Belly MQ Falling Like-Like Room Right Cow Wonderitem 3
-Jabu Jabus Belly MQ Falling Like-Like Room Left Cow Wonderitem 1
-Jabu Jabus Belly MQ Falling Like-Like Room Left Cow Wonderitem 2
-Jabu Jabus Belly MQ Falling Like-Like Room Left Cow Wonderitem 3
-Jabu Jabus Belly MQ Falling Like-Like Room Explosives Wonderitem 1
-Jabu Jabus Belly MQ Falling Like-Like Room Explosives Wonderitem 2
-Jabu Jabus Belly MQ Falling Like-Like Room Explosives Wonderitem 3
-
-
--------------------------------------------
-unused value translations
-
-Time_Travel
-is_starting_age
-Mask_Shop_Open
-Carpenter_Rescue
-Deku_Tree_Clear
-Jabu_Jabus_Belly_Parasitic_Tentacle_Cleared
-Hammer
-Buy_Deku_Stick_1
-Deku_Stick_Drop
-Buy_Deku_Nut_5
-Buy_Deku_Nut_10
-Deku_Nut_Drop
-Ice_Trap
-Arrows
-Magic_Bean_Pack
-Bottle_with_Letter
-Buy_Blue_Fire
-Buy_Bottle_Bug
-Buy_Fairys_Spirit
-Buy_Fish
-open_door_of_time
-free_scarecrow
-shuffle_gerudo_card
-entrance_shuffle
-shuffle_weird_egg
-skipped_trials[Forest]
-skipped_trials[Fire]
-skipped_trials[Water]
-skipped_trials[Shadow]
-skipped_trials[Spirit]
-skipped_trials[Light]
-logic_adult_kokiri_gs_hovers
-logic_visible_collisions
-logic_man_on_roof
-logic_dc_jump
-logic_dc_vines_gs
-logic_botw_mq_pits
-deadly_bonks
-chicken_count
-triforce_hunt
-'Water Temple' in dungeon_shortcuts
-logic_gf_jump
-
-
--------------------------------------------
-unused state translations
-
-option[deadly_bonks]
-bridge
-logic_rules
-shuffle_interior_entrances
-shuffle_child_trade
-option[entrance_shuffle]
-option[shuffle_bosses]
-option[light_arrow_cutscene]

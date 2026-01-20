@@ -23,6 +23,7 @@
     "lint": "yarn eslint .",
     "lintfix": "yarn eslint --fix .",
     "parse": "node src/parse.js > run.log 2>&1",
+    "parse_ap": "node src/parse_ap.js > run_ap.log 2>&1",
     "parseOffline": "node src/parse.js -offline > run.log 2>&1"
   }
 }
