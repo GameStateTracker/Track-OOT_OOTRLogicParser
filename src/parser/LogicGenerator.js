@@ -234,8 +234,22 @@ class LogicGenerator {
         }
         // functions
         for (const [key, value] of functions) {
-            res.logic[`${key}{child}`] = postCalcutate(value, "child");
-            res.logic[`${key}{adult}`] = postCalcutate(value, "adult");
+            if ("params" in value) {
+                const {
+                    params, logic
+                } = value;
+                res.logic[`${key}{child}`] = {
+                    params,
+                    logic: postCalcutate(logic, "child")
+                };
+                res.logic[`${key}{adult}`] = {
+                    params,
+                    logic: postCalcutate(logic, "adult")
+                };
+            } else {
+                res.logic[`${key}{child}`] = postCalcutate(value, "child");
+                res.logic[`${key}{adult}`] = postCalcutate(value, "adult");
+            }
         }
 
         // BEGIN overrides

@@ -12,8 +12,6 @@ class HelperParser {
         for (const i in helpers) {
             const pos = i.indexOf("(");
             if (pos > 0) {
-                // TODO generate function helpers
-                // functions need to geenerate a "mixin" for each different parameters they are called with
                 const fname = i.slice(0, pos);
                 const params = i.slice(pos + 1, -1).split(", ");
                 LogicGenerator.addFunction(fname, transpileFunction(helpers[i], params));
@@ -30,10 +28,13 @@ class HelperParser {
 
 }
 
-function transpileFunction(input/* , params */) {
+function transpileFunction(input, params) {
     const token = RandTokenizer.tokenize(input);
-    const logic = LogicBuilder.build(token);
-    return logic;
+    const logic = LogicBuilder.build(token, params);
+    return {
+        params,
+        logic
+    };
 }
 
 function transpile(input) {

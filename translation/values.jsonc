@@ -980,15 +980,6 @@
     //"item[potion_red]",
     //"item[potion_green]",
     //"Blue_Potion": "item[potion_blue]",
-    /* dummy items */
-    "item": {
-        "type": "value",
-        "ref": "item[dummy]"
-    },
-    "song": {
-        "type": "value",
-        "ref": "item[song_dummy]"
-    },
     /* options */
     "big_poe_count": {
         "type": "value",

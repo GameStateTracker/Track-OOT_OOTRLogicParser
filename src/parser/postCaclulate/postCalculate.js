@@ -1,6 +1,7 @@
 import createOnRegionLogic from "./createOnRegionLogic.js";
 import postCalculateMixin from "./postCalculateMixin.js";
 import postCalculateValue from "./postCalculateValue.js";
+import postCalculateString from "./postCalculateString.js";
 import postCalculateFunction from "./postCalculateFunction.js";
 import postCalculateState from "./postCalculateState.js";
 import postCalculateMinMax from "./postCalculateMinMax.js";
@@ -8,6 +9,13 @@ import {translateRegionName} from "../../utils/TranslatorFunctions.js";
 
 function calc(scope, input, age = "", region = "", basic = false) {
     switch (input.type) {
+        case "param":
+        case "paramvalue": {
+            return input;
+        }
+        case "string": {
+            return postCalculateString(scope, input, age, region, basic);
+        }
         case "mixin": {
             return postCalculateMixin(scope, input, age, region, basic);
         }

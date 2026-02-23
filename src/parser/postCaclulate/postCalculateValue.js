@@ -21,7 +21,7 @@ export default function postCalculate(scope, input, age = "", region = "", basic
                 ref: `${input.ref}{${age}}`
             };
         }
-        if (input.ref.startsWith("eventt[")) {
+        if (input.ref.startsWith("event[")) {
             return input;
         }
     }

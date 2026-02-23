@@ -1,27 +1,26 @@
-import Translation from "../../utils/Translation.js";
-import {
-    translateFunctionName
-} from "../../utils/TranslatorFunctions.js";
+import {translateFunctionName} from "../../utils/TranslatorFunctions.js";
 
-export default function postCalculate(scope, input, age = ""/* , region = "", basic = false */) {
-    let fnName = translateFunctionName(input.ref);
-    let param = input.params[0];
-    if (param != null) {
-        param = param.ref;
-        const paramBuff = Translation.getValueName(param);
-        if (paramBuff != null) {
-            param = paramBuff.ref;
+export default function postCalculate(scope, input, age = "", region = "", basic = false) {
+    const {calc} = scope;
+    const fnName = translateFunctionName(input.ref);
+
+    const params = [];
+    if ("params" in input) {
+        for (const param of input.params) {
+            params.push(calc(scope, param, age, region, basic));
         }
-        fnName = `${fnName}(${param})`;
     }
+
     if (age != "") {
         return {
-            type: "mixin",
-            ref: `${fnName}{${age}}`
+            type: "function",
+            ref: `${fnName}{${age}}`,
+            params
         };
     }
     return {
-        type: "mixin",
-        ref: fnName
+        type: "function",
+        ref: fnName,
+        params
     };
 }
