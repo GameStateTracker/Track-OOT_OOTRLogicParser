@@ -1,396 +1,307 @@
 {
     /* normal songs */
-    "function[can_play](item[song_zelda])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "mixin[can_play_ocarina]"
-            },
-            {
-                "type": "value",
-                "ref": "item[song_zelda]"
-            },
-            {
-                "type": "or",
-                "content": [
-                    {
-                        "type": "not",
-                        "content": {
+    "function[has_all_notes_for_song]": {
+        "params": [
+            "song"
+        ],
+        "logic": {
+            "type": "or",
+            "content": [
+                {
+                    "type": "not",
+                    "content": {
+                        "type": "value",
+                        "ref": "option[shuffle_individual_ocarina_notes]"
+                    }
+                },
+                {
+                    "type": "and",
+                    "content": [
+                        {
+                            "type": "eq",
+                            "content": [
+                                {
+                                    "type": "param",
+                                    "ref": "song"
+                                },
+                                {
+                                    "type": "string",
+                                    "value": "item[song_zelda]"
+                                }
+                            ]
+                        },
+                        {
                             "type": "value",
-                            "ref": "option[shuffle_individual_ocarina_notes]"
+                            "ref": "calculated[has_all_notes_for_song(song_zelda)]"
                         }
-                    },
-                    {
-                        "type": "value",
-                        "ref": "calculated[has_all_notes_for_song(song_zelda)]"
-                    }
-                ]
-            }
-        ]
-    },
-    "function[can_play](item[song_epona])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "mixin[can_play_ocarina]"
-            },
-            {
-                "type": "value",
-                "ref": "item[song_epona]"
-            },
-            {
-                "type": "or",
-                "content": [
-                    {
-                        "type": "not",
-                        "content": {
+                    ]
+                },
+                {
+                    "type": "and",
+                    "content": [
+                        {
+                            "type": "eq",
+                            "content": [
+                                {
+                                    "type": "param",
+                                    "ref": "song"
+                                },
+                                {
+                                    "type": "string",
+                                    "value": "item[song_epona]"
+                                }
+                            ]
+                        },
+                        {
                             "type": "value",
-                            "ref": "option[shuffle_individual_ocarina_notes]"
+                            "ref": "calculated[has_all_notes_for_song(song_epona)]"
                         }
-                    },
-                    {
-                        "type": "value",
-                        "ref": "calculated[has_all_notes_for_song(song_epona)]"
-                    }
-                ]
-            }
-        ]
-    },
-    "function[can_play](item[song_saria])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "mixin[can_play_ocarina]"
-            },
-            {
-                "type": "value",
-                "ref": "item[song_saria]"
-            },
-            {
-                "type": "or",
-                "content": [
-                    {
-                        "type": "not",
-                        "content": {
+                    ]
+                },
+                {
+                    "type": "and",
+                    "content": [
+                        {
+                            "type": "eq",
+                            "content": [
+                                {
+                                    "type": "param",
+                                    "ref": "song"
+                                },
+                                {
+                                    "type": "string",
+                                    "value": "item[song_saria]"
+                                }
+                            ]
+                        },
+                        {
                             "type": "value",
-                            "ref": "option[shuffle_individual_ocarina_notes]"
+                            "ref": "calculated[has_all_notes_for_song(song_saria)]"
                         }
-                    },
-                    {
-                        "type": "value",
-                        "ref": "calculated[has_all_notes_for_song(song_saria)]"
-                    }
-                ]
-            }
-        ]
-    },
-    "function[can_play](item[song_sun])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "mixin[can_play_ocarina]"
-            },
-            {
-                "type": "value",
-                "ref": "item[song_sun]"
-            },
-            {
-                "type": "or",
-                "content": [
-                    {
-                        "type": "not",
-                        "content": {
+                    ]
+                },
+                {
+                    "type": "and",
+                    "content": [
+                        {
+                            "type": "eq",
+                            "content": [
+                                {
+                                    "type": "param",
+                                    "ref": "song"
+                                },
+                                {
+                                    "type": "string",
+                                    "value": "item[song_sun]"
+                                }
+                            ]
+                        },
+                        {
                             "type": "value",
-                            "ref": "option[shuffle_individual_ocarina_notes]"
+                            "ref": "calculated[has_all_notes_for_song(song_sun)]"
                         }
-                    },
-                    {
-                        "type": "value",
-                        "ref": "calculated[has_all_notes_for_song(song_sun)]"
-                    }
-                ]
-            }
-        ]
-    },
-    "function[can_play](item[song_time])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "mixin[can_play_ocarina]"
-            },
-            {
-                "type": "value",
-                "ref": "item[song_time]"
-            },
-            {
-                "type": "or",
-                "content": [
-                    {
-                        "type": "not",
-                        "content": {
+                    ]
+                },
+                {
+                    "type": "and",
+                    "content": [
+                        {
+                            "type": "eq",
+                            "content": [
+                                {
+                                    "type": "param",
+                                    "ref": "song"
+                                },
+                                {
+                                    "type": "string",
+                                    "value": "item[song_time]"
+                                }
+                            ]
+                        },
+                        {
                             "type": "value",
-                            "ref": "option[shuffle_individual_ocarina_notes]"
+                            "ref": "calculated[has_all_notes_for_song(song_time)]"
                         }
-                    },
-                    {
-                        "type": "value",
-                        "ref": "calculated[has_all_notes_for_song(song_time)]"
-                    }
-                ]
-            }
-        ]
-    },
-    "function[can_play](item[song_storm])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "mixin[can_play_ocarina]"
-            },
-            {
-                "type": "value",
-                "ref": "item[song_storm]"
-            },
-            {
-                "type": "or",
-                "content": [
-                    {
-                        "type": "not",
-                        "content": {
+                    ]
+                },
+                {
+                    "type": "and",
+                    "content": [
+                        {
+                            "type": "eq",
+                            "content": [
+                                {
+                                    "type": "param",
+                                    "ref": "song"
+                                },
+                                {
+                                    "type": "string",
+                                    "value": "item[song_storm]"
+                                }
+                            ]
+                        },
+                        {
                             "type": "value",
-                            "ref": "option[shuffle_individual_ocarina_notes]"
+                            "ref": "calculated[has_all_notes_for_song(song_storm)]"
                         }
-                    },
-                    {
-                        "type": "value",
-                        "ref": "calculated[has_all_notes_for_song(song_storm)]"
-                    }
-                ]
-            }
-        ]
-    },
-    /* warp songs */
-    "function[can_play](item[warp_forest])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "mixin[can_play_ocarina]"
-            },
-            {
-                "type": "value",
-                "ref": "item[warp_forest]"
-            },
-            {
-                "type": "or",
-                "content": [
-                    {
-                        "type": "not",
-                        "content": {
+                    ]
+                },
+                {
+                    "type": "and",
+                    "content": [
+                        {
+                            "type": "eq",
+                            "content": [
+                                {
+                                    "type": "param",
+                                    "ref": "song"
+                                },
+                                {
+                                    "type": "string",
+                                    "value": "item[warp_forest]"
+                                }
+                            ]
+                        },
+                        {
                             "type": "value",
-                            "ref": "option[shuffle_individual_ocarina_notes]"
+                            "ref": "calculated[has_all_notes_for_song(warp_forest)]"
                         }
-                    },
-                    {
-                        "type": "value",
-                        "ref": "calculated[has_all_notes_for_song(warp_forest)]"
-                    }
-                ]
-            }
-        ]
-    },
-    "function[can_play](item[warp_fire])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "mixin[can_play_ocarina]"
-            },
-            {
-                "type": "value",
-                "ref": "item[warp_fire]"
-            },
-            {
-                "type": "or",
-                "content": [
-                    {
-                        "type": "not",
-                        "content": {
+                    ]
+                },
+                {
+                    "type": "and",
+                    "content": [
+                        {
+                            "type": "eq",
+                            "content": [
+                                {
+                                    "type": "param",
+                                    "ref": "song"
+                                },
+                                {
+                                    "type": "string",
+                                    "value": "item[warp_fire]"
+                                }
+                            ]
+                        },
+                        {
                             "type": "value",
-                            "ref": "option[shuffle_individual_ocarina_notes]"
+                            "ref": "calculated[has_all_notes_for_song(warp_fire)]"
                         }
-                    },
-                    {
-                        "type": "value",
-                        "ref": "calculated[has_all_notes_for_song(warp_fire)]"
-                    }
-                ]
-            }
-        ]
-    },
-    "function[can_play](item[warp_water])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "mixin[can_play_ocarina]"
-            },
-            {
-                "type": "value",
-                "ref": "item[warp_water]"
-            },
-            {
-                "type": "or",
-                "content": [
-                    {
-                        "type": "not",
-                        "content": {
+                    ]
+                },
+                {
+                    "type": "and",
+                    "content": [
+                        {
+                            "type": "eq",
+                            "content": [
+                                {
+                                    "type": "param",
+                                    "ref": "song"
+                                },
+                                {
+                                    "type": "string",
+                                    "value": "item[warp_water]"
+                                }
+                            ]
+                        },
+                        {
                             "type": "value",
-                            "ref": "option[shuffle_individual_ocarina_notes]"
+                            "ref": "calculated[has_all_notes_for_song(warp_water)]"
                         }
-                    },
-                    {
-                        "type": "value",
-                        "ref": "calculated[has_all_notes_for_song(warp_water)]"
-                    }
-                ]
-            }
-        ]
-    },
-    "function[can_play](item[warp_shadow])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "mixin[can_play_ocarina]"
-            },
-            {
-                "type": "value",
-                "ref": "item[warp_shadow]"
-            },
-            {
-                "type": "or",
-                "content": [
-                    {
-                        "type": "not",
-                        "content": {
+                    ]
+                },
+                {
+                    "type": "and",
+                    "content": [
+                        {
+                            "type": "eq",
+                            "content": [
+                                {
+                                    "type": "param",
+                                    "ref": "song"
+                                },
+                                {
+                                    "type": "string",
+                                    "value": "item[warp_shadow]"
+                                }
+                            ]
+                        },
+                        {
                             "type": "value",
-                            "ref": "option[shuffle_individual_ocarina_notes]"
+                            "ref": "calculated[has_all_notes_for_song(warp_shadow)]"
                         }
-                    },
-                    {
-                        "type": "value",
-                        "ref": "calculated[has_all_notes_for_song(warp_shadow)]"
-                    }
-                ]
-            }
-        ]
-    },
-    "function[can_play](item[warp_spirit])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "mixin[can_play_ocarina]"
-            },
-            {
-                "type": "value",
-                "ref": "item[warp_spirit]"
-            },
-            {
-                "type": "or",
-                "content": [
-                    {
-                        "type": "not",
-                        "content": {
+                    ]
+                },
+                {
+                    "type": "and",
+                    "content": [
+                        {
+                            "type": "eq",
+                            "content": [
+                                {
+                                    "type": "param",
+                                    "ref": "song"
+                                },
+                                {
+                                    "type": "string",
+                                    "value": "item[warp_spirit]"
+                                }
+                            ]
+                        },
+                        {
                             "type": "value",
-                            "ref": "option[shuffle_individual_ocarina_notes]"
+                            "ref": "calculated[has_all_notes_for_song(warp_spirit)]"
                         }
-                    },
-                    {
-                        "type": "value",
-                        "ref": "calculated[has_all_notes_for_song(warp_spirit)]"
-                    }
-                ]
-            }
-        ]
-    },
-    "function[can_play](item[warp_light])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "mixin[can_play_ocarina]"
-            },
-            {
-                "type": "value",
-                "ref": "item[warp_light]"
-            },
-            {
-                "type": "or",
-                "content": [
-                    {
-                        "type": "not",
-                        "content": {
+                    ]
+                },
+                {
+                    "type": "and",
+                    "content": [
+                        {
+                            "type": "eq",
+                            "content": [
+                                {
+                                    "type": "param",
+                                    "ref": "song"
+                                },
+                                {
+                                    "type": "string",
+                                    "value": "item[warp_light]"
+                                }
+                            ]
+                        },
+                        {
                             "type": "value",
-                            "ref": "option[shuffle_individual_ocarina_notes]"
+                            "ref": "calculated[has_all_notes_for_song(warp_light)]"
                         }
-                    },
-                    {
-                        "type": "value",
-                        "ref": "calculated[has_all_notes_for_song(warp_light)]"
-                    }
-                ]
-            }
-        ]
-    },
-    /* extra songs */
-    "function[can_play](item[song_scarecrow])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "mixin[can_play_ocarina]"
-            },
-            {
-                "type": "or",
-                "content": [
-                    {
-                        "type": "value",
-                        "ref": "item[song_scarecrow]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "option[free_scarecrow]"
-                    }
-                ]
-            },
-            {
-                "type": "or",
-                "content": [
-                    {
-                        "type": "not",
-                        "content": {
+                    ]
+                },
+                {
+                    "type": "and",
+                    "content": [
+                        {
+                            "type": "eq",
+                            "content": [
+                                {
+                                    "type": "param",
+                                    "ref": "song"
+                                },
+                                {
+                                    "type": "string",
+                                    "value": "item[song_scarecrow]"
+                                }
+                            ]
+                        },
+                        {
                             "type": "value",
-                            "ref": "option[shuffle_individual_ocarina_notes]"
+                            "ref": "calculated[has_all_notes_for_song(song_scarecrow)]"
                         }
-                    },
-                    {
-                        "type": "value",
-                        "ref": "calculated[has_all_notes_for_song(song_scarecrow)]"
-                    }
-                ]
-            }
-        ]
-    },
-    "function[has_all_notes_for_song](item[song_scarecrow])": {
-        "type": "value",
-        "ref": "calculated[has_all_notes_for_song(song_scarecrow)]"
+                    ]
+                }
+            ]
+        }
     },
     /* projectile check */
     "function[has_projectile](child)": {
