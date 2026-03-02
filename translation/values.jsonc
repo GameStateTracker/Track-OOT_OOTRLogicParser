@@ -212,7 +212,7 @@
     },
     "Deku_Tree_Clear": {
         "type": "value",
-        "ref": "event[deku_tree_clear]"
+        "ref": "event[defeat_queen_gohma]"
     },
     "Water_Temple_Clear": {
         "type": "value",
