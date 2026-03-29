@@ -1,0 +1,19 @@
+{
+    "ClosedForestLeave.json": {
+        "event[showed_mido_sword_&_shield]": true,
+        "region[kf_outside_deku_tree]{child}": true,
+        "region[deku_tree_lobby]{child}": true,
+        "reach_location[baba_sticks]": true,
+        "reach_location[baba_nuts]": true,
+        "region[deku_tree_basement]{child}": false,
+        "region[deku_tree_basement_back_room]{child}": false,
+        "region[deku_tree_basement_ledge]{child}": false,
+        "region[deku_tree_before_boss]{child}": false,
+        "region[queen_gohma_boss_room]{child}": true,
+        "event[deku_tree_clear]": true,
+        "region[lw_bridge_from_forest]{child}": false
+    },
+    "EponaTest.json": {
+        "region[gv_fortress_side]{adult}": false
+    }
+}

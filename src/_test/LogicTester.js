@@ -1,111 +1,158 @@
-// import fs from "fs";
-import path from "path";
-import JSONFile from "../utils/JSONFile.js";
+import LogicDataStorage from "../storage/logic/LogicDataStorage.js";
 import LogicGraph from "./LogicGraph.js";
 import "./NodeFactory.js";
+import augmentDungeonShortcuts from "./augment/AugmentDungeonShortcuts.js";
+import augmentReachEpona from "./augment/AugmentReachEpona.js";
+import augmentTotalHearts from "./augment/AugmentTotalHearts.js";
+import augmentZeldaLetter from "./augment/AugmentZeldaLetter.js";
+import augmentZoraLetter from "./augment/AugmentZoraLetter.js";
 
-const __dirname = path.resolve();
-const currentDir = path.join(__dirname, "src/_test/");
+const DEBUG_LVL = 1;
+const DEBUG_VALUES = [
+    false, true, "extended"
+];
 
-const LOGIC_PROCESSOR = new LogicGraph();
-const savestate = JSONFile.read(`${currentDir}/savestate.json`);
+const AUGMENTS = [
+    augmentDungeonShortcuts,
+    augmentReachEpona,
+    augmentTotalHearts,
+    augmentZeldaLetter,
+    augmentZoraLetter
+];
 
-/* LOGIC */
-function testChildLogic() {
-    LOGIC_PROCESSOR.set("option[starting_age]", "child");
-    return LOGIC_PROCESSOR.executeEdges();
-}
+export default class LogicTester {
 
-function testAdultLogic() {
-    LOGIC_PROCESSOR.set("option[starting_age]", "adult");
-    return LOGIC_PROCESSOR.executeEdges();
-}
+    #processor = new LogicGraph(DEBUG_VALUES[DEBUG_LVL]);
 
-export function testLogic(logic) {
-    LOGIC_PROCESSOR.load(logic);
-    LOGIC_PROCESSOR.setAll(savestate.data);
-    const edges = LOGIC_PROCESSOR.getEdges().map((e) => e.join(" => "));
-    const failed = new Set();
-    const success = new Set();
-    const successC = testChildLogic();
-    const successA = testAdultLogic();
-    for (const edge of edges) {
-        if (successC.has(edge) || successA.has(edge)) {
-            success.add(edge);
-        } else {
-            failed.add(edge);
-        }
+    #processorProxy = new ProcessorProxy(this.#processor);
+
+    #presetData;
+
+    constructor(logic, presetData = {}) {
+        this.#processor.load(logic);
+        this.#presetData = presetData;
+        // load collectibles
+        this.#processor.setCollectible("reach_location[master_sword]", "flag[time_travel]");
     }
-    // ----
-    // const failedObj = {};
-    // for (const edge of failed) {
-    //     const [region, location] = edge.split(" => ");
-    //     failedObj[edge] = logic.edges[region]?.[location] ?? "unknown";
-    // }
-    // const failedData = JSON.stringify(failedObj, null, 4);
-    // fs.writeFileSync(`${currentDir}/failed.json`, failedData);
-    // ----
-    return [success, failed];
-}
 
-export function filterLogic(logic) {
-    const [success] = testLogic(logic);
-    const res = {edges: {}, logic: logic.logic};
-    for (const name in logic.edges) {
-        const region = {};
-        const children = logic.edges[name];
-        for (const child in children) {
-            if (success.has(`${name} => ${child}`)) {
-                region[child] = logic.edges[name][child];
+    testCase(config) {
+        const {
+            state = {},
+            settings = {},
+            startNode = "region[root]",
+            targetNodes = []
+        } = config;
+
+        this.#processor.reset();
+        const data = this.#collectData(state, settings);
+        const dataStorage = new LogicDataStorage();
+        dataStorage.setData(data);
+
+        for (const augment of AUGMENTS) {
+            augment(dataStorage.restricted, this.#processorProxy);
+        }
+
+        this.#processor.setAll({
+            ...dataStorage.getAll(),
+            ...this.#presetData
+        });
+        this.#processor.traverse(startNode);
+
+        const res = {};
+        for (const node of targetNodes) {
+            res[node] = this.#processor.get(node);
+        }
+        return res;
+    }
+
+    #collectData(state, settings) {
+        const res = {};
+        const {
+            items,
+            locations,
+            options,
+            filter,
+            areaActiveLists,
+            exitBindings
+        } = state;
+
+        if (items != null) {
+            for (const [key, value] of Object.entries(items)) {
+                res[`item[${key}]`] = value;
             }
         }
-        if (Object.keys(region).length) {
-            res.edges[name] = region;
+
+        if (locations != null) {
+            for (const [key, value] of Object.entries(locations)) {
+                res[`location[${key}]`] = value;
+            }
         }
-    }
-    return res;
-}
 
-/* MIXINS */
-function testChildMixins() {
-    LOGIC_PROCESSOR.set("option[starting_age]", "child");
-    return LOGIC_PROCESSOR.executeMixins();
-}
-
-function testAdultMixins() {
-    LOGIC_PROCESSOR.set("option[starting_age]", "adult");
-    return LOGIC_PROCESSOR.executeMixins();
-}
-
-export function testMixins(logic) {
-    LOGIC_PROCESSOR.load(logic);
-    LOGIC_PROCESSOR.setAll(savestate.data);
-    const mixins = LOGIC_PROCESSOR.getMixins();
-    const failed = new Set();
-    const success = new Set();
-    const successC = testChildMixins();
-    const successA = testAdultMixins();
-    for (const name of mixins) {
-        if (successC.has(name) || successA.has(name)) {
-            success.add(name);
-        } else {
-            failed.add(name);
+        if (options != null) {
+            for (const [key, value] of Object.entries(options)) {
+                res[`option[${key}]`] = value;
+            }
         }
-    }
-    return [success, failed];
-}
 
-export function filterMixins(logic) {
-    const [success, failed] = testMixins(logic);
-    //Possibly fixed this
-    //success.add('mixin.can_plant_bean[adult]')
-    //failed.delete('mixin.can_plant_bean[adult]')
-    const res = {edges: logic.edges, logic: {}};
-    for (const name in logic.logic) {
-        if (success.has(name)) {
-            res.logic[name] = logic.logic[name];
+        if (filter != null) {
+            for (const [key, value] of Object.entries(filter)) {
+                res[`filter[${key}]`] = value;
+            }
         }
+
+        if (areaActiveLists != null) {
+            for (const [key, value] of Object.entries(areaActiveLists)) {
+                res[`arealist[${key}]`] = value;
+            }
+        }
+
+        if (exitBindings != null) {
+            for (const [key, value] of Object.entries(exitBindings)) {
+                res[`exitBindings[${key}]`] = value;
+            }
+        }
+
+        if (settings != null) {
+            for (const [key, value] of Object.entries(settings)) {
+                res[`setting[${key}]`] = value;
+            }
+        }
+
+        return res;
     }
-    return [res, failed];
+
 }
 
+class ProcessorProxy {
+
+    #processor;
+
+    constructor(processor) {
+        this.#processor = processor;
+    }
+
+    addReachable(target) {
+        this.#processor.addReachable(target);
+    }
+
+    deleteReachable(target) {
+        this.#processor.deleteReachable(target);
+    }
+
+    clearReachables() {
+        this.#processor.clearReachables();
+    }
+
+    setCollectible(target, value) {
+        this.#processor.setCollectible(target, value);
+    }
+
+    deleteCollectible(target) {
+        this.#processor.deleteCollectible(target);
+    }
+
+    clearCollectibles() {
+        this.#processor.clearCollectibles();
+    }
+
+}

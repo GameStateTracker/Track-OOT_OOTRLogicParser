@@ -1,105 +1,126 @@
 const TRANSPILERS = {
     /* literals */
-    "true":     () => "1",
-    "false":    () => "0",
-    "string":   (logic) => escape(logic.content),
-    "number":   (logic) => toNumber(logic.content),
-    "value":    (logic) => `(val("${escape(logic.ref)}")||0)`,
-    "state":    (logic) => `(val("${escape(logic.ref)}")||"")=="${escape(logic.value)}"`,
+    "true":       () => "1",
+    "false":      () => "0",
+    "string":     (logic) => `${escapeString(logic.value)}`,
+    "number":     (logic) => `${escapeNumber(logic.value)}`,
+    "value":      (logic) => `(val(${escapeValue(logic.ref)})??0)`,
+    "state":      (logic) => `((val(${escapeValue(logic.ref)})??0)==${escapeValue(logic.value)})`,
+    "param":      (logic) => `(params[${escapeString(logic.ref)}]??0)`,
+    "paramvalue": (logic) => `(val(params[${escapeString(logic.ref)}]??"")??0)`,
 
     /* operators */
-    "and":      (logic) => `${multiElementOperation(logic.content, "&&")}`,
-    "nand":     (logic) => `!${multiElementOperation(logic.content, "&&")}`,
-    "or":       (logic) => `${multiElementOperation(logic.content, "||")}`,
-    "nor":      (logic) => `!${multiElementOperation(logic.content, "||")}`,
-    "not":      (logic) => `!(${buildLogic(logic.content)})`,
-    "xor":      (logic) => `${twoElementOperation(logic.content, "^") || 1}`,
-    "xnor":     (logic) => `!${twoElementOperation(logic.content, "^") || 1}`,
+    "and":        (logic) => `${multiElementOperation(logic.content, "&&")}`,
+    "nand":       (logic) => `!${multiElementOperation(logic.content, "&&")}`,
+    "or":         (logic) => `${multiElementOperation(logic.content, "||")}`,
+    "nor":        (logic) => `!${multiElementOperation(logic.content, "||")}`,
+    "not":        (logic) => `!(${buildLogic(logic.content)})`,
+    "xor":        (logic) => `${twoElementOperation(logic.content, "^") || 1}`,
+    "xnor":       (logic) => `!${twoElementOperation(logic.content, "^") || 1}`,
 
     /* restrictors */
-    "min":      (logic) => `(${buildLogic(logic.content)}>=${escape(logic.value, 0)})`,
-    "max":      (logic) => `(${buildLogic(logic.content)}<=${escape(logic.value, 0)})`,
+    "min":        (logic) => `(${buildLogic(logic.content)}>=${escapeNumber(logic.value)})`,
+    "max":        (logic) => `(${buildLogic(logic.content)}<=${escapeNumber(logic.value)})`,
 
     /* comparators */
-    "eq":       (logic) => twoElementOperation(logic.content, "=="),
-    "neq":      (logic) => twoElementOperation(logic.content, "!="),
-    "lt":       (logic) => twoElementOperation(logic.content, "<"),
-    "lte":      (logic) => twoElementOperation(logic.content, "<="),
-    "gt":       (logic) => twoElementOperation(logic.content, ">"),
-    "gte":      (logic) => twoElementOperation(logic.content, ">="),
+    "eq":         (logic) => twoElementOperation(logic.content, "=="),
+    "neq":        (logic) => twoElementOperation(logic.content, "!="),
+    "lt":         (logic) => twoElementOperation(logic.content, "<"),
+    "lte":        (logic) => twoElementOperation(logic.content, "<="),
+    "gt":         (logic) => twoElementOperation(logic.content, ">"),
+    "gte":        (logic) => twoElementOperation(logic.content, ">="),
 
     /* math */
-    "add":      (logic) => mathMultiElementOperation(logic.content, "+"),
-    "sub":      (logic) => mathMultiElementOperation(logic.content, "-"),
-    "mul":      (logic) => mathMultiElementOperation(logic.content, "*"),
-    "div":      (logic) => mathMultiElementOperation(logic.content, "/"),
-    "mod":      (logic) => mathMultiElementOperation(logic.content, "%"),
-    "pow":      (logic) => mathTwoElementOperation(logic.content, "**"),
+    "add":        (logic) => mathMultiElementOperation(logic.content, "+"),
+    "sub":        (logic) => mathMultiElementOperation(logic.content, "-"),
+    "mul":        (logic) => mathMultiElementOperation(logic.content, "*"),
+    "div":        (logic) => mathMultiElementOperation(logic.content, "/"),
+    "mod":        (logic) => mathMultiElementOperation(logic.content, "%"),
+    "pow":        (logic) => mathTwoElementOperation(logic.content, "**"),
 
     /* special */
-    "at":       (logic) => logic.content ? `((val("${escape(logic.node)}")||0)&&${buildLogic(logic.content)})` : `(val("${escape(logic.node)}")||0)`,
-    "mixin":    (logic) => `execute("${escape(logic.ref)}")`
+    "at":         (logic) => logic.content ? `((val(${escapeString(logic.node)})||0)&&${buildLogic(logic.content)})` : `(val(${escapeString(logic.node)})||0)`,
+    "mixin":      (logic) => `execute(${escapeString(logic.ref)})`,
+    "function":   (logic) => `execute(${escapeString(logic.ref)}${functionParams(logic.params)})`
 };
 
-let dependencies = null;
+const dependencies = new Set();
 
 /* STRINGS */
-function escape(str, def = "") {
-    if (typeof str != "string") {
-        if (typeof str == "number" && !isNaN(str)) {
+function escapeString(str) {
+    if (typeof str !== "string") {
+        if (typeof str === "number" && !isNaN(str)) {
+            return `"${str}"`;
+        }
+        return `""`;
+    }
+    const res = str.replace(/[\\"]/g, "\\$&");
+    return `"${res}"`;
+}
+
+/* VALUE */
+function escapeValue(str) {
+    if (typeof str !== "string") {
+        if (typeof str === "number") {
+            if (isNaN(str)) {
+                return 0;
+            }
             return str;
         }
-        return def;
+        return 0;
     }
     const res = str.replace(/[\\"]/g, "\\$&");
     dependencies.add(res);
-    return res;
+    return `"${res}"`;
 }
 
 /* ELEMENTS */
 function twoElementOperation(els, join) {
-    if (els.length == 0) {
-        return 0;
-    }
-    if (els.length == 1) {
-        return buildLogic(els[0]);
-    }
-    return `(${buildLogic(els[0])}${join}${buildLogic(els[1])})`;
+    return multiElementOperation(els.slice(0, 2), join);
 }
 
 function multiElementOperation(els, join) {
-    if (els.length == 0) {
+    if (els.length === 0) {
         return 0;
-    }
-    if (els.length == 1) {
-        return buildLogic(els[0]);
     }
     return `(${els.map(buildLogic).join(join)})`;
 }
 
 /* MATH */
+function escapeNumber(val) {
+    val = parseInt(val);
+    if (!isNaN(val)) {
+        return val;
+    }
+    return 0;
+}
+
 function toNumber(val) {
     return `(parseInt(${val})||0)`;
 }
 
 function mathTwoElementOperation(els, join) {
-    if (els.length == 0) {
-        return 0;
-    }
-    if (els.length == 1) {
-        return buildLogic(els[0]);
-    }
-    return toNumber(`${buildLogic(toNumber(els[0]))}${join}${buildLogic(toNumber(els[1]))}`);
+    return mathMultiElementOperation(els.slice(0, 2), join);
 }
 
 function mathMultiElementOperation(els, join) {
-    if (els.length == 0) {
+    if (els.length === 0) {
         return 0;
     }
-    if (els.length == 1) {
-        return buildLogic(els[0]);
+    return `${els.map(buildLogic).map(toNumber).join(join)}`;
+}
+
+/* FUNCTION PARAMS */
+function functionParams(params) {
+    if (!Array.isArray(params)) {
+        return ",[]";
     }
-    return toNumber(`${els.map(buildLogic).map(toNumber).join(join)}`);
+    const escapedParams = [];
+    for (const value of params) {
+        const buildValue = buildLogic(value);
+        escapedParams.push(buildValue);
+    }
+    return `,[${escapedParams.join(",")}]`;
 }
 
 /* INITIATOR */
@@ -113,16 +134,28 @@ function buildLogic(logic) {
     return 0;
 }
 
-class Compiler {
+function createParamString(params) {
+    if (!Array.isArray(params) || !params.length) {
+        return "params={}";
+    }
+    const result = [];
+    for (const name of params) {
+        result.push(`${name}:params[${result.length}]`);
+    }
+    return `params={${result.join(",")}}`;
+}
 
-    compile(logic) {
-        dependencies = new Set();
+class EdgeLogicCompiler {
+
+    compile(logic, params = []) {
+        dependencies.clear();
         const buf = buildLogic(logic);
-        const fn = new Function("val", "execute", `return ${buf}`);
+        const fn = new Function("val = () => false", "execute = () => false", "params = []", `${createParamString(params)};return ${buf}`);
         Object.defineProperty(fn, "requires", {value: dependencies});
+        Object.defineProperty(fn, "source", {value: logic});
         return fn;
     }
 
 }
 
-export default new Compiler;
+export default new EdgeLogicCompiler();

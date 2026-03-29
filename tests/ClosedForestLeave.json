@@ -1,0 +1,31 @@
+{
+    "state": {
+        "options": {
+            "starting_age": "child",
+            "doors_open_forest": "doors_open_forest_closed"
+        },
+        "items": {
+            "sword_kokiri": 1,
+            "shield_kokiri": 1,
+            "slingshot": 1
+        },
+        "areaActiveList": {
+            "deku": "v"
+        }
+    },
+    "startNode": "region[root]",
+    "targetNodes": [
+        "event[showed_mido_sword_&_shield]",
+        "region[kf_outside_deku_tree]{child}",
+        "region[deku_tree_lobby]{child}",
+        "reach_location[baba_sticks]",
+        "reach_location[baba_nuts]",
+        "region[deku_tree_basement]{child}",
+        "region[deku_tree_basement_back_room]{child}",
+        "region[deku_tree_basement_ledge]{child}",
+        "region[deku_tree_before_boss]{child}",
+        "region[queen_gohma_boss_room]{child}",
+        "event[deku_tree_clear]",
+        "region[lw_bridge_from_forest]{child}"
+    ]
+}

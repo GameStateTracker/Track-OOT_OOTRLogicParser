@@ -1,8 +1,6 @@
 import fs from "fs";
 import path from "path";
-import {
-    execSync
-} from "child_process";
+import {execSync} from "child_process";
 import JSONFile from "./utils/JSONFile.js";
 import Translation from "./utils/Translation.js";
 import HelperParser from "./parser/HelperParser.js";
@@ -11,15 +9,9 @@ import LogicGenerator from "./parser/LogicGenerator.js";
 import {
     filterLogic, filterMixins
 } from "./_test/LogicTester.js";
-import {
-    filterFailedMixins
-} from "./_test/RemoveBadLogic.js";
-import {
-    reduceLogic
-} from "./_test/LogicReducer.js";
-import {
-    gatewayData
-} from "./utils/overrides/GatewayLoader.js";
+import {filterFailedMixins} from "./_test/RemoveBadLogic.js";
+import {reduceLogic} from "./utils/LogicReducer.js";
+import {gatewayData} from "./utils/overrides/GatewayLoader.js";
 
 const __dirname = path.resolve();
 
@@ -39,9 +31,7 @@ const transRulesFile = path.join(__dirname, "/translation/predict_rules.json");
 
 if (!PARSE_OFFLINE) {
     if (fs.existsSync("./input")) {
-        fs.rmSync("./input", {
-            recursive: true
-        });
+        fs.rmSync("./input", {recursive: true});
     }
     execSync(`git clone --branch "${RANDO_VERSION}" "https://github.com/TestRunnerSRL/OoT-Randomizer.git" "input"`);
 }
@@ -51,9 +41,7 @@ if (!fs.existsSync("./input/data/World")) {
 }
 
 if (!fs.existsSync(outputDir)) {
-    fs.mkdirSync(outputDir, {
-        recursive: true
-    });
+    fs.mkdirSync(outputDir, {recursive: true});
 }
 
 // set translation rules

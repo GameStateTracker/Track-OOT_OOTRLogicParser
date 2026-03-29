@@ -1,0 +1,16 @@
+{
+    "state": {
+        "options": {
+            "starting_age": "adult",
+            "skip_epona_race": true
+        },
+        "items": {
+            "ocarina": 1,
+            "song_epona": 1
+        }
+    },
+    "startNode": "region[root]",
+    "targetNodes": [
+        "region[gv_fortress_side]{adult}"
+    ]
+}

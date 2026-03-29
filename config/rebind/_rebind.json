@@ -537,8 +537,12 @@
     "Deku Tree Before Boss": {
         "Queen Gohma Boss Room": "Deku Boss Gateway"
     },
+    "Deku Tree Boss Door": {
+        "Queen Gohma Boss Room": "Deku Boss Gateway"
+    },
     "Queen Gohma Boss Room": {
         "Deku Tree Before Boss": "Boss Deku Gateway",
+        "Deku Tree Boss Door": "Boss Deku Gateway",
         "KF Outside Deku Tree": ""
     },
     "Dodongos Cavern Before Boss": {
