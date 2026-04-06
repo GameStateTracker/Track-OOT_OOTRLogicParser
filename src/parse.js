@@ -12,6 +12,7 @@ import {
 import {filterFailedMixins} from "./_test/RemoveBadLogic.js";
 import {reduceLogic} from "./utils/LogicReducer.js";
 import {gatewayData} from "./utils/overrides/GatewayLoader.js";
+import testLogic from "./_test/testLogic.js";
 
 const __dirname = path.resolve();
 
@@ -109,6 +110,12 @@ function parseLogic() {
     /* minify */
     const minifiedLogicData = JSON.stringify(reducedLogic);
     fs.writeFileSync(`${outputDir}/vanilla.min.json`, minifiedLogicData);
+
+    /* test */
+    console.log("-- test logic --");
+    const testResults = testLogic(reducedLogic, {"$IS_AP_STATE": false});
+    const testResultsData = JSON.stringify(testResults, null, 4);
+    fs.writeFileSync(`test.vanilla.json`, testResultsData);
 }
 
 // parser for glitched logic
@@ -151,6 +158,12 @@ function parseGlitchedLogic() {
     /* minify */
     const minifiedLogicData = JSON.stringify(reducedLogic);
     fs.writeFileSync(`${outputDir}/glitched.min.json`, minifiedLogicData);
+
+    /* test */
+    console.log("-- test logic --");
+    const testResults = testLogic(reducedLogic, {"$IS_AP_STATE": false});
+    const testResultsData = JSON.stringify(testResults, null, 4);
+    fs.writeFileSync(`test.glitched.json`, testResultsData);
 }
 
 // --------------------------

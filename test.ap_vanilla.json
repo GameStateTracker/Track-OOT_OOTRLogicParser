@@ -1,19 +1,27 @@
 {
     "ClosedForestLeave.json": {
-        "event[showed_mido_sword_&_shield]": true,
-        "region[kf_outside_deku_tree]{child}": true,
-        "region[deku_tree_lobby]{child}": true,
-        "reach_location[baba_sticks]": true,
-        "reach_location[baba_nuts]": true,
-        "region[deku_tree_basement]{child}": true,
-        "region[deku_tree_basement_back_room]{child}": false,
-        "region[deku_tree_basement_ledge]{child}": false,
-        "region[deku_tree_before_boss]{child}": false,
-        "region[queen_gohma_boss_room]{child}": false,
-        "event[deku_tree_clear]": false,
-        "region[lw_bridge_from_forest]{child}": false
+        "reachable": {
+            "event[showed_mido_sword_&_shield]": true,
+            "region[kf_outside_deku_tree]{child}": true,
+            "region[deku_tree_lobby]{child}": true,
+            "reach_location[baba_sticks]": true,
+            "reach_location[baba_nuts]": true,
+            "region[deku_tree_basement]{child}": true,
+            "region[deku_tree_basement_back_room]{child}": true,
+            "region[deku_tree_basement_ledge]{child}": true,
+            "region[deku_tree_before_boss]{child}": true,
+            "region[queen_gohma_boss_room]{child}": true,
+            "event[defeat_queen_gohma]": true,
+            "region[kokiri_bridge_gateway:in]{child}": true,
+            "region[bridge_kokiri_gateway:out]{child}": true,
+            "region[lw_bridge_from_forest]{child}": true
+        },
+        "unreachable": {}
     },
     "EponaTest.json": {
-        "region[gv_fortress_side]{adult}": true
+        "reachable": {
+            "region[gv_fortress_side]{adult}": true
+        },
+        "unreachable": {}
     }
 }

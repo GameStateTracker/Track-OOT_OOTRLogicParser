@@ -7,7 +7,7 @@ import augmentTotalHearts from "./augment/AugmentTotalHearts.js";
 import augmentZeldaLetter from "./augment/AugmentZeldaLetter.js";
 import augmentZoraLetter from "./augment/AugmentZoraLetter.js";
 
-const DEBUG_LVL = 1;
+const DEBUG_LVL = 0;
 const DEBUG_VALUES = [
     false, true, "extended"
 ];
@@ -40,7 +40,8 @@ export default class LogicTester {
             state = {},
             settings = {},
             startNode = "region[root]",
-            targetNodes = []
+            reachableNodes = [],
+            unreachableNodes = []
         } = config;
 
         this.#processor.reset();
@@ -58,9 +59,15 @@ export default class LogicTester {
         });
         this.#processor.traverse(startNode);
 
-        const res = {};
-        for (const node of targetNodes) {
-            res[node] = this.#processor.get(node);
+        const res = {
+            reachable: {},
+            unreachable: {}
+        };
+        for (const node of reachableNodes) {
+            res.reachable[node] = this.#processor.get(node);
+        }
+        for (const node of unreachableNodes) {
+            res.unreachable[node] = !this.#processor.get(node);
         }
         return res;
     }

@@ -10,7 +10,7 @@
         }
     },
     "startNode": "region[root]",
-    "targetNodes": [
+    "reachableNodes": [
         "region[gv_fortress_side]{adult}"
     ]
 }

@@ -21,6 +21,10 @@ export function translateEventName(input) {
     if (input.startsWith("event[") && input.endsWith("]")) {
         return input;
     }
+    const result = Translation.translateEvent(input);
+    if (result) {
+        return result;
+    }
     return `event[${input.toLowerCase().replace(/ /g, "_")}]`;
 }
 

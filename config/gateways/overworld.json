@@ -185,7 +185,8 @@
         "region_name": "Bridge Kokiri Gateway",
         "exits": {
             "Kokiri Bridge Gateway": "True",
-            "LW Bridge From Forest": "True"
+            "LW Bridge From Forest": "True",
+            "LW Bridge": "True"
         }
     },
     {
