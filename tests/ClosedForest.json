@@ -1,0 +1,20 @@
+{
+    "state": {
+        "options": {
+            "starting_age": "child",
+            "doors_open_forest": "doors_open_forest_closed"
+        }
+    },
+    "startNode": "region[root]",
+    "reachableNodes": [
+        "region[kokiri_forest]{child}"
+    ],
+    "unreachableNodes": [
+        "region[kf_outside_deku_tree]{child}",
+        "region[lw_bridge]{child}",
+        "region[goron_city]{child}",
+        "region[zora_river]{child}",
+        "region[zora_river]{child}",
+        "region[hyrule_field]{child}"
+    ]
+}

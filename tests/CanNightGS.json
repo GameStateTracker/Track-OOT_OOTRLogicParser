@@ -1,0 +1,17 @@
+{
+    "state": {
+        "options": {
+            "starting_age": "child",
+            "doors_open_forest": "doors_open_forest_closed"
+        },
+        "items": {
+            "ocarina": 1,
+            "song_sun": 1,
+            "sword_kokiri": 1
+        }
+    },
+    "startNode": "region[root]",
+    "reachableNodes": [
+        "reach_location[kokiri.s_know_it_all_brothers_child_night]"
+    ]
+}

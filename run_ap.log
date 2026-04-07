@@ -11,7 +11,6 @@ exit: Desert Colossus
  [ 'True' ] 
 ---
 --- --- ---
-subRegions: Bridge Kokiri Gateway:Out: LW Bridge is new
 
 -------------------------------------------
 generate logic output
@@ -278,14 +277,22 @@ option[heart_count_bridge]
 states not converted
 
 -- test logic --
-[2026-04-06 20:25:19.373 - SYSTEM] LogicGraph • >> [1] >> GRAPH LOGIC EXECUTION
-[2026-04-06 20:25:19.401 - LOG  ] LogicGraph • logic calculation count
-[2026-04-06 20:25:19.401 - SYSTEM] LogicGraph • execution time: 23.66039999999998 ms
-[2026-04-06 20:25:19.401 - SYSTEM] LogicGraph • << [0] << GRAPH LOGIC EXECUTION
-[2026-04-06 20:25:19.403 - SYSTEM] LogicGraph • >> [1] >> GRAPH LOGIC EXECUTION
-[2026-04-06 20:25:19.426 - LOG  ] LogicGraph • logic calculation count
-[2026-04-06 20:25:19.426 - SYSTEM] LogicGraph • execution time: 22.74090000000001 ms
-[2026-04-06 20:25:19.426 - SYSTEM] LogicGraph • << [0] << GRAPH LOGIC EXECUTION
+[2026-04-07 18:58:37.137 - SYSTEM] LogicGraph • >> [1] >> GRAPH LOGIC EXECUTION
+[2026-04-07 18:58:37.162 - LOG  ] LogicGraph • logic calculation count
+[2026-04-07 18:58:37.162 - SYSTEM] LogicGraph • execution time: 23.176499999999578 ms
+[2026-04-07 18:58:37.163 - SYSTEM] LogicGraph • << [0] << GRAPH LOGIC EXECUTION
+[2026-04-07 18:58:37.164 - SYSTEM] LogicGraph • >> [1] >> GRAPH LOGIC EXECUTION
+[2026-04-07 18:58:37.167 - LOG  ] LogicGraph • logic calculation count
+[2026-04-07 18:58:37.167 - SYSTEM] LogicGraph • execution time: 3.4869999999991705 ms
+[2026-04-07 18:58:37.167 - SYSTEM] LogicGraph • << [0] << GRAPH LOGIC EXECUTION
+[2026-04-07 18:58:37.168 - SYSTEM] LogicGraph • >> [1] >> GRAPH LOGIC EXECUTION
+[2026-04-07 18:58:37.171 - LOG  ] LogicGraph • logic calculation count
+[2026-04-07 18:58:37.171 - SYSTEM] LogicGraph • execution time: 2.3825999999999112 ms
+[2026-04-07 18:58:37.171 - SYSTEM] LogicGraph • << [0] << GRAPH LOGIC EXECUTION
+[2026-04-07 18:58:37.172 - SYSTEM] LogicGraph • >> [1] >> GRAPH LOGIC EXECUTION
+[2026-04-07 18:58:37.181 - LOG  ] LogicGraph • logic calculation count
+[2026-04-07 18:58:37.181 - SYSTEM] LogicGraph • execution time: 8.938699999999699 ms
+[2026-04-07 18:58:37.181 - SYSTEM] LogicGraph • << [0] << GRAPH LOGIC EXECUTION
 
 ===========================================
 PARSE GLITCHED LOGIC
@@ -422,11 +429,19 @@ option[heart_count_bridge]
 states not converted
 
 -- test logic --
-[2026-04-06 20:25:19.747 - SYSTEM] LogicGraph • >> [1] >> GRAPH LOGIC EXECUTION
-[2026-04-06 20:25:19.767 - LOG  ] LogicGraph • logic calculation count
-[2026-04-06 20:25:19.767 - SYSTEM] LogicGraph • execution time: 20.105199999999968 ms
-[2026-04-06 20:25:19.767 - SYSTEM] LogicGraph • << [0] << GRAPH LOGIC EXECUTION
-[2026-04-06 20:25:19.770 - SYSTEM] LogicGraph • >> [1] >> GRAPH LOGIC EXECUTION
-[2026-04-06 20:25:19.784 - LOG  ] LogicGraph • logic calculation count
-[2026-04-06 20:25:19.785 - SYSTEM] LogicGraph • execution time: 14.728700000000117 ms
-[2026-04-06 20:25:19.785 - SYSTEM] LogicGraph • << [0] << GRAPH LOGIC EXECUTION
+[2026-04-07 18:58:37.410 - SYSTEM] LogicGraph • >> [1] >> GRAPH LOGIC EXECUTION
+[2026-04-07 18:58:37.419 - LOG  ] LogicGraph • logic calculation count
+[2026-04-07 18:58:37.419 - SYSTEM] LogicGraph • execution time: 9.03189999999995 ms
+[2026-04-07 18:58:37.419 - SYSTEM] LogicGraph • << [0] << GRAPH LOGIC EXECUTION
+[2026-04-07 18:58:37.420 - SYSTEM] LogicGraph • >> [1] >> GRAPH LOGIC EXECUTION
+[2026-04-07 18:58:37.422 - LOG  ] LogicGraph • logic calculation count
+[2026-04-07 18:58:37.422 - SYSTEM] LogicGraph • execution time: 1.4594000000006417 ms
+[2026-04-07 18:58:37.422 - SYSTEM] LogicGraph • << [0] << GRAPH LOGIC EXECUTION
+[2026-04-07 18:58:37.423 - SYSTEM] LogicGraph • >> [1] >> GRAPH LOGIC EXECUTION
+[2026-04-07 18:58:37.424 - LOG  ] LogicGraph • logic calculation count
+[2026-04-07 18:58:37.424 - SYSTEM] LogicGraph • execution time: 1.5038000000004104 ms
+[2026-04-07 18:58:37.424 - SYSTEM] LogicGraph • << [0] << GRAPH LOGIC EXECUTION
+[2026-04-07 18:58:37.425 - SYSTEM] LogicGraph • >> [1] >> GRAPH LOGIC EXECUTION
+[2026-04-07 18:58:37.433 - LOG  ] LogicGraph • logic calculation count
+[2026-04-07 18:58:37.433 - SYSTEM] LogicGraph • execution time: 7.80370000000039 ms
+[2026-04-07 18:58:37.433 - SYSTEM] LogicGraph • << [0] << GRAPH LOGIC EXECUTION

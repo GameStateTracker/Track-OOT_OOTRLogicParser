@@ -1,4 +1,28 @@
 {
+    "CanCallEpona.json": {
+        "reachable": {
+            "region[gv_fortress_side]{adult}": true
+        },
+        "unreachable": {}
+    },
+    "CanNightGS.json": {
+        "reachable": {
+            "reach_location[kokiri.s_know_it_all_brothers_child_night]": true
+        },
+        "unreachable": {}
+    },
+    "ClosedForest.json": {
+        "reachable": {
+            "region[kokiri_forest]{child}": true
+        },
+        "unreachable": {
+            "region[kf_outside_deku_tree]{child}": true,
+            "region[lw_bridge]{child}": true,
+            "region[goron_city]{child}": true,
+            "region[zora_river]{child}": true,
+            "region[hyrule_field]{child}": true
+        }
+    },
     "ClosedForestLeave.json": {
         "reachable": {
             "event[showed_mido_sword_&_shield]": true,
@@ -15,12 +39,6 @@
             "region[kokiri_bridge_gateway:in]{child}": true,
             "region[bridge_kokiri_gateway:out]{child}": true,
             "region[lw_bridge_from_forest]{child}": true
-        },
-        "unreachable": {}
-    },
-    "EponaTest.json": {
-        "reachable": {
-            "region[gv_fortress_side]{adult}": true
         },
         "unreachable": {}
     }

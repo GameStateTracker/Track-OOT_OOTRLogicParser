@@ -2449,7 +2449,7 @@
         },
         "Bridge Kokiri Gateway:Out": {
             "LW Bridge From Forest": false,
-            "LW Bridge": true
+            "LW Bridge": false
         },
         "Woods Kokiri Gateway:In": {
             "Kokiri Woods Gateway:Out": false
