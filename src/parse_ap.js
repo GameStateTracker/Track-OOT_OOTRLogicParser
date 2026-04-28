@@ -89,7 +89,7 @@ function parseLogic() {
 
     /* test */
     console.log("-- test logic --");
-    const testResults = testLogic(reducedLogic, {"$IS_AP_STATE": true});
+    const testResults = testLogic(reducedLogic, {"$IS_AP_STATE": true}, ["ap", "ap/vanilla"]);
     const testResultsData = JSON.stringify(testResults, null, 4);
     fs.writeFileSync(`test.ap_vanilla.json`, testResultsData);
 }
@@ -130,7 +130,7 @@ function parseGlitchedLogic() {
 
     /* test */
     console.log("-- test logic --");
-    const testResults = testLogic(reducedLogic, {"$IS_AP_STATE": true});
+    const testResults = testLogic(reducedLogic, {"$IS_AP_STATE": true}, ["ap", "ap/glitched"]);
     const testResultsData = JSON.stringify(testResults, null, 4);
     fs.writeFileSync(`test.ap_glitched.json`, testResultsData);
 }

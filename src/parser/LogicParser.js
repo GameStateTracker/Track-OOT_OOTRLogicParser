@@ -5,9 +5,7 @@ import RandTokenizer from "../utils/RandTokenizer.js";
 import LogicBuilder from "../utils/LogicBuilder.js";
 import LogicGenerator from "./LogicGenerator.js";
 import RegionCheck from "../utils/RegionCheck.js";
-import {
-    rebindData
-} from "../utils/overrides/RebindLoader.js";
+import {rebindData} from "../utils/overrides/RebindLoader.js";
 
 const __dirname = path.resolve();
 const customLogic  = path.join(__dirname, "/config/customLogic.json");

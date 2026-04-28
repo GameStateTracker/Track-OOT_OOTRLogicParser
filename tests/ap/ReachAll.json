@@ -1,7 +1,28 @@
 {
     "state": {
         "options": {
-            "starting_age": "child"
+            "starting_age": "child",
+            "skullsanity": true,
+            "scrubsanity": true,
+            "cowsanity": true,
+            "shopsanity": "4",
+            "beansanity": true,
+            "frogsanity": true,
+            "shuffle_expensive_merchants": true,
+            "shuffle_rupees_hearts": true,
+            "shuffle_pots": true,
+            "shuffle_empty_pots": true,
+            "shuffle_crates": true,
+            "shuffle_empty_crates": true,
+            "shuffle_beehives": true,
+            "shuffle_wonderitems": true,
+            "shuffle_100_skulltula_rupee": true,
+            "shuffle_gerudo_fortress_heart_piece": true,
+            "shuffle_child_trade": true,
+            "adult_trade_shuffle": true,
+            "shuffle_individual_ocarina_notes": true,
+            "shuffle_loach_reward": true,
+            "shuffle_silver_rupees": true
         },
         "items": {
             "medallion_forest": 1,
