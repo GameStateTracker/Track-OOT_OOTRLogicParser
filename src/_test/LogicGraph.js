@@ -1,13 +1,13 @@
 import NodeFactory from "./NodeFactory.js";
 import EdgeLogicCompiler from "./EdgeLogicCompiler.js";
 import UniqueQueue from "../utils/UniqueQueue.js";
-import Logger from "../utils/log/Logger.js";
+import JSONLog from "../utils/log/JSONLog.js";
 
 export default class LogicGraph {
 
     #debug = false;
 
-    #logger = new Logger(LogicGraph);
+    #logger = new JSONLog();
 
     #dirty = false;
 
@@ -27,6 +27,14 @@ export default class LogicGraph {
 
     constructor(debug = false) {
         this.#debug = debug;
+    }
+
+    getLog() {
+        return this.#logger.getLog();
+    }
+
+    clearLog() {
+        this.#logger.clear();
     }
 
     set debug(value) {

@@ -12,44 +12,42 @@ if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir);
 }
 
-function testLogic_OOTR_vanilla() {
-    const logic = JSONFile.read(`${inputDir}/vanilla.readable.json`);
-
-    console.log("\n\n-- test logic - OOTR Vanilla --");
-    const testResults = testLogic(logic, {"$IS_AP_STATE": false}, ["ootr", "ootr/vanilla"]);
-    const testResultsData = JSON.stringify(testResults, null, 4);
-    fs.writeFileSync(`${outputDir}/vanilla.json`, testResultsData);
+function runTestLogic(testName, logicFile, data, folders) {
+    console.log(`\n-- test logic - ${testName} --`);
+    const logic = JSONFile.read(logicFile);
+    const testResults = testLogic(logic, data, folders);
+    for (const pname in testResults) {
+        const folder = testResults[pname];
+        if (!fs.existsSync(`${outputDir}/${testName}/${pname}`)) {
+            fs.mkdirSync(`${outputDir}/${testName}/${pname}`, {recursive: true});
+        }
+        for (const fname in folder) {
+            const {
+                result, log
+            } = folder[fname];
+            const testResultsData = JSON.stringify(result, null, 4);
+            fs.writeFileSync(`${outputDir}/${testName}/${pname}/${fname}`, testResultsData);
+            fs.writeFileSync(`${outputDir}/${testName}/${pname}/${fname}.log`, log);
+        }
+    }
 }
 
-function testLogic_OOTR_glitched() {
-    const logic = JSONFile.read(`${inputDir}/glitched.readable.json`);
+const TESTS = [
+    () => {
+        runTestLogic("OOTR Vanilla", `${inputDir}/vanilla.readable.json`, {"$IS_AP_STATE": false}, ["ootr", "ootr/vanilla"]);
+    },
+    () => {
+        runTestLogic("OOTR Glitched", `${inputDir}/glitched.readable.json`, {"$IS_AP_STATE": false}, ["ootr", "ootr/glitched"]);
+    },
+    () => {
+        runTestLogic("AP Vanilla", `${inputDir}/ap_vanilla.readable.json`, {"$IS_AP_STATE": true}, ["ap", "ap/vanilla"]);
+    },
+    () => {
+        runTestLogic("AP Glitched", `${inputDir}/ap_glitched.readable.json`, {"$IS_AP_STATE": true}, ["ap", "ap/glitched"]);
+    }
+];
 
-    console.log("\n\n-- test logic - OOTR Glitched --");
-    const testResults = testLogic(logic, {"$IS_AP_STATE": false}, ["ootr", "ootr/glitched"]);
-    const testResultsData = JSON.stringify(testResults, null, 4);
-    fs.writeFileSync(`${outputDir}/glitched.json`, testResultsData);
+for (const test of TESTS) {
+    test();
 }
-
-function testLogic_AP_vanilla() {
-    const logic = JSONFile.read(`${inputDir}/ap_vanilla.readable.json`);
-
-    console.log("\n\n-- test logic - AP Vanilla --");
-    const testResults = testLogic(logic, {"$IS_AP_STATE": true}, ["ap", "ap/vanilla"]);
-    const testResultsData = JSON.stringify(testResults, null, 4);
-    fs.writeFileSync(`${outputDir}/ap_vanilla.json`, testResultsData);
-}
-
-function testLogic_AP_glitched() {
-    const logic = JSONFile.read(`${inputDir}/ap_glitched.readable.json`);
-
-    console.log("\n\n-- test logic - AP Glitched --");
-    const testResults = testLogic(logic, {"$IS_AP_STATE": true}, ["ap", "ap/glitched"]);
-    const testResultsData = JSON.stringify(testResults, null, 4);
-    fs.writeFileSync(`${outputDir}/ap_glitched.json`, testResultsData);
-}
-
-testLogic_OOTR_vanilla();
-testLogic_OOTR_glitched();
-testLogic_AP_vanilla();
-testLogic_AP_glitched();
 

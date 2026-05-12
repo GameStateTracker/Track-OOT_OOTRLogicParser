@@ -7,7 +7,7 @@ import augmentTotalHearts from "./augment/AugmentTotalHearts.js";
 import augmentZeldaLetter from "./augment/AugmentZeldaLetter.js";
 import augmentZoraLetter from "./augment/AugmentZoraLetter.js";
 
-const DEBUG_LVL = 0;
+const DEBUG_LVL = 2;
 const DEBUG_VALUES = [
     false, true, "extended"
 ];
@@ -33,6 +33,14 @@ export default class LogicTester {
         this.#presetData = presetData;
         // load collectibles
         this.#processor.setCollectible("reach_location[master_sword]", "flag[time_travel]");
+    }
+
+    getLog() {
+        return this.#processor.getLog();
+    }
+
+    clearLog() {
+        this.#processor.clearLog();
     }
 
     testCase(config) {

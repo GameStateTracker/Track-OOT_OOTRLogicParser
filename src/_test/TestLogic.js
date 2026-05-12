@@ -10,16 +10,18 @@ const testDir = path.join(__dirname, testDirName);
 const optionsFile = path.join(testDir, "/_config/options.json");
 const defaultOptions = JSONFile.read(optionsFile);
 
-export default function testLogic(logic, data, folders = []) {
+export default function testLogic(logic, data = {}, folders = []) {
     const res = {};
     const tester = new LogicTester(logic, {
         ...defaultOptions,
         ...data
     });
-    res[testDirName] = runTests(tester, testDir);
+    console.log(tester.getLog());
+    tester.clearLog();
+    res["."] = runTests(tester, testDir);
     for (const folder of folders) {
         const folderName = path.join(testDir, folder);
-        res[`${testDirName}/${folder}`] = runTests(tester, folderName);
+        res[folder] = runTests(tester, folderName);
     }
     return res;
 }
@@ -32,9 +34,13 @@ function runTests(tester, folderName) {
             const fileName = path.join(folderName, file);
             const fileStat = fs.lstatSync(fileName);
             if  (fileStat.isFile()) {
-                console.log(`\n-> test case - ${fileName}`);
+                console.log(`-> test case - ${fileName}`);
                 const config = JSONFile.read(fileName);
-                res[file] = tester.testCase(config);
+                res[file] = {
+                    result: tester.testCase(config),
+                    log: tester.getLog()
+                };
+                tester.clearLog();
             }
         }
     }
