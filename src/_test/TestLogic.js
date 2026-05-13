@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import JSONFile from "../utils/JSONFile.js";
 import LogicTester from "./LogicTester.js";
+import {generateHTMLog} from "../utils/log/HTMLog.js";
 
 const __dirname = path.resolve();
 const testDirName = "tests";
@@ -38,7 +39,7 @@ function runTests(tester, folderName) {
                 const config = JSONFile.read(fileName);
                 res[file] = {
                     result: tester.testCase(config),
-                    log: tester.getLog()
+                    log: generateHTMLog(file, tester.getLogData())
                 };
                 tester.clearLog();
             }

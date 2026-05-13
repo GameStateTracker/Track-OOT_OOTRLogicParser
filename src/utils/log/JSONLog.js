@@ -131,13 +131,25 @@ export default class JSONLog {
             message: [
                 label
             ],
-            children
+            children,
+            collapsed: false
         });
         this.#path.push(children);
     }
 
     groupCollapsed(label) {
-        this.group(label);
+        const time = new Date();
+        const children = [];
+        this.#needle.push({
+            type: LOG_LEVEL.GROUP,
+            time,
+            message: [
+                label
+            ],
+            children,
+            collapsed: true
+        });
+        this.#path.push(children);
     }
 
     groupEnd() {
@@ -145,11 +157,7 @@ export default class JSONLog {
     }
 
     getData() {
-        return JSON.parse(JSON.stringify(this.#data));
-    }
-
-    getJSON() {
-        return JSON.stringify(this.#data);
+        return this.#data;
     }
 
     getLog() {
@@ -160,6 +168,10 @@ export default class JSONLog {
         this.#data = [];
         this.#path = [];
         this.#timeKeepers.clear();
+    }
+
+    toJSON() {
+        return JSON.stringify(this.#data);
     }
 
 }

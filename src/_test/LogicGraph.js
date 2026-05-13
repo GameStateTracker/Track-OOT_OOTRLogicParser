@@ -29,6 +29,10 @@ export default class LogicGraph {
         this.#debug = debug;
     }
 
+    getLogData() {
+        return this.#logger.getData();
+    }
+
     getLog() {
         return this.#logger.getLog();
     }

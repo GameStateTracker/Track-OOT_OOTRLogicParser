@@ -27,7 +27,7 @@ function runTestLogic(testName, logicFile, data, folders) {
             } = folder[fname];
             const testResultsData = JSON.stringify(result, null, 4);
             fs.writeFileSync(`${outputDir}/${testName}/${pname}/${fname}`, testResultsData);
-            fs.writeFileSync(`${outputDir}/${testName}/${pname}/${fname}.log`, log);
+            fs.writeFileSync(`${outputDir}/${testName}/${pname}/${fname}.html`, log);
         }
     }
 }

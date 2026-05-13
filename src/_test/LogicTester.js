@@ -35,6 +35,10 @@ export default class LogicTester {
         this.#processor.setCollectible("reach_location[master_sword]", "flag[time_travel]");
     }
 
+    getLogData() {
+        return this.#processor.getLogData();
+    }
+
     getLog() {
         return this.#processor.getLog();
     }
