@@ -1,7 +1,7 @@
 import LogicCaller from "/GameTrackerJS/util/logic/LogicCaller.js";
 import DungeonstateResource from "/script/resource/DungeonstateResource.js";
 import "./AugmentOptions.js";
-import KEY_LOCATION_INDEX from "./AugmentDungeonState.js.json" assert {type: "json"};
+import KEY_LOCATION_INDEX from "./AugmentDungeonState.js.json" with {type: "json"};
 
 // ref: ItemPool.py -> world.settings.shuffle_smallkeys
 

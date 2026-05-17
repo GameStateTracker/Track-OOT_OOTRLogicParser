@@ -31,9 +31,7 @@ export function immute(data) {
         if (Array.isArray(data)) {
             const res = data.map(immute);
             const proxy = new Proxy(res, HANDLER);
-            Object.defineProperty(res, TYPE_TAG, {
-                value: true
-            });
+            Object.defineProperty(res, TYPE_TAG, {value: true});
             return proxy;
         }
         if (data.constructor == Object) {
@@ -43,9 +41,7 @@ export function immute(data) {
                 res[key] = immute(value);
             }
             const proxy = new Proxy(res, HANDLER);
-            Object.defineProperty(res, TYPE_TAG, {
-                value: true
-            });
+            Object.defineProperty(res, TYPE_TAG, {value: true});
             return proxy;
         }
     }

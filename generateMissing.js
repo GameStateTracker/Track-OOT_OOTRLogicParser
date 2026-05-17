@@ -56,9 +56,7 @@ for (const entry of Object.values(chests)) {
                 "day": true,
                 "night": true
             },
-            "chests": {
-                "false": false
-            },
+            "chests": {"false": false},
             "show_done": {
                 "false": {
                     "type": "not",
@@ -97,9 +95,7 @@ for (const entry of Object.values(shops)) {
                 "day": true,
                 "night": true
             },
-            "chests": {
-                "false": false
-            },
+            "chests": {"false": false},
             "show_done": {
                 "false": {
                     "type": "not",
@@ -129,9 +125,7 @@ for (const entry of Object.values(trade)) {
                 "day": true,
                 "night": true
             },
-            "chests": {
-                "false": false
-            },
+            "chests": {"false": false},
             "show_done": {
                 "false": {
                     "type": "not",

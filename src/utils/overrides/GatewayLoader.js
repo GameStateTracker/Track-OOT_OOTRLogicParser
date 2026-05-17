@@ -1,9 +1,5 @@
-import {
-    immute
-} from "../Immutable.js";
-import {
-    loadArrayFolder
-} from "../fs/JSONFolderLoader.js";
+import {immute} from "../Immutable.js";
+import {loadArrayFolder} from "../fs/JSONFolderLoader.js";
 
 const data = loadArrayFolder("/config/gateways");
 

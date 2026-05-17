@@ -29,18 +29,22 @@ function calc(scope, input, age = "", region = "", basic = false) {
             return postCalculateFunction(scope, input, age, region, basic);
         }
         case "at": {
-            return createOnRegionLogic(`${translateRegionName(input.node)}{child}`,
+            return createOnRegionLogic(
+                `${translateRegionName(input.node)}{child}`,
                 postCalculate(scope, input.content, "child", region, basic),
                 `${translateRegionName(input.node)}{adult}`,
                 postCalculate(scope, input.content, "adult", region, basic),
-                basic);
+                basic
+            );
         }
         case "here": {
-            return createOnRegionLogic(`${translateRegionName(region)}{child}`,
+            return createOnRegionLogic(
+                `${translateRegionName(region)}{child}`,
                 postCalculate(scope, input.content, "child", region, basic),
                 `${translateRegionName(region)}{adult}`,
                 postCalculate(scope, input.content, "adult", region, basic),
-                basic);
+                basic
+            );
         }
         case "and":
         case "nand":
