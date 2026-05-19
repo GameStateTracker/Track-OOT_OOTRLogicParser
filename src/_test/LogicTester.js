@@ -51,24 +51,26 @@ export default class LogicTester {
         const {
             state = {},
             settings = {},
+            redirects = [],
             startNode = "region[root]",
             reachableNodes = [],
             unreachableNodes = []
         } = config;
 
         this.#processor.reset();
-        const data = this.#collectData(state, settings);
         const dataStorage = new LogicDataStorage();
+        const presetData = this.#collectData(this.#presetData);
+        dataStorage.setData(presetData);
+        const data = this.#collectData(state, settings);
         dataStorage.setData(data);
 
         for (const augment of AUGMENTS) {
             augment(dataStorage.restricted, this.#processorProxy);
         }
 
-        this.#processor.setAll({
-            ...dataStorage.getAll(),
-            ...this.#presetData
-        });
+        this.#processor.setAll(dataStorage.getAll());
+        this.#processor.setAllRedirects(redirects);
+
         this.#processor.traverse(startNode);
 
         const res = {

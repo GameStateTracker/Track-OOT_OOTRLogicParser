@@ -13,9 +13,16 @@ const defaultOptions = JSONFile.read(optionsFile);
 
 export default function testLogic(logic, data = {}, folders = []) {
     const res = {};
+    const {
+        options: stateOptions = {},
+        ...stateData
+    } = data;
     const tester = new LogicTester(logic, {
-        ...defaultOptions,
-        ...data
+        options: {
+            ...defaultOptions,
+            ...stateOptions
+        },
+        ...stateData
     });
     console.log(tester.getLog());
     tester.clearLog();

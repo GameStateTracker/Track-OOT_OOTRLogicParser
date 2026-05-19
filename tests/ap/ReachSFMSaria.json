@@ -1,0 +1,52 @@
+{
+    "state": {
+        "options": {
+            "starting_age": "child"
+        },
+        "items": {
+            "ocarina": 2,
+            "bombs": 3,
+            "song_storms": 1,
+            "sword_kokiri": 1,
+            "shield_kokiri": 1,
+            "boomerang": 1,
+            "slingshot": 3,
+            "nut_upgrade": 2,
+            "stick_upgrade": 2,
+            "stone_of_agony": 1,
+            "zeldas_letter": 1
+        }
+    },
+    "redirects": [
+        {
+            "source": "region[meadow_woods_gateway:in]",
+            "target": "region[woods_meadow_gateway:out]",
+            "reroute": ""
+        },
+        {
+            "source": "region[woods_meadow_gateway:in]",
+            "target": "region[meadow_woods_gateway:out]",
+            "reroute": ""
+        },
+        {
+            "source": "region[root]",
+            "target": "region[root]{child}",
+            "reroute": ""
+        },
+        {
+            "source": "region[root]",
+            "target": "region[root]{adult}",
+            "reroute": ""
+        }
+    ],
+    "startNode": "region[sfm_entryway]{child}",
+    "reachableNodes": [
+        "reach_location[woods.c_saria]",
+        "reach_location[woods.c_deku_salesman_meadow_grotto_1]",
+        "reach_location[woods.c_deku_salesman_meadow_grotto_2]",
+        "reach_location[woods.c_wolfos_grotto]"
+    ],
+    "unreachableNodes": [
+        "region[lost_woods]{child}"
+    ]
+}
