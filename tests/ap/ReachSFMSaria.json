@@ -19,13 +19,8 @@
     },
     "redirects": [
         {
-            "source": "region[meadow_woods_gateway:in]",
-            "target": "region[woods_meadow_gateway:out]",
-            "reroute": ""
-        },
-        {
-            "source": "region[woods_meadow_gateway:in]",
-            "target": "region[meadow_woods_gateway:out]",
+            "source": "region[meadow_woods_gateway:in]{child}",
+            "target": "region[woods_meadow_gateway:out]{child}",
             "reroute": ""
         },
         {

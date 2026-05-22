@@ -1,5 +1,3 @@
-import {escapeHTML} from "../EscapeHTML.js";
-
 const LOG_ENTRY_TPL = `
 <div class="container">
     <label class="content">
@@ -52,9 +50,8 @@ const LOG_ENTRY_STYLE = `
         }
 
         #message {
-            display: block;
+            display: flex;
             flex: 1;
-            white-space: pre;
         }
     }
 
@@ -125,6 +122,57 @@ const LOG_ENTRY_STYLE = `
 }
 `;
 
+const  LOG_VALUE_TPL = `
+<div id="container">
+</div>`;
+
+const LOG_VALUE_STYLE = `
+:host {
+    padding-left: 0.5em;
+}
+#container {
+    display: flex;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+ul[data-label]::before {
+    content: attr(data-label);
+}
+li {
+    color: #f5aef9;
+}
+li[data-label]::before {
+    margin-right: 0.5em;
+    color: #70acf8;
+    content: attr(data-label);
+}
+.collapse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1em;
+    height: 1em;
+    margin: .1em .2em;
+    appearance: none;
+    color: inherit;
+    transform-origin: center;
+
+    &::after {
+        line-height: 1em;
+        content: "▶";
+    }
+    &:checked {
+        transform: rotate(90deg);
+    }
+}
+.collapse:not(:checked) + ul > li {
+    display: none;
+}
+`;
+
 const TPL = `
 <!doctype html>
 <html lang=en>
@@ -162,10 +210,10 @@ const TPL = `
         }
     </style>
     <script>
-        const TPL = document.createElement("template");
-        TPL.innerHTML = \`${LOG_ENTRY_TPL}\`;
-        const STYLE = new CSSStyleSheet;
-        STYLE.replaceSync(\`${LOG_ENTRY_STYLE}\`);
+        const ENTRY_TPL = document.createElement("template");
+        ENTRY_TPL.innerHTML = \`${LOG_ENTRY_TPL}\`;
+        const ENTRY_STYLE = new CSSStyleSheet;
+        ENTRY_STYLE.replaceSync(\`${LOG_ENTRY_STYLE}\`);
         class LogEntry extends HTMLElement {
             #collapseEl;
             #timeEl;
@@ -173,23 +221,23 @@ const TPL = `
             constructor() {
                 super();
                 this.attachShadow({ mode: "open" });
-                this.shadowRoot.append(document.importNode(TPL.content.cloneNode(true), true));
-                this.shadowRoot.adoptedStyleSheets = [STYLE];
+                this.shadowRoot.append(document.importNode(ENTRY_TPL.content.cloneNode(true), true));
+                this.shadowRoot.adoptedStyleSheets = [ENTRY_STYLE];
                 this.#collapseEl = this.shadowRoot.getElementById("collapse");
                 this.#timeEl = this.shadowRoot.getElementById("time");
                 this.#messageEl = this.shadowRoot.getElementById("message");
+            }
+            set type(value) {
+                this.setAttribute("type", value);
+            }
+            get type() {
+                return this.getAttribute("type");
             }
             set time(value) {
                 this.setAttribute("time", value);
             }
             get time() {
                 return this.getAttribute("time");
-            }
-            set message(value) {
-                this.setAttribute("message", value);
-            }
-            get message() {
-                return this.getAttribute("message");
             }
             set expanded(value) {
                 this.setAttribute("expanded", value);
@@ -198,54 +246,119 @@ const TPL = `
                 return this.getAttribute("expanded");
             }
             static get observedAttributes() {
-                return ["time", "message", "expanded"];
+                return ["time", "expanded"];
             }
             attributeChangedCallback(name, oldValue, newValue) {
                 if (name === "time") {
                     this.#timeEl.innerText = newValue ?? "";
-                } else if (name === "message") {
-                    this.#messageEl.innerHTML = newValue ?? "";
                 } else if (name === "expanded") {
-                    this.#collapseEl.setAttribute("checked", newValue && newValue !== "false");
+                    if (newValue && newValue !== "false") {
+                        this.#collapseEl.setAttribute("checked", "");
+                    } else {
+                        this.#collapseEl.removeAttribute("checked");
+                    }
                 }
+            }
+            addMessageValue(value) {
+                const valueEl = document.createElement("log-value");
+                valueEl.value = value;
+                this.#messageEl.append(valueEl);
             }
         }
         customElements.define("log-entry", LogEntry);
     </script>
+    <script>
+        const VALUE_TPL = document.createElement("template");
+        VALUE_TPL.innerHTML = \`${LOG_VALUE_TPL}\`;
+        const VALUE_STYLE = new CSSStyleSheet;
+        VALUE_STYLE.replaceSync(\`${LOG_VALUE_STYLE}\`);
+        class LogValue extends HTMLElement {
+            #containerEl;
+            constructor() {
+                super();
+                this.attachShadow({ mode: "open" });
+                this.shadowRoot.append(document.importNode(VALUE_TPL.content.cloneNode(true), true));
+                this.shadowRoot.adoptedStyleSheets = [VALUE_STYLE];
+                this.#containerEl = this.shadowRoot.getElementById("container");
+            }
+            set value(value) {
+                this.setAttribute("value", JSON.stringify(value));
+            }
+            get value() {
+                return JSON.parse(this.getAttribute("value"));
+            }
+            static get observedAttributes() {
+                return ["value"];
+            }
+            attributeChangedCallback(name, oldValue, newValue) {
+                if (name === "value") {
+                    this.#renderTree(this.value);
+                }
+            }
+            #renderTree(value, root = this.#containerEl) {
+                if (value == null) {
+                    const el = document.createElement("span");
+                    el.innerText = "null";
+                    root.append(el);
+                } else if (typeof value === "object") {
+                    const cbEl = document.createElement("input");
+                    cbEl.className = "collapse";
+                    cbEl.setAttribute("type", "checkbox");
+                    root.append(cbEl);
+                    const ulEl = document.createElement("ul");
+                    if (Array.isArray(value)) {
+                        ulEl.dataset.label = "(" + value.length + ") [...]";
+                    } else {
+                        ulEl.dataset.label = "{...}";
+                    }
+                    for (const i in value) {
+                        const liEl = document.createElement("li");
+                        liEl.dataset.label = i + ":";
+                        this.#renderTree(value[i], liEl);
+                        ulEl.append(liEl);
+                    }
+                    root.append(ulEl);
+                } else {
+                    const el = document.createElement("span");
+                    el.innerText = JSON.stringify(value);
+                    root.append(el);
+                }
+            }
+        }
+        customElements.define("log-value", LogValue);
+    </script>
+    <script type="module">
+        const TIME_FND = /(....)-(..)-(..)T(..:..:..\\....)Z/;
+        const TIME_REP = "$1-$2-$3 $4";
+        const viewEl = document.getElementById("view");
+        const logData = $CONTENT;
+        function generateLog(data = logData, target = viewEl) {
+            for (const entry of data) {
+                const {
+                    type, time, message = [], children = [], collapsed
+                } = entry;
+                const logEntryEl = document.createElement("log-entry");
+                logEntryEl.type = type.toLowerCase();
+                logEntryEl.time = time.replace(TIME_FND, TIME_REP);
+                logEntryEl.expanded = !collapsed;
+                for (const msg of message) {
+                    logEntryEl.addMessageValue(msg);
+                }
+                generateLog(children, logEntryEl);
+                target.append(logEntryEl);
+            }
+        }
+        generateLog();
+    </script>
 </head>
 
 <body>
-    <div class="view">
-        $CONTENT
+    <div id="view">
     </div>
 </body>
 
 </html>`;
 
 export function generateHTMLog(name, data) {
-    return TPL.replace("$LOG_NAME", name).replace("$CONTENT", () => {
-        return data.map((entry) => formatMessage(entry)).join("\n");
-    });
-}
-
-const TIME_FND = /(....)-(..)-(..)T(..:..:..\....)Z/;
-const TIME_REP = "$1-$2-$3 $4";
-
-function formatMessage(data) {
-    const {
-        type, time, message, children = [], collapsed
-    } = data;
-    const timeString = time.toJSON().replace(TIME_FND, TIME_REP);
-    const typeString = `type="${type.toLowerCase()}"`;
-    const formattedMessage = `${message.map(formatContent).join(" ")}`;
-    const childString = children.length ? `\n${children.map((ch) => formatMessage(ch)).join("\n")}\n` : "";
-    return `<log-entry ${typeString} time="${timeString}" message="${formattedMessage}" ${collapsed ? "" : "expanded"}>${childString}</log-entry>`;
-}
-
-function formatContent(content) {
-    if (typeof content === "object") {
-        // TODO create DOM view for JSON objects
-        return escapeHTML(JSON.stringify(content, null, 4));
-    }
-    return escapeHTML(content.toString());
+    return TPL.replace("$LOG_NAME", name).replace("$CONTENT", JSON.stringify(data));
 }
