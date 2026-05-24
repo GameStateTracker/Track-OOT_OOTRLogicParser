@@ -1,0 +1,79 @@
+{
+    "state": {
+        "options": {
+            "starting_age": "adult",
+            "scrubsanity": true
+        },
+        "items": {
+            "ocarina": 2,
+            "bombs": 3,
+            "song_saria": 1,
+            "song_sun": 1,
+            "sword_master": 1,
+            "shield_hylia": 1,
+            "hookshot": 2,
+            "bow": 3,
+            "nut_upgrade": 2,
+            "stick_upgrade": 2,
+            "stone_of_agony": 1,
+            "bean": 10
+        }
+    },
+    "flags": {
+        "time_travel": 1
+    },
+    "close_off": [
+        {
+            "source": "region[woods_meadow_gateway:in]",
+            "target": "region[meadow_woods_gateway:out]"
+        },
+        {
+            "source": "region[woods_kokiri_gateway:in]",
+            "target": "region[kokiri_woods_gateway:out]"
+        },
+        {
+            "source": "region[woods_gc_gateway:in]",
+            "target": "region[gc_woods_gateway:out]"
+        },
+        {
+            "source": "region[woods_river_gateway:in]",
+            "target": "region[river_woods_gateway:out]"
+        },
+        {
+            "source": "region[lost_woods]",
+            "target": "region[lw_bridge]"
+        }
+    ],
+    "redirects": [
+        {
+            "source": "region[woods_near_shortcuts_grotto_gateway:in]{child}",
+            "target": "region[near_shortcuts_grotto_woods_gateway:out]{child}",
+            "reroute": ""
+        },
+        {
+            "source": "region[woods_scrubs_grotto_gateway:in]{child}",
+            "target": "region[scrubs_grotto_woods_gateway:out]{child}",
+            "reroute": ""
+        },
+        {
+            "source": "region[root]",
+            "target": "region[root]{child}",
+            "reroute": "region[lost_woods]{child}"
+        },
+        {
+            "source": "region[root]",
+            "target": "region[root]{adult}",
+            "reroute": "region[lost_woods]{adult}"
+        }
+    ],
+    "startNode": "region[root]",
+    "reachableNodes": [
+        "reach_location[woods.c_bomb_grotto]",
+        "reach_location[woods.c_deku_salesman_grotto]",
+        "reach_location[woods.c_deku_salesman_grotto_2]",
+        "reach_location[woods.s_deku_salesman_magic_bean_adult]",
+        "reach_location[woods.near_shortcuts_grotto_beehive_1]",
+        "reach_location[woods.near_shortcuts_grotto_beehive_2]",
+        "reach_location[woods.scrubs_grotto_beehive]"
+    ]
+}

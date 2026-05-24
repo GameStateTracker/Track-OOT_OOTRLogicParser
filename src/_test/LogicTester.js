@@ -50,7 +50,9 @@ export default class LogicTester {
     testCase(config) {
         const {
             state = {},
+            flags = {},
             settings = {},
+            close_off = [],
             redirects = [],
             startNode = "region[root]",
             reachableNodes = [],
@@ -58,6 +60,7 @@ export default class LogicTester {
         } = config;
 
         this.#processor.reset();
+        this.#processor.clearRedirects();
         const dataStorage = new LogicDataStorage();
         const presetData = this.#collectData(this.#presetData);
         dataStorage.setData(presetData);
@@ -69,7 +72,12 @@ export default class LogicTester {
         }
 
         this.#processor.setAll(dataStorage.getAll());
+        this.#processor.setAllRedirects(this.#collectClosedOff(close_off));
         this.#processor.setAllRedirects(redirects);
+
+        for (const [key, value] of Object.entries(flags)) {
+            this.#processor.set(`flag[${key}]`, value);
+        }
 
         this.#processor.traverse(startNode);
 
@@ -82,6 +90,27 @@ export default class LogicTester {
         }
         for (const node of unreachableNodes) {
             res.unreachable[node] = !this.#processor.get(node);
+        }
+        return res;
+    }
+
+    #collectClosedOff(close_off) {
+        const res = [];
+        for (const entry of close_off) {
+            const {
+                source,
+                target
+            } = entry;
+            res.push({
+                source: `${source}{child}`,
+                target: `${target}{child}`,
+                reroute: ""
+            });
+            res.push({
+                source: `${source}{adult}`,
+                target: `${target}{adult}`,
+                reroute: ""
+            });
         }
         return res;
     }

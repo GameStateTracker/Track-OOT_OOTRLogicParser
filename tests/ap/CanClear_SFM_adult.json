@@ -18,12 +18,13 @@
             "stone_of_agony": 1
         }
     },
-    "redirects": [
+    "close_off": [
         {
-            "source": "region[meadow_woods_gateway:in]{adult}",
-            "target": "region[woods_meadow_gateway:out]{adult}",
-            "reroute": ""
-        },
+            "source": "region[meadow_woods_gateway:in]",
+            "target": "region[woods_meadow_gateway:out]"
+        }
+    ],
+    "redirects": [
         {
             "source": "region[root]",
             "target": "region[root]{child}",
@@ -42,8 +43,5 @@
         "reach_location[woods.c_wolfos_grotto]",
         "reach_location[woods.c_warp]",
         "reach_location[woods.s_labyrinth_adult_night]"
-    ],
-    "unreachableNodes": [
-        "region[lost_woods]{adult}"
     ]
 }

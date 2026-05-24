@@ -10,7 +10,6 @@
             "song_storm": 1,
             "sword_kokiri": 1,
             "shield_kokiri": 1,
-            "boomerang": 1,
             "slingshot": 3,
             "nut_upgrade": 2,
             "stick_upgrade": 2,
@@ -18,12 +17,13 @@
             "zeldas_letter": 1
         }
     },
-    "redirects": [
+    "close_off": [
         {
-            "source": "region[meadow_woods_gateway:in]{child}",
-            "target": "region[woods_meadow_gateway:out]{child}",
-            "reroute": ""
-        },
+            "source": "region[meadow_woods_gateway:in]",
+            "target": "region[woods_meadow_gateway:out]"
+        }
+    ],
+    "redirects": [
         {
             "source": "region[root]",
             "target": "region[root]{child}",
@@ -41,8 +41,5 @@
         "reach_location[woods.c_deku_salesman_meadow_grotto_1]",
         "reach_location[woods.c_deku_salesman_meadow_grotto_2]",
         "reach_location[woods.c_wolfos_grotto]"
-    ],
-    "unreachableNodes": [
-        "region[lost_woods]{child}"
     ]
 }
