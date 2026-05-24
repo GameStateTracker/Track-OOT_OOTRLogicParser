@@ -141,9 +141,6 @@ ul {
 ul[data-label]::before {
     content: attr(data-label);
 }
-li {
-    color: #f5aef9;
-}
 li[data-label]::before {
     margin-right: 0.5em;
     color: #70acf8;
@@ -176,16 +173,16 @@ li[data-label]::before {
 }
 .primitive-value.type-number,
 .primitive-value.type-bigint {
-    color: #d1c5ff;
+    color: #c67bff;
 }
 .primitive-value.type-boolean {
-    color: #c5ffdf;
+    color: #10ecdd;
 }
 .primitive-value.type-symbol {
-    color: #c5d7ff;
+    color: #ecff8f;
 }
 .primitive-value.type-undefined {
-    color: #ffe4c5;
+    color: #fc941d;
 }
 li > .primitive-value.type-string::before,
 li > .primitive-value.type-string::after {
@@ -328,9 +325,9 @@ const TPL = `
                     root.append(cbEl);
                     const ulEl = document.createElement("ul");
                     if (Array.isArray(value)) {
-                        ulEl.dataset.label = "(" + value.length + ") [...]";
+                        ulEl.dataset.label = \`(\${value.length}) [\${value.length ? "..." : ""}]\`;
                     } else {
-                        ulEl.dataset.label = "{...}";
+                        ulEl.dataset.label = \`{\${Object.keys(value).length ? "..." : ""}}\`;
                     }
                     for (const i in value) {
                         const liEl = document.createElement("li");
