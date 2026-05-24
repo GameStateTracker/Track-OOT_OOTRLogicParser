@@ -1,12 +1,13 @@
 {
     "state": {
         "options": {
-            "starting_age": "child"
+            "starting_age": "child",
+            "scrubsanity": true
         },
         "items": {
             "ocarina": 2,
             "bombs": 3,
-            "song_storms": 1,
+            "song_storm": 1,
             "sword_kokiri": 1,
             "shield_kokiri": 1,
             "boomerang": 1,

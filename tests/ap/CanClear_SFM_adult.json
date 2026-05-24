@@ -1,0 +1,49 @@
+{
+    "state": {
+        "options": {
+            "starting_age": "adult",
+            "scrubsanity": true
+        },
+        "items": {
+            "ocarina": 2,
+            "bombs": 3,
+            "song_storm": 1,
+            "song_sun": 1,
+            "sword_master": 1,
+            "shield_hylia": 1,
+            "hookshot": 2,
+            "bow": 3,
+            "nut_upgrade": 2,
+            "stick_upgrade": 2,
+            "stone_of_agony": 1
+        }
+    },
+    "redirects": [
+        {
+            "source": "region[meadow_woods_gateway:in]{adult}",
+            "target": "region[woods_meadow_gateway:out]{adult}",
+            "reroute": ""
+        },
+        {
+            "source": "region[root]",
+            "target": "region[root]{child}",
+            "reroute": ""
+        },
+        {
+            "source": "region[root]",
+            "target": "region[root]{adult}",
+            "reroute": ""
+        }
+    ],
+    "startNode": "region[sfm_entryway]{adult}",
+    "reachableNodes": [
+        "reach_location[woods.c_deku_salesman_meadow_grotto_1]",
+        "reach_location[woods.c_deku_salesman_meadow_grotto_2]",
+        "reach_location[woods.c_wolfos_grotto]",
+        "reach_location[woods.c_warp]",
+        "reach_location[woods.s_labyrinth_adult_night]"
+    ],
+    "unreachableNodes": [
+        "region[lost_woods]{adult}"
+    ]
+}

@@ -171,6 +171,27 @@ li[data-label]::before {
 .collapse:not(:checked) + ul > li {
     display: none;
 }
+.primitive-value {
+    color: #ffffff;
+}
+.primitive-value.type-number,
+.primitive-value.type-bigint {
+    color: #d1c5ff;
+}
+.primitive-value.type-boolean {
+    color: #c5ffdf;
+}
+.primitive-value.type-symbol {
+    color: #c5d7ff;
+}
+.primitive-value.type-undefined {
+    color: #ffe4c5;
+}
+li > .primitive-value.type-string::before,
+li > .primitive-value.type-string::after {
+    width: 1em;
+    content: "'";
+}
 `;
 
 const TPL = `
@@ -320,7 +341,8 @@ const TPL = `
                     root.append(ulEl);
                 } else {
                     const el = document.createElement("span");
-                    el.innerText = JSON.stringify(value);
+                    el.className = \`primitive-value type-\${typeof value}\`;
+                    el.innerText = value.toString();
                     root.append(el);
                 }
             }
