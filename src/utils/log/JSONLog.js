@@ -1,3 +1,5 @@
+import AbstractLogger from "@emcjs/core/util/log/AbstractLogger.js";
+
 /* LOG LEVEL */
 const LOG_LEVEL = Object.freeze({
     TIME: "TIME",
@@ -33,7 +35,7 @@ function formatMessage(data, groupLevel = 0) {
     return result.join("\n");
 }
 
-export default class JSONLog {
+export default class JSONLog extends AbstractLogger {
 
     #data = [];
 

@@ -1,11 +1,11 @@
-import LogicDataStorage from "../storage/logic/LogicDataStorage.js";
-import LogicGraph from "./LogicGraph.js";
-import "./NodeFactory.js";
+import LogicGraph from "@emcjs/logic/processor/LogicGraph.js";
+import LogicDataStorage from "@emcjs/logic/data/LogicDataStorage.js";
 import augmentDungeonShortcuts from "./augment/AugmentDungeonShortcuts.js";
 import augmentReachEpona from "./augment/AugmentReachEpona.js";
 import augmentTotalHearts from "./augment/AugmentTotalHearts.js";
 import augmentZeldaLetter from "./augment/AugmentZeldaLetter.js";
 import augmentZoraLetter from "./augment/AugmentZoraLetter.js";
+import JSONLog from "../utils/log/JSONLog.js";
 
 const DEBUG_LVL = 2;
 const DEBUG_VALUES = [
@@ -22,6 +22,8 @@ const AUGMENTS = [
 
 export default class LogicTester {
 
+    #logger = new JSONLog();
+
     #processor = new LogicGraph(DEBUG_VALUES[DEBUG_LVL]);
 
     #processorProxy = new ProcessorProxy(this.#processor);
@@ -29,6 +31,7 @@ export default class LogicTester {
     #presetData;
 
     constructor(logic, presetData = {}) {
+        this.#processor.setLogger(this.#logger);
         this.#processor.load(logic);
         this.#presetData = presetData;
         // load collectibles
@@ -36,15 +39,15 @@ export default class LogicTester {
     }
 
     getLogData() {
-        return this.#processor.getLogData();
+        return this.#logger.getData();
     }
 
     getLog() {
-        return this.#processor.getLog();
+        return this.#logger.getLog();
     }
 
     clearLog() {
-        this.#processor.clearLog();
+        this.#logger.clear();
     }
 
     testCase(config) {

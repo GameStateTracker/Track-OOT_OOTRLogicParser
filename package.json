@@ -11,7 +11,10 @@
   "homepage": "https://bitbucket.org/zidargs/ootrlogicparser/src",
   "main": "parse.js",
   "type": "module",
-  "dependencies": {},
+  "dependencies": {
+    "@emcjs/core": "https://github.com/ZidArgs/emcJS-Core.git/#1.0.11",
+    "@emcjs/logic": "https://github.com/ZidArgs/emcJS-Logic.git/#0.1.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.28.5",
     "@babel/eslint-parser": "^7.28.5",
