@@ -276,27 +276,6 @@ option[heart_count_bridge]
 -------------------------------------------
 states not converted
 
--- test logic --
-[2026-04-07 19:39:10.329 - SYSTEM] LogicGraph • >> [1] >> GRAPH LOGIC EXECUTION
-[2026-04-07 19:39:10.346 - LOG  ] LogicGraph • logic calculation count
-[2026-04-07 19:39:10.346 - SYSTEM] LogicGraph • execution time: 14.619699999999966 ms
-[2026-04-07 19:39:10.346 - SYSTEM] LogicGraph • << [0] << GRAPH LOGIC EXECUTION
-[2026-04-07 19:39:10.347 - SYSTEM] LogicGraph • >> [1] >> GRAPH LOGIC EXECUTION
-[2026-04-07 19:39:10.351 - LOG  ] LogicGraph • logic calculation count
-[2026-04-07 19:39:10.351 - SYSTEM] LogicGraph • execution time: 3.158300000000054 ms
-[2026-04-07 19:39:10.351 - SYSTEM] LogicGraph • << [0] << GRAPH LOGIC EXECUTION
-[2026-04-07 19:39:10.352 - SYSTEM] LogicGraph • >> [1] >> GRAPH LOGIC EXECUTION
-[2026-04-07 19:39:10.354 - LOG  ] LogicGraph • logic calculation count
-[2026-04-07 19:39:10.354 - SYSTEM] LogicGraph • execution time: 2.2578000000000884 ms
-[2026-04-07 19:39:10.354 - SYSTEM] LogicGraph • << [0] << GRAPH LOGIC EXECUTION
-[2026-04-07 19:39:10.355 - SYSTEM] LogicGraph • >> [1] >> GRAPH LOGIC EXECUTION
-[2026-04-07 19:39:10.366 - LOG  ] LogicGraph • logic calculation count
-[2026-04-07 19:39:10.366 - SYSTEM] LogicGraph • execution time: 10.262100000000032 ms
-[2026-04-07 19:39:10.366 - SYSTEM] LogicGraph • << [0] << GRAPH LOGIC EXECUTION
-[2026-04-07 19:39:10.368 - SYSTEM] LogicGraph • >> [1] >> GRAPH LOGIC EXECUTION
-[2026-04-07 19:39:10.382 - LOG  ] LogicGraph • logic calculation count
-[2026-04-07 19:39:10.382 - SYSTEM] LogicGraph • execution time: 14.10489999999993 ms
-[2026-04-07 19:39:10.382 - SYSTEM] LogicGraph • << [0] << GRAPH LOGIC EXECUTION
 
 ===========================================
 PARSE GLITCHED LOGIC
@@ -432,24 +411,3 @@ option[heart_count_bridge]
 -------------------------------------------
 states not converted
 
--- test logic --
-[2026-04-07 19:39:10.634 - SYSTEM] LogicGraph • >> [1] >> GRAPH LOGIC EXECUTION
-[2026-04-07 19:39:10.644 - LOG  ] LogicGraph • logic calculation count
-[2026-04-07 19:39:10.644 - SYSTEM] LogicGraph • execution time: 10.449799999999982 ms
-[2026-04-07 19:39:10.644 - SYSTEM] LogicGraph • << [0] << GRAPH LOGIC EXECUTION
-[2026-04-07 19:39:10.645 - SYSTEM] LogicGraph • >> [1] >> GRAPH LOGIC EXECUTION
-[2026-04-07 19:39:10.647 - LOG  ] LogicGraph • logic calculation count
-[2026-04-07 19:39:10.647 - SYSTEM] LogicGraph • execution time: 1.310200000000009 ms
-[2026-04-07 19:39:10.647 - SYSTEM] LogicGraph • << [0] << GRAPH LOGIC EXECUTION
-[2026-04-07 19:39:10.648 - SYSTEM] LogicGraph • >> [1] >> GRAPH LOGIC EXECUTION
-[2026-04-07 19:39:10.649 - LOG  ] LogicGraph • logic calculation count
-[2026-04-07 19:39:10.649 - SYSTEM] LogicGraph • execution time: 1.4108999999999696 ms
-[2026-04-07 19:39:10.649 - SYSTEM] LogicGraph • << [0] << GRAPH LOGIC EXECUTION
-[2026-04-07 19:39:10.650 - SYSTEM] LogicGraph • >> [1] >> GRAPH LOGIC EXECUTION
-[2026-04-07 19:39:10.659 - LOG  ] LogicGraph • logic calculation count
-[2026-04-07 19:39:10.659 - SYSTEM] LogicGraph • execution time: 8.339699999999993 ms
-[2026-04-07 19:39:10.659 - SYSTEM] LogicGraph • << [0] << GRAPH LOGIC EXECUTION
-[2026-04-07 19:39:10.660 - SYSTEM] LogicGraph • >> [1] >> GRAPH LOGIC EXECUTION
-[2026-04-07 19:39:10.671 - LOG  ] LogicGraph • logic calculation count
-[2026-04-07 19:39:10.671 - SYSTEM] LogicGraph • execution time: 10.413499999999999 ms
-[2026-04-07 19:39:10.671 - SYSTEM] LogicGraph • << [0] << GRAPH LOGIC EXECUTION

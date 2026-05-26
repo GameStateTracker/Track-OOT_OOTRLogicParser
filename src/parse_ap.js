@@ -7,7 +7,6 @@ import LogicParser from "./parser/LogicParser.js";
 import LogicGenerator from "./parser/LogicGenerator.js";
 import {reduceLogic} from "./utils/LogicReducer.js";
 import {gatewayData} from "./utils/overrides/GatewayLoader.js";
-import testLogic from "./_test/testLogic.js";
 
 const __dirname = path.resolve();
 
@@ -86,12 +85,6 @@ function parseLogic() {
     /* minify */
     const minifiedLogicData = JSON.stringify(reducedLogic);
     fs.writeFileSync(`${outputDir}/ap_vanilla.min.json`, minifiedLogicData);
-
-    /* test */
-    console.log("-- test logic --");
-    const testResults = testLogic(reducedLogic, {"$IS_AP_STATE": true}, ["ap", "ap/vanilla"]);
-    const testResultsData = JSON.stringify(testResults, null, 4);
-    fs.writeFileSync(`test.ap_vanilla.json`, testResultsData);
 }
 
 // parser for glitched logic
@@ -127,12 +120,6 @@ function parseGlitchedLogic() {
     /* minify */
     const minifiedLogicData = JSON.stringify(reducedLogic);
     fs.writeFileSync(`${outputDir}/ap_glitched.min.json`, minifiedLogicData);
-
-    /* test */
-    console.log("-- test logic --");
-    const testResults = testLogic(reducedLogic, {"$IS_AP_STATE": true}, ["ap", "ap/glitched"]);
-    const testResultsData = JSON.stringify(testResults, null, 4);
-    fs.writeFileSync(`test.ap_glitched.json`, testResultsData);
 }
 
 // --------------------------

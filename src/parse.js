@@ -6,13 +6,8 @@ import Translation from "./utils/Translation.js";
 import HelperParser from "./parser/HelperParser.js";
 import LogicParser from "./parser/LogicParser.js";
 import LogicGenerator from "./parser/LogicGenerator.js";
-import {
-    filterLogic, filterMixins
-} from "./_test/LogicTester.js";
-import {filterFailedMixins} from "./_test/RemoveBadLogic.js";
 import {reduceLogic} from "./utils/LogicReducer.js";
 import {gatewayData} from "./utils/overrides/GatewayLoader.js";
-import testLogic from "./_test/testLogic.js";
 
 const __dirname = path.resolve();
 
@@ -20,7 +15,6 @@ const PARSE_OFFLINE = process.argv.indexOf("-offline") >= 0;
 
 /* SETTINGS */
 const RANDO_VERSION = "v9.0";
-const FILTER_LOGIC = false;
 /* -------- */
 
 const inHelperFile  = path.join(__dirname, "/input/data/LogicHelpers.json");
@@ -95,27 +89,14 @@ function parseLogic() {
     const logicData = JSON.stringify(logic, null, 4);
     fs.writeFileSync(`${outputDir}/vanilla.full.json`, logicData);
 
-    /* filter */
-    const [success, failed] = filterMixins(logic);
-    const filteredLogic = filterLogic(success);
-    const filtered = filterFailedMixins([filteredLogic, failed]);
-    const filteredData = JSON.stringify(filtered, null, 4);
-    fs.writeFileSync(`${outputDir}/vanilla.filtered.json`, filteredData);
-
     /* reduce */
-    const reducedLogic = reduceLogic(FILTER_LOGIC ? filtered : logic);
+    const reducedLogic = reduceLogic(logic);
     const reducedLogicData = JSON.stringify(reducedLogic, null, 4);
     fs.writeFileSync(`${outputDir}/vanilla.readable.json`, reducedLogicData);
 
     /* minify */
     const minifiedLogicData = JSON.stringify(reducedLogic);
     fs.writeFileSync(`${outputDir}/vanilla.min.json`, minifiedLogicData);
-
-    /* test */
-    console.log("-- test logic --");
-    const testResults = testLogic(reducedLogic, {"$IS_AP_STATE": false});
-    const testResultsData = JSON.stringify(testResults, null, 4);
-    fs.writeFileSync(`test.vanilla.json`, testResultsData);
 }
 
 // parser for glitched logic
@@ -143,27 +124,14 @@ function parseGlitchedLogic() {
     const logicData = JSON.stringify(logic, null, 4);
     fs.writeFileSync(`${outputDir}/glitched.full.json`, logicData);
 
-    /* filter */
-    const [success, failed] = filterMixins(logic);
-    const filteredLogic = filterLogic(success);
-    const filtered = filterFailedMixins([filteredLogic, failed]);
-    const filteredData = JSON.stringify(filtered, null, 4);
-    fs.writeFileSync(`${outputDir}/glitched.filtered.json`, filteredData);
-
     /* reduce */
-    const reducedLogic = reduceLogic(FILTER_LOGIC ? filtered : logic);
+    const reducedLogic = reduceLogic(logic);
     const reducedLogicData = JSON.stringify(reducedLogic, null, 4);
     fs.writeFileSync(`${outputDir}/glitched.readable.json`, reducedLogicData);
 
     /* minify */
     const minifiedLogicData = JSON.stringify(reducedLogic);
     fs.writeFileSync(`${outputDir}/glitched.min.json`, minifiedLogicData);
-
-    /* test */
-    console.log("-- test logic --");
-    const testResults = testLogic(reducedLogic, {"$IS_AP_STATE": false});
-    const testResultsData = JSON.stringify(testResults, null, 4);
-    fs.writeFileSync(`test.glitched.json`, testResultsData);
 }
 
 // --------------------------
