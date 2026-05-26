@@ -277,7 +277,7 @@
     },
     "Longshot": {
         "type": "value",
-        "ref": "mixin[longshot]"
+        "ref": "item[longshot]"
     },
     "Megaton_Hammer": {
         "type": "value",
@@ -288,7 +288,7 @@
         "ref": "item[hammer]"
     },
     "Sticks": {
-        "type": "value",
+        "type": "mixin",
         "ref": "mixin[sticks]"
     },
     "Buy_Deku_Stick_1": {
@@ -300,7 +300,7 @@
         "ref": "item[stick]"
     },
     "Nuts": {
-        "type": "value",
+        "type": "mixin",
         "ref": "mixin[nuts]"
     },
     "Buy_Deku_Nut_5": {
@@ -607,12 +607,12 @@
         "ref": "item[glove]"
     },
     "Silver_Gauntlets": {
-        "type": "mixin",
-        "ref": "mixin[silver_gauntlets]"
+        "type": "value",
+        "ref": "item[silver_gauntlets]"
     },
     "Golden_Gauntlets": {
-        "type": "mixin",
-        "ref": "mixin[golden_gauntlets]"
+        "type": "value",
+        "ref": "item[golden_gauntlets]"
     },
     "Progressive_Scale": {
         "type": "value",
@@ -948,7 +948,7 @@
         ]
     },
     "Bugs": {
-        "type": "value",
+        "type": "mixin",
         "ref": "mixin[bugs]"
     },
     "Buy_Bottle_Bug": {
@@ -956,7 +956,7 @@
         "ref": "item[bugs_1]"
     },
     "Fairy": {
-        "type": "value",
+        "type": "mixin",
         "ref": "mixin[fairy]"
     },
     "Buy_Fairys_Spirit": {
@@ -964,7 +964,7 @@
         "ref": "item[fairy_1]"
     },
     "Fish": {
-        "type": "value",
+        "type": "mixin",
         "ref": "mixin[fish]"
     },
     "Buy_Fish": {

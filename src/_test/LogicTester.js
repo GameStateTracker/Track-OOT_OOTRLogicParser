@@ -30,9 +30,13 @@ export default class LogicTester {
 
     #presetData;
 
-    constructor(logic, presetData = {}) {
+    constructor(logic, presetData = {}, valueAliases = {}) {
         this.#processor.setLogger(this.#logger);
         this.#processor.load(logic);
+        for (const key in valueAliases) {
+            const value = valueAliases[key];
+            this.#processor.setValueAlias(key, value);
+        }
         this.#presetData = presetData;
         // load collectibles
         this.#processor.setCollectible("reach_location[master_sword]", "flag[time_travel]");

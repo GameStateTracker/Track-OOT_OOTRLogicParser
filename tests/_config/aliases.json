@@ -1,0 +1,26 @@
+{
+    "item[longshot]": {
+        "type": "min",
+        "content": {
+            "type": "value",
+            "ref": "item[hookshot]"
+        },
+        "value": 2
+    },
+    "item[silver_gauntlets]": {
+        "type": "min",
+        "content": {
+            "type": "value",
+            "ref": "item[glove]"
+        },
+        "value": 2
+    },
+    "item[golden_gauntlets]": {
+        "type": "min",
+        "content": {
+            "type": "value",
+            "ref": "item[glove]"
+        },
+        "value": 3
+    }
+}

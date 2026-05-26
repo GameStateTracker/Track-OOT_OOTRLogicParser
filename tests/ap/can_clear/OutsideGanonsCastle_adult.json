@@ -1,0 +1,46 @@
+{
+    "state": {
+        "options": {
+            "starting_age": "adult"
+        },
+        "items": {
+            "ocarina": 2,
+            "song_zelda": 1,
+            "song_sun": 1,
+            "sword_master": 1,
+            "shield_hylia": 1,
+            "hookshot": 2,
+            "glove": 3
+        }
+    },
+    "flags": {
+        "time_travel": 1
+    },
+    "close_off": [
+        {
+            "source": "region[grounds_market_gateway:in]",
+            "target": "region[market_grounds_gateway:out]"
+        },
+        {
+            "source": "region[castle_grounds_ganons_castle_gateway:in]",
+            "target": "region[ganons_castle_castle_grounds_gateway:out]"
+        }
+    ],
+    "redirects": [
+        {
+            "source": "region[root]",
+            "target": "region[root]{child}",
+            "reroute": ""
+        },
+        {
+            "source": "region[root]",
+            "target": "region[root]{adult}",
+            "reroute": ""
+        }
+    ],
+    "startNode": "region[castle_grounds]{adult}",
+    "reachableNodes": [
+        "reach_location[castle_town.s_near_ganon_fairy_adult]",
+        "reach_location[castle_town.c_ganon_fairy]"
+    ]
+}

@@ -40,10 +40,10 @@ const TESTS = [
         runTestLogic("OOTR Glitched", `${inputDir}/glitched.readable.json`, {"$IS_AP_STATE": false}, ["ootr", "ootr/glitched"]);
     },
     () => {
-        runTestLogic("AP Vanilla", `${inputDir}/ap_vanilla.readable.json`, {"$IS_AP_STATE": true}, ["ap", "ap/vanilla"]);
+        runTestLogic("AP Vanilla", `${inputDir}/ap_vanilla.readable.json`, {"$IS_AP_STATE": true}, ["ap", "ap/can_clear", "ap/vanilla"]);
     },
     () => {
-        runTestLogic("AP Glitched", `${inputDir}/ap_glitched.readable.json`, {"$IS_AP_STATE": true}, ["ap", "ap/glitched"]);
+        runTestLogic("AP Glitched", `${inputDir}/ap_glitched.readable.json`, {"$IS_AP_STATE": true}, ["ap", "ap/can_clear", "ap/glitched"]);
     }
 ];
 
