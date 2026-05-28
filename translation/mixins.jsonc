@@ -169,8 +169,14 @@
         "type": "and",
         "content": [
             {
-                "type": "mixin",
-                "ref": "function[can_play](item[song_scarecrow])"
+                "type": "function",
+                "ref": "function[can_play]",
+                "params": [
+                    {
+                        "type": "string",
+                        "value": "item[song_scarecrow]"
+                    }
+                ]
             },
             {
                 "type": "value",
@@ -182,8 +188,14 @@
         "type": "and",
         "content": [
             {
-                "type": "mixin",
-                "ref": "function[can_play](item[song_scarecrow])"
+                "type": "function",
+                "ref": "function[can_play]",
+                "params": [
+                    {
+                        "type": "string",
+                        "value": "item[song_scarecrow]"
+                    }
+                ]
             },
             {
                 "type": "mixin",

@@ -1,21 +1,20 @@
 {
     "state": {
         "options": {
-            "starting_age": "adult",
-            "scrubsanity": true
+            "scrubsanity": true,
+            "starting_age": "child"
         },
         "items": {
-            "ocarina": 2,
             "bombs": 3,
-            "song_storm": 1,
-            "song_sun": 1,
-            "sword_master": 1,
-            "shield_hylia": 1,
-            "hookshot": 2,
-            "bow": 3,
             "nut_upgrade": 2,
+            "ocarina": 2,
+            "shield_kokiri": 1,
+            "slingshot": 3,
+            "song_storm": 1,
             "stick_upgrade": 2,
-            "stone_of_agony": 1
+            "stone_of_agony": 1,
+            "sword_kokiri": 1,
+            "zeldas_letter": 1
         }
     },
     "close_off": [
@@ -36,12 +35,11 @@
             "reroute": ""
         }
     ],
-    "startNode": "region[sfm_entryway]{adult}",
+    "startNode": "region[sfm_entryway]{child}",
     "reachableNodes": [
         "reach_location[woods.c_deku_salesman_meadow_grotto_1]",
         "reach_location[woods.c_deku_salesman_meadow_grotto_2]",
-        "reach_location[woods.c_wolfos_grotto]",
-        "reach_location[woods.c_warp]",
-        "reach_location[woods.s_labyrinth_adult_night]"
+        "reach_location[woods.c_saria]",
+        "reach_location[woods.c_wolfos_grotto]"
     ]
 }

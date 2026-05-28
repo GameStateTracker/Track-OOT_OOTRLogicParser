@@ -1,8 +1,8 @@
 {
     // additionals
-    "Gift from Sages": "sages_gift",
-    "Links Pocket": "links_pocket",
-    "ToT Reward from Rauru": "links_pocket",
+    "Gift from Sages": "hyrule.c_gift_from_sages",
+    "Links Pocket": "hyrule.c_gift_from_sages",
+    "ToT Reward from Rauru": "hyrule.c_gift_from_sages",
     "Fairy Pot": "fairy_pot",
     "Wall Fairy": "wall_fairy",
     "Stick Pot": "stick_pot",

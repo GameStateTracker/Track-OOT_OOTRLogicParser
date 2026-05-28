@@ -1,22 +1,22 @@
 {
     "state": {
         "options": {
-            "starting_age": "adult",
-            "scrubsanity": true
+            "scrubsanity": true,
+            "starting_age": "adult"
         },
         "items": {
-            "ocarina": 2,
+            "bean": 10,
             "bombs": 3,
+            "bow": 3,
+            "hookshot": 2,
+            "nut_upgrade": 2,
+            "ocarina": 2,
+            "shield_hylia": 1,
             "song_saria": 1,
             "song_sun": 1,
-            "sword_master": 1,
-            "shield_hylia": 1,
-            "hookshot": 2,
-            "bow": 3,
-            "nut_upgrade": 2,
             "stick_upgrade": 2,
             "stone_of_agony": 1,
-            "bean": 10
+            "sword_master": 1
         }
     },
     "flags": {
@@ -71,9 +71,9 @@
         "reach_location[woods.c_bomb_grotto]",
         "reach_location[woods.c_deku_salesman_grotto]",
         "reach_location[woods.c_deku_salesman_grotto_2]",
-        "reach_location[woods.s_deku_salesman_magic_bean_adult]",
         "reach_location[woods.near_shortcuts_grotto_beehive_1]",
         "reach_location[woods.near_shortcuts_grotto_beehive_2]",
+        "reach_location[woods.s_deku_salesman_magic_bean_adult]",
         "reach_location[woods.scrubs_grotto_beehive]"
     ]
 }

@@ -1,8 +1,8 @@
 {
     "state": {
         "options": {
-            "starting_age": "adult",
-            "skip_epona_race": true
+            "skip_epona_race": true,
+            "starting_age": "adult"
         },
         "items": {
             "ocarina": 1,

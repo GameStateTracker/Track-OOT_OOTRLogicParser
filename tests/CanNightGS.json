@@ -1,8 +1,8 @@
 {
     "state": {
         "options": {
-            "starting_age": "child",
-            "doors_open_forest": "doors_open_forest_closed"
+            "doors_open_forest": "doors_open_forest_closed",
+            "starting_age": "child"
         },
         "items": {
             "ocarina": 1,

@@ -1,0 +1,70 @@
+{
+    "state": {
+        "options": {
+            "starting_age": "child"
+        },
+        "items": {
+            "bombs": 3,
+            "boots_iron": 1,
+            "hammer": 1,
+            "hookshot": 2,
+            "ocarina": 2,
+            "song_zelda": 1,
+            "tunic_water": 1
+        }
+    },
+    "close_off": [
+        {
+            "source": "region[fountain_domain_gateway:in]",
+            "target": "region[domain_fountain_gateway:out]"
+        },
+        {
+            "source": "region[fountain_jabu_gateway:in]",
+            "target": "region[jabu_fountain_gateway:out]"
+        },
+        {
+            "source": "region[fountain_ice_cavern_gateway:in]",
+            "target": "region[ice_cavern_fountain_gateway:out]"
+        }
+    ],
+    "redirects": [
+        {
+            "source": "region[root]",
+            "target": "region[root]{child}",
+            "reroute": ""
+        },
+        {
+            "source": "region[root]",
+            "target": "region[root]{adult}",
+            "reroute": ""
+        }
+    ],
+    "startNode": "region[zoras_fountain]{adult}",
+    "reachableNodes": [
+        "reach_location[fountain.bottom_green_rupee_1]",
+        "reach_location[fountain.bottom_green_rupee_2]",
+        "reach_location[fountain.bottom_green_rupee_3]",
+        "reach_location[fountain.bottom_green_rupee_4]",
+        "reach_location[fountain.bottom_green_rupee_5]",
+        "reach_location[fountain.bottom_green_rupee_6]",
+        "reach_location[fountain.bottom_green_rupee_7]",
+        "reach_location[fountain.bottom_green_rupee_8]",
+        "reach_location[fountain.bottom_green_rupee_9]",
+        "reach_location[fountain.bottom_green_rupee_10]",
+        "reach_location[fountain.bottom_green_rupee_11]",
+        "reach_location[fountain.bottom_green_rupee_12]",
+        "reach_location[fountain.bottom_green_rupee_13]",
+        "reach_location[fountain.bottom_green_rupee_14]",
+        "reach_location[fountain.bottom_green_rupee_15]",
+        "reach_location[fountain.bottom_green_rupee_16]",
+        "reach_location[fountain.bottom_green_rupee_17]",
+        "reach_location[fountain.bottom_green_rupee_18]",
+        "reach_location[zoras.c_fairy]",
+        "reach_location[zoras.c_ice]",
+        "reach_location[zoras.c_underwater]",
+        "reach_location[zoras.hidden_cave_pot_1]",
+        "reach_location[zoras.hidden_cave_pot_2]",
+        "reach_location[zoras.hidden_cave_pot_3]",
+        "reach_location[zoras.s_fairy_hidden_cave_adult_night]"
+    ]
+}

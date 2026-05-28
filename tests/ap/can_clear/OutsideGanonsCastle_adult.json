@@ -4,13 +4,13 @@
             "starting_age": "adult"
         },
         "items": {
-            "ocarina": 2,
-            "song_zelda": 1,
-            "song_sun": 1,
-            "sword_master": 1,
-            "shield_hylia": 1,
+            "glove": 3,
             "hookshot": 2,
-            "glove": 3
+            "ocarina": 2,
+            "shield_hylia": 1,
+            "song_sun": 1,
+            "song_zelda": 1,
+            "sword_master": 1
         }
     },
     "flags": {
@@ -40,7 +40,7 @@
     ],
     "startNode": "region[castle_grounds]{adult}",
     "reachableNodes": [
-        "reach_location[castle_town.s_near_ganon_fairy_adult]",
-        "reach_location[castle_town.c_ganon_fairy]"
+        "reach_location[castle_town.c_ganon_fairy]",
+        "reach_location[castle_town.s_near_ganon_fairy_adult]"
     ]
 }

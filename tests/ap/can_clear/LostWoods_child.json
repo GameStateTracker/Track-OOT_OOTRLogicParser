@@ -1,25 +1,25 @@
 {
     "state": {
         "options": {
-            "starting_age": "child",
-            "scrubsanity": true
+            "scrubsanity": true,
+            "starting_age": "child"
         },
         "items": {
-            "ocarina": 2,
             "bombs": 3,
-            "song_storm": 1,
-            "song_saria": 1,
-            "sword_kokiri": 1,
-            "shield_kokiri": 1,
-            "slingshot": 3,
             "boomerang": 1,
-            "nut_upgrade": 2,
-            "stick_upgrade": 2,
-            "stone_of_agony": 1,
             "bottle": 4,
             "mask_skull": 1,
             "mask_truth": 1,
-            "scale": 2
+            "nut_upgrade": 2,
+            "ocarina": 2,
+            "scale": 2,
+            "shield_kokiri": 1,
+            "slingshot": 3,
+            "song_saria": 1,
+            "song_storm": 1,
+            "stick_upgrade": 2,
+            "stone_of_agony": 1,
+            "sword_kokiri": 1
         }
     },
     "close_off": [
@@ -58,19 +58,23 @@
     ],
     "startNode": "region[lost_woods]{child}",
     "reachableNodes": [
-        "reach_location[woods.c_skull_kid]",
-        "reach_location[woods.c_memory_game]",
-        "reach_location[woods.c_shooting]",
-        "reach_location[woods.c_deku_salesman]",
-        "reach_location[woods.s_deku_salesman_beanspot_child]",
-        "reach_location[woods.s_mask_theater_beanspot_child]",
-        "reach_location[woods.c_deku_salesman_theater_1]",
-        "reach_location[woods.c_deku_salesman_theater_2]",
         "reach_location[woods.c_bomb_grotto]",
-        "reach_location[woods.c_deku_theater_1]",
-        "reach_location[woods.c_deku_theater_2]",
+        "reach_location[woods.c_deku_salesman]",
         "reach_location[woods.c_deku_salesman_grotto]",
         "reach_location[woods.c_deku_salesman_grotto_2]",
+        "reach_location[woods.c_deku_salesman_theater_1]",
+        "reach_location[woods.c_deku_salesman_theater_2]",
+        "reach_location[woods.c_deku_theater_1]",
+        "reach_location[woods.c_deku_theater_2]",
+        "reach_location[woods.c_memory_game]",
+        "reach_location[woods.c_shooting]",
+        "reach_location[woods.c_skull_kid]",
+        "reach_location[woods.near_shortcuts_grotto_beehive_1]",
+        "reach_location[woods.near_shortcuts_grotto_beehive_2]",
+        "reach_location[woods.s_deku_salesman_beanspot_child]",
+        "reach_location[woods.s_mask_theater_beanspot_child]",
+        "reach_location[woods.scrubs_grotto_beehive]",
+        "reach_location[woods.under_boulder_blue_rupee]",
         "reach_location[woods.underwater_green_rupee_1]",
         "reach_location[woods.underwater_green_rupee_2]",
         "reach_location[woods.underwater_green_rupee_3]",
@@ -78,10 +82,6 @@
         "reach_location[woods.underwater_green_rupee_5]",
         "reach_location[woods.underwater_green_rupee_6]",
         "reach_location[woods.underwater_green_rupee_7]",
-        "reach_location[woods.under_boulder_blue_rupee]",
-        "reach_location[woods.underwater_shortcut_green_rupee]",
-        "reach_location[woods.near_shortcuts_grotto_beehive_1]",
-        "reach_location[woods.near_shortcuts_grotto_beehive_2]",
-        "reach_location[woods.scrubs_grotto_beehive]"
+        "reach_location[woods.underwater_shortcut_green_rupee]"
     ]
 }
