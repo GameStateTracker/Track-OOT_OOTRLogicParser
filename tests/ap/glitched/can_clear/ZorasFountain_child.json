@@ -1,0 +1,51 @@
+{
+    "state": {
+        "options": {
+            "starting_age": "child"
+        },
+        "items": {
+            "ocarina": 2,
+            "song_zelda": 1,
+            "bombs": 3,
+            "sword_kokiri": 1,
+            "shield_kokiri": 1,
+            "slingshot": 3,
+            "boomerang": 1,
+            "nut_upgrade": 2,
+            "stick_upgrade": 2,
+            "scale": 2
+        }
+    },
+    "close_off": [
+        {
+            "source": "region[fountain_domain_gateway:in]",
+            "target": "region[domain_fountain_gateway:out]"
+        },
+        {
+            "source": "region[fountain_jabu_gateway:in]",
+            "target": "region[jabu_fountain_gateway:out]"
+        },
+        {
+            "source": "region[fountain_ice_cavern_gateway:in]",
+            "target": "region[ice_cavern_fountain_gateway:out]"
+        }
+    ],
+    "redirects": [
+        {
+            "source": "region[root]",
+            "target": "region[root]{child}",
+            "reroute": ""
+        },
+        {
+            "source": "region[root]",
+            "target": "region[root]{adult}",
+            "reroute": ""
+        }
+    ],
+    "startNode": "region[zoras_fountain]{child}",
+    "reachableNodes": [
+        "reach_location[zoras.c_fairy]",
+        "reach_location[zoras.s_tree_child]",
+        "reach_location[zoras.s_wall_child_night]"
+    ]
+}

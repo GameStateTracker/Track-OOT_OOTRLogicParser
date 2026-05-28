@@ -45,12 +45,13 @@ function runTests(tester, folderName) {
             const fileName = path.join(folderName, file);
             const fileStat = fs.lstatSync(fileName);
             if  (fileStat.isFile()) {
-                console.log(`-> test case - ${fileName}`);
+                console.log(`➔  test case - ${fileName}`);
                 const config = JSONFile.read(fileName);
                 res[file] = {
                     result: tester.testCase(config),
                     log: generateHTMLog(file, tester.getLogData())
                 };
+                console.log(res[file].result.success ? "    ✔ success" : "    ❌ failed");
                 tester.clearLog();
             }
         }

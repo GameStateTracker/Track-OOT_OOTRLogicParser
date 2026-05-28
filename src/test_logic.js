@@ -16,6 +16,8 @@ function runTestLogic(testName, logicFile, data, folders) {
     console.log(`\n-- test logic - ${testName} --`);
     const logic = JSONFile.read(logicFile);
     const testResults = testLogic(logic, data, folders);
+    let success = 0;
+    let failed = 0;
     for (const pname in testResults) {
         const folder = testResults[pname];
         if (!fs.existsSync(`${outputDir}/${testName}/${pname}`)) {
@@ -25,11 +27,17 @@ function runTestLogic(testName, logicFile, data, folders) {
             const {
                 result, log
             } = folder[fname];
+            if (result.success) {
+                success++;
+            } else {
+                failed++;
+            }
             const testResultsData = JSON.stringify(result, null, 4);
             fs.writeFileSync(`${outputDir}/${testName}/${pname}/${fname}`, testResultsData);
             fs.writeFileSync(`${outputDir}/${testName}/${pname}/${fname}.html`, log);
         }
     }
+    console.log(`\n✔ success: ${success} | ❌ failed: ${failed}\n`);
 }
 
 const TESTS = [
@@ -40,10 +48,10 @@ const TESTS = [
         runTestLogic("OOTR Glitched", `${inputDir}/glitched.readable.json`, {"$IS_AP_STATE": false}, ["ootr", "ootr/glitched"]);
     },
     () => {
-        runTestLogic("AP Vanilla", `${inputDir}/ap_vanilla.readable.json`, {"$IS_AP_STATE": true}, ["ap", "ap/can_clear", "ap/vanilla"]);
+        runTestLogic("AP Vanilla", `${inputDir}/ap_vanilla.readable.json`, {"$IS_AP_STATE": true}, ["ap", "ap/vanilla", "ap/vanilla/can_clear"]);
     },
     () => {
-        runTestLogic("AP Glitched", `${inputDir}/ap_glitched.readable.json`, {"$IS_AP_STATE": true}, ["ap", "ap/can_clear", "ap/glitched"]);
+        runTestLogic("AP Glitched", `${inputDir}/ap_glitched.readable.json`, {"$IS_AP_STATE": true}, ["ap", "ap/glitched", "ap/glitched/can_clear"]);
     }
 ];
 

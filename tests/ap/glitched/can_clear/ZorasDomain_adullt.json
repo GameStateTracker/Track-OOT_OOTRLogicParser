@@ -1,0 +1,53 @@
+{
+    "state": {
+        "options": {
+            "blue_fire_arrows": true,
+            "starting_age": "adult"
+        },
+        "items": {
+            "arrow_ice": 1,
+            "bow": 3,
+            "hookshot": 2,
+            "magic_power": 2
+        }
+    },
+    "close_off": [
+        {
+            "source": "region[domain_river_gateway:in]",
+            "target": "region[river_domain_gateway:out]"
+        },
+        {
+            "source": "region[domain_lake_gateway:in]",
+            "target": "region[lake_domain_gateway:out]"
+        },
+        {
+            "source": "region[domain_fountain_gateway:in]",
+            "target": "region[fountain_domain_gateway:out]"
+        }
+    ],
+    "redirects": [
+        {
+            "source": "region[root]",
+            "target": "region[root]{child}",
+            "reroute": ""
+        },
+        {
+            "source": "region[root]",
+            "target": "region[root]{adult}",
+            "reroute": ""
+        }
+    ],
+    "startNode": "region[zoras_domain]{adult}",
+    "reachableNodes": [
+        "reach_location[zoras.c_king_zora]",
+        "reach_location[zoras.s_wall_ice_adult_night]",
+        "reach_location[zoras.zoras_shop_1]",
+        "reach_location[zoras.zoras_shop_2]",
+        "reach_location[zoras.zoras_shop_3]",
+        "reach_location[zoras.zoras_shop_4]",
+        "reach_location[zoras.zoras_shop_5]",
+        "reach_location[zoras.zoras_shop_6]",
+        "reach_location[zoras.zoras_shop_7]",
+        "reach_location[zoras.zoras_shop_8]"
+    ]
+}

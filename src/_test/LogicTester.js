@@ -89,14 +89,23 @@ export default class LogicTester {
         this.#processor.traverse(startNode);
 
         const res = {
+            success: true,
             reachable: {},
             unreachable: {}
         };
         for (const node of reachableNodes) {
-            res.reachable[node] = this.#processor.get(node);
+            const val = this.#processor.get(node);
+            if (!val) {
+                res.success = false;
+            }
+            res.reachable[node] = val;
         }
         for (const node of unreachableNodes) {
-            res.unreachable[node] = !this.#processor.get(node);
+            const val = !this.#processor.get(node);
+            if (!val) {
+                res.success = false;
+            }
+            res.unreachable[node] = val;
         }
         return res;
     }

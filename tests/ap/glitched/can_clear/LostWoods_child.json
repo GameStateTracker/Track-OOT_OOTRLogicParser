@@ -1,0 +1,75 @@
+{
+    "state": {
+        "options": {
+            "scrubsanity": true,
+            "starting_age": "child"
+        },
+        "items": {
+            "bombs": 3,
+            "boomerang": 1,
+            "bottle": 4,
+            "mask_skull": 1,
+            "mask_truth": 1,
+            "nut_upgrade": 2,
+            "ocarina": 2,
+            "scale": 2,
+            "shield_kokiri": 1,
+            "slingshot": 3,
+            "song_saria": 1,
+            "song_storm": 1,
+            "stick_upgrade": 2,
+            "stone_of_agony": 1,
+            "sword_kokiri": 1
+        }
+    },
+    "close_off": [
+        {
+            "source": "region[woods_meadow_gateway:in]",
+            "target": "region[meadow_woods_gateway:out]"
+        },
+        {
+            "source": "region[woods_kokiri_gateway:in]",
+            "target": "region[kokiri_woods_gateway:out]"
+        },
+        {
+            "source": "region[woods_gc_gateway:in]",
+            "target": "region[gc_woods_gateway:out]"
+        },
+        {
+            "source": "region[woods_river_gateway:in]",
+            "target": "region[river_woods_gateway:out]"
+        },
+        {
+            "source": "region[lost_woods]",
+            "target": "region[lw_bridge]"
+        }
+    ],
+    "redirects": [
+        {
+            "source": "region[root]",
+            "target": "region[root]{child}",
+            "reroute": ""
+        },
+        {
+            "source": "region[root]",
+            "target": "region[root]{adult}",
+            "reroute": ""
+        }
+    ],
+    "startNode": "region[lost_woods]{child}",
+    "reachableNodes": [
+        "reach_location[woods.c_bomb_grotto]",
+        "reach_location[woods.c_deku_salesman]",
+        "reach_location[woods.c_deku_salesman_grotto]",
+        "reach_location[woods.c_deku_salesman_grotto_2]",
+        "reach_location[woods.c_deku_salesman_theater_1]",
+        "reach_location[woods.c_deku_salesman_theater_2]",
+        "reach_location[woods.c_deku_theater_1]",
+        "reach_location[woods.c_deku_theater_2]",
+        "reach_location[woods.c_memory_game]",
+        "reach_location[woods.c_shooting]",
+        "reach_location[woods.c_skull_kid]",
+        "reach_location[woods.s_deku_salesman_beanspot_child]",
+        "reach_location[woods.s_mask_theater_beanspot_child]"
+    ]
+}

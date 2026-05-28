@@ -1,0 +1,55 @@
+{
+    "state": {
+        "options": {
+            "starting_age": "child"
+        },
+        "items": {
+            "boomerang": 1,
+            "nut_upgrade": 2,
+            "scale": 2,
+            "slingshot": 3,
+            "stick_upgrade": 2,
+            "zora_letter": 1
+        }
+    },
+    "close_off": [
+        {
+            "source": "region[domain_river_gateway:in]",
+            "target": "region[river_domain_gateway:out]"
+        },
+        {
+            "source": "region[domain_lake_gateway:in]",
+            "target": "region[lake_domain_gateway:out]"
+        },
+        {
+            "source": "region[domain_fountain_gateway:in]",
+            "target": "region[fountain_domain_gateway:out]"
+        }
+    ],
+    "redirects": [
+        {
+            "source": "region[root]",
+            "target": "region[root]{child}",
+            "reroute": ""
+        },
+        {
+            "source": "region[root]",
+            "target": "region[root]{adult}",
+            "reroute": ""
+        }
+    ],
+    "startNode": "region[zoras_domain]{child}",
+    "reachableNodes": [
+        "reach_location[zoras.c_deliver_letter]",
+        "reach_location[zoras.c_diving]",
+        "reach_location[zoras.c_torch]",
+        "reach_location[zoras.zoras_shop_1]",
+        "reach_location[zoras.zoras_shop_2]",
+        "reach_location[zoras.zoras_shop_3]",
+        "reach_location[zoras.zoras_shop_4]",
+        "reach_location[zoras.zoras_shop_5]",
+        "reach_location[zoras.zoras_shop_6]",
+        "reach_location[zoras.zoras_shop_7]",
+        "reach_location[zoras.zoras_shop_8]"
+    ]
+}
