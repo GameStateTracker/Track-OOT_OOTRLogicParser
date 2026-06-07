@@ -1,7 +1,6 @@
 {
     "state": {
         "options": {
-            "scrubsanity": true,
             "starting_age": "adult"
         },
         "items": {
@@ -37,35 +36,6 @@
     ],
     "startNode": "region[forest_temple_meadow_gateway:out]{adult}",
     "reachableNodes": [
-        "reach_location[forest_temple_mq.basement_pot_1]",
-        "reach_location[forest_temple_mq.basement_pot_2]",
-        "reach_location[forest_temple_mq.basement_pot_3]",
-        "reach_location[forest_temple_mq.basement_pot_4]",
-        "reach_location[forest_temple_mq.blue_poe_room_pot_1]",
-        "reach_location[forest_temple_mq.blue_poe_room_pot_2]",
-        "reach_location[forest_temple_mq.blue_poe_room_pot_3]",
-        "reach_location[forest_temple_mq.center_room_left_pot_1]",
-        "reach_location[forest_temple_mq.center_room_left_pot_2]",
-        "reach_location[forest_temple_mq.center_room_left_pot_3]",
-        "reach_location[forest_temple_mq.center_room_right_pot_1]",
-        "reach_location[forest_temple_mq.center_room_right_pot_2]",
-        "reach_location[forest_temple_mq.center_room_right_pot_3]",
-        "reach_location[forest_temple_mq.courtyard_recovery_heart_1]",
-        "reach_location[forest_temple_mq.courtyard_recovery_heart_2]",
-        "reach_location[forest_temple_mq.courtyard_recovery_heart_3]",
-        "reach_location[forest_temple_mq.frozen_eye_switch_room_small_wooden_crate_1]",
-        "reach_location[forest_temple_mq.frozen_eye_switch_room_small_wooden_crate_2]",
-        "reach_location[forest_temple_mq.frozen_eye_switch_room_small_wooden_crate_3]",
-        "reach_location[forest_temple_mq.green_poe_room_pot_1]",
-        "reach_location[forest_temple_mq.green_poe_room_pot_2]",
-        "reach_location[forest_temple_mq.upper_stalfos_pot_1]",
-        "reach_location[forest_temple_mq.upper_stalfos_pot_2]",
-        "reach_location[forest_temple_mq.upper_stalfos_pot_3]",
-        "reach_location[forest_temple_mq.upper_stalfos_pot_4]",
-        "reach_location[forest_temple_mq.well_recovery_heart_1]",
-        "reach_location[forest_temple_mq.well_recovery_heart_2]",
-        "reach_location[forest_temple_mq.well_recovery_heart_3]",
-        "reach_location[forest_temple_mq.wolfos_room_pot]",
         "reach_location[temple_forest_mq.c_behind_lobby]",
         "reach_location[temple_forest_mq.c_boss_key]",
         "reach_location[temple_forest_mq.c_bow]",

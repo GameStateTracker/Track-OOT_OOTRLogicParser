@@ -299,6 +299,28 @@
                             "ref": "calculated[has_all_notes_for_song(song_scarecrow)]"
                         }
                     ]
+                },
+                {
+                    "type": "and",
+                    "content": [
+                        {
+                            "type": "eq",
+                            "content": [
+                                {
+                                    "type": "param",
+                                    "ref": "song"
+                                },
+                                {
+                                    "type": "string",
+                                    "value": "item[song_frogs]"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "value",
+                            "ref": "calculated[has_all_notes_for_song(song_frogs)]"
+                        }
+                    ]
                 }
             ]
         }

@@ -45,6 +45,7 @@
     },
     "Zoras Fountain": {
         "Jabu Jabus Belly Beginning": "Fountain Jabu Gateway",
+        "Ice Cavern": "Fountain Ice Cavern Gateway",
         "ZD Behind King Zora": "Fountain Domain Gateway",
         "ZF Great Fairy Fountain": "Fountain Great Fairy Gateway"
     },
@@ -90,6 +91,7 @@
         "KF Outside Deku Tree": "Deku Kokiri Gateway"
     },
     "Dodongos Cavern Beginning": {
+        "Dodongos Cavern Entryway": "Dodongo Mountain Gateway",
         "Death Mountain": "Dodongo Mountain Gateway"
     },
     "Jabu Jabus Belly Beginning": {
@@ -264,6 +266,9 @@
         "Kak Behind Gate": "Mountain Kakariko Gateway",
         "Goron City": "Mountain Goron Gateway",
         "DMT Storms Grotto": "Mountain Storms Grotto Gateway",
+        "Dodongos Cavern Beginning": "Mountain Dodongo Gateway"
+    },
+    "Dodongos Cavern Entryway": {
         "Dodongos Cavern Beginning": "Mountain Dodongo Gateway"
     },
     "Goron City": {

@@ -1,0 +1,62 @@
+{
+    "state": {
+        "options": {
+            "scrubsanity": true,
+            "starting_age": "child"
+        },
+        "items": {
+            "bombs": 3,
+            "boomerang": 1,
+            "bottle": 4,
+            "mask_skull": 1,
+            "mask_truth": 1,
+            "nut_upgrade": 2,
+            "ocarina": 2,
+            "scale": 2,
+            "shield_kokiri": 1,
+            "slingshot": 3,
+            "song_time": 1,
+            "stick_upgrade": 2,
+            "stone_of_agony": 1,
+            "sword_kokiri": 1
+        },
+        "areaActiveLists": {
+            "dodongo": "mq"
+        }
+    },
+    "flags": {
+        "time_travel": 1
+    },
+    "forceReach": [
+        "reach_location[stick_pot]"
+    ],
+    "close_off": [
+        {
+            "source": "region[dodongo_mountain_gateway:in]",
+            "target": "region[mountain_dodongo_gateway:out]"
+        },
+        {
+            "source": "region[dodongo_blue_warp_gateway:in]",
+            "target": "region[blue_warp_dodongo_gateway:out]"
+        }
+    ],
+    "startNode": "region[dodongo_mountain_gateway:out]{child}",
+    "reachableNodes": [
+        "reach_location[dodongo_mq.c_1f_right]",
+        "reach_location[dodongo_mq.c_above_stairs]",
+        "reach_location[dodongo_mq.c_bomb_bag]",
+        "reach_location[dodongo_mq.c_compass]",
+        "reach_location[dodongo_mq.c_gohma_larva_room]",
+        "reach_location[dodongo_mq.c_main_room_salesman_1]",
+        "reach_location[dodongo_mq.c_main_room_salesman_2]",
+        "reach_location[dodongo_mq.c_map]",
+        "reach_location[dodongo_mq.c_torch_puzzle_room]",
+        "reach_location[dodongo_mq.c_under_grave]",
+        "reach_location[dodongo_mq.s_back_area]",
+        "reach_location[dodongo_mq.s_gohma_larva_skulltula]",
+        "reach_location[dodongo_mq.s_scrub_poe_room]",
+        "reach_location[dodongo_mq.s_time_block_room]",
+        "reach_location[dodongo_mq.s_upper_lizalfos_room]",
+        "reach_location[dodongo.c_dodongo]"
+    ]
+}

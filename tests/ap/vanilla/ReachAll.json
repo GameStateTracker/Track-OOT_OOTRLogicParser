@@ -15,7 +15,6 @@
             "shuffle_empty_pots": true,
             "shuffle_expensive_merchants": true,
             "shuffle_gerudo_fortress_heart_piece": true,
-            "shuffle_individual_ocarina_notes": true,
             "shuffle_loach_reward": true,
             "shuffle_pots": true,
             "shuffle_rupees_hearts": true,
@@ -85,6 +84,11 @@
             "membership": 1,
             "nut_upgrade": 2,
             "ocarina": 2,
+            "ocarina_a_button": 1,
+            "ocarina_down_button": 1,
+            "ocarina_left_button": 1,
+            "ocarina_right_button": 1,
+            "ocarina_up_button": 1,
             "odd_mushroom": 1,
             "odd_potion": 1,
             "poachers_saw": 1,
@@ -142,6 +146,12 @@
         }
     },
     "startNode": "region[root]",
+    "passedNodes": [
+        "reach_location[baba_nuts]",
+        "reach_location[baba_sticks]",
+        "reach_location[nut_pot]",
+        "reach_location[stick_pot]"
+    ],
     "reachableNodes": [
         "reach_location[castle.storms_grotto_pot_1]",
         "reach_location[castle.storms_grotto_pot_2]",

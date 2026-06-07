@@ -11,6 +11,362 @@ exit: Desert Colossus
  [ 'True' ] 
 ---
 --- --- ---
+mainRegions: Deku Tree Boss Door is new
+mainRegions: Dodongos Cavern Boss Door is new
+mainRegions: Jabu Jabus Belly Boss Door is new
+mainRegions: Forest Temple Boss Door is new
+mainRegions: Fire Temple Boss Door is new
+mainRegions: Water Temple Boss Door is new
+mainRegions: Shadow Temple Boss Door is new
+mainRegions: Spirit Temple Boss Door is new
+mainRegions: Gerudo Training Ground Lava Room is new
+mainRegions: Ice Cavern Spinning Blades is new
+mainRegions: GF Hall to Balcony Entrance is new
+mainRegions: Hideout Hall to Balcony Lower is new
+mainRegions: Hideout Hall to Balcony Upper is new
+subRegions: Deku Tree Boss Door: Deku Boss Gateway:In is new
+subRegions: Dodongos Cavern Boss Door: King Dodongo Boss Room is new
+subRegions: King Dodongo Boss Room: Dodongos Cavern Boss Door is new
+subRegions: Jabu Jabus Belly Boss Door: Barinade Boss Room is new
+subRegions: Barinade Boss Room: Jabu Jabus Belly Boss Door is new
+subRegions: Forest Temple Boss Door: Phantom Ganon Boss Room is new
+subRegions: Phantom Ganon Boss Room: Forest Temple Boss Door is new
+subRegions: Fire Temple Boss Door: Volvagia Boss Room is new
+subRegions: Volvagia Boss Room: Fire Temple Boss Door is new
+subRegions: Water Temple Boss Door: Morpha Boss Room is new
+subRegions: Morpha Boss Room: Water Temple Boss Door is new
+subRegions: Shadow Temple Boss Door: Bongo Bongo Boss Room is new
+subRegions: Bongo Bongo Boss Room: Shadow Temple Boss Door is new
+subRegions: Spirit Temple Boss Door: Twinrova Boss Room is new
+subRegions: Twinrova Boss Room: Spirit Temple Boss Door is new
+subRegions: Deku Tree Before Boss MQ: Deku Tree Boss Door is new
+subRegions: Deku Tree Before Boss: Deku Tree Boss Door is new
+subRegions: Dodongos Cavern Elevator MQ: Dodongos Cavern Torch Puzzle Lower MQ is new
+subRegions: Dodongos Cavern Before Boss MQ: Dodongos Cavern Boss Door is new
+subRegions: Dodongos Cavern Lobby: Dodongos Cavern Before Boss is new
+subRegions: Dodongos Cavern Far Bridge: Dodongos Cavern Before Boss is new
+subRegions: Dodongos Cavern Before Boss: Dodongos Cavern Boss Door is new
+subRegions: Fire Temple Near Boss MQ: Fire Temple Boss Door is new
+subRegions: Fire Temple Flame Maze MQ: Fire Temple Boss Door is new
+subRegions: Fire Temple Lower: Fire Temple Boss Door is new
+subRegions: Fire Temple Upper: Fire Temple Boss Door is new
+subRegions: Forest Temple Central Area MQ: Forest Temple Before Boss MQ is new
+subRegions: Forest Temple Before Boss MQ: Forest Temple Boss Door is new
+subRegions: Forest Temple Central Area: Forest Temple Before Boss is new
+subRegions: Forest Temple Before Boss: Forest Temple Boss Door is new
+subRegions: Ganons Castle Water Trial MQ: Ganons Castle Water Trial Ending MQ is new
+subRegions: Ganons Castle Shadow Trial MQ: Ganons Castle Shadow Trial Ending MQ is new
+subRegions: Ganons Castle Lobby: Ganons Castle Forest Trial is new
+subRegions: Ganons Castle Lobby: Ganons Castle Water Trial is new
+subRegions: Ganons Castle Lobby: Ganons Castle Shadow Trial is new
+subRegions: Ganons Castle Lobby: Ganons Castle Fire Trial is new
+subRegions: Ganons Castle Lobby: Ganons Castle Light Trial is new
+subRegions: Ganons Castle Lobby: Ganons Castle Spirit Trial is new
+subRegions: Ganons Castle Lobby: Ganons Castle Deku Scrubs is new
+subRegions: Ganons Castle Lobby: Ganons Castle Tower is new
+subRegions: Ganons Castle Forest Trial: Ganons Castle Forest Trial Ending is new
+subRegions: Gerudo Training Ground Right Side MQ: Gerudo Training Ground Underwater MQ is new
+subRegions: Gerudo Training Ground Back Areas MQ: Gerudo Training Ground Right Side MQ is new
+subRegions: Gerudo Training Ground Central Maze Right MQ: Gerudo Training Ground Underwater MQ is new
+subRegions: Gerudo Training Ground Lobby: Gerudo Training Ground Lava Room is new
+subRegions: Gerudo Training Ground Lobby: Gerudo Training Ground Heavy Block Room is new
+subRegions: Gerudo Training Ground Lava Room: Gerudo Training Ground Central Maze Right is new
+subRegions: Gerudo Training Ground Lava Room: Gerudo Training Ground Hammer Room is new
+subRegions: Gerudo Training Ground Central Maze Right: Gerudo Training Ground Lava Room is new
+subRegions: Gerudo Training Ground Central Maze Right: Gerudo Training Ground Hammer Room is new
+subRegions: Gerudo Training Ground Hammer Room: Gerudo Training Ground Lava Room is new
+subRegions: Ice Cavern Beginning: Ice Cavern Spinning Blades is new
+subRegions: Ice Cavern Spinning Blades: Ice Cavern Map Room is new
+subRegions: Ice Cavern Spinning Blades: Ice Cavern Behind Ice Walls is new
+subRegions: Jabu Jabus Belly Elevator Room MQ: Jabu Jabus Belly Before Boss MQ is new
+subRegions: Jabu Jabus Belly Before Boss MQ: Jabu Jabus Belly Boss Door is new
+subRegions: Jabu Jabus Belly Before Boss: Jabu Jabus Belly Boss Door is new
+subRegions: Root: HC Garden Locations is new
+subRegions: Gerudo Fortress: GF Hall to Balcony Entrance is new
+subRegions: GF Chest Roof: GF Hall to Balcony Entrance is new
+subRegions: GF Hall to Balcony Entrance: Gerudo Fortress is new
+subRegions: GF Hall to Balcony Entrance: Hideout Hall to Balcony Lower is new
+subRegions: GF Balcony: Hideout Hall to Balcony Upper is new
+subRegions: GF Balcony: GF Hall to Balcony Entrance is new
+subRegions: Hideout Hall to Balcony Lower: GF Hall to Balcony Entrance is new
+subRegions: Hideout Hall to Balcony Lower: Hideout Hall to Balcony Upper is new
+subRegions: Hideout Hall to Balcony Upper: Hideout Hall to Balcony Lower is new
+subRegions: Hideout Hall to Balcony Upper: GF Balcony is new
+subRegions: HC Garden: HC Garden Locations is new
+subRegions: Castle Grounds From Ganons Castle: Ganons Castle Grounds is new
+subRegions: Ganons Castle Grounds: Castle Grounds Ganons Castle Gateway:In is new
+subRegions: Shadow Temple Upper Huge Pit MQ: Shadow Temple Invisible Blades MQ is new
+subRegions: Shadow Temple Before Boss MQ: Shadow Temple Boss Door is new
+subRegions: Shadow Temple Before Boss: Shadow Temple Boss Door is new
+subRegions: Adult Spirit Temple MQ: Spirit Temple Boss Door is new
+subRegions: Spirit Temple Shared MQ: Desert Colossus is new
+subRegions: Spirit Temple Shifting Wall MQ: Spirit Temple Big Mirror Room MQ is new
+subRegions: Spirit Temple Mirror Puzzle MQ: Spirit Temple Boss Door is new
+subRegions: Spirit Temple Lobby: Child Spirit Temple is new
+subRegions: Spirit Temple Central Chamber: Spirit Temple Boss Door is new
+subRegions: Spirit Temple Central Chamber: Desert Colossus is new
+subRegions: Spirit Temple Big Mirror Room: Spirit Temple Boss Door is new
+subRegions: Water Temple Lobby MQ: Water Temple Boss Door is new
+subRegions: Water Temple Basement Gated Areas MQ: Water Temple Freestanding Key Room MQ is new
+subRegions: Water Temple Basement Gated Areas MQ: Water Temple Dodongo Room MQ is new
+subRegions: Water Temple Lobby: Water Temple Boss Door is new
+mainRegions: Queen Gohma Blue Warp doesn't exist anymore
+mainRegions: King Dodongo Blue Warp doesn't exist anymore
+mainRegions: Barinade Blue Warp doesn't exist anymore
+mainRegions: Phantom Ganon Blue Warp doesn't exist anymore
+mainRegions: Volvagia Blue Warp doesn't exist anymore
+mainRegions: Morpha Blue Warp doesn't exist anymore
+mainRegions: Bongo Bongo Blue Warp doesn't exist anymore
+mainRegions: Twinrova Blue Warp doesn't exist anymore
+mainRegions: Dodongos Cavern Above Staircase MQ doesn't exist anymore
+mainRegions: Dodongos Cavern Mouth doesn't exist anymore
+mainRegions: Fire Temple Before Boss MQ doesn't exist anymore
+mainRegions: Fire Temple Near Boss doesn't exist anymore
+mainRegions: Fire Temple Before Boss doesn't exist anymore
+mainRegions: Forest Temple Basement MQ doesn't exist anymore
+mainRegions: Forest Temple Basement doesn't exist anymore
+mainRegions: Ganons Castle Water Trial Push Block Room MQ doesn't exist anymore
+mainRegions: Ganons Castle Shadow Trial Moving Platform MQ doesn't exist anymore
+mainRegions: Ganons Castle Shadow Trial Second Gap MQ doesn't exist anymore
+mainRegions: Ganons Castle Fire Trial MQ doesn't exist anymore
+mainRegions: Ganons Castle Main doesn't exist anymore
+mainRegions: Ganons Castle Forest Trial Wind Room doesn't exist anymore
+mainRegions: Gerudo Training Ground Lava Room Front MQ doesn't exist anymore
+mainRegions: Gerudo Training Ground Water Room Entrance MQ doesn't exist anymore
+mainRegions: Gerudo Training Ground Lava Room Back MQ doesn't exist anymore
+mainRegions: Gerudo Training Ground Water Room MQ doesn't exist anymore
+mainRegions: Gerudo Training Ground Lava Room Front doesn't exist anymore
+mainRegions: Gerudo Training Ground Lava Room Back doesn't exist anymore
+mainRegions: Gerudo Training Ground Water Room doesn't exist anymore
+mainRegions: Gerudo Training Ground Boulder Room doesn't exist anymore
+mainRegions: Ice Cavern Spinning Scythe Room doesn't exist anymore
+mainRegions: Ice Cavern Behind Ice Walls doesn't exist anymore
+mainRegions: Jabu Jabus Belly Before Slimy Thing MQ doesn't exist anymore
+mainRegions: Farores Wind Warp doesn't exist anymore
+mainRegions: GF Break Room Entrance doesn't exist anymore
+mainRegions: Hideout Break Room doesn't exist anymore
+mainRegions: Hideout Hall to Balcony doesn't exist anymore
+mainRegions: Desert Colossus Hands doesn't exist anymore
+mainRegions: Ganons Castle Ledge doesn't exist anymore
+mainRegions: Shadow Temple Invisible Blades Room MQ doesn't exist anymore
+mainRegions: Spirit Temple After Shifting Wall MQ doesn't exist anymore
+mainRegions: Spirit Temple Before Boss MQ doesn't exist anymore
+mainRegions: Spirit Temple Before Boss doesn't exist anymore
+mainRegions: Water Temple Before Boss Lower MQ doesn't exist anymore
+mainRegions: Water Temple Before Boss MQ doesn't exist anymore
+mainRegions: Water Temple North Basement MQ doesn't exist anymore
+mainRegions: Water Temple Before Boss doesn't exist anymore
+subRegions: Queen Gohma Boss Room: Queen Gohma Blue Warp doesn't exist anymore
+subRegions: Queen Gohma Blue Warp: KF Outside Deku Tree doesn't exist anymore
+subRegions: King Dodongo Boss Room: Boss Dodongo Gateway:In doesn't exist anymore
+subRegions: King Dodongo Boss Room: King Dodongo Blue Warp doesn't exist anymore
+subRegions: King Dodongo Blue Warp: Death Mountain doesn't exist anymore
+subRegions: Barinade Boss Room: Boss Jabu Gateway:In doesn't exist anymore
+subRegions: Barinade Boss Room: Barinade Blue Warp doesn't exist anymore
+subRegions: Barinade Blue Warp: Zoras Fountain doesn't exist anymore
+subRegions: Phantom Ganon Boss Room: Boss Forest Temple Gateway:In doesn't exist anymore
+subRegions: Phantom Ganon Boss Room: Phantom Ganon Blue Warp doesn't exist anymore
+subRegions: Phantom Ganon Blue Warp: Sacred Forest Meadow doesn't exist anymore
+subRegions: Volvagia Boss Room: Boss Fire Temple Gateway:In doesn't exist anymore
+subRegions: Volvagia Boss Room: Volvagia Blue Warp doesn't exist anymore
+subRegions: Volvagia Blue Warp: DMC Central Local doesn't exist anymore
+subRegions: Morpha Boss Room: Boss Water Temple Gateway:In doesn't exist anymore
+subRegions: Morpha Boss Room: Morpha Blue Warp doesn't exist anymore
+subRegions: Morpha Blue Warp: Lake Hylia doesn't exist anymore
+subRegions: Bongo Bongo Boss Room: Boss Shadow Temple Gateway:In doesn't exist anymore
+subRegions: Bongo Bongo Boss Room: Bongo Bongo Blue Warp doesn't exist anymore
+subRegions: Bongo Bongo Blue Warp: Graveyard Warp Pad Region doesn't exist anymore
+subRegions: Twinrova Boss Room: Boss Spirit Temple Gateway:In doesn't exist anymore
+subRegions: Twinrova Boss Room: Twinrova Blue Warp doesn't exist anymore
+subRegions: Twinrova Blue Warp: Desert Colossus doesn't exist anymore
+subRegions: Ganons Castle Tower: Ganons Tower Ganons Castle Gateway:In doesn't exist anymore
+subRegions: Ganons Castle Tower: Farores Wind Warp doesn't exist anymore
+subRegions: Bottom of the Well MQ: Farores Wind Warp doesn't exist anymore
+subRegions: Bottom of the Well: Farores Wind Warp doesn't exist anymore
+subRegions: Bottom of the Well Main Area: Bottom of the Well Left Side doesn't exist anymore
+subRegions: Bottom of the Well Behind Fake Walls: Bottom of the Well Left Side doesn't exist anymore
+subRegions: Deku Tree Lobby MQ: Farores Wind Warp doesn't exist anymore
+subRegions: Deku Tree Before Boss MQ: Deku Tree Basement Ledge MQ doesn't exist anymore
+subRegions: Deku Tree Before Boss MQ: Deku Boss Gateway:In doesn't exist anymore
+subRegions: Deku Tree Lobby: Farores Wind Warp doesn't exist anymore
+subRegions: Deku Tree Basement Ledge: Deku Tree Basement doesn't exist anymore
+subRegions: Deku Tree Before Boss: Deku Tree Basement Ledge doesn't exist anymore
+subRegions: Deku Tree Before Boss: Deku Boss Gateway:In doesn't exist anymore
+subRegions: Dodongos Cavern Beginning MQ: Farores Wind Warp doesn't exist anymore
+subRegions: Dodongos Cavern Elevator MQ: Dodongos Cavern Above Staircase MQ doesn't exist anymore
+subRegions: Dodongos Cavern Above Staircase MQ: Dodongos Cavern Torch Puzzle Lower MQ doesn't exist anymore
+subRegions: Dodongos Cavern Torch Puzzle Lower MQ: Dodongos Cavern Above Staircase MQ doesn't exist anymore
+subRegions: Dodongos Cavern Mouth MQ: Dodongos Cavern Lobby MQ doesn't exist anymore
+subRegions: Dodongos Cavern Before Boss MQ: Dodongo Boss Gateway:In doesn't exist anymore
+subRegions: Dodongos Cavern Beginning: Farores Wind Warp doesn't exist anymore
+subRegions: Dodongos Cavern Lobby: Dodongos Cavern Mouth doesn't exist anymore
+subRegions: Dodongos Cavern Far Bridge: Dodongos Cavern Mouth doesn't exist anymore
+subRegions: Dodongos Cavern Mouth: Dodongos Cavern Lobby doesn't exist anymore
+subRegions: Dodongos Cavern Mouth: Dodongos Cavern Before Boss doesn't exist anymore
+subRegions: Dodongos Cavern Before Boss: Dodongo Boss Gateway:In doesn't exist anymore
+subRegions: Fire Temple Lower MQ: Farores Wind Warp doesn't exist anymore
+subRegions: Fire Temple Near Boss MQ: Fire Temple Before Boss MQ doesn't exist anymore
+subRegions: Fire Temple Before Boss MQ: Fire Temple Near Boss MQ doesn't exist anymore
+subRegions: Fire Temple Before Boss MQ: Fire Temple Boss Gateway:In doesn't exist anymore
+subRegions: Fire Temple Flame Maze MQ: Fire Temple Before Boss MQ doesn't exist anymore
+subRegions: Fire Temple Lower: Fire Temple Near Boss doesn't exist anymore
+subRegions: Fire Temple Lower: Farores Wind Warp doesn't exist anymore
+subRegions: Fire Temple Near Boss: Fire Temple Before Boss doesn't exist anymore
+subRegions: Fire Temple Before Boss: Fire Temple Boss Gateway:In doesn't exist anymore
+subRegions: Fire Temple Upper: Fire Temple Before Boss doesn't exist anymore
+subRegions: Forest Temple Lobby MQ: Farores Wind Warp doesn't exist anymore
+subRegions: Forest Temple Central Area MQ: Forest Temple Basement MQ doesn't exist anymore
+subRegions: Forest Temple Outside Upper Ledge MQ: Forest Temple NW Outdoors Freestandings MQ doesn't exist anymore
+subRegions: Forest Temple NW Outdoors MQ: Forest Temple NW Outdoors Freestandings MQ doesn't exist anymore
+subRegions: Forest Temple Basement MQ: Forest Temple Before Boss MQ doesn't exist anymore
+subRegions: Forest Temple Before Boss MQ: Forest Temple Basement MQ doesn't exist anymore
+subRegions: Forest Temple Before Boss MQ: Forest Temple Boss Gateway:In doesn't exist anymore
+subRegions: Forest Temple Lobby: Farores Wind Warp doesn't exist anymore
+subRegions: Forest Temple Central Area: Forest Temple Basement doesn't exist anymore
+subRegions: Forest Temple NW Outdoors: Forest Temple NW Outdoors Freestandings doesn't exist anymore
+subRegions: Forest Temple Outside Upper Ledge: Forest Temple NW Outdoors Freestandings doesn't exist anymore
+subRegions: Forest Temple Basement: Forest Temple Central Area doesn't exist anymore
+subRegions: Forest Temple Basement: Forest Temple Before Boss doesn't exist anymore
+subRegions: Forest Temple Before Boss: Forest Temple Basement doesn't exist anymore
+subRegions: Forest Temple Before Boss: Forest Temple Boss Gateway:In doesn't exist anymore
+subRegions: Ganons Castle Lobby MQ: Farores Wind Warp doesn't exist anymore
+subRegions: Ganons Castle Water Trial MQ: Ganons Castle Water Trial Push Block Room MQ doesn't exist anymore
+subRegions: Ganons Castle Water Trial Push Block Room MQ: Ganons Castle Water Trial Ending MQ doesn't exist anymore
+subRegions: Ganons Castle Shadow Trial MQ: Ganons Castle Shadow Trial Moving Platform MQ doesn't exist anymore
+subRegions: Ganons Castle Shadow Trial Moving Platform MQ: Ganons Castle Shadow Trial Second Gap MQ doesn't exist anymore
+subRegions: Ganons Castle Shadow Trial Second Gap MQ: Ganons Castle Shadow Trial Ending MQ doesn't exist anymore
+subRegions: Ganons Castle Fire Trial MQ: Ganons Castle Fire Trial Ending MQ doesn't exist anymore
+subRegions: Ganons Castle Lobby: Ganons Castle Main doesn't exist anymore
+subRegions: Ganons Castle Lobby: Farores Wind Warp doesn't exist anymore
+subRegions: Ganons Castle Main: Ganons Castle Forest Trial doesn't exist anymore
+subRegions: Ganons Castle Main: Ganons Castle Water Trial doesn't exist anymore
+subRegions: Ganons Castle Main: Ganons Castle Shadow Trial doesn't exist anymore
+subRegions: Ganons Castle Main: Ganons Castle Fire Trial doesn't exist anymore
+subRegions: Ganons Castle Main: Ganons Castle Light Trial doesn't exist anymore
+subRegions: Ganons Castle Main: Ganons Castle Spirit Trial doesn't exist anymore
+subRegions: Ganons Castle Main: Ganons Castle Deku Scrubs doesn't exist anymore
+subRegions: Ganons Castle Main: Ganons Castle Ganons Tower Gateway:In doesn't exist anymore
+subRegions: Ganons Castle Forest Trial: Ganons Castle Forest Trial Wind Room doesn't exist anymore
+subRegions: Ganons Castle Forest Trial Wind Room: Ganons Castle Forest Trial Ending doesn't exist anymore
+subRegions: Gerudo Training Ground Lobby MQ: Farores Wind Warp doesn't exist anymore
+subRegions: Gerudo Training Ground Right Side MQ: Gerudo Training Ground Lava Room Front MQ doesn't exist anymore
+subRegions: Gerudo Training Ground Right Side MQ: Gerudo Training Ground Water Room Entrance MQ doesn't exist anymore
+subRegions: Gerudo Training Ground Lava Room Front MQ: Gerudo Training Ground Right Side MQ doesn't exist anymore
+subRegions: Gerudo Training Ground Lava Room Front MQ: Gerudo Training Ground Water Room Entrance MQ doesn't exist anymore
+subRegions: Gerudo Training Ground Lava Room Front MQ: Gerudo Training Ground Lava Room Back MQ doesn't exist anymore
+subRegions: Gerudo Training Ground Water Room Entrance MQ: Gerudo Training Ground Right Side MQ doesn't exist anymore
+subRegions: Gerudo Training Ground Water Room Entrance MQ: Gerudo Training Ground Lava Room Front MQ doesn't exist anymore
+subRegions: Gerudo Training Ground Water Room Entrance MQ: Gerudo Training Ground Water Room MQ doesn't exist anymore
+subRegions: Gerudo Training Ground Lava Room Back MQ: Gerudo Training Ground Lava Room Front MQ doesn't exist anymore
+subRegions: Gerudo Training Ground Lava Room Back MQ: Gerudo Training Ground Lava Room Back Left MQ doesn't exist anymore
+subRegions: Gerudo Training Ground Water Room MQ: Gerudo Training Ground Underwater MQ doesn't exist anymore
+subRegions: Gerudo Training Ground Back Areas MQ: Gerudo Training Ground Lava Room Back MQ doesn't exist anymore
+subRegions: Gerudo Training Ground Back Areas MQ: Gerudo Training Ground Water Room Entrance MQ doesn't exist anymore
+subRegions: Gerudo Training Ground Central Maze Right MQ: Gerudo Training Ground Lava Room Front MQ doesn't exist anymore
+subRegions: Gerudo Training Ground Central Maze Right MQ: Gerudo Training Ground Lava Room Back MQ doesn't exist anymore
+subRegions: Gerudo Training Ground Central Maze Right MQ: Gerudo Training Ground Lava Room Back Left MQ doesn't exist anymore
+subRegions: Gerudo Training Ground Lobby: Gerudo Training Ground Lava Room Front doesn't exist anymore
+subRegions: Gerudo Training Ground Lobby: Gerudo Training Ground Boulder Room doesn't exist anymore
+subRegions: Gerudo Training Ground Lobby: Farores Wind Warp doesn't exist anymore
+subRegions: Gerudo Training Ground Lava Room Front: Gerudo Training Ground Central Maze Right doesn't exist anymore
+subRegions: Gerudo Training Ground Lava Room Front: Gerudo Training Ground Lava Room Back doesn't exist anymore
+subRegions: Gerudo Training Ground Lava Room Front: Gerudo Training Ground Hammer Room doesn't exist anymore
+subRegions: Gerudo Training Ground Lava Room Front: Gerudo Training Ground Water Room doesn't exist anymore
+subRegions: Gerudo Training Ground Lava Room Back: Gerudo Training Ground Central Maze Right doesn't exist anymore
+subRegions: Gerudo Training Ground Lava Room Back: Gerudo Training Ground Lava Room Front doesn't exist anymore
+subRegions: Gerudo Training Ground Lava Room Back: Gerudo Training Ground Hammer Room doesn't exist anymore
+subRegions: Gerudo Training Ground Water Room: Gerudo Training Ground Underwater doesn't exist anymore
+subRegions: Gerudo Training Ground Central Maze Right: Gerudo Training Ground Lava Room Front doesn't exist anymore
+subRegions: Gerudo Training Ground Central Maze Right: Gerudo Training Ground Lava Room Back doesn't exist anymore
+subRegions: Gerudo Training Ground Boulder Room: Gerudo Training Ground Heavy Block Room doesn't exist anymore
+subRegions: Gerudo Training Ground Hammer Room: Gerudo Training Ground Lava Room Back doesn't exist anymore
+subRegions: Ice Cavern Beginning MQ: Farores Wind Warp doesn't exist anymore
+subRegions: Ice Cavern Beginning: Ice Cavern Spinning Scythe Room doesn't exist anymore
+subRegions: Ice Cavern Beginning: Farores Wind Warp doesn't exist anymore
+subRegions: Ice Cavern Spinning Scythe Room: Ice Cavern Map Room doesn't exist anymore
+subRegions: Ice Cavern Spinning Scythe Room: Ice Cavern Behind Ice Walls doesn't exist anymore
+subRegions: Ice Cavern Behind Ice Walls: Ice Cavern End doesn't exist anymore
+subRegions: Jabu Jabus Belly Beginning MQ: Farores Wind Warp doesn't exist anymore
+subRegions: Jabu Jabus Belly Elevator Room MQ: Jabu Jabus Belly Before Slimy Thing MQ doesn't exist anymore
+subRegions: Jabu Jabus Belly Before Slimy Thing MQ: Jabu Jabus Belly Elevator Room MQ doesn't exist anymore
+subRegions: Jabu Jabus Belly Before Slimy Thing MQ: Jabu Jabus Belly Before Boss MQ doesn't exist anymore
+subRegions: Jabu Jabus Belly Before Boss MQ: Jabu Jabus Belly Before Slimy Thing MQ doesn't exist anymore
+subRegions: Jabu Jabus Belly Before Boss MQ: Jabu Jabus Belly Elevator Room MQ doesn't exist anymore
+subRegions: Jabu Jabus Belly Before Boss MQ: Jabu Boss Gateway:In doesn't exist anymore
+subRegions: Jabu Jabus Belly Beginning: Farores Wind Warp doesn't exist anymore
+subRegions: Jabu Jabus Belly Before Boss: Jabu Jabus Belly Main doesn't exist anymore
+subRegions: Jabu Jabus Belly Before Boss: Jabu Boss Gateway:In doesn't exist anymore
+subRegions: Root: HC Garden Skippable Locations doesn't exist anymore
+subRegions: Root: Beyond Door of Time Skippable Locations doesn't exist anymore
+subRegions: Root: GF Above Jail Child Locations doesn't exist anymore
+subRegions: Farores Wind Warp: Well Kakariko Gateway:Out doesn't exist anymore
+subRegions: Farores Wind Warp: Deku Kokiri Gateway:Out doesn't exist anymore
+subRegions: Farores Wind Warp: Dodongo Mountain Gateway:Out doesn't exist anymore
+subRegions: Farores Wind Warp: Fire Temple Crater Gateway:Out doesn't exist anymore
+subRegions: Farores Wind Warp: Forest Temple Meadow Gateway:Out doesn't exist anymore
+subRegions: Farores Wind Warp: Ganons Castle Castle Grounds Gateway:Out doesn't exist anymore
+subRegions: Farores Wind Warp: Ganons Castle Main doesn't exist anymore
+subRegions: Farores Wind Warp: Ganons Castle Tower doesn't exist anymore
+subRegions: Farores Wind Warp: Training Grounds Fortress Gateway:Out doesn't exist anymore
+subRegions: Farores Wind Warp: Ice Cavern Fountain Gateway:Out doesn't exist anymore
+subRegions: Farores Wind Warp: Jabu Fountain Gateway:Out doesn't exist anymore
+subRegions: Farores Wind Warp: Shadow Temple Graveyard Gateway:Out doesn't exist anymore
+subRegions: Farores Wind Warp: Spirit Temple Colossus Gateway:Out doesn't exist anymore
+subRegions: Farores Wind Warp: Water Temple Lake Gateway:Out doesn't exist anymore
+subRegions: Gerudo Fortress: GF Break Room Entrance doesn't exist anymore
+subRegions: GF Kitchen Roof Access: GF Break Room Entrance doesn't exist anymore
+subRegions: GF Chest Roof: GF Break Room Entrance doesn't exist anymore
+subRegions: GF Break Room Entrance: Gerudo Fortress doesn't exist anymore
+subRegions: GF Break Room Entrance: Fortress Break Room Entrance Hideout Break Room Gateway:In doesn't exist anymore
+subRegions: GF Balcony: Fortress Balcony Hideout Break Room Gateway:In doesn't exist anymore
+subRegions: GF Balcony: GF Break Room Entrance doesn't exist anymore
+subRegions: GF Balcony: GF Above Jail Child Locations doesn't exist anymore
+subRegions: Hideout Break Room: Hideout Break Room Fortress Break Room Entrance Gateway:In doesn't exist anymore
+subRegions: Hideout Break Room: Hideout Hall to Balcony doesn't exist anymore
+subRegions: Hideout Hall to Balcony: Hideout Break Room doesn't exist anymore
+subRegions: Hideout Hall to Balcony: Hideout Break Room Fortress Balcony Gateway:In doesn't exist anymore
+subRegions: Desert Colossus Hands: Desert Colossus doesn't exist anymore
+subRegions: Beyond Door of Time: Beyond Door of Time Skippable Locations doesn't exist anymore
+subRegions: HC Garden: HC Garden Skippable Locations doesn't exist anymore
+subRegions: Castle Grounds From Ganons Castle: Ganons Castle Ledge doesn't exist anymore
+subRegions: Ganons Castle Grounds: Ganons Castle Ledge doesn't exist anymore
+subRegions: Ganons Castle Ledge: Ganons Castle Grounds doesn't exist anymore
+subRegions: Ganons Castle Ledge: Ganons Castle Lobby doesn't exist anymore
+subRegions: Market Mask Shop: Market Mask Shop Storefront doesn't exist anymore
+subRegions: Shadow Temple Entryway MQ: Farores Wind Warp doesn't exist anymore
+subRegions: Shadow Temple Upper Huge Pit MQ: Shadow Temple Invisible Blades Room MQ doesn't exist anymore
+subRegions: Shadow Temple Invisible Blades Room MQ: Shadow Temple Close Proximity to Invisible Blades MQ doesn't exist anymore
+subRegions: Shadow Temple Invisible Blades Room MQ: Shadow Temple Invisible Blades Song of Time Blocks MQ doesn't exist anymore
+subRegions: Shadow Temple Before Boss MQ: Shadow Temple Boss Gateway:In doesn't exist anymore
+subRegions: Shadow Temple Entryway: Farores Wind Warp doesn't exist anymore
+subRegions: Shadow Temple Huge Pit: Shadow Temple Falling Spikes doesn't exist anymore
+subRegions: Shadow Temple Before Boss: Shadow Temple Boss Gateway:In doesn't exist anymore
+subRegions: Spirit Temple Lobby MQ: Farores Wind Warp doesn't exist anymore
+subRegions: Adult Spirit Temple MQ: Spirit Temple Before Boss MQ doesn't exist anymore
+subRegions: Spirit Temple Shared MQ: Desert Colossus Hands MQ doesn't exist anymore
+subRegions: Spirit Temple Shifting Wall MQ: Spirit Temple After Shifting Wall MQ doesn't exist anymore
+subRegions: Spirit Temple After Shifting Wall MQ: Spirit Temple Big Mirror Room MQ doesn't exist anymore
+subRegions: Spirit Temple Mirror Puzzle MQ: Spirit Temple Before Boss MQ doesn't exist anymore
+subRegions: Spirit Temple Before Boss MQ: Spirit Temple Boss Gateway:In doesn't exist anymore
+subRegions: Spirit Temple Lobby: Child Spirit Temple Beyond Metal Bridges doesn't exist anymore
+subRegions: Spirit Temple Lobby: Farores Wind Warp doesn't exist anymore
+subRegions: Early Adult Spirit Temple: Spirit Temple Boulder Room doesn't exist anymore
+subRegions: Spirit Temple Central Chamber: Spirit Temple Before Boss doesn't exist anymore
+subRegions: Spirit Temple Central Chamber: Desert Colossus Hands doesn't exist anymore
+subRegions: Spirit Temple Big Mirror Room: Spirit Temple Before Boss doesn't exist anymore
+subRegions: Spirit Temple Before Boss: Spirit Temple Boss Gateway:In doesn't exist anymore
+subRegions: Water Temple Lobby MQ: Water Temple Before Boss Lower MQ doesn't exist anymore
+subRegions: Water Temple Lobby MQ: Farores Wind Warp doesn't exist anymore
+subRegions: Water Temple Before Boss Lower MQ: Water Temple Before Boss MQ doesn't exist anymore
+subRegions: Water Temple Before Boss Lower MQ: Water Temple Lobby MQ doesn't exist anymore
+subRegions: Water Temple Before Boss MQ: Water Temple Before Boss Lower MQ doesn't exist anymore
+subRegions: Water Temple Before Boss MQ: Water Temple Boss Gateway:In doesn't exist anymore
+subRegions: Water Temple Basement Gated Areas MQ: Water Temple North Basement MQ doesn't exist anymore
+subRegions: Water Temple North Basement MQ: Water Temple Freestanding Key Room MQ doesn't exist anymore
+subRegions: Water Temple North Basement MQ: Water Temple Dodongo Room MQ doesn't exist anymore
+subRegions: Water Temple Lobby: Water Temple Before Boss doesn't exist anymore
+subRegions: Water Temple Lobby: Farores Wind Warp doesn't exist anymore
+subRegions: Water Temple Before Boss: Water Temple Boss Gateway:In doesn't exist anymore
 
 -------------------------------------------
 generate logic output
@@ -263,6 +619,7 @@ calculated[has_all_notes_for_song(warp_shadow)]
 calculated[has_all_notes_for_song(warp_spirit)]
 calculated[has_all_notes_for_song(warp_light)]
 calculated[has_all_notes_for_song(song_scarecrow)]
+calculated[has_all_notes_for_song(song_frogs)]
 option[stone_count_lacs]
 option[medallion_count_lacs]
 option[dungeon_count_lacs]
@@ -398,6 +755,7 @@ calculated[has_all_notes_for_song(warp_shadow)]
 calculated[has_all_notes_for_song(warp_spirit)]
 calculated[has_all_notes_for_song(warp_light)]
 calculated[has_all_notes_for_song(song_scarecrow)]
+calculated[has_all_notes_for_song(song_frogs)]
 option[stone_count_lacs]
 option[medallion_count_lacs]
 option[dungeon_count_lacs]

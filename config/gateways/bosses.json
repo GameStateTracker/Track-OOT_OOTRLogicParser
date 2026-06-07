@@ -98,13 +98,15 @@
     {
         "region_name": "Ganons Castle Ganons Tower Gateway",
         "exits": {
-            "Ganons Tower Ganons Castle Gateway": "True"
+            "Ganons Tower Ganons Castle Gateway": "True",
+            "Ganons Castle Main": "True"
         }
     },
     {
         "region_name": "Ganons Tower Ganons Castle Gateway",
         "exits": {
-            "Ganons Castle Ganons Tower Gateway": "True"
+            "Ganons Castle Ganons Tower Gateway": "True",
+            "Ganons Castle Tower": "True"
         }
     }
 ]

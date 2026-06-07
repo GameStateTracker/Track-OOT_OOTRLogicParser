@@ -1,10 +1,12 @@
 import LogicGraph from "@emcjs/logic/processor/LogicGraph.js";
 import LogicDataStorage from "@emcjs/logic/data/LogicDataStorage.js";
+import augmentOptions from "./augment/AugmentOptions.js";
 import augmentDungeonShortcuts from "./augment/AugmentDungeonShortcuts.js";
 import augmentReachEpona from "./augment/AugmentReachEpona.js";
 import augmentTotalHearts from "./augment/AugmentTotalHearts.js";
 import augmentZeldaLetter from "./augment/AugmentZeldaLetter.js";
 import augmentZoraLetter from "./augment/AugmentZoraLetter.js";
+import augmentOcarinaSongNotes from "./augment/AugmentOcarinaSongNotes.js";
 import JSONLog from "../utils/log/JSONLog.js";
 
 const DEBUG_LVL = 2;
@@ -13,11 +15,13 @@ const DEBUG_VALUES = [
 ];
 
 const AUGMENTS = [
+    augmentOptions,
     augmentDungeonShortcuts,
     augmentReachEpona,
     augmentTotalHearts,
     augmentZeldaLetter,
-    augmentZoraLetter
+    augmentZoraLetter,
+    augmentOcarinaSongNotes
 ];
 
 export default class LogicTester {
@@ -58,16 +62,19 @@ export default class LogicTester {
         const {
             state = {},
             flags = {},
+            forceReach = [],
             settings = {},
             close_off = [],
             redirects = [],
             startNode = "region[root]",
+            passedNodes = [],
             reachableNodes = [],
             unreachableNodes = []
         } = config;
 
         this.#processor.reset();
         this.#processor.clearRedirects();
+        this.#processor.clearReachables();
         const dataStorage = new LogicDataStorage();
         const presetData = this.#collectData(this.#presetData);
         dataStorage.setData(presetData);
@@ -86,13 +93,22 @@ export default class LogicTester {
             this.#processor.set(`flag[${key}]`, value);
         }
 
+        for (const node of forceReach) {
+            this.#processor.addReachable(node);
+        }
+
         this.#processor.traverse(startNode);
 
         const res = {
             success: true,
+            passed: {},
             reachable: {},
             unreachable: {}
         };
+        for (const node of passedNodes) {
+            const val = this.#processor.get(node);
+            res.passed[node] = val;
+        }
         for (const node of reachableNodes) {
             const val = this.#processor.get(node);
             if (!val) {

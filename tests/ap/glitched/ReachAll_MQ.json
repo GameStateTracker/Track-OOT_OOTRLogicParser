@@ -137,6 +137,12 @@
         }
     },
     "startNode": "region[root]",
+    "passedNodes": [
+        "reach_location[baba_nuts]",
+        "reach_location[baba_sticks]",
+        "reach_location[nut_pot]",
+        "reach_location[stick_pot]"
+    ],
     "reachableNodes": [
         "reach_location[castle_ganon_mq.c_forest_trial_first]",
         "reach_location[castle_ganon_mq.c_forest_trial_key]",

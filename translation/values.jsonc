@@ -690,6 +690,10 @@
         "type": "value",
         "ref": "item[warp_light]"
     },
+    "ZR_Frogs_Ocarina_Game": {
+        "type": "value",
+        "ref": "item[song_frogs]"
+    },
     "Scarecrow_Song": {
         "type": "value",
         "ref": "item[song_scarecrow]"

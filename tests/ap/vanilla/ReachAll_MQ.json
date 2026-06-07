@@ -85,6 +85,11 @@
             "membership": 1,
             "nut_upgrade": 2,
             "ocarina": 2,
+            "ocarina_a_button": 1,
+            "ocarina_down_button": 1,
+            "ocarina_left_button": 1,
+            "ocarina_right_button": 1,
+            "ocarina_up_button": 1,
             "odd_mushroom": 1,
             "odd_potion": 1,
             "poachers_saw": 1,
@@ -142,6 +147,12 @@
         }
     },
     "startNode": "region[root]",
+    "passedNodes": [
+        "reach_location[baba_nuts]",
+        "reach_location[baba_sticks]",
+        "reach_location[nut_pot]",
+        "reach_location[stick_pot]"
+    ],
     "reachableNodes": [
         "reach_location[castle_ganon_mq.c_forest_trial_first]",
         "reach_location[castle_ganon_mq.c_forest_trial_key]",

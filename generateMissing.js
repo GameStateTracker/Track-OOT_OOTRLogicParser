@@ -1,14 +1,14 @@
 import fs from "fs";
 
 const shops = {
-    "Market Mask Shop Item 1": "market.m_mask_shop_item_1",
-    "Market Mask Shop Item 2": "market.m_mask_shop_item_2",
-    "Market Mask Shop Item 3": "market.m_mask_shop_item_3",
-    "Market Mask Shop Item 4": "market.m_mask_shop_item_4",
-    "Market Mask Shop Item 5": "market.m_mask_shop_item_5",
-    "Market Mask Shop Item 6": "market.m_mask_shop_item_6",
-    "Market Mask Shop Item 7": "market.m_mask_shop_item_7",
-    "Market Mask Shop Item 8": "market.m_mask_shop_item_8"
+    "Market Mask Shop Item 1": "market.mask_shop_1",
+    "Market Mask Shop Item 2": "market.mask_shop_2",
+    "Market Mask Shop Item 3": "market.mask_shop_3",
+    "Market Mask Shop Item 4": "market.mask_shop_4",
+    "Market Mask Shop Item 5": "market.mask_shop_5",
+    "Market Mask Shop Item 6": "market.mask_shop_6",
+    "Market Mask Shop Item 7": "market.mask_shop_7",
+    "Market Mask Shop Item 8": "market.mask_shop_8"
 };
 
 const chests = {
