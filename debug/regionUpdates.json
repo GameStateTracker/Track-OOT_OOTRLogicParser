@@ -2763,7 +2763,7 @@
             "Deku Tree Before Boss MQ": false
         },
         "Deku Tree Before Boss MQ": {
-            "Deku Tree Boss Door MQ": false
+            "Deku Tree Boss Door": false
         },
         "Deku Tree Lobby": {
             "Deku Kokiri Gateway:In": false,
@@ -2829,7 +2829,7 @@
             "Dodongos Cavern Before Boss MQ": false
         },
         "Dodongos Cavern Before Boss MQ": {
-            "Dodongos Cavern Boss Door MQ": false
+            "Dodongos Cavern Boss Door": false
         },
         "Dodongos Cavern Beginning": {
             "Dodongo Mountain Gateway:In": false,
@@ -2876,7 +2876,7 @@
             "Fire Temple Big Lava Room MQ": false
         },
         "Fire Temple Near Boss MQ": {
-            "Fire Temple Boss Door MQ": false
+            "Fire Temple Boss Door": false
         },
         "Fire Temple Big Lava Room MQ": {
             "Fire Temple Elevator Room MQ": false
@@ -2903,7 +2903,7 @@
             "Fire Temple Near Boss MQ": false,
             "Fire Temple Flame Maze Side Room MQ": false,
             "Fire Temple Upper MQ": false,
-            "Fire Temple Boss Door MQ": false
+            "Fire Temple Boss Door": false
         },
         "Fire Temple Lower": {
             "Fire Temple Crater Gateway:In": false,
@@ -2980,7 +2980,7 @@
             "Forest Temple NE Outdoors Ledge MQ": false
         },
         "Forest Temple Before Boss MQ": {
-            "Forest Temple Boss Door MQ": false
+            "Forest Temple Boss Door": false
         },
         "Forest Temple Lobby": {
             "Forest Temple Meadow Gateway:In": false,
@@ -3186,7 +3186,7 @@
             "Jabu Jabus Belly Past Big Octo MQ": false
         },
         "Jabu Jabus Belly Before Boss MQ": {
-            "Jabu Jabus Belly Boss Door MQ": false
+            "Jabu Jabus Belly Boss Door": false
         },
         "Jabu Jabus Belly Beginning": {
             "Jabu Fountain Gateway:In": false,
@@ -4015,7 +4015,7 @@
             "Shadow Temple 3 Spinning Pots Rupees MQ": false
         },
         "Shadow Temple Before Boss MQ": {
-            "Shadow Temple Boss Door MQ": false
+            "Shadow Temple Boss Door": false
         },
         "Shadow Temple Entryway": {
             "Shadow Temple Graveyard Gateway:In": false,
@@ -4075,7 +4075,7 @@
             "Spirit Temple Shared MQ": false,
             "Lower Adult Spirit Temple MQ": false,
             "Spirit Temple Beamos Room MQ": false,
-            "Spirit Temple Boss Door MQ": false
+            "Spirit Temple Boss Door": false
         },
         "Spirit Temple Shared MQ": {
             "Desert Colossus": false
@@ -4091,7 +4091,7 @@
             "Spirit Temple Mirror Puzzle MQ": false
         },
         "Spirit Temple Mirror Puzzle MQ": {
-            "Spirit Temple Boss Door MQ": false
+            "Spirit Temple Boss Door": false
         },
         "Spirit Temple Lobby": {
             "Spirit Temple Colossus Gateway:In": false,
@@ -4132,7 +4132,7 @@
             "Water Temple Lake Gateway:In": false,
             "Water Temple Dive MQ": false,
             "Water Temple Dark Link Region MQ": false,
-            "Water Temple Boss Door MQ": false
+            "Water Temple Boss Door": false
         },
         "Water Temple Dive MQ": {
             "Water Temple Below Central Pillar MQ": false,

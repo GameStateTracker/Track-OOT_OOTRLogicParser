@@ -20,38 +20,69 @@ function runTestLogic(testName, logicFile, data, folders) {
     let failed = 0;
     for (const pname in testResults) {
         const folder = testResults[pname];
-        if (!fs.existsSync(`${outputDir}/${testName}/${pname}`)) {
-            fs.mkdirSync(`${outputDir}/${testName}/${pname}`, {recursive: true});
-        }
-        for (const fname in folder) {
+        const res = writeResults(`${testName}/${pname}`, folder);
+        success += res.success;
+        failed += res.failed;
+    }
+    console.log(`\n✔ success: ${success} | ❌ failed: ${failed}\n`);
+}
+
+function writeResults(pname, testResults) {
+    if (!fs.existsSync(`${outputDir}/${pname}`)) {
+        fs.mkdirSync(`${outputDir}/${pname}`, {recursive: true});
+    }
+    let success = 0;
+    let failed = 0;
+    for (const fname in testResults) {
+        const testResult = testResults[fname];
+        if (testResult.type === "folder") {
+            const res = writeResults(`${pname}/${fname}`, testResult.content);
+            success += res.success;
+            failed += res.failed;
+        } else if (testResult.type === "result") {
             const {
                 result, log
-            } = folder[fname];
+            } = testResult;
             if (result.success) {
                 success++;
             } else {
                 failed++;
             }
             const testResultsData = JSON.stringify(result, null, 4);
-            fs.writeFileSync(`${outputDir}/${testName}/${pname}/${fname}`, testResultsData);
-            fs.writeFileSync(`${outputDir}/${testName}/${pname}/${fname}.html`, log);
+            fs.writeFileSync(`${outputDir}/${pname}/${fname}`, testResultsData);
+            fs.writeFileSync(`${outputDir}/${pname}/${fname}.html`, log);
         }
     }
-    console.log(`\n✔ success: ${success} | ❌ failed: ${failed}\n`);
+    return {
+        success,
+        failed
+    };
 }
 
 const TESTS = [
     () => {
-        runTestLogic("OOTR Vanilla", `${inputDir}/vanilla.readable.json`, {"$IS_AP_STATE": false}, ["ootr", "ootr/vanilla"]);
+        runTestLogic("OOTR Vanilla", `${inputDir}/vanilla.readable.json`, {"$IS_AP_STATE": false}, [
+            "_general",
+            "ootr/vanilla"
+        ]);
     },
     () => {
-        runTestLogic("OOTR Glitched", `${inputDir}/glitched.readable.json`, {"$IS_AP_STATE": false}, ["ootr", "ootr/glitched"]);
+        runTestLogic("OOTR Glitched", `${inputDir}/glitched.readable.json`, {"$IS_AP_STATE": false}, [
+            "_general",
+            "ootr/glitched"
+        ]);
     },
     () => {
-        runTestLogic("AP Vanilla", `${inputDir}/ap_vanilla.readable.json`, {"$IS_AP_STATE": true}, ["ap", "ap/vanilla", "ap/vanilla/can_clear"]);
+        runTestLogic("AP Vanilla", `${inputDir}/ap_vanilla.readable.json`, {"$IS_AP_STATE": true}, [
+            "_general",
+            "ap/vanilla"
+        ]);
     },
     () => {
-        runTestLogic("AP Glitched", `${inputDir}/ap_glitched.readable.json`, {"$IS_AP_STATE": true}, ["ap", "ap/glitched", "ap/glitched/can_clear"]);
+        runTestLogic("AP Glitched", `${inputDir}/ap_glitched.readable.json`, {"$IS_AP_STATE": true}, [
+            "_general",
+            "ap/glitched"
+        ]);
     }
 ];
 

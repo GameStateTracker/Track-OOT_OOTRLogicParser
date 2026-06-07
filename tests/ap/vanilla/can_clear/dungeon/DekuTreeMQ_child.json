@@ -1,0 +1,60 @@
+{
+    "state": {
+        "options": {
+            "scrubsanity": true,
+            "starting_age": "child"
+        },
+        "items": {
+            "bombs": 3,
+            "boomerang": 1,
+            "nut_upgrade": 2,
+            "ocarina": 2,
+            "shield_kokiri": 1,
+            "slingshot": 3,
+            "song_time": 1,
+            "stick_upgrade": 2,
+            "sword_kokiri": 1
+        },
+        "areaActiveLists": {
+            "deku": "mq"
+        }
+    },
+    "close_off": [
+        {
+            "source": "region[deku_kokiri_gateway:in]",
+            "target": "region[kokiri_deku_gateway:out]"
+        },
+        {
+            "source": "region[gohma_blue_warp_gateway:in]",
+            "target": "region[blue_warp_gohma_gateway:out]"
+        }
+    ],
+    "redirects": [
+        {
+            "source": "region[root]",
+            "target": "region[root]{child}",
+            "reroute": ""
+        },
+        {
+            "source": "region[root]",
+            "target": "region[root]{adult}",
+            "reroute": ""
+        }
+    ],
+    "startNode": "region[deku_kokiri_gateway:out]{child}",
+    "reachableNodes": [
+        "reach_location[deku_mq.c_lobby]",
+        "reach_location[deku_mq.c_slingshot]",
+        "reach_location[deku_mq.c_slingshot_back]",
+        "reach_location[deku_mq.c_basement]",
+        "reach_location[deku_mq.c_compass]",
+        "reach_location[deku_mq.c_before_log]",
+        "reach_location[deku_mq.c_after_log]",
+        "reach_location[deku_mq.c_basement_salesman]",
+        "reach_location[deku_mq.s_basement_grave_ceiling_child]",
+        "reach_location[deku_mq.s_2f_compass_side_child]",
+        "reach_location[deku_mq.s_crate_near_map_child]",
+        "reach_location[deku_mq.s_basement_back_room_child]",
+        "reach_location[deku.c_gohma]"
+    ]
+}

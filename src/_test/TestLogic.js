@@ -15,6 +15,9 @@ const aliasesFile = path.join(testDir, "/_config/aliases.json");
 const valueAliases = JSONFile.read(aliasesFile);
 
 export default function testLogic(logic, data = {}, folders = []) {
+    if (!Array.isArray(folders)) {
+        folders = [folders];
+    }
     const res = {};
     const {
         options: stateOptions = {},
@@ -29,7 +32,6 @@ export default function testLogic(logic, data = {}, folders = []) {
     }, valueAliases);
     console.log(tester.getLog());
     tester.clearLog();
-    res["."] = runTests(tester, testDir);
     for (const folder of folders) {
         const folderName = path.join(testDir, folder);
         res[folder] = runTests(tester, folderName);
@@ -42,12 +44,21 @@ function runTests(tester, folderName) {
     if (fs.existsSync(folderName)) {
         const files = fs.readdirSync(folderName);
         for (const file of files) {
+            if ([".", ".."].includes(file)) {
+                continue;
+            }
             const fileName = path.join(folderName, file);
             const fileStat = fs.lstatSync(fileName);
-            if  (fileStat.isFile()) {
+            if (fileStat.isDirectory()) {
+                res[file] = {
+                    type: "folder",
+                    content: runTests(tester, fileName)
+                };
+            } else if (fileStat.isFile()) {
                 console.log(`➔  test case - ${fileName}`);
                 const config = JSONFile.read(fileName);
                 res[file] = {
+                    type: "result",
                     result: tester.testCase(config),
                     log: generateHTMLog(file, tester.getLogData())
                 };

@@ -34,6 +34,7 @@ rules.forEach((v, k) => {
 });
 
 const RENAME_BLACKLIST = [
+    / Boss Door$/,
     / Boss Room$/,
     / Boss Gateway$/,
     / Blue Warp Gateway$/,

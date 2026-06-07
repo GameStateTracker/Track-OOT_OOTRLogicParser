@@ -40,6 +40,7 @@
         "Deku Tree Lobby": "Kokiri Deku Gateway"
     },
     "ZF Ice Ledge": {
+        "Ice Cavern": "Fountain Ice Cavern Gateway",
         "Ice Cavern Beginning": "Fountain Ice Cavern Gateway"
     },
     "Zoras Fountain": {
@@ -49,10 +50,14 @@
     },
     "Sacred Forest Meadow": {
         "SFM Storms Grotto": "Meadow Storms Grotto Gateway",
-        "SFM Fairy Grotto": "Meadow Fairy Grotto Gateway"
+        "SFM Fairy Grotto": "Meadow Fairy Grotto Gateway",
+        "Forest Temple Lobby": "Meadow Forest Temple Gateway"
     },
     "SFM Forest Temple Entrance Ledge": {
         "Forest Temple Lobby": "Meadow Forest Temple Gateway"
+    },
+    "DMC Central": {
+        "Fire Temple Lower": "Crater Fire Temple Gateway"
     },
     "DMC Fire Temple Entrance": {
         "Fire Temple Lower": "Crater Fire Temple Gateway"
@@ -90,16 +95,23 @@
     "Jabu Jabus Belly Beginning": {
         "Zoras Fountain": "Jabu Fountain Gateway"
     },
+    "Ice Cavern": {
+        "Zoras Fountain": "Ice Cavern Fountain Gateway",
+        "ZF Ice Ledge": "Ice Cavern Fountain Gateway"
+    },
     "Ice Cavern Beginning": {
+        "Zoras Fountain": "Ice Cavern Fountain Gateway",
         "ZF Ice Ledge": "Ice Cavern Fountain Gateway"
     },
     "Gerudo Training Ground Lobby": {
         "Gerudo Fortress": "Training Grounds Fortress Gateway"
     },
     "Forest Temple Lobby": {
+        "Sacred Forest Meadow": "Forest Temple Meadow Gateway",
         "SFM Forest Temple Entrance Ledge": "Forest Temple Meadow Gateway"
     },
     "Fire Temple Lower": {
+        "DMC Central": "Fire Temple Crater Gateway",
         "DMC Fire Temple Entrance": "Fire Temple Crater Gateway"
     },
     "Water Temple Lobby": {
