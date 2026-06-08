@@ -13,7 +13,7 @@
   "type": "module",
   "dependencies": {
     "@emcjs/core": "https://github.com/ZidArgs/emcJS-Core.git/#1.1.0",
-    "@emcjs/logic": "https://github.com/ZidArgs/emcJS-Logic.git/#0.1.5"
+    "@emcjs/logic": "https://github.com/ZidArgs/emcJS-Logic.git/#0.1.6"
   },
   "devDependencies": {
     "@babel/core": "^7.28.5",

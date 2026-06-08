@@ -40,110 +40,18 @@
         "type": "mixin",
         "ref": "mixin[is_day]"
     },
-    "Forest_Temple_Jo_and_Beth": {
-        "type": "value",
-        "ref": "event[forest_temple_jo_and_beth]"
-    },
-    "Forest_Temple_Amy_and_Meg": {
-        "type": "value",
-        "ref": "event[forest_temple_amy_and_meg]"
-    },
     "at_dampe_time": {
         "type": "mixin",
         "ref": "mixin[is_night]"
     },
     /* specials */
-    "Showed_Mido_Sword_&_Shield": {
-        "type": "value",
-        "ref": "event[showed_mido_sword_&_shield]"
-    },
-    "Drain_Well": {
-        "type": "value",
-        "ref": "event[drain_well]"
-    },
-    "Kakariko_Village_Gate_Open": {
-        "type": "value",
-        "ref": "event[kakariko_village_gate_open]"
-    },
-    "Wake_Up_Adult_Talon": {
-        "type": "value",
-        "ref": "event[wake_up_adult_talon]"
-    },
-    "GC_Woods_Warp_Open": {
-        "type": "value",
-        "ref": "event[gc_woods_warp_open]"
-    },
-    "Goron_City_Child_Fire": {
-        "type": "value",
-        "ref": "event[goron_city_child_fire]"
-    },
-    "Stop_GC_Rolling_Goron_as_Adult": {
-        "type": "value",
-        "ref": "event[stop_gc_rolling_goron_as_adult]"
-    },
-    "Child_Water_Temple": {
-        "type": "value",
-        "ref": "event[child_water_temple]"
-    },
     "had_night_start": {
         "type": "value",
         "ref": "option[time_start_night]"
     },
-    "Links_Cow": {
-        "type": "value",
-        "ref": "event[links_cow]"
-    },
-    "Epona": {
-        "type": "value",
-        "ref": "event[epona]"
-    },
     "Big_Poe": {
         "type": "value",
         "ref": "reach_location[big_poe_kill]"
-    },
-    "Bonooru": {
-        "type": "value",
-        "ref": "event[bonooru]"
-    },
-    "Dampes_Windmill_Access": {
-        "type": "value",
-        "ref": "event[dampes_windmill_access]"
-    },
-    "Cojiro_Access": {
-        "type": "value",
-        "ref": "event[cojiro_access]"
-    },
-    "Mask_Shop_Open": {
-        "type": "value",
-        "ref": "event[mask_shop_open]"
-    },
-    "Odd_Potion_Access": {
-        "type": "value",
-        "ref": "event[odd_potion_access]"
-    },
-    "Eyeball_Frog_Access": {
-        "type": "value",
-        "ref": "event[eyeball_frog_access]"
-    },
-    "Poachers_Saw_Access": {
-        "type": "value",
-        "ref": "event[poachers_saw_access]"
-    },
-    "Odd_Mushroom_Access": {
-        "type": "value",
-        "ref": "event[odd_mushroom_access]"
-    },
-    "Broken_Sword_Access": {
-        "type": "value",
-        "ref": "event[broken_sword_access]"
-    },
-    "Prescription_Access": {
-        "type": "value",
-        "ref": "event[prescription_access]"
-    },
-    "Eyedrops_Access": {
-        "type": "value",
-        "ref": "event[eyedrops_access]"
     },
     "disable_trade_revert": {
         "type": "or",
@@ -165,102 +73,6 @@
                 "ref": "option[adult_trade_shuffle]"
             }
         ]
-    },
-    "Carpenter_Rescue": {
-        "type": "value",
-        "ref": "event[carpenter_rescue]"
-    },
-    "Hideout_1_Torch_Jail_Gerudo": {
-        "type": "value",
-        "ref": "event[hideout_1_torch_jail_gerudo]"
-    },
-    "Hideout_2_Torches_Jail_Gerudo": {
-        "type": "value",
-        "ref": "event[hideout_2_torches_jail_gerudo]"
-    },
-    "Hideout_3_Torches_Jail_Gerudo": {
-        "type": "value",
-        "ref": "event[hideout_3_torches_jail_gerudo]"
-    },
-    "Hideout_4_Torches_Jail_Gerudo": {
-        "type": "value",
-        "ref": "event[hideout_4_torches_jail_gerudo]"
-    },
-    "Hideout_1_Torch_Jail_Carpenter": {
-        "type": "value",
-        "ref": "event[hideout_1_torch_jail_carpenter]"
-    },
-    "Hideout_2_Torches_Jail_Carpenter": {
-        "type": "value",
-        "ref": "event[hideout_2_torches_jail_carpenter]"
-    },
-    "Hideout_3_Torches_Jail_Carpenter": {
-        "type": "value",
-        "ref": "event[hideout_3_torches_jail_carpenter]"
-    },
-    "Hideout_4_Torches_Jail_Carpenter": {
-        "type": "value",
-        "ref": "event[hideout_4_torches_jail_carpenter]"
-    },
-    "GF_Gate_Open": {
-        "type": "value",
-        "ref": "event[gf_gate_open]"
-    },
-    "King_Zora_Thawed": {
-        "type": "value",
-        "ref": "event[king_zora_thawed]"
-    },
-    "Deku_Tree_Clear": {
-        "type": "value",
-        "ref": "event[defeat_queen_gohma]"
-    },
-    "Water_Temple_Clear": {
-        "type": "value",
-        "ref": "event[water_temple_clear]"
-    },
-    "Forest_Trial_Clear": {
-        "type": "value",
-        "ref": "event[forest_trial_clear]"
-    },
-    "Fire_Trial_Clear": {
-        "type": "value",
-        "ref": "event[fire_trial_clear]"
-    },
-    "Water_Trial_Clear": {
-        "type": "value",
-        "ref": "event[water_trial_clear]"
-    },
-    "Shadow_Trial_Clear": {
-        "type": "value",
-        "ref": "event[shadow_trial_clear]"
-    },
-    "Spirit_Trial_Clear": {
-        "type": "value",
-        "ref": "event[spirit_trial_clear]"
-    },
-    "Light_Trial_Clear": {
-        "type": "value",
-        "ref": "event[light_trial_clear]"
-    },
-    "Raise_Water_Level": {
-        "type": "value",
-        "ref": "event[raise_water_level]"
-    },
-    "Jabu_Jabus_Belly_Floor_Lowered": {
-        "type": "value",
-        "ref": "event[jabu_jabus_belly_floor_lowered]"
-    },
-    "Jabu_Jabus_Belly_Parasitic_Tentacle_Cleared": {
-        "type": "value",
-        "ref": "event[jabu_jabus_belly_parasitic_tentacle_cleared]"
-    },
-    "Jabu_Jabus_Belly_Center_Tentacle_Cleared": {
-        "type": "value",
-        "ref": "event[jabu_jabus_belly_center_tentacle_cleared]"
-    },
-    "Jabu_Jabus_Belly_Right_Tentacle_Cleared": {
-        "type": "value",
-        "ref": "event[jabu_jabus_belly_right_tentacle_cleared]"
     },
     /* items */
     "Bow": {
@@ -2143,42 +1955,6 @@
     "logic_spirit_mq_water_rupee": {
         "type": "value",
         "ref": "option[skip.spirit_mq_water_rupee]"
-    },
-    "Defeat_Queen_Gohma": {
-        "type": "value",
-        "ref": "event[defeat_queen_gohma]"
-    },
-    "Defeat_King_Dodongo": {
-        "type": "value",
-        "ref": "event[defeat_king_dodongo]"
-    },
-    "Defeat_Barinade": {
-        "type": "value",
-        "ref": "event[defeat_barinade]"
-    },
-    "Defeat_Phantom_Ganon": {
-        "type": "value",
-        "ref": "event[defeat_phantom_ganon]"
-    },
-    "Defeat_Volvagia": {
-        "type": "value",
-        "ref": "event[defeat_volvagia]"
-    },
-    "Defeat_Morpha": {
-        "type": "value",
-        "ref": "event[defeat_morpha]"
-    },
-    "Defeat_Bongo_Bongo": {
-        "type": "value",
-        "ref": "event[defeat_bongo_bongo]"
-    },
-    "Defeat_Twinrova": {
-        "type": "value",
-        "ref": "event[defeat_twinrova]"
-    },
-    "Mask_of_Truth_Access": {
-        "type": "value",
-        "ref": "event[mask_of_truth_access]"
     },
     "": ""
 }

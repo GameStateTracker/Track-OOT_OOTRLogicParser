@@ -23,7 +23,22 @@ export function loadDictFolder(folderPath) {
                             continue;
                         }
                         for (const key in fileData) {
-                            data[key] = fileData[key];
+                            const oldData = data[key];
+                            if  (typeof oldData === "object") {
+                                if (Array.isArray(oldData)) {
+                                    data[key] = [
+                                        ...oldData,
+                                        ...fileData[key]
+                                    ];
+                                } else {
+                                    data[key] = {
+                                        ...oldData,
+                                        ...fileData[key]
+                                    };
+                                }
+                            } else {
+                                data[key] = fileData[key];
+                            }
                         }
                     } catch {
                         const parsedPath = path.parse(filePath);

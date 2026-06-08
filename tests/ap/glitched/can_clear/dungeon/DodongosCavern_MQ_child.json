@@ -40,6 +40,18 @@
             "target": "region[blue_warp_dodongo_gateway:out]"
         }
     ],
+    "redirects": [
+        {
+            "source": "region[root]",
+            "target": "region[root]{child}",
+            "reroute": ""
+        },
+        {
+            "source": "region[root]",
+            "target": "region[root]{adult}",
+            "reroute": ""
+        }
+    ],
     "startNode": "region[dodongo_mountain_gateway:out]{child}",
     "reachableNodes": [
         "reach_location[dodongo_mq.c_1f_right]",

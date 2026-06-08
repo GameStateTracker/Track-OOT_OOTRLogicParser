@@ -144,6 +144,7 @@
     "Graveyard Dampe Race Hookshot Chest": "kakariko.c_race_1",
     "Graveyard Dampe Race Freestanding PoH": "kakariko.c_race_2",
     "Kak Open Grotto Chest": "kakariko.c_grotto",
+    "Kak ReDead Grotto Chest": "kakariko.c_redead_grotto",
     "Kak Redead Grotto Chest": "kakariko.c_redead_grotto",
     "Kak Granny Buy Blue Potion": "kakariko.c_granny_buy_blue_potion",
     // castle town
@@ -509,6 +510,7 @@
     "Forest Temple MQ Wolfos Chest": "temple_forest_mq.c_behind_lobby",
     "Forest Temple MQ GS Block Push Room": "temple_forest_mq.s_block_push_room_adult",
     "Forest Temple MQ Boss Key Chest": "temple_forest_mq.c_boss_key",
+    "Forest Temple MQ ReDead Chest": "temple_forest_mq.c_redead_chest",
     "Forest Temple MQ Redead Chest": "temple_forest_mq.c_redead_chest",
     "Forest Temple MQ GS Level Island Courtyard": "temple_forest_mq.s_outdoor_west_adult",
     "Forest Temple MQ Well Chest": "temple_forest_mq.c_well_chest",

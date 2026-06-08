@@ -1,50 +1,98 @@
 [
     {
+        "region_name": "Gohma Blue Warp Gateway",
+        "exits": {
+            "Blue Warp Gohma Gateway": "True"
+        }
+    },
+    {
         "region_name": "Blue Warp Gohma Gateway",
         "exits": {
-            "KF Outside Deku Tree": "True"
+            "Gohma Blue Warp": "True"
+        }
+    },
+    {
+        "region_name": "Dodongo Blue Warp Gateway",
+        "exits": {
+            "Blue Warp Dodongo Gateway": "True"
         }
     },
     {
         "region_name": "Blue Warp Dodongo Gateway",
         "exits": {
-            "Death Mountain": "True"
+            "Dodongo Blue Warp": "True"
+        }
+    },
+    {
+        "region_name": "Barinade Blue Warp Gateway",
+        "exits": {
+            "Blue Warp Barinade Gateway": "True"
         }
     },
     {
         "region_name": "Blue Warp Barinade Gateway",
         "exits": {
-            "Zoras Fountain": "True"
+            "Barinade Blue Warp": "True"
+        }
+    },
+    {
+        "region_name": "Phantom Ganon Blue Warp Gateway",
+        "exits": {
+            "Blue Warp Phantom Ganon Gateway": "True"
         }
     },
     {
         "region_name": "Blue Warp Phantom Ganon Gateway",
         "exits": {
-            "Sacred Forest Meadow": "True"
+            "Phantom Ganon Blue Warp": "True"
+        }
+    },
+    {
+        "region_name": "Volvagia Blue Warp Gateway",
+        "exits": {
+            "Blue Warp Volvagia Gateway": "True"
         }
     },
     {
         "region_name": "Blue Warp Volvagia Gateway",
         "exits": {
-            "DMC Central Local": "True"
+            "Volvagia Blue Warp": "True"
+        }
+    },
+    {
+        "region_name": "Morpha Blue Warp Gateway",
+        "exits": {
+            "Blue Warp Morpha Gateway": "True"
         }
     },
     {
         "region_name": "Blue Warp Morpha Gateway",
         "exits": {
-            "Lake Hylia": "True"
+            "Morpha Blue Warp": "True"
+        }
+    },
+    {
+        "region_name": "Bongo Bongo Blue Warp Gateway",
+        "exits": {
+            "Blue Warp Bongo Bongo Gateway": "True"
         }
     },
     {
         "region_name": "Blue Warp Bongo Bongo Gateway",
         "exits": {
-            "Graveyard Warp Pad Region": "True"
+            "Bongo Bongo Blue Warp": "True"
+        }
+    },
+    {
+        "region_name": "Twinrova Blue Warp Gateway",
+        "exits": {
+            "Blue Warp Twinrova Gateway": "True"
         }
     },
     {
         "region_name": "Blue Warp Twinrova Gateway",
         "exits": {
-            "Desert Colossus": "True"
+            "Twinrova Blue Warp": "True"
         }
     }
 ]

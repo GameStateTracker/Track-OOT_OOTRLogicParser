@@ -26,6 +26,7 @@ class EventTranslations {
     }
 
     translate(value) {
+        value = value.replace(/ /g, "_").replace(/^'|'$/g, "");
         if (translations[value] != null) {
             requestedKeys.add(value);
             return translations[value];

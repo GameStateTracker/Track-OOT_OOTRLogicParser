@@ -1,7 +1,16 @@
+import path from "path";
+import JSONCFile from "../../utils/JSONCFile.js";
 import Translation from "../../utils/Translation.js";
 import {translateMixinName} from "../../utils/TranslatorFunctions.js";
 
-const EXPECTED_REG = /item\[.*?\]/;
+const __dirname = path.resolve();
+
+const ignoredValueMatchers = JSONCFile.read(path.join(__dirname, "/config/ignoredValueMatchers.json"), []);
+
+const ignoredValues = [];
+for (const matcher of ignoredValueMatchers) {
+    ignoredValues.push(new RegExp(matcher));
+}
 
 export default function postCalculate(scope, input, age = "", region = "", basic = false) {
     const {
@@ -25,9 +34,16 @@ export default function postCalculate(scope, input, age = "", region = "", basic
             return input;
         }
     }
-    const res = Translation.getValueName(input.ref);
-    if (res != null) {
-        return calc(scope, res, age, region, basic);
+    const resEv = Translation.translateEvent(input.ref);
+    if (resEv != null) {
+        return {
+            type: "value",
+            ref: resEv
+        };
+    }
+    const resVal = Translation.getValueName(input.ref);
+    if (resVal != null) {
+        return calc(scope, resVal, age, region, basic);
     }
     const mixname = translateMixinName(input.ref);
     if (mixins.has(mixname)) {
@@ -42,7 +58,8 @@ export default function postCalculate(scope, input, age = "", region = "", basic
             ref: mixname
         };
     }
-    if (!EXPECTED_REG.test(input.ref)) {
+    const knownValue = ignoredValues.some((matcher) => matcher.test(input.ref));
+    if (!knownValue) {
         missingValue.add(input.ref);
     }
     return input;

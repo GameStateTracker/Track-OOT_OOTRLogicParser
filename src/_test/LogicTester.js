@@ -44,6 +44,11 @@ export default class LogicTester {
         this.#presetData = presetData;
         // load collectibles
         this.#processor.setCollectible("reach_location[master_sword]", "flag[time_travel]");
+        // inject functions
+        this.#processor.injectFunction("function[has_soul]{child}", () => true);
+        this.#processor.injectFunction("function[has_soul]{adult}", () => true);
+        this.#processor.injectFunction("function[can_live_dmg]{child}", () => true);
+        this.#processor.injectFunction("function[can_live_dmg]{adult}", () => true);
     }
 
     getLogData() {

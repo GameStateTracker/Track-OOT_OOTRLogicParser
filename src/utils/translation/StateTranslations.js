@@ -4,6 +4,12 @@ import JSONCFile from "../JSONCFile.js";
 const __dirname = path.resolve();
 
 const translations = JSONCFile.read(path.join(__dirname, "/translation/states.jsonc"), {});
+const ignoredValueMatchers = JSONCFile.read(path.join(__dirname, "/config/ignoredValueMatchers.json"), []);
+
+const ignoredValues = [];
+for (const matcher of ignoredValueMatchers) {
+    ignoredValues.push(new RegExp(matcher));
+}
 
 const requestedKeys = new Set();
 
@@ -26,9 +32,12 @@ class StateTranslations {
     }
 
     translate(value) {
+        const knownValue = ignoredValues.some((matcher) => matcher.test(value));
         value = value.replace(/ /g, "_").replace(/^'|'$/g, "");
         if (translations[value] != null) {
-            requestedKeys.add(value);
+            if (!knownValue) {
+                requestedKeys.add(value);
+            }
             return translations[value];
         }
     }
