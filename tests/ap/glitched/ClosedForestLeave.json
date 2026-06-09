@@ -14,7 +14,15 @@
             "deku": "v"
         }
     },
+    "flags": {},
+    "forceReach": [],
+    "settings": {},
+    "close_off": [],
+    "redirects": [],
     "startNode": "region[root]",
+    "passedNodes": [],
+    "missingNodes": [],
+    "brokenNodes": [],
     "reachableNodes": [
         "event[defeat_queen_gohma]",
         "event[showed_mido_sword_&_shield]",
@@ -26,5 +34,6 @@
         "region[kokiri_bridge_gateway:in]{child}",
         "region[lw_bridge_from_forest]{child}",
         "region[queen_gohma_boss_room]{child}"
-    ]
+    ],
+    "unreachableNodes": []
 }

@@ -135,6 +135,11 @@
             "training_grounds": "v"
         }
     },
+    "flags": {},
+    "forceReach": [],
+    "settings": {},
+    "close_off": [],
+    "redirects": [],
     "startNode": "region[root]",
     "passedNodes": [
         "reach_location[baba_nuts]",
@@ -142,6 +147,8 @@
         "reach_location[nut_pot]",
         "reach_location[stick_pot]"
     ],
+    "missingNodes": [],
+    "brokenNodes": [],
     "reachableNodes": [
         "reach_location[castle_ganon.c_boss_key]",
         "reach_location[castle_ganon.c_forest_trial]",
@@ -625,5 +632,6 @@
         "reach_location[zoras.zoras_shop_6]",
         "reach_location[zoras.zoras_shop_7]",
         "reach_location[zoras.zoras_shop_8]"
-    ]
+    ],
+    "unreachableNodes": []
 }

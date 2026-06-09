@@ -135,6 +135,8 @@
     "flags": {
         "time_travel": 1
     },
+    "forceReach": [],
+    "settings": {},
     "close_off": [
         {
             "source": "region[ganons_castle_castle_grounds_gateway:in]",
@@ -164,6 +166,9 @@
         }
     ],
     "startNode": "region[ganons_castle_castle_grounds_gateway:out]{adult}",
+    "passedNodes": [],
+    "missingNodes": [],
+    "brokenNodes": [],
     "reachableNodes": [
         "reach_location[castle_ganon.c_boss]",
         "reach_location[castle_ganon.c_boss_key]",
@@ -177,20 +182,12 @@
         "reach_location[castle_ganon.c_light_trial_third_left]",
         "reach_location[castle_ganon.c_light_trial_third_right]",
         "reach_location[castle_ganon.c_shadow_trial_first]",
-        "reach_location[castle_ganon.c_shadow_trial_first]",
-        "reach_location[castle_ganon.c_shadow_trial_second]",
         "reach_location[castle_ganon.c_shadow_trial_second]",
         "reach_location[castle_ganon.c_spirit_trial_first]",
-        "reach_location[castle_ganon.c_spirit_trial_first]",
-        "reach_location[castle_ganon.c_spirit_trial_second]",
         "reach_location[castle_ganon.c_spirit_trial_second]",
         "reach_location[castle_ganon.c_under_bridge_salesman_1]",
-        "reach_location[castle_ganon.c_under_bridge_salesman_1]",
-        "reach_location[castle_ganon.c_under_bridge_salesman_2]",
         "reach_location[castle_ganon.c_under_bridge_salesman_2]",
         "reach_location[castle_ganon.c_under_bridge_salesman_3]",
-        "reach_location[castle_ganon.c_under_bridge_salesman_3]",
-        "reach_location[castle_ganon.c_under_bridge_salesman_4]",
         "reach_location[castle_ganon.c_under_bridge_salesman_4]",
         "reach_location[castle_ganon.c_water_trial_left]",
         "reach_location[castle_ganon.c_water_trial_right]",
@@ -252,5 +249,6 @@
         "reach_location[castle_ganon.tower_pot_9]",
         "reach_location[castle_ganon.water_trial_pot_1]",
         "reach_location[castle_ganon.water_trial_pot_2]"
-    ]
+    ],
+    "unreachableNodes": []
 }

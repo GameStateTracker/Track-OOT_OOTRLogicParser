@@ -22,6 +22,8 @@
     "flags": {
         "time_travel": 1
     },
+    "forceReach": [],
+    "settings": {},
     "close_off": [
         {
             "source": "region[woods_meadow_gateway:in]",
@@ -67,6 +69,9 @@
         }
     ],
     "startNode": "region[root]",
+    "passedNodes": [],
+    "missingNodes": [],
+    "brokenNodes": [],
     "reachableNodes": [
         "reach_location[woods.c_bomb_grotto]",
         "reach_location[woods.c_deku_salesman_grotto]",
@@ -75,5 +80,6 @@
         "reach_location[woods.near_shortcuts_grotto_beehive_2]",
         "reach_location[woods.s_deku_salesman_magic_bean_adult]",
         "reach_location[woods.scrubs_grotto_beehive]"
-    ]
+    ],
+    "unreachableNodes": []
 }

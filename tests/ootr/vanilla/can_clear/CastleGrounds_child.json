@@ -22,6 +22,9 @@
             "sword_kokiri": 1
         }
     },
+    "flags": {},
+    "forceReach": [],
+    "settings": {},
     "close_off": [
         {
             "source": "region[grounds_market_gateway:in]",
@@ -41,6 +44,9 @@
         }
     ],
     "startNode": "region[grounds_market_gateway:out]{child}",
+    "passedNodes": [],
+    "missingNodes": [],
+    "brokenNodes": [],
     "reachableNodes": [
         "reach_location[castle.castle_moat_wonderitem_10]",
         "reach_location[castle.castle_moat_wonderitem_1]",
@@ -65,5 +71,6 @@
         "reach_location[castle_town.c_zelda]",
         "reach_location[castle_town.s_storm_grotto_child]",
         "reach_location[castle_town.s_tree_child]"
-    ]
+    ],
+    "unreachableNodes": []
 }

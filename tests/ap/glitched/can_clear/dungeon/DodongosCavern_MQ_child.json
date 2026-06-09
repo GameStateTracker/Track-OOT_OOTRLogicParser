@@ -30,6 +30,7 @@
     "forceReach": [
         "reach_location[stick_pot]"
     ],
+    "settings": {},
     "close_off": [
         {
             "source": "region[dodongo_mountain_gateway:in]",
@@ -53,6 +54,9 @@
         }
     ],
     "startNode": "region[dodongo_mountain_gateway:out]{child}",
+    "passedNodes": [],
+    "missingNodes": [],
+    "brokenNodes": [],
     "reachableNodes": [
         "reach_location[dodongo_mq.c_1f_right]",
         "reach_location[dodongo_mq.c_above_stairs]",
@@ -70,5 +74,6 @@
         "reach_location[dodongo_mq.s_time_block_room]",
         "reach_location[dodongo_mq.s_upper_lizalfos_room]",
         "reach_location[dodongo.c_dodongo]"
-    ]
+    ],
+    "unreachableNodes": []
 }

@@ -1,4 +1,3 @@
-Debugger attached.
 
 ===========================================
 PARSE HELPERS
@@ -73,7 +72,6 @@ generate logic output
 -------------------------------------------
 locations not converted
 
-Forest Temple MQ ReDead Chest
 
 -------------------------------------------
 values not converted
@@ -111,7 +109,6 @@ adv_fire_trial_longshot_skip
 glitch_fire_trial_pillar_silver
 glitch_igc_trials_skip_spirit_trial
 adv_gtg_mq_enemy_rooms_as_child
-Gerudo_Training_Ground_Lava_Silver_Rupees_Collected
 glitch_gtg_mq_blue_fire_skip
 logic_gtg_eye_statue_wonderitem
 glitch_gtg_lobby_eye
@@ -228,7 +225,6 @@ glitch_spirit_mq_ceiling_boulder_skip
 glitch_spirit_mq_silver_block_skip
 adv_spirit_mq_lower_adult_from_lobby
 adv_spirit_mq_lobby_eye
-Spirit_Temple_MQ_Child_Gibdo_Room_Switch_Hit
 adv_spirit_mq_child_gibdo_eye
 glitch_spirit_mq_lower_adult_no_fire
 glitch_spirit_mq_symphony_lullaby
@@ -237,7 +233,6 @@ glitch_spirit_bk_skip_headclip
 glitch_spirit_adult_block_skip
 glitch_spirit_child_side_crawlspace_skip
 adv_spirit_compass_hoverboots_only
-Reset_Water_Level
 glitch_water_bottle_dive
 glitch_water_mq_bk_skip
 glitch_water_south_basement_clip
@@ -268,4 +263,3 @@ glitch_child_shadow
 -------------------------------------------
 states not converted
 
-Waiting for the debugger to disconnect...

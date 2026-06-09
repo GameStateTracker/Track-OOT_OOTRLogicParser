@@ -11,6 +11,9 @@
             "magic_power": 2
         }
     },
+    "flags": {},
+    "forceReach": [],
+    "settings": {},
     "close_off": [
         {
             "source": "region[domain_river_gateway:in]",
@@ -38,6 +41,9 @@
         }
     ],
     "startNode": "region[zoras_domain]{adult}",
+    "passedNodes": [],
+    "missingNodes": [],
+    "brokenNodes": [],
     "reachableNodes": [
         "reach_location[zoras.c_king_zora]",
         "reach_location[zoras.pot_1]",
@@ -54,5 +60,6 @@
         "reach_location[zoras.zoras_shop_6]",
         "reach_location[zoras.zoras_shop_7]",
         "reach_location[zoras.zoras_shop_8]"
-    ]
+    ],
+    "unreachableNodes": []
 }

@@ -16,6 +16,9 @@
             "scale": 2
         }
     },
+    "flags": {},
+    "forceReach": [],
+    "settings": {},
     "close_off": [
         {
             "source": "region[fountain_domain_gateway:in]",
@@ -43,9 +46,13 @@
         }
     ],
     "startNode": "region[zoras_fountain]{child}",
+    "passedNodes": [],
+    "missingNodes": [],
+    "brokenNodes": [],
     "reachableNodes": [
         "reach_location[zoras.c_fairy]",
         "reach_location[zoras.s_tree_child]",
         "reach_location[zoras.s_wall_child_night]"
-    ]
+    ],
+    "unreachableNodes": []
 }

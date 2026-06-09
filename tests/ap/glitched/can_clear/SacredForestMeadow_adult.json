@@ -18,6 +18,9 @@
             "sword_master": 1
         }
     },
+    "flags": {},
+    "forceReach": [],
+    "settings": {},
     "close_off": [
         {
             "source": "region[meadow_woods_gateway:in]",
@@ -37,11 +40,15 @@
         }
     ],
     "startNode": "region[sfm_entryway]{adult}",
+    "passedNodes": [],
+    "missingNodes": [],
+    "brokenNodes": [],
     "reachableNodes": [
         "reach_location[woods.c_deku_salesman_meadow_grotto_1]",
         "reach_location[woods.c_deku_salesman_meadow_grotto_2]",
         "reach_location[woods.c_warp]",
         "reach_location[woods.c_wolfos_grotto]",
         "reach_location[woods.s_labyrinth_adult_night]"
-    ]
+    ],
+    "unreachableNodes": []
 }

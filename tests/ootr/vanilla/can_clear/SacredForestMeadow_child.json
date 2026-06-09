@@ -17,9 +17,11 @@
             "zeldas_letter": 1
         }
     },
+    "flags": {},
     "forceReach": [
         "region[hc_garden_skippable_locations]{child}"
     ],
+    "settings": {},
     "close_off": [
         {
             "source": "region[meadow_woods_gateway:in]",
@@ -39,10 +41,14 @@
         }
     ],
     "startNode": "region[sfm_entryway]{child}",
+    "passedNodes": [],
+    "missingNodes": [],
+    "brokenNodes": [],
     "reachableNodes": [
         "reach_location[woods.c_deku_salesman_meadow_grotto_1]",
         "reach_location[woods.c_deku_salesman_meadow_grotto_2]",
         "reach_location[woods.c_saria]",
         "reach_location[woods.c_wolfos_grotto]"
-    ]
+    ],
+    "unreachableNodes": []
 }

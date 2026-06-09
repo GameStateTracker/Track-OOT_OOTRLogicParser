@@ -16,6 +16,8 @@
     "flags": {
         "time_travel": 1
     },
+    "forceReach": [],
+    "settings": {},
     "close_off": [
         {
             "source": "region[ganons_castle_grounds]",
@@ -39,8 +41,12 @@
         }
     ],
     "startNode": "region[ganons_castle_grounds]{adult}",
+    "passedNodes": [],
+    "missingNodes": [],
+    "brokenNodes": [],
     "reachableNodes": [
         "reach_location[castle_town.c_ganon_fairy]",
         "reach_location[castle_town.s_near_ganon_fairy_adult]"
-    ]
+    ],
+    "unreachableNodes": []
 }

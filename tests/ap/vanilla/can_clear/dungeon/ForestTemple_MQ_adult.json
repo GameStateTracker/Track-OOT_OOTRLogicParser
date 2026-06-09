@@ -25,6 +25,8 @@
     "flags": {
         "time_travel": 1
     },
+    "forceReach": [],
+    "settings": {},
     "close_off": [
         {
             "source": "region[forest_temple_meadow_gateway:in]",
@@ -48,6 +50,9 @@
         }
     ],
     "startNode": "region[forest_temple_meadow_gateway:out]{adult}",
+    "passedNodes": [],
+    "missingNodes": [],
+    "brokenNodes": [],
     "reachableNodes": [
         "reach_location[forest_temple_mq.basement_pot_1]",
         "reach_location[forest_temple_mq.basement_pot_2]",
@@ -96,5 +101,6 @@
         "reach_location[temple_forest_mq.s_outdoor_west_adult]",
         "reach_location[temple_forest_mq.s_well_adult]",
         "reach_location[temple_forest.c_phantomganon]"
-    ]
+    ],
+    "unreachableNodes": []
 }

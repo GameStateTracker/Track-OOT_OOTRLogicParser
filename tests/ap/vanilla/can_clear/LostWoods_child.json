@@ -22,6 +22,9 @@
             "sword_kokiri": 1
         }
     },
+    "flags": {},
+    "forceReach": [],
+    "settings": {},
     "close_off": [
         {
             "source": "region[woods_meadow_gateway:in]",
@@ -57,6 +60,9 @@
         }
     ],
     "startNode": "region[lost_woods]{child}",
+    "passedNodes": [],
+    "missingNodes": [],
+    "brokenNodes": [],
     "reachableNodes": [
         "reach_location[woods.c_bomb_grotto]",
         "reach_location[woods.c_deku_salesman]",
@@ -83,5 +89,6 @@
         "reach_location[woods.underwater_green_rupee_6]",
         "reach_location[woods.underwater_green_rupee_7]",
         "reach_location[woods.underwater_shortcut_green_rupee]"
-    ]
+    ],
+    "unreachableNodes": []
 }

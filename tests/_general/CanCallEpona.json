@@ -9,8 +9,17 @@
             "song_epona": 1
         }
     },
+    "flags": {},
+    "forceReach": [],
+    "settings": {},
+    "close_off": [],
+    "redirects": [],
     "startNode": "region[root]",
+    "passedNodes": [],
+    "missingNodes": [],
+    "brokenNodes": [],
     "reachableNodes": [
         "region[gv_fortress_side]{adult}"
-    ]
+    ],
+    "unreachableNodes": []
 }

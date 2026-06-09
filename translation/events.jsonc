@@ -60,5 +60,8 @@
     "Ganons_Tower_Access": "event[ganons_tower_access]",
     "DC_MQ_Lobby_Switch_Under_Boulder_Pressed": "event[dc_mq_lobby_switch_under_boulder_pressed]",
     "Forest_Temple_Twisted_Hallway_Switch": "event[forest_temple_twisted_hallway_switch]",
+    "Spirit_Temple_MQ_Child_Gibdo_Room_Switch_Hit": "event[spirit_temple_mq_child_gibdo_room_switch_hit]",
+    "Reset_Water_Level": "event[reset_water_level]",
+    "Gerudo_Training_Ground_Lava_Silver_Rupees_Collected": "event[gerudo_training_ground_lava_silver_rupees_collected]",
     "": ""
 }

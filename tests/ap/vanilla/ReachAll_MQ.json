@@ -146,6 +146,11 @@
             "training_grounds": "mq"
         }
     },
+    "flags": {},
+    "forceReach": [],
+    "settings": {},
+    "close_off": [],
+    "redirects": [],
     "startNode": "region[root]",
     "passedNodes": [
         "reach_location[baba_nuts]",
@@ -153,6 +158,8 @@
         "reach_location[nut_pot]",
         "reach_location[stick_pot]"
     ],
+    "missingNodes": [],
+    "brokenNodes": [],
     "reachableNodes": [
         "reach_location[castle_ganon_mq.c_forest_trial_first]",
         "reach_location[castle_ganon_mq.c_forest_trial_key]",
@@ -724,5 +731,6 @@
         "reach_location[well_mq.s_basement]",
         "reach_location[well_mq.s_coffin_room]",
         "reach_location[well_mq.s_west_inner]"
-    ]
+    ],
+    "unreachableNodes": []
 }

@@ -22,6 +22,8 @@
     "flags": {
         "time_travel": 1
     },
+    "forceReach": [],
+    "settings": {},
     "close_off": [
         {
             "source": "region[woods_meadow_gateway:in]",
@@ -67,10 +69,14 @@
         }
     ],
     "startNode": "region[root]",
+    "passedNodes": [],
+    "missingNodes": [],
+    "brokenNodes": [],
     "reachableNodes": [
         "reach_location[woods.c_bomb_grotto]",
         "reach_location[woods.c_deku_salesman_grotto]",
         "reach_location[woods.c_deku_salesman_grotto_2]",
         "reach_location[woods.s_deku_salesman_magic_bean_adult]"
-    ]
+    ],
+    "unreachableNodes": []
 }

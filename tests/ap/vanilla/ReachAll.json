@@ -145,6 +145,11 @@
             "training_grounds": "v"
         }
     },
+    "flags": {},
+    "forceReach": [],
+    "settings": {},
+    "close_off": [],
+    "redirects": [],
     "startNode": "region[root]",
     "passedNodes": [
         "reach_location[baba_nuts]",
@@ -152,6 +157,8 @@
         "reach_location[nut_pot]",
         "reach_location[stick_pot]"
     ],
+    "missingNodes": [],
+    "brokenNodes": [],
     "reachableNodes": [
         "reach_location[castle.storms_grotto_pot_1]",
         "reach_location[castle.storms_grotto_pot_2]",
@@ -1207,5 +1214,6 @@
         "reach_location[zoras.zoras_shop_6]",
         "reach_location[zoras.zoras_shop_7]",
         "reach_location[zoras.zoras_shop_8]"
-    ]
+    ],
+    "unreachableNodes": []
 }

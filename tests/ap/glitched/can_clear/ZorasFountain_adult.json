@@ -14,6 +14,9 @@
             "tunic_water": 1
         }
     },
+    "flags": {},
+    "forceReach": [],
+    "settings": {},
     "close_off": [
         {
             "source": "region[fountain_domain_gateway:in]",
@@ -41,10 +44,14 @@
         }
     ],
     "startNode": "region[zoras_fountain]{adult}",
+    "passedNodes": [],
+    "missingNodes": [],
+    "brokenNodes": [],
     "reachableNodes": [
         "reach_location[zoras.c_fairy]",
         "reach_location[zoras.c_ice]",
         "reach_location[zoras.c_underwater]",
         "reach_location[zoras.s_fairy_hidden_cave_adult_night]"
-    ]
+    ],
+    "unreachableNodes": []
 }

@@ -73,6 +73,8 @@ export default class LogicTester {
             redirects = [],
             startNode = "region[root]",
             passedNodes = [],
+            missingNodes = [],
+            brokenNodes = [],
             reachableNodes = [],
             unreachableNodes = []
         } = config;
@@ -107,12 +109,22 @@ export default class LogicTester {
         const res = {
             success: true,
             passed: {},
+            missing: {},
+            broken: {},
             reachable: {},
             unreachable: {}
         };
         for (const node of passedNodes) {
             const val = this.#processor.get(node);
             res.passed[node] = val;
+        }
+        for (const node of missingNodes) {
+            const val = this.#processor.get(node);
+            res.missing[node] = val;
+        }
+        for (const node of brokenNodes) {
+            const val = this.#processor.get(node);
+            res.broken[node] = val;
         }
         for (const node of reachableNodes) {
             const val = this.#processor.get(node);

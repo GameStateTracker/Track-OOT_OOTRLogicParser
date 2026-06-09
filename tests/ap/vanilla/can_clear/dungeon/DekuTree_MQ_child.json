@@ -19,6 +19,9 @@
             "deku": "mq"
         }
     },
+    "flags": {},
+    "forceReach": [],
+    "settings": {},
     "close_off": [
         {
             "source": "region[deku_kokiri_gateway:in]",
@@ -42,6 +45,9 @@
         }
     ],
     "startNode": "region[deku_kokiri_gateway:out]{child}",
+    "passedNodes": [],
+    "missingNodes": [],
+    "brokenNodes": [],
     "reachableNodes": [
         "reach_location[deku_mq.c_lobby]",
         "reach_location[deku_mq.c_slingshot]",
@@ -56,5 +62,6 @@
         "reach_location[deku_mq.s_crate_near_map_child]",
         "reach_location[deku_mq.s_basement_back_room_child]",
         "reach_location[deku.c_gohma]"
-    ]
+    ],
+    "unreachableNodes": []
 }

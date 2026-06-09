@@ -23,6 +23,8 @@
     "flags": {
         "time_travel": 1
     },
+    "forceReach": [],
+    "settings": {},
     "close_off": [
         {
             "source": "region[ice_cavern_fountain_gateway:in]",
@@ -42,6 +44,9 @@
         }
     ],
     "startNode": "region[ice_cavern_fountain_gateway:out]{adult}",
+    "passedNodes": [],
+    "missingNodes": [],
+    "brokenNodes": [],
     "reachableNodes": [
         "reach_location[ice_cavern_mq.c_boots]",
         "reach_location[ice_cavern_mq.c_compass]",
@@ -51,5 +56,6 @@
         "reach_location[ice_cavern_mq.s_scarecrow]",
         "reach_location[ice_cavern_mq.s_under_ice_block]",
         "reach_location[ice_cavern.c_sheik]"
-    ]
+    ],
+    "unreachableNodes": []
 }
