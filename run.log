@@ -24,7 +24,6 @@ locations not converted
 values not converted
 
 logic_gtg_eye_statue_wonderitem
-skip_reward_from_rauru
 adv_hovers_recoil
 adv_damage_boost
 glitch_groundjump
@@ -55,6 +54,12 @@ glitch_child_shadow
 -------------------------------------------
 states not converted
 
+skip_reward_from_rauru: {
+    "name": "",
+    "values": {
+        "not_free": ""
+    }
+}
 
 ===========================================
 PARSE GLITCHED LOGIC
@@ -123,7 +128,6 @@ glitch_jabu_compass_with_death
 glitch_jabu_compass_skip_tentacle
 glitch_jabu_biri_hover
 adv_jabu_gs_near_boss_js
-skip_reward_from_rauru
 glitch_moustache_clip
 glitch_aqua_escape_child
 glitch_navi_dive
@@ -170,6 +174,7 @@ glitch_hc_garden_no_trade
 glitch_hc_fairy_wallwalk
 glitch_igc_rainbow_bridge
 glitch_tcg_suns
+glitch_botw_cucco_dive
 glitch_kak_botw_odie
 glitch_kak_botw_ledge
 adv_kak_tower_gs_rang
@@ -234,6 +239,7 @@ glitch_spirit_adult_block_skip
 glitch_spirit_child_side_crawlspace_skip
 adv_spirit_compass_hoverboots_only
 glitch_water_bottle_dive
+adv_water_hop
 glitch_water_mq_bk_skip
 glitch_water_south_basement_clip
 glitch_water_bk_area_antigrav
@@ -263,3 +269,9 @@ glitch_child_shadow
 -------------------------------------------
 states not converted
 
+skip_reward_from_rauru: {
+    "name": "",
+    "values": {
+        "not_free": ""
+    }
+}

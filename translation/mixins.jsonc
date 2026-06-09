@@ -415,6 +415,10 @@
                 "ref": "reach_location[pond_fairy]"
             },
             {
+                "type": "value",
+                "ref": "reach_location[bombable_fairy]"
+            },
+            {
                 "type": "and",
                 "content": [
                     {

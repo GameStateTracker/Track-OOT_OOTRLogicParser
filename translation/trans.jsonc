@@ -4,6 +4,7 @@
     "Links Pocket": "hyrule.c_gift_from_sages",
     "ToT Reward from Rauru": "hyrule.c_gift_from_sages",
     "Fairy Pot": "fairy_pot",
+    "Bombable Fairy": "bombable_fairy",
     "Wall Fairy": "wall_fairy",
     "Stick Pot": "stick_pot",
     "Nut Pot": "nut_pot",
@@ -2285,6 +2286,7 @@
     "Water Temple MQ Freestanding Key Hookshot Wonderitem": "temple_water_mq.freestanding_key_hookshot_wonderitem",
     "Water Temple MQ 3 Water Spouts Proximity Wonderitem 1": "temple_water_mq.3_water_spouts_proximity_wonderitem_1",
     "Water Temple MQ 3 Water Spouts Proximity Wonderitem 2": "temple_water_mq.3_water_spouts_proximity_wonderitem_2",
+    "Ganons Castle MQ Shadow Trial Explosives Wonderitem": "castle_ganon_mq.shadow_trial_explosives_wonderitem",
     /* hint locations */
     "Ganondorf Hint": "castle_ganon.ganondorf_hint",
     "ToT Child Altar Hint": "tot.child_altar_hint",

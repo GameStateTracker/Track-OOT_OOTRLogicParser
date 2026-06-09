@@ -14,7 +14,7 @@ const __dirname = path.resolve();
 const PARSE_OFFLINE = process.argv.indexOf("-offline") >= 0;
 
 /* SETTINGS */
-const RANDO_VERSION = "v9.0";
+const RANDO_VERSION = "v9.1";
 /* -------- */
 
 const inHelperFile  = path.join(__dirname, "/input/data/LogicHelpers.json");
