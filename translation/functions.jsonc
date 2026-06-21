@@ -325,856 +325,153 @@
             ]
         }
     },
-    /* projectile check */
-    "function[has_projectile](child)": {
-        "type": "or",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "mixin[has_explosives]"
-            },
-            {
-                "type": "value",
-                "ref": "item[slingshot]"
-            },
-            {
-                "type": "value",
-                "ref": "item[boomerang]"
-            }
-        ]
+    /* special helpers */
+    "function[has_hearts]": {
+        "params": [
+            "required_hearts"
+        ],
+        "logic": {
+            "type": "gte",
+            "content": [
+                {
+                    "type": "value",
+                    "ref": "calculated[hearts_total]"
+                },
+                {
+                    "type": "paramvalue",
+                    "ref": "required_hearts"
+                }
+            ]
+        }
     },
-    "function[has_projectile](adult)": {
-        "type": "or",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "mixin[has_explosives]"
-            },
-            {
-                "type": "value",
-                "ref": "item[bow]"
-            },
-            {
-                "type": "value",
-                "ref": "item[hookshot]"
-            }
-        ]
+    "function[has_stones]": {
+        "params": [
+            "count"
+        ],
+        "logic": {
+            "type": "gte",
+            "content": [
+                {
+                    "type": "add",
+                    "content": [
+                        {
+                            "type": "value",
+                            "ref": "item[stone_forest]"
+                        },
+                        {
+                            "type": "value",
+                            "ref": "item[stone_fire]"
+                        },
+                        {
+                            "type": "value",
+                            "ref": "item[stone_water]"
+                        }
+                    ]
+                },
+                {
+                    "type": "paramvalue",
+                    "ref": "count"
+                }
+            ]
+        }
     },
-    "function[has_projectile](both)": {
-        "type": "or",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "mixin[has_explosives]"
-            },
-            {
-                "type": "and",
-                "content": [
-                    {
-                        "type": "or",
-                        "content": [
-                            {
-                                "type": "value",
-                                "ref": "item[slingshot]"
-                            },
-                            {
-                                "type": "value",
-                                "ref": "item[boomerang]"
-                            }
-                        ]
-                    },
-                    {
-                        "type": "or",
-                        "content": [
-                            {
-                                "type": "value",
-                                "ref": "item[bow]"
-                            },
-                            {
-                                "type": "value",
-                                "ref": "item[hookshot]"
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
+    "function[has_medallions]": {
+        "params": [
+            "count"
+        ],
+        "logic": {
+            "type": "gte",
+            "content": [
+                {
+                    "type": "add",
+                    "content": [
+                        {
+                            "type": "value",
+                            "ref": "item[medallion_forest]"
+                        },
+                        {
+                            "type": "value",
+                            "ref": "item[medallion_fire]"
+                        },
+                        {
+                            "type": "value",
+                            "ref": "item[medallion_water]"
+                        },
+                        {
+                            "type": "value",
+                            "ref": "item[medallion_spirit]"
+                        },
+                        {
+                            "type": "value",
+                            "ref": "item[medallion_shadow]"
+                        },
+                        {
+                            "type": "value",
+                            "ref": "item[medallion_light]"
+                        }
+                    ]
+                },
+                {
+                    "type": "paramvalue",
+                    "ref": "count"
+                }
+            ]
+        }
     },
-    "function[has_projectile](either)": {
-        "type": "or",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "mixin[has_explosives]"
-            },
-            {
-                "type": "value",
-                "ref": "item[slingshot]"
-            },
-            {
-                "type": "value",
-                "ref": "item[boomerang]"
-            },
-            {
-                "type": "value",
-                "ref": "item[bow]"
-            },
-            {
-                "type": "value",
-                "ref": "item[hookshot]"
-            }
-        ]
-    },
-    /* can use magic arrows */
-    "function[can_use](item[arrow_fire])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "value",
-                "ref": "item[arrow_fire]"
-            },
-            {
-                "type": "value",
-                "ref": "item[bow]"
-            },
-            {
-                "type": "value",
-                "ref": "item[magic_power]"
-            },
-            {
-                "type": "mixin",
-                "ref": "mixin[is_adult]"
-            }
-        ]
-    },
-    "function[can_use](item[arrow_light])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "value",
-                "ref": "item[arrow_light]"
-            },
-            {
-                "type": "value",
-                "ref": "item[bow]"
-            },
-            {
-                "type": "value",
-                "ref": "item[magic_power]"
-            },
-            {
-                "type": "mixin",
-                "ref": "mixin[is_adult]"
-            }
-        ]
-    },
-    "function[can_use](item[arrow_ice])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "value",
-                "ref": "item[arrow_ice]"
-            },
-            {
-                "type": "value",
-                "ref": "item[bow]"
-            },
-            {
-                "type": "value",
-                "ref": "item[magic_power]"
-            },
-            {
-                "type": "mixin",
-                "ref": "mixin[is_adult]"
-            }
-        ]
-    },
-    "function[can_use](item[blue_fire_arrows])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "value",
-                "ref": "item[arrow_ice]"
-            },
-            {
-                "type": "value",
-                "ref": "item[bow]"
-            },
-            {
-                "type": "value",
-                "ref": "item[magic_power]"
-            },
-            {
-                "type": "mixin",
-                "ref": "mixin[is_adult]"
-            }
-        ]
-    },
-    /* can use magic item */
-    "function[can_use](item[lens])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "value",
-                "ref": "item[lens]"
-            },
-            {
-                "type": "value",
-                "ref": "item[magic_power]"
-            }
-        ]
-    },
-    "function[can_use](item[magic_din])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "value",
-                "ref": "item[magic_din]"
-            },
-            {
-                "type": "value",
-                "ref": "item[magic_power]"
-            }
-        ]
-    },
-    "function[can_use](item[magic_farore])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "value",
-                "ref": "item[magic_farore]"
-            },
-            {
-                "type": "value",
-                "ref": "item[magic_power]"
-            }
-        ]
-    },
-    "function[can_use](item[magic_nayru])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "value",
-                "ref": "item[magic_nayru]"
-            },
-            {
-                "type": "value",
-                "ref": "item[magic_power]"
-            }
-        ]
-    },
-    /* can use adult items */
-    "function[can_use](item[bow])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "value",
-                "ref": "item[bow]"
-            },
-            {
-                "type": "mixin",
-                "ref": "mixin[is_adult]"
-            }
-        ]
-    },
-    "function[can_use](item[hammer])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "value",
-                "ref": "item[hammer]"
-            },
-            {
-                "type": "mixin",
-                "ref": "mixin[is_adult]"
-            }
-        ]
-    },
-    "function[can_use](item[boots_iron])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "value",
-                "ref": "item[boots_iron]"
-            },
-            {
-                "type": "mixin",
-                "ref": "mixin[is_adult]"
-            }
-        ]
-    },
-    "function[can_use](item[boots_hover])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "value",
-                "ref": "item[boots_hover]"
-            },
-            {
-                "type": "mixin",
-                "ref": "mixin[is_adult]"
-            }
-        ]
-    },
-    "function[can_use](item[hookshot])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "value",
-                "ref": "item[hookshot]"
-            },
-            {
-                "type": "mixin",
-                "ref": "mixin[is_adult]"
-            }
-        ]
-    },
-    "function[can_use](mixin[longshot])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "mixin[longshot]"
-            },
-            {
-                "type": "mixin",
-                "ref": "mixin[is_adult]"
-            }
-        ]
-    },
-    "function[can_use](mixin[silver_gauntlets])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "mixin[silver_gauntlets]"
-            },
-            {
-                "type": "mixin",
-                "ref": "mixin[is_adult]"
-            }
-        ]
-    },
-    "function[can_use](mixin[golden_gauntlets])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "mixin[golden_gauntlets]"
-            },
-            {
-                "type": "mixin",
-                "ref": "mixin[is_adult]"
-            }
-        ]
-    },
-    "function[can_use](item[tunic_fire])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "mixin[goron_tunic]"
-            },
-            {
-                "type": "mixin",
-                "ref": "mixin[is_adult]"
-            }
-        ]
-    },
-    "function[can_use](item[tunic_water])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "mixin[zora_tunic]"
-            },
-            {
-                "type": "mixin",
-                "ref": "mixin[is_adult]"
-            }
-        ]
-    },
-    "function[can_use](mixin[scarecrow])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "mixin[is_adult]"
-            },
-            {
-                "type": "mixin",
-                "ref": "mixin[hookshot]"
-            },
-            {
-                "type": "mixin",
-                "ref": "function[can_play](item[song_scarecrow])"
-            }
-        ]
-    },
-    "function[can_use](mixin[distant_scarecrow])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "mixin[is_adult]"
-            },
-            {
-                "type": "mixin",
-                "ref": "mixin[longshot]"
-            },
-            {
-                "type": "mixin",
-                "ref": "function[can_play](item[song_scarecrow])"
-            }
-        ]
-    },
-    /* can use child items */
-    "function[can_use](item[slingshot])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "mixin",
-                "ref": "mixin[is_child]"
-            },
-            {
-                "type": "value",
-                "ref": "item[slingshot]"
-            }
-        ]
-    },
-    "function[can_use](item[boomerang])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "value",
-                "ref": "item[boomerang]"
-            },
-            {
-                "type": "mixin",
-                "ref": "mixin[is_child]"
-            }
-        ]
-    },
-    "function[can_use](item[sword_kokiri])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "value",
-                "ref": "item[sword_kokiri]"
-            },
-            {
-                "type": "mixin",
-                "ref": "mixin[is_child]"
-            }
-        ]
-    },
-    "function[can_use](item[shield_kokiri])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "value",
-                "ref": "item[shield_kokiri]"
-            },
-            {
-                "type": "mixin",
-                "ref": "mixin[is_child]"
-            }
-        ]
-    },
-    "function[can_use](item[shield_mirror])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "value",
-                "ref": "item[shield_mirror]"
-            },
-            {
-                "type": "mixin",
-                "ref": "mixin[is_adult]"
-            }
-        ]
-    },
-    "function[can_use](mixin[sticks])": {
-        "type": "and",
-        "content": [
-            {
-                "type": "value",
-                "ref": "mixin[sticks]"
-            },
-            {
-                "type": "mixin",
-                "ref": "mixin[is_child]"
-            }
-        ]
-    },
-    /* Specials */
-    "function[has_stones](lacs_stones)": {
-        "type": "gte",
-        "content": [
-            {
-                "type": "add",
-                "content": [
-                    {
-                        "type": "value",
-                        "ref": "item[stone_forest]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[stone_fire]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[stone_water]"
-                    }
-                ]
-            },
-            {
-                "type": "value",
-                "ref": "option[stone_count_lacs]"
-            }
-        ]
-    },
-    "function[has_medallions](lacs_medallions)": {
-        "type": "gte",
-        "content": [
-            {
-                "type": "add",
-                "content": [
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_forest]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_fire]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_water]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_spirit]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_shadow]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_light]"
-                    }
-                ]
-            },
-            {
-                "type": "value",
-                "ref": "option[medallion_count_lacs]"
-            }
-        ]
-    },
-    "function[has_dungeon_rewards](lacs_rewards)": {
-        "type": "gte",
-        "content": [
-            {
-                "type": "add",
-                "content": [
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_forest]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_fire]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_water]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_spirit]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_shadow]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_light]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[stone_forest]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[stone_fire]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[stone_water]"
-                    }
-                ]
-            },
-            {
-                "type": "value",
-                "ref": "option[dungeon_count_lacs]"
-            }
-        ]
-    },
-    "function[has_stones](bridge_stones)": {
-        "type": "gte",
-        "content": [
-            {
-                "type": "add",
-                "content": [
-                    {
-                        "type": "value",
-                        "ref": "item[stone_forest]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[stone_fire]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[stone_water]"
-                    }
-                ]
-            },
-            {
-                "type": "value",
-                "ref": "option[stone_count_bridge]"
-            }
-        ]
-    },
-    "function[has_medallions](bridge_medallions)": {
-        "type": "gte",
-        "content": [
-            {
-                "type": "add",
-                "content": [
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_forest]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_fire]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_water]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_spirit]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_shadow]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_light]"
-                    }
-                ]
-            },
-            {
-                "type": "value",
-                "ref": "option[medallion_count_bridge]"
-            }
-        ]
-    },
-    "function[has_dungeon_rewards](bridge_rewards)": {
-        "type": "gte",
-        "content": [
-            {
-                "type": "add",
-                "content": [
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_forest]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_fire]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_water]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_spirit]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_shadow]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_light]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[stone_forest]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[stone_fire]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[stone_water]"
-                    }
-                ]
-            },
-            {
-                "type": "value",
-                "ref": "option[dungeon_count_bridge]"
-            }
-        ]
-    },
-    "function[has_stones](ganon_bosskey_stones)": {
-        "type": "gte",
-        "content": [
-            {
-                "type": "add",
-                "content": [
-                    {
-                        "type": "value",
-                        "ref": "item[stone_forest]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[stone_fire]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[stone_water]"
-                    }
-                ]
-            },
-            {
-                "type": "value",
-                "ref": "option[stone_count_bridge]"
-            }
-        ]
-    },
-    "function[has_medallions](ganon_bosskey_medallions)": {
-        "type": "gte",
-        "content": [
-            {
-                "type": "add",
-                "content": [
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_forest]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_fire]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_water]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_spirit]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_shadow]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_light]"
-                    }
-                ]
-            },
-            {
-                "type": "value",
-                "ref": "option[medallion_count_bridge]"
-            }
-        ]
-    },
-    "function[has_dungeon_rewards](ganon_bosskey_rewards)": {
-        "type": "gte",
-        "content": [
-            {
-                "type": "add",
-                "content": [
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_forest]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_fire]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_water]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_spirit]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_shadow]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_light]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[stone_forest]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[stone_fire]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[stone_water]"
-                    }
-                ]
-            },
-            {
-                "type": "value",
-                "ref": "option[dungeon_count_bridge]"
-            }
-        ]
-    },
-    "function[has_hearts](lacs_hearts)": {
-        "type": "gte",
-        "content": [
-            {
-                "type": "value",
-                "ref": "calculated[hearts_total]"
-            },
-            {
-                "type": "value",
-                "ref": "option[heart_count_lacs]"
-            }
-        ]
-    },
-    "function[has_hearts](ganon_bosskey_hearts)": {
-        "type": "gte",
-        "content": [
-            {
-                "type": "value",
-                "ref": "calculated[hearts_total]"
-            },
-            {
-                "type": "value",
-                "ref": "option[heart_count_bridge]"
-            }
-        ]
+    "function[has_dungeon_rewards]": {
+        "params": [
+            "count"
+        ],
+        "logic": {
+            "type": "gte",
+            "content": [
+                {
+                    "type": "add",
+                    "content": [
+                        {
+                            "type": "value",
+                            "ref": "item[stone_forest]"
+                        },
+                        {
+                            "type": "value",
+                            "ref": "item[stone_fire]"
+                        },
+                        {
+                            "type": "value",
+                            "ref": "item[stone_water]"
+                        },
+                        {
+                            "type": "value",
+                            "ref": "item[medallion_forest]"
+                        },
+                        {
+                            "type": "value",
+                            "ref": "item[medallion_fire]"
+                        },
+                        {
+                            "type": "value",
+                            "ref": "item[medallion_water]"
+                        },
+                        {
+                            "type": "value",
+                            "ref": "item[medallion_spirit]"
+                        },
+                        {
+                            "type": "value",
+                            "ref": "item[medallion_shadow]"
+                        },
+                        {
+                            "type": "value",
+                            "ref": "item[medallion_light]"
+                        }
+                    ]
+                },
+                {
+                    "type": "paramvalue",
+                    "ref": "count"
+                }
+            ]
+        }
     },
     "": ""
 }

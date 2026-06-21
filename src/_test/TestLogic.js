@@ -11,6 +11,9 @@ const testDir = path.join(__dirname, testDirName);
 const optionsFile = path.join(testDir, "/_config/options.json");
 const defaultOptions = JSONFile.read(optionsFile);
 
+const itemsFile = path.join(testDir, "/_config/items.json");
+const defaultItems = JSONFile.read(itemsFile);
+
 const aliasesFile = path.join(testDir, "/_config/aliases.json");
 const valueAliases = JSONFile.read(aliasesFile);
 
@@ -21,12 +24,17 @@ export default function testLogic(logic, data = {}, folders = []) {
     const res = {};
     const {
         options: stateOptions = {},
+        items: stateItems = {},
         ...stateData
     } = data;
     const tester = new LogicTester(logic, {
         options: {
             ...defaultOptions,
             ...stateOptions
+        },
+        items: {
+            ...defaultItems,
+            ...stateItems
         },
         ...stateData
     }, valueAliases);

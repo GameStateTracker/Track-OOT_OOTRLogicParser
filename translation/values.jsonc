@@ -220,8 +220,8 @@
         "ref": "item[arrows]"
     },
     "Ocarina": {
-        "type": "mixin",
-        "ref": "mixin[can_play_ocarina]"
+        "type": "value",
+        "ref": "item[ocarina]"
     },
     "has_bottle": {
         "type": "value",
@@ -730,13 +730,65 @@
     //"item[heart_container]",
     //"item[heart_double]",
     //"item[sold_out]",
+    "bridge_hearts": {
+        "type": "value",
+        "ref": "option[heart_count_bridge]"
+    },
+    "bridge_tokens": {
+        "type": "value",
+        "ref": "option[ganon_castle_skulltulas]"
+    },
+    "bridge_stones": {
+        "type": "value",
+        "ref": "option[stone_count_ganon_bosskey]"
+    },
+    "bridge_medallions": {
+        "type": "value",
+        "ref": "option[medallion_count_ganon_bosskey]"
+    },
+    "bridge_rewards": {
+        "type": "value",
+        "ref": "option[dungeon_count_ganon_bosskey]"
+    },
+    "lacs_hearts": {
+        "type": "value",
+        "ref": "option[heart_count_lacs]"
+    },
     "lacs_tokens": {
         "type": "value",
         "ref": "option[lacs_skulltulas]"
     },
+    "lacs_stones": {
+        "type": "value",
+        "ref": "option[stone_count_lacs]"
+    },
+    "lacs_medallions": {
+        "type": "value",
+        "ref": "option[medallion_count_lacs]"
+    },
+    "lacs_rewards": {
+        "type": "value",
+        "ref": "option[dungeon_count_lacs]"
+    },
+    "ganon_bosskey_hearts": {
+        "type": "value",
+        "ref": "option[heart_count_ganon_bosskey]"
+    },
     "ganon_bosskey_tokens": {
         "type": "value",
         "ref": "option[gbk_skulltulas]"
+    },
+    "ganon_bosskey_stones": {
+        "type": "value",
+        "ref": "option[stone_count_bridge]"
+    },
+    "ganon_bosskey_medallions": {
+        "type": "value",
+        "ref": "option[medallion_count_bridge]"
+    },
+    "ganon_bosskey_rewards": {
+        "type": "value",
+        "ref": "option[dungeon_count_bridge]"
     },
     "Blue_Fire": {
         "type": "mixin",

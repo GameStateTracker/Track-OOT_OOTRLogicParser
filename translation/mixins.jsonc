@@ -141,179 +141,6 @@
             "value": "night"
         }
     },
-    "mixin[longshot]": {
-        "type": "min",
-        "content": {
-            "type": "value",
-            "ref": "item[hookshot]"
-        },
-        "value": 2
-    },
-    "mixin[silver_gauntlets]": {
-        "type": "min",
-        "content": {
-            "type": "value",
-            "ref": "item[glove]"
-        },
-        "value": 2
-    },
-    "mixin[golden_gauntlets]": {
-        "type": "min",
-        "content": {
-            "type": "value",
-            "ref": "item[glove]"
-        },
-        "value": 3
-    },
-    "mixin[scarecrow]": {
-        "type": "and",
-        "content": [
-            {
-                "type": "function",
-                "ref": "function[can_play]",
-                "params": [
-                    {
-                        "type": "string",
-                        "value": "item[song_scarecrow]"
-                    }
-                ]
-            },
-            {
-                "type": "value",
-                "ref": "item[hookshot]"
-            }
-        ]
-    },
-    "mixin[distant_scarecrow]": {
-        "type": "and",
-        "content": [
-            {
-                "type": "function",
-                "ref": "function[can_play]",
-                "params": [
-                    {
-                        "type": "string",
-                        "value": "item[song_scarecrow]"
-                    }
-                ]
-            },
-            {
-                "type": "mixin",
-                "ref": "mixin[longshot]"
-            }
-        ]
-    },
-    "mixin[can_build_rainbow_bridge]": {
-        "type": "or",
-        "content": [
-            {
-                "type": "state",
-                "ref": "option[ganon_castle_open]",
-                "value": "ganon_castle_open_open"
-            },
-            {
-                "type": "and",
-                "content": [
-                    {
-                        "type": "state",
-                        "ref": "option[ganon_castle_open]",
-                        "value": "ganon_castle_open_default"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_shadow]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[medallion_spirit]"
-                    },
-                    {
-                        "type": "value",
-                        "ref": "item[arrow_light]"
-                    }
-                ]
-            },
-            {
-                "type": "and",
-                "content": [
-                    {
-                        "type": "state",
-                        "ref": "option[ganon_castle_open]",
-                        "value": "ganon_castle_open_stones"
-                    },
-                    {
-                        "type": "mixin",
-                        "ref": "function[has_stones](bridge_stones)"
-                    }
-                ]
-            },
-            {
-                "type": "and",
-                "content": [
-                    {
-                        "type": "state",
-                        "ref": "option[ganon_castle_open]",
-                        "value": "ganon_castle_open_medallion"
-                    },
-                    {
-                        "type": "mixin",
-                        "ref": "function[has_medallions](bridge_medallions)"
-                    }
-                ]
-            },
-            {
-                "type": "and",
-                "content": [
-                    {
-                        "type": "state",
-                        "ref": "option[ganon_castle_open]",
-                        "value": "ganon_castle_open_dungeon"
-                    },
-                    {
-                        "type": "mixin",
-                        "ref": "function[has_dungeon_rewards](bridge_rewards)"
-                    }
-                ]
-            },
-            {
-                "type": "and",
-                "content": [
-                    {
-                        "type": "state",
-                        "ref": "option[ganon_castle_open]",
-                        "value": "ganon_castle_open_skulltulas"
-                    },
-                    {
-                        "type": "gte",
-                        "content": [
-                            {
-                                "type": "value",
-                                "ref": "item[skulltula]"
-                            },
-                            {
-                                "type": "value",
-                                "ref": "option[ganon_castle_skulltulas]"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "type": "and",
-                "content": [
-                    {
-                        "type": "state",
-                        "ref": "option[ganon_castle_open]",
-                        "value": "ganon_castle_open_hearts"
-                    },
-                    {
-                        "type": "mixin",
-                        "ref": "function[has_hearts](ganon_bosskey_hearts)"
-                    }
-                ]
-            }
-        ]
-    },
     "mixin[blue_fire]": {
         "type": "or",
         "content": [
@@ -350,8 +177,14 @@
                         "ref": "option[blue_fire_arrows]"
                     },
                     {
-                        "type": "mixin",
-                        "ref": "function[can_use](item[blue_fire_arrows])"
+                        "type": "function",
+                        "ref": "function[can_use]",
+                        "params": [
+                            {
+                                "type": "string",
+                                "value": "item[arrow_ice]"
+                            }
+                        ]
                     }
                 ]
             }
@@ -501,119 +334,6 @@
             }
         ]
     },
-    "mixin[can_play_ocarina]": {
-        "type": "or",
-        "content": [
-            {
-                "type": "value",
-                "ref": "item[ocarina]"
-            },
-            {
-                "type": "and",
-                "content": [
-                    {
-                        "type": "value",
-                        "ref": "item[bottle]"
-                    },
-                    {
-                        "type": "or",
-                        "content": [
-                            {
-                                "type": "value",
-                                "ref": "option[skip.invisible_ocarina]"
-                            },
-                            {
-                                "type": "and",
-                                "content": [
-                                    {
-                                        "type": "value",
-                                        "ref": "option[skip.invisible_ocarina_midair]"
-                                    },
-                                    {
-                                        "type": "or",
-                                        "content": [
-                                            {
-                                                "type": "value",
-                                                "ref": "item[bombs]"
-                                            },
-                                            {
-                                                "type": "value",
-                                                "ref": "item[bombchu]"
-                                            },
-                                            {
-                                                "type": "and",
-                                                "content": [
-                                                    {
-                                                        "type": "mixin",
-                                                        "ref": "mixin[is_child]"
-                                                    },
-                                                    {
-                                                        "type": "or",
-                                                        "content": [
-                                                            {
-                                                                "type": "value",
-                                                                "ref": "item[stick]"
-                                                            },
-                                                            {
-                                                                "type": "value",
-                                                                "ref": "item[sword_kokiri]"
-                                                            },
-                                                            {
-                                                                "type": "value",
-                                                                "ref": "item[slingshot]"
-                                                            },
-                                                            {
-                                                                "type": "value",
-                                                                "ref": "item[boomerang]"
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "type": "and",
-                                                "content": [
-                                                    {
-                                                        "type": "mixin",
-                                                        "ref": "mixin[is_adult]"
-                                                    },
-                                                    {
-                                                        "type": "or",
-                                                        "content": [
-                                                            {
-                                                                "type": "value",
-                                                                "ref": "item[sword_master]"
-                                                            },
-                                                            {
-                                                                "type": "value",
-                                                                "ref": "item[sword_biggoron]"
-                                                            },
-                                                            {
-                                                                "type": "value",
-                                                                "ref": "item[bow]"
-                                                            },
-                                                            {
-                                                                "type": "value",
-                                                                "ref": "item[hookshot]"
-                                                            },
-                                                            {
-                                                                "type": "value",
-                                                                "ref": "item[hammer]"
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
     "mixin[is_night_gs]": {
         "type": "or",
         "content": [
@@ -641,43 +361,16 @@
                         "ref": "option[sun_song_skulltuta]"
                     },
                     {
-                        "type": "mixin",
-                        "ref": "function[can_play](item[song_sun])"
+                        "type": "function",
+                        "ref": "function[can_play]",
+                        "params": [
+                            {
+                                "type": "string",
+                                "value": "item[song_sun]"
+                            }
+                        ]
                     }
                 ]
-            }
-        ]
-    },
-    "mixin[can_leave_forest]": {
-        "type": "or",
-        "content": [
-            {
-                "type": "not",
-                "content": {
-                    "type": "state",
-                    "ref": "option[doors_open_forest]",
-                    "value": "doors_open_forest_closed"
-                }
-            },
-            {
-                "type": "mixin",
-                "ref": "mixin[is_adult]"
-            },
-            {
-                "type": "value",
-                "ref": "option[shuffle_overworld]"
-            },
-            {
-                "type": "value",
-                "ref": "option[shuffle_warps]"
-            },
-            {
-                "type": "value",
-                "ref": "option[shuffle_spawns]"
-            },
-            {
-                "type": "value",
-                "ref": "event[defeat_queen_gohma]"
             }
         ]
     },

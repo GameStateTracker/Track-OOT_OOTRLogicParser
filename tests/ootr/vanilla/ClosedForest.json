@@ -1,0 +1,27 @@
+{
+    "state": {
+        "options": {
+            "doors_open_forest": "doors_open_forest_closed",
+            "starting_age": "child"
+        }
+    },
+    "flags": {},
+    "forceReach": [],
+    "settings": {},
+    "close_off": [],
+    "redirects": [],
+    "startNode": "region[root]",
+    "passedNodes": [],
+    "missingNodes": [],
+    "brokenNodes": [],
+    "reachableNodes": [
+        "region[kokiri_forest]{child}"
+    ],
+    "unreachableNodes": [
+        "region[goron_city]{child}",
+        "region[hyrule_field]{child}",
+        "region[kf_outside_deku_tree]{child}",
+        "region[lw_bridge]{child}",
+        "region[zora_river]{child}"
+    ]
+}
