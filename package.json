@@ -12,8 +12,8 @@
   "main": "parse.js",
   "type": "module",
   "dependencies": {
-    "@emcjs/core": "https://github.com/ZidArgs/emcJS-Core.git/#1.1.2",
-    "@emcjs/logic": "https://github.com/ZidArgs/emcJS-Logic.git/#0.1.7"
+    "@emcjs/core": "https://github.com/ZidArgs/emcJS-Core.git/#1.2.0",
+    "@emcjs/logic": "https://github.com/ZidArgs/emcJS-Logic.git/#0.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.28.5",

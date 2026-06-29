@@ -2,6 +2,10 @@ import LogicCaller from "/GameTrackerJS/util/logic/LogicCaller.js";
 import ShopsResource from "../../../resource/ShopsResource.js";
 
 const BUYABLE_ITEMS = {
+    // "shield_kokiri_1": "buyable[shield_kokiri]",
+    // "shield_hylia_1": "buyable[shield_hylia]",
+    // "tunic_fire_1": "buyable[tunic_fire]",
+    // "tunic_water_1": "buyable[tunic_water]",
     "blue_fire_1": "buyable[blue_fire]",
     "bugs_1": "buyable[bugs]",
     "fairy_spirit_1": "buyable[fairy]",
@@ -40,10 +44,9 @@ function augment(cache) {
         }
         for (const name in shops) {
             for (let slot = 0; slot < 8; ++slot) {
-                const slotName = `shopslot[${name}/${slot}]`;
                 const slotRef = shops[name][slot].ref;
-                if (cache.hasChange(slotName)) {
-                    const currItem = cache.get(slotName);
+                if (cache.hasChange(slotRef)) {
+                    const currItem = cache.get(slotRef);
                     if (currItem in BUYABLE_ITEMS) {
                         const buyableRef = BUYABLE_ITEMS[currItem];
                         LogicCaller.setCollectible(`reach_location[${slotRef}]`, buyableRef);

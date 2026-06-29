@@ -84,9 +84,9 @@ export default class LogicTester {
         this.#processor.clearReachables();
         const dataStorage = new LogicDataStorage();
         const presetData = this.#collectData(this.#presetData);
-        dataStorage.setData(presetData);
+        dataStorage.setAll(presetData);
         const data = this.#collectData(state, settings);
-        dataStorage.setData(data);
+        dataStorage.setAll(data);
 
         for (const augment of AUGMENTS) {
             augment(dataStorage.restricted, this.#processorProxy);
