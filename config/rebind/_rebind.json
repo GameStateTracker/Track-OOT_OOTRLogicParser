@@ -84,6 +84,9 @@
         "Ganons Castle Lobby": "Castle Grounds Ganons Castle Gateway",
         "OGC Great Fairy Fountain": "Ganon Grounds Great Fairy Gateway"
     },
+    "Ganons Castle Ledge": {
+        "Ganons Castle Lobby": "Castle Grounds Ganons Castle Gateway"
+    },
     "Bottom of the Well": {
         "Kakariko Village": "Well Kakariko Gateway"
     },
@@ -126,7 +129,8 @@
         "Desert Colossus From Spirit Lobby": "Spirit Temple Colossus Gateway"
     },
     "Ganons Castle Lobby": {
-        "Castle Grounds From Ganons Castle": "Ganons Castle Castle Grounds Gateway"
+        "Castle Grounds From Ganons Castle": "Ganons Castle Castle Grounds Gateway",
+        "Ganons Castle Ledge": "Ganons Castle Castle Grounds Gateway"
     },
     "Kokiri Forest": {
         "LW Bridge From Forest": "Kokiri Bridge Gateway",
