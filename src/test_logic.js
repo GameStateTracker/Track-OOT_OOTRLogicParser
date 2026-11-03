@@ -9,7 +9,7 @@ const inputDir = path.join(__dirname, "/output/");
 const outputDir = path.join(__dirname, "/tests_results/");
 
 if (!fs.existsSync(outputDir)) {
-    fs.mkdirSync(outputDir);
+    fs.mkdirSync(outputDir, {recursive: true});
 }
 
 function runTestLogic(testName, logicFile, data, folders) {
